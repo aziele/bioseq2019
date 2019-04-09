@@ -1,6 +1,66 @@
 # Analiza sekwencji bioloficznych
 Szkolenie, 7-9 maja 2019, Kraków
 
+<table>
+  <thead>
+    <tr>
+      <td>Dzień</td>
+      <td>Godzina</td>
+      <td>Temat</td>
+      <td>Wprowadzenie</td>
+      <td>Ćwiczenia</td>
+      <td>Zadania</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">7 maja</td>
+      <td>9:00-11:15</td>
+      <td>Efektywne przeszukiwanie baz danych NCBI</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td>11:30-13:45</td>
+      <td>Przyrównanie sekwencji parami (1)</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td>14:30-16:45</td>
+      <td>Przyrównanie sekwencji parami (2)</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3">8 maja</td>
+      <td>9:00-11:15</td>
+      <td>Wyszukiwanie sekwencji podobnych (BLAST) (1)</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td>11:30-13:45</td>
+      <td>Wyszukiwanie sekwencji podobnych (BLAST) (2)</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td>14:30-16:45</td>
+      <td>Przyrównanie wielu sekwencji</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
 ## Dzień 1
 
 | Godzina | Zagadnienie | Wprowadzenie | Ćwiczenia | Zadania |
@@ -13,7 +73,7 @@ Szkolenie, 7-9 maja 2019, Kraków
 
 | Godzina | Zagadnienie | Wprowadzenie | Ćwiczenia | Zadania |
 | :---: | --- | --- | --- | :---: |
-| 9:00-11:15 | Wyszukiwanie sekwnencji podobnych (BLAST) (1) | [pdf](./day1/db.pdf) | [lab1](./day1/lab1.md) | [zadania1](./day1/zadania1.md) |
+| 9:00-11:15 | Wyszukiwanie sekwencji podobnych (BLAST) (1) | [pdf](./day1/db.pdf) | [lab1](./day1/lab1.md) | [zadania1](./day1/zadania1.md) |
 | 11:30-13:45 | Wyszukiwanie sekwencji podobnych (BLAST) (2) | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
 | 14:30-16:45 | Przyrównanie wielu sekwencji | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
 
