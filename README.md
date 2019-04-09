@@ -7,14 +7,15 @@ Szkolenie, 7-9 maja 2019, Kraków
       <td>Dzień</td>
       <td>Godzina</td>
       <td>Temat</td>
-      <td>Wprowadzenie</td>
+      <td>Slajdy</td>
       <td>Ćwiczenia</td>
       <td>Zadania</td>
     </tr>
   </thead>
   <tbody>
+    <!-- DZIEŃ 1 -->
     <tr>
-      <td rowspan="3">7 maja</td>
+      <td rowspan="3">1</td>
       <td>9:00-11:15</td>
       <td>Efektywne przeszukiwanie baz danych NCBI</td>
       <td><a href="">pdf</a></td>
@@ -35,8 +36,10 @@ Szkolenie, 7-9 maja 2019, Kraków
       <td><a href="">lab1</a></td>
       <td><a href="">zadania1</a></td>
     </tr>
+    <!-- /DZIEŃ 1 -->
+    <!-- DZIEŃ 2 -->
     <tr>
-      <td rowspan="3">8 maja</td>
+      <td rowspan="3">2</td>
       <td>9:00-11:15</td>
       <td>Wyszukiwanie sekwencji podobnych (BLAST) (1)</td>
       <td><a href="">pdf</a></td>
@@ -57,6 +60,31 @@ Szkolenie, 7-9 maja 2019, Kraków
       <td><a href="">lab1</a></td>
       <td><a href="">zadania1</a></td>
     </tr>
+    <!-- /DZIEŃ 2 -->
+    <!-- DZIEŃ 3 -->
+    <tr>
+      <td rowspan="3">2</td>
+      <td>9:00-11:15</td>
+      <td>Wzorce sekwencyjne</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td>11:30-13:45</td>
+      <td>Motywy i domeny białkowe (UniProt, PROSITE, Pfam, InterPro)</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <tr>
+      <td>14:30-16:45</td>
+      <td>Analiza filogenetyczna</td>
+      <td><a href="">pdf</a></td>
+      <td><a href="">lab1</a></td>
+      <td><a href="">zadania1</a></td>
+    </tr>
+    <!-- /DZIEŃ 3 -->    
   </tbody>
 </table>
 
