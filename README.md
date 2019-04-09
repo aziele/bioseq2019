@@ -1,6 +1,13 @@
 # Analiza sekwencji bioloficznych
 Szkolenie, 7-9 maja 2019, Kraków
 
+
+## Dzień 1
+
+1. 9:00-11:15 Efektywne przeszukiwanie baz danych NCBI [slajdy](./day1/db.pdf) [ćwiczenia](./day1/db.pdf) [zadania](./day1/db.pdf)
+2. 11:30-13:45 Przyrównanie sekwencji parami (1) [slajdy](./day1/db.pdf) [ćwiczenia](./day1/db.pdf) [zadania](./day1/db.pdf)
+3. 14:30-16:45 Przyrównanie sekwencji parami (2) [slajdy](./day1/db.pdf) [ćwiczenia](./day1/db.pdf) [zadania](./day1/db.pdf)
+
 <table>
   <thead>
     <tr>
