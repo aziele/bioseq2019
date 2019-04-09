@@ -5,7 +5,7 @@
 
 | Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
 | :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Efektywne przeszukiwanie baz danych NCBI | [pdf](./day1/db.pdf) | [lab1](./day1/lab1.md) | [zadania1](./day1/zadania1.md) |
+| 9:00-11:15 | Efektywne przeszukiwanie baz danych NCBI | [pdf](./day1/db.pdf) | [lab1](./day1/lab01.md) | [zadania1](./day1/zadania1.md) |
 | 11:30-13:45 | Przyrównanie sekwencji parami (1) | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
 | 14:30-16:45 | Przyrównanie sekwencji parami (2) | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
 
