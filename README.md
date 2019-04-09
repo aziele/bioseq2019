@@ -1,5 +1,5 @@
-# Analiza sekwencji bioloficznych
-Szkolenie, 7-9 maja 2019, Kraków
+# Analiza sekwencji biologicznych
+7-9 maja 2019, Kraków
 
 ## Dzień 1
 
