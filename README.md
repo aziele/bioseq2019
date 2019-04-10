@@ -5,22 +5,22 @@
 
 | Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
 | :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Efektywne przeszukiwanie baz danych NCBI | [pdf](./day1/db.pdf) | [lab1](./day1/lab01.md) | [zadania1](./day1/zadania1.md) |
-| 11:30-13:45 | Przyrównanie sekwencji parami (1) | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
-| 14:30-16:45 | Przyrównanie sekwencji parami (2) | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
+| 9:00-11:15 | Efektywne przeszukiwanie baz danych NCBI | [pdf](./day1/slides1.md) | [lab](./day1/lab1.md) [rozwiązanie](./day1/lab1.odpowiedzi.md) | [zadania](./day1/exercises1.md) |
+| 11:30-13:45 | Przyrównanie sekwencji parami (1) | pdf | lab | zadania |
+| 14:30-16:45 | Przyrównanie sekwencji parami (2) | pdf | lab | zadania |
 
 ## Dzień 2
 
 | Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
 | :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Wyszukiwanie sekwencji podobnych (BLAST) (1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [pdf](./day1/db.pdf) | [lab1](./day1/lab1.md) | [zadania1](./day1/zadania1.md) |
-| 11:30-13:45 | Wyszukiwanie sekwencji podobnych (BLAST) (2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
-| 14:30-16:45 | Przyrównanie wielu sekwencji | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
+| 9:00-11:15 | Wyszukiwanie sekwencji podobnych (BLAST) (1) | pdf | lab | zadania |
+| 11:30-13:45 | Wyszukiwanie sekwencji podobnych (BLAST) (2) | pdf | lab | zadania |
+| 14:30-16:45 | Przyrównanie wielu sekwencji | pdf | lab | zadania |
 
 ## Dzień 3
 
 | Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
 | :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Wzorce sekwencyjne | [pdf](./day1/db.pdf) | [lab1](./day1/lab1.md) | [zadania1](./day1/zadania1.md) |
-| 11:30-13:45 | Motywy i domeny białkowe (PROSITE, Pfam, InterPro) | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
-| 14:30-16:45 | Analiza filogenetyczna | [pdf](./day1/db.pdf) | [lab2](./day1/lab1.md) | [zadania2](./day1/zadania2.md) |
+| 9:00-11:15 | Wzorce sekwencyjne | pdf | lab | zadania |
+| 11:30-13:45 | Motywy i domeny białkowe (PROSITE, Pfam, InterPro) | pdf | lab | zadania |
+| 14:30-16:45 | Analiza filogenetyczna | pdf | lab | zadania |
