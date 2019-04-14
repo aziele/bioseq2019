@@ -23,7 +23,7 @@ Wróć do formatu GenBank. Zapisz do pliku sekwencję w formacie GenBank. Otwór
 
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu jednocześnie
-W pliku [accession_numbers.txt](./day1/data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Przejdź do bazy `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
+W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Przejdź do bazy `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
 
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny
@@ -88,7 +88,7 @@ Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o n
 
 1. Podaj identyfikator genu HFE w bazie `Gene`.
 2. Ile wariantów splicingowych ma ten gen?
-   > Ile wśród nich koduje białko?
+   * Ile wśród nich koduje białko?
 3. Jakiej lokalizacji w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiada pozycja `8671` genu?
 
 
@@ -143,7 +143,7 @@ W podobny sposób ogranicz wyniki do białek, które nie są receptorami.
    * Na którym miejscu na liście białek się szukana insulina człowieka.
 
 
-### Zad. 10 - rekord sekwencji UniProt
+### Zad. 10 - Rekord sekwencji UniProt
 Przejdź do rekordu insuliny człowieka naciskając na numer dostępu tego białka (`P01308`).
 
 1. Ile referencji literaturowych dotyczy insuliny?
@@ -153,23 +153,14 @@ Przejdź do rekordu insuliny człowieka naciskając na numer dostępu tego biał
 5. Jaki jest numer dostępu tego białka i odpowiadającego mRNA w bazie RefSeq?
 
 
-### Zad. 11 - zaawansowane wyszukiwanie
+### Zad. 11 - Zaawansowane wyszukiwanie
 Znajdź wszystkie białka posiadające peptydy sygnałowe (Advanced > wybierz `PTM/Processing` > `Molecule Processing` > wybierz `Signal peptide` > naciśnij `Search`).
 
 1. Ile białek znaleziono?
    * Jak wygląda zapytanie do bazy danych?
 2. Zawęź wyniki wyszukiwania do białek zawierających peptydy sygnałowe o jakiejkolwiek doświadczalnie potwierdzonej funkcji. 
    * Ile białek znaleziono?
-   * Jak wygląda zapuytanie do bazy danych?
+   * Jak wygląda zapytanie do bazy danych?
 3. Zawęź wyniki wyszukiwania do białek pochodzących tylko z człowieka.
    * Ile białek znaleziono?
    * Jak wygląda zapytanie do bazy danych?
-
-
-### Zad. 12 - zaawansowane wyszukiwanie
-1. Znajdź wszystkie białka w UniProt pochodzące z *Neisseria gonorrhoeae* (taxId: 485). Ile białek znaleziono?
-2. Naciśnij `"Expand search "Neisseria gonorrhoeae [485]" to include lower taxonomic ranks"`. Ile białek w sumie znaleziono dla wszystkich szczepów i podgatunków Neisseria gonorrhoeae?
-3. Czy w bazie UniProt znajdują się doświadczalnie potwierdzone peptydy długości poniżej 10 aminokwasów?
-   * Większość otrzymanych białek może być fragmentami innych białek. Zawęź wyniki do sekwencji pełnej długości (`Advanced` > `Sequence` > `Fragment` > `Sequence complete`). Ile białek znalezionio?
-   * Ile z tych białek pochodzi z człowieka?
-   * Zapisz otrzymane sekwencje w formacie FASTA.

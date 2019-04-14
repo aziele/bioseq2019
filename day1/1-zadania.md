@@ -7,7 +7,6 @@ W białkowej bazie NCBI znajdź wszystkie sekwencje białkowe `alpha-globin` u z
 ### Zad. 3
 W bazie `Taxonomy` wyszukaj informacje na temat linii ewolucyjnej **myszy** i **człowieka**. Podaj najniższą wspólną rangę taksonomiczną dla tych dwóch organizmów.
 
-
 ### Zad. 4
 1. Znajdź wszystkie białka w UniProt pochodzące z *Neisseria gonorrhoeae* (taxId: 485). Ile białek znaleziono?
 2. Naciśnij `"Expand search "Neisseria gonorrhoeae [485]" to include lower taxonomic ranks"`. Ile białek w sumie znaleziono dla wszystkich szczepów i podgatunków Neisseria gonorrhoeae?
