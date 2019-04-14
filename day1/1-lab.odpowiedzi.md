@@ -207,7 +207,7 @@ using filter `has genome sequences`.
 4. W panelu zazacz `protein` i nacisnąć przycisk `Display`.
    * Dla szczura znanych jest 152 510 sekwencji białkowych.
 
-<img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png">
+<img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png" width="400px">
 
 ## UniProt
 Zadania na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Exercise:_The_protein_database_UniProt).
