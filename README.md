@@ -13,7 +13,7 @@
 
 | Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
 | :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Wyszukiwanie sekwencji podobnych (BLAST) (1) | pdf | lab | zadania |
+| 9:00-11:15 | Wyszukiwanie sekwencji podobnych (BLAST) (1) | pdf | [lab](./day2/1-lab.md) [odp](./day2/1-lab.odpowiedzi.md) | zadania |
 | 11:30-13:45 | Wyszukiwanie sekwencji podobnych (BLAST) (2) | pdf | lab | zadania |
 | 14:30-16:45 | Przyrównanie wielu sekwencji | pdf | lab | zadania |
 
