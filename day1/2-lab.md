@@ -50,7 +50,7 @@ Odpowiedz na pytania:
 
 ## Programy needle i water
 
-### Zad. 3 - przyrównanie globalne i lokalne sekwencji DNA
+### Zad. 3 - Przyrównanie globalne i lokalne sekwencji DNA
 Poniżej znajduje się sekwencja genomowa genu insuliny ponocnicny trójpręgowej oraz sekwencja CDS tego genu. 
 
 ```
@@ -103,7 +103,7 @@ Korzystając z internetowej wersji programów **needle** i **water** (<a href="h
    > Dlaczego procent identyczności przyrównania w programie needle jest niższy niż w water?
 
 
-### Zad. 4 - przyrównanie globalne i lokalne sekwencji aminokwasowych
+### Zad. 4 - Przyrównanie globalne i lokalne sekwencji aminokwasowych
 Poniżej znajdują się dwie sekwencje prokariotycznych proteaz serynowych pobrane z bazy UniProt.
 Pierwsza jest termostabilną proteazą, którą firma *Novozymes* dodaje do proszków do prania pod nazwą "Savinase". Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z inne gatunku Bacillus.
 
@@ -188,7 +188,7 @@ W trzech kartach przeglądarki internetowej porównaj powyższą sekwencję czł
 
 #### Istotność przyrównania
 
-* Otwórz program [ShuffleProtein](http://www.bioinformatics.org/sms2/shuffle_protein.html)
+* Otwórz program [ShuffleProtein](http://www.bioinformatics.org/sms2/shuffle_protein.html).
 * Umieść w oknie tekstowym sekwencję tripeptydylo-peptydazę człowieka. 
 * Wygeneruj losową sekwencję. 
 * Przyrównaj wygenerowaną sekwencję z sekwencją *Savinase* korzystając z programu water.
@@ -218,7 +218,7 @@ Jak zmienia się długość przyrównania i procent identyczności w zależnośc
 ## Porównane sekwencji: wykres Dot Plot
 
 ### Zad. 8
-W pliku [dotplot.fasta][./day1/data/dotplot.fasta] znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
+W pliku [dotplot.fasta](./day1/data/dotplot.fasta) znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
 > W polu `Matrix file` wpisz nazwę matrycy `EDNASIMPLE` (+1 dla par nukleotdów zgodnych, 0 dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`.
 
 1. s1:s1
