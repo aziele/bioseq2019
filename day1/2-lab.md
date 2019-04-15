@@ -1,22 +1,22 @@
 ## Przyrównanie sekwencji - podstawowe informacje
 
 
-### Zad. 1 - przyrównanie sekwencji nukleotydowych
+### Zad. 1 - Przyrównanie sekwencji nukleotydowych
 Wejściowe sekwencje DNA:
 
 ```
 >dna1
-GATACTA
+GATACTAT
 >dna2
-GATTTCAA
+GATTTCAAT
 ```
 
 Przyrównanie pary sekwencji (dwie formy zapisu):
 
 ```
-dna1   GA-TACTA-                       dna1   GA-TACTA-
-       || |.| |                        dna2   GATTTC-AA
-dna2   GATTTC-AA
+dna1   GA-TACTA-T                       dna1   GA-TACTA-T
+       || |.| | |                       dna2   GATTTC-AAT
+dna2   GATTTC-AAT
 ```
 
 Odpowiedz na pytania:
@@ -32,19 +32,19 @@ Odpowiedz na pytania:
    * przerwa (*gap*): `-2`
 
 
-### Zad. 2 - przyrównanie sekwencji aminokwasów
+### Zad. 2 - Przyrównanie sekwencji aminokwasów
 Poniżej znajduje się przyrównanie dwóch sekwencji białkowych.
 
 ```
-s1   MSSEATGEW                       s1   MSSEATGEW
-     ||.:.:| |                       s2   MSKQISG-W
-s2   MSKQISG-W
+s1   MSSE-                       s1   MSSE-
+     ||.:                        s2   MSKQI
+s2   MSKQI
 ```
 
 Odpowiedz na pytania:
 
 1. Ile wynosi procent *identyczności* przyrównywanych sekwencji?
-2. Podaj wartość *score* całego przyrównania przy zastosowaniu macierzy <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/matrices/BLOSUM62" target="_blank">BLOSUM62</a> i kary za przerwę: `-10`.
+2. Podaj wartość *score* całego przyrównania przy zastosowaniu macierzy <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/matrices/BLOSUM62" target="_blank">BLOSUM62</a> i kary za przerwę: `-5`.
 3. Ile wynosi procent *podobieństwa* przyrównywanych sekwencji?
 
 
@@ -105,17 +105,17 @@ Korzystając z internetowej wersji programów **needle** i **water** (<a href="h
 
 ### Zad. 4 - przyrównanie globalne i lokalne sekwencji aminokwasowych
 Poniżej znajdują się dwie sekwencje prokariotycznych proteaz serynowych pobrane z bazy UniProt.
-Pierwsza jest termostabilną proteazą, którą firma Novozymes dodaje do proszków do prania pod nazwą "Savinase". Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z inne gatunku Bacillus.
+Pierwsza jest termostabilną proteazą, którą firma *Novozymes* dodaje do proszków do prania pod nazwą "Savinase". Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z inne gatunku Bacillus.
 
 ```
->P29600|SUBS_BACLE Subtilisin Savinase - Bacillus lentus
+>P29600 SUBS_BACLE Subtilisin Savinase - Bacillus lentus
 AQSVPWGISRVQAPAAHNRGLTGSGVKVAVLDTGISTHPDLNIRGGASFVPGEPSTQDGN
 GHGTHVAGTIAALNNSIGVLGVAPSAELYAVKVLGASGSGSVSSIAQGLEWAGNNGMHVA
 NLSLGSPSPSATLEQAVNSATSRGVLVVAASGNSGAGSISYPARYANAMAVGATDQNNNR
 ASFSQYGAGLDIVAPGVNVQSTYPGSTYASLNGTSMATPHVAGAAALVKQKNPSWSNVQI
 RNHLKNTATSLGSTNLYGSGLVNAEAATR
 
->P41363|ELYA_BACHD Thermostable alkaline protease precursor - Bacillus halodurans
+>P41363 ELYA_BACHD Thermostable alkaline protease precursor - Bacillus halodurans
 MRQSLKVMVLSTVALLFMANPAAASEEKKEYLIVVEPEEVSAQSVEESYDVDVIHEFEEI
 PVIHAELTKKELKKLKKDPNVKAIEKNAEVTISQTVPWGISFINTQQAHNRGIFGNGARV
 AVLDTGIASHPDLRIAGGASFISSEPSYHDNNGHGTHVAGTIAALNNSIGVLGVAPSADL
@@ -143,16 +143,17 @@ W nowej karcie przeglądarki skorzystaj z programu Water i przyrównaj obie sekw
 
 Odszukaj dwa rekordy w bazie UniProt.
 
-6. Podaj subkomórkową lokalizację obu białek.
-7. Czy oba białka różnią się pod względem post-translacyjnych modyfikacji (`PTM / Processing`)?
-8. Czy drugie białko (`P41363`) może posłużyć jako enzym podczas prania?
+6. W jaki sposób otrzymano te dwa rekordy?
+7. Podaj subkomórkową lokalizację obu białek.
+8. Czy oba białka różnią się pod względem post-translacyjnych modyfikacji (`PTM / Processing`)?
+9. Czy drugie białko (`P41363`) może posłużyć jako enzym podczas prania?
 
 
-### Zad. 5 - przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
-Poniżej znajduje się sekwencja peptydazy człowieka (tripeptydylo-peptydaza). Przyrównaj tę sekwencję z sekwencją *Savinase* (`P29600`).
+### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
+Poniżej znajduje się sekwencja peptydazy człowieka (tripeptydylo-peptydaza).
 
 ```
->sp|P29144|TPP2_HUMAN Tripeptidyl-peptidase 2 
+>P29144 TPP2_HUMAN Tripeptidyl-peptidase 2 
 MATAATEEPFPFHGLLPKKETGAASFLCRYPEYDGRGVLIAVLDTGVDPGAPGMQVTTDG
 KPKIVDIIDTTGSGDVNTATEVEPKDGEIVGLSGRVLKIPASWTNPSGKYHIGIKNGYDF
 YPKALKERIQKERKEKIWDPVHRVALAEACRKQEEFDVANNGSSQANKLIKEELQSQVEL
@@ -176,11 +177,14 @@ QDGAISTDAEGKEEEGESPLDSLAETFWETTKWTDLFDNKVLTFAYKHALVNKMYGRGLK
 FATKLVEEKPTKENWKNCIQLMKLLGWTHCASFTENWLPIMYPPDYCVF
 ```
 
-1. Wykonaj przyrównanie globalne programem Needle.
-2. W nowej karcie przeglądarki wykonaj przyrównanie globalne programem Needle. W formularzu w sekcji `More options`, w opcji `END GAP PENALTY` wybierz `true`.
-3. W nowej karcie przeglądarki wykonaj przyrównanie lokalne programem Water. 
+W trzech kartach przeglądarki internetowej porównaj powyższą sekwencję człowieka z sekwencją *Savinase* (`P29600`) stosując:
 
-4. Które z trzech przyrównań najlepiej przedstawia podobne fragmenty dwóch porównywanych sekwencji?
+* Przyrównanie globalne.
+* Przyrównanie globalne z karą za wprowadzenie przerw na końcu przyrównania (`More options` > `END GAP PENALTY` > `true`).
+* Przyrównanie lokalne 
+
+1. Które z trzech przyrównań najlepiej przedstawia podobne fragmenty dwóch porównywanych sekwencji?
+2. Czy można odpowiedzieć na pytanie, cz obie sekwencje są ze sobą spokrewnione?
 
 #### Istotność przyrównania
 
@@ -190,14 +194,13 @@ FATKLVEEKPTKENWKNCIQLMKLLGWTHCASFTENWLPIMYPPDYCVF
 * Przyrównaj wygenerowaną sekwencję z sekwencją *Savinase* korzystając z programu water.
 * Powtórz powyższą procedurę, aby przyrównań *Savinase* z losowymi wersjami sekwencji człowieka.
 
-5. Jaki zakres punktacji, identyczności i podobieństwa przyjmują te trzy przyrównania?
-6. Porównując te przyrównania z oryginalnym przyrównaniem - czy oba białka są spokrewnione?
+3. Jaki zakres punktacji, identyczności i podobieństwa przyjmują te trzy przyrównania?
+4. Porównując te przyrównania z oryginalnym przyrównaniem - czy oba białka są spokrewnione?
 
 
 ## Wpływ parametrów na przyrównanie sekwencji
 
-
-### Zad. 6 - kara za stosowanie przerw
+### Zad. 6 - Kara za stosowanie przerw
 Używając programu Water przyrównaj sekwencję *Savinase* z sekwencją tripeptydylo-peptydazę człowieka: 
 
 1. Zmniejszając karę za otwarcie przerwy = `1` i wydłużenie przerwy = `0.2`. 
@@ -206,7 +209,7 @@ Używając programu Water przyrównaj sekwencję *Savinase* z sekwencją tripept
    * W jaki sposób zwiększenie kar za stosowanie przerw wpłynęło na to dopasowanie?
 
 
-### Zad. 7 - macierze substytucji
+### Zad. 7 - Macierze substytucji
 Używając programu Water wykonaj dwa przyrównania sekwencji *Savinase* z sekwencją tripeptydylo-peptydazę człowieka, stosując macierz substytucji `BLOSUM30` i `BLOSUM90`.
 
 Jak zmienia się długość przyrównania i procent identyczności w zależności od macierzy BLOSUM?
@@ -216,7 +219,7 @@ Jak zmienia się długość przyrównania i procent identyczności w zależnośc
 
 ### Zad. 8
 W pliku [dotplot.fasta][./day1/data/dotplot.fasta] znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
-> W polu `Matrix file` wpisz nazwę matrycy `EDNASIMPLE` (+1 dla par nukleotdów zgodnych, 0 dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`. Zapisz pliki graficzne i zinterpretuj wyniki.
+> W polu `Matrix file` wpisz nazwę matrycy `EDNASIMPLE` (+1 dla par nukleotdów zgodnych, 0 dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`.
 
 1. s1:s1
 2. s1:s10
