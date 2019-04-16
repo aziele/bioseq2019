@@ -172,10 +172,11 @@ Celem zadania jest sprawdzenie, czy gen *FOXP2* występuje również u zwierząt
 
 * W białkowej bazie NCBI znajdź sekwencję genu o nazwie *FOXP2* u człowieka. 
 * Wejdź na stronę rekordu tego białka. Przejdź na stronę serwisu BLAST bezpośrednio z rekordu sekwencji - w panelu znajdującym się po prawej stronie rekordu, w części `Analyze this sequence` wybierz opcję `Run BLAST`.
-W formularzy programu BLAST ustaw ograniczenia przeszukiwania do:
+W formularzu programu BLAST ustaw ograniczenia przeszukiwania do:
    - bazy danych RefSeq (**Database**)
    - organizmu zwierząt (*Metazoa*) z wykluczeniem sekwencji pochodzących z naczelnych (*Primaters*)
-<img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form">
+<img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form" width="500px">
+
 * Uruchom program BLAST.
 
 Z listy otrzymanych trafień wybierz jedną sekwencję, która najbardziej odpowiada sekwencji *FOXP2*.
