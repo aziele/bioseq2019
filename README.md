@@ -5,9 +5,10 @@
 
 | Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
 | :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Efektywne przeszukiwanie baz danych NCBI i UniProt | [pdf](./day1/1-slides.md) | [lab](./day1/1-lab.md) [odp](./day1/1-lab.odpowiedzi.md) | [zadania](./day1/1-zadania.md) [odp](./day1/1-zadania.odpowiedzi.md) |
-| 11:30-13:45 | Przyrównanie sekwencji parami (1) | [pdf](./day1/2-slides.pdf) | [lab](./day1/2-lab.md) [odp](./day1/2-lab.odpowiedzi.md) | [zadania](./day1/2-zadania.md) [odp](./day1/2-zadania.odpowiedzi.md) |
-| 14:30-16:45 | Przyrównanie sekwencji parami (2) | pdf | lab | zadania |
+| 9:00-11:15 | Przeszukiwanie baz danych NCBI | [pdf](./day1/1-slides.md) | [lab](./day1/1-lab.md) [odp](./day1/1-lab.odpowiedzi.md) | [zadania](./day1/1-zadania.md) [odp](./day1/1-zadania.odpowiedzi.md) |
+| 11:30-13:45 | Bazy danych UniProt, Gene Ontology | pdf | [lab](./day1/2-lab.md) [odp](./day1/2-lab.odpowiedzi.md) | [zadania](./day1/2-zadania.md) [odp](./day1/2-zadania.odpowiedzi.md) |
+| 14:30-16:45 | Przyrównanie sekwencji parami | [pdf](./day1/3-slides.pdf) | [lab](./day1/3-lab.md) [odp](./day1/3-lab.odpowiedzi.md) | [zadania](./day1/3-zadania.md) [odp](./day1/2-zadania.odpowiedzi.md) |
+
 
 ## Dzień 2
 
