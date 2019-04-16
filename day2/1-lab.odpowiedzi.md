@@ -21,7 +21,7 @@ Celem zadania jest znalezienie sekwencji mRNA insuliny najbardziej podobnych do 
 
 ##### *Homo sapiens*
 
-<img src="./images/insulin_blast1-table2.png" alt="insulin_blast1-table2.png">
+<img src="./images/insulin-blast1-table2.png" alt="insulin-blast1-table2">
 
 1. Numery dostępu sekwencji człowieka: `NM_001291897.1`, `JQ951950.1`, `NM_001185098.1`, `NM_001185097.1`, `NM_000207.2`, `BC005255.1`. Te sekwencje uzysały taką samą wartość punktacji (`Max score`), więc są równie dobre.
 2. Wartość punktacji `Max score` to `205`.
