@@ -173,18 +173,18 @@ Wybierz rekord *forkhead box protein P2 isoform I [Homo sapiens]* o numerze dost
 
 Formularz programu BLAST:
 
-<img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form">
+<img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form" width="500px">
 
 1. Sekwencją, która najbardziej odpowiada sekwenji FOXP2 człowieka, jest przewidziane białko *forkhead box protein P2* z gwiazdonosa amerykańskiego (Condylura cristata).
 2. E-value najlepiej punktowanego przyrównania wynosi `0`.
 3. Procent identyczności i podobieństwa tych dwóch sekwencji to `99%`.
 4. W przyrównaniu jest jedna przerwa, w sekwencji trafienia.
 
-<img src="./images/ncbi-blast-foxp2-hit.png" alt="ncbi-blast-foxp2-hit">
+<img src="./images/ncbi-blast-foxp2-hit.png" alt="ncbi-blast-foxp2-hit" width="500px">
 
 #### Taxonomy reports
 
 5. Wśród ssaków BLAST znalazł `81` trafień.
 6. Tak, BLAST zwrócił trafienia wśród ptaków (np. *Parus major*), gadów (np. *Crocodylus porosus*) i płazów (np. jaszczurka *Anolis carolinensis*).
 
-<img src="./images/ncbi-blast-foxp2-taxonomy.png" alt="ncbi-blast-foxp2-taxonomy">
+<img src="./images/ncbi-blast-foxp2-taxonomy.png" alt="ncbi-blast-foxp2-taxonomy" width="500px">
