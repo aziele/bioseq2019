@@ -62,11 +62,10 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 * Skorzystaj z serwisu internetowego [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/) i wygeneruj trzy losowe sekwencje DNA o długości 25pz.
 * Otwórz serwis **nucleotide BLAST**. Użyj wygenerowanych sekwencji umieszczając je w polu `Enter Query Sequence` formularza BLAST.
    * W panelu `Program Selection` wybierz program `Somewhat similar sequences (blastn)`
-   <img src="./images/ncbi-blast-algorithm_parameters1.png" alt="ncbi-blast-algorithm_parameters1.png" width="400px">
    * W panelu `Algorithm parameters` ustaw:
       - Odznacza opcję `Automatically adjust parameters for short input sequences`
       - `Expected threshold` = `50`
-    * Uruchom program BLAST.
+      <img src="./images/ncbi-blast-algorithm_parameters1.png" alt="ncbi-blast-algorithm_parameters1.png" width="400px">
 
 1. Czy BLAST zidentyfikował sekwencje w bazie danych podobne do sekwencji zapytania?
 2. Ile na ogół wynosi długość przyrównań?
@@ -128,7 +127,7 @@ Odpowiedz na pytania:
    * Jakie modyfikacje wprowadził Michael Crichron do sekwencji źródłowej?
 
 
-### Zad. 5
+### Zad. 5 - Blastx
 <img align="right" src="./images/jp-lostworld.png" alt="Jurassic Park - Lost World"> Mark Boguski, pracownik NCBI, zauważył, że sekwencje ukazana w książce *Jurassic Park* nie była zbyt dobrze dobrana. Dlatego zaproponował, aby w filmie *Jurassic Park – The Lost World* umieścić inną, lepszą sekwencję, która znajduje się poniżej.
 
 ```
@@ -167,7 +166,7 @@ W zaproponowanej przez siebie sekwencji Mark ukrył pewną wiadomość, którą
 
 
 ### Zad. 6 - Ograniczanie wyników wyszukiwania BLAST
-Gen FOXP2 u naczelnych warunkuje zdolność komunikacji werbalnej. Obecność zaledwie jednej uszkodzonej kopii tego genu u człowieka prowadzi do poważnych zaburzeń artykulacji wyrazów. 
+> Gen **FOXP2** u naczelnych warunkuje zdolność komunikacji werbalnej. Obecność zaledwie jednej uszkodzonej kopii tego genu u człowieka prowadzi do poważnych zaburzeń artykulacji wyrazów. 
 
 Celem zadania jest sprawdzenie, czy gen *FOXP2* występuje również u zwierząt innych niż naczelne.
 
@@ -176,6 +175,7 @@ Celem zadania jest sprawdzenie, czy gen *FOXP2* występuje również u zwierząt
 W formularzy programu BLAST ustaw ograniczenia przeszukiwania do:
    - bazy danych RefSeq (**Database**)
    - organizmu zwierząt (*Metazoa*) z wykluczeniem sekwencji pochodzących z naczelnych (*Primaters*)
+<img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form">
 * Uruchom program BLAST.
 
 Z listy otrzymanych trafień wybierz jedną sekwencję, która najbardziej odpowiada sekwencji *FOXP2*.
