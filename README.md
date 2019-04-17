@@ -3,7 +3,7 @@
 
 ## Dzień 1
 
-| Godzina | Temat | Slajdy | Ćwiczenia | Rozwiązania | Zadania | Odpowiedzi |
+| Godzina | Temat | Slajdy | Lab | Lab - odpowiedzi | Zadania | Zadania - odpowiedzi |
 | :---: | --- | --- | --- | --- | --- | :---: |
 | 9:00 - 11:15 | Przeszukiwanie baz danych NCBI | [pdf](./day1/1-slides.md) | [lab](./day1/1-lab.md) | [odp](./day1/1-lab.odpowiedzi.md) | [zadania](./day1/1-zadania.md) | [odp](./day1/1-zadania.odpowiedzi.md) |
 | 11:30 - 13:45 | Bazy danych UniProt, Gene Ontology | pdf | [lab](./day1/2-lab.md) | [odp](./day1/2-lab.odpowiedzi.md) | [zadania](./day1/2-zadania.md) | [odp](./day1/2-zadania.odpowiedzi.md) |
