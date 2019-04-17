@@ -3,7 +3,7 @@
 
 ## Dzień 1
 
-| <sub>Godzina</sub> | Temat | Slajdy | Lab | Lab - odpowiedzi | Zadania | Zadania - odpowiedzi |
+| <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - odpowiedzi</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
 | :---: | --- | --- | --- | --- | --- | :---: |
 | <sub>9:00 - 11:15</sub> | <sub>Przeszukiwanie baz danych NCBI</sub> | [pdf](./day1/1-slides.md) | [lab](./day1/1-lab.md) | [odp](./day1/1-lab.odpowiedzi.md) | [zadania](./day1/1-zadania.md) | [odp](./day1/1-zadania.odpowiedzi.md) |
 | <sub>11:30 - 13:45</sub> | <sub>Bazy danych UniProt, Gene Ontology</sub> | pdf | [lab](./day1/2-lab.md) | [odp](./day1/2-lab.odpowiedzi.md) | [zadania](./day1/2-zadania.md) | [odp](./day1/2-zadania.odpowiedzi.md) |
