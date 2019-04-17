@@ -116,3 +116,4 @@ Wejdź na stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/).
 8. W panelu `Filter results` rozwiń opcję `Type` i wybierz `protein`. Następnie rozwiń opcję `Contributor` i wybierz `UniProt`. Lista obejmuje `1098` genów kodujących białko.
 
 9. Wybierz dowolne białko z listy (np. [ACVR1C](http://amigo.geneontology.org/amigo/gene_product/UniProtKB:Q8NER5)). Ze strony Gene Ontology poświęconej temu białku, naciśnij na numer dostępu tego białka w UniProt ([Q8NER5](https://www.uniprot.org/uniprot/Q8NER5)). W rekordzie UniProt, w części `Function` znajduje się lista wszystkich funkcji oraz procesów biologicznych, w które zaangażowane jest białko `Q8NER5`. Przykładowymi procesami - innymi niż PCD - w które zaangażowane jest to białko to odpowiedź na insulinę lub glukozę.
+
