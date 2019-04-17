@@ -204,6 +204,8 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
 
 
 ### Zad. 2
+Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Bioinformatics_in_practice,_Faroe_Islands_2018#Morning:_Multiple_alignments)
+
 Przyrównanie sekwencji kodujących (CDS) alfa-globin przy użyciu programu MAFFT.
 
 ```
@@ -306,3 +308,148 @@ Horse_alpha-1_g TACCGTTAA
 Horse_alpha-2_g TACCGTTAA
                 *** * *..
 ```
+
+1. Jest jeden fragment >10 nukleotydów (23 nt) całkowicie zachowany we wszystkich sekwencjach. Sekwencja fragmentu to `ACCAAGACCTACTTCCCCCACTT`.
+
+Zakładka `Guide Tree` dostaracza graficznej informacji na temat dystansów sekwencji.
+> `Guide Tree` *nie jest* prawdziwym drzewem filogenetycznym. Drzewo wiodące jest wyznaczone na podstawie przyrównań par sekwencji, natomiast drzewo filenetyczne jest budowna w oparciu o przyrównanie wielu sekwencji - będziemy o tym mówić jutro. 
+
+<img src="./images/mafft-guide-tree.png" alt="mafft-guide-tree">
+
+2. Drzewo wiodące wyróżnia 3 grupy genów alfa-globin:
+   * Alfa-A (tylko ptaki)
+   * Alfa-D (tylko ptaki)
+   * Alfa 1 + 2 (ssaki)
+
+   Na drzewie, geny należące do ptaków i ssaków stanowią odrębne grupy i są one ułożone naturalnie w sensie taksonomicznym. Geny alfa-A i alfa-D stanowią odrębne grupy, co wskazuje, że podział na te dwie klasy A i D jest stary. Ze względu na to, że geny alfa-A i alfa-D są obecne u wszystkich trzech ptaków, geny te najprawdopodobniej były obecne u wspólnego przodka ptaków.
+
+   Geny alfa-1 i alfa-2 są blisko spokrewnione na drzewie. 
+
+
+#### JalView - wizualizacja przyrównania
+Otwórz przyrównanie w programie JalView (zakładka `Alignment` > `View result with JalView`)
+W programie JalView z manu wybierz `Colour` > `Nucleotide`.
+
+<img src="./images/JalView-dna1.png" alt="JalView-dna1">
+
+3. Skieruj kursor myszy na początek najdłuższy zachowany fragment sekwencji `ACCAAGACCTACTTCCCCCACTT`. U dołu okna programu JalView znajduje się odpowiadająca mu pozycja w przyrównaniu. Fragment znajduje się w pozycji `118-140`.
+
+* Ustawienie koloru przyrównania według poziomu identyczności: `Colour` > `% Identity`. 
+
+<img src="./images/JalView-dna2.png" alt="JalView-dna2">
+
+* Zaznacz myszką najbardziej zachowany fragment przyrównania. Naciśnij prawy przycisk myszy na przyrównanie wybierz `Selection` > `New group`. Następnie `Selection` > `Edit Group` > `Border colour`.
+
+<img src="./images/JalView-dna3.png" alt="JalView-dna3">
+
+
+### Zad. 3
+Translacja sekwencji CDS alfa-globin przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/).
+
+```
+>pigeon_alpha-D-globin_1
+MLTDSDKKLVLQVWEKVIRHPDCGAEALERLFTTYPQTKTYFPHFDLHHGSDQVRNHGKK
+VLAALGNAVKSLGNLSQALSDLSDLHAYNLRVDPVNFKLLAQCFHVVLATHLGNDYTPEA
+HAAFDKFLSAVCTVLAEKYR*
+>pigeon_alpha-A-globin_1
+MVLSANDKSNVKAVFGKIGGQAGDLGGEALERLFITYPQTKTYFPHFDLSHGSAQIKGHG
+KKVAEALVEAANHIDDIAGALSKLSDLHAQKLRVDPVNFKLLGHCFLVVVAVHFPSLLTP
+EVHASLDKFVCAVGTVLTAKYR*
+>duck_alpha-D-globin_1
+MLTAEDKKLIVQVWEKVAGHQEEFGSEALQRMFLAYPQTKTYFPHFDLHPGSEQVRGHGK
+KVAAALGNAVKSLDNLSQALSELSNLHAYNLRVDPVNFKLLAQCFQVVLAAHLGKDYSPE
+MHAAFDKFLSAVAAVLAEKYR*
+>duck_alpha-A-globin_1
+MVLSAADKTNVKGVFSKIGGHAEEYGAETLERMFIAYPQTKTYFPHFDLQHGSAQIKAHG
+KKVAAALVEAVNHIDDIAGALSKLSDLHAQKLRVDPVNFKFLGHCFLVVVAIHHPAALTP
+EVHASLDKFMCAVGAVLTAKYR*
+>Goat_alpha-i-globin_1
+MVLSAADKSNVKAAWGKVGGNAGAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+EKVAAALTKAVGHLDDLPGTLSDLSDLHAHKLRVDPVNFKLLSHSLLVTLACHLPNDFTP
+AVHASLDKFLANVSTVLTSKYR*
+>Goat_alpha-ii-globin_1
+MVLSAADKSNVKAAWGKVGSNAGAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+EKVAAALTKAVGHLDDLPGTLSDLSDLHAHKLRVDPVNFKLLSHSLLVTLACHHPSDFTP
+AVHASLDKFLANVSTVLTSKYR*
+>Horse_alpha-1_globin_1
+MVLSAADKTNVKAAWSKVGGHAGEFGAEALERMFLGFPTTKTYFPHFDLSHGSAQVKAHG
+KKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLSHCLLSTLAVHLPNDFTP
+AVHASLDKFLSSVSTVLTSKYR*
+>Horse_alpha-2_globin_1
+MVLSAADKTNVKAAWSKVGGHAGEYGAEALERMFLGFPTTKTYFPHFDLSHGSAQVKAHG
+QKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLSHCLLSTLAVHLPNDFTP
+AVHASLDKFLSSVSTVLTSKYR*
+>Chicken_alpha-D_1
+MLTAEDKKLIQQAWERAASHQEEFGAEALTRMFTTYPQTKTYFPHFDLSPGSDQVRGHGK
+KVLGALGNAVKNVDNLSQAMAELSNLHAYNLRVDPVNFKLLSQCIQVVLAVHMGKDYTPE
+VHAAFDKFLSAVSAVLAEKYR*
+>Chicken_alpha-A_1
+MVLSAADKNNVKGIFTKIAGHAEEYGAETLERMFTTYPPTKTYFPHFDLSHGSAQIKGHG
+KKVVAALIEAANHIDDIAGTLSKLSDLHAHKLRVDPVNFKLLGQCFLVVVAIHHPAALTP
+EVHASLDKFLCAVGTVLTAKYR*
+```
+
+Przyrównanie otrzymanych sekwencji białkowych uzyskane za pomocą programu MAFFT.
+
+```
+CLUSTAL format alignment by MAFFT FFT-NS-i (v7.397)
+
+
+pigeon_alpha-D- M-LTDSDKKLVLQVWEKVIRHP-DCGAEALERLFTTYPQTKTYFPHFDLHHGSDQVRNHG
+duck_alpha-D-gl M-LTAEDKKLIVQVWEKVAGHQEEFGSEALQRMFLAYPQTKTYFPHFDLHPGSEQVRGHG
+Chicken_alpha-D M-LTAEDKKLIQQAWERAASHQEEFGAEALTRMFTTYPQTKTYFPHFDLSPGSDQVRGHG
+pigeon_alpha-A- MVLSANDKSNVKAVFGKIGGQAGDLGGEALERLFITYPQTKTYFPHFDLSHGSAQIKGHG
+duck_alpha-A-gl MVLSAADKTNVKGVFSKIGGHAEEYGAETLERMFIAYPQTKTYFPHFDLQHGSAQIKAHG
+Chicken_alpha-A MVLSAADKNNVKGIFTKIAGHAEEYGAETLERMFTTYPPTKTYFPHFDLSHGSAQIKGHG
+Goat_alpha-i-gl MVLSAADKSNVKAAWGKVGGNAGAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+Goat_alpha-ii-g MVLSAADKSNVKAAWGKVGSNAGAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+Horse_alpha-1_g MVLSAADKTNVKAAWSKVGGHAGEFGAEALERMFLGFPTTKTYFPHFDLSHGSAQVKAHG
+Horse_alpha-2_g MVLSAADKTNVKAAWSKVGGHAGEYGAEALERMFLGFPTTKTYFPHFDLSHGSAQVKAHG
+                * *:  **. :   : :   :    *.*:* *:*  :* **********  ** *:: **
+
+pigeon_alpha-D- KKVLAALGNAVKSLGNLSQALSDLSDLHAYNLRVDPVNFKLLAQCFHVVLATHLGNDYTP
+duck_alpha-D-gl KKVAAALGNAVKSLDNLSQALSELSNLHAYNLRVDPVNFKLLAQCFQVVLAAHLGKDYSP
+Chicken_alpha-D KKVLGALGNAVKNVDNLSQAMAELSNLHAYNLRVDPVNFKLLSQCIQVVLAVHMGKDYTP
+pigeon_alpha-A- KKVAEALVEAANHIDDIAGALSKLSDLHAQKLRVDPVNFKLLGHCFLVVVAVHFPSLLTP
+duck_alpha-A-gl KKVAAALVEAVNHIDDIAGALSKLSDLHAQKLRVDPVNFKFLGHCFLVVVAIHHPAALTP
+Chicken_alpha-A KKVVAALIEAANHIDDIAGTLSKLSDLHAHKLRVDPVNFKLLGQCFLVVVAIHHPAALTP
+Goat_alpha-i-gl EKVAAALTKAVGHLDDLPGTLSDLSDLHAHKLRVDPVNFKLLSHSLLVTLACHLPNDFTP
+Goat_alpha-ii-g EKVAAALTKAVGHLDDLPGTLSDLSDLHAHKLRVDPVNFKLLSHSLLVTLACHHPSDFTP
+Horse_alpha-1_g KKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLSHCLLSTLAVHLPNDFTP
+Horse_alpha-2_g QKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLSHCLLSTLAVHLPNDFTP
+                :**  **  *.  :.::. :::.**:*** :*********:*.:.:  .:* *     :*
+
+pigeon_alpha-D- EAHAAFDKFLSAVCTVLAEKYR*
+duck_alpha-D-gl EMHAAFDKFLSAVAAVLAEKYR*
+Chicken_alpha-D EVHAAFDKFLSAVSAVLAEKYR*
+pigeon_alpha-A- EVHASLDKFVCAVGTVLTAKYR*
+duck_alpha-A-gl EVHASLDKFMCAVGAVLTAKYR*
+Chicken_alpha-A EVHASLDKFLCAVGTVLTAKYR*
+Goat_alpha-i-gl AVHASLDKFLANVSTVLTSKYR*
+Goat_alpha-ii-g AVHASLDKFLANVSTVLTSKYR*
+Horse_alpha-1_g AVHASLDKFLSSVSTVLTSKYR*
+Horse_alpha-2_g AVHASLDKFLSSVSTVLTSKYR*
+                  **::***:. * :**: *** 
+```
+
+1. W przyrównaniu są dwa dłuższe fragmenty sekwencji o nieprzerwanej identyczności.
+   * 11-aminokwasowa sekwencja `TKTYFPHFDL` bliżej N-końca białka. Fragment ten odpowiada sekwencji CDS w pozycji `118-140`. 
+   * 9-aminokwasowa sekwencja `LRVDPVNFK` bliżej C-końca białka
+
+#### Wizualizacja w JalView
+
+<img src="./images/JalView-protein1.png" alt="JalView-protein1">
+
+2. W analizowanych sekwencja nastąpiły 2 delecje:
+   * 1 delecja pojedynczego aminokwasu `V` w 2-giej pozycji przyrównania.
+   * 1 delecja pojedynczego aminokwasu `E`/`G` w 23-ciej pozycji przyrównania.
+
+3. Nie, przyrównanie sekwencji CDS nie odpowiada w pełni przyrównaniu sekwencji białkowych. W drugiej pozycji przyrównania białek nastąpiła delecja aminokwasu. Zatem w przyrównaniu na poziomie DNA powinna być delecja odpowiadająca trzem nukleotydom, tuż za kodonem START. Natomiast w otrzymanym przyrównaniu DNA wprowadzono przerwy zaraz za pierwszym nukleotydem. Przerwy powinny zostać wprowadzone za trzema pierwszymi nukleotydmi ATG.
+
+```
+pigeon_alpha-D  A---TGCTGACCGACTCTG
+duck_alpha-D-gl A---TGCTGACCGCCGAGG
+Chicken_alpha-D A---TGCTGACTGCCGAGG
+pigeon_alpha-A  ATGGTGCTGTCTGCCAACG
+```
+
