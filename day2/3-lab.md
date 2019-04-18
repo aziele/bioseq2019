@@ -55,4 +55,25 @@ Wyświetl uzyskane przyrównanie w programie JalView.
 
 2. Zidentyfikuj wszystkie delecje w przyrównaniu.
 3. Czy poprzednie przyrównanie sekwencji CDS w pełni odpowiada przyrównaniu sekwencji aminokwasowych?
-   * Czy przyrównanie sekwencji CDS jest poprawne? 
+   * Czy przyrównanie sekwencji CDS jest poprawne?
+
+
+### Zad. 4 - Alternatywny splicing i izoformy białek
+W pliku [EPB4.1_human.fasta](./data/EPB4.1_human.fasta) znajduje się 11 izoform białka człowieka 
+błony komórkowej erytrocytów (EPB, *human erythrocyte membrane protein band 4.1*).
+
+Celem zadania jest porównanie 3 programów służących do przyrównywania sekwencji i dpowiedzenie na pytanie, jak dobrze, te programy są w stanie przyrównać sekwnecje, które są identyczne (nie ma substytucji aminokwasowych) z wyjątkiem tego, że mają delecje.
+
+Przyrównaj sekwencje `EPB4.1_human` używając programów **MAFFT**, **MUSCLE** i **Kalign** dostępnych na stronie [EBI Multiple Sequence Alignment](https://www.ebi.ac.uk/Tools/msa/). Wykonaj przyrównania w osobnych kartach przeglądarki. Porównaj uzyskane przyrównania (możesz skorzystać z JalView).
+
+1. Czy uzyskane przyrównania są różne?
+2. Czy któryś z programów rozwiązał problem całkowicie poprawnie?
+
+
+### Zad. 5 - Przyrównanie sekwencji CDS w oparciu o sekwencje białek
+Celem zadania jest wykorzystanie informacji zawartej w sekwencjach białkowych do utworzenia prawidłowego przyrównania sekwencji CDS.
+
+W pliku [insulin.cds.clean.fasta](./data/insulin.cds.clean.fasta) znajdują się sekwencje CDS insuliny (bez zduplikowanych sekwencj identycznych). Otwórz program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/). Umieść sekwencje CDS w polu `Paste in DNA sequences` i wykonaj przyrównanie.
+
+1. Czy liczba przerw jest zawsze podzielna przez 3?
+2. Czy wszystkie kodony zostały przyrównane? (pierwsza pozycja kodonu powinna być w tej samej kolumnie co pozostałe pierwsze pozycje kodonu w innych sekwencjach)
