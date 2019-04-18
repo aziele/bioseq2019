@@ -77,3 +77,54 @@ W pliku [insulin.cds.clean.fasta](./data/insulin.cds.clean.fasta) znajdują się
 
 1. Czy liczba przerw jest zawsze podzielna przez 3?
 2. Czy wszystkie kodony zostały przyrównane? (pierwsza pozycja kodonu powinna być w tej samej kolumnie co pozostałe pierwsze pozycje kodonu w innych sekwencjach)
+
+
+## Logo wielu sekwencji
+
+### Zad. 6 - Miejsca donorowe egzonów
+Poniżej znajdują się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu bezprośrednio PRZED i PO miejscem exon/intron.
+
+```
+CAAAACCATTGTGAGTAATC
+GCCAGAGCAGGTAAAATATC
+GAACAGTCAGGTCTGTTGCT
+GAAGGCCCAGGTGAGCATAA
+TCCTCTACAGGTGGGTACAT
+GGCGTCCCGCGTAAGTATGG
+CCTCGTGCAGGTAAGATTAA
+TGCATGACAGGTGAGTGTTA
+GAAATGTACAGTAAGTCTCT
+GGTTCTCTGGGTAAGTAGAG
+AAATGTACAGGTGAGTACTG
+ACCTCGCTTGGTACGTGGGA
+AATCAGACAGGTATAGAAAC
+AGGACAGAAGGTAATTTTCT
+AACTATTTGGGTAGGTAGCA
+GAACTTCCAGGTGTGTGCAG
+AAACTTGAAGGTATGTTGTT
+CTGGGATAAGGTAAAAGTAT
+TTGCACCCAGGTTAGTGGAT
+ACTTCAATCGGTATGTTTTC
+```
+
+* Otwórz stronę programu [WebLogo](http://weblogo.berkeley.edu/logo.cgi).
+* Umieść sekwencje w polu `Multiple Sequence Alignment`.
+* Utwórz logo naciskając przycisk `Create logo`
+
+1. Czy możliwe jest zidentyfikowanie miejsca donorowego?
+   * Ile bitów informacji znajduje się w pozycji zawierającej `GT`?
+2. Ile nukleotydów należy do egzonu, a ile do intronu?
+
+#### Ustawienia LOGO
+* Ponieważ interesującą częścią sekwencji jest granica exon/intron, zmienione zostanie numerowanie nukleotydów tak, aby `GT` miało pozycję `0`. 
+  W formularzu programu WebLogo ustaw:
+  - `First position number` na `-10`. 
+  - tytuł wykresu (`Title`) na `Human donor sites -10/+10`
+* Wygeneruj kolejne logo, aby pokazana była na nim częstość występowania nukleotydu w każdej pozycji (`Frequency plot`)
+
+
+### Zad. 7
+W pliku [ecoli_promotor.fasta](./data/ecoli_promotor.fasta) znajduje się 350 sekwencji regionów promotorów *E. coli*, które obejmują fragment 10pz upstream, nazywany kasetą Pribnowa. Wykonaj logo tych sekwencji. Zidentyfikuj kasetę Pribnowa.
+
+
+## Zad. 8

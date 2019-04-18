@@ -345,3 +345,8 @@ SeaHare_AF16019 NQCRIFELAQYCRLPDHFFSRISRTGRSNSGHAQLEDNFSX
 5. Wszystkie sekwencje białkowe świni są identyczne na poziomie aminokwasów:
 
 <img src="./images/mafft-insulin-guide_tree.pep.png" alt="mafft-insulin-guide_tree.pep" width="500px">
+
+### Zad. 2
+Miejsca akceptorowe Intron-Egzon:
+
+<img src="./images/logo-acceptor.png" alt="logo-acceptor">

@@ -1047,3 +1047,33 @@ Mouse          ---------
 1. Tak, liczba przerw jest podzielna przez 3.
 2. Tak, pozycje w kodonach odpowiadają sobie, ponieważ przyrównanie sekwencji CDS zostało zbudowane na podstawie przyrównania sekwencji białek.
 
+
+## Logo wielu sekwencji
+
+
+### Zad. 6
+Sekwencje donorowe egzonów genu człowieka.
+
+<img src="./images/logo1.png" alt="logo1">
+
+1. Miejsce donorowe (`GT`) jest widoczne (całkowicie zachowane: 2 bity informacji). Również widoczny jest prawdopodobny sygnał na miejscu należącym do egoznu (preferencja dla `G` na pozycji przed miejscem `GT`)
+2. Egzon: `1-10`, Intron: `11-20`.
+
+#### Zmiana numerowania nukleotydów
+
+<img src="./images/logo2.png" alt="logo2">
+
+#### Frequency plot
+
+<img src="./images/logo3.png" alt="logo3">
+
+
+### Zad. 7
+
+#### Logo, domyślne parametry
+
+<img src="./images/logo-ecoli1.png" alt="logo-ecoli1">
+
+#### Logo, pozycje nukleotydów, tytuł
+
+<img src="./images/logo-ecoli2.png" alt="logo-ecoli2">
