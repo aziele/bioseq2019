@@ -20,11 +20,11 @@
 
 ## Dzień 3
 
-| Godzina | Temat | Slajdy | Ćwiczenia | Zadania |
-| :---: | ----- | --- | --- | :---: |
-| 9:00-11:15 | Wzorce sekwencyjne | pdf | lab | zadania |
-| 11:30-13:45 | Motywy i domeny białkowe (PROSITE, Pfam, InterPro) | pdf | lab | zadania |
-| 14:30-16:45 | Analiza filogenetyczna | pdf | lab | zadania |
+| <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - rozwiązanie</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
+| :---: | --- | --- | --- | --- | --- | :---: |
+| <sub>9:00 - 11:00</sub> | <sub>Wzorce / Profile sekwencji (PSI-BLAST)</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
+| <sub>11:15 - 13:15</sub> | <sub>Motywy i domeny białkowe</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
+| <sub>14:00 - 16:00</sub> | <sub>Analiza filogenetyczna</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 
 
 ## Oprogramowanie:

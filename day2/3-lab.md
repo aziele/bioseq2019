@@ -125,6 +125,3 @@ ACTTCAATCGGTATGTTTTC
 
 ### Zad. 7
 W pliku [ecoli_promotor.fasta](./data/ecoli_promotor.fasta) znajduje się 350 sekwencji regionów promotorów *E. coli*, które obejmują fragment 10pz upstream, nazywany kasetą Pribnowa. Wykonaj logo tych sekwencji. Zidentyfikuj kasetę Pribnowa.
-
-
-## Zad. 8
