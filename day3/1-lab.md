@@ -73,7 +73,7 @@ Otwórz stronę programu [NCBI PSSM Viewer](https://www.ncbi.nlm.nih.gov/Class/S
 * Zaznacz opcję `FASTA file` i załaduj plik z sekwencją QUERY.
 * Naciśnij przycisk `Matrix View`
 
-<img src="ncbi-pssm-viewer1.png" alt="ncbi-pssm-viewer1.png">
+<img src="./images/ncbi-pssm-viewer1.png" alt="ncbi-pssm-viewer1.png">
 
 1. Wybierz cztery pozycje w sekwencji, które są dobrymi kandytami do przeprowadzania mutagenezy. Dla ułatwienia, wybierz cztery propozycje z poniższych ośmiu propozycji:
    * H271
