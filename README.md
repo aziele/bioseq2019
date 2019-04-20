@@ -24,9 +24,10 @@
 | :---: | --- | --- | --- | --- | --- | :---: |
 | <sub>9:00 - 11:00</sub> | <sub>Profile sekwencji (PSI-BLAST)</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/1-lab.md)</sub> | <sub>[rozwiązanie](./day3/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/1-zadania.md)</sub> | <sub>[odpowiedzi](./day3/1-zadania.odpowiedzi.md)</sub> |
 | <sub>11:15 - 13:15</sub> | <sub>Motywy i domeny białkowe</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
-| <sub>14:00 - 16:00</sub> | <sub>Analiza filogenetyczna</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
+| <sub>14:00 - 16:00</sub> | <sub>Analiza filogenetyczna</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/3-lab.md)</sub> | <sub>[rozwiązanie](./day3/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/3-zadania.md)</sub> | <sub>[odpowiedzi](./day3/3-zadania.odpowiedzi.md)</sub> |
 
 
 ## Oprogramowanie:
 1. [JalView](http://www.jalview.org) - wizualizacja, edycja i analiza przyrównań wielu sekwencji (MSA)
-2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna 
+2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna
+3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wizualizacja drzew filogenetycznych
