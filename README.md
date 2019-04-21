@@ -7,7 +7,7 @@
 | :---: | --- | --- | --- | --- | --- | :---: |
 | <sub>9:00 - 11:00</sub> | <sub>Przeszukiwanie baz danych NCBI</sub> | <sub>[slajdy](./day1/1-slides.md)</sub> | <sub>[lab](./day1/1-lab.md)</sub> | <sub>[rozwiązanie](./day1/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day1/1-zadania.md)</sub> | <sub>[odpowiedzi](./day1/1-zadania.odpowiedzi.md)</sub> |
 | <sub>11:15 - 13:15</sub> | <sub>Bazy danych UniProt, Gene Ontology</sub> | <sub>slajdy</sub> | <sub>[lab](./day1/2-lab.md)</sub> | <sub>[rozwiązanie](./day1/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day1/2-zadania.md)</sub> | <sub>[odpowiedzi](./day1/2-zadania.odpowiedzi.md)</sub> |
-| <sub>14:00 - 16:00</sub> | <sub>Przyrównanie sekwencji parami</sub> | <sub>[slajdy](./day1/3-slides.pdf)</sub> | <sub>[lab](./day1/3-lab.md)</sub> | <sub>[rozwiązanie](./day1/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day1/3-zadania.md)</sub> | <sub>[odpowiedzi](./day1/2-zadania.odpowiedzi.md)</sub> |
+| <sub>14:00 - 16:00</sub> | <sub>Przyrównanie sekwencji parami</sub> | <sub>[slajdy](./day1/3-slides.pdf)</sub> | <sub>[lab](./day1/3-lab.md)</sub> | <sub>[rozwiązanie](./day1/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day1/3-zadania.md)</sub> | <sub>[odpowiedzi](./day1/3-zadania.odpowiedzi.md)</sub> |
 
 
 ## Dzień 2
