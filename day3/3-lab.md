@@ -60,8 +60,6 @@ Użyj funkcji `Subtree` > `Compress/Expand` i ukryj klad składający się z tak
 
 Oblicz odległości w dopasowaniu par sekwencji analizowanych białek gp120 [główne okno programu > `Analysis` > `Distance` > `Compute Pairwise`].
 
-![MEGA 03](./images/MEGA03.png)
-
 2. Która para białek gp120 jest najbliżej, a która najdalej spokrewniona?
 
 

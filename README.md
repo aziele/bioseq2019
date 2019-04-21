@@ -31,3 +31,16 @@
 1. [JalView](http://www.jalview.org) - wizualizacja, edycja i analiza przyrównań wielu sekwencji (MSA)
 2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna
 3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wizualizacja drzew filogenetycznych
+
+
+## TODO
+1. Slajdy
+2. BLAST (cały lab i zadania: dzień2 - lab2)
+   * różna długość query różne E-value
+   * Database as Entrez query
+   * blast2seq
+   * BLAST to genome (query E.coli > genome Klebsiella)
+3. Motywy i domeny białkowe (cały lab i zadania)
+   * PROSITE, Pfam, InterProt
+4. Bazy danych UniProt i GeneOntology (rozszerzyć lab i ew. zadania)
+   * UniProt Reference Proteomes
