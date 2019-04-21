@@ -53,3 +53,7 @@
    * lab - odpowiedzi
    * zadania
    * zadania - odpowiedzi
+
+# Pociągi
+DO KRAKOWA: 06.05.2019 odj. 13:34 - 18:39 (czas. 5:05), TLK
+DO POZNANIA: 09.05.2019 odj. 17:18 - 22:16 (czas. 4:58), TLK
