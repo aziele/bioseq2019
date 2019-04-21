@@ -715,42 +715,46 @@ Macierz substytucji (np. BLOSUM62) dostarcza informacji na temat wartości punkt
 #### BLOSUM30
 
 ```
-# Matrix: EBLOSUM62
+# Matrix: EBLOSUM30
 # Gap_penalty: 10.0
 # Extend_penalty: 0.5
 #
-# Length: 296
-# Identity:      71/296 (24.0%)
-# Similarity:   129/296 (43.6%)
-# Gaps:          73/296 (24.7%)
-# Score: 173.0
+# Length: 326
+# Identity:      76/326 (23.3%)
+# Similarity:   149/326 (45.7%)
+# Gaps:          88/326 (27.0%)
+# Score: 342.5
 # 
 #
 #=======================================
 
-P29600            23 GSGVKVAVLDTGISTHPDLNIRGGASFVPGEPSTQDGNGHGTHVAGTIAA     72
-                     ||.....:|:..::.:.|.|:   .|.|      ..|..|||||| :|||
-P29144           234 GSFGTAEMLNYSVNIYDDGNL---LSIV------TSGGAHGTHVA-SIAA    273
+P29600             6 WGISRVQAPAAHNRGLT--------------GSGVKVAVLDTGISTHPDL     41
+                     |   |:...:..:..|:              ||...:..|:..:....|.
+P29144           206 W---RACIDSNEDGDLSKSTVLRNYKEAQEYGSFGTAEMLNYSVNIYDDG    252
 
-P29600            73 LNNSIGVL-------GVAPSAELYAVKV------LGASGSGSVSSIAQGL    109
-                          |..       ||||.|::.::|:      ...:|:|.:.::.:.:
-P29144           274 -----GHFPEEPERNGVAPGAQILSIKIGDTRLSTMETGTGLIRAMIEVI    318
+P29600            42 NIRGGASFVPGEPSTQDGNGHGTHVAGTIAALNNSIGVL-------GVAP     84
+                     |:...::         .|..|||||| :|||     |.:       ||||
+P29144           253 NLLSIVT---------SGGAHGTHVA-SIAA-----GHFPEEPERNGVAP    287
 
-P29600           110 EWAGNNGMHVANLSLGSPS---PSATLEQAVNSAT-SRGVLVVAASGNSG    155
-                         |:...:.|.|.|..:   .|..:.:.:|.|. ...::.|:::||:|
-P29144           319 ----NHKCDLVNYSYGEATHWPNSGRICEVINEAVWKHNIIYVSSAGNNG    364
+P29600            85 SAELYAVKV------LGASGSGSVSSIAQGLEWAGNNGMHVANLSLGSPS    128
+                     .|:::::|:      ...:|:|.:.::.:    :.|....::|:|:|..:
+P29144           288 GAQILSIKIGDTRLSTMETGTGLIRAMIE----VINHKCDLVNYSYGEAT    333
 
-P29600           156 --AGSISYP-ARYANAMAVGATDQNN--------------NRASFSQYGA    188
-                       ..::..| ...::.:.|||....:              |:.::|..|.
-P29144           365 PCLSTVGCPGGTTSSVIGVGAYVSPDMMVAEYSLREKLPANQYTWSSRGP    414
+P29600           129 --P-SATLEQAVNSAT-SRGVLVVAASGNSG--AGSISYPAR-YANAMAV    171
+                       | |..:::::|.|: ...:::|:::||.|  ..::..|.. .:.::.|
+P29144           334 HWPNSGRICEVINEAVWKHNIIYVSSAGNNGPCLSTVGCPGGTTSSVIGV    383
 
-P29600           189 GLDIVAPGVNVQSTYPGSTYAS-----------LNGTSMATPHVAGAAAL    227
-                     ..| .|.||::.:  ||...||           :|||||::|:..|..||
-P29144           415 SAD-GALGVSISA--PGGAIASVPNWTLRGTQLMNGTSMSSPNACGGIAL    461
+P29600           172 GA-TDQNNNRASFS--------QY----------GA-GLDIVAPGVNVQS    201
+                     || :..:...|.:|        ||          || |:.|.|||..::|
+P29144           384 GAYVSPDMMVAEYSLREKLPANQYTWSSRGPSADGALGVSISAPGGAIAS    433
 
-P29600           228 V----KQKNPSWSNVQIRNHLKNTATSLGSTNLY--GSGLVNAEAA    267
-                     :    |..|..::...:|..|:|||....:..::  |.|::..:.|
-P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
+P29600           202 ----TYPGSTYASLNGTSMATPHVAGAAALV----KQKNPSWSNVQIRNH    243
+                         |:.|:.:  :|||||::|.:.|..||:    |:.|..::...:|..
+P29144           434 VPNWTLRGTQL--MNGTSMSSPNACGGIALILSGLKANNIDYTVHSVRRA    481
+
+P29600           244 LKNTATSLGSTNLY--GSGLVNAEAA    267
+                     |:|||:......::  |.|::.::.|
+P29144           482 LENTAVKADNIEVFAQGHGIIQVDKA    507
 ```
 
 #### BLOSUM62
@@ -797,42 +801,42 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 #### BLOSUM90
 
 ```
-# Matrix: EBLOSUM62
+# Matrix: EBLOSUM90
 # Gap_penalty: 10.0
 # Extend_penalty: 0.5
 #
-# Length: 296
-# Identity:      71/296 (24.0%)
-# Similarity:   129/296 (43.6%)
-# Gaps:          73/296 (24.7%)
-# Score: 173.0
+# Length: 279
+# Identity:      73/279 (26.2%)
+# Similarity:   107/279 (38.4%)
+# Gaps:          91/279 (32.6%)
+# Score: 147.5
 # 
 #
 #=======================================
 
-P29600            23 GSGVKVAVLDTGISTHPDLNIRGGASFVPGEPSTQDGNGHGTHVAGTIAA     72
-                     ||.....:|:..::.:.|.|:   .|.|      ..|..|||||| :|||
-P29144           234 GSFGTAEMLNYSVNIYDDGNL---LSIV------TSGGAHGTHVA-SIAA    273
+P29600            58 DGN---------GHGTHVAGTIAA--------LNNSIGVLGVAPSAELYA     90
+                     |||         .|||||| :|||        .|      ||||.|::.:
+P29144           251 DGNLLSIVTSGGAHGTHVA-SIAAGHFPEEPERN------GVAPGAQILS    293
 
-P29600            73 LNNSIGVL-------GVAPSAELYAVKV------LGASGSGSVSSIAQGL    109
-                          |..       ||||.|::.::|:      ...:|:|.:.::.:.:
-P29144           274 -----GHFPEEPERNGVAPGAQILSIKIGDTRLSTMETGTGLIRAMIEVI    318
+P29600            91 VKVLGASGSGSVSSIAQGLEWAG---------NNGMHVANLSLGSPS--P    129
+                     :|:    |....|::..|   .|         |......|.|.|..:  |
+P29144           294 IKI----GDTRLSTMETG---TGLIRAMIEVINHKCDLVNYSYGEATHWP    336
 
-P29600           110 EWAGNNGMHVANLSLGSPS---PSATLEQAVNSAT-SRGVLVVAASGNSG    155
-                         |:...:.|.|.|..:   .|..:.:.:|.|. ...::.|:::||:|
-P29144           319 ----NHKCDLVNYSYGEATHWPNSGRICEVINEAVWKHNIIYVSSAGNNG    364
+P29600           130 -SATLEQAVNSAT-SRGVLVVAASGNSG---------AGSISYPARYANA    168
+                      |..:.:.:|.|. ...::.|:::||.|         .|:.|      ..
+P29144           337 NSGRICEVINEAVWKHNIIYVSSAGNNGPCLSTVGCPGGTTS------SV    380
 
-P29600           156 --AGSISYP-ARYANAMAVGATDQNN--------------NRASFSQYGA    188
-                       ..::..| ...::.:.|||....:              |:.::|..|.
-P29144           365 PCLSTVGCPGGTTSSVIGVGAYVSPDMMVAEYSLREKLPANQYTWSSRGP    414
+P29600           169 MAVGA-TDQNNNRASFS--------QY----------GA-GLDIVAPGVN    198
+                     :.||| ...:...|.:|        ||          || |..|.|||..
+P29144           381 IGVGAYVSPDMMVAEYSLREKLPANQYTWSSRGPSADGALGVSISAPGGA    430
 
-P29600           189 GLDIVAPGVNVQSTYPGSTYAS-----------LNGTSMATPHVAGAAAL    227
-                     ..| .|.||::.:  ||...||           :|||||::|:..|..||
-P29144           415 SAD-GALGVSISA--PGGAIASVPNWTLRGTQLMNGTSMSSPNACGGIAL    461
+P29600           199 VQS----TYPGSTYASLNGTSMATPHVAGAAALV----KQKNPSWSNVQI    240
+                     :.|    |..|:..  :|||||::|...|..||:    |..|..::...:
+P29144           431 IASVPNWTLRGTQL--MNGTSMSSPNACGGIALILSGLKANNIDYTVHSV    478
 
-P29600           228 V----KQKNPSWSNVQIRNHLKNTATSLGSTNLY--GSGLVNAEAA    267
-                     :    |..|..::...:|..|:|||....:..::  |.|::..:.|
-P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
+P29600           241 RNHLKNTATSLGSTNLY--GSGLVNAEAA    267
+                     |..|.|||........:  |.|::..:.|
+P29144           479 RRALENTAVKADNIEVFAQGHGIIQVDKA    507
 ```
 
 Wraz ze wzrastającym indeksem BLOSUM (30-90), procent identyczności wzrasta, natomiast maleje długość przyrównania.
