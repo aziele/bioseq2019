@@ -16,7 +16,7 @@
 | :---: | --- | --- | --- | --- | --- | :---: |
 | <sub>9:00 - 11:00</sub> | <sub>Szukiwanie sekwencji podobnych (BLAST)</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/1-lab.md)</sub> | <sub>[rozwiązanie](./day2/1-lab.odpowiedzi.md)</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 | <sub>11:15-13:15</sub> | <sub>Szukiwanie sekwencji podobnych (BLAST)</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
-| <sub>140-16:00</sub> | <sub>Przyrównanie wielu sekwencji</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/3-lab.md)</sub> | <sub>[rozwiązanie](./day2/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/3-zadania.md)</sub> | <sub>[odpowiedzi](./day2/3-zadania.odpowiedzi.md)</sub> |
+| <sub>14:00-16:00</sub> | <sub>Przyrównanie wielu sekwencji</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/3-lab.md)</sub> | <sub>[rozwiązanie](./day2/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/3-zadania.md)</sub> | <sub>[odpowiedzi](./day2/3-zadania.odpowiedzi.md)</sub> |
 
 ## Dzień 3
 
@@ -44,3 +44,12 @@
    * PROSITE, Pfam, InterProt
 4. Bazy danych UniProt i GeneOntology (rozszerzyć lab i ew. zadania)
    * UniProt Reference Proteomes
+5. Sprawdzenie, czy czasowo (2h) mamy wystarczającą liczbę:
+   * slajdów (20-30min)
+   * lab (1h - 1h10min)
+   * zadania (20min-30min)
+6. Zredagowanie całego tekstu dla:
+   * lab
+   * lab - odpowiedzi
+   * zadania
+   * zadania - odpowiedzi
