@@ -1,33 +1,36 @@
 ### Zad. 1
-Wejdź na stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową bazę danych (`Nucleotide`). Użyj zaawasowanego wyszukiwania (`Advanced`) i skonstruuj zapytanie:
+Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu `Popular Resources` wybierz nukleotydową bazę danych (`Nucleotide`). Użyj zaawasowanego wyszukiwania (`Advanced`) i skonstruuj poniższe zapytanie:
 
 ```
 insulin[Title] AND ("mus musculus"[Organism] OR "rattus norvegicus"[Organism]) AND "mrna"[Filter] AND "refseq"[Filter]
 ```
 
-W wyniku otrzymano 53 sekwencje mRNA.
+W wyniku otrzymano **53** sekwencje mRNA myszy i szczura pochodzące z bazy RefSeq.
+
 
 ### Zad. 2
-Wejdź na stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową bazę danych (`Protein`). Użyj zaawasowanego wyszukiwania (`Advanced`) i skonstruuj zapytanie:
+Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz białkową bazę danych (`Protein`). Użyj zaawasowanego wyszukiwania (`Advanced`) i skonstruuj poniższe zapytanie:
 
 ```
 alpha-globin[Title] AND "metazoa"[Organism] AND "pdb"[Filter]
 ```
 
-W wyniku otrzymano 5 sekwencji białkowych.
+W wyniku otrzymano **5** zwierzęcych sekwencji białek o rozwiązanej strukturze przestrzennej. 
 
 
 ### Zad. 3
-Wejdź na stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz taksonomiczną bazę danych (`Taxonomy`). Odszukaj takson człowieka. W nowej karcie przeglądarki odszukaj takson myszy. Linia taksonomiczna człowieka i myszy jest wspólna od Eukaryota do nadrzędu Euarchontoglires.
+Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz taksonomiczną bazę danych (`Taxonomy`). Odszukaj takson człowieka wpisując w polu wyszukiwania `human` lub `homo sapiens`. W nowej karcie przeglądarki internetowej odszukaj takson myszy wpisując w polu wyszukiwania `mouse` lub `mus musculus`. 
 
-Homo sapiens (taxid: `9606`):
+Linia taksonomiczna (`Lineage`) człowieka i myszy jest wspólna od korzenia *Eukaryota* do nadrzędu *Euarchontoglires*.
 
-```
-Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires;* Primates; Haplorrhini; Catarrhini; Hominidae; Homo
-```
-
-Mus musculus (taxid: `10090`)
+#### Homo sapiens (taxId: 9606):
 
 ```
-Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires;* Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
+Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo
+```
+
+#### Mus musculus (taxId: 10090)
+
+```
+Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
 ```
