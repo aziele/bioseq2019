@@ -3,7 +3,7 @@
 ### Zad. 1 - Wyszukiwanie rekordu sekwencji po numerze dostępu
 W bazie nukleotdyowej znajdź rekord sekwencji o numerze dostępu `AB001981`.
 
-1. Jakiego typu jest znaleziona sekwencja (DNA / mRNA)?
+1. Jaki jest typ znalezionej sekwencja (DNA / mRNA)?
 2. Z genomu jakiego organizmu pochodzi ta sekwencja?
 3. Ile genów zawiera rekord tej sekwencji?
 4. Co oznaczają poniższe linie w rekordzie?

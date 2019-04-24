@@ -1,10 +1,20 @@
 ### Zad. 1
 Zadanie na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExGenbank-new#Searching_for_a_specific_ID).
 
-Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. gen z publikacji). [Rekord sekwencji AB001981](https://www.ncbi.nlm.nih.gov/nuccore/AB001981.1/).
+Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostepu genu znaleziono w publikacji). Rekord sekwencji [AB001981](https://www.ncbi.nlm.nih.gov/nuccore/AB001981.1/).
 
-1. Rekord `AB001981` dotyczy sekwencji genomowego DNA. Sekwencja ma długość 5891 nukleotydów. 
+1. Rekord `AB001981` dotyczy sekwencji genomowego DNA. Sekwencja ma długość `5891` nukleotydów. 
 2. Sekwencja należy do gołębia (*Columba livia*).
+
+```
+SOURCE      Columba livia (rock pigeon)
+  ORGANISM  Columba livia
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Archelosauria; Archosauria; Dinosauria; Saurischia; Theropoda;
+            Coelurosauria; Aves; Neognathae; Columbiformes; Columbidae;
+            Columba.
+```
+
 3. Sekwencja zawiera dwa geny alfa-globin (*alpha-D globin* i *alpha-A globin*). Każdy z genów składa się z 3 egzonów. Naciśnięcie na dowolny element sekwencji (`gene`, `exon`, `CDS`) powoduje zaznaczenie odpowiadającego fragmentu w sekwencji genomowej.
 4. Linie oznaczają lokalizację trzech sekwencji kodujących (CDS) na sekwencji genomowej. Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104..1192`. Podświetlając ten fragment w sekwencji genomowej można zobaczyć, że zaczyna się on kodonem start (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614..1742` i kończy ją kodon stop (`TAA`).
 5. Rekord zawiera dwie referencje literaturowe. Pierwsza odnosi się do artykuły z 1997 roku na temat wyizolowania i zsekwencjonowania analizowanych dwóch genów alfa-globin. W rekordzie umieszczony jest również link do tej publikacji w bazie PubMed. Druga referencja związana jest umieszczeniem tego rekordu bazie GenBank (`TITLE Direct Submission`). Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja jest wiarygodna. Ma to istotne zznaczenie jeżeli coś jest "nie w porządku" z sekwencją (np. gen posiada dziwną strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów).
