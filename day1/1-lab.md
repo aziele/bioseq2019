@@ -19,11 +19,14 @@ Wyświetl sekwencję w formacie FASTA.
 
 6. Czy format FASTA zawiera informacje o genach alfa-globin?
 
-Wróć do formatu GenBank. Zapisz do pliku sekwencję w formacie GenBank. Otwórz sekwencję w edytorze tekstu. Wyświetl rekord sekwencji w formie graficznej (*Graphics*).
+* Wróć do formatu GenBank. 
+* Zapisz do pliku sekwencję w formacie GenBank. 
+* Otwórz sekwencję w edytorze tekstu.
+* Wyświetl rekord sekwencji w formie graficznej (*Graphics*).
 
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu jednocześnie
-W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Przejdź do bazy `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
+W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Z serwisu NCBI otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
 
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny

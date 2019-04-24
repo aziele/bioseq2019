@@ -56,7 +56,7 @@ Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znaj
 5. Dwie referencje literaturowe odnoszą się do rekordu `AB001981`.
 
 Pierwsza referencja jest artykułem z 1997 roku na temat izolacji i sekwencjonowania analizowanych dwóch genów alfa-globin. Obok tytułu i autorów artykułu, podany jest również identyfikator artykułu w bazie PubMed (PubMed ID: `9177291`).
-> Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja jest wiarygodna. Ma to istotne zznaczenie jeżeli gen posiada nietypową strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów.
+> Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja jest wiarygodna. Ma to istotne znaczenie jeżeli gen posiada nietypową strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów.
 
 ```
 REFERENCE   1
@@ -90,20 +90,22 @@ TTGAGACTGTGTTTGGGCAAGGGGGAGAGAGACAGTGCAGAAGCTCTGAAGCCACTGAATTTCTCTAAAT
 ...
 ```
 
+#### Zapis rekordu do pliku tekstowego
+Zapis rekordu w formacie *GenBank* do pliku: `Send to` > `Complete Record` > `File` > `Create File`. 
+> Pobrany plik domyślnie będzie miał nazwę `sequences.db`. Dobrą praktyką jest zmiana nazwy pobranego pliku na nazwę zawierającą numer dostępu (np. `AB001981.gb`). Przydaje się to w sytuacjach, gdy mamy wiele innych plików z sekwencjami. Wyświetlenie rekordu umożliwia dowolny edytor tekstowy - najlepiej inny niż Notatnik (np. [Notepad++](https://notepad-plus-plus.org) lub Word).
 
-#### Zapis rekordu do pliku
-Zapis rekordu w formacie GenBank do pliku `Send to` > `Complete Record` > `File` > `Create File`. Dobrą praktyką jest zmiana nazwy pobranego pliku z `sequences.gb` na `AB001981.gb`. Przydaje się to, gdy mamy wiele innych plików z sekwencjami. Do wyświetlenie pliku najlepiej użyć innego edytora niż Notatnik (np. [Notepad++](https://notepad-plus-plus.org) lub Winword).
-
-### Graficzna prezentacja rekordu
-Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów na sekwencji genomowej. Widok można przybliżać. Skierowania kursora myszy na egzon wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej wraz z sekwencją aminokwasową.
+#### Graficzna prezentacja rekordu
+Aby wyświetlić rekord w formie graficznej naciśnij link `Graphics`. Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów (*alpha-D globin* i *alpha-A globin*) na sekwencji genomowej. Widok jest interaktywny - można go przybliżać/oddalać, zaznaczać pozycje w sekwencji, itd. Na przykład, skierowania kursora myszy na egzon (czarny prostokąt) wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej, a także sekwencję aminokwasową.
 
 <img src="./images/AB001981-graphics.png" alt="AB001981-graphics.png">
 
 
 ### Zad. 2
-Często potrzebujemy pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępne podane w tabeli w publikacji. Korzystamy wtedy z funcji `Batch entrez`.
+Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępne podane w tabeli w publikacji. W tym celu, NCBI udostępnił funkcję `Batch entrez`.
 
-Sekwencje transkryptów z pliku [./data/accession_numbers.txt] pochodzą z następujących organizmów:
+Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`. Następnie, naciśnij na link `Batch Entrez`. Następnie w polu `File` załaduj plik [accession_numbers.txt](./data/accession_numbers.txt) i naciśnij przycisk `Retrieve`.
+
+Sekwencje transkryptów (mRNA) dla numerów dostępu z pliku [accession_numbers.txt](./data/accession_numbers.txt) pochodzą z następujących organizmów:
 
 ```
 Metarhizium robertsii ARSEF 23 (1)
