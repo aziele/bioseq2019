@@ -100,7 +100,7 @@ Aby wyświetlić rekord w formie graficznej naciśnij link `Graphics`. Graficzna
 <img src="./images/AB001981-graphics.png" alt="AB001981-graphics.png">
 
 
-### Zad. 2
+### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
 Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępne podane w tabeli w publikacji. W tym celu, NCBI udostępnił funkcję `Batch entrez`.
 
 * Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov).
@@ -128,7 +128,7 @@ Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > 
 <img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png" width="500px">
 
 
-### Zad. 3
+### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
 Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
 
 #### Proste wyszukiwanie
@@ -166,7 +166,7 @@ Wybierz pole `Title` i wpisz `insulin`.
 
 <img src="./images/ncbi-advanced-insulin_title.png" alt="ncbi-advanced-insulin_title" width="600px">
 
-*Search details*
+*Search details:*
 
 ```
 insulin[Title]
@@ -206,7 +206,7 @@ W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających 
    W wyniku otrzymano **3 888** serkwencji mRNA insuliny człowieka, które nie są fragmentami sekwencji oraz nie są "insulinopodobne".
 
 
-### Zad. 4
+### Zad. 4 - Od rekordu białka, przez mRNA do rekordu genu
 Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Protein`. Otwórz tryb zaawansowanego wyszukiwania i utwórz poniższe zapytanie:
 
 ```
@@ -266,90 +266,106 @@ Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `Fi
 
 10. W panelu `Genomic regions, transcripts, and products`, po prawej stronie `Go to nucleotide` naciśnij `FASTA`. Następnie w panelu `Change region shown` po prawej stronie podaj pozycję początku (`32314480`) i końca (`32310672`) wyświetlanej sekwencji. 
 
-<img src="./images/ncbi-gene-upstream_downstream.png" alt="ncbi-gene-upstream_downstream">
+   <img src="./images/ncbi-gene-upstream_downstream.png" alt="ncbi-gene-upstream_downstream">
 
 
-### Zad. 5
-Zadanie na podstawie [NCBI youtube tutorials](https://www.youtube.com/watch?v=zs46Ur0m0mc).
-Zapytanie do bazy `Gene`:
+### Zad. 5 - Od rekordu genu, przez mRNA do rekordu białka
+Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=zs46Ur0m0mc).
+
+Skonstruuj poniższe zapytanie do bazy `Gene` serwisu NCBI:
 
 ```
 HFE[Gene Name] AND Homo sapiens[Organism]
 ```
 
-1. Gene ID: [3077](https://www.ncbi.nlm.nih.gov/gene/3077)
-2. Gen ma 12 wariantów splicingowych. Z tego, 11 koduje białka (numery dostępu `NM/NP` i `XM/XP`) i 1 koduje RNA ([XR_002957972.1](https://www.ncbi.nlm.nih.gov/nucleotide/XR_002957972)).
+W wynikach otrzymano jeden gen.
+
+1. Indetyfikator genu (`Gene ID`) to [3077](https://www.ncbi.nlm.nih.gov/gene/3077).
+2. Gen HFE ma 12 wariantów splicingowych: 
+   * 11 koduje białka (numery dostępu `NM/NP` i `XM/XP`)
+   * 1 koduje RNA ([XR_002957972.1](https://www.ncbi.nlm.nih.gov/nucleotide/XR_002957972)).
+
+   <img src="./images/ncbi-gene-hfe-viewer.png" alt="ncbi-gene-hfe-viewer">
+
 3. Spójrz na graficzną reprezentację wariantów splicingowych w części *Genomic regions, transcripts, and products*.
    * W opcji `Genomic Sequence` ustaw `NG_008720.2 RefSeqGene`. 
    * Skieruj kursor myszy na grubą szarą linię w okolicy pozycji `8671`.
-   * Naciśnij prawy przycisk myszy > `Set New Marker at Position` > wpisz `8671` i zaznacz `Lock marker`
+   * Naciśnij prawy przycisk myszy > `Set New Marker at Position` > wpisz `8671` i zaznacz `Lock marker`.
 
-<img src="./images/HFE-viewer-marker.png" alt="HFE-viewer-marker.png">
+   <img src="./images/HFE-viewer-marker.png" alt="HFE-viewer-marker.png">
 
-Pojawi się pionowa linia wyznaczająca wybrany marker (`Marker 1`) na sekwencji genomowej genu, transkryptów i białek. Naciśnij prawy przycisk myszy w miejscu markera i wybierz `Marker details`. W okienku dialogowym będzie podana dokładna lokalizacja markera względem genu, transkryptów, CDS i białek.
+   Wynikiem powyższych instrukcji jest pionowa linia wyznaczająca wybrany marker (`Marker 1`) w pozycji `8671` sekwencji genomowej. Naciśnij prawy przycisk myszy w miejscu markera i wybierz `Marker details`. W oknie dialogowym podana jest dokładna lokalizacja markera względem genu, transkryptów, CDS i białek.
 
 
-### Zad. 6
-Zadanie na podstawie [NCBI youtube tutorials](https://www.youtube.com/watch?v=rnWZ9MFBwUM).
-Zapytanie do bazy `Gene`:
+### Zad. 6 - Wyświetlanie SNP danego genu
+Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=rnWZ9MFBwUM).
+
+Skonstruuj poniższe zapytanie do bazy `Gene` serwisu NCBI:
 
 ```
 BRCA1[Gene Name] AND Homo sapiens[Organism]
 ```
 
-Gene ID: [672](https://www.ncbi.nlm.nih.gov/gene/672)
+W wynikach otrzymano gen BRCA1 (Gene ID: [672](https://www.ncbi.nlm.nih.gov/gene/672)).
 
 #### Variation Viewer
-Variation Viewer składa się z trzech części:
-1. Lewego panelu umożliwiającego wyszukiwanie regionów sekwencji genomowej. Nacisnąć `Search examples` - mogą to zatem być: geny, polimorfizmy SNP, konkretne regiony chromosomów. 
-2. Widoku mapy graficznie przedstawiającego wyszukany region genomu oraz warianty z nim związane.
-3. Tabelę zawierającą listę wariantów dotyczącą wyświetlonego regionu.
+*Variation Viewer* składa się z trzech paneli:
+1. Lewy panelu umożliwiający wyszukiwanie konkretnych regionów sekwencji genomowej. Przykładowe frazy wyszukiwania znajdują się pod linkiem `Search examples` - mogą to zatem być: geny, polimorfizmy SNP, konkretne regiony chromosomów. 
+2. Widok mapy przedstawiający graficznie wyszukany region genomu oraz związane z nim znane warianty genetyczne.
+3. Tabela zawierająca listę wariantów znajdujących się w obrębie mapy wyświetlonanego regionu.
 
 W celu znalezienia SNP na egzonie 10 związanego z chorobtwórczością:
 
-* Usuń z widoku mapy "track" związany z dużymi zmiennościami (`dbVar ClinVar Large Variation`).
-* W lewym panelu, w części `Filter by`, wybierz `Source data` > `dbSNP`. Spowoduje to odświeżenie widoku mapy oraz tabeli.
+* Usuń z widoku mapy "track" związany z obszernyni zmiennościami genetycznymi (`dbVar ClinVar Large Variation`).
+* W lewym panelu, w części `Filter by`, wybierz `Source data` > `dbSNP`. Zmiana ta spowoduje odświeżenie widoku mapy oraz tabeli i ograniczenie wariantów genetycznych do SNP.
 * W panelu mapy zmień ustawienie `Region` na `Go to gene only (no pad)`. 
 * W panelu mapy ustaw widok skupiając powiększenie na egzon 10.
   - W opcji `Exon range` wybierz egzon 10.
-  - Ustaw największe powiększenie z dokładnością do pojedynczych nukleotydów.
-  - W panelu po prawej stronie `Filter by` zaznacz `pathogenic` i `single nucleotide variant`.
-* Przeciągnij wykres wzdłuż egzonu i obserwowuje jak zmieniają się SNP w tabeli o charakterze pathogenic.
+  - Ustaw największe powiększenie mapy z dokładnością do pojedynczych nukleotydów.
+  - W panelu po lewej stronie `Filter by` zaznacz `pathogenic` i `single nucleotide variant`.
+* Przeciągnij wykres wzdłuż egzonu i obserwuj, jak zmieniają się SNP w tabeli.
 
 <img src="./images/BRCA1-variation_viewer.png" alt="BRCA1-variation_viewer.png">
 
-Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](https://www.ncbi.nlm.nih.gov/snp/rs80357010) w pozycji `43,094,051` genomowej, który w transkrypcie `NM_007294.3` w pozycji `c.1480C>T` powoduje zmianę Gln na stop kodon, w efekcie skracając białko (przedwczesna terminacja translacji).
+Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](https://www.ncbi.nlm.nih.gov/snp/rs80357010) w pozycji `43,094,051` genomowej, który w transkrypcie `NM_007294.3` w pozycji `c.1480C>T` powoduje zmianę glutaminy (`Gln`) na kodon *stop*, w efekcie doprowadzając do przedwczesnej terminacja translacji i produkcji skróconej formy tego białka.
 
 
-### Zad. 7
-Zadanie na podstawie [NCBI youtube tutorials](https://www.youtube.com/watch?v=sK3ykyInU8o).
+## Baza taksonomiczna (NCBI Taxonomy)
+
+
+### Zad. 7 - Zasoby sekwencyjne pojedynczego gatunku
+Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK3ykyInU8o).
 
 * Wybierz bazę `Taxonomy` i w oknie wyszukiwania wpisz `mouse`.
 * Z listy wyników wybierz *Mus musculus*.
-  - W części `Lineage` znajduje się pełna informacja na temat przynależności taksonomicznej myszy. Skierowanie kursora na dowolną jednostkę taksonomiczną pokaże jej rank (np. *Muridae* to rodzina). Naciśnij na wyraz `Lineage`, aby zobaczyć skróconą ścieżkę taksonomiczną myszy. 
+  - W części `Lineage` znajduje się pełna informacja na temat przynależności taksonomicznej myszy. Skierowanie kursora na dowolną jednostkę taksonomiczną pokaże jej rangę (np. *Muridae* to rodzina). Naciśnij na link `Lineage`, aby zobaczyć skróconą ścieżkę taksonomiczną myszy. 
   - Gatunek *Mus musculus* obejmuje kilkanaście podgatunków.
-* Naciśnij na `Mus musculus (house mouse)`. Na stronie wyświetlone są szczegółowe informacje na temat gatunku myszy. Na przykład:
-  - Identyfikator taksonomiczny w bazie NCBI (`Taxonomy ID`: `9606`). Identyfikator używany jest również przez inne bazy, poza NCBI, np. UniProt, Ensembl.
-  - Nazwy zwyczajowe, ranga w taksonomii (gatunek).
-* Po prawej stronie w tabeli znajdują się informacje na temat zasobów sekwencjki gatunku myszy.
-  - kolumna `Subtree link` uwzględnia sekwencje dla myszy i wszystkich podgatuków przypisanych do gatunku. W praktyce, najczęściej jesteśmy zainteresowani właśnie tą kolumną.
-  - kolumna `Direct link` uwzględnia sekwencje z organizmów bezpośrednio związanych z taksonomicznym indetyfikatorem `9606` (*Mus musculus* bez jawnego podłączenia pod podgatunki).
 
+  <img src="./images/ncbi-taxonomy-mouse-lineage.png" alt="ncbi-taxonomy-mouse-lineage">
 
-1. Identyfikator taksonomiczny myszy (`Taxonomy ID`) to `9606`.
-2. Dla myszy wraz z wszystkimi podgatunkami dostępnych jest 11 026 116 sekencji nukleotydowych.
-   * Naciśnij na link z liczbą sekwencji nukleotydowych. Dostępne typy sekwencji nukleotydowych to: genomowe DNA (5 191 394), mRNA (5 191 394), rRNA (53). 
+* Naciśnij na link `Mus musculus (house mouse)`. Na stronie wyświetlone zostaną szczegółowe informacje na temat gatunku myszy.
+  - Identyfikator taksonomiczny myszy w bazie NCBI (`Taxonomy ID`: `10090`). Identyfikator używany jest również przez inne bazy sekwencji - również poza NCBI np. UniProt, Ensembl.
+  - Nazwy zwyczajowe myszy, rangę w taksonomii (gatunek).
+* W tabeli po prawej stronie znajdują się informacje na temat zasobów sekwencji dostępnych w NCBI dla gatunku myszy:
+  - Kolumna `Subtree link` uwzględnia sekwencje myszy i wszystkich podgatuków przypisanych do gatunku. W praktyce, najczęściej używa się właśnie tej kolumny.
+  - Kolumna `Direct link` uwzględnia sekwencje z organizmów bezpośrednio związanych z taksonomicznym indetyfikatorem `10090` (*Mus musculus* bez jawnego podłączenia pod podgatunki).
+
+  <img src="./images/ncbi-taxonomy-mouse-resources.png" alt="ncbi-taxonomy-mouse-resources"> 
+
+1. Identyfikator taksonomiczny myszy w bazie NCBI (`Taxonomy ID`) to `10090`.
+2. Dla myszy wraz z wszystkimi podgatunkami dostępnych jest `11 026 160` sekencji nukleotydowych.
+   * Naciśnij na link z liczbą sekwencji nukleotydowych. Dostępne typy sekwencji nukleotydowych to: genomowe DNA (`5 191 394`), mRNA (`5 191 394`), rRNA (`53`). 
+
 
 
 ### Zad. 8
-Wybierz bazę `Taxonomy` i w oknie wyszukiwania wpisz `rodentia` lub `rodents`.
+W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` lub `rodents`.
  
-1. Pod oknem wyszukiwania wpisz `6` w oknie `levels`. Naciśnij przycisk `Display`.
-2. W oparciu o wyświetlone drzewo taksonomiczne rzędu gryzoni, rodzaj *Rattus* należy do podrodziny *Murinae*. 
+1. Pod oknem wyszukiwania, w polu `levels` wpisz `6` i naciśnij przycisk `Display`.
+2. Wyświetlone drzewo taksonomiczne rzędu gryzoni wskazuje, że rodzaj *Rattus* należy do podrodziny *Murinae*. 
 3. Pod oknem wyszukiwania, w polu `levels using filter` wybierz `has genome sequences` i naciśnij przycisk `Display`.
-using filter `has genome sequences`.
-   * Tak, dla szczura znana jest sekwencja genomu.
+   * Tak, sekwencja genomowa jest dostępna dla szczura (*Rattus norvegicus*).
 4. W panelu zazacz `protein` i nacisnąć przycisk `Display`.
-   * Dla szczura znanych jest 152 510 sekwencji białkowych.
+   * Dla szczura znanych jest `152 510` sekwencji białkowych.
 
 <img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png" width="400px">

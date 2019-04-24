@@ -25,7 +25,7 @@ Wyświetl sekwencję w formacie FASTA.
 * Wyświetl rekord sekwencji w formie graficznej (*Graphics*).
 
 
-### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu jednocześnie
+### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
 W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Z serwisu NCBI otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
 
 
@@ -47,7 +47,7 @@ Korzystając z zaawansowanego wyszukiwania (`Advanced`) skonstruuj zapytanie do 
 6. mRNA człowieka, które nie są fragmentami (wykluczając frazy `insulin-like`, `partial`, `part`)
 
 
-### Zad. 4 - Rekordy białka, mRNA i genu
+### Zad. 4 - Od rekordu białka, przez mRNA do rekordu genu
 Korzystając z zaawansowanego wyszukiwania bazy białkowej NCBI skonstruuj zapytanie, aby znaleźć dokładnie jedną sekwencję białkową genu o nazwie `BRCA2` człowieka pochodzącą z bazy RefSeq.
 
 #### Rekord sekwencji białka
@@ -83,37 +83,39 @@ Zapisz sekwencję genomową genu BRCA2 w formacie FASTA.
 
 ## Baza genów (NCBI Gene)
 
-
-### Zad. 5 - Od genu, przez mRNA do białka
+### Zad. 5 - Od rekordu genu, przez mRNA do rekordu białka
 Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o nazwie `HFE`.
 
 1. Podaj identyfikator genu HFE w bazie `Gene`.
 2. Ile wariantów splicingowych ma ten gen?
    * Ile wśród nich koduje białko?
-3. Jakiej lokalizacji w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiada pozycja `8671` genu?
+3. Jakiej pozycji w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiada pozycja `8671` genu?
 
 
-### Zad. 6 - Wyświetlanie wszystkich SNP danego genu
-Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o nazwie `BRCA1`. Z panelu `Related information` po prawej stronie wybierz `Variation Viewer`. Ustaw widok na egzon 10 i wyświetl listę SNP na tym egzonie związanych z chorobotwórczością. Wybierz jeden SNP i scharakteryzuj zmianę nukleotydu oraz wpływ tej zmiany na sekwencję białkową.
+### Zad. 6 - Wyświetlanie SNP danego genu
+Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o nazwie `BRCA1`. Następnie:
+* Z panelu `Related information` po prawej stronie wybierz `Variation Viewer`. 
+* Ustaw widok na egzon 10 i wyświetl listę SNP na tym egzonie związanych z chorobotwórczością.
+* Wybierz jeden SNP i scharakteryzuj zmianę nukleotydu oraz wpływ tej zmiany na sekwencję białkową.
 
 
 ## Baza taksonomiczna (NCBI Taxonomy)
 
 
 ### Zad. 7 - Zasoby sekwencyjne pojedynczego gatunku
-Korzystając z bazy `Taxonomy` wyszukaj wszystkie typy sekwencji dostępne w NCBI dla myszy.
+Korzystając z bazy `Taxonomy` NCBI wyszukaj wszystkie typy sekwencji dostępne dla myszy.
 
 1. Podaj identyfikator taksonomiczny myszy.
-2. Ile sekwencji nukleotydowych dostępnych jest dla myszy wraz z wszystkimi jej podgatunkami?
+2. Ile sekwencji nukleotydowych dostępnych jest dla myszy oraz wszystkich jej podgatunków?
    * Jakiego typu sekwencje nukleotydowe są dostępne?
 
 
-### Zad. 8 - Wyszukiwanie sekwencji dla dowonlnej jednostki taksonomicznej
-Korzystając z bazy `Taxonomy` wyświel przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
+### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
+Korzystając z bazy `Taxonomy` NCBI wyświel przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
 
-1. Wyświetl drzewo maksymalnie do 6 poziomów zagnieżdżenia.
+1. Wyświetl drzewo taksonomiczne ograniczając je do maksymalnie sześciu poziomów.
 2. Do jakiej podrodziny należy rodzaj `Rattus`.
 3. Ogranicz drzewo tylko do organizmów o znanych sekwencjach genomów.
    * Czy genom szczura (*Rattus norvegicus*) jest dostępny?
-4. Wyświetl na drzewie taksonomicznym liczbę sekwencji białek dla każdej jednostki taksonomicznej.
+4. Dla każdej jednostki taksonomicznej na drzewie wyświetl liczbę sekwencji białkowych.
    * Ile sekwencji białkowych dostępnych jest dla szczura?
