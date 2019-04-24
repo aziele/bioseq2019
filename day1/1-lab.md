@@ -43,15 +43,14 @@ Celem zadania jest wyszukanie wszystkich sekwencji mRNA insuliny człowieka.
 Korzystając z zaawansowanego wyszukiwania (`Advanced`) skonstruuj zapytanie do bazy danych, aby znaleźć wszystkie sekwencje w bazie nukleotydowej, w których wyraz `insulin` znajduje się w tytule rekordu. Zawężaj dalej wyniki, aby otrzymać sekwencje:
 
 4. człowieka
-5. człowieka uzwględniając tylko sekwencje mRNA
-6. człowieka uwzględniając tylko sekwencje mRNA i wykluczając frazy `insulin-like` i `partial`
-i `part` z tytułu rekordów
+5. mRNA człowieka
+6. mRNA człowieka, które nie są fragmentami (wykluczając frazy `insulin-like`, `partial`, `part`)
 
 
-### Zad. 4 - Od białka, przez mRNA, do genu
-Korzystając z zaawansowanego wyszukiwania skonstruuj tak zapytanie aby znaleźć dokładnie jedną sekwencję białkową genu o nazwie `BRCA2` człowieka pochodzącą z bazy RefSeq.
+### Zad. 4 - Rekordy białka, mRNA i genu
+Korzystając z zaawansowanego wyszukiwania bazy białkowej NCBI skonstruuj zapytanie, aby znaleźć dokładnie jedną sekwencję białkową genu o nazwie `BRCA2` człowieka pochodzącą z bazy RefSeq.
 
-#### Białko
+#### Rekord sekwencji białka
 
 1. Z ilu aminokwasów zbudowana jest to białko?
 2. Jaki jest numer dostępu znalezionej sekwencji?
@@ -61,16 +60,16 @@ Zapisz sekwencję białkową w formacie FASTA.
 
 4. Jaki jest numer dostępu sekwencji mRNA kodującej to białka?
 
-#### mRNA
+#### Rekord sekwencji mRNA
 
 Przejź do rekordu mRNA.
 
-5. Z ilu nukleotydów zbudowane jest to mRNA?
-6. Jaki jest identyfikator genu BRCA2 w bazie `Gene`?
+5. Z ilu nukleotydów złożone jest mRNA genu BRCA2?
+6. Podaj identyfikator genu BRCA2 w bazie `Gene`?
 
 Zapisz sekwencję mRNA w formacie FASTA. 
 
-#### Gen
+#### Rekord genu
 Przejdź do rekordu genu `BRCA2`.
 
 7. Z ilu egzonów zbudowany jest ten gen?

@@ -160,11 +160,11 @@ Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej
 #### Zaawansowane wyszukiwanie
 Na stronie nukleotydowej bazy danych NCBI otwórz tryb zaawansowanego wyszukiwania (`Advanced`).
 
-<img src="./images/ncbi-advanced_search.png" alt="ncbi-advanced_search.png">
+<img src="./images/ncbi-advanced_search.png" alt="ncbi-advanced_search.png" width="600px">
 
 Wybierz pole `Title` i wpisz `insulin`.
 
-<img src="./images/ncbi-advanced-insulin_title.png" alt="ncbi-advanced-insulin_title" width="500px">
+<img src="./images/ncbi-advanced-insulin_title.png" alt="ncbi-advanced-insulin_title" width="600px">
 
 *Search details*
 
@@ -186,11 +186,11 @@ W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających 
 
 5. Ponownie otwórz tryb zaawansowanego wyszukiwania. Użyj części `History` w celu przywrócenia poprzedniego zapytania do bazy danych. Następnie wybierz pole `Filter`, wpisz `mRN` i naciśnij `Index preview` w celu uzyskania listy podpowiedzi. Z listy podpowiedzi wybierz `mrna`.
 
-   <img src="./images/ncbi-advanced-index_preview.png" alt="ncbi-advanced-index_preview" width="500px">
+   <img src="./images/ncbi-advanced-index_preview.png" alt="ncbi-advanced-index_preview" width="600px">
 
    *Search details:*
    ```
-   (insulin[Title] AND "Homo sapiens"[Organism]) AND "mrna"[Filter]
+   insulin[Title] AND "Homo sapiens"[Organism] AND "mrna"[Filter]
    ```
 
    W wyniku otrzymano **3 982** sekwencje mRNA insuliny człowieka.
@@ -207,27 +207,66 @@ W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających 
 
 
 ### Zad. 4
-Poniższe zapytanie zwraca dokładnie jeden rekord białka BRCA2: [NP_000050](https://www.ncbi.nlm.nih.gov/protein/119395734).
+Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Protein`. Otwórz tryb zaawansowanego wyszukiwania i utwórz poniższe zapytanie:
+
 ```
 BRCA2[Gene Name] AND Homo sapiens[Organism] AND "refseq"[Filter]
 ```
 
-1. Sekwencja białkowa zbudowana jest z 3418 aminokwasów.
-2. Numer dostępu tego białka to `NP_000050`.
-3. Aktualna rekord jest w drugiej wersji (`NP_000050.2`). Oznacza to, że rekord był raz modyfikowany.
-   - Można przejść do poprzedniej wersji rekordu [NP_000050.1](https://www.ncbi.nlm.nih.gov/protein/NP_000050.1).
-4. Numer dostępu mRNA: `NM_000059.3`
-5. Sekwencja mRNA zbudowana jest z 11 386 nukleotydów.
-6. Identyfikator genu (*Gene ID*): `675` [link](https://www.ncbi.nlm.nih.gov/gene/675)
-7. Liczba egzonów: `27`
-8. Lokalizacja genu na genomie: 
-   - chromosom: `13` 
-   - numer dostępu sekwencji genomowej: `NC_000013.11`
-   - począte genu: `32315480`
-   - koniec genu: `32399672)`
+W wyniku zostanie wyświetlony dokładnie jeden rekord białka **BRCA2** o numerze dostępu [NP_000050](https://www.ncbi.nlm.nih.gov/protein/NP_000050).
+
+#### Rekord sekwencji białka
+
+1. Sekwencja białkowa BRCA2 zbudowana jest z `3418` aminokwasów.
+2. Numer dostępu tego rekordu to `NP_000050`.
+   > Rekordy sekwencji bazy RefSeq mają charakterystyczny zapis numerów dostępu. Składają się one z dwóch oznaczeń literowych, podkreślnika i 6 cyfr (np. `NP_000050`).
+3. Aktualny rekord `NP_000050` jest w drugiej wersji (`NP_000050.2`). Oznacza to, że rekord ten był jeden raz uaktualniany. Data ostatniej modyfikacji rekordu podana jest w pierwszej linii rekordu w formacie GenBank (`23-APR-2019`). 
+   > Istnieje możliwość obejrzenia poprzednich wersji rekordów NCBI poprzez wyszukanie numeru dostępu wraz z numerem wersji (np. [NP_000050.1](https://www.ncbi.nlm.nih.gov/protein/NP_000050.1)). Jeżeli numer wersji nie zostanie podany przez użytkownika podczas wyszukiwania (`NP_000050`), NCBI otworzy rekord w najnowszej wersji.
+
+Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `File` > `Format`: `FASTA` > przycisk `Create File`.
+
+4. Numer dostępu mRNA genu BRCA2 ([NM_000059](https://www.ncbi.nlm.nih.gov/nuccore/NM_000059)) podany jest w polu `DBSOURCE`. 
+
+   ```
+   DBSOURCE    REFSEQ: accession NM_000059.3
+   ```
+
+#### Rekord sekwencji mRNA
+
+5. Sekwencja mRNA genu BRCA2 zbudowana jest z `11 386` nukleotydów.
+6. Identyfikator genu BRCA2 w bazie `Gene` to [675](https://www.ncbi.nlm.nih.gov/gene/675).
+
+   ```
+   FEATURES
+      ...
+      gene         1..11386
+                   /gene="BRCA2"
+                   /gene_synonym="BRCC2; BROVCA2; FACD; FAD; FAD1; FANCD;
+                   FANCD1; GLM3; PNCA2; XRCC11"
+                   /note="BRCA2 DNA repair associated"
+                   /db_xref="GeneID:675"
+    ```
+
+#### Rekord genu
+
+7. Gen BRCA2 zbudowany jest z `27` egzonów.
+   > Panel `Genomic context`, pole `Exon count`.
+8. Gen BRCA2 zlokalizowany jest na: 
+   - chromosomie: `13` 
+   - sekwencji genomowej `NC_000013.11`
+   - początek genu: `32 315 480`
+   - koniec genu: `32 399 672`
    - orientacja genu: nić plus
-9. Gen BRCA2 ma jeden wariant splicingowy. Odczytać to można z graficznej prezentacji genu znajdującej się w panelu `Genomic regions, transcripts, and products`.
-10. `Go to nucleotide` > `FASTA`. Odjąć 1000 od statu genu i dodać 1000 do końca genu.
+
+   <img src="./images/ncbi-gene-genomic_context.png" alt="ncbi-gene-genomic_context">
+
+9. Gen BRCA2 ma jeden wariant splicingowy.
+
+   <img src="./images/ncbi-gene-viewer.png" alt="ncbi-gene-viewer">
+
+10. W panelu `Genomic regions, transcripts, and products`, po prawej stronie `Go to nucleotide` naciśnij `FASTA`. Następnie w panelu `Change region shown` po prawej stronie podaj pozycję początku (`32314480`) i końca (`32310672`) wyświetlanej sekwencji. 
+
+<img src="./images/ncbi-gene-upstream_downstream.png" alt="ncbi-gene-upstream_downstream">
 
 
 ### Zad. 5
