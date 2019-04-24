@@ -26,11 +26,13 @@ Linia taksonomiczna (`Lineage`) człowieka i myszy jest wspólna od korzenia *Eu
 #### Homo sapiens (taxId: 9606):
 
 ```
-Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo
+Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria;
+Euarchontoglires;Primates; Haplorrhini; Catarrhini; Hominidae; Homo
 ```
 
 #### Mus musculus (taxId: 10090)
 
 ```
-Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
+Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria;
+Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
 ```
