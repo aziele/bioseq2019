@@ -79,7 +79,7 @@ Przejdź do rekordu genu `BRCA2`.
 * Zapisz sekwencję genomową genu BRCA2 w formacie FASTA.
 
 10. Wyświetl sekwencję genomową genu dodając 1000 nukleotydów *upstream* i *downstream*.
-
+<br/><br/>
 
 ## Baza genów (NCBI Gene)
 
@@ -90,14 +90,14 @@ Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o n
 2. Ile wariantów splicingowych ma ten gen?
    * Ile wśród nich koduje białko?
 3. Podaj pozycję w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiadającą pozycji `8671` genu?
-
+<br/><br/>
 
 ### Zad. 6 - Wyświetlanie SNP danego genu
 Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o nazwie `BRCA1`. Następnie:
 * Z panelu `Related information` po prawej stronie wybierz `Variation Viewer`. 
 * Ustaw widok na egzon 10 i wyświetl listę SNP na tym egzonie związanych z chorobotwórczością.
 * Wybierz jeden SNP i scharakteryzuj zmianę nukleotydu oraz wpływ tej zmiany na sekwencję białkową.
-
+<br/><br/>
 
 ## Baza taksonomiczna (NCBI Taxonomy)
 
@@ -108,6 +108,7 @@ Korzystając z bazy `Taxonomy` wyszukaj wszystkie typy sekwencji dostępne dla m
 1. Podaj identyfikator taksonomiczny myszy.
 2. Ile sekwencji nukleotydowych dostępnych jest dla myszy oraz wszystkich jej podgatunków?
    * Jakiego typu sekwencje nukleotydowe są dostępne?
+<br/><br/>
 
 
 ### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
