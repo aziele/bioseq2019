@@ -1,4 +1,4 @@
-### Zad. 1
+### Zad. 1 - Wyszukiwanie rekordu sekwencji po numerze dostępu
 Zadanie na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExGenbank-new#Searching_for_a_specific_ID).
 
 Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostepu genu znaleziono w publikacji). W tym celu, otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową bazę danych (`Nucleotide`) i w oknie wyszukiwania wpisz numer dostępu `AB001981`.
@@ -6,89 +6,89 @@ Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostep
 
 1. Rekord `AB001981` dotyczy fragmentu sekwencji genomowego DNA o długość `5891` nukleotydów.
 
-```
-LOCUS       AB001981                5891 bp    DNA     linear   VRT 25-DEC-2002
-```
+   ```
+   LOCUS       AB001981                5891 bp    DNA     linear   VRT 25-DEC-2002
+   ```
 
 2. Sekwencja należy do gołębia (*Columba livia*).
 
-```
-SOURCE      Columba livia (rock pigeon)
-  ORGANISM  Columba livia
-            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
-            Archelosauria; Archosauria; Dinosauria; Saurischia; Theropoda;
-            Coelurosauria; Aves; Neognathae; Columbiformes; Columbidae;
-            Columba.
-```
+   ```
+   SOURCE      Columba livia (rock pigeon)
+     ORGANISM  Columba livia
+               Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+               Archelosauria; Archosauria; Dinosauria; Saurischia; Theropoda;
+               Coelurosauria; Aves; Neognathae; Columbiformes; Columbidae;
+               Columba.
+   ```
 
 3. Sekwencja zawiera dwa geny alfa-globin (*alpha-D globin* i *alpha-A globin*). 
 
-```
-DEFINITION  Columba livia DNA for alpha-D globin, alpha-A globin.
-```
+   ```
+   DEFINITION  Columba livia DNA for alpha-D globin, alpha-A globin.
+   ```
 
-Informacja na temat lokalizacji i struktury tych genów w sekwencji genomowej znajduje się w części `FEATURES` rekordu:
+   Informacja na temat lokalizacji i struktury tych genów w sekwencji genomowej znajduje się w części `FEATURES` rekordu:
 
-```
-FEATURES
-     ...
-     gene            join(1104..1192,1306..1510,1614..1742)
-                     /gene="alpha-D"
-     ...
-     gene            join(4915..5009,5165..5369,5474..5602)
-                     /gene="alpha-A"
-     ...     
-```
+   ```
+   FEATURES
+        ...
+        gene            join(1104..1192,1306..1510,1614..1742)
+                        /gene="alpha-D"
+        ...
+        gene            join(4915..5009,5165..5369,5474..5602)
+                        /gene="alpha-A"
+        ...     
+   ```
 
-Oba geny składają się z 3 egzonów. Naciśnięcie przycisku myszy na dowolny element w części `FEATURES` (np.: `gene`, `exon`, `CDS`) spowoduje podświetlenie w sekwencji genomowej fragmentu, który odpowiada danemu elementowi. Na przykład, naciśnięcie na `gene` podświetli sekwencje trzech egzonów tego genu na sekwencji genomowej.
+   Oba geny składają się z 3 egzonów. Naciśnięcie przycisku myszy na dowolny element w części `FEATURES` (np.: `gene`, `exon`, `CDS`) spowoduje podświetlenie w sekwencji genomowej fragmentu, który odpowiada danemu elementowi. Na przykład, naciśnięcie na `gene` podświetli sekwencje trzech egzonów tego genu na sekwencji genomowej.
 
-<img src="./images/genbank-features.png" alt="genbank-features" width="400px"> 
+   <img src="./images/genbank-features.png" alt="genbank-features" width="400px"> 
 
 4. Linie części `FEATURES` rozpoczynające się od słowa `CDS` oznaczają lokalizację trzech sekwencji kodujących białko (*CDS, Coding sequence*) na sekwencji genomowej. 
 
-```
-CDS             join(1104..1192,1306..1510,1614..1742)
-```
+   ```
+   CDS             join(1104..1192,1306..1510,1614..1742)
+   ```
 
-Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104-1192`. Podświetlając CDS w sekwencji genomowej można zobaczyć, że CDS odpowiadający pierwszemu egzonowi zaczyna się kodonem *start* (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614-1742` i kończy się kodonem *stop* (`TAA`).
+   Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104-1192`. Podświetlając CDS w sekwencji genomowej można zobaczyć, że CDS odpowiadający pierwszemu egzonowi zaczyna się kodonem *start* (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614-1742` i kończy się kodonem *stop* (`TAA`).
 
 
 5. Dwie referencje literaturowe odnoszą się do rekordu `AB001981`.
 
-Pierwsza referencja jest artykułem z 1997 roku na temat izolacji i sekwencjonowania analizowanych dwóch genów alfa-globin. Obok tytułu i autorów artykułu, podany jest również identyfikator artykułu w bazie PubMed (PubMed ID: `9177291`).
-> Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja jest wiarygodna. Ma to istotne znaczenie jeżeli gen posiada nietypową strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów.
+   Pierwsza referencja jest artykułem z 1997 roku na temat izolacji i sekwencjonowania analizowanych dwóch genów alfa-globin. Obok tytułu i autorów artykułu, podany jest również identyfikator artykułu w bazie PubMed (PubMed ID: `9177291`).
+   > Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja jest wiarygodna. Ma to istotne znaczenie jeżeli gen posiada nietypową strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów.
 
-```
-REFERENCE   1
-  AUTHORS   Ikehara,T., Eguchi,Y., Kayo,S. and Takei,H.
-  TITLE     Isolation and sequencing of two alpha-globin genes alpha(A) and
-            alpha(D) in pigeon and evidence for embryo-specific expression of
-            the alpha(D)-globin gene
-  JOURNAL   Biochem. Biophys. Res. Commun. 234 (2), 450-453 (1997)
-   PUBMED   9177291
-```
+   ```
+   REFERENCE   1
+     AUTHORS   Ikehara,T., Eguchi,Y., Kayo,S. and Takei,H.
+     TITLE     Isolation and sequencing of two alpha-globin genes alpha(A) and
+               alpha(D) in pigeon and evidence for embryo-specific expression of
+               the alpha(D)-globin gene
+     JOURNAL   Biochem. Biophys. Res. Commun. 234 (2), 450-453 (1997)
+      PUBMED   9177291
+   ```
 
-Druga referencja związana jest umieszczeniem tego rekordu bazie GenBank.
+   Druga referencja związana jest umieszczeniem tego rekordu bazie GenBank.
 
-```
-REFERENCE   2  (bases 1 to 5891)
-  AUTHORS   Ikehara,T., Eguchi,Y., Kayo,S. and Takei,H.
-  TITLE     Direct Submission
-  JOURNAL   Submitted (19-MAR-1997) Tsuyoshi Ikehara, University of the
-            Ryukyus, Department of Biochemistry,Faculty of Medicine; Okinawa,
-            Nishihara-cho, Uehara,207, Nishihara-cho 903-01, Japan
-            (E-mail:k940401@med.u-ryukyu.ac.jp, Tel:098-895-3331)
-```
+   ```
+   REFERENCE   2  (bases 1 to 5891)
+     AUTHORS   Ikehara,T., Eguchi,Y., Kayo,S. and Takei,H.
+     TITLE     Direct Submission
+     JOURNAL   Submitted (19-MAR-1997) Tsuyoshi Ikehara, University of the
+               Ryukyus, Department of Biochemistry,Faculty of Medicine; Okinawa,
+               Nishihara-cho, Uehara,207, Nishihara-cho 903-01, Japan
+               (E-mail:k940401@med.u-ryukyu.ac.jp, Tel:098-895-3331)
+   ```
  
 6. Format FASTA sekwencji genomowej `AB001981` zawiera jedynie numer dostępu i krótki opis sekwencji. 
 
-```
->AB001981.1 Columba livia DNA for alpha-D globin, alpha-A globin
-CGATCAGGTTACATTTACTGCCCATGCCTGTCTCAGAGGAATTCTGACACGAAAAGGTGGGCACAAATTC
-TTAAGCACACTCTGATGGTACAACGTGAGCTGGCACTACAAGCTGTGTTCCTCATCCCGTTTACAAAATT
-TTGAGACTGTGTTTGGGCAAGGGGGAGAGAGACAGTGCAGAAGCTCTGAAGCCACTGAATTTCTCTAAAT
-...
-```
+   ```
+   >AB001981.1 Columba livia DNA for alpha-D globin, alpha-A globin
+   CGATCAGGTTACATTTACTGCCCATGCCTGTCTCAGAGGAATTCTGACACGAAAAGGTGGGCACAAATTC
+   TTAAGCACACTCTGATGGTACAACGTGAGCTGGCACTACAAGCTGTGTTCCTCATCCCGTTTACAAAATT
+   TTGAGACTGTGTTTGGGCAAGGGGGAGAGAGACAGTGCAGAAGCTCTGAAGCCACTGAATTTCTCTAAAT
+   ...
+   ```
 
 #### Zapis rekordu do pliku tekstowego
 Zapis rekordu w formacie *GenBank* do pliku: `Send to` > `Complete Record` > `File` > `Create File`. 
