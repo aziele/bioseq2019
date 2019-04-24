@@ -42,7 +42,7 @@ Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostep
 
    Oba geny składają się z 3 egzonów. Naciśnięcie przycisku myszy na dowolny element w części `FEATURES` (np.: `gene`, `exon`, `CDS`) spowoduje podświetlenie w sekwencji genomowej fragmentu, który odpowiada danemu elementowi. Na przykład, naciśnięcie na `gene` podświetli sekwencje trzech egzonów tego genu na sekwencji genomowej.
 
-   <img src="./images/genbank-features.png" alt="genbank-features" width="400px"> 
+   <img src="./images/ncbi-genbank-features.png" alt="ncbi-genbank-features" width="400px"> 
 
 4. Linie części `FEATURES` rozpoczynające się od słowa `CDS` oznaczają lokalizację trzech sekwencji kodujących białko (*CDS, Coding sequence*) na sekwencji genomowej. 
 
@@ -50,13 +50,13 @@ Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostep
    CDS             join(1104..1192,1306..1510,1614..1742)
    ```
 
-   Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104-1192`. Podświetlając CDS w sekwencji genomowej można zobaczyć, że CDS odpowiadający pierwszemu egzonowi zaczyna się kodonem *start* (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614-1742` i kończy się kodonem *stop* (`TAA`).
+   Na przyklad, fragment sekwencji kodującej `CDS` odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104-1192`. Podświetlając CDS w sekwencji genomowej można zobaczyć, że sekwencja kodująca odpowiadająca pierwszemu egzonowi zaczyna się kodonem *start* (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614-1742` i kończy się kodonem *stop* (`TAA`).
 
 
 5. Dwie referencje literaturowe odnoszą się do rekordu `AB001981`.
 
    Pierwsza referencja jest artykułem z 1997 roku na temat izolacji i sekwencjonowania analizowanych dwóch genów alfa-globin. Obok tytułu i autorów artykułu, podany jest również identyfikator artykułu w bazie PubMed (PubMed ID: `9177291`).
-   > Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja jest wiarygodna. Ma to istotne znaczenie jeżeli gen posiada nietypową strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów.
+   > Informacja na temat artykułu jest przydatna, ponieważ możliwy jest wgląd w szczegółowy opis uzyskania danej sekwencji, co pozwala zweryfikować, czy sekwencja w rekordzie jest wiarygodna. Ma to istotne znaczenie w przypadku gdy gen posiada nietypową strukturę egzon/intro w porównaniu do homologów tego genu u blisko spokrewnionych organizmów.
 
    ```
    REFERENCE   1
@@ -92,16 +92,16 @@ Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostep
 
 #### Zapis rekordu do pliku tekstowego
 Zapis rekordu w formacie *GenBank* do pliku: `Send to` > `Complete Record` > `File` > `Create File`. 
-> Pobrany plik domyślnie będzie miał nazwę `sequences.db`. Dobrą praktyką jest zmiana nazwy pobranego pliku na nazwę zawierającą numer dostępu (np. `AB001981.gb`). Przydaje się to w sytuacjach, gdy mamy wiele innych plików z sekwencjami. Wyświetlenie rekordu umożliwia dowolny edytor tekstowy - najlepiej inny niż Notatnik (np. [Notepad++](https://notepad-plus-plus.org) lub Word).
+> Pobrany plik domyślnie ma nadaną nazwę `sequences.db`. Dobrą praktyką jest zmiana nazwy pobranego pliku na nazwę zawierającą numer dostępu pobranej sekwencji (np. `AB001981.gb`). Przydaje się to w sytuacjach, gdy mamy wiele innych plików z sekwencjami. Wyświetlenie pobranego rekordu umożliwia dowolny edytor tekstowy - najlepiej inny niż Notatnik (np. [Notepad++](https://notepad-plus-plus.org) lub Word).
 
 #### Graficzna prezentacja rekordu
-Aby wyświetlić rekord w formie graficznej naciśnij link `Graphics`. Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów (*alpha-D globin* i *alpha-A globin*) na sekwencji genomowej. Widok jest interaktywny - można go przybliżać/oddalać, zaznaczać pozycje w sekwencji, itd. Na przykład, skierowania kursora myszy na egzon (czarny prostokąt) wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej, a także sekwencję aminokwasową.
+Aby wyświetlić rekord `AB001981` w formie graficznej naciśnij link `Graphics`. Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów (*alpha-D globin* i *alpha-A globin*) na sekwencji genomowej. Widok graficzny jest interaktywny - można go przybliżać/oddalać, zaznaczać pozycje w sekwencji, itd. Na przykład, skierowania kursora myszy na egzon (czarny prostokąt) wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej, a także sekwencję aminokwasową kodowaną przez wskazany egzon.
 
 <img src="./images/AB001981-graphics.png" alt="AB001981-graphics.png">
 
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
-Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępne podane w tabeli w publikacji. W tym celu, NCBI udostępnił funkcję `Batch entrez`.
+Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępu podane w tabeli w publikacji. W tym celu, NCBI udostępnia funkcję `Batch entrez`.
 
 * Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov).
 * Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
@@ -133,7 +133,7 @@ Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej
 
 #### Proste wyszukiwanie
 
-1. W polu wyszukiwania wpisz wyraz `insulin` i naciśnij przycisk `Search`. Wyświetlonych zostanie `202 073` rekordów sekwencji. Na liście wyników są różne typy sekwencji (np.: pełnej długości sekwencje genomowe, sekwencje EST, sekwencje mRNA). Niektóre z tych rekordów sekwencji nie zawierają nawet słowa `insulin` w swoich opisach (liniach definicji). Domyślnie, NCBI przeszukuje wszystkie pola rekordów (np. pola w częśći `FEATURES`, `REFERENCES` itd.). Dlatego jeżeli wyraz `insulin` występuje w którymkolwiek polu w rekordzie, NCBI przedstawi taki rekord na liście wyników.
+1. W polu wyszukiwania wpisz wyraz `insulin` i naciśnij przycisk `Search`. Wyświetlonych zostanie `202 073` rekordów sekwencji. Na liście wyników są różne typy sekwencji (np.: pełnej długości sekwencje genomowe, sekwencje EST, sekwencje mRNA). Niektóre z tych rekordów sekwencji nie zawierają nawet słowa `insulin` w swoich opisach (liniach definicji). Domyślnie, NCBI przeszukuje wszystkie pola rekordów (np. pola w częśći `FEATURES`, `REFERENCES` itd.). Dlatego, jeżeli wyraz `insulin` występuje w którymkolwiek polu w rekordzie, NCBI przedstawi taki rekord na liście wyników.
 
    *Search details:*
 
@@ -278,7 +278,7 @@ Skonstruuj poniższe zapytanie do bazy `Gene` serwisu NCBI:
 HFE[Gene Name] AND Homo sapiens[Organism]
 ```
 
-W wynikach otrzymano jeden gen.
+W wynikach otrzymano jeden gen HFE człowieka.
 
 1. Indetyfikator genu (`Gene ID`) to [3077](https://www.ncbi.nlm.nih.gov/gene/3077).
 2. Gen HFE ma 12 wariantów splicingowych: 
@@ -287,7 +287,7 @@ W wynikach otrzymano jeden gen.
 
    <img src="./images/ncbi-gene-hfe-viewer.png" alt="ncbi-gene-hfe-viewer">
 
-3. Spójrz na graficzną reprezentację wariantów splicingowych w części *Genomic regions, transcripts, and products*.
+3. Spójrz na graficzną reprezentację wariantów splicingowych w części `Genomic regions, transcripts, and products`.
    * W opcji `Genomic Sequence` ustaw `NG_008720.2 RefSeqGene`. 
    * Skieruj kursor myszy na grubą szarą linię w okolicy pozycji `8671`.
    * Naciśnij prawy przycisk myszy > `Set New Marker at Position` > wpisz `8671` i zaznacz `Lock marker`.
@@ -314,10 +314,10 @@ W wynikach otrzymano gen BRCA1 (Gene ID: [672](https://www.ncbi.nlm.nih.gov/gene
 2. Widok mapy przedstawiający graficznie wyszukany region genomu oraz związane z nim znane warianty genetyczne.
 3. Tabela zawierająca listę wariantów znajdujących się w obrębie mapy wyświetlonanego regionu.
 
-W celu znalezienia SNP na egzonie 10 związanego z chorobtwórczością:
+W celu znalezienia na egzonie 10 SNP związanego z chorobotwórczością:
 
-* Usuń z widoku mapy "track" związany z obszernyni zmiennościami genetycznymi (`dbVar ClinVar Large Variation`).
-* W lewym panelu, w części `Filter by`, wybierz `Source data` > `dbSNP`. Zmiana ta spowoduje odświeżenie widoku mapy oraz tabeli i ograniczenie wariantów genetycznych do SNP.
+* Usuń z widoku mapy *track* związany z obszernymi zmiennościami genetycznymi (`dbVar ClinVar Large Variation`).
+* W lewym panelu, w części `Filter by` wybierz `Source data` > `dbSNP`. Zmiana ta spowoduje odświeżenie widoku mapy oraz tabeli i ograniczenie wariantów genetycznych do SNP.
 * W panelu mapy zmień ustawienie `Region` na `Go to gene only (no pad)`. 
 * W panelu mapy ustaw widok skupiając powiększenie na egzon 10.
   - W opcji `Exon range` wybierz egzon 10.
@@ -327,7 +327,7 @@ W celu znalezienia SNP na egzonie 10 związanego z chorobtwórczością:
 
 <img src="./images/BRCA1-variation_viewer.png" alt="BRCA1-variation_viewer.png">
 
-Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](https://www.ncbi.nlm.nih.gov/snp/rs80357010) w pozycji `43,094,051` genomowej, który w transkrypcie `NM_007294.3` w pozycji `c.1480C>T` powoduje zmianę glutaminy (`Gln`) na kodon *stop*, w efekcie doprowadzając do przedwczesnej terminacja translacji i produkcji skróconej formy tego białka.
+Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](https://www.ncbi.nlm.nih.gov/snp/rs80357010) w pozycji `43,094,051` sekwencji genomowej, który w sekwencji transkryptu `NM_007294.3` w pozycji `c.1480C>T` powoduje zmianę glutaminy (`Gln`) na kodon *stop*, w efekcie doprowadzając do przedwczesnej terminacja translacji i produkcji skróconej formy tego białka.
 
 
 ## Baza taksonomiczna (NCBI Taxonomy)
@@ -344,11 +344,12 @@ Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK
   <img src="./images/ncbi-taxonomy-mouse-lineage.png" alt="ncbi-taxonomy-mouse-lineage">
 
 * Naciśnij na link `Mus musculus (house mouse)`. Na stronie wyświetlone zostaną szczegółowe informacje na temat gatunku myszy.
-  - Identyfikator taksonomiczny myszy w bazie NCBI (`Taxonomy ID`: `10090`). Identyfikator używany jest również przez inne bazy sekwencji - również poza NCBI np. UniProt, Ensembl.
+  - Identyfikator taksonomiczny myszy w bazie NCBI (`Taxonomy ID`: `10090`). 
+    > Identyfikator używany jest również przez inne bazy sekwencji - również poza NCBI np. UniProt, Ensembl.
   - Nazwy zwyczajowe myszy, rangę w taksonomii (gatunek).
 * W tabeli po prawej stronie znajdują się informacje na temat zasobów sekwencji dostępnych w NCBI dla gatunku myszy:
-  - Kolumna `Subtree link` uwzględnia sekwencje myszy i wszystkich podgatuków przypisanych do gatunku. W praktyce, najczęściej używa się właśnie tej kolumny.
-  - Kolumna `Direct link` uwzględnia sekwencje z organizmów bezpośrednio związanych z taksonomicznym indetyfikatorem `10090` (*Mus musculus* bez jawnego podłączenia pod podgatunki).
+  - Kolumna `Subtree link` uwzględnia sekwencje gatunku myszy i wszystkich jej podgatuków. W praktyce, najczęściej używa się właśnie tej kolumny.
+  - Kolumna `Direct link` uwzględnia sekwencje z organizmów bezpośrednio związanych z taksonomicznym indetyfikatorem `10090` (tj. *Mus musculus* bez jawnego podłączenia pod podgatunki).
 
   <img src="./images/ncbi-taxonomy-mouse-resources.png" alt="ncbi-taxonomy-mouse-resources"> 
 
@@ -357,15 +358,14 @@ Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK
    * Naciśnij na link z liczbą sekwencji nukleotydowych. Dostępne typy sekwencji nukleotydowych to: genomowe DNA (`5 191 394`), mRNA (`5 191 394`), rRNA (`53`). 
 
 
-
 ### Zad. 8
 W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` lub `rodents`.
  
-1. Pod oknem wyszukiwania, w polu `levels` wpisz `6` i naciśnij przycisk `Display`.
+1. Pod polem wyszukiwania, w polu `levels` wpisz `6` i naciśnij przycisk `Display`.
 2. Wyświetlone drzewo taksonomiczne rzędu gryzoni wskazuje, że rodzaj *Rattus* należy do podrodziny *Murinae*. 
-3. Pod oknem wyszukiwania, w polu `levels using filter` wybierz `has genome sequences` i naciśnij przycisk `Display`.
+3. Pod polem wyszukiwania, w polu `levels using filter` wybierz `has genome sequences` i naciśnij przycisk `Display`.
    * Tak, sekwencja genomowa jest dostępna dla szczura (*Rattus norvegicus*).
-4. W panelu zazacz `protein` i nacisnąć przycisk `Display`.
+4. W panelu pod polem wyszukiwania zazacz `protein` i nacisnąć przycisk `Display`.
    * Dla szczura znanych jest `152 510` sekwencji białkowych.
 
 <img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png" width="400px">

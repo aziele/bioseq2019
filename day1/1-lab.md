@@ -15,7 +15,7 @@ W bazie nukleotdyowej znajdź rekord sekwencji o numerze dostępu `AB001981`.
 
 5. Ile publikacji dotyczy analizowanego rekordu?
 
-Wyświetl sekwencję w formacie FASTA.
+* Wyświetl sekwencję w formacie FASTA.
 
 6. Czy format FASTA zawiera informacje o genach alfa-globin?
 
@@ -26,7 +26,7 @@ Wyświetl sekwencję w formacie FASTA.
 
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
-W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Z serwisu NCBI otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
+W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Z serwisu NCBI otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wiele rekordów sekwencji jednocześnie. Zapisz otrzymane sekwencje w formacie FASTA.
 
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
@@ -34,9 +34,9 @@ Celem zadania jest wyszukanie wszystkich sekwencji mRNA insuliny człowieka.
 
 #### Proste wyszukiwanie
 
-1. W nukleotydowej bazie NCBI (`Nucleotide`) wyszukaj wszystkie sekwencje insuliny.
-2. Zawęź wyszukiwanie do ogranizmu człowieka.
-3. Zawęź wyszukiwanie do sekwencji mRNA.
+1. W nukleotydowej bazie NCBI (`Nucleotide`), w polu wyszukiwania wpisz `insulin`.
+2. Korzystając z filtrów zawęź wyszukiwanie do ogranizmu człowieka.
+3. Korzystając z filtrów zawęź wyszukiwanie do sekwencji mRNA.
 
 #### Zaawansowane wyszukiwanie
 
@@ -56,7 +56,7 @@ Korzystając z zaawansowanego wyszukiwania bazy białkowej NCBI skonstruuj zapyt
 2. Jaki jest numer dostępu znalezionej sekwencji?
 3. Jaki jest aktualny numer wersji rekordu?
 
-Zapisz sekwencję białkową w formacie FASTA.
+* Zapisz sekwencję białkową w formacie FASTA.
 
 4. Jaki jest numer dostępu sekwencji mRNA kodującej to białka?
 
@@ -67,7 +67,7 @@ Przejź do rekordu mRNA.
 5. Z ilu nukleotydów złożone jest mRNA genu BRCA2?
 6. Podaj identyfikator genu BRCA2 w bazie `Gene`?
 
-Zapisz sekwencję mRNA w formacie FASTA. 
+* Zapisz sekwencję mRNA w formacie FASTA. 
 
 #### Rekord genu
 Przejdź do rekordu genu `BRCA2`.
@@ -76,7 +76,7 @@ Przejdź do rekordu genu `BRCA2`.
 8. Podaj lokalizację genu BRCA2 na sekwencji genomowej.
 9. Ile wariantów splicingowych ma ten gen?
 
-Zapisz sekwencję genomową genu BRCA2 w formacie FASTA.
+* Zapisz sekwencję genomową genu BRCA2 w formacie FASTA.
 
 10. Wyświetl sekwencję genomową genu dodając 1000 nukleotydów *upstream* i *downstream*.
 
@@ -89,7 +89,7 @@ Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o n
 1. Podaj identyfikator genu HFE w bazie `Gene`.
 2. Ile wariantów splicingowych ma ten gen?
    * Ile wśród nich koduje białko?
-3. Jakiej pozycji w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiada pozycja `8671` genu?
+3. Podaj pozycję w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiadającą pozycji `8671` genu?
 
 
 ### Zad. 6 - Wyświetlanie SNP danego genu
@@ -103,7 +103,7 @@ Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o n
 
 
 ### Zad. 7 - Zasoby sekwencyjne pojedynczego gatunku
-Korzystając z bazy `Taxonomy` NCBI wyszukaj wszystkie typy sekwencji dostępne dla myszy.
+Korzystając z bazy `Taxonomy` wyszukaj wszystkie typy sekwencji dostępne dla myszy.
 
 1. Podaj identyfikator taksonomiczny myszy.
 2. Ile sekwencji nukleotydowych dostępnych jest dla myszy oraz wszystkich jej podgatunków?
@@ -111,7 +111,7 @@ Korzystając z bazy `Taxonomy` NCBI wyszukaj wszystkie typy sekwencji dostępne 
 
 
 ### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
-Korzystając z bazy `Taxonomy` NCBI wyświel przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
+Korzystając z bazy `Taxonomy` wyświel przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
 
 1. Wyświetl drzewo taksonomiczne ograniczając je do maksymalnie sześciu poziomów.
 2. Do jakiej podrodziny należy rodzaj `Rattus`.
