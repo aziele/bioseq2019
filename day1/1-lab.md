@@ -23,11 +23,11 @@ W bazie nukleotdyowej znajdź rekord sekwencji o numerze dostępu `AB001981`.
 * Zapisz do pliku sekwencję w formacie GenBank. 
 * Otwórz sekwencję w edytorze tekstu.
 * Wyświetl rekord sekwencji w formie graficznej (*Graphics*).
-
+<br/><br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
 W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Z serwisu NCBI otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wiele rekordów sekwencji jednocześnie. Zapisz otrzymane sekwencje w formacie FASTA.
-
+<br/><br/>
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
 Celem zadania jest wyszukanie wszystkich sekwencji mRNA insuliny człowieka.
@@ -45,7 +45,7 @@ Korzystając z zaawansowanego wyszukiwania (`Advanced`) skonstruuj zapytanie do 
 4. człowieka
 5. mRNA człowieka
 6. mRNA człowieka, które nie są fragmentami (wykluczając frazy `insulin-like`, `partial`, `part`)
-
+<br/><br/>
 
 ### Zad. 4 - Od rekordu białka, przez mRNA do rekordu genu
 Korzystając z zaawansowanego wyszukiwania bazy białkowej NCBI skonstruuj zapytanie, aby znaleźć dokładnie jedną sekwencję białkową genu o nazwie `BRCA2` człowieka pochodzącą z bazy RefSeq.
