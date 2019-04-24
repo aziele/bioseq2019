@@ -2,7 +2,8 @@
 Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu `Popular Resources` wybierz nukleotydową bazę danych (`Nucleotide`). Użyj zaawasowanego wyszukiwania (`Advanced`) i skonstruuj poniższe zapytanie:
 
 ```
-insulin[Title] AND ("mus musculus"[Organism] OR "rattus norvegicus"[Organism]) AND "mrna"[Filter] AND "refseq"[Filter]
+insulin[Title] AND ("mus musculus"[Organism] OR "rattus norvegicus"[Organism])
+AND "mrna"[Filter] AND "refseq"[Filter]
 ```
 
 W wyniku otrzymano **53** sekwencje mRNA myszy i szczura pochodzące z bazy RefSeq.
