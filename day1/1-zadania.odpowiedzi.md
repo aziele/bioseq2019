@@ -7,6 +7,7 @@ AND "mrna"[Filter] AND "refseq"[Filter]
 ```
 
 W wyniku otrzymano **53** sekwencje mRNA myszy i szczura pochodzące z bazy RefSeq.
+<br/><br/>
 
 
 ### Zad. 2
@@ -17,6 +18,7 @@ alpha-globin[Title] AND "metazoa"[Organism] AND "pdb"[Filter]
 ```
 
 W wyniku otrzymano **5** zwierzęcych sekwencji białek o rozwiązanej strukturze przestrzennej. 
+<br/><br/>
 
 
 ### Zad. 3

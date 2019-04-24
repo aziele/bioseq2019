@@ -98,7 +98,7 @@ Zapis rekordu w formacie *GenBank* do pliku: `Send to` > `Complete Record` > `Fi
 Aby wyświetlić rekord `AB001981` w formie graficznej naciśnij link `Graphics`. Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów (*alpha-D globin* i *alpha-A globin*) na sekwencji genomowej. Widok graficzny jest interaktywny - można go przybliżać/oddalać, zaznaczać pozycje w sekwencji, itd. Na przykład, skierowania kursora myszy na egzon (czarny prostokąt) wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej, a także sekwencję aminokwasową kodowaną przez wskazany egzon.
 
 <img src="./images/AB001981-graphics.png" alt="AB001981-graphics.png">
-
+<br/><br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
 Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępu podane w tabeli w publikacji. W tym celu, NCBI udostępnia funkcję `Batch entrez`.
@@ -126,7 +126,7 @@ Arabidopsis thaliana (1)
 Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > `Complete Record` > `File` > `Format`: `FASTA` i naciśnij `Create File`.
 
 <img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png" width="500px">
-
+<br/><br/>
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
 Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
@@ -204,7 +204,7 @@ W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających 
    ```
 
    W wyniku otrzymano **3 888** serkwencji mRNA insuliny człowieka, które nie są fragmentami sekwencji oraz nie są "insulinopodobne".
-
+<br/><br/>
 
 ### Zad. 4 - Od rekordu białka, przez mRNA do rekordu genu
 Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Protein`. Otwórz tryb zaawansowanego wyszukiwania i utwórz poniższe zapytanie:
@@ -267,7 +267,7 @@ Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `Fi
 10. W panelu `Genomic regions, transcripts, and products`, po prawej stronie `Go to nucleotide` naciśnij `FASTA`. Następnie w panelu `Change region shown` po prawej stronie podaj pozycję początku (`32314480`) i końca (`32310672`) wyświetlanej sekwencji. 
 
    <img src="./images/ncbi-gene-upstream_downstream.png" alt="ncbi-gene-upstream_downstream">
-
+<br/><br/>
 
 ### Zad. 5 - Od rekordu genu, przez mRNA do rekordu białka
 Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=zs46Ur0m0mc).
@@ -295,7 +295,7 @@ W wynikach otrzymano jeden gen HFE człowieka.
    <img src="./images/HFE-viewer-marker.png" alt="HFE-viewer-marker.png">
 
    Wynikiem powyższych instrukcji jest pionowa linia wyznaczająca wybrany marker (`Marker 1`) w pozycji `8671` sekwencji genomowej. Naciśnij prawy przycisk myszy w miejscu markera i wybierz `Marker details`. W oknie dialogowym podana jest dokładna lokalizacja markera względem genu, transkryptów, CDS i białek.
-
+<br/><br/>
 
 ### Zad. 6 - Wyświetlanie SNP danego genu
 Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=rnWZ9MFBwUM).
@@ -328,7 +328,7 @@ W celu znalezienia na egzonie 10 SNP związanego z chorobotwórczością:
 <img src="./images/BRCA1-variation_viewer.png" alt="BRCA1-variation_viewer.png">
 
 Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](https://www.ncbi.nlm.nih.gov/snp/rs80357010) w pozycji `43,094,051` sekwencji genomowej, który w sekwencji transkryptu `NM_007294.3` w pozycji `c.1480C>T` powoduje zmianę glutaminy (`Gln`) na kodon *stop*, w efekcie doprowadzając do przedwczesnej terminacja translacji i produkcji skróconej formy tego białka.
-
+<br/><br/>
 
 ## Baza taksonomiczna (NCBI Taxonomy)
 
@@ -356,7 +356,7 @@ Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK
 1. Identyfikator taksonomiczny myszy w bazie NCBI (`Taxonomy ID`) to `10090`.
 2. Dla myszy wraz z wszystkimi podgatunkami dostępnych jest `11 026 160` sekencji nukleotydowych.
    * Naciśnij na link z liczbą sekwencji nukleotydowych. Dostępne typy sekwencji nukleotydowych to: genomowe DNA (`5 191 394`), mRNA (`5 191 394`), rRNA (`53`). 
-
+<br/><br/>
 
 ### Zad. 8
 W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` lub `rodents`.
