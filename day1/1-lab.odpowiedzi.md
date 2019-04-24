@@ -50,7 +50,7 @@ Oba geny składają się z 3 egzonów. Naciśnięcie przycisku myszy na dowolny 
 CDS             join(1104..1192,1306..1510,1614..1742)
 ```
 
-Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104-1192`. Podświetlając CDS w sekwencji genomowej można zobaczyć, że CDS odpowiadający pierwszemu egzonowi zaczyna się kodonem *start* (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614..1742` i kończy się kodonem *stop* (`TAA`).
+Na przyklad, fragment CDS odpowiadający pierwszemu egzonowi genu `alpha-D` znajduje się w pozycji `1104-1192`. Podświetlając CDS w sekwencji genomowej można zobaczyć, że CDS odpowiadający pierwszemu egzonowi zaczyna się kodonem *start* (`ATG`). Natomiast sekwencja CDS odpowiadająca trzeciemu egzonowi znajduje się w pozycji `1614-1742` i kończy się kodonem *stop* (`TAA`).
 
 
 5. Dwie referencje literaturowe odnoszą się do rekordu `AB001981`.
@@ -103,7 +103,10 @@ Aby wyświetlić rekord w formie graficznej naciśnij link `Graphics`. Graficzna
 ### Zad. 2
 Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępne podane w tabeli w publikacji. W tym celu, NCBI udostępnił funkcję `Batch entrez`.
 
-Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`. Następnie, naciśnij na link `Batch Entrez`. Następnie w polu `File` załaduj plik [accession_numbers.txt](./data/accession_numbers.txt) i naciśnij przycisk `Retrieve`.
+* Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov).
+* Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
+* Naciśnij na link `Batch Entrez`. 
+* W polu `File` załaduj plik [accession_numbers.txt](./data/accession_numbers.txt) i naciśnij przycisk `Retrieve`.
 
 Sekwencje transkryptów (mRNA) dla numerów dostępu z pliku [accession_numbers.txt](./data/accession_numbers.txt) pochodzą z następujących organizmów:
 
@@ -122,14 +125,15 @@ Arabidopsis thaliana (1)
 
 Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > `Complete Record` > `File` > `Format`: `FASTA` i naciśnij `Create File`.
 
-<img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png">
+<img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png" width="500px">
 
 
 ### Zad. 3
+Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
 
 #### Proste wyszukiwanie
 
-1. Wpisanie wyrazu `insulin` w oknie wyszukiwania powoduje wyświetlenie 202 073 rekordów. Na liście wyników są różne typy sekwencji (np.: pełnej długości sekwencje genomowe, sekwencje EST, sekwencje mRNA). Niektóre z tych rekordów nie zawierają nawet słowa `insulin` w swoich opisach, ponieważ NCBI przeszukuje wszystkie pola rekordów (np. pola w częśći FEATURES i HEADER). Dlatego jeżeli w rekordzie występuje wyraz `insulin` to NCBI zwraca taki rekord.
+1. W polu wyszukiwania wpisz wyraz `insulin` i naciśnij przycisk `Search`. Wyświetlonych zostanie `202 073` rekordów sekwencji. Na liście wyników są różne typy sekwencji (np.: pełnej długości sekwencje genomowe, sekwencje EST, sekwencje mRNA). Niektóre z tych rekordów sekwencji nie zawierają nawet słowa `insulin` w swoich opisach (liniach definicji). Domyślnie, NCBI przeszukuje wszystkie pola rekordów (np. pola w częśći `FEATURES`, `REFERENCES` itd.). Dlatego jeżeli wyraz `insulin` występuje w którymkolwiek polu w rekordzie, NCBI przedstawi taki rekord na liście wyników.
 
    *Search details:*
 
@@ -137,7 +141,7 @@ Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > 
    insulin[All Fields]
    ```
 
-2. Panele po lewej i prawej stronie umożliwiają zawężanie (filtrowanie) wyników. Naciśnięcie `Results by taxon` > *Homo sapiens* powoduje zawężenie rekordów do organizmu człowieka ()11 106 rekordów
+2. Panele po lewej i prawej stronie umożliwiają zawężanie (*filtrowanie*) listy wyników według różnych kryteriów. Na przykład, naciśnięcie `Results by taxon` > `Homo sapiens` powoduje zawężenie listy wyników do rekordów sekwencji pochodzących z organizmu człowieka. W wyniku tego zawężenia otrzymano `11 106` rekordów sekwencji.
 
    *Search details:*
 
@@ -145,7 +149,8 @@ Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > 
    insulin[All Fields] AND "Homo sapiens"[porgn]
    ```
 
-3. Zawężenie wyników tylko do mRNA: `Molecule type` > `mRNA` (6 383 rekordów)
+3. Naciśnięcie linku `Molecule type` > `mRNA` w panelu po prawej stronie spowoduje dalsze zawężenie listy wyników do `6 383` rekordów.
+
    *Search details:*
 
    ```
@@ -153,34 +158,52 @@ Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > 
    ```
 
 #### Zaawansowane wyszukiwanie
+Na stronie nukleotydowej bazy danych NCBI otwórz tryb zaawansowanego wyszukiwania (`Advanced`).
 
 <img src="./images/ncbi-advanced_search.png" alt="ncbi-advanced_search.png">
+
+Wybierz pole `Title` i wpisz `insulin`.
+
+<img src="./images/ncbi-advanced-insulin_title.png" alt="ncbi-advanced-insulin_title" width="500px">
 
 *Search details*
 
 ```
-insulin[Title]        (21 047 rekordów)
+insulin[Title]
 ```
 
-4. Advanced search > `History` > `Add to builder`.
+W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających wyraz `insulin` w linii tytułowej (definicji) rekordu.
+
+4. Ponownie otwórz tryb zaawansowanego wyszukiwania. W części `History` naciśnij `Add` w celu przywrócenia poprzedniego zapytania do bazy danych.
+
    *Search details:*
 
    ```
-   insulin[Title] AND "Homo sapiens"[Organism]    (5 410 rekordów)
+   insulin[Title] AND "Homo sapiens"[Organism]
    ```
 
-5. Advanced > `History` > `Filter` > mRN > Index preview > mRNA (3 982 rekordów)
+   W wyniku otrzymano **5 410** sekwencje nukleotydowe mRNA insuliny człowieka.
+
+5. Ponownie otwórz tryb zaawansowanego wyszukiwania. Użyj części `History` w celu przywrócenia poprzedniego zapytania do bazy danych. Następnie wybierz pole `Filter`, wpisz `mRN` i naciśnij `Index preview` w celu uzyskania listy podpowiedzi. Z listy podpowiedzi wybierz `mrna`.
+
+   <img src="./images/ncbi-advanced-index_preview.png" alt="ncbi-advanced-index_preview" width="500px">
+
    *Search details:*
    ```
    (insulin[Title] AND "Homo sapiens"[Organism]) AND "mrna"[Filter]
    ```
 
-6. Advanced search (3 898 rekordów)
+   W wyniku otrzymano **3 982** sekwencje mRNA insuliny człowieka.
+
+6. Ponownie otwórz tryb zaawansowanego wyszukiwania. Skorzystaj z `History`, aby przywrócić poprzednie zapytanie do bazy danych. Następnie dodaj kolejne trzy pola `Title` połączone operatorem logicznym `NOT` i wpisz w nich `insulin-like`, `partial` i `part`.
+
    *Search details*
 
    ```
    insulin[Title] AND "Homo sapiens"[Organism] AND "mrna"[Filter] NOT insulin-like[Title] NOT partial[Title] NOT part[Title]
    ```
+
+   W wyniku otrzymano **3 888** serkwencji mRNA insuliny człowieka, które nie są fragmentami sekwencji oraz nie są "insulinopodobne".
 
 
 ### Zad. 4

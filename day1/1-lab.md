@@ -29,19 +29,18 @@ Wyświetl sekwencję w formacie FASTA.
 W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. Z serwisu NCBI otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wszystkie rekordy sekwencji. Zapisz sekwencje w formacie FASTA.
 
 
-### Zad. 3 - Wyszukiwanie mRNA insuliny
+### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
 Celem zadania jest wyszukanie wszystkich sekwencji mRNA insuliny człowieka.
 
 #### Proste wyszukiwanie
 
 1. W nukleotydowej bazie NCBI (`Nucleotide`) wyszukaj wszystkie sekwencje insuliny.
-2. Zawęź wyszukiwania do ogranizmu człowieka.
-3. Zawęź wyszukiwania do sekwencji mRNA.
+2. Zawęź wyszukiwanie do ogranizmu człowieka.
+3. Zawęź wyszukiwanie do sekwencji mRNA.
 
 #### Zaawansowane wyszukiwanie
 
-Skorzystaj z zaawansowanego wyszukiwania (`Advanced`) skonstruuj zapytanie do bazy danych tak, aby znaleźć wszystkie sekwencje w bazie, w których wyraz `insulin` znajduje się w tytule rekordu. Zawężaj dalej wyniki, aby otrzymać sekwencje:
-
+Korzystając z zaawansowanego wyszukiwania (`Advanced`) skonstruuj zapytanie do bazy danych, aby znaleźć wszystkie sekwencje w bazie nukleotydowej, w których wyraz `insulin` znajduje się w tytule rekordu. Zawężaj dalej wyniki, aby otrzymać sekwencje:
 
 4. człowieka
 5. człowieka uzwględniając tylko sekwencje mRNA
