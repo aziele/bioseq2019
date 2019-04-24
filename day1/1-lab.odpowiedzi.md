@@ -333,7 +333,7 @@ Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](htt
 ## Baza taksonomiczna (NCBI Taxonomy)
 
 
-### Zad. 7 - Zasoby sekwencyjne pojedynczego gatunku
+### Zad. 7 - Zasoby sekwencji pojedynczego gatunku
 Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK3ykyInU8o).
 
 * Wybierz bazę `Taxonomy` i w oknie wyszukiwania wpisz `mouse`.
@@ -358,7 +358,7 @@ Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK
    * Naciśnij na link z liczbą sekwencji nukleotydowych. Dostępne typy sekwencji nukleotydowych to: genomowe DNA (`5 191 394`), mRNA (`5 191 394`), rRNA (`53`). 
 <br/><br/>
 
-### Zad. 8
+### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
 W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` lub `rodents`.
  
 1. Pod polem wyszukiwania, w polu `levels` wpisz `6` i naciśnij przycisk `Display`.

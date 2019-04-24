@@ -102,7 +102,7 @@ Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o n
 ## Baza taksonomiczna (NCBI Taxonomy)
 
 
-### Zad. 7 - Zasoby sekwencyjne pojedynczego gatunku
+### Zad. 7 - Zasoby sekwencji pojedynczego gatunku
 Korzystając z bazy `Taxonomy` wyszukaj wszystkie typy sekwencji dostępne dla myszy.
 
 1. Podaj identyfikator taksonomiczny myszy.
