@@ -1,23 +1,33 @@
-### Zad. 1
+### Zad. 1 - Format zapisu przyrównania sekwencji nukleotydowych
 
-1. Długość przyrównania wynosi 9 pozycji.
-2. Nukleotydy dopasowane są 5 pozycjach, a niedopasowane na 1 pozycji.
-3. Procent identycznośc sekwencji wynosi: `60%` (6 / 10 * 100)
-4. Wartość punktacji (`score`) przyrównania wynosi `5`.
+1. Długość przyrównania wynosi **10** pozycji.
+   > Długość przyrównania uwzględnia również przerwy (`-`).
+2. Nukleotydy są zgodne na **6** pozycjach, a niezgodne na **1** pozycji.
+3. Identycznośc sekwencji wynosi: `60%`. 
+   > 6/10 * 100 = 60
+4. Wartość punktacji przyrównania (`score`) wynosi `5`.
    > 2 + 2 - 2 + 2 - 1 + 2 - 2 + 2 - 2 + 2 = 5
+<br/><br/>
 
 
-### Zad. 2
-1. Procent identyczności wynosi `40%` (2 / 5 * 100)
-2. Wartośc punktacji (`score`) przyrównania wynosi `4`.
-   > 5 + 4 + 0 - 5
-3. Procent podobieństwa wynosi `60%` (3 / 5 * 100)
+### Zad. 2 - Format zapisu przyrównania sekwencji aminokwasowych
+1. Identyczności wynosi `40%`.
+   > 2/5 * 100 = 40
+2. Wartośc punktacji przyrównania (`score`) wynosi `4`.
+   > Wartości punktacji dla zgodnych i niezgodnych aminokwasów należy odczytać z macierzy substytucji <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/matrices/BLOSUM62" target="_blank">BLOSUM62</a>. Na przykład, wartość punktacji dopasowanie aminokwasów `M-M` wynosi `5`.
+   
+   Obliczenia wartości punktacji całego przyrównania: `5 + 4 + 0 - 5 = 4`.
+3. Procent podobieństwa sekwencji wynosi `60%`
+   > 3/5 * 100 = 60
+<br/><br/>
 
 
-### Zad. 3
+## Programy Needle i Water
+
+### Zad. 3 - Przyrównanie lokalne i semi-globalne sekwencji DNA
 Otwórz programy Needle i Water w osobnych kartach przeglądarki internetowej. Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `DNA`. Umieść pierwszą sekwencję w formacie FASTA w pierwszym oknie i drugą sekwencję w drugim oknie. Wykonaj przyrównanie.
 
-Needle
+#### Przyrównanie semi-globalne (Needle)
 
 ```
 ########################################
@@ -234,7 +244,7 @@ CDS              328 -------------    327
 #---------------------------------------
 ```
 
-Water
+#### Przyrównanie lokalne (Water)
 
 ```
 ########################################
@@ -367,16 +377,18 @@ CDS              278 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG    327
 
 1. Badany gen składa się z dwóch egzonów. Na obu przyrównaniach widoczne są dopasowania dwóch osobnych fragmentów.
 2. Pierwszy egzon jest w pozycji od `748` do `933`, a drugi egzon jest pozycji `1707-1847`.
-3. Procent identyczności w programie Needle to `15.5%`, a w Water `29.7%`.
-   * Needle prowadzi dopasowanie na całej długości wobec tego przyrównanie zawiera dużą liczbę przerw, które zmniejszają procent identyczności.
+3. Procent identyczności w programie *Needle* to `15.5%`, a w *Water* `29.7%`.
+   * Ponieważ *Needle* porównuje sekwencje na całej długości, otrzymane przyrównanie zawiera dużą liczbę przerw, które zmniejszają procent identyczności.
+<br/><br/>
 
 
-### Zad. 4
+### Zad. 4 - Przyrównanie lokalne i semi-globalne sekwencji aminokwasowych
 Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExPairwiseAlignment).
 
-Otwórz programy Needle w przeglądarce internetowej. Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `PROTEIN`. Umieść dwie sekwencje w formacie FASTA w osobnych polach. Wykonaj przyrównanie.
+#### Przyrównanie semi-globalne (Needle)
 
-#### Przyrównanie globalne (Needle)
+Otwórz stronę programu [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/). Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `PROTEIN`. Umieść dwie sekwencje w formacie FASTA w osobnych polach. Wykonaj przyrównanie.
+
 
 ```
 # Length: 361
@@ -421,11 +433,11 @@ P29600           259 SGLVNAEAATR    269
 P41363           351 NGLVHAGRATQ    361
 ```
 
-1. Wartość punktacji przyrównania (`score`) to 916.
-2. Długość przyrównania wynosi 361 pozycji.
-3. Procent identyczności to `176/361 (48.8%)`.
-4. Procent podobieństwa to `214/361 (59.3%)`
-   > Procent podobieństwa jest zawsze wyższy od procentu identyczności, ponieważ oprócz identycznych reszt uwzględnia również substytucje aminokwasów podobnych (tj. takie substytucje, które są dodatnio punktowane w użytej macierzy substytucji, w tym przypadku macierzy `BLOSUM62`).
+1. Wartość punktacji przyrównania (`score`) to `916` bitów.
+2. Długość przyrównania wynosi `361` pozycji.
+3. Procent identyczności sekwencji to `176/361 (48.8%)`.
+4. Procent podobieństwa sekwencji to `214/361 (59.3%)`
+   > **Procent podobieństwa** sekwencji aminokwasowych jest zawsze większy lub równy od procentu identyczności. Podobieństwo, oprócz identycznych reszt aminokwasowych, uwzględnia również substytucje aminokwasów podobnych (tj. takie substytucje aminokwasów, które są dodatnio punktowane w użytej macierzy substytucji, w tym przypadku macierzy `BLOSUM62`).
 
 
 #### Przyrównanie lokalne (Water)
@@ -465,16 +477,24 @@ P29600           251 LGSTNLYGSGLVNAEAATR    269
 P41363           343 LGSPSLYGNGLVHAGRATQ    361
 ```
 
-5. Najlepsze przyrównania powinno się rozumieć jako przyrównanie, które w najlepszy sposób tłumaczy zmiany jakie zaszły w obu sekwencjach w toku ich ewolucji. Zatem przy wykonywaniu przyrównania zakładamy, że obie sekwencje wywodzą się od sekwencji wspólnego przodka. Trudno jest więc odpowiedzieć na pytanie, które z przyrównań jest lepsze, ponieważ nie znana jest ścieżka ewolucyjna obu sekwencji. Jednak ponieważ obie sekwencje są różnej długości, bardziej sensowne jest użycie algorytmu Smitha-Watermana (lokalne przyrównanie); umożliwia on analizę podobieństw i różnic we fragmentach sekwencji, które są w ogóle porównywalne ze sobą. Z kolei, używając globalnego przyrównania można łatwo zaobserwować, że sekwencje są bardzo podobne do siebie, z wyjątkiem brakującego fragmentu z N-końca pierwszej sekwencji długości ok. 90 reszt aminokwasowych. W tym przypadku wykonanie przyrównania globalne pozwoliło nam uzyskać dodatkową informację na temat dwóch sekwencji. Kiedy obie sekwencje są bardzo podobne - tak jak w tym przypadku - nie ma dużej różnicy pomiędzy lokalnym a globalnym przyrównaniem.
-6. Wejdź na stronę bazy [UniProt](https://www.uniprot.org). Odszukaj dwa rekordy w oparciu o numery dostępu: [P29600](https://www.uniprot.org/uniprot/P29600) i [P41363](https://www.uniprot.org/uniprot/P41363). Na podstawie publikacji w rekordach, P29600 zawiera sekwencję otrzymano ze struktury przestrzennej, a P41363 zawiera sekwencję, którą przetłumaczono z DNA.
-7. Na podstawie panelu `Subcellular location` oba białka są wydzielane poza komórkę (`Secreted protein`).
-8. Na podstawie informacji w panelu `PTM/Processing` wynika, że `P29600` jest sekwencją dojrzałego białka (bez sygnałów peptydowych), natomiast `P41363` zawiera peptyd sygnałowy (w pozycji 1-24) oraz propeptyd (w pozycji 25-93). Oba peptydy są usuwany z dojrzałego białka. Różnica polega na ty, że sekwencja P41363 jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, a P29600 powstaje ze struktury 3D, która dotyczy tylko dojrzałej sekwencji. Niedojrzała Savinase posiada dwa sygnały peptydowe.
-9. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Oba białka są tym samym typem proteazy (proteazy serynowe, rodziny S8) i obie są termostabilne. Sekwencje obu białek są również bardzo podobne. Potencjalnym problemem mogłoby być optymalne pH, lecz to mogłoby zostać zoptymalizowane w laboratorium.
+5. Najlepsze przyrównania rozumiane jest jako przyrównanie, które w najlepszy sposób tłumaczy zmiany jakie zaszły w obu sekwencjach w toku ich ewolucji. Zatem przy wykonywaniu przyrównania zakłada się, że obie sekwencje wywodzą się od sekwencji wspólnego przodka. Trudno jest więc odpowiedzieć na pytanie, które z przyrównań jest lepsze, ponieważ ścieżka ewolucyjna obu sekwencji nie jest znana.
+
+   Obie sekwencje są jednak różnej długości. Pod tym względem, bardziej sensowne jest użycie algorytmu lokalnego przyrównania (algorytm *Smitha-Watermana*). Przyrównanie lokalne umożliwia analizę podobieństw i różnic we fragmentach dwóch sekwencji, które są w ogóle porównywalne ze sobą. Z kolei, używając globalnego przyrównania można łatwo zaobserwować, że obie sekwencje są bardzo podobne do siebie, z wyjątkiem brakującego fragmentu z N-końca pierwszej sekwencji *Savinase* (`P29600`) długości ok. 90 reszt aminokwasowych. W tym przypadku wykonanie przyrównania globalne dostarczyło dodatkowej informacji na temat dwóch sekwencji.
+
+   W przypadku gdy obie sekwencje są bardzo podobne - tak jak sekwencje `P29600` i  `P41363` - nie ma dużej różnicy pomiędzy lokalnym a globalnym przyrównaniem.
+
+6. Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Odszukaj dwa rekordy w oparciu o ich numery dostępu: [P29600](https://www.uniprot.org/uniprot/P29600) i [P41363](https://www.uniprot.org/uniprot/P41363). Lista publikacji w rekordach UniProt wskazuje, że sekwencję białka *Salvinase* (`P29600`) otrzymano ze struktury przestrzennej, natomiast sekwencję `P41363` otrzymano w wyniku translacji sekwencji DNA.
+
+7. Panel `Subcellular location` w rekordzie UniProt wskazuje, że oba białka są wydzielane poza komórkę (`Secreted protein`).
+
+8. Z informacji zawartych w panelu `PTM/Processing` wynika, że *Salivase* (`P29600`) jest sekwencją dojrzałego białka (pozbawioną sygnałów peptydowych), natomiast sekwencja `P41363` zawiera peptyd sygnałowy (w pozycji 1-24) oraz propeptyd (w pozycji 25-93). Oba peptydy sygnałowe są usuwane z dojrzałego białka. Różnica między dwoma białkami termostabilnej proteazy (`P29600` i `P41363`) polega na tym, że sekwencja `P41363` jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, natomiast `P29600` powstała ze struktury przestrzennej, która dotyczy tylko dojrzałego białka.
+
+9. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Białko to, podobnie jak *Salvinase* jest proteazą serynową z rodziny S8. Jest ono również termostabilne. Sekwencje obu białek są również bardzo podobne (w ok. 80%). Potencjalnym problemem mogłoby być optymalne pH, lecz to mogłoby zostać zoptymalizowane w laboratorium.
 
 
-### Zad. 5
+### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
 
-#### Przyrównanie globalne (*Needle*):
+#### Przyrównanie semi-globalne (*Needle*):
 
 ```
 # Length: 1289
@@ -494,9 +514,10 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
 # Score: -244.0
 ```
 
-Włączona opcja `END GAP PENALTY` powoduje, że program punktuje ujemnie również kary za przerwy na końcach przyrównania. Ponieważ sekwencja peptydazy człowieka jest 4 razy dłuższa od sekwencji peptydazy *Savinase*, przyrównanie globalne zawiera więcej przerw (79%) niż aminokwasów (21%). W rezultacie, wartość punktacji przyrównania (`Score`) jest ujemna i wynosi `-244.0`. Domyślnie, w programie *Needle* opcja `END GAP PENALTY` jest wyłączona, a kary za przerwy na końcu przyrównania są ignorowane (jest to algorytm semi-globalny).
+Włączona opcja `END GAP PENALTY` powoduje, że program *Needle* ujemnie punktuje również kary za przerwy na obu końcach przyrównania. Ponieważ sekwencja peptydazy człowieka jest 4 razy dłuższa od sekwencji peptydazy *Savinase*, przyrównanie globalne zawiera więcej przerw (`79%`) niż aminokwasów (`21%`). W wyniku, wartość punktacji przyrównania (`score`) jest ujemna i wynosi `-244.0`. 
+> Domyślnie, w programie *Needle* opcja `END GAP PENALTY` jest wyłączona, a kary za przerwy na końcu przyrównania są ignorowane (jest to algorytm semi-globalny). Algorytm ten stanowi kompromis między globalnym i lokalnym przyrównaniem i często określany jest jako *algorytm "glokalny"*.
 
-#### Przyrównanie lokalne (Water)
+#### Przyrównanie lokalne (*Water*)
 
 ```
 # Length: 296
@@ -531,13 +552,21 @@ P29600           228 V----KQKNPSWSNVQIRNHLKNTATSLGSTNLY--GSGLVNAEAA    267
 P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 ```
  
-1. Przyrównanie lokalne i semiglobalne wskazują, że sekwencja prokariotycznej proteazy jest podobobna tylko do części sekwencji białkowej człowieka. Nie jest to natomiast widoczne opierając się na wynikach przyrównania globalnego, w którym wiele krótkich fragmentów przyrównane rozciąga się wzdłuż całej sekwencji człowieka. 
-   Przyrównanie semiglobalne stanowi kompromis między globalnym i lokalnym przyrównaniem i często określane jest jako *glokalne*.
+1. Przyrównanie lokalne i semi-globalne wskazują, że sekwencja prokariotycznej proteazy wykazuje podobieństwo jedynie do fragmentu sekwencji białkowej człowieka. Nie jest to natomiast widoczne opierając się na wynikach przyrównania globalnego, w którym wiele krótkich fragmentów sekwencji prokariotycznej rozciąga się wzdłuż całej sekwencji człowieka. 
+   
+
    W przypadku porównywania sekwencji odlegle spokrewnionych zaleca się używanie algorytmu lokalnego. Wskazuje on regiony między sekwencjami, które są ze sobą porównywalne.
-2. Kiedy wykonujemy przyrównanie dwóch lub większej liczby sekwencji zakładamy, że mają one wspólne pochodzenie (tj. wywodzą się od sekwencji obecnej u wspólnego przodka). 
-   W przypadku analizowanych w tym zadaniu sekwencji peptydaz *B. subtilis* i człowieka NIE mamy pewności, czy te sekwencje są ze sobą w ogóle spokrewnione. Bardzo często zdarza się, że niespokrewnione ze sobą sekwencje uzyskują jakieś przyrównanie, ale wtedy wartość punktacji (`score`) takiego przyrównania będzie niska. Wartość punktacji lokalnego przyrównania `P29600` i `P29144` wynosi `174`. Aby móc interpretować tę wartość należałoby znać zakres wartości punktacji, jaki należałoby oczekiwać przy przyrównywaniu niespokrewnionych sekwencji.
-   Aby odpowiedzieć na to pytanie, można byłoby dokonać losowego ułożenia aminokwasów w jednej sekwencji. Wówczas jakakolwiek informacja o ewolucyjnym pokrewieństwie tej sekwencji zostałaby utracona, a taka sekwencja nie będzie spokrewniona z żadną inna sekwencją białkową (ale będzie miała taką samą długość i zawartość aminokwasów).
-3. Zakres wyników przyrównania sekwencji `P29600` z losowo wygenerowaną sekwencją `P29144` będzie się różnił, ale najprawdopodobniej będzie się mieścił w poniższym zakresie:
+
+
+2. Nie, w oparciu o otrzymane przyrównania nie można odpowiedzieć na pytanie, czy sekwencja prokariotyczna *Salvinase* jest spokrewnione z sekwencją peptydazy człowieka. Kiedy wykonujemy przyrównanie dwóch lub większej liczby sekwencji zakładamy, że mają one wspólne pochodzenie (tj. wywodzą się od sekwencji obecnej u wspólnego przodka). 
+   
+   W przypadku analizowanych w tym zadaniu sekwencji peptydaz *B. subtilis* i człowieka NIE mamy pewności, czy te sekwencje są ze sobą w ogóle spokrewnione. Bardzo często zdarza się, że niespokrewnione ze sobą sekwencje uzyskują pewne przyrównania. Wartość punktacji (`score`) takich przyrównań będzie niska. Wartość punktacji lokalnego przyrównania `P29600` i `P29144` wynosi `174`. Aby móc interpretować tę wartość należy poznać zakres wartości punktacji, którzy można oczekiwać przy przyrównywaniu niespokrewnionych sekwencji.
+
+   Aby odpowiedzieć na to pytanie, można dokonać losowego ułożenia aminokwasów w jednej sekwencji. Wówczas jakakolwiek informacja o ewolucyjnym pokrewieństwie tej sekwencji zostałaby utracona, a taka sekwencja nie będzie spokrewniona z żadną inna sekwencją białkową (ale będzie miała taką samą długość i zawartość aminokwasów).
+
+#### Istotność przyrównania
+
+3. Zakres wyników przyrównania sekwencji `P29600` z losowo wygenerowaną sekwencją `P29144` będzie się różnił, ale najprawdopodobniej będzie on mieścił się w poniższym zakresie:
 
    ```
    # Length: 100-300 
@@ -547,15 +576,18 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
    # Score: 40-70 
    ```
 
-   Zatem takich właśnie wartości można się spodziewać podczas porównywania dwóch niespokrewnionych sekwencji o określonej długości i składzie aminokwasów. 
-   > Wykonywanie wielu przyrównań *Savinase* z losową sekwencją człowieka dostarcza "modelu null", który następnie można zestawić z prawdziwym przyrównaniem *Savinase* / peptydaza człowieka. Gdyby wykonać procedurę randomizacji sekwencji 100 razy, zamiast 3, można by wyznaczyć przedział ufności dla uzyskanej wartości punktacji oraz jej istotność statystyczną (więcej na temat istotności statystycznej podczas omawiania programu BLAST).  
+   Zatem takich właśnie wartości można spodziewać się podczas porównywania dwóch niespokrewnionych sekwencji o określonej długości i zawartości aminokwasów. 
+   > Wykonywanie wielu przyrównań *Savinase* (`P29600`) z losową sekwencją człowieka dostarcza "modelu null", który następnie można porównać z prawdziwym przyrównaniem *Savinase*-peptydaza człowieka (`P29600-P29144`). Gdyby wykonać procedurę randomizacji sekwencji człowieka 100 razy, zamiast 3, można by wyznaczyć przedział ufności dla uzyskanej wartości punktacji oraz jej istotność statystyczną (więcej na temat istotności statystycznej podczas omawiania programu BLAST).
+
 4. Porównując przyrównanie rzeczywistych sekwencji *Savinase / Human peptidase alignment* (score: `173`) z "celowo kiepskim" przyrównaniem *Savinase / losowa sekwencja*, oryginalne przyrównanie nie wydaje się już tak "kiepskie". Wartośc punktacji jest przynajmniej dwukrotnie wyższa od tych, które uzyskano w przyrównaniu zawierającym losową sekwencję. Warto zwrócić uwagę, że przy interpretacji wyników należy porównywać wartość punktacji aby zaobserwować wyraźną różnicę; inne wartości (identyczność, podobieństwo) mogą być podobne między oryginalnym przyrównaniem a przyrównaniem z losową sekwencją.
+<br/><br/>
 
+## Wpływ parametrów na przyrównanie sekwencji
 
-### Zad. 6
+### Zad. 6 - Kara za stosowanie przerw
 
-#### Zmniejszenie kary za przewy
-Ponieważ kara za przerwę jest mała (niskie wartości), algorytm chętniej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość przyrównania (większy wpływ na obniżenie punktacji mają niedopasowania). Algorytm częściej wprowadza przerwy niż niedopasowanie dwóch reszt aminokwasowych/nukleotydowych. W rezultacie, uzyskane przyrównanie będzie zawierać wiele przerw. Takie przyrównanie staje się zatem niewiarygodne z biologicznego punktu widzenia.
+#### 1. Zmniejszenie kary za przewy
+Ponieważ kara za przerwę jest mała (niewielkie wartości ujemne), algorytm częściej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość punktacji przyrównania. Większy wpływ na obniżenie punktacji przyrównania mają substytucje aminokwasów. W rezultacie, otrzymane przyrównanie zawiera więcej przerw niż niedopasowań dwóch aminokwasów. Z biologicznego punktu widzenia, takie przyrównanie jest mało wiarygodne.
 
 ```
 # Gap_penalty: 1.0
@@ -677,8 +709,8 @@ P29144          1233 FT   1234
 
 W wyniku zmniejszenia kary za wprowadzenie przerw (otwarcie przerwy = `1` i wydłużenie przerwy = `0.2`) otrzymane przyrównanie składa się w 80% z samych przerw.
 
-#### Zwiększenie kary za przerwę
-Ponieważ kara za przerwę jest duża, algorytm rzadziej wprowadza przerwy do przyrównania, ponieważ zaniżają one wartość punktacji bardziej niż wprowadzanie niedopasowania. W rezultacie, przyrównanie zawiera niewielką liczbę przerw.
+#### 2. Zwiększenie kary za przerwę
+Ponieważ kara za przerwę jest duża (duże wartości ujemne), algorytm rzadko wprowadza przerwy do przyrównania, ponieważ zaniżają one końcową wartość punktacji przyrównania. Algorytm częściej wprowadza do przyrównania substytucje aminokwasów. W rezultacie, otrzymane przyrównanie zawiera niewielką liczbę przerw.
 
 ```
 # Gap_penalty: 20.0
@@ -706,11 +738,11 @@ TPP2_HUMAN       495 FAQG    498
 #---------------------------------------
 ```
 
-W wyniku zwiększenie kary za wprowadzenie przerw (otwarcie przerwy = `20`, wydłużenie przerwy = `1`) otrzymane przyrównanie składa się w 7% z przerw.
+W wyniku zwiększenie kary za wprowadzenie przerw (otwarcie przerwy = `20`, wydłużenie przerwy = `1`) otrzymane przyrównanie jest krótkie (54 pozycji) i składa się w 7% z przerw.
+<br/><br/>
 
-
-### Zad. 7
-Macierz substytucji (np. BLOSUM62) dostarcza informacji na temat wartości punktowania dopasowania i niedopasowania dwóch reszt aminokwasowych. Algorytmy służące do przyrównywania sekwencji (np. algorytm Smitha-Watermana) wykorzystują wartości w macierzach substytucji podczas wyznaczania przyrównania. Macierz substytucji ma zatem wpływ na wynik przyrównania (wszystkie wartości przyrównaniaL: punktacja, identyczność, podobieństwo, długość, liczba przerw).
+### Zad. 7 - Macierze substytucji
+Macierz substytucji (np. BLOSUM62) dostarcza informacji na temat wartości punktowania aminokwasów zgodnych i niezgodnych. Algorytmy służące do przyrównywania sekwencji (np. algorytm Smitha-Watermana) wykorzystują wartości w macierzach substytucji podczas wyznaczania przyrównania. Macierz substytucji ma zatem wpływ na wynik przyrównania (na wszystkie wartości przyrównania: punktacja, identyczność, podobieństwo, długość oraz liczba przerw).
 
 #### BLOSUM30
 
@@ -839,15 +871,15 @@ P29600           241 RNHLKNTATSLGSTNLY--GSGLVNAEAA    267
 P29144           479 RRALENTAVKADNIEVFAQGHGIIQVDKA    507
 ```
 
-Wraz ze wzrastającym indeksem BLOSUM (30-90), procent identyczności wzrasta, natomiast maleje długość przyrównania.
-
+Wraz ze wzrastającym indeksem BLOSUM (od 30 do 90), procent identyczności przyrównania wzrasta, natomiast maleje długość przyrównania.
+<br/><br/>
 
 ## Porównanie sekwencji: wykres Dot plot
 
 ### Zad. 8
 
 #### s1:s1
-Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. 
+Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Porównywane sekwencje są zatem identyczne lub bardzo podobne (poziom zgodności to przynajmniej 10 na 15 nukleotydów)
 
 <img src="./images/dotmatcher_s1-s1.png" alt="dotmatcher_s1-s1.png" width="450px">
 
@@ -857,22 +889,22 @@ Linia przekątna jest przerwana w trzech miejscach - są to regiony w sekwencjac
 <img src="./images/dotmatcher_s1-s10.png" alt="dotmatcher_s1-s10.png" width="450px">
 
 #### s2:s2
-Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Porównywane sekwencje są zatem identyczne lub bardzo podobne (zgodnośc przynajmniej 10 na 15 nukleotydów). Dodatkowo, w sekwencjach występuje region (długości ok. 50 nukleotydów) dwukrotnie powtórzony w pozycji ok. 70, i 200.
+Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Dodatkowo, w sekwencjach występuje region (długości ok. 50 nukleotydów) dwukrotnie powtórzony w sekwencji w pozycji ok. 70, i 200 nukleotydu.
 
 <img src="./images/dotmatcher_s2-s2.png" alt="dotmatcher_s2-s2.png" width="450px">
 
 #### s4:s5
-Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. W obu sekwencjach występują wielokrotne powtórzenia krótkich fragmentów sekwencji (ok. 20-25 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się *powtórzeniami tandemowymi* (np. czterokrotne powtórzenie podsekwencji `AT` w ciągu `ATATATAT`). Liczba linii odpowiada liczbie powtarzających sie fragmentów. Długość linii oznacza długość fragmentu ulegającego powtórzeniu. Odległość linii od siebie oznacza odległość tych powtórzeń w sekwencji.
+Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. W obu sekwencjach występują wielokrotne powtórzenia krótkich fragmentów sekwencji (ok. 20-25 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`). Liczba linii na wykresie dot-plot odpowiada liczbie powtórzonych fragmentów. Długość linii oznacza długość fragmentu podlegającego powtórzeniu. Odległość między liniami na wykresie oznacza odległości między tymi powtórzeniami w sekwencji.
 
 <img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="450px">
 
 
 #### s7:s8
-Przemieszczenie się przekątnej linii oznacza, że zaszła insercja w jednej sekwencji lub delecja w drugiej sekwencji. W tym przypadku, sekwencja `s7` jest dłuższa i zawiera fragment w pozycji `200-220`, który nie występuje w sekwencji `s8`. Zatem, fragment uległ insercji w sekwencji `s7` lub delecji w sekwencji `s8`.
+Przemieszczenie się linii przekątnej oznacza zajście insercji w jednej sekwencji lub delecji w drugiej sekwencji. W tym przypadku, sekwencja `s7` jest dłuższa i zawiera fragment w pozycji `200-220`, który nie występuje w sekwencji `s8`. Zatem, fragment uległ insercji w sekwencji `s7` lub delecji w sekwencji `s8`.
 
 <img src="./images/dotmatcher_s7-s8.png" alt="dotmatcher_s7-s8.png" width="450px">
 
 #### s4:s4
-Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera powtórzenia tandemowe.
+Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
 
 <img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="450px">
