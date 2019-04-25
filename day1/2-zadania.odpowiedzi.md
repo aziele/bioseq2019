@@ -1,16 +1,49 @@
 ### Zad. 1
-Wejdź na stronę bazy [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania.
+Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania i skonstruuj poniższe zapytanie:
 
-1. Znaleziono: 12 610 białek.
-2. Znaleziono: 24 tys. białek uwzględniając niższe jednostki taksonomiczne *Neisseria gonorrhoeae*. 
+```
+organism:"Neisseria gonorrhoeae [485]"
+```
+
+1. W wyniku otrzymano **12 711** rekordów białek:
+   * `137` rekordów należy do bazy *SwissProt*
+   * `12 574` rekordów należy do bazy *trEMBL*
+
+2. W wyniku uwzględnienia wszystkich niższych jednostek taksonomicznych (podgatunków) *N. gonorrhoeae* otrzymano **24 248** białek:
+   * `807` rekordów należy do bazy *SwissProt*
+   * `23 441` rekordów należy do bazy *trEMBL* 
+<br/><br/>
+
 
 ### Zad. 2
-Wejdź na stronę bazy [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania, skonstruuj zapytanie: `existence:"Evidence at protein level [1]" length:[1 TO 10]`. W wyniku otrzymasz 1 144 białek z bazy SwissProt i 147 z bazy trEMBL.
+Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania i skonstruuj poniższe zapytanie: 
 
-1. Korzystając z zaawasnowanego wyszukiwania zmodyfikuj poprzednie zapytanie: `existence:"Evidence at protein level [1]" length:[1 TO 10] fragment:no`. W wyniku otrzymano 783 (SwissProt) i 65 (trEMBL) pełnej długości białka.
-2. Korzystając z zaawansowanego wyszukiwania zmodyfikuj poprzednie zapytanie: `existence:"Evidence at protein level [1]" length:[1 TO 10] fragment:no AND organism:"Homo sapiens (Human) [9606]"`. W wyniku otrzymano 6 białek człowieka.
+```
+existence:"Evidence at protein level [1]" length:[1 TO 10]
+```
 
-Zapisz sekwencje w formacie FASTA: przycisk `Download` > `Download all` > `Uncompressed` > Przycisk `GO`.
+1. W wyniku otrzymano `1 144` białek z bazy *SwissProt* i `147` białek z bazy *trEMBL*.
+
+2. Korzystając z zaawasnowanego wyszukiwania zmodyfikuj poprzednie zapytanie: 
+   > `Advanced` > `Sequence` > `Fragment` > `Sequence complete`
+
+   ```
+   existence:"Evidence at protein level [1]" length:[1 TO 10] fragment:no
+   ```
+   W wyniku otrzymano `783` rekordów z bazy *SwissProt* i `65` rekordów z bazy *trEMBL*.
+
+2. Korzystając z zaawansowanego wyszukiwania zmodyfikuj poprzednie zapytanie: 
+
+   ```
+   existence:"Evidence at protein level [1]" length:[1 TO 10] fragment:no 
+   AND organism:"Homo sapiens (Human) [9606]"
+   ```
+
+   W wyniku otrzymano `6` białek człowieka z bazy *SwissProt*.
+
+
+#### Zapis sekwencji w formacie FASTA
+Naciśnij przycisk `Download` > `Download all` > `Uncompressed` > Przycisk `GO`.
 
 ```
 >sp|P0DPR3|TRDD1_HUMAN T cell receptor delta diversity 1 OS=Homo sapiens OX=9606 GN=TRDD1 PE=1 SV=1

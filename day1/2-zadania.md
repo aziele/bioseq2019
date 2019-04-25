@@ -1,9 +1,19 @@
 ### Zad. 1
-1. Znajdź wszystkie białka w UniProt pochodzące z *Neisseria gonorrhoeae* (taxId: 485). Ile białek znaleziono?
-2. Naciśnij `"Expand search "Neisseria gonorrhoeae [485]" to include lower taxonomic ranks"`. Ile białek w sumie znaleziono dla wszystkich szczepów i podgatunków Neisseria gonorrhoeae?
+W [serwisie Uniprot](https://www.uniprot.org/) znajdź wszystkie białka pochodzące z bakterii *Neisseria gonorrhoeae* (taxId: 485). 
+
+1. Ile rekordów białek znaleziono?
+
+Nad listą znalezionych białek naciśnij na link `"Expand search "Neisseria gonorrhoeae [485]" to include lower taxonomic ranks"`. 
+
+2. Ile rekordów białek znaleziono w sumie dla wszystkich szczepów i podgatunków *Neisseria gonorrhoeae*?
+<br><br>
 
 ### Zad. 2
-Czy w bazie UniProt znajdują się doświadczalnie potwierdzone peptydy długości poniżej 10 aminokwasów?
-1. Większość otrzymanych białek może być fragmentami innych białek. Zawęź wyniki do sekwencji pełnej długości (`Advanced` > `Sequence` > `Fragment` > `Sequence complete`). Ile białek znalezionio?
-2. Ile z tych białek pochodzi z człowieka?
-3. Zapisz otrzymane sekwencje w formacie FASTA.
+Sprawdź, czy w bazie UniProt znajdują się doświadczalnie potwierdzone białka długości poniżej 10 aminokwasów?
+
+1. Ile rekordów białek znaleziono?
+2. Większość otrzymanych rekordów białek może być fragmentami innych, pełnej długości białek. Zawęź wyniki wyszukiwania do sekwencji pełnej długości.
+   * Ile białek znaleziono?
+3. Ile z tych białek pochodzi z człowieka?
+
+Zapisz otrzymane sekwencje w formacie FASTA.
