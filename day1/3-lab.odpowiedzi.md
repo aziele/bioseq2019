@@ -8,7 +8,7 @@
 4. Wartość punktacji przyrównania (`score`) wynosi `5`.
    > 2 + 2 - 2 + 2 - 1 + 2 - 2 + 2 - 2 + 2 = 5
 
-<br/><br/>
+<br/>
 
 
 ### Zad. 2 - Format zapisu przyrównania sekwencji aminokwasowych
@@ -21,7 +21,7 @@
 3. Procent podobieństwa sekwencji wynosi `60%`
    > 3/5 * 100 = 60
 
-<br/><br/>
+<br/>
 
 
 ## Programy Needle i Water
@@ -371,15 +371,11 @@ CDS              228 CCTGCCACCCTTGGAGGGTCCCATGCAGAAGCGTGGCGTCGTGGATCAGT    277
 DNA             1798 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG   1847
                      ||||||||||||||||||||||||||||||||||||||||||||||||||
 CDS              278 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG    327
-
-
-#---------------------------------------
-#---------------------------------------
 ```
 
 1. Badany gen składa się z dwóch egzonów. Na obu przyrównaniach widoczne są dopasowania dwóch osobnych fragmentów.
-2. Pierwszy egzon jest w pozycji od `748` do `933`, a drugi egzon jest pozycji `1707-1847`.
-3. Procent identyczności w programie *Needle* to `15.5%`, a w *Water* `29.7%`.
+2. Pierwszy egzon jest w pozycji od `748` do `933` na sekwencji genomowej, a drugi egzon jest pozycji `1707-1847`.
+3. Procent identyczności sekwencji otrzymany w programie *Needle* to `15.5%`, a w programie *Water* `29.7%`.
    * Ponieważ *Needle* porównuje sekwencje na całej długości, otrzymane przyrównanie zawiera dużą liczbę przerw, które zmniejszają procent identyczności.
 <br/><br/>
 
@@ -479,7 +475,7 @@ P29600           251 LGSTNLYGSGLVNAEAATR    269
 P41363           343 LGSPSLYGNGLVHAGRATQ    361
 ```
 
-5. Najlepsze przyrównania rozumiane jest jako przyrównanie, które w najlepszy sposób tłumaczy zmiany jakie zaszły w obu sekwencjach w toku ich ewolucji. Zatem przy wykonywaniu przyrównania zakłada się, że obie sekwencje wywodzą się od sekwencji wspólnego przodka. Trudno jest więc odpowiedzieć na pytanie, które z przyrównań jest lepsze, ponieważ ścieżka ewolucyjna obu sekwencji nie jest znana.
+5. Najlepsze przyrównania rozumiane jest jako przyrównanie, które najbardziej wiarygodnie tłumaczy zmiany jakie zaszły w obu sekwencjach w toku ich ewolucji. Zatem przy wykonywaniu przyrównania zakłada się, że obie sekwencje wywodzą się od sekwencji wspólnego przodka. Trudno jest więc odpowiedzieć na pytanie, które z przyrównań jest lepsze, ponieważ ścieżka ewolucyjna obu sekwencji nie jest znana.
 
    Obie sekwencje są jednak różnej długości. Pod tym względem, bardziej sensowne jest użycie algorytmu lokalnego przyrównania (algorytm *Smitha-Watermana*). Przyrównanie lokalne umożliwia analizę podobieństw i różnic we fragmentach dwóch sekwencji, które są w ogóle porównywalne ze sobą. Z kolei, używając globalnego przyrównania można łatwo zaobserwować, że obie sekwencje są bardzo podobne do siebie, z wyjątkiem brakującego fragmentu z N-końca pierwszej sekwencji *Savinase* (`P29600`) długości ok. 90 reszt aminokwasowych. W tym przypadku wykonanie przyrównania globalne dostarczyło dodatkowej informacji na temat dwóch sekwencji.
 
@@ -492,7 +488,7 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
 8. Z informacji zawartych w panelu `PTM/Processing` wynika, że *Salivase* (`P29600`) jest sekwencją dojrzałego białka (pozbawioną sygnałów peptydowych), natomiast sekwencja `P41363` zawiera peptyd sygnałowy (w pozycji 1-24) oraz propeptyd (w pozycji 25-93). Oba peptydy sygnałowe są usuwane z dojrzałego białka. Różnica między dwoma białkami termostabilnej proteazy (`P29600` i `P41363`) polega na tym, że sekwencja `P41363` jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, natomiast `P29600` powstała ze struktury przestrzennej, która dotyczy tylko dojrzałego białka.
 
 9. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Białko to, podobnie jak *Salvinase* jest proteazą serynową z rodziny S8. Jest ono również termostabilne. Sekwencje obu białek są również bardzo podobne (w ok. 80%). Potencjalnym problemem mogłoby być optymalne pH, lecz to mogłoby zostać zoptymalizowane w laboratorium.
-
+<br><br>
 
 ### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
 

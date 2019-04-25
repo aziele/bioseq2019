@@ -1,7 +1,7 @@
 ### Zad. 1
-Wejdź na stronę bazy [UniProt](https://www.uniprot.org) i znajdź dwa białka o numerach dostępu: [GLBE_CHITH](https://www.uniprot.org/uniprot/P11582) i [GLB7A_CHITH](https://www.uniprot.org/uniprot/P02226). Wyświetl obie sekwencje w formacie FASTA (`Format` > `FASTA`). Użyj sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) i przeprowadź pryrównanie korzystając z domyślnych ustawień programu.
+Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Znajdź dwa białka o numerach dostępu: [GLBE_CHITH](https://www.uniprot.org/uniprot/P11582) i [GLB7A_CHITH](https://www.uniprot.org/uniprot/P02226). Wyświetl obie sekwencje w formacie FASTA (`Format` > `FASTA`). Użyj obu sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) i przeprowadź pryrównanie korzystając z domyślnych ustawień programu.
 
-1. Wartość punktacji (`Score`): 361
+1. Wartość punktacji (`score`): 361
 2. Procent identyczności: `48.4%`
 3. Procent podobieństwa: `63.4%`
 4. Nadłuższ sekwencja typu indel: `ALIGNE`.
