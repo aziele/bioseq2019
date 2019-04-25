@@ -31,7 +31,7 @@ Przejdź do rekordu sekwencji insuliny człowieka o numerze dostępu (`P01308`).
 3. Czy sekwencja insuliny posiada peptydy sygnałowe? (`PTM / Processing`)
 4. Czy znane są warianty/polimorfizmy sekwencji związane ze stanem chorobowym?
 5. Jaki jest numer dostępu tego białka i odpowiadającego mRNA w bazie RefSeq?
-<br><br>
+<br/><br/>
 
 ### Zad. 3 - Zaawansowane wyszukiwanie: peptydy sygnałowe
 Korzystając z zaawansowanego wyszukiwania znajdź wszystkie białka w bazie UniProt posiadające peptydy sygnałowe.
@@ -73,7 +73,7 @@ W bazie `Gene` serwisu NCBI wyszukaj gen człowieka o nazwie *CASP6*.
    * komponentu komórkowego
 2. O czym informują trzyliterowe skróty (kody) znajdujące się w kolumnie `Evidence Code`?
 3. Na stronie genu odszukaj identyfikator bazy UniProt odpowiadającego rekodu białka i przejdź do tego rekordu. Czy w rekordzie UniProt również znajdują się informacje na temat ontologii tego genu?
-
+<br/><br/>
 
 ### Zad. 6 - Wyszukiwanie genów zaangażowanych w dany proces biologicznych
 
@@ -89,6 +89,7 @@ W serwisie [Gene Ontology](http://amigo.geneontology.org/amigo/), w polu wyszuki
 3. Wymień 3 procesy wchodzące w skład PCD.
 4. Podaj nazwę i numer dostępu procesu, który jest nadrzędny dla PCD.
 
+#### Zakładka Annotations
 Przejdź do zakładki `Annotations`. 
 
 5. Ile genów bierze udział w PCD?
@@ -99,6 +100,7 @@ Przejdź do zakładki `Annotations`.
 8. Ogranicz listę wyników do genów kodujących białka i pochodzących z bazy UniProt.
    - Ile rekordów znaleziono?
 
+#### UniProt
 Z listy wyników wybierz dowolne białko i przejdź do jego rekordu w bazie UniProt.
 
 9. W opraciu o informajce zawarte w rekordzie UniProt odpowiedz, czy białko bierze udział w procesach biologicznych innych niż PCD?

@@ -153,12 +153,12 @@ W wyniku otrzymany zostanie pojedynczy rekord o identyfikatorze genu (`Gene ID`)
 ### Zad. 6 - Wyszukiwanie genów zaangażowanych w dany proces biologicznych
 Otwórz stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/). W polu wyszukiwania wpisz frazę `programmed cell death` i wybierz ją z listy autouzupełnień.
 
-<img src="./images/amigo-quicksearch.png" alt="amigo-quicksearch" width="500px">
+<img src="./images/amigo-quicksearch.png" alt="amigo-quicksearch" width="600px">
 
 1. Numer dostępu procesu PCD w bazie *Gene Ontology* to [GO:0012501](http://amigo.geneontology.org/amigo/term/GO:0012501).
 2. Proces PCD nie jest tożsamy z apoptozą. Według klasyfikacji GO, proces PCD ma szerszy zakres, a apoptoza jest składową procesu PCD.
 
-   <img src="./images/go-pcd-inferred_tree.png" alt="go-pcd-inferred_tree" width="500px">
+   <img src="./images/go-pcd-inferred_tree.png" alt="go-pcd-inferred_tree" width="600px">
 
 3. Trzy przykładowe procesy wchodzące w skład PCD to:
    * autofagowa degradacja
