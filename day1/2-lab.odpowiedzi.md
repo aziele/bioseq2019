@@ -3,8 +3,8 @@ Zadania na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index
 
 ### Zad. 1 - Proste wyszukiwanie insuliny człowieka
 1. W wyniku wpisania frazy `human insulin` znaleziono:
-   * `1525` rekordów sekwencji z bazy **SwissProt** (sekwencje wysokiej jakości o potwierdzonej funkcji) 
-   * `3048` rekordów sekwencji z bazy **trEMBL** (sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji).
+   * `1525` rekordów sekwencji z bazy **SwissProt** (*Reviewed*, sekwencje wysokiej jakości o potwierdzonej funkcji) 
+   * `3048` rekordów sekwencji z bazy **trEMBL** (*Unreviewed*, sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji).
 2. Szukane białko (`INS_HUMAN Insulin INS Homo sapiens (Human)`) jest na czwartym miejscu na liście białek.
    * Na liście rekordów znajdują się również białka pochodzące z innych organizmów nie będące insuliną.
 3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do `199` rekordów człowieka, których nazwa zawiera wyraz `insulin`. 
@@ -22,7 +22,7 @@ Zadania na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index
 ### Zad. 2 - Rekord UniProt insuliny człowieka
 Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uniprot/P01308).
 
-1. W lewym panelu (*Display*) wybierz `Publications`. W sumie `1 050` publikacji dotyczy białka insuliny człowieka. 
+1. W lewym panelu `Display` wybierz `Publications`. W sumie `1 050` publikacji dotyczy białka insuliny człowieka. 
    * `1 014` publikacji typu **Computationally mapped** (publikacje automatycznie pobrane z innych baz danych i nie są zweryfikowane przez pracowników UniProt)
    * `36` publikacji typu **UniProtKB/Swiss-Prot** (zweryfikowane publikacje dotyczące szczegółowych informacji na temat funkcji, sekwencji, struktury i interakcji tego białka)
 2. Panel `Subcellular location` w rekordzie dostarcza informacji na temat występowania insuliny w organizmie człowieka. 
@@ -31,16 +31,57 @@ Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uni
 
    <img src="./images/uniprot-insulin-subcellular_location.png" alt="uniprot-insulin-subcellular_location">
 
-3. Panel rekordu `PTM / Processing` w części `Molecule processing` informuje, że insulina posiada dwa sygnałowe peptydy: *Signal peptide* na N-końcu w pozycji 1-24 oraz *Propeptide* na C-końcu w pozycji 57-97. Oba te peptydy zostają wycinane zanim białko zostanie wydzielone poza komórkę. Dojrzałe białko insuliny (łańcuchy A i B) są więc mniejsze niż sekwencja, która jest pokaza w panelu `Sequences`.
-4. W panelu `Sequence`, części `Natural variant` zawierająca listę mutacji insuliny, które zostały opisane w literaturze. W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu .w sekwenci - jeżeli wariant jest związany z chorobą oznaczone jest skrótem choroby (np. "R → C in IDDM2"). Panel `Under Pathol./Biotech` dostarcza informacji na temat choroby, której skrót jest w tabeli oraz powtarza informacje o wariantach sekwencji związanych z tą jednostką chorobową (np. IDDM2 to skrót od Cukrzycy typu 2).
-5. U dołu rekordu insuliny, w panelu `Cross-references` podane są odnośniki do innych baz danych. W części `Sequence databases` tego panelu znajduje się odnośnik do sekwencji białkowej i mRNA insuliny w bazie RefSeq (`NP_000198.1﻿` i `NM_000207.2`).
+3. Panel rekordu insuliny `PTM / Processing` w części `Molecule processing` informuje, że insulina posiada dwa sygnałowe peptydy: 
+   * *Signal peptide* na N-końcu białka w pozycji 1-24 sekwencji. 
+   * *Propeptide* na C-końcu w pozycji 57-97.
+
+   <img src="./images/uniptot-insulin-ptm_processing.png" alt="uniptot-insulin-ptm_processing">
+
+   Oba peptydy sygnałowe zostają usunięte z białka insuliny zanim białko zostanie wydzielone poza komórkę. Sekwencja dojrzałego białka insuliny (łańcuchy *A* i *B*) jest więc krótsza niż sekwencja, która wyświetlona sekwencja w panelu `Sequences` (*The displayed sequence is further processed into a mature form.*)
+
+4. Panel rekordu `Sequence`, w części `Natural variant` zawiera tabelę z mutacjami/polimorfizmami w sekwencji insuliny, które zostały opisane w literaturze. 
+
+   <img src="./images/uniprot-insulin-natural_variant.png" alt="uniprot-insulin-natural_variant">
+
+  W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu w sekwenci. Jeżeli mutacja związana jest z chorobą, jednostka chorobowa oznaczona jest skrótem (np. `R → C in IDDM2`). Panel `Under Pathol./Biotech` dostarcza z kolei informacji na temat choroby rozwijając jej skrócony opis (np. `IDDM2` to skrót od Cukrzycy typu 2).
+
+5. Na dole rekordu insuliny, w panelu `Cross-references` znajdują się odnośniki do stron innych baz danych. W części `Sequence databases` w tym panelu znajduje się numer dostępu sekwencji białkowej i mRNA insuliny w bazie RefSeq (`NP_000198.1﻿` i `NM_000207.2`).
+
+   <img src="./images/uniprot-insulin-cross_references.png" alt="uniprot-insulin-cross_references">
+<br><br>
 
 
-### Zad. 3
-1. W bazie UniProt znajduje się ponad 10 milionów białek zawierających peptydy sygnałowe. Z tego, 41 893 należy do bazy SwissProt a 10,787,160 do bazy trEMBL. Zapytanie do bazy: `annotation:(type:signal)`.
-2. Lista znalezionych białek zawiera również białka, w których peptydy sygnałowe zostały przewidziane komputerowo i niekoniecznie wsparte są dowodami doświadczalnymi. Wyszukanie białek zawierających sygnałowe peptydy o doświadczalnie potwierdzonej funkcji: `annotation:(type:signal evidence:experimental)`. W wyniku otrzymano 3 650 białek z bazy SwissProt (oczywiście, nie ma takich białek w bazie trEMBL).
-3. Wśród białek z poprzedniego zapytania, 723 należy do człowieka. Zapytanie: `annotation:(type:signal evidence:experimental) AND organism:"Homo sapiens (Human) [9606]"`. Warto zwrócić uwagę na identyfikator taksonomiczny z bazy NCBI. Jeżeli wpisalibyśmy tylko `human` bez identyfikatora taksonomicznego w wyniku moglibyśmy otrzymać również białka pochodzące na przykład z *Human immunodeficiency virus*. 
+### Zad. 3 - Zaawansowane wyszukiwanie: peptydy sygnałowe
+Otwórz stronę [serwisu UniProt](https://www.uniprot.org/). Otwórz tryb zaawansowanego wyszukiwania (`Advanced`) i wybierz `PTM/Processing` > `Molecule Processing` > `Signal peptide` i naciśnij przycisk `Search`.
 
+<img src="./images/uniprot-advanced-search.png" alt="uniprot-advanced-search">
+
+1. W bazie UniProt znajduje się ponad **10 milionów** białek zawierających peptydy sygnałowe. 
+   * `41 893` białek należy do bazy *SwissProt* (*Reviewed*)
+   * `10,787,160` białek należy do bazy *trEMBL* (*Unreviewed*). 
+   
+   Zapytanie do bazy: `annotation:(type:signal)`.
+
+2. Lista wyszukanych białek zawierających peptydy sygnałowe obejmuje również białka, w których peptydy sygnałowe zostały wytypowane komputerowo (ich funkcja może nie być potwierdzona doświadczalnie). 
+   Aby wyszukać białka zawierające peptydy sygnałowe o doświadczalnie potwierdzonej funkcji, skonstruuj poniższe zapytanie:
+
+   ```
+   annotation:(type:signal evidence:experimental)
+   ```
+
+   W wyniku otrzymano `3 650` białek z bazy *SwissProt* (takich białek nie ma w bazie `trEMBL`).
+
+3. Aby wyszukać białka człowieka zawierające peptydy sygnałowe o doświadczalnie potwierdzonej funkcji, skonstruuj poniższe zapytanie:
+
+   ```
+   annotation:(type:signal evidence:experimental) AND organism:"Homo sapiens (Human) [9606]"
+   ```
+
+   W wyniku otrzymano `723` białek człowieka.
+
+   W powyższym zapytaniu warto zwrócić uwagę na identyfikator taksonomiczny (*taxId*) z bazy NCBI. Jeżeli zapytanie posiadałoby jedynie frazę `human` bez identifkatora *taxId*, w wyniku mogłyby również znaleźć się białka pochodzące na przykład z *Human immunodeficiency virus*.
+<br/><br/>
+    
 ### Zad. 4
 Wejdź na stronę serwisu [UniProt](https://www.uniprot.org). U góry na stronie, kliknij na link `Retrieve/ID mapping`.
 

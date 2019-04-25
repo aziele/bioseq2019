@@ -28,23 +28,23 @@ Przejdź do rekordu sekwencji insuliny człowieka o numerze dostępu (`P01308`).
 
 1. Ile referencji literaturowych dotyczy insuliny?
 2. Jaka jest lokalizacja komórkowa insuliny?
-3. Czy sekwencja posiada peptydy sygnałowe? (`PTM / Processing`)
-4. Czy znane są warianty sekwencji związane z chorobami?
+3. Czy sekwencja insuliny posiada peptydy sygnałowe? (`PTM / Processing`)
+4. Czy znane są warianty/polimorfizmy sekwencji związane ze stanem chorobowym?
 5. Jaki jest numer dostępu tego białka i odpowiadającego mRNA w bazie RefSeq?
+<br><br>
 
-
-### Zad. 3 - Zaawansowane wyszukiwanie
-Znajdź wszystkie białka posiadające peptydy sygnałowe (Advanced > wybierz `PTM/Processing` > `Molecule Processing` > wybierz `Signal peptide` > naciśnij `Search`).
+### Zad. 3 - Zaawansowane wyszukiwanie: peptydy sygnałowe
+Korzystając z zaawansowanego wyszukiwania znajdź wszystkie białka w bazie UniProt posiadające peptydy sygnałowe.
 
 1. Ile białek znaleziono?
-   * Jak wygląda zapytanie do bazy danych?
-2. Zawęź wyniki wyszukiwania do białek zawierających peptydy sygnałowe o jakiejkolwiek doświadczalnie potwierdzonej funkcji. 
+   * Podaj zapytanie do bazy danych.
+2. Zawęź wyniki wyszukiwania do białek zawierających peptydy sygnałowe o doświadczalnie potwierdzonej funkcji. 
    * Ile białek znaleziono?
    * Jak wygląda zapytanie do bazy danych?
-3. Zawęź wyniki wyszukiwania do białek pochodzących tylko z człowieka.
+3. Zawęź wyniki poprzedniego wyszukiwania do białek pochodzących tylko z człowieka.
    * Ile białek znaleziono?
    * Jak wygląda zapytanie do bazy danych?
-
+<br/><br/>
 
 ### Zad. 4 - Dwukierunkowa zamiana numerów dostępu między UniProt a NCBI
 Poniżej znajdują się numery dostępu UniProt białek wiążące białka Argonaute w procesie wyciszania genów. Dokonaj zamiany tych numerów dostępu na numery dostępu bazy NCBI.
