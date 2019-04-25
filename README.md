@@ -34,7 +34,8 @@
 
 
 ## ZREDAGOWANO:
-- day1-lab1
+* day1-lab1
+* day1-lab2
 
 
 ## TODO
