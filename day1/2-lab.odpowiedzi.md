@@ -33,7 +33,7 @@ Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uni
 
 3. Panel rekordu insuliny `PTM / Processing` w części `Molecule processing` informuje, że insulina posiada dwa sygnałowe peptydy: 
    * *Signal peptide* na N-końcu białka w pozycji 1-24 sekwencji. 
-   * *Propeptide* na C-końcu w pozycji 57-97.
+   * *Propeptide* na C-końcu w pozycji 57-97 sekwencji.
 
    <img src="./images/uniptot-insulin-ptm_processing.png" alt="uniptot-insulin-ptm_processing">
 
@@ -43,12 +43,12 @@ Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uni
 
    <img src="./images/uniprot-insulin-natural_variant.png" alt="uniprot-insulin-natural_variant">
 
-  W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu w sekwenci. Jeżeli mutacja związana jest z chorobą, jednostka chorobowa oznaczona jest skrótem (np. `R → C in IDDM2`). Panel `Under Pathol./Biotech` dostarcza z kolei informacji na temat choroby rozwijając jej skrócony opis (np. `IDDM2` to skrót od Cukrzycy typu 2).
+   W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu w sekwenci. Jeżeli mutacja związana jest z chorobą, jednostka chorobowa oznaczona jest skrótem (np. `R → C in IDDM2`). Panel `Under Pathol./Biotech` dostarcza z kolei informacji na temat choroby rozwijając jej skrócony opis (np. `IDDM2` to skrót od Cukrzycy typu 2).
 
 5. Na dole rekordu insuliny, w panelu `Cross-references` znajdują się odnośniki do stron innych baz danych. W części `Sequence databases` w tym panelu znajduje się numer dostępu sekwencji białkowej i mRNA insuliny w bazie RefSeq (`NP_000198.1﻿` i `NM_000207.2`).
 
-   <img src="./images/uniprot-insulin-cross_references.png" alt="uniprot-insulin-cross_references">
-<br><br>
+   <img src="./images/uniprot-insulin-cross_references.png" alt="uniprot-insulin-cross_references" width="500px">
+<br/><br/>
 
 
 ### Zad. 3 - Zaawansowane wyszukiwanie: peptydy sygnałowe
@@ -81,49 +81,53 @@ Otwórz stronę [serwisu UniProt](https://www.uniprot.org/). Otwórz tryb zaawan
 
    W powyższym zapytaniu warto zwrócić uwagę na identyfikator taksonomiczny (*taxId*) z bazy NCBI. Jeżeli zapytanie posiadałoby jedynie frazę `human` bez identifkatora *taxId*, w wyniku mogłyby również znaleźć się białka pochodzące na przykład z *Human immunodeficiency virus*.
 <br/><br/>
-    
-### Zad. 4
-Wejdź na stronę serwisu [UniProt](https://www.uniprot.org). U góry na stronie, kliknij na link `Retrieve/ID mapping`.
 
+
+### Zad. 4 - Zamiana numerów dostępu między UniProt a NCBI
+Otwórz stronę serwisu [UniProt](https://www.uniprot.org). W menu znajdującycm się na górze stroy, naciśnij link `Retrieve/ID mapping`.
+
+W formularzu:
 * W polu tekstowym `Provide your identifiers` umieść identyfikatory NCBI.
 * W polu `Select options` ustaw `from` na `UniProtKB AC/ID` a opcję `to` na `Refseq Protein`.
-  
-<img src="./images/uniprot-mapping.png" alt="uniprot-mapping" width="500px">
-
 * Uruchom zamianę.
 
-<img src="./images/uniprot-mapping-results.png" alt="uniprot-mapping-results" width="500px">
+<img src="./images/uniprot-mapping.png" alt="uniprot-mapping" width="600px">
 
-1. Zamiany identyfikatorów dokonano dla 4 z 5 numerów dostępu.
-   * Numer dostępu UniProt `B8XQC5_TETTH` nie został zamieniony.
+#### Wynik zamiany numerów dostępu z UniProt na RefSeq
+
+<img src="./images/uniprot-mapping-results.png" alt="uniprot-mapping-results" width="600px">
+
+1. W wyniku zamieniono 4 z 5 numerów dostępu.
+   * Numer dostępu UniProt `B8XQC5_TETTH` nie został zamieniony. Zatem rekord ten nie występuje w bazie RefSeq i najprawdopodobniej należy do bazy GenBank.
 2. Aby pobrać tabelę w formie tekstowej naciśnij przycisk `Download` i wybierz `Mapping table`.
 
-  ```
-  From  To
-  TNR6A_HUMAN NP_055309.2
-  TNR6A_HUMAN XP_005255314.1
-  TNR6A_HUMAN XP_016878642.1
-  TNR6A_HUMAN NP_001317449.1
-  Q9UPQ9  NP_001020014.1
-  Q9UPQ9  NP_001155973.1
-  Q9UPQ9  NP_055903.2
-  Q9HCJ0  NP_001136112.1
-  Q9HCJ0  NP_061869.2
-  Q5D869  NP_181532.2
-  ```
+   ```
+   From  To
+   TNR6A_HUMAN NP_055309.2
+   TNR6A_HUMAN XP_005255314.1
+   TNR6A_HUMAN XP_016878642.1
+   TNR6A_HUMAN NP_001317449.1
+   Q9UPQ9  NP_001020014.1
+   Q9UPQ9  NP_001155973.1
+   Q9UPQ9  NP_055903.2
+   Q9HCJ0  NP_001136112.1
+   Q9HCJ0  NP_061869.2
+   Q5D869  NP_181532.2
+   ```
+<br/><br/>
 
 ## Ontologia genów (Gene Ontology)
 
-### Zad. 5
-Wejdź na stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz bazę `Gene` i korzystając z zaawansowanego wyszukiwania utwórz zapytania:
+### Zad. 5 - Ontologia pojedynczego genu
+Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov). Wybierz bazę `Gene` i korzystając z zaawansowanego wyszukiwania utwórz zapytania:
 
 ```
 CASP6[Gene Name] AND human[Organism] 
 ```
 
-Zostanie wyświetlony rekord o identyfikatorze genu (`Gene ID`): [839](https://www.ncbi.nlm.nih.gov/gene/839).
+W wyniku otrzymany zostanie pojedynczy rekord o identyfikatorze genu (`Gene ID`): [839](https://www.ncbi.nlm.nih.gov/gene/839).
 
-1. W panelu po prawej stronie pod nagłówkiem `General Gene Information` wybierz `Gene Ontology`.
+1. W panelu po prawej stronie, pod nagłówkiem `General Gene Information` wybierz `Gene Ontology`.
    * Funkcja komórkowa:
       - aktywność endopeptydazy zaangażowana w proces apoptozy
       - wiązanie białek
@@ -135,23 +139,26 @@ Zostanie wyświetlony rekord o identyfikatorze genu (`Gene ID`): [839](https://w
       - cytozol
       - nukleoplazma
 
-<img src="./images/go-casp6.png" alt="go-casp6" width="400px">
+   <img src="./images/go-casp6.png" alt="go-casp6" width="600px">
 
-2. Trzyliterowy kody obok opisu terminu ontologii (np. `IBA`, `TAS`) informują o metodzie, według której przypisano dany terminu ontologii do tego genu. Skierowanie kursora myszy na dany skrót wyświetli jego opis. Na przykład:
-   * skrót `IBA` (*Inferred from Biological aspect of Ancestor*) oznacza, że dany termin GO został przypisany do tego genu na podstawie organizmu przkodka.
+2. Trzyliterowy kody (np. `IBA`, `TAS`) odnoszą się do opisu danego terminu ontologii. Informują one o  metodzie, według której przypisano dany terminu ontologii do danego genu. Skierowanie kursora myszy na dany kod wyświetli jego pełny opis. Na przykład:
+   * skrót `IBA` (*Inferred from Biological aspect of Ancestor*) - dany termin GO został przypisany do tego genu na podstawie organizmu przodka filogenetycznego.
    * skrót `IMP` (*Inferred from Mutant Phenotype*) - termin GO został przypisany do tego genu na podstawie fenotypu mutanta tego genu.
-3. W panelu `Related sequences` znajduje się numer dostępu kodowanego przez ten gen białka w bazie UniProt: [UniProtKB/Swiss-Prot:P55212](https://www.uniprot.org/uniprot/P55212). Tak, informacja na temat terminów GO znajduje się w rekordzie UniProt - informacja na temat funkcji i procesu znajduje się w panelu `Function`, a informacja o przedziale komórkowym znajduje się w panelu `Subcellular location`, w zakładce `GO - Cellular component`.
+3. W rekordzie genu, w panelu `Related sequences` znajduje się numer dostępu kodowanego przez ten gen białka w bazie UniProt: [UniProtKB/Swiss-Prot:P55212](https://www.uniprot.org/uniprot/P55212). 
+
+   Tak, w rekordzie UniProt również znajdują się informacje dotyczące ontologii genów. Iinformacja na temat funkcji i procesu biologicznego znajduje się w panelu `Function`, a informacja o przedziale komórkowym znajduje się w panelu `Subcellular location` w zakładce `GO - Cellular component`.
+<br/><br/>
 
 
-### Zad. 6
-Wejdź na stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/). Wpisz nazwę proces `programmed cell death` i wybierz ją z listy autouzupełnień.
+### Zad. 6 - Wyszukiwanie genów zaangażowanych w dany proces biologicznych
+Otwórz stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/). W polu wyszukiwania wpisz frazę `programmed cell death` i wybierz ją z listy autouzupełnień.
 
 <img src="./images/amigo-quicksearch.png" alt="amigo-quicksearch" width="500px">
 
-1. Numer dostępu procesu PCD w bazie Gene Ontology to [GO:0012501](http://amigo.geneontology.org/amigo/term/GO:0012501).
-2. Proces PCD nie jest tym samym co apoptoza. Według klasyfikacji GO, proces PCD ma szerszy zakres, a apoptoza jest składową procesu PCD.
+1. Numer dostępu procesu PCD w bazie *Gene Ontology* to [GO:0012501](http://amigo.geneontology.org/amigo/term/GO:0012501).
+2. Proces PCD nie jest tożsamy z apoptozą. Według klasyfikacji GO, proces PCD ma szerszy zakres, a apoptoza jest składową procesu PCD.
 
-<img src="./images/go-pcd-inferred_tree.png" alt="go-pcd-inferred_tree" width="500px">
+   <img src="./images/go-pcd-inferred_tree.png" alt="go-pcd-inferred_tree" width="500px">
 
 3. Trzy przykładowe procesy wchodzące w skład PCD to:
    * autofagowa degradacja
@@ -160,13 +167,16 @@ Wejdź na stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/).
 
 4. Procesem nadrzędnym dla PCD jest śmierć komórkowa `GO:0008219 cell death`.
 
-5. Serwis kataloguje `35523` genów/białek zaangażowanych w proces PCD.
+5. Serwis kataloguje `35 523` genów zaangażowanych w proces PCD.
 
-6. Po prawej stronie tabeli zawierającej listę białek, w panelu `Filter results`, naciśnij na opcję `Organism`. Z rozwiniętej listy organizmów, naciśnij na zielony przycisk `+` w celu zawężenia listy białek/genu do organizmu człowieka. W wyniku otrzymano `4525` genów/białek człowieka.
+6. Po prawej stronie tabeli zawierającej listę białek, w panelu `Filter results`, naciśnij na opcję `Organism`. Z rozwiniętej listy organizmów, naciśnij na zielony przycisk `+` w celu zawężenia listy białek do organizmu człowieka. 
 
-7. W panelu `Filter results`, rozwiń opcję `Evidence` i wybierz `Experimental evidence`. Lista obejmuje `1755` genów/białek.
+   W wyniku otrzymano `4525` genów człowieka biorących udział w PCD.
 
-8. W panelu `Filter results` rozwiń opcję `Type` i wybierz `protein`. Następnie rozwiń opcję `Contributor` i wybierz `UniProt`. Lista obejmuje `1098` genów kodujących białko.
+7. W panelu `Filter results`, rozwiń opcję `Evidence` i wybierz `Experimental evidence`. W wyniku otrzymano `1755` genów.
 
-9. Wybierz dowolne białko z listy (np. [ACVR1C](http://amigo.geneontology.org/amigo/gene_product/UniProtKB:Q8NER5)). Ze strony Gene Ontology poświęconej temu białku, naciśnij na numer dostępu tego białka w UniProt ([Q8NER5](https://www.uniprot.org/uniprot/Q8NER5)). W rekordzie UniProt, w części `Function` znajduje się lista wszystkich funkcji oraz procesów biologicznych, w które zaangażowane jest białko `Q8NER5`. Przykładowymi procesami - innymi niż PCD - w które zaangażowane jest to białko to odpowiedź na insulinę lub glukozę.
+8. W panelu `Filter results` rozwiń opcję `Type` i wybierz `protein`. Następnie rozwiń opcję `Contributor` i wybierz `UniProt`. W wyniku otrzymano `1098` genów kodujących białko.
 
+9. Wybierz dowolne białko z listy (np. [ACVR1C](http://amigo.geneontology.org/amigo/gene_product/UniProtKB:Q8NER5)). Naciśnij na numer dostępu tego białka w UniProt ([Q8NER5](https://www.uniprot.org/uniprot/Q8NER5)). 
+
+   W rekordzie UniProt, w części `Function` znajduje się lista wszystkich funkcji oraz procesów biologicznych, w które zaangażowane jest białko `Q8NER5`. Przykładowymi procesami - innymi niż PCD - w które zaangażowane jest to białko to odpowiedź na insulinę (`response to insulin`) lub glukozę (`response to glucose`).
