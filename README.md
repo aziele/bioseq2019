@@ -33,6 +33,10 @@
 3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wyświetlanie drzew filogenetycznych
 
 
+## ZREDAGOWANO:
+- day1-lab1
+
+
 ## TODO
 1. Slajdy
 2. BLAST (cały lab i zadania: dzień2 - lab2)

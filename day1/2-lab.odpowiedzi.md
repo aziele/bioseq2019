@@ -1,13 +1,15 @@
 ## UniProt
 Zadania na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Exercise:_The_protein_database_UniProt).
 
-### Zad. 1
-1. W wyniku Wpisania frazy `human insulin` znaleziono `1525` rekordów z bazy SwissProt i `3048` rekordów z bazy `trEMBL`.
-   * SwissProt zawiera rekordy wysokiej jakości (zweryfikowane przez specjalistów, białka o potwierdzonej funkcji)
-   * trEMBL zawiera rekordy o niskiej jakości (niezweryfikowane, białka o niepotwierdzomym występowaniu i funkcji)
-2. Tak, na pierwszej stronie listy wyników jest szukane białko (`INS_HUMAN Insulin INS Homo sapiens (Human)`). Na liście znajdują się również białka pochodzące z innych organizmów nie będące insuliną.
-3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do `199` rekordów człowieka, których nazwa zawiera wyraz `insulin`. Zapytanie do bazy znajduje się w oknie wyszukiwania (`organism:human name:insulin`).
-   * Insulina człowieka znajduje się na 7 miejscu na liście znalezionych białek.
+### Zad. 1 - Proste wyszukiwanie insuliny człowieka
+1. W wyniku wpisania frazy `human insulin` znaleziono:
+   * `1525` rekordów sekwencji z bazy **SwissProt** (sekwencje wysokiej jakości o potwierdzonej funkcji) 
+   * `3048` rekordów sekwencji z bazy **trEMBL** (sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji).
+2. Szukane białko (`INS_HUMAN Insulin INS Homo sapiens (Human)`) jest na czwartym miejscu na liście białek.
+   * Na liście rekordów znajdują się również białka pochodzące z innych organizmów nie będące insuliną.
+3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do `199` rekordów człowieka, których nazwa zawiera wyraz `insulin`. 
+   * Zapytanie użyte do przeszukania bazy znajduje się w oknie wyszukiwania (`organism:human name:insulin`).
+   * Insulina człowieka znajduje się teraz na 7 miejscu listy białek.
 4. Dodanie do zapytania frazy `NOT name:protein-like` ograniczyło wyniki do 197 białek, które w nazwie nie mają frazy `protein-like`.
    * Insulina człowieka znajduje się na 7 miejscu na liście znalezionych białek.
 5. Zapytanie `organism:human name:insulin NOT name:insulin-like NOT name:receptor` ograniczyło liczbę wyników do 47 białek. 

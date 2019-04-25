@@ -1,17 +1,17 @@
 ## UniProt
 
-### Zad. 1 - Stosowanie filtrów podczas wyszukiwania
-Wejdź na stronę [serwisu Uniprot](https://www.uniprot.org/). W polu wyszukiwania wpisz `human insulin`.
+### Zad. 1 - Proste wyszukiwanie insuliny człowieka
+Otwórz stronę [serwisu Uniprot](https://www.uniprot.org/). W polu wyszukiwania wpisz `human insulin`.
 
 1. Ile rekordów znaleziono?
-2. Czy na liście wyników jest szukane białko?
+2. Na którym miejscu na liście białek znajduje się szukana insulina człowieka?
 
-W panelu po lewej stronie, pod `Filter "human" as:` wybierz `organism`, a pod `Filter "insulin" as:` wybierz `protein name`.
+* W panelu po lewej stronie, pod `Filter "human" as:` wybierz `organism`, a pod `Filter "insulin" as:` wybierz `protein name`.
 
 3. Ile rekordów zostało?
-   * Na którym miejscu na liście białek znajduje się szukana insunlina człowieka?
+   * Na którym miejscu na liście białek znajduje się szukana insulina człowieka?
 
-W polu wyszukiwania dodaj frazę `NOT name:protein-like`.
+* W polu wyszukiwania dodaj do zapytania frazę `NOT name:protein-like`.
 
 5. Ile rekordów zostało?
    * Na którym miejscu na liście białek się szukana insulina człowieka?
