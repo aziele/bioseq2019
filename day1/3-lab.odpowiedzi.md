@@ -7,6 +7,7 @@
    > 6/10 * 100 = 60
 4. Wartość punktacji przyrównania (`score`) wynosi `5`.
    > 2 + 2 - 2 + 2 - 1 + 2 - 2 + 2 - 2 + 2 = 5
+
 <br/><br/>
 
 
