@@ -14,16 +14,17 @@ Otwórz stronę [serwisu Uniprot](https://www.uniprot.org/). W polu wyszukiwania
 * W polu wyszukiwania dodaj do zapytania frazę `NOT name:protein-like`.
 
 5. Ile rekordów zostało?
-   * Na którym miejscu na liście białek się szukana insulina człowieka?
+   * Na którym miejscu na liście białek znajduje się szukana insulina człowieka?
 
-W podobny sposób ogranicz wyniki do białek, które nie są receptorami.
+* W podobny sposób ogranicz wyniki do białek, które nie są receptorami.
 
 6. Ile rekordów zostało?
-   * Na którym miejscu na liście białek się szukana insulina człowieka.
+   * Na którym miejscu na liście białek znajduje się szukana insulina człowieka.
+<br/><br/>
 
 
-### Zad. 2 - Rekord sekwencji UniProt
-Przejdź do rekordu insuliny człowieka naciskając na numer dostępu tego białka (`P01308`).
+### Zad. 2 - Rekord UniProt insuliny człowieka
+Przejdź do rekordu sekwencji insuliny człowieka o numerze dostępu (`P01308`).
 
 1. Ile referencji literaturowych dotyczy insuliny?
 2. Jaka jest lokalizacja komórkowa insuliny?

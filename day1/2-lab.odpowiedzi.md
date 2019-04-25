@@ -8,19 +8,29 @@ Zadania na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index
 2. Szukane białko (`INS_HUMAN Insulin INS Homo sapiens (Human)`) jest na czwartym miejscu na liście białek.
    * Na liście rekordów znajdują się również białka pochodzące z innych organizmów nie będące insuliną.
 3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do `199` rekordów człowieka, których nazwa zawiera wyraz `insulin`. 
-   * Zapytanie użyte do przeszukania bazy znajduje się w oknie wyszukiwania (`organism:human name:insulin`).
+   * Zapytanie użyte do przeszukania bazy znajduje się w oknie wyszukiwania:
+      ```
+      organism:human name:insulin
+      ```
    * Insulina człowieka znajduje się teraz na 7 miejscu listy białek.
-4. Dodanie do zapytania frazy `NOT name:protein-like` ograniczyło wyniki do 197 białek, które w nazwie nie mają frazy `protein-like`.
+4. Dodanie do zapytania frazy `NOT name:protein-like` ograniczyło wyniki do `197` białek.
    * Insulina człowieka znajduje się na 7 miejscu na liście znalezionych białek.
 5. Zapytanie `organism:human name:insulin NOT name:insulin-like NOT name:receptor` ograniczyło liczbę wyników do 47 białek. 
    * Insulina człowieka znajduje się teraz na pierwszym miejscu listy wyników.
+<br/><br/>
 
+### Zad. 2 - Rekord UniProt insuliny człowieka
+Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uniprot/P01308).
 
-### Zad. 2
-Rekord insuliny człowieka: [P01308](https://www.uniprot.org/uniprot/P01308)
+1. W lewym panelu (*Display*) wybierz `Publications`. W sumie `1 050` publikacji dotyczy białka insuliny człowieka. 
+   * `1 014` publikacji typu **Computationally mapped** (publikacje automatycznie pobrane z innych baz danych i nie są zweryfikowane przez pracowników UniProt)
+   * `36` publikacji typu **UniProtKB/Swiss-Prot** (zweryfikowane publikacje dotyczące szczegółowych informacji na temat funkcji, sekwencji, struktury i interakcji tego białka)
+2. Panel `Subcellular location` w rekordzie dostarcza informacji na temat występowania insuliny w organizmie człowieka. 
+   * Białko jest wydzialane poza komórkę (*Extracellular region or secreted*). 
+   * Zakładka `GO - Cellular compoenent` podaje wszystkie miejsca występowania białka (np. retikulum endocytoplazmatyczne, które stanowi tymczasową lokalizację białka zanim zostanie ono wydzielone z komórki)
 
-1. W lewym panelu (*Display*) wybierz `Publications`. W sumie dla tego białka dostępnych jest 1 050 publikacji. Z tego 1 014 oznaczonych jest jako *Computationally mapped* (są to publikacje automatycznie pobrane z innych baz danych i nie są zweryfikowane przez pracowników UniProt). Natomiast 36 publikacji na temat tego białka insuliny jest zweryfikowanych i dotyczy szczegółowych informacji dotyczących funkcji, sekwencji, struktury, interakcji tego białka.
-2. Panelu rekordu `Subcellular location` informuje, że białko jest wydzialane poza komórkę (*Extracellular region or secreted*). Zakładka `GO - Cellular compoenent` podaje szczegółowe miejsce występowania białka, na przykład retikulum endocytoplazmatyczne, ale są to tymczasowe lokalizacje białka zanim zostanie ono wydzielone z komórki.
+   <img src="./images/uniprot-insulin-subcellular_location.png" alt="uniprot-insulin-subcellular_location">
+
 3. Panel rekordu `PTM / Processing` w części `Molecule processing` informuje, że insulina posiada dwa sygnałowe peptydy: *Signal peptide* na N-końcu w pozycji 1-24 oraz *Propeptide* na C-końcu w pozycji 57-97. Oba te peptydy zostają wycinane zanim białko zostanie wydzielone poza komórkę. Dojrzałe białko insuliny (łańcuchy A i B) są więc mniejsze niż sekwencja, która jest pokaza w panelu `Sequences`.
 4. W panelu `Sequence`, części `Natural variant` zawierająca listę mutacji insuliny, które zostały opisane w literaturze. W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu .w sekwenci - jeżeli wariant jest związany z chorobą oznaczone jest skrótem choroby (np. "R → C in IDDM2"). Panel `Under Pathol./Biotech` dostarcza informacji na temat choroby, której skrót jest w tabeli oraz powtarza informacje o wariantach sekwencji związanych z tą jednostką chorobową (np. IDDM2 to skrót od Cukrzycy typu 2).
 5. U dołu rekordu insuliny, w panelu `Cross-references` podane są odnośniki do innych baz danych. W części `Sequence databases` tego panelu znajduje się odnośnik do sekwencji białkowej i mRNA insuliny w bazie RefSeq (`NP_000198.1﻿` i `NM_000207.2`).
