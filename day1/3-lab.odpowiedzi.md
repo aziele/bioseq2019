@@ -20,6 +20,7 @@
    Obliczenia wartości punktacji całego przyrównania: `5 + 4 + 0 - 5 = 4`.
 3. Procent podobieństwa sekwencji wynosi `60%`
    > 3/5 * 100 = 60
+
 <br/><br/>
 
 
