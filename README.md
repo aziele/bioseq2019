@@ -1,4 +1,4 @@
-# Analiza sekwencji biologicznych 
+# Analiza sekwencji biologicznych
 7-9 maja 2019, Kraków
 
 ## Dzień 1
@@ -28,17 +28,18 @@
 
 
 ## Oprogramowanie:
-1. [JalView](http://www.jalview.org) - wizualizacja, edycja i analiza przyrównań wielu sekwencji (MSA)
-2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna
-3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wyświetlanie drzew filogenetycznych
+1. [JalView](http://www.jalview.org) - wizualizacja, edycja i analiza przyrównań wielu sekwencji (MSA) i przygotowanie ich do publikacji
+2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna (tworzenie drzew filogenetycznych, obliczanie dystansów między sekwencjami)
+3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wyświetlanie drzew filogenetycznych i przygotowanie ich do publikacji
 
 
 ## ZREDAGOWANO:
 * day1-lab1
 * day1-lab2
+* day1-lab3
 
 
-## TODO
+## TODO:
 1. Slajdy
 2. BLAST (cały lab i zadania: dzień2 - lab2)
    * różna długość query różne E-value
