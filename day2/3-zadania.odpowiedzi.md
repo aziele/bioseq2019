@@ -3,7 +3,7 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
 
 W zadaniu przeprowadzone zostanie przyrównanie sekwencji CDS insuliny [[insulin.cds.fasta](./data/insulin.cds.fasta)] oraz odpowiadających im sekwencji białkowych. Celem zadania jest zidentyfikowanie różnic między przyrównaniem sekwencji na poziomie nukleotydów i aminokwasów.
 
-#### Przyrównanie sekwencji DNA
+#### Przyrównanie sekwencji na poziomie nukleotydów
 
 ```
 CLUSTAL format alignment by MAFFT FFT-NS-i (v7.397)
@@ -154,76 +154,76 @@ SeaHare_AF16019 ACCGGAAGGAGCAACAGTGGACATGCGCAGTTGGAGGACAACTTTAGTTA-
                                            **..** **... *** .*..** 
 ```
 
-1. Tak, w przyrównaniu występują przerwy, które wstawione zostały w miejsca nie odpowiadające kodonom lub długość przerw nie jest podzielna przez trzy. Na przykład, w przyrównaniu jest przerwa odpowiadające jednemu nukleotydowi (przerwa występuje we wszystkich sekwencjach oprócz *Sea Hare*):
+1. Tak, w przyrównaniu występują przerwy, które wstawione zostały w miejsca **nieodpowiadające** kodonom lub długość tych przerw nie jest podzielna przez trzy. Na przykład, w przyrównaniu jest przerwa odpowiadające jednemu nukleotydowi (przerwa występuje we wszystkich sekwencjach oprócz *Sea Hare*):
 
-```
-Sheep_U00659    ATCGTGGAGC-AGTGCTGCGCCGGCGTCTGC--------TCTCTCTAC------------
-Pig_AY044828    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
-Pig_AY242098    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
-Pig_AY242100    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
-Pig_AY242101    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
-Pig_AY242109    ATCGTAGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
-OwlMonkey_J0298 GTCGTGGATC-AGTGCTGCACCAGCATCTGC--------TCCCTCTAC------------
-Human_AY138590  ATTGTGGAAC-AATGCTGTACCAGCATCTGC--------TCCCTCTAC------------
-Human_J00265    ATTGTGGAAC-AATGCTGTACCAGCATCTGC--------TCCCTCTAC------------
-Chimp_X61089    ATCGTGGAAC-AATGCTGTACCAGCATCTGC--------TCCCTCTAC------------
-GreenMonkey_X61 ATCGTGGAGC-AGTGCTGTACCAGCATCTGC--------TCCCTCTAC------------
-Dog_V00179      ATCGTGGAGC-AGTGCTGCACCAGCATCTGC--------TCCCTCTAC------------
-Mouse_X04725    ATTGTGGATC-AGTGCTGCACCAGCATCTGC--------TCCCTCTAC------------
-GuineaPig_K0223 ATTGTGGATC-AGTGCTGTACTGGCACCTGC--------ACACGCCAC------------
-Chicken_AY43837 ATTGTTGAGC-AATGCTGCCATAACACGTGT--------TCCCTCTAC------------
-SeaHare_AF16019 ATATTTGAGCTGGCTCAGTACTGCCGTCTGCCAGACCATTTCTTCTCCAGAATATCCAGA
-                .*  * ** * ... * *.  .. *.. **.         . . *. *            
-```
+   ```
+   Sheep_U00659    ATCGTGGAGC-AGTGCTGCGCCGGCGTCTGC--------TCTCTCTAC------------
+   Pig_AY044828    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
+   Pig_AY242098    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
+   Pig_AY242100    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
+   Pig_AY242101    ATCGTGGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
+   Pig_AY242109    ATCGTAGAGC-AGTGCTGCACCAGCATCTGT--------TCCCTCTAC------------
+   OwlMonkey_J0298 GTCGTGGATC-AGTGCTGCACCAGCATCTGC--------TCCCTCTAC------------
+   Human_AY138590  ATTGTGGAAC-AATGCTGTACCAGCATCTGC--------TCCCTCTAC------------
+   Human_J00265    ATTGTGGAAC-AATGCTGTACCAGCATCTGC--------TCCCTCTAC------------
+   Chimp_X61089    ATCGTGGAAC-AATGCTGTACCAGCATCTGC--------TCCCTCTAC------------
+   GreenMonkey_X61 ATCGTGGAGC-AGTGCTGTACCAGCATCTGC--------TCCCTCTAC------------
+   Dog_V00179      ATCGTGGAGC-AGTGCTGCACCAGCATCTGC--------TCCCTCTAC------------
+   Mouse_X04725    ATTGTGGATC-AGTGCTGCACCAGCATCTGC--------TCCCTCTAC------------
+   GuineaPig_K0223 ATTGTGGATC-AGTGCTGTACTGGCACCTGC--------ACACGCCAC------------
+   Chicken_AY43837 ATTGTTGAGC-AATGCTGCCATAACACGTGT--------TCCCTCTAC------------
+   SeaHare_AF16019 ATATTTGAGCTGGCTCAGTACTGCCGTCTGCCAGACCATTTCTTCTCCAGAATATCCAGA
+                   .*  * ** * ... * *.  .. *.. **.         . . *. *            
+   ```
 
-Przykładem niepoprawnego umieszczenia przerw może być pierwsza przerwa w przyrównaniu, która występuje po czterech nukleotydach, a nie trzech (poniżej). Algorytm przyrównania nie zakłada, że przyrównywane sekwencje są sekwencjami kodującymi białko, dlatego nie bierze pod uwagę kodonów.
+   Przykładem niepoprawnego umieszczenia przerw może być pierwsza przerwa w przyrównaniu, która występuje po czterech nukleotydach, a nie trzech (poniżej). Algorytm przyrównania nie zakłada, że przyrównywane sekwencje są sekwencjami kodującymi białko, dlatego nie bierze pod uwagę kodonów.
 
-```
-Sheep_U00659    ATGG---------CCCTGTGGACACGCCTGGTG------CCCCTGCTGGCCCTGCTGGCA
-Pig_AY044828    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCC
-Pig_AY242098    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCC
-Pig_AY242100    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCG
-Pig_AY242101    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCG
-Pig_AY242109    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCG
-OwlMonkey_J0298 ATGG---------CCCTGTGGATGCACCTCCTG------CCCCTGCTGGCGCTGCTGGCC
-Human_AY138590  ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGCGCTGCTGGCC
-Human_J00265    ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGCGCTGCTGGCC
-Chimp_X61089    ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGTGCTGCTGGCC
-GreenMonkey_X61 ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGCGCTGCTGGCC
-Dog_V00179      ATGG---------CCCTCTGGATGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCC
-Mouse_X04725    ATGG---------CCCTGTTGGTGCACTTCCTA------CCCCTGCTGGCCCTGCTTGCC
-GuineaPig_K0223 ATGG---------CTCTGTGGATGCATCTCCTC------ACCGTGCTGGCCCTGCTGGCC
-Chicken_AY43837 ATGG---------CTCTCTGGATCCGATCACTG------CCTCTTCTGGCTCTCCTTGTC
-SeaHare_AF16019 ATGAGCAAGTTCCTCCTCCAGAGCCACTCCGCCAACGCCTGCCTGCTCACCCTTCTGCTC
-                ***.         ..** . *.  *. ..  .         . * ** .. ** **  .
-```
+   ```
+   Sheep_U00659    ATGG---------CCCTGTGGACACGCCTGGTG------CCCCTGCTGGCCCTGCTGGCA
+   Pig_AY044828    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCC
+   Pig_AY242098    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCC
+   Pig_AY242100    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCG
+   Pig_AY242101    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCG
+   Pig_AY242109    ATGG---------CCCTGTGGACGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCG
+   OwlMonkey_J0298 ATGG---------CCCTGTGGATGCACCTCCTG------CCCCTGCTGGCGCTGCTGGCC
+   Human_AY138590  ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGCGCTGCTGGCC
+   Human_J00265    ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGCGCTGCTGGCC
+   Chimp_X61089    ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGTGCTGCTGGCC
+   GreenMonkey_X61 ATGG---------CCCTGTGGATGCGCCTCCTG------CCCCTGCTGGCGCTGCTGGCC
+   Dog_V00179      ATGG---------CCCTCTGGATGCGCCTCCTG------CCCCTGCTGGCCCTGCTGGCC
+   Mouse_X04725    ATGG---------CCCTGTTGGTGCACTTCCTA------CCCCTGCTGGCCCTGCTTGCC
+   GuineaPig_K0223 ATGG---------CTCTGTGGATGCATCTCCTC------ACCGTGCTGGCCCTGCTGGCC
+   Chicken_AY43837 ATGG---------CTCTCTGGATCCGATCACTG------CCTCTTCTGGCTCTCCTTGTC
+   SeaHare_AF16019 ATGAGCAAGTTCCTCCTCCAGAGCCACTCCGCCAACGCCTGCCTGCTCACCCTTCTGCTC
+                   ***.         ..** . *.  *. ..  .         . * ** .. ** **  .
+   ```
 
-2. Sekwencja insuliny *Sea Hare* (ślimak morski) wyraźnie odstaje od pozostałych sekwencji. Ma to sens, ponieważ ślimak morski nie jest kręgowcem.
+2. Sekwencja insuliny *Sea Hare* (ślimak morski) wyraźnie odstaje od pozostałych sekwencji. Jest to zasadne, ponieważ ślimak morski nie jest kręgowcem.
 
-<img src="./images/JalView-insulin-cds.png" alt="JalView-insulin-cds">
+   <img src="./images/JalView-insulin-cds.png" alt="JalView-insulin-cds">
 
 3. Tak, wśród przyrównywanych sekwencji są pary identyczne. Jest to widoczne na drzewie wiodącym (`Guide Tree`) przyrównania programem MAFFT. Dwie sekwencje człowieka są identyczne.
 
-<img src="./images/mafft-insulin-guide_tree.png" alt="mafft-insulin-guide_tree" width="500px">
+   <img src="./images/mafft-insulin-guide_tree.png" alt="mafft-insulin-guide_tree" width="500px">
 
-Identyczne są również poniższe pary sekwencji:
+   Identyczne są również poniższe pary sekwencji:
 
-```
-Pig_AY044828 0
-Pig_AY242098 0 
-```
+   ```
+   Pig_AY044828 0
+   Pig_AY242098 0 
+   ```
 
-oraz 
+   oraz 
 
-```
->Pig_AY242100
->Pig_AY242101
-```
+   ```
+   >Pig_AY242100
+   >Pig_AY242101
+   ```
 
-Powtarzanie tej samej sekwencji w przyrównaniu nie wnosi nowych informacji, dlatego najczęściej w analizach zostawia się tylko jedną sekwencją.
+   Powtarzanie tej samej sekwencji w przyrównaniu nie wnosi nowych informacji, dlatego najczęściej w analizach zostawia się tylko jedną sekwencją.
 
 
-#### Przyrównanie sekwencji białkowych
+#### Przyrównanie sekwencji na poziomie aminokwasów
 
 Sekwencje białkowe insuliny otrzymane w wyniku translacji sekwencji CDS za pomocą programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/):
 
@@ -340,13 +340,15 @@ SeaHare_AF16019 NQCRIFELAQYCRLPDHFFSRISRTGRSNSGHAQLEDNFSX
                 . *  .:* .**                           .
 ```
 
-4. Przyrównanie sekwencji białkowych różni się istotnie od przyrównania sekwencji CDS. Różnice te są widoczne już na samym początku przyrównania - na poziomie białka w przyrównaniu występuje 5 aminokwasów, po których są przerwy, natomiast w przyrównaniu CDS przerwy wprowadzone są już po czterech nukleotydach.
+4. Przyrównanie sekwencji białkowych różni się istotnie od przyrównania sekwencji CDS. Różnice te są widoczne już na samym początku przyrównania - na poziomie białka w przyrównaniu występuje 5 aminokwasów, po których wprowadzone są przerwy, natomiast w przyrównaniu CDS przerwy wprowadzone są już po czterech nukleotydach.
 
 5. Wszystkie sekwencje białkowe świni są identyczne na poziomie aminokwasów:
 
-<img src="./images/mafft-insulin-guide_tree.pep.png" alt="mafft-insulin-guide_tree.pep" width="500px">
+   <img src="./images/mafft-insulin-guide_tree.pep.png" alt="mafft-insulin-guide_tree.pep" width="500px">
+
+<br/>
 
 ### Zad. 2
-Miejsca akceptorowe Intron-Egzon:
+Miejsca akceptorowe intron-egzon:
 
 <img src="./images/logo-acceptor.png" alt="logo-acceptor">

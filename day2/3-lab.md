@@ -81,7 +81,7 @@ W pliku [insulin.cds.clean.fasta](./data/insulin.cds.clean.fasta) znajdują się
 ### Zad. 6 - Miejsca donorowe egzonów
 <img src="./images/donor-acceptor-sequence-logos.png" alt="donor-acceptor-sequence-logos" width="600px">
 
-Poniżej znajduje się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu bezprośrednio **przed** i **po** miejscu exon/intron.
+Poniżej znajduje się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu bezprośrednio **przed** i **po** miejscu egzon/intron.
 
 ```
 CAAAACCATTGTGAGTAATC
