@@ -167,7 +167,7 @@ Odpowiedz na pytania:
 <br/><br/>
 
 
-### Zad. 6 - BLASTx
+### Zad. 6 - blastx
 <img align="right" src="./images/jp-lostworld.png" alt="Jurassic Park - Lost World"> Mark Boguski, pracownik NCBI, zauważył, że sekwencja przedstawiona w książce *Jurassic Park* nie była zbyt dobrze dobrana. Dlatego zaproponował, aby w filmie *Jurassic Park – The Lost World* umieścić inną, bardziej odpowiednią sekwencję.
 
 ```

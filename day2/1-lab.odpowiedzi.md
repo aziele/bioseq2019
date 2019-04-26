@@ -365,15 +365,15 @@ Sbjct  5513  TCTCGGGCAGCGTTGGGTCCT  5493
 5. Michael Crichron wyciął z sekwencji wektora cztery fragmenty. Z każdego fragmentu usunął w równych odstępach kilka krótszych fragmentów długości ok. 10 nukleotdyów. Połączył cztery fragmenty ze sobą w jedną sekwencję. Następnie utworzył sekwencję do niej komplementarną. Otrzymaną sekwencję umieścił w książce *Jurassic Park*.
 <br/><br/>
 
-### Zad. 6 - BLASTx
+### Zad. 6 - blastx
 Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **blastx**. Umieść sekwencję zapytania, użyj domyślnych ustawień programu. Uruchom program BLAST.
 
-> Program BLASTx dokonuje translacji nukleotydowej sekwencji w zapytaniu i dla tak uzyskanej sekwencji aminokwasowej przeszukuje bazę danych sekwencji aminokwasowych. Translacja dokonywana przez program BLASTx prowadzona jest w sześciu ramkach odczytu (trzy ramki odczytu na nici `plus` i trzy ramki odczytu na nici `minus`).
+> Program blastx dokonuje translacji nukleotydowej sekwencji w zapytaniu i dla tak uzyskanej sekwencji aminokwasowej przeszukuje bazę danych sekwencji aminokwasowych. Translacja dokonywana przez program blastx prowadzona jest w sześciu ramkach odczytu (trzy ramki odczytu na nici `plus` i trzy ramki odczytu na nici `minus`).
 
 1. Sekwencja z bazy danych, która wykazuje największe podobieństwo do sekwencji zapytania jest czynnikiem transkrypcyjnym kurczaka (*Gallus gallus*) o numerze dostępu [NP_990795.1](https://www.ncbi.nlm.nih.gov/protein/NP_990795.1).
 2. Przyrównanie sekwencji Marka i sekwencji `NP_990795.1`.
 
-   <img src="./images/ncbi-blast-mark.png" alt="ncbi-blast-mark">
+   <img src="./images/ncbi-blast-mark.png" alt="ncbi-blast-mark" width="600px">
 
    Ukryta wiadomość to `MARK WAS HERE`. Mark użył sekwencji DNA kodującej czynnik transkrypcyjny. Umieścił w niej odpowiednie kodony tak, aby po przetłumaczeniu sekwencji DNA na białko powstała wiadomość.
 
