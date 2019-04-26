@@ -38,6 +38,7 @@
 * day1-lab2
 * day1-lab3
 * day2-lab1
+* day2-lab3
 
 
 ## TODO:

@@ -19,7 +19,7 @@ Przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_tra
 
 4. Czy przyrównanie sekwencji białkowych odpowiada przyrównaniu sekwencji CDS?
 5. Które sekwencje białkowe są identyczne?
-
+<br/><br/>
 
 ## Zad. 2
 W pliku [acceptor.fasta](./data/acceptor.fasta) znajduje się 100 sekwencji wyodrębnionych z genów człowieka w miejscu intron/egzon. Wykonaj logo tych sekwencji.
