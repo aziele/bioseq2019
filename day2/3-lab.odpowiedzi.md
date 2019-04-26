@@ -1,6 +1,6 @@
 ## Przyrównanie wielu sekwencji (MSA)
 
-### Zad. 1
+### Zad. 1 - Identyfikacja funkcjonalnych regionów sekwencji (ClustalOmega)
 
 ```
                             ========= FRAGMENT MSA =========
@@ -88,15 +88,15 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
 
 1. Symbole znajdujące się pod kolumnami przyrównania oznaczają stopień zachowania danej reszty aminokwasowej na danej pozycji w przyrównaniu.
    * `*` - całkowite zachowanie danej reszty w danej pozycji (aminokwas występuje we wszystkich sekwencjach w analizowanej pozycji przyrównania)
-   * `:` - aminokwasy o bardzo podobnych właściwościach fizykochemicznych (ściślej, aminowasy, których wartość punktacji substytucji osiąga pewną wartość według użytej macierzy substytucji)
+   * `:` - aminokwasy o bardzo podobnych właściwościach fizykochemicznych (ściślej, aminokwasy, których wartość punktacji substytucji osiąga pewną wartość w użytej macierzy substytucji)
    * `.` - aminokwasy o podobnych właściwościach fizykochemiczych.
 2. Trzy aminokwasy są całkowicie zachowane u wszystkich organizmów: `P` dwukrotnie, `C` i `W`. 
-3. Zachowane aminokwasy najprawdopodobniej pełnią istotne funkcji w działaniu enzymu koniugującego ubikwitynę.
-4. Aby zobaczyć procent identyczności między dowolną parą sekwencji w przyrównaniu wybierz `Result Summary` –> `Percent Identity Matrix`. Para sekwencji `sp|P33296|UBC6_YEAST` i `sp|Q29503|UB2R2_RABIT` ma `23.83%` identyczności.
+3. Zachowane aminokwasy najprawdopodobniej pełnią istotne funkcje w działaniu enzymu koniugującego ubikwitynę.
+4. Aby zobaczyć procent identyczności między dowolną parą sekwencji w przyrównaniu wybierz `Result Summary` –> `Percent Identity Matrix`. Identyczność pary sekwencji `sp|P33296|UBC6_YEAST` i `sp|Q29503|UB2R2_RABIT` wynosi `23.83%`.
 
 <img src="./images/clustal_ube_identity_matrix.png" alt="clustal_ube_identity_matrix">
 
-#### Wyznaczenie funkcjonalnie istotnych regionów sekwencji
+#### Funkcjonalnie istotne regiony sekwencji
 
 Białka drożdży nie posiadające aktywności katalitycznej: [NP_588162](https://www.ncbi.nlm.nih.gov/protein/NP_588162) i [NP_011428](https://www.ncbi.nlm.nih.gov/protein/NP_011428):
 
@@ -200,13 +200,13 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
 ```
 
 5. W powyższym przyrównaniu (uwzględniającym białka `NP_588162.1` i `NP_011428.1`) zachowane są aminokwasy: `P` dwukrotnie oraz `W`.
-6. W przyrównaniu sekwencji białek `ube.fasta` o znanej aktywności katalitycznej zachowane są trzy aminokwasy: `P`, `C` i `W`. Białka drożdżowe nie posiadające aktywności katalitycznej mają zachowane aminokwasy `P` i `W`, natomiast nie posiadają zachowanej reszty `C`. Wynika z tego, że cysteina jest kluczowa do działaniu enzymu.
+6. W przyrównaniu sekwencji białek `ube.fasta` o znanej aktywności katalitycznej zachowane są trzy aminokwasy: `P`, `C` i `W`. Białka drożdżowe nie posiadające aktywności katalitycznej mają zachowane aminokwasy `P` i `W`, natomiast nie posiadają zachowanej reszty `C`. Wynika z tego, że cysteina jest kluczowa podczas działaniu enzymu.
+<br/><br/>
 
-
-### Zad. 2
+### Zad. 2 - Przyrównanie sekwencji CDS alfa-globin (MAFFT)
 Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Bioinformatics_in_practice,_Faroe_Islands_2018#Morning:_Multiple_alignments)
 
-Przyrównanie sekwencji kodujących (CDS) alfa-globin przy użyciu programu MAFFT.
+Przyrównanie sekwencji kodujących (*CDS*) alfa-globiny przy użyciu programu MAFFT.
 
 ```
 CLUSTAL format alignment by MAFFT FFT-NS-i (v7.397)
@@ -309,21 +309,21 @@ Horse_alpha-2_g TACCGTTAA
                 *** * *..
 ```
 
-1. Jest jeden fragment >10 nukleotydów (23 nt) całkowicie zachowany we wszystkich sekwencjach. Sekwencja fragmentu to `ACCAAGACCTACTTCCCCCACTT`.
+1. W powyższym przyrównaniu jest jeden fragment >10 nukleotydów (23 nt) całkowicie zachowany we wszystkich sekwencjach. Sekwencja fragmentu to `ACCAAGACCTACTTCCCCCACTT`.
 
-Zakładka `Guide Tree` dostaracza graficznej informacji na temat dystansów sekwencji.
-> `Guide Tree` *nie jest* prawdziwym drzewem filogenetycznym. Drzewo wiodące jest wyznaczone na podstawie przyrównań par sekwencji, natomiast drzewo filenetyczne jest budowna w oparciu o przyrównanie wielu sekwencji - będziemy o tym mówić jutro. 
+   Zakładka `Guide Tree` dostaracza graficznej informacji na temat dystansów między parami sekwencji.
+   > `Guide Tree` (drzewo przewodnie) *nie jest* prawdziwym drzewem filogenetycznym. Drzewo przewodnie jest wyznaczone na podstawie przyrównań par sekwencji, na podstawie których wyznacza się następnie odległość ewolucyjną między sekwencjami. Najprostszym sposobem wyznaczenia takiej odległości jest pominięcie pozycji dopasowania, na których występują przerwy i obliczenia odsetka pozycji, na których występują różne reszty. Natomiast drzewo filenetyczne jest budowane w oparciu o przyrównanie wielu sekwencji.
 
-<img src="./images/mafft-guide-tree.png" alt="mafft-guide-tree">
+   <img src="./images/mafft-guide-tree.png" alt="mafft-guide-tree">
 
 2. Drzewo wiodące wyróżnia 3 grupy genów alfa-globin:
    * Alfa-A (tylko ptaki)
    * Alfa-D (tylko ptaki)
    * Alfa 1 + 2 (ssaki)
 
-   Na drzewie, geny należące do ptaków i ssaków stanowią odrębne grupy i są one ułożone naturalnie w sensie taksonomicznym. Geny alfa-A i alfa-D stanowią odrębne grupy, co wskazuje, że podział na te dwie klasy A i D jest stary. Ze względu na to, że geny alfa-A i alfa-D są obecne u wszystkich trzech ptaków, geny te najprawdopodobniej były obecne u wspólnego przodka ptaków.
+   Na drzewie, geny należące do ptaków i ssaków stanowią odrębne grupy i są one ułożone naturalnie w sensie taksonomicznym. Geny alfa-A i alfa-D stanowią odrębne grupy, co wskazuje, że podział na te dwie klasy A i D może być ewolucyjnie stary. Ze względu na to, że geny alfa-A i alfa-D są obecne u wszystkich trzech ptaków, geny te najprawdopodobniej były obecne u wspólnego przodka ptaków.
 
-   Geny alfa-1 i alfa-2 są blisko spokrewnione na drzewie. 
+   Geny alfa-1 i alfa-2 są ze sobą blisko spokrewnione według drzewa przewodniego. 
 
 
 #### JalView - wizualizacja przyrównania
@@ -332,19 +332,19 @@ W programie JalView z manu wybierz `Colour` > `Nucleotide`.
 
 <img src="./images/JalView-dna1.png" alt="JalView-dna1">
 
-3. Skieruj kursor myszy na początek najdłuższy zachowany fragment sekwencji `ACCAAGACCTACTTCCCCCACTT`. U dołu okna programu JalView znajduje się odpowiadająca mu pozycja w przyrównaniu. Fragment znajduje się w pozycji `118-140`.
+3. Skieruj kursor myszy na początek najdłuższego zachowanego fragment sekwencji `ACCAAGACCTACTTCCCCCACTT`. U dołu okna programu JalView znajduje się odpowiadająca mu pozycja w przyrównaniu. Fragment znajduje się w pozycji `118-140`.
 
 * Ustawienie koloru przyrównania według poziomu identyczności: `Colour` > `% Identity`. 
 
 <img src="./images/JalView-dna2.png" alt="JalView-dna2">
 
-* Zaznacz myszką najbardziej zachowany fragment przyrównania. Naciśnij prawy przycisk myszy na przyrównanie wybierz `Selection` > `New group`. Następnie `Selection` > `Edit Group` > `Border colour`.
+* Zaznacz myszką najbardziej zachowany fragment przyrównania. Naciśnij prawy przycisk myszy na przyrównanie, wybierz `Selection` > `New group`. Następnie `Selection` > `Edit Group` > `Border colour`.
 
 <img src="./images/JalView-dna3.png" alt="JalView-dna3">
+<br/><br/>
 
-
-### Zad. 3
-Translacja sekwencji CDS alfa-globin przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/).
+### Zad. 3 - Przyrównanie sekwencji białkowych alfa-globin (MAFFT)
+Translacja sekwencji *CDS* alfa-globin przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/).
 
 ```
 >pigeon_alpha-D-globin_1
@@ -432,19 +432,20 @@ Horse_alpha-2_g AVHASLDKFLSSVSTVLTSKYR*
                   **::***:. * :**: *** 
 ```
 
-1. W przyrównaniu są dwa dłuższe fragmenty sekwencji o nieprzerwanej identyczności.
-   * 11-aminokwasowa sekwencja `TKTYFPHFDL` bliżej N-końca białka. Fragment ten odpowiada sekwencji CDS w pozycji `118-140`. 
+1. W przyrównaniu są dwa fragmenty sekwencji o nieprzerwanej identyczności dłuższe niż 5 reszt aminokwaswych.
+   * 11-aminokwasowa sekwencja `TKTYFPHFDL` bliżej N-końca białka. 
+     - Fragment ten odpowiada sekwencji *CDS* w pozycji `118-140`. 
    * 9-aminokwasowa sekwencja `LRVDPVNFK` bliżej C-końca białka
 
 #### Wizualizacja w JalView
 
 <img src="./images/JalView-protein1.png" alt="JalView-protein1">
 
-2. W analizowanych sekwencja nastąpiły 2 delecje:
-   * 1 delecja pojedynczego aminokwasu `V` w 2-giej pozycji przyrównania.
-   * 1 delecja pojedynczego aminokwasu `E`/`G` w 23-ciej pozycji przyrównania.
+2. W analizowanych sekwencja wystąpiły 2 delecje:
+   * delecja pojedynczego aminokwasu `V` w 2-giej pozycji przyrównania.
+   * delecja pojedynczego aminokwasu `E`/`G` w 23-ciej pozycji przyrównania.
 
-3. Nie, przyrównanie sekwencji CDS nie odpowiada w pełni przyrównaniu sekwencji białkowych. W drugiej pozycji przyrównania białek nastąpiła delecja aminokwasu. Zatem w przyrównaniu na poziomie DNA powinna być delecja odpowiadająca trzem nukleotydom, tuż za kodonem START. Natomiast w otrzymanym przyrównaniu DNA wprowadzono przerwy zaraz za pierwszym nukleotydem. Przerwy powinny zostać wprowadzone za trzema pierwszymi nukleotydmi ATG.
+3. Nie, przyrównanie sekwencji *CDS* nie odpowiada w pełni przyrównaniu sekwencji białkowych. W drugiej pozycji przyrównania białek występuje delecja aminokwasu. Zatem w przyrównaniu na poziomie DNA powinna być delecja odpowiadająca trzem nukleotydom, tuż za kodonem START. Natomiast w otrzymanym przyrównaniu sekwencji nukleotydowych wprowadzono przerwy za pierwszym nukleotydem. Przerwy powinny zostać wprowadzone za trzema pierwszymi nukleotydmi ATG.
 
 ```
 pigeon_alpha-D  A---TGCTGACCGACTCTG
@@ -453,8 +454,10 @@ Chicken_alpha-D A---TGCTGACTGCCGAGG
 pigeon_alpha-A  ATGGTGCTGTCTGCCAACG
 ```
 
-### Zad 4.
-Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Bioinformatics_in_practice,_Faroe_Islands_2018#Morning:_Multiple_alignments). Przyrównanie izoform białkowych człowieka przy użyciu 3 programów: **MAFFT**, **Muscle** i **Kalign**.
+### Zad. 4 - Alternatywny splicing i izoformy białek
+Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Bioinformatics_in_practice,_Faroe_Islands_2018#Morning:_Multiple_alignments). 
+
+Przyrównanie izoform białkowych insuliny człowieka przy użyciu 3 programów: **MAFFT**, **Muscle** i **Kalign**.
 
 #### MAFFT
 
@@ -910,17 +913,21 @@ Wyświetlenie powyższych przyrównań w programie JalView:
 <img src="./images/mafft_muscle_kalign.png" alt="mafft_muscle_kalign">
 
 1. Uzyskane przyrównania różnią się od siebie.
-2. Żaden z programów nie rozwiązał problemu całkowicie prawidłowo. Najbliżej rozwiązania jest MAFFT, który nieprawidłowo umiejscowił jedną resztę aminokwasową (Q).
+2. Żaden z programów nie rozwiązał problemu całkowicie prawidłowo. Najbliżej rozwiązania jest MAFFT, który nieprawidłowo umiejscowił jedną resztę glutaminy (`Q`).
 
    <img src="./images/mafft_isoforms.png" alt="mafft_isoforms">
 
-   Najmniej dokładny wynik (najwięcej subtytucji) uzysał program MUSCLE.
+   Najmniej dokładny wynik (najwięcej substytucji) uzysał program MUSCLE.
 
-Należy pamiętać, że to zadanie jest tylko jednym testem oceny oprogramowania. W przypadku innych sekwencji, dokładność programów mogłaby być inna. 
+   > To zadanie jest tylko jednym testem oceny oprogramowania do przyrównywania wielu sekwencji. W przypadku innych sekwencji (np. bogatych w substytucje), dokładność programów może być inna. 
 
+<br/>
 
-### Zad. 5
-Celem zadania jest utworzenie przyrównania sekwencji kodujących (CDS) insulinę na podstawie przyrównania sekwencji białkowych. Program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/) jako sekwencje wejściowe przyjmuje sekwencje CDS, następnie dokonuje translacji tych sekwencji na sekwencje białkowe i korzystając z programu MAFFT przeprowadza przyrównanie sekwencji białkowych. W oparciu o otrzymane przyrównanie sekwencji białkowych, RevTrans odwzorowuje je dla sekwencji CDS. Opcjonalnie, w programie RevTrans można użyć innej metody przyrównywania sekwencji białkowych niż MAFFT (np. ClustalW, T-Coffe) lub umieścić własne przyrównanie sekwencji białkowych. 
+## Zad. 5 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
+Celem zadania jest utworzenie przyrównania sekwencji kodujących (CDS) insulinę na podstawie przyrównania sekwencji białkowych. 
+
+Program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/) jako sekwencje wejściowe przyjmuje sekwencje CDS, następnie dokonuje translacji tych sekwencji na sekwencje białkowe i korzystając z programu MAFFT przeprowadza przyrównanie sekwencji białkowych. W oparciu o otrzymane przyrównanie sekwencji białkowych, RevTrans odwzorowuje je dla sekwencji CDS.
+> Opcjonalnie, w programie RevTrans można użyć innej metody przyrównywania sekwencji białkowych niż MAFFT (np. ClustalW, T-Coffe) lub umieścić własne przyrównanie sekwencji białkowych. 
 
 Przyrównanie sekwencji CDS otrzymane w programie RevTrans:
 
@@ -1046,17 +1053,16 @@ Mouse          ---------
 
 1. Tak, liczba przerw jest podzielna przez 3.
 2. Tak, pozycje w kodonach odpowiadają sobie, ponieważ przyrównanie sekwencji CDS zostało zbudowane na podstawie przyrównania sekwencji białek.
-
+<br/><br/>
 
 ## Logo wielu sekwencji
-
 
 ### Zad. 6
 Sekwencje donorowe egzonów genu człowieka.
 
 <img src="./images/logo1.png" alt="logo1">
 
-1. Miejsce donorowe (`GT`) jest widoczne (całkowicie zachowane: 2 bity informacji). Również widoczny jest prawdopodobny sygnał na miejscu należącym do egoznu (preferencja dla `G` na pozycji przed miejscem `GT`)
+1. Miejsce donorowe (`GT`) jest widoczne (całkowicie zachowane: 2 bity informacji). Również widoczny jest prawdopodobny sygnał w miejscu należącym do egoznu (preferencja dla `G` na pozycji przed miejscem `GT`)
 2. Egzon: `1-10`, Intron: `11-20`.
 
 #### Zmiana numerowania nukleotydów
