@@ -223,7 +223,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
                        /inference="COORDINATES: profile:tRNAscan-SE:1.23"
                        /anticodon=(pos:3554279..3554281,aa:Gln,seq:ttg)
    ```
-<br/><br/>
+<br/>
 
 ### Zad. 5 - Wiele lokalnych przyrównań w obrębie porównywanych sekwencji
 
