@@ -144,7 +144,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 
 1. Trzy różnej długości sekwencje pochodzą z genomu bakterii *Escherichia coli* strain 103 i wielu innych Enterobakterii.
 
-   <img src="./images/blast-trna-ecoli.png" alt="blast-trna-ecoli.png">
+   <img src="./images/blast-trna_ecoli.png" alt="blast-trna-ecoli.png">
 
 2. Wraz ze wzrostem wartości punktacji przyrównania (`score`), wartość E-value maleje (przyrównanie jest bardziej istotne). Z kolei, wartość punktacji przyrównania zależy od długości sekwencji zapytania.
 
