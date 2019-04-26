@@ -1057,7 +1057,8 @@ Mouse          ---------
 2. Tak, pozycje w kodonach odpowiadają sobie, ponieważ przyrównanie sekwencji CDS zostało zbudowane na podstawie przyrównania sekwencji białek.
 <br/><br/>
 
-## Logo wielu sekwencji
+## Logo sekwencyjne
+Logo sekwencyjne stanowi wizualizację dopasowanych sekwencji zawierających określony motyw. Jeśli na określonej pozycji motywu występuje kilka reszt, to ich jednoliterowe symbole umieszczone są jeden nad drugim, a wysokość symbolu rośnie wraz ze wzrostem częstości jego występowania. Najwyższą pozycję na takim stosie zajmuje symbol reszty najczęściej występujący na określonej pozycji motywu. Całkowita wysokość symboli wyraża zawartość informacyjną na tej pozycji, wyrażoną w bitach.
 
 ### Zad. 6 - Miejsca donorowe egzonów
 Sekwencje donorowe egzonów genu człowieka.

@@ -77,10 +77,12 @@ W pliku [insulin.cds.clean.fasta](./data/insulin.cds.clean.fasta) znajdują się
 2. Czy wszystkie kodony zostały przyrównane? (pierwsza pozycja kodonu powinna być w tej samej kolumnie co pozostałe pierwsze pozycje kodonu w innych sekwencjach)
 <br/><br/>
 
-## Logo wielu sekwencji
+## Logo sekwencyjne
 
 ### Zad. 6 - Miejsca donorowe egzonów
-Poniżej znajdują się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu bezprośrednio PRZED i PO miejscem exon/intron.
+<img src="./images/donor-acceptor-sequence-logos.png" alt="donor-acceptor-sequence-logos" width="600px">
+
+Poniżej znajduje się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu bezprośrednio PRZED i PO miejscem exon/intron.
 
 ```
 CAAAACCATTGTGAGTAATC
@@ -113,7 +115,7 @@ ACTTCAATCGGTATGTTTTC
    * Ile bitów informacji znajduje się w pozycji zawierającej `GT`?
 2. Ile nukleotydów należy do egzonu, a ile do intronu?
 
-#### Ustawienia LOGO
+#### Ustawienia Logo
 * Ponieważ interesującą częścią sekwencji jest granica exon/intron, zmienione zostanie numerowanie nukleotydów tak, aby `GT` miało pozycję `0`. 
   W formularzu programu WebLogo ustaw:
   - `First position number` na `-10`. 
