@@ -316,6 +316,8 @@ Horse_alpha-2_g TACCGTTAA
 
    <img src="./images/mafft-guide-tree.png" alt="mafft-guide-tree">
 
+   Dystans gałęzi przedstawiony jest obok nazwy sekwencji. Na przykład dystan między sekwencją `3_duck_alpha-D-globin` i `9_Chicken_alpha-D` wynosi `0.115 + 0.115 = 0.230`.
+
 2. Drzewo wiodące wyróżnia 3 grupy genów alfa-globin:
    * Alfa-A (tylko ptaki)
    * Alfa-D (tylko ptaki)
@@ -326,7 +328,7 @@ Horse_alpha-2_g TACCGTTAA
    Geny alfa-1 i alfa-2 są ze sobą blisko spokrewnione według drzewa przewodniego. 
 
 
-#### JalView - wizualizacja przyrównania
+#### JalView - wizualizacja przyrównania wielu sekwencji
 Otwórz przyrównanie w programie JalView (zakładka `Alignment` > `View result with JalView`)
 W programie JalView z manu wybierz `Colour` > `Nucleotide`.
 
@@ -341,7 +343,7 @@ W programie JalView z manu wybierz `Colour` > `Nucleotide`.
 * Zaznacz myszką najbardziej zachowany fragment przyrównania. Naciśnij prawy przycisk myszy na przyrównanie, wybierz `Selection` > `New group`. Następnie `Selection` > `Edit Group` > `Border colour`.
 
 <img src="./images/JalView-dna3.png" alt="JalView-dna3">
-<br/><br/>
+<br/>
 
 ### Zad. 3 - Przyrównanie sekwencji białkowych alfa-globin (MAFFT)
 Translacja sekwencji *CDS* alfa-globin przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/).
@@ -1057,7 +1059,7 @@ Mouse          ---------
 
 ## Logo wielu sekwencji
 
-### Zad. 6
+### Zad. 6 - Miejsca donorowe egzonów
 Sekwencje donorowe egzonów genu człowieka.
 
 <img src="./images/logo1.png" alt="logo1">
@@ -1074,7 +1076,7 @@ Sekwencje donorowe egzonów genu człowieka.
 <img src="./images/logo3.png" alt="logo3">
 
 
-### Zad. 7
+### Zad. 7 - kaseta Pribnowa
 
 #### Logo, domyślne parametry
 

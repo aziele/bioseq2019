@@ -18,17 +18,15 @@ W bazie RefSeq istnieją dwa białka drożdży o numerach dostępu: `NP_588162` 
 <br/><br/>
 
 ### Zad. 2 - Przyrównanie sekwencji CDS alfa-globin (MAFFT)
-W pliku [alfa_globins.cds.fasta](./data/alpha_globins.cds.fasta) znajduje się 10 sekwencji kodujących alfa-globiny u różnych zwierząt.
-
-Otwórz program [MAFFT](http://www.ebi.ac.uk/Tools/msa/). W formularzu programu ustaw `OUTPUT FORMAT` na `ClustalW` i wykonaj przyrównanie.
+W pliku [alfa_globins.cds.fasta](./data/alpha_globins.cds.fasta) znajduje się 10 sekwencji kodujących alfa-globiny u różnych zwierząt. Otwórz program [MAFFT](http://www.ebi.ac.uk/Tools/msa/). W formularzu programu ustaw `OUTPUT FORMAT` na `ClustalW` i wykonaj przyrównanie.
 
 1. Ile fragmentów o całkowitym zachowaniu (przynajmniej 10 nukleotdyów) znajduje się w przyrównaniu?
 
-Przejdź do zakładki `Guide Tree` przedstawiającej dystanse między sekwencjami. 
+* Przejdź do zakładki `Guide Tree` przedstawiającej dystanse między sekwencjami. 
 
 2. Czy sekwencje są umieszczone na drzewie w sposób biologicznie zasadny? Czy raczej, rozmieszczenie sekwencji wydaje się przypadkowe?
 
-#### JalView - wizualizacja przyrównania
+#### JalView - wizualizacja przyrównania wielu sekwencji
 Wróć do zakładki `Alignments`. Naciśnij przycisk `View result with JalView`. Otwórz pobrany plik.
 
 <img src="./images/JalView-dna1.png" alt="JalView-dna1">
@@ -123,5 +121,5 @@ ACTTCAATCGGTATGTTTTC
 * Wygeneruj kolejne logo, aby pokazana była na nim częstość występowania nukleotydu w każdej pozycji (`Frequency plot`)
 
 
-### Zad. 7
+### Zad. 7 - kaseta Pribnowa
 W pliku [ecoli_promotor.fasta](./data/ecoli_promotor.fasta) znajduje się 350 sekwencji regionów promotorów *E. coli*, które obejmują fragment 10 pz *upstream*, nazywany kasetą Pribnowa. Wykonaj logo tych sekwencji. Zidentyfikuj kasetę Pribnowa.
