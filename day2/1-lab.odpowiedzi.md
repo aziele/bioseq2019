@@ -45,7 +45,7 @@ Celem zadania jest znalezienie sekwencji najbardziej podobnych do sekwencji mRNA
 
 <br/>
 
-### Zad. 2 - Wpływ wielkości bazy danych na E-value
+### Zad. 2 - Wpływ wielkości bazy danych na wartość E-value
 Wynik programu BLAST przy użyciu sekwencji zapytania mRNA insuliny koszatniczki i ograniczeniu wyników do organizmu człowieka.
 
 <img src="./images/insulin-blast2-table1.png" alt="insulin-blast2-table1.png">
@@ -140,7 +140,92 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 <br/><br/>
 
 
-### Zad. 4 - Wiele lokalnych przyrównań w obrębie porównywanych sekwencji
+### Zad. 4 - Wpływ długości sekwencji zapytania na wartość E-value
+
+1. Trzy różnej długości sekwencje pochodzą z genomu bakterii *Escherichia coli* strain 103 i wielu innych Enterobakterii.
+
+   <img src="./images/blast-trna-ecoli.png" alt="blast-trna-ecoli.png">
+
+2. Wraz ze wzrostem wartości punktacji przyrównania (`score`), wartość E-value maleje (przyrównanie jest bardziej istotne). Z kolei, wartość punktacji przyrównania zależy od długości sekwencji zapytania.
+
+   Długość sekwencji zapytania: 23 nt
+
+   ```
+   >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
+   Length=5162123
+ 
+    Features flanking this part of subject sequence:
+      236 bp at 5' side: hypothetical protein
+      642 bp at 3' side: 2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase
+ 
+    Score = 46.1 bits (23),  Expect = 0.008
+    Identities = 23/23 (100%), Gaps = 0/23 (0%)
+    Strand=Plus/Plus
+ 
+   Query  1        TGGGGTATCGCCAAGCGGTAAGG  23
+                   |||||||||||||||||||||||
+   Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGG  3554269
+
+   ```
+
+   Długość sekwencji zapytania: 29 nt
+
+   ```
+   >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
+   Length=5162123
+ 
+    Features flanking this part of subject sequence:
+      236 bp at 5' side: hypothetical protein
+      636 bp at 3' side: 2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase
+ 
+    Score = 58.0 bits (29),  Expect = 6e-06
+    Identities = 29/29 (100%), Gaps = 0/29 (0%)
+    Strand=Plus/Plus
+ 
+   Query  1        TGGGGTATCGCCAAGCGGTAAGGCACCGG  29
+                   |||||||||||||||||||||||||||||
+   Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGGCACCGG  3554275
+   ```
+ 
+   Długość sekwencji zapytania: 29 nt
+
+   ```
+   >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
+   Length=5162123
+ 
+    Features flanking this part of subject sequence:
+      236 bp at 5' side: hypothetical protein
+      630 bp at 3' side: 2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase
+ 
+    Score = 65.8 bits (35),  Expect = 2e-08
+    Identities = 35/35 (100%), Gaps = 0/35 (0%)
+    Strand=Plus/Plus
+ 
+   Query  1        TGGGGTATCGCCAAGCGGTAAGGCACCGGTTTTTG  35
+                   |||||||||||||||||||||||||||||||||||
+   Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGGCACCGGTTTTTG  3554281
+   ```
+
+3. Na stronie wyników BLAST dla najdłuższej sekwencji zapytania, w panelu `Alignments`, zwróć uwagę na pierwsze trafienie. Naciśnij na link `GenBank`.
+
+   <img src="./images/blast-trna-query_length.png" alt="blast-trna-query_length" width="400px">
+
+   W części `FEATURES` rekordu `GenBank` znajduje się informacja o genie tRNA specyficznym dla glutaminy.
+
+   ```
+   FEATURES             Location/Qualifiers
+        ...
+        gene            1..>35
+                       /locus_tag="CPA47_18610"
+        tRNA            1..>35
+                       /locus_tag="CPA47_18610"
+                       /product="tRNA-Gln"
+                       /inference="COORDINATES: profile:tRNAscan-SE:1.23"
+                       /anticodon=(pos:3554279..3554281,aa:Gln,seq:ttg)
+   ```
+<br/><br/>
+
+### Zad. 5 - Wiele lokalnych przyrównań w obrębie porównywanych sekwencji
 
 <img src="./images/blast-dino-vector.png" alt="blast-dino-vector">
 
@@ -279,7 +364,7 @@ Sbjct  5513  TCTCGGGCAGCGTTGGGTCCT  5493
 5. Michael Crichron wyciął z sekwencji wektora cztery fragmenty. Z każdego fragmentu usunął w równych odstępach kilka krótszych fragmentów długości ok. 10 nukleotdyów. Połączył cztery fragmenty ze sobą w jedną sekwencję. Następnie utworzył sekwencję do niej komplementarną. Otrzymaną sekwencję umieścił w książce *Jurassic Park*.
 <br/><br/>
 
-### Zad. 5 - BLASTx
+### Zad. 6 - BLASTx
 Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **blastx**. Umieść sekwencję zapytania, użyj domyślnych ustawień programu. Uruchom program BLAST.
 
 > Program BLASTx dokonuje translacji nukleotydowej sekwencji w zapytaniu i dla tak uzyskanej sekwencji aminokwasowej przeszukuje bazę danych sekwencji aminokwasowych. Translacja dokonywana przez program BLASTx prowadzona jest w sześciu ramkach odczytu (trzy ramki odczytu na nici `plus` i trzy ramki odczytu na nici `minus`).
@@ -297,7 +382,7 @@ Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz progra
 > Program BLAST domyślnie maskuje te regiony, ale możliwe jest wyłączenie opcji maskowania w formularzu prorgamu BLAST (w panelu `Algorithm parameters`, w części `Filters and Masking`, zaznaczyć/odznaczyć `Filter low complexity regions`).
 <br/><br/>
 
-### Zad. 6 - Wybór bazy danych dla programu BLAST
+### Zad. 7 - Wybór bazy danych dla programu BLAST
 W bazie białkowej NCBI skorzystaj z zaawansowanego wyszukiwania i utwórz zapytanie do bazy danych:
 
 ```

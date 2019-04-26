@@ -10,8 +10,7 @@ Przesunięcie ramki odczytu widoczne jest na graficznej prezentacji trafień jak
 Sekwencja trafienia `AAL71628.1` składa się z dwóch przyrównań z sekwencją zapytania. Każde przyrównanie pochodzi z translacji w dwóch różnych ramkach odczytu. Drugie przyrównanie dotyczy początku sekwencji zapytania (`2-268`, ramka oczytu: `+2`) i sekwencji trafienia w pozycji `1-89` (pozycje wyrażone w aminokwasach). Z kolei pierwsze przyrównanie dotyczy drugiej części sekwencij zapytania (`268-600`) i sekwencji trafienia `90-201` (ramka odczytu: `+1`). Przesunięcie ramki odczytu jest więc spowodowane delecją jednego nukleotydu w sekwencji zapytania w pobliżu pozycji `268`.
 
 ```
->AAL71628.1 envelope glycoprotein, partial [Human immunodeficiency virus 
-1]
+>AAL71628.1 envelope glycoprotein, partial [Human immunodeficiency virus 1]
 Length=201
 
  Score = 226 bits (576),  Expect(2) = 1e-104, Method: Compositional matrix adjust.

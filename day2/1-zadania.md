@@ -15,7 +15,7 @@ Sekwencja koduje białko, ale występuje w niej przesunięcie ramki odczytu (*fr
 
 
 ## Zad. 2
-W ostatnich badanich badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`). Jakie SNP występują w pozycji 6 otrzymanych przyrównań?
+W ostatnich badanich badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`). Jakie SNP występują w pozycji 6 znalezionych trafień?
 
 ```
 ATGACCTCAAATCACTCTTTGGCAACGACCCCTCGTCACAATAAAGATAGGGGGGCAACTAAAGGAAGCTCTATTAGATACAGGAGCAGATGAT

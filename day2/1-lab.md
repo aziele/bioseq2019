@@ -44,7 +44,7 @@ Na liście otrzymanych trafień znajdź najwyżej punktowaną sekwencję insulin
 <br/><br/>
 
 
-### Zad. 2 - Wpływ wielkości bazy danych na E-value
+### Zad. 2 - Wpływ wielkości bazy danych na wartość E-value
 Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRNA insuliny koszatniczki pospolitej `M57671.1`. W formularzu:
 
 * Ogranicz przeszukiwanie do organizmu człowieka
@@ -95,7 +95,25 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 7. Który typ sekwencji (DNA czy białko) obarczony jest większym ryzykiem otrzymania trafień fałszywie pozytywnych (tj. przyrównań, które wydają się znaczące, ale w rzeczywistości przyrównywane sekwencje nie są spokrewnione)?
 <br/><br/>
 
-### Zad. 4 - Wiele lokalnych przyrównań w obrębie porównywanych sekwencji
+
+### Zad. 4 - Wpływ długości sekwencji zapytania na wartość E-value
+Poniżej znajdują się trzy różnej długośći fragmenty tej samej sekwencji tRNA. Użyj programu BLAST w celu przeszukania nukleotydowej bazy `nr` w oparciu o poniższe sekwencje.
+
+```
+>tRNA
+TGGGGTATCGCCAAGCGGTAAGG
+>tRNA
+TGGGGTATCGCCAAGCGGTAAGGCACCGG
+>tRNA
+TGGGGTATCGCCAAGCGGTAAGGCACCGGTTTTTG
+```
+
+1. Z genomu jakiego organizmu pochodzą powyższe sekwencje?
+2. Jak zmienia się wartość E-value w zależności od długości przyrównania?
+3. Jaki aminokwas przyłącza analizowane tRNA?
+<br/><br/>
+
+### Zad. 5 - Wiele lokalnych przyrównań w obrębie porównywanych sekwencji
 <img align="right" src="./images/jurassic_park.png" alt="Jurassic Park">W książce Michaela Crichtona *Jurassic Park* na podstawie fragmentu sekwencji DNA dinozaura odtworzono cały organizm gada. Poniżej znajduje się ta sekwencja. 
 
 ```
@@ -149,7 +167,7 @@ Odpowiedz na pytania:
 <br/><br/>
 
 
-### Zad. 5 - BLASTx
+### Zad. 6 - BLASTx
 <img align="right" src="./images/jp-lostworld.png" alt="Jurassic Park - Lost World"> Mark Boguski, pracownik NCBI, zauważył, że sekwencja przedstawiona w książce *Jurassic Park* nie była zbyt dobrze dobrana. Dlatego zaproponował, aby w filmie *Jurassic Park – The Lost World* umieścić inną, bardziej odpowiednią sekwencję.
 
 ```
@@ -187,7 +205,7 @@ W zaproponowanej przez siebie sekwencji Mark ukrył pewną wiadomość, którą
 3. Co oznaczają fragmenty dopasowania oznaczone małymi szarymi literami?
 <br/><br/>
 
-### Zad. 6 - Wybór bazy danych dla programu BLAST
+### Zad. 7 - Wybór bazy danych dla programu BLAST
 > Gen **FOXP2** u naczelnych warunkuje zdolność komunikacji werbalnej. Obecność zaledwie jednej uszkodzonej kopii tego genu u człowieka prowadzi do poważnych zaburzeń artykulacji wyrazów. 
 
 Celem zadania jest sprawdzenie, czy gen *FOXP2* występuje również u zwierząt innych niż naczelne.
