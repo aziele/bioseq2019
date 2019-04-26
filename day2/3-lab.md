@@ -40,7 +40,7 @@ Wróć do zakładki `Alignments`. Naciśnij przycisk `View result with JalView`.
 * Wyeksportuj grafikę jako obraz PNG lub EPS (`File` > `Export image` > `PNG`).
 
 <img src="./images/JalView-dna4.png" alt="JalView-dna4">
-<br/><br/>
+<br/>
 
 ### Zad. 3 - Przyrównanie sekwencji białkowych alfa-globin (MAFFT)
 Skorzystaj z programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/) i dokonaj translacji sekwencji CDS alfa-globin na sekwencje aminokwasowe. Następnie dokonaj przyrównania otrzymanych sekwencji aminokwasowych za pomocą programu MAFFT.
