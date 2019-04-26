@@ -57,7 +57,8 @@ Wynik programu BLAST przy użyciu sekwencji zapytania mRNA insuliny koszatniczki
 5. Stosunek E-value w dwóch przeszukiwaniach wynosi `5e-50` / `1e-48` = `20`.
 6. Wartość E-value jest wprost proporcjonalna do wielkości bazy. Wartość E-value wzrasta wraz ze wzrostem bazy danych.
    > Intuicyjnie, przyrównanie o punktacji na przykład 205 bitów jest badziej znaczące podczas przesukiwania mniejszej bazy danych. W większej bazie danych istnieje większa szansa znalezienia przypadkowych przyrównań o wartości punktacji co najmniej 205 bitów.
-<br/><br/>
+
+<br/>
 
 ### Zad. 3 - Istotność statystyczna wyników BLAST
 BLAST niemal zawsze umożliwia odnalezienie sekwencji, które będą w jakiś sposób podobne do sekwencji w zapytaniu, mimo, że nie są one z nią spokrewnione (wyniki *fałszywie pozytywne*). W tym zadaniu użyte zostaną - jako sekwencję zapytania w programie BLAST - losowo wygenerowane sekwencje nukleotydowe i aminokwasowe.
