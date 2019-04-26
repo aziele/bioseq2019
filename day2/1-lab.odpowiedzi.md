@@ -43,7 +43,7 @@ Celem zadania jest znalezienie sekwencji najbardziej podobnych do sekwencji mRNA
 9. Wielkość przeszukiwanej bazy `NR` to `204,700,810,597` nukleotydów.
    > U góry strony wynikowej programu BLAST naciśnij `Search summary` > `Number of letters`
 
-<br/><br/>
+<br/>
 
 ### Zad. 2 - Wpływ wielkości bazy danych na E-value
 Wynik programu BLAST przy użyciu sekwencji zapytania mRNA insuliny koszatniczki i ograniczeniu wyników do organizmu człowieka.

@@ -198,8 +198,7 @@ Celem zadania jest sprawdzenie, czy gen *FOXP2* występuje również u zwierząt
 * W formularzu programu BLAST ustaw ograniczenia przeszukiwania do:
    - bazy danych RefSeq (pole `Database`)
    - organizmu zwierząt (*Metazoa*) z wykluczeniem sekwencji pochodzących z naczelnych (*Primaters*)
-<img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form" width="500px">
-
+   <img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form" width="500px">
 * Uruchom program BLAST.
 
 Z listy otrzymanych trafień wybierz jedną sekwencję, która najbardziej odpowiada sekwencji *FOXP2*.

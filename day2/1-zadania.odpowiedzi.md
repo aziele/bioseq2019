@@ -3,13 +3,11 @@ Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
 Sekwencja jest najbardziej podobna do białka otoczki wirusa HIV (*HIV1 envelope glycoprotein*) o numerze dostępu `AAL71628.1` (E-value: `1e-104`).
 
-Graficzna prezentacja trafień programu BLAST wskazuje na przesunięcie ramki odczytu jako mała czarna linia przerywająca trafienie.
+Przesunięcie ramki odczytu widoczne jest na graficznej prezentacji trafień jako mała czarna pionowa linia znajdująca się na trafieniu.
 
 <img src="./images/blastx-hiv.png" alt="blastx-hiv">
 
-
-Trafienie `AAL71628.1` składa się z dwóch przyrównań z sekwencją zapytania. Każde przyrównanie pochodzi z dwóch różnych translacji. Drugie przyrównanie dotyczy początku sekwencji zapytania (`2-268`, ramka oczytu: +2) i sekwencji z bazy w pozycji `1-89` (wyrażone w aminokwasach). Z kolei pierwsze przyrównanie dotyczy drugiej części sekwencij zapytania (`268-600`) i sekwencji z bazy danych `90-201` (ramka odczytu: +1). Przesunięcie ramki odczytu jest więc spowodowane delecją jednego nukleotydu w sekwencji zapytania w pobliżu pozycji `268`.
-
+Sekwencja trafienia `AAL71628.1` składa się z dwóch przyrównań z sekwencją zapytania. Każde przyrównanie pochodzi z translacji w dwóch różnych ramkach odczytu. Drugie przyrównanie dotyczy początku sekwencji zapytania (`2-268`, ramka oczytu: `+2`) i sekwencji trafienia w pozycji `1-89` (pozycje wyrażone w aminokwasach). Z kolei pierwsze przyrównanie dotyczy drugiej części sekwencij zapytania (`268-600`) i sekwencji trafienia `90-201` (ramka odczytu: `+1`). Przesunięcie ramki odczytu jest więc spowodowane delecją jednego nukleotydu w sekwencji zapytania w pobliżu pozycji `268`.
 
 ```
 >AAL71628.1 envelope glycoprotein, partial [Human immunodeficiency virus 
@@ -43,8 +41,8 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
 ```
 
 ### Zad. 2
-Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program `nucleotide BLAST` i algorytm `blastn`.
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program `nucleotide BLAST` i algorytm `blastn`. W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
 
 <img src="./images/blastn-snp.png" alt="blastn-snp">
 
-W pozycji 6 przyrównań występują warianty `A`/`G`.
+W pozycji 6 przyrównań występują warianty `A/G`.

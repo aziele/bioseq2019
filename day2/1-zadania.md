@@ -1,5 +1,5 @@
 ## Zad. 1
-Użyj programu **blastx** do znalezienia białka najbardziej podobnego do poniższej sekwencji nukleotydowej. 
+Użyj programu **BLASTx** do znalezienia białka najbardziej podobnego do poniższej sekwencji nukleotydowej. 
 
 ```
 AGAAGAAGACATAGTAATTAGATCTGAAAATTTTACGAACAATGCTAAAACCATAATAGTACAGCTGAAGGAATCTATAAAAATTAATTGTACAAGAC
@@ -11,11 +11,11 @@ CCATCAAGGGACAAATTAGATGTTCATCAAATATTACAGGGATATTCTTAACAAGAGATGGTGGTAACGCAAGCGATGAG
 GGAGGAGGAAATA
 ```
 
-Sekwencja koduje białko, ale występuje w niej przesunięcie ramki odczytu (*frameshift*). W oparciu o wyniki programu BLAST zidentyfikuj miejsce przesunięcia.
+Sekwencja koduje białko, ale występuje w niej przesunięcie ramki odczytu (*frameshift*). W oparciu o wyniki programu BLAST zidentyfikuj miejsce przesunięcia ramki odczytu.
 
 
 ## Zad. 2
-W ostatnich badanich badano oporność lekową wirusa HIV u dzieci i dorosłych otrzymujących różne typy leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV z pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`). Jakie SNP występują w pozycji 6 otrzymanych przyrównań?
+W ostatnich badanich badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`). Jakie SNP występują w pozycji 6 otrzymanych przyrównań?
 
 ```
 ATGACCTCAAATCACTCTTTGGCAACGACCCCTCGTCACAATAAAGATAGGGGGGCAACTAAAGGAAGCTCTATTAGATACAGGAGCAGATGAT
