@@ -53,7 +53,6 @@ Wyświetl uzyskane przyrównanie w programie JalView.
 2. Zidentyfikuj wszystkie delecje w przyrównaniu.
 3. Czy poprzednie przyrównanie sekwencji CDS w pełni odpowiada przyrównaniu sekwencji aminokwasowych?
    * Czy przyrównanie sekwencji CDS jest poprawne?
-
 <br/>
 
 ### Zad. 4 - Alternatywny splicing i izoformy białek
@@ -68,7 +67,7 @@ Przyrównaj sekwencje `EPB4.1_human.fasta` używając programów **MAFFT**, **MU
 2. Czy któryś z programów poprawnie rozwiązał problem przyrównania izoform białkowych?
 <br/><br/>
 
-## Zad. 5 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
+### Zad. 5 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
 > Celem zadania jest wykorzystanie informacji zawartej w sekwencjach białkowych do utworzenia prawidłowego przyrównania sekwencji CDS.
 
 W pliku [insulin.cds.clean.fasta](./data/insulin.cds.clean.fasta) znajdują się sekwencje CDS insuliny (bez powielania sekwencj identycznych). Otwórz program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/). Umieść sekwencje CDS w polu `Paste in DNA sequences` i wykonaj przyrównanie.

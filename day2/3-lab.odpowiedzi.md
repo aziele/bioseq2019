@@ -925,7 +925,7 @@ Wyświetlenie powyższych przyrównań w programie JalView:
 
 <br/>
 
-## Zad. 5 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
+### Zad. 5 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
 Celem zadania jest utworzenie przyrównania sekwencji kodujących (CDS) insulinę na podstawie przyrównania sekwencji białkowych. 
 
 Program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/) jako sekwencje wejściowe przyjmuje sekwencje CDS, następnie dokonuje translacji tych sekwencji na sekwencje białkowe i korzystając z programu MAFFT przeprowadza przyrównanie sekwencji białkowych. W oparciu o otrzymane przyrównanie sekwencji białkowych, RevTrans odwzorowuje je dla sekwencji CDS.
