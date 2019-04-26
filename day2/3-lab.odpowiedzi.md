@@ -343,7 +343,6 @@ W programie JalView z manu wybierz `Colour` > `Nucleotide`.
 * Zaznacz myszką najbardziej zachowany fragment przyrównania. Naciśnij prawy przycisk myszy na przyrównanie, wybierz `Selection` > `New group`. Następnie `Selection` > `Edit Group` > `Border colour`.
 
 <img src="./images/JalView-dna3.png" alt="JalView-dna3">
-<br/>
 
 ### Zad. 3 - Przyrównanie sekwencji białkowych alfa-globin (MAFFT)
 Translacja sekwencji *CDS* alfa-globin przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/).
