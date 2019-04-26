@@ -582,10 +582,10 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 
 ## Wpływ parametrów na przyrównanie sekwencji
 
-### Zad. 6 - Kara za stosowanie przerw
+### Zad. 6 - Wielkość kary za stosowanie przerw
 
-#### 1. Zmniejszenie kary za przewy
-Ponieważ kara za przerwę jest mała (niewielkie wartości ujemne), algorytm częściej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość punktacji przyrównania. Większy wpływ na obniżenie punktacji przyrównania mają substytucje aminokwasów. W rezultacie, otrzymane przyrównanie zawiera więcej przerw niż niedopasowań dwóch aminokwasów. Z biologicznego punktu widzenia, takie przyrównanie jest mało wiarygodne.
+#### 1. Zmniejszenie wielkości kary za przewy
+Ponieważ kara za przerwę jest mała (niewielkie wartości ujemne), algorytm częściej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość punktacji przyrównania. Większy wpływ na obniżenie punktacji przyrównania mają w tym przypadku substytucje aminokwasów. W rezultacie, otrzymane przyrównanie zawiera więcej przerw niż niedopasowań dwóch aminokwasów. Z biologicznego punktu widzenia, takie przyrównanie jest mało wiarygodne.
 
 ```
 # Gap_penalty: 1.0
@@ -705,9 +705,9 @@ P29600           268 -T    268
 P29144          1233 FT   1234
 ```
 
-W wyniku zmniejszenia kary za wprowadzenie przerw (otwarcie przerwy = `1` i wydłużenie przerwy = `0.2`) otrzymane przyrównanie składa się w 80% z samych przerw.
+W wyniku obniżenia wielkości kary za wprowadzenie przerw (otwarcie przerwy = `1` i wydłużenie przerwy = `0.2`) otrzymane przyrównanie składa się w 80% z samych przerw (szereg dodatkowych, krótkich przerw).
 
-#### 2. Zwiększenie kary za przerwę
+#### 2. Zwiększenie wielkości kary za przerwę
 Ponieważ kara za przerwę jest duża (duże wartości ujemne), algorytm rzadko wprowadza przerwy do przyrównania, ponieważ zaniżają one końcową wartość punktacji przyrównania. Algorytm częściej wprowadza do przyrównania substytucje aminokwasów. W rezultacie, otrzymane przyrównanie zawiera niewielką liczbę przerw.
 
 ```
