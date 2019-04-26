@@ -37,14 +37,13 @@
 * day1-lab1
 * day1-lab2
 * day1-lab3
+* day2-lab1
 
 
 ## TODO:
 1. Slajdy
-2. BLAST (cały lab i zadania: dzień2 - lab2)
-   * różna długość query różne E-value
+2. BLAST (day2-lab2)
    * Database as Entrez query
-   * blast2seq
    * BLAST to genome (query E.coli > genome Klebsiella)
 3. Bazy danych UniProt i GeneOntology (rozszerzyć lab i ew. zadania)
    * UniProt Reference Proteomes
