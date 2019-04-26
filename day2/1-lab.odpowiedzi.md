@@ -42,6 +42,7 @@ Celem zadania jest znalezienie sekwencji najbardziej podobnych do sekwencji mRNA
 8. Długość przyrównania wynosi `341` nukleotydów.
 9. Wielkość przeszukiwanej bazy `NR` to `204,700,810,597` nukleotydów.
    > U góry strony wynikowej programu BLAST naciśnij `Search summary` > `Number of letters`
+
 <br/><br/>
 
 ### Zad. 2 - Wpływ wielkości bazy danych na E-value
