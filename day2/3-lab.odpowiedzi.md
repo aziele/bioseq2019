@@ -1066,7 +1066,7 @@ Sekwencje donorowe egzonów genu człowieka.
 <img src="./images/logo1.png" alt="logo1">
 
 1. Miejsce donorowe (`GT`) jest widoczne (całkowicie zachowane: 2 bity informacji). Również widoczny jest prawdopodobny sygnał w miejscu należącym do egoznu (preferencja dla `G` na pozycji przed miejscem `GT`)
-2. Egzon: `1-10`, Intron: `11-20`.
+2. Egzon znajduje się w pozyji `1-10`, a intron w pozycji `11-20`.
 
 #### Zmiana numerowania nukleotydów
 
@@ -1086,3 +1086,5 @@ Sekwencje donorowe egzonów genu człowieka.
 #### Logo, pozycje nukleotydów, tytuł
 
 <img src="./images/logo-ecoli2.png" alt="logo-ecoli2">
+
+[Kaseta Pribnowa](https://pl.wikipedia.org/wiki/Kaseta_Pribnowa) jest sekwencją sześciu nukleotydów tyminy i adeniny w kolejności: 5'-TATAAT-3'. Sekwencja ta jest niezbędna część sekwencji promotorowej DNA transkrypcji u prokariontów.
