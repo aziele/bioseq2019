@@ -18,7 +18,7 @@ Wejdź na stronę [narzędzi EMBOSS do przyrównywania wielu sekwencji](https://
 Umieść tesktową wersję drzewa (część `Tree Data`) w nowym pliku tekstowym i zapisz ją jako `clustal_dentist.newick`. Otwórz zapisane drzewo w programie FigTree. Dostosuj wygląd drzewa i wyeksportuj rysunek jako pdf.
 
 <img src="./images/figtree2.png" alt="figtree2">
-<br/>
+
 
 ### Zad. 2 - MEGA: zaawansowana analiza filogenetyczna
 

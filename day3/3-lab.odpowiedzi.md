@@ -62,7 +62,7 @@ PATIENT_D            ---    115
 #### ClustalOmega - drzewo filogenetyczne
 W zakładce `Phylogenetic tree` znajduje się drzewo filogenetyczne uzyskane metodą *Neighbor-Joining (NJ)*.
 
-<img src="./images/clustalomega-dentist-tree.png" alt="clustalomega-dentist-tree" width="400px">
+<img src="./images/clustalomega-dentist-tree.png" alt="clustalomega-dentist-tree" width="600px">
 
 Algorytm NJ tworzy **drzewo nieukorzenione**. Nieukorzenione drzewo filogenetyczne nie zakłada znajomości wspólnego przodka, a jedynie porządkuje taksony, by pokazać ich wzajemne powiązania. Ponieważ nie jest określone, który węzeł odpowiada przodkowi, drodze ewolucji w drzewie nieukorzenionym nie jest przypisany kierunek. Nie można zatem wnioskować na temat kolejności zakażeń wirusem HIV.
 
@@ -242,11 +242,11 @@ Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo cz�
 
 1. Skorzystaj z zaawansowanego wyszukiwania w bazie UniProt.
 
-  <img src="./images/uniprot-advance-l3.png" alt="uniprot-advance-l3" width="400px">
+   <img src="./images/uniprot-advance-l3.png" alt="uniprot-advance-l3" width="400px">
 
-  ```
-  name:"ribosomal protein l3" taxonomy:eukaryota fragment:no AND reviewed:yes
-  ```
+   ```
+   name:"ribosomal protein l3" taxonomy:eukaryota fragment:no AND reviewed:yes
+   ```
   
   Otrzymano 50 rekordów.
 
@@ -256,12 +256,14 @@ Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo cz�
       <img src="./images/uniprot-advance-l3-location.png" alt="uniprot-advance-l3-location" width="500px">
  
       ```
-      name:"ribosomal protein l3" taxonomy:eukaryota fragment:no locations:(location:cytoplasm) AND reviewed:yes
+      name:"ribosomal protein l3" taxonomy:eukaryota fragment:no 
+      locations:(location:cytoplasm) AND reviewed:yes
       ```
    * Mitochondria (8 rekordów)
 
      ```
-     name:"ribosomal protein l3" taxonomy:eukaryota fragment:no locations:(location:mitochondrion) AND reviewed:yes
+     name:"ribosomal protein l3" taxonomy:eukaryota fragment:no 
+     locations:(location:mitochondrion) AND reviewed:yes
      ```
 
 3. Sekwencje białka L3 w formacie FASTA znajdują się w pliku [ribosmal-l3.fasta](./files/ribosmal-l3.fasta).
