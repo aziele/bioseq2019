@@ -11,12 +11,18 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
 2. Domena Dicer (`Helicase_C`) znajduje się w pozyjach `229`-`318` sekwencji zapytania.
    > Serwis Pfam przedstawia dwa typy koordynatów `start` i `end`. Pozycje start i end w kolumnie **Alignment** oznaczają region przyrównania sekwencji zapytania z modelem HMM (*Hidden Markov Model*) reprezentującym domenę. Z kolei, koordynaty **Envelope** wyznaczają region w sekwencji, który został dodatkowo probabilistycznie wyznaczony jako region występowania domeny. Region **Envelope** jest zwykle kilka aminokwasów dłuższy niż region **Alignment**.
 3. Wartość *E*-value przyrównania domeny `Dicer_dimer` z modelem HMM wynosi `4.8e-24`. Przyrównanie jest zatem statystycznie istotne.
+
+#### Rekord domeny Dicer
+
 4. Numer dostępu domeny `Dicer_dimer` w bazie Pfam to [PF03368](https://pfam.xfam.org/family/PF03368.14).
 5. Domena `Dicer_dimer` bierze udział w interferencji RNA (RNAi), procesie wyciszania genów za pomocą cząsteczek dwuniciowego RNA (dsRNA). Domena jest odpowiedzialna za wiązanie dsRNA.
 6. 843 gatunki mają białka z domeną `Dicer_dimer`.
 7. Według bazy Pfam domena `Dicer_dimer` nie występuje u organizmów prokariotycznych.
    > Proces RNAi jest charakterystyczny dla eukariontów.
 8. 71 gatunków owadów (*Insecta*) posiada domenę `Dicer_dimer`.
+   
+   <img src="./images/pfam-sequence-dicer-species.png" alt="pfam-sequence-dicer-species">
+
 9. Widok drzewa taksonomicznego gatunków (`Tree`) wskazuje 1 białko człowieka z domeną `Dicer_dimer`. 
 10. Cztery sekwencje *Hominidae* posiadają domenę `Dicer_dimer`. Aby wyświetlić numery dostępu tych białek, zaznacz na drzewie grupę *Hominidae* i w prawym panelu wybierz `Download` > `Sequence accessions`. 
     Numery dostępu tych białek w UniProt: 
@@ -29,7 +35,10 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
 11. Logo domeny `Dicer_dimer` utworzone na podstawie modelu HMM składa się z `92` aminokwasów.
 12. W ósmej pozycji modelu HMM najbardziej zachowanymi aminokwasami są `Y` (tyrozyna) i `F` (fenyloalanina)
 13. Domena `Dicer_dimer` występuje najczęściej w białkach (w 397 sekwencjach) w sąsiedztwie domeny `Helicase_C` i dwóch domen `Ribonuclease_3`.
-<br/><br/>
+
+    <img src="./images/pfam-sequence-dicer-architecture.png" alt="pfam-sequence-dicer-architecture">
+
+<br/>
 
 ### Zad. 2 - Serwis PROSITE
 Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umieść sekwencję z zad. 1 w polu `Quick Scan mode of ScanProsite`. Naciśnij przycisk `Scan`.
