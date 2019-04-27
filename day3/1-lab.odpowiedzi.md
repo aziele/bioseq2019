@@ -38,10 +38,10 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
 
 10. Dwa najlepsze trafienia w bazie PDB to:
 
-   ```
-   4A8E_A  8e-20
-   5HXY_A  2e-18
-   ```
+    ```
+    4A8E_A  8e-20
+    5HXY_A  2e-18
+    ```
 
 11. Dwa najlepsze trafienia mają następujące parametry przyrównania z profilem: 
 
@@ -53,62 +53,62 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
 
     Przyrównania sekwencji zapytania z `4A8E_A`:
 
-   ```
-   >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
-   Length=292
+    ```
+    >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
+    Length=292
+    
+     Score = 90.4 bits (223),  Expect = 8e-20, Method: Composition-based stats.
+     Identities = 54/281 (19%), Positives = 104/281 (37%), Gaps = 27/281 (10%)
    
-    Score = 90.4 bits (223),  Expect = 8e-20, Method: Composition-based stats.
-    Identities = 54/281 (19%), Positives = 104/281 (37%), Gaps = 27/281 (10%)
-   
-   Query  173  SSRYTTISIFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTT  232
-                SR T       I  +  F      ++ +  +   +     Y +  +N ++         
-   Sbjct  25   KSRNTVRMYTYYISKF--FEEGHSPTARDALRFLAKLKRKGYSTRSLNLVIQ-ALKAYFK  81
-   
-   Query  233  TIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELL  292
-                 G D +  +  KTPK+       +  EE++ +    E +  +   +LL  +GLR  EL 
-   Sbjct  82   FEGLDSE-AEKLKTPKMPKTLPKSLTEEEVRRIINAAETLRDRLILLLLYGAGLRVSELC  140
-   
-   Query  293  NVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKL  352
-               N+ +E+++ +  +I + +  +  +      S      +++ YL +R +        +   
-   Sbjct  141  NLRVEDVNFEYGVIVV-RGGKGGKDRVVPISESLLSEIKR-YLESRNDDSPYLFVEMK--  196
-   
-   Query  353  AAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKV  412
-                           K K KL P     L +K      R  G     + LR  FAT+M  + +
-   Sbjct  197  -----------RKRKDKLSPKTVWRLVKK----YGRKAGVELTPHQLRHSFATHMLERGI  241
-   
-   Query  413  PPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGL  453
-                   I  L G    +  +I    YT  + + L++   +A L
-   Sbjct  242  DIRIIQELLGHSNLSTTQI----YTKVSTKHLKEAVKKAKL  278
-   ```
+    Query  173  SSRYTTISIFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTT  232
+                 SR T       I  +  F      ++ +  +   +     Y +  +N ++         
+    Sbjct  25   KSRNTVRMYTYYISKF--FEEGHSPTARDALRFLAKLKRKGYSTRSLNLVIQ-ALKAYFK  81
+    
+    Query  233  TIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELL  292
+                  G D +  +  KTPK+       +  EE++ +    E +  +   +LL  +GLR  EL 
+    Sbjct  82   FEGLDSE-AEKLKTPKMPKTLPKSLTEEEVRRIINAAETLRDRLILLLLYGAGLRVSELC  140
+    
+    Query  293  NVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKL  352
+                N+ +E+++ +  +I + +  +  +      S      +++ YL +R +        +   
+    Sbjct  141  NLRVEDVNFEYGVIVV-RGGKGGKDRVVPISESLLSEIKR-YLESRNDDSPYLFVEMK--  196
+    
+    Query  353  AAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKV  412
+                            K K KL P     L +K      R  G     + LR  FAT+M  + +
+    Sbjct  197  -----------RKRKDKLSPKTVWRLVKK----YGRKAGVELTPHQLRHSFATHMLERGI  241
+    
+    Query  413  PPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGL  453
+                    I  L G    +  +I    YT  + + L++   +A L
+    Sbjct  242  DIRIIQELLGHSNLSTTQI----YTKVSTKHLKEAVKKAKL  278
+    ```
 
-   Przyrównania sekwencji zapytania z `5HXY_A`:
+    Przyrównania sekwencji zapytania z `5HXY_A`:
    
-   ```
-   >5HXY_A Chain A, Crystal Structure Of Xera Recombinase
-   Length=317
+    ```
+    >5HXY_A Chain A, Crystal Structure Of Xera Recombinase
+    Length=317
+    
+     Score = 86.6 bits (213),  Expect = 2e-18, Method: Composition-based stats.
+     Identities = 42/214 (20%), Positives = 78/214 (36%), Gaps = 24/214 (11%)
    
-    Score = 86.6 bits (213),  Expect = 2e-18, Method: Composition-based stats.
-    Identities = 42/214 (20%), Positives = 78/214 (36%), Gaps = 24/214 (11%)
-   
-   Query  243  SFKTPKIQYGAKVPVKLEEIKEVAKNIE-HIPSKAYFVLLAESGLRPGELLNVSIENIDL  301
-               +   PK      V +  +E K + +         A   +LA +G+R GEL N+ I ++DL
-   Sbjct  125  NLTPPKRPSHXPVYLSEDEAKRLIEAASSDTRXYAIVSVLAYTGVRVGELCNLKISDVDL  184
-   
-   Query  302  KARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKLAAANENQEI  361
-               +  II + +  +  +      + +  + L   YL  R             L+   +N  +
-   Sbjct  185  QESIINV-RSGKGDKDRIVIXAEECVKALGS-YLDLR-------------LSXDTDNDYL  229
-   
-   Query  362  DLEKWKAKLFPYKDDVLRRKIYEAMDRALG-KRFELYALRRHFATYMQLKKVPPLAINIL  420
-                +   + +   +    + R I +   +A   K+   + LR  FAT +         I  +
-   Sbjct  230  FVSNRRVR---FDTSTIERXIRDLGKKAGIQKKVTPHVLRHTFATSVLRNGGDIRFIQQI  286
-   
-   Query  421  QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLV  454
-                G       +I    YT      LR+ Y +    
-   Sbjct  287  LGHASVATTQI----YTHLNDSALREXYTQHRPR  316
-   ```
+    Query  243  SFKTPKIQYGAKVPVKLEEIKEVAKNIE-HIPSKAYFVLLAESGLRPGELLNVSIENIDL  301
+                +   PK      V +  +E K + +         A   +LA +G+R GEL N+ I ++DL
+    Sbjct  125  NLTPPKRPSHXPVYLSEDEAKRLIEAASSDTRXYAIVSVLAYTGVRVGELCNLKISDVDL  184
+    
+    Query  302  KARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKLAAANENQEI  361
+                +  II + +  +  +      + +  + L   YL  R             L+   +N  +
+    Sbjct  185  QESIINV-RSGKGDKDRIVIXAEECVKALGS-YLDLR-------------LSXDTDNDYL  229
+    
+    Query  362  DLEKWKAKLFPYKDDVLRRKIYEAMDRALG-KRFELYALRRHFATYMQLKKVPPLAINIL  420
+                 +   + +   +    + R I +   +A   K+   + LR  FAT +         I  +
+    Sbjct  230  FVSNRRVR---FDTSTIERXIRDLGKKAGIQKKVTPHVLRHTFATSVLRNGGDIRFIQQI  286
+    
+    Query  421  QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLV  454
+                 G       +I    YT      LR+ Y +    
+    Sbjct  287  LGHASVATTQI----YTHLNDSALREXYTQHRPR  316
+    ```
 
 12. Oba białka należą do rodziny rekombinaz. 
-   > Miejscowo-specyficzna rekombinacja jest procesem, w którym blok DNA zostaje przeniesiony do innej pozycji w czsteczce zintegrowanej z genomem gospodarza. Zachodzi między niespokrewnionymi sekwencjami nukleotydowymi. Znane są dwie rodziny miejscowo-specyficznych rekombinaz (serynowe i tyrozynowe).
+    > Miejscowo-specyficzna rekombinacja jest procesem, w którym blok DNA zostaje przeniesiony do innej pozycji w czsteczce zintegrowanej z genomem gospodarza. Zachodzi między niespokrewnionymi sekwencjami nukleotydowymi. Znane są dwie rodziny miejscowo-specyficznych rekombinaz (serynowe i tyrozynowe).
 
 #### Trzecia iteracja PSI-BLAST
 
@@ -118,71 +118,71 @@ Przeszukanie bazy `PDB` za pomocą profilu PSSM [PSSM-iteration3.asn](./files/PS
 
 13. W wyniku przeszukania bazy PDB za pomocą PSSM z 3 iteracji uzyskano 25 statystycznie istotnych trafień. Na liście wynikowej nadal najlepszymi trafieniami są `4A8E_A` i `5HXY_A`:
 
-   ```
-   ID      E      cov   ident  sim/pos 
-   4A8E_A  5e-41  61%   17%    37%
-   5HXY_A  1e-39  63%   18%    32%
-   ```
+    ```
+    ID      E      cov   ident  sim/pos 
+    4A8E_A  5e-41  61%   17%    37%
+    5HXY_A  1e-39  63%   18%    32%
+    ```
 
-   Przyrównania sekwencji profilu z `4A8E_A`:
+    Przyrównania sekwencji profilu z `4A8E_A`:
 
-   ```
-   >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
-   Length=292
+    ```
+    >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
+    Length=292
+    
+     Score = 149 bits (375),  Expect = 5e-41, Method: Composition-based stats.
+     Identities = 49/281 (17%), Positives = 106/281 (38%), Gaps = 27/281 (10%)
    
-    Score = 149 bits (375),  Expect = 5e-41, Method: Composition-based stats.
-    Identities = 49/281 (17%), Positives = 106/281 (38%), Gaps = 27/281 (10%)
-   
-   Query  173  SSRYTTISIFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTT  232
-                SR T       I  +  F      ++ +  +   +     Y +  +N ++         
-   Sbjct  25   KSRNTVRMYTYYISKF--FEEGHSPTARDALRFLAKLKRKGYSTRSLNLVI-QALKAYFK  81
-   
-   Query  233  TIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELL  292
-                 G D +  +  KTPK+       +  EE++ +    E +  +   +LL  +GLR  EL 
-   Sbjct  82   FEGLDSE-AEKLKTPKMPKTLPKSLTEEEVRRIINAAETLRDRLILLLLYGAGLRVSELC  140
-   
-   Query  293  NVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKL  352
-               N+ +E+++ +  +I +    +  +      S      +++ YL +R +            
-   Sbjct  141  NLRVEDVNFEYGVIVVR-GGKGGKDRVVPISESLLSEIKR-YLESRND------------  186
-   
-   Query  353  AAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKV  412
-                   ++  + +E  + +        + R + +   +A G     + LR  FAT+M  + +
-   Sbjct  187  ----DSPYLFVEMKRKRKDKLSPKTVWRLVKKYGRKA-GVELTPHQLRHSFATHMLERGI  241
-   
-   Query  413  PPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGL  453
-                   I  L G    +  +I    YT  + + L++   +A L
-   Sbjct  242  DIRIIQELLGHSNLSTTQI----YTKVSTKHLKEAVKKAKL  278
-   ```
+    Query  173  SSRYTTISIFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTT  232
+                 SR T       I  +  F      ++ +  +   +     Y +  +N ++         
+    Sbjct  25   KSRNTVRMYTYYISKF--FEEGHSPTARDALRFLAKLKRKGYSTRSLNLVI-QALKAYFK  81
+    
+    Query  233  TIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELL  292
+                  G D +  +  KTPK+       +  EE++ +    E +  +   +LL  +GLR  EL 
+    Sbjct  82   FEGLDSE-AEKLKTPKMPKTLPKSLTEEEVRRIINAAETLRDRLILLLLYGAGLRVSELC  140
+    
+    Query  293  NVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKL  352
+                N+ +E+++ +  +I +    +  +      S      +++ YL +R +            
+    Sbjct  141  NLRVEDVNFEYGVIVVR-GGKGGKDRVVPISESLLSEIKR-YLESRND------------  186
+    
+    Query  353  AAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKV  412
+                    ++  + +E  + +        + R + +   +A G     + LR  FAT+M  + +
+    Sbjct  187  ----DSPYLFVEMKRKRKDKLSPKTVWRLVKKYGRKA-GVELTPHQLRHSFATHMLERGI  241
+    
+    Query  413  PPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGL  453
+                    I  L G    +  +I    YT  + + L++   +A L
+    Sbjct  242  DIRIIQELLGHSNLSTTQI----YTKVSTKHLKEAVKKAKL  278
+    ```
 
-   Przyrównania sekwencji zapytania z `5HXY_A`:
+    Przyrównania sekwencji zapytania z `5HXY_A`:
 
-   ```
-   >5HXY_A Chain A, Crystal Structure Of Xera Recombinase
-   Length=317
+    ```
+    >5HXY_A Chain A, Crystal Structure Of Xera Recombinase
+    Length=317
    
-    Score = 145 bits (367),  Expect = 1e-39, Method: Composition-based stats.
-    Identities = 53/294 (18%), Positives = 95/294 (32%), Gaps = 30/294 (10%)
+     Score = 145 bits (367),  Expect = 1e-39, Method: Composition-based stats.
+     Identities = 53/294 (18%), Positives = 95/294 (32%), Gaps = 30/294 (10%)
    
-   Query  166  EVYSNLFSSRYTTISIFTLIVSYMLFIRNK---IISSEEEEQIEYEKVATSYISSLINRI  222
-               E  +    SRYT      L+  ++ F   K   I   + E    +  V   Y  +     
-   Sbjct  48   EYXTGERKSRYTIKEYRFLVDQFLSFXNKKPDEITPXDIERYKNFLAVKKRYSKTSQYLA  107
-   
-   Query  223  LNTKFTENTTTIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHI-PSKAYFVLL  281
-               +            +      +   PK      V +  +E K + +         A   +L
-   Sbjct  108  IKAVKLFYKALDLRVPI---NLTPPKRPSHXPVYLSEDEAKRLIEAASSDTRXYAIVSVL  164
-   
-   Query  282  AESGLRPGELLNVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEF  341
-               A +G+R GEL N+ I ++DL+  II +    +  +      + +  + L   YL  R   
-   Sbjct  165  AYTGVRVGELCNLKISDVDLQESIINVR-SGKGDKDRIVIXAEECVKALGS-YLDLR---  219
-   
-   Query  342  IRANEKNIAKLAAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALG-KRFELYALR  400
-                             + + + D      +   +    + R I +   +A   K+   + LR
-   Sbjct  220  -------------LSXDTDNDYLFVSNRRVRFDTSTIERXIRDLGKKAGIQKKVTPHVLR  266
-   
-   Query  401  RHFATYMQLKKVPPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLV  454
-                 FAT +         I  + G       +I    YT      LR+ Y +    
-   Sbjct  267  HTFATSVLRNGGDIRFIQQILGHASVATTQI----YTHLNDSALREXYTQHRPR  316
-   ```
+    Query  166  EVYSNLFSSRYTTISIFTLIVSYMLFIRNK---IISSEEEEQIEYEKVATSYISSLINRI  222
+                E  +    SRYT      L+  ++ F   K   I   + E    +  V   Y  +     
+    Sbjct  48   EYXTGERKSRYTIKEYRFLVDQFLSFXNKKPDEITPXDIERYKNFLAVKKRYSKTSQYLA  107
+    
+    Query  223  LNTKFTENTTTIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHI-PSKAYFVLL  281
+                +            +      +   PK      V +  +E K + +         A   +L
+    Sbjct  108  IKAVKLFYKALDLRVPI---NLTPPKRPSHXPVYLSEDEAKRLIEAASSDTRXYAIVSVL  164
+    
+    Query  282  AESGLRPGELLNVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEF  341
+                A +G+R GEL N+ I ++DL+  II +    +  +      + +  + L   YL  R   
+    Sbjct  165  AYTGVRVGELCNLKISDVDLQESIINVR-SGKGDKDRIVIXAEECVKALGS-YLDLR---  219
+    
+    Query  342  IRANEKNIAKLAAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALG-KRFELYALR  400
+                              + + + D      +   +    + R I +   +A   K+   + LR
+    Sbjct  220  -------------LSXDTDNDYLFVSNRRVRFDTSTIERXIRDLGKKAGIQKKVTPHVLR  266
+    
+    Query  401  RHFATYMQLKKVPPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLV  454
+                  FAT +         I  + G       +I    YT      LR+ Y +    
+    Sbjct  267  HTFATSVLRNGGDIRFIQQILGHASVATTQI----YTHLNDSALREXYTQHRPR  316
+    ```
 <br/><br/>
 
 ### Zad. 2 - PSSM Viewer: identyfikacja kluczowych aminokwasów
