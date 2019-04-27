@@ -19,7 +19,7 @@ Otwórz program MEGA7 zainstalowany na lokalnym komputerze.
 
 Ustaw korzeń drzewa na gałąź `Crocodillian skink (outgroup)`, wyświetl drzewo w pełnej wielkości okna (`Fit tree to screen`) i wyświetl długości gałęzi (`Display of branch lengths`).
 
-<img src="./images/MEGA-bears-nj-tree.png" alt="MEGA-bears-nj-tree" width="500px">
+<img src="./images/MEGA-bears-nj-tree.png" alt="MEGA-bears-nj-tree">
 
 1. Sekwencje niedźwiedzi `Spectacled Bear` - `Polar Bear` są ze sobą najbliżej spokrewnione. Świadczy o tym krótka długość poziomych gałęzi łączących te dwie sekwencje.
 
