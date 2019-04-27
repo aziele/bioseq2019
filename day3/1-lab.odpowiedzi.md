@@ -45,13 +45,13 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
 
 11. Dwa najlepsze trafienia mają następujące parametry przyrównania z profilem: 
 
-   ```
-   ID      Qcov   ident  sim/pos 
-   4A8E_A  61%    19%    37%
-   5HXY_A  46%    20%    36%
-   ```
+    ```
+    ID      Qcov   ident  sim/pos 
+    4A8E_A  61%    19%    37%
+    5HXY_A  46%    20%    36%
+    ```
 
-   Przyrównania sekwencji zapytania z `4A8E_A`:
+    Przyrównania sekwencji zapytania z `4A8E_A`:
 
    ```
    >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
