@@ -77,7 +77,6 @@ Wejdź w rekord domeny Dicer w bazie PROSITE.
 5. Czy w logo domeny Dicer aminokwasy `Y` i `F` są najbardziej zachowanymi aminokwasami?
 6. Wejdź w `Taxonomic distribution` domeny Dicer.
    * Czy domena występuje u organizmów prokariotycznych?
-
 <br/><br/>
 
 ### Zad. 3 - metaserwis InterPro
