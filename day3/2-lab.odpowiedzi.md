@@ -1,6 +1,6 @@
 ## Motywy i domeny białkowe
 
-### Zad. 1 - serwis Pfam
+### Zad. 1 - Serwis Pfam
 Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wybierz `SEARCH` a następnie z panelu po lewej stronie wybierz `Sequence`. Umieść sekwencję FASTA w oknie tekstowym `Sequence` i naciśnij przycisk `Submit`.
 
 <img src="./images/pfam-sequence.png" alt="pfam-sequence">
@@ -31,7 +31,7 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
 13. Domena `Dicer_dimer` występuje najczęściej w białkach (w 397 sekwencjach) w sąsiedztwie domeny `Helicase_C` i dwóch domen `Ribonuclease_3`.
 <br/><br/>
 
-### Zad. 2 - serwis PROSITE
+### Zad. 2 - Serwis PROSITE
 Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umieść sekwencję z zad. 1 w polu `Quick Scan mode of ScanProsite`. Naciśnij przycisk `Scan`.
 
 <img src="./images/prosite-sequence.png" alt="prosite-sequence">
@@ -51,14 +51,13 @@ Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umie
 6. W odróżnieniu od bazy Pfam, domena Dicer serwisu PROSITE występuje również u organizmów prokariotycznych. Domena ta występuje w `14` białkach bakteryjnych (np. w jednym białku *Paraprevotella clara YIT 11840*)
 <br/><br/>
 
-### Zad. 3 - metaserwis InterPro
+### Zad. 3 - Metaserwis InterPro
 Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową z zad. 1 w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
 
+<img src="./images/interpro-sequence.png" alt="interpro-sequence">
+
 1. Serwis InterPro zidentyfikowanł 6 domen (część rekordu `Domains and repeats`).
-
-   <img src="./images/interpro-sequence.png" alt="interpro-sequence">
-
-   InterPro jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowauje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
+   >InterPro jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowauje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
 
 2. Numer dostępu domeny Dicer w bazie InterPro to [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
 
@@ -122,9 +121,9 @@ Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść
 6. InterPro dostarcza informacji temat hierarchii zależności między domenami (`Domain relationships`). W skład ogólnie rozumianej domeny kinazowej (`IPR000719`) mogą wchodzić bardziej wyspecjalizowane domeny kinazowe (np. `Aurora kinase A (IPR030611)`).
 
 7. Domena kinazowa należy do nadrodziny *Protein kinase-like domain superfamily* (`IPR011009`).
+<br/><br/>
 
-
-### Zad. 6
+### Zad. 6 - InterPro: mutacja w obrębie domeny
 Otwórz stronę serwisu [EMBOSS Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/). Ustaw `Enter a pair of` na `PROTEIN`. Umieść sekwencję `seq1` w pierwszym polu i `seq2` w drugim polu. Naciśnij przycisk `Submit`.
 
 ```

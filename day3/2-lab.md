@@ -1,6 +1,6 @@
 ## Motywy i domeny białkowe
 
-### Zad. 1 - serwis Pfam
+### Zad. 1 - Serwis Pfam
 Wykorzystaj serwis [Pfam](https://pfam.xfam.org) i zidentyfikuj domeny białkowe obecne w poniższej sekwencji: 
 
 ```
@@ -63,7 +63,7 @@ Przejdź do zakładki `Domain organization`.
 13. Podaj najczęściej występujący układ domen w białkach, w którym występuje domena `Dicer_domain`.
 <br/><br/>
 
-### Zad. 2 - serwis PROSITE
+### Zad. 2 - Serwis PROSITE
 Użyj sekwencji z poprzedniego zadania w serwisie [PROSITE](https://prosite.expasy.org/prosite.html).
 
 1. Podaj nazwę domeny, której nie zidentyfikowano wcześniej w seriwsie Pfam.
@@ -79,7 +79,7 @@ Wejdź w rekord domeny Dicer w bazie PROSITE.
    * Czy domena występuje u organizmów prokariotycznych?
 <br/><br/>
 
-### Zad. 3 - metaserwis InterPro
+### Zad. 3 - Metaserwis InterPro
 Użyj sekwencji z zad. 1 i serwisu [InterPro](http://www.ebi.ac.uk/interpro/) w celu identyfikacji domen białkowych.
 
 1. Ile domen białkowych zidentyfikowano?
@@ -139,7 +139,7 @@ Wejdź do rekordu domeny kinazowej `IPR000719`.
 5. Wymień bazy domen, na podstawie których tworzony jest ten rekord w bazie InterPro (`Contributing signatures`).
 6. Czy w obrębie domeny kinazowej można wyróżnić bardziej specyficzne domeny kinazowe? (`Domain relationships`)
 7. Podaj nazwę nadrodziny, w skład której wchodzi domena kinazowa.
-
+<br/><br/>
 
 ### Zad. 6 - InterPro: mutacja w obrębie domeny
 Poniżej znajduje się sekwencja białkowa `seq2` odpowiadająca sekwencji `seq1` z poprzedniego zadania, lecz pochodzi od pacjenta chorującego na pewne schorzenie.
