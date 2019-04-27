@@ -1,5 +1,5 @@
 # Analiza sekwencji biologicznych
-7-9 maja 2019, Kraków
+7-9 maja 2019, Kraków, Szkolenie (21 godzin)
 
 ## Dzień 1
 
