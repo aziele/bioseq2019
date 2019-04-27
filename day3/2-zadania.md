@@ -8,6 +8,7 @@ W serwisie UniProt wyszukaj wszystkie białka roślin, które posiadają powyżs
 
 1. Ile białek zidentyfikowano?
 2. Pobierz sekwencje zidentyfikowanych białek w formacie FASTA. 
+<br/><br/>
 
 ### Zad. 2
 W serwisie InterPro zidentyfikuj domeny występujące w białku *Bacillus subtilis* o numerze dostępu `O32142` w bazie UniProt.
