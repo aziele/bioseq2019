@@ -1,7 +1,7 @@
 ## PSI-BLAST
 
-### Zad. 1 - Wyszukiwanie odległych sekwencji homologicznych
-> Celem zadania jest znalezienie najbardziej podobnej sekwencji białkowej (do sekwencji wejściowej), która posiada rozwiązaną strukturę przestrzenną.
+### Zad. 1 - Wyszukiwanie odległych homologów sekwencyjnych
+> Celem zadania jest znalezienie najbardziej podobnej sekwencji białkowej (do sekwencji zapytania) o rozwiązanej strukturze przestrzennej.
 
 Poniżej znajduje się nieznana sekwencja białkowa (`QUERY1`)
 
@@ -19,22 +19,22 @@ QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLVVLE
 
 #### Standardowe przeszukanie BLAST
 
-Zidentyfikuj tę sekwencję wykorzystując program BLAST. Ogranicz przeszukiwanie do bazy `PDB (Protein Data Bank proteins)`.
+Zidentyfikuj sekwencję wykorzystując program BLAST. Ogranicz przeszukiwanie do bazy `PDB (Protein Data Bank proteins)`.
 
 1. Ile istotnych statystycznie wyników zostało znalezionych (`E-value` < 0.005)?
 
 #### Przeszukanie PSI-BLAST
-Wróć do strony BLAST. Ogranicz wyszukiwanie do bazy danych `nr` (*non-redundant protein sequences*) oraz wybierz algorytm PSI–BLAST (*Position-Specific Iterated BLAST*).
+Wróć do strony programu BLAST. Ogranicz wyszukiwanie do bazy danych `nr` (*non-redundant protein sequences*) oraz wybierz algorytm `PSI–BLAST` (*Position-Specific Iterated BLAST*).
 
 2. Ile istotnych statystycznie wyników zostało znalezionych?
    > *Wskazówka*: zaznacz wszystkie istotne statystycznie wyniki poprzez `Select`: `All` w sekcji `Sequences producing significant alignments with E-value BETTER than threshold`
 3. Jakie wartości `Query cover` przyjmują znaleziono przyrównania? (pomijając wynik identyczny)
 4. Czy wśród istotnych statystycznie wyników znajduja się wyniki pochodzące z bazy PDB?
-   > *Wskazówka*: szukaj identyfikatora bazy PDB w kolumnie `Accession`. Identyfikator składa się z min. 4 znaków, w których pierwszy jest cyfrą np. `1XYZ_A`
+   > *Wskazówka*: szukaj identyfikatora bazy PDB w kolumnie `Accession`. Identyfikator składa się z min. 4 znaków, w których pierwszy znak jest cyfrą np. `1XYZ_A`
 
 #### Druga iteracja PSI-BLAST
-Wykonaj drugie przeszukiwanie BLAST w celu przygotowania matrycy PSSM (*Position-Specific Scoring Matrix*).
-> Wybierz przycisk Go przy Run PSI-Blast iteration 2 (znajdziesz go nad i pod tabelą wyników)
+Wykonaj drugie przeszukiwanie BLAST w celu przygotowania profilu PSSM (*Position-Specific Scoring Matrix*).
+> Wybierz przycisk `Go` przy `Run PSI-Blast iteration 2` (znajdziesz go nad i pod tabelą wyników)
 
 5. Ile istotnych statystycznie wyników zostało znalezionych?
 6. Ile wynosi wartość `Query cover` pierwszych 20 trafień (z wyłączeniem sekwencji identycznej)?
@@ -44,7 +44,7 @@ Wykonaj drugie przeszukiwanie BLAST w celu przygotowania matrycy PSSM (*Position
 #### Zapisanie i użycie profilu PSSM
 * Zapisz matrycę PSSM stworzoną przez PSI-BLAST (`Download` > `PSSM to restart search` > `PSSM`). 
 * Wykorzystaj pobraną matrycę PSSM do przeszukania bazy PDB. W tym celu:
-  - Otwórz stronę `protein BLAST` w nowej karcie przeglądarki.
+  - W nowej karcie przeglądarki otwórz stronę `protein BLAST`.
   - Ogranicz wyszukiwanie do bazy danych `PDB`
   - Wybierz algorytm `PSI–BLAST` (Position-Specific Iterated BLAST).
   - Rozwiń menu `Algorithm parameters` i w części `Upload PSSM` załaduj zapisany wcześniej plik z matrycą PSSM.
@@ -63,12 +63,12 @@ Przeprowadź jeszcze jedną iterację PSI-BLAST. W tym celu:
 * Użyj programu PSI-BLAST do przeszukania bazy `PDB` przy użyciu pobranego profilu PSSM `PSSM-iteration3.asn`.
 
 13. Odpowiedz na pytania 9-11.
-
+<br/><br/>
 
 ### Zad. 2 - PSSM Viewer: identyfikacja kluczowych aminokwasów
-> Celem tego zadania jest identyfikacja pozycji i aminokwasów w sekwencji `QUERY` (z poprzedniego zadania), które są krytyczne do utrzymania prawidłowej struktury i funkcjonowania białka. Umożliwia to wybranie najbardziej prawdopodobnych miejsc do przeprowadzenia mutagenezy.
+> Celem tego zadania jest identyfikacja aminokwasów w sekwencji `QUERY` (z poprzedniego zadania), które są krytyczne do utrzymania prawidłowej struktury i funkcjonowania białka. Umożliwia to wybranie najbardziej prawdopodobnych pozycji w sekwencji do przeprowadzenia doświadczeń mutagenezy.
 
-Otwórz stronę programu [NCBI PSSM Viewer](https://www.ncbi.nlm.nih.gov/Class/Structure/pssm/pssm_viewer.cgi).
+* Otwórz stronę programu [NCBI PSSM Viewer](https://www.ncbi.nlm.nih.gov/Class/Structure/pssm/pssm_viewer.cgi).
 * Zaznacz opcję `Scoremat file` i załaduj plik z profilem PSSM z poprzedniego zadania (`PSSM-iteration3.asn`)
 * Zaznacz opcję `FASTA file` i załaduj plik z sekwencją QUERY.
 * Naciśnij przycisk `Matrix View`
@@ -84,6 +84,6 @@ Otwórz stronę programu [NCBI PSSM Viewer](https://www.ncbi.nlm.nih.gov/Class/S
    * R379
    * R400
    * Y436
-2. Naciśnij na kolumnę `Query` w tabeli w celu posortowania jej według malejących wartości punktacji.
-   * Czy możesz zaproponować pozycje bardziej kluczowe niż te podane w poprzednim punkcie.
+2. W tabeli naciśnij na kolumnę `Query` w celu posortowania pozycji sekwencji według malejących wartości punktacji.
+   * Czy możesz zaproponować pozycje bardziej odpowiednie niż te wybrane w poprzednim punkcie.
 3. W której pozycji sekwencji tryptofan (`W`) ma największą wartość punktacji?
