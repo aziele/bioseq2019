@@ -75,7 +75,7 @@ Przeprowadź jeszcze jedną iterację PSI-BLAST. W tym celu:
 
 <img src="./images/ncbi-pssm-viewer1.png" alt="ncbi-pssm-viewer1.png">
 
-1. Wybierz cztery pozycje w sekwencji, które są dobrymi kandytami do przeprowadzania mutagenezy. Dla ułatwienia, wybierz cztery propozycje z poniższych ośmiu propozycji:
+1. Wybierz cztery spośród ośmiu pozycji w sekwencji, które są dobrymi kandytami do przeprowadzania mutagenezy:
    * H271
    * R287
    * E290
