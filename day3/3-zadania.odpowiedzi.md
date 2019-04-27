@@ -25,13 +25,12 @@ Ustaw korzeń drzewa na gałąź `Crocodillian skink (outgroup)`, wyświetl drze
 
 2. Oblicz macierz dystanstów między sekwencjami (`Distance` > `Compute pairwsie distances`). Sekwencja panda wielkiej jest bliżej spokrewniona z sekwencjami niedźwiedzi azjatyckimi.
 
-<img src="./images/MEGA-bears-distances.png" alt="MEGA-bears-distances">
+   <img src="./images/MEGA-bears-distances.png" alt="MEGA-bears-distances">
 
-
-3. Sekwencja `Red panda` jako pierwsza oddzieliła się od reszty niedźwiedzi. Wedłu macierzy dystansów `Red panda` dzieli najkrótszy dystans z psem. Zatem według tego drzewa nie ma podstaw, aby uznać pandę czerwoną za niedźwiedzia.
+3. Sekwencja `Red Panda` jako pierwsza oddzieliła się od reszty niedźwiedzi. Wedłu macierzy dystansów `Red panda` dzieli najkrótszy dystans z psem. Zatem według tego drzewa nie ma podstaw, aby uznać pandę czerwoną za niedźwiedzia.
 
 4. Sekwencja amerykańskiego niedźwiedzia brunatnego jest najstarsza, ponieważ wykazuje największy dystans (`0.3510`) do sekwencji zewnętrznej (`Crocodillan skink`).
-
+<br/><br/>
 
 ### Zad. 2
 Otwórz stronę serwisu NCBI BLAST. Wybierz program `nucleotide BLAST`. Jako sekwencję zapytania podaj którąkolwiek sekwencję `12S rRNA` z pliku [bears.fasta](./data/bears.fasta). Ogranicz przeszukiwania do organizmu *Ursus spelaeus*.
@@ -43,4 +42,4 @@ Dołącz sekwencję do pliku `bears.fasta` i wykonaj analizę filogenetyczną, j
 <img src="./images/MEGA-bears-cavebear-nj.png" alt="MEGA-bears-cavebear-nj">
 
 1. Amerykański niedźwiedź czarny jest najbliższym krewnym wymarłego niedźwiedzia jaskiniowego.
-2. Dołączenie niedźwiedzia jaskiniowego do drzewa nie zmieniło układu pozostałych taksonów.
+2. Uwzględnienie niedźwiedzia jaskiniowego na drzewie nie zmieniło układu pozostałych taksonów.
