@@ -10,3 +10,12 @@ W białkowej bazie NCBI znajdź wszystkie zwierzęce sekwencje `alpha-globin` o 
 
 ### Zad. 3
 W bazie `Taxonomy` wyszukaj informacje na temat linii ewolucyjnej **myszy** i **człowieka**. Podaj najniższą wspólną rangę taksonomiczną dla tych dwóch organizmów.
+<br/><br/>
+
+
+### Zad. 4
+Ostatni znany wilk workowaty umarł w ZOO w Hobart w 1936r (*Thylacinus cynocephalus* = wilk
+workowaty, wilk tasmański, tygrys tasmański). Z okazów muzealnych tego zwierzęcia uzyskano
+sekwencje DNA, z którymi można się zapoznać korzystając z bazy `Taxonomy`. Przeszukaj
+taksonomiczną bazę danych w poszukiwaniu wilka workowatego i powiedz, ile sekwencji DNA oraz
+białek się tam znajduje?

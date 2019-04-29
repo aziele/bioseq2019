@@ -39,3 +39,11 @@ Euarchontoglires;Primates; Haplorrhini; Catarrhini; Hominidae; Homo
 Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria;
 Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
 ```
+<br/><br/>
+
+### Zad. 4
+Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz taksonomiczną bazę danych (`Taxonomy`). Odszukaj takson wilka workowatego wpisując w polu wyszukiwania `Thylacinus cynocephalus`. 
+
+<img src="./images/ncbi-taxonomy-wolf.png" alt="ncbi-taxonomy-wolf">
+
+Dla wilka workowatego dostępnych jest `82` sekwencji nukleotydowych i `717` sekwencji białkowych.
