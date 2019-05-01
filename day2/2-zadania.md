@@ -16,7 +16,7 @@ A
 ```
 
 Sekwencja koduje białko, ale występuje w niej przesunięcie ramki odczytu (*frameshift*). W oparciu o wyniki programu BLAST zidentyfikuj miejsce przesunięcia ramki odczytu.
-<br/>
+<br/><br/>
 
 ### Zad. 2
 Główne białko moczu (*MUP*, *major urinary protein*) zwierząt bierze udział w wywoływanie strachu między różnymi gatunkami zwierząt. Na przykład, myszy wyczuwają i boją się zapachu białek MUP szczurów i kotów.
