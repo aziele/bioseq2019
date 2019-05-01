@@ -17,7 +17,7 @@ Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz progra
    Obecność tych segmentów w badanych sekwencjach powoduje tworzenie nieprawdziwych dopasowań i prowadzi do sztucznego zawyżania oceny przyrównania niespokrewnionych sekwencji. Dlatego regiony te nie są brane pod uwagę podczas wyznaczania przyrównania przez program BLAST (są "maskowane"), ponieważ mogłyby one fałszywie zawyżyć wartość punktacji `score`.
    > Program BLAST domyślnie maskuje te regiony, ale możliwe jest wyłączenie opcji maskowania w formularzu prorgamu BLAST (w panelu `Algorithm parameters`, w części `Filters and Masking`, zaznaczyć/odznaczyć `Filter low complexity regions`).
 
-<br/><br/>
+<br/>
 
 ### Zad. 2 - Złożone przeszukiwanie blastx
 Rekord sekwencji EST węża koralowego (*Micrurus corallinus*): [FL590802](https://www.ncbi.nlm.nih.gov/nuccore/FL590802).
@@ -32,7 +32,7 @@ Rekord sekwencji EST węża koralowego (*Micrurus corallinus*): [FL590802](https
 
    <img src="./images/blastx-est-alignments.png" alt="blastx-est-alignments">
 
-### Najwyżej punktowane przyrównanie
+#### Najwyżej punktowane przyrównanie
 
 ```
 >P01379.2 RecName: Full=Alpha-elapitoxin-Ls2a; Short=Alpha-EPTX-Ls2a; AltName: 
@@ -504,7 +504,6 @@ Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign
    <img src="./images/ncbi-splign-gabrg2.png" alt="ncbi-splign-gabrg2">
 <br/>
 
-
 ### Zad. 5 - Wyznaczanie lokalizacji ortologicznych egzonów kodujących (blastn i tblasn)
 
 #### blastn
@@ -525,345 +524,346 @@ Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign
 6. Program *tblastn* wyznaczył `31` przyrównań między sekwencją białka GABRG2 człowieka a sekwencją genomową gibona.
 7. Przyrównania otrzymane w programie *tblastn* obejmują translację sekwencji genomowej w sześciu ramkach odczytu (3 ramki na nici `plus` i 3 ramki na nici `minus`). Ponieważ wszystkie egzony muszą być w tej samej orientacji (`plus` albo `minus`) w wynikach programu tblastn należy rozpatrywać jedną z nici. Sekwencja kodująca w egzonach może być jednak odczytywana w różnych ramkach odczytu. Ponieważ przyrównania na nici `plus` wykazują istotnie wyższe wartości punktacji `score` można wnioskować, że gen GABRG2 gibona znajduje się właśnie na tej nici. Między sekwencją białka GABRG2 człowieka a sekwencją genomową gibona są **23 przyrównania** na nici `plus`.
 
-  ```
-  >NC_036884.1 Pan troglodytes isolate Yerkes chimp pedigree #C0471 (Clint) 
-  chromosome 5, Clint_PTRv2, whole genome shotgun sequence
-  Length=159319378
+    ```
+    >NC_036884.1 Pan troglodytes isolate Yerkes chimp pedigree #C0471 (Clint) 
+    chromosome 5, Clint_PTRv2, whole genome shotgun sequence
+    Length=159319378
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 203 bits (516),  Expect = 3e-54, Method: Compositional matrix adjust.
-   Identities = 92/94 (98%), Positives = 93/94 (99%), Gaps = 0/94 (0%)
-   Frame = +2
+     Score = 203 bits (516),  Expect = 3e-54, Method: Compositional matrix adjust.
+     Identities = 92/94 (98%), Positives = 93/94 (99%), Gaps = 0/94 (0%)
+     Frame = +2
 
-  Query  382        SFKAPTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGR  441
-                    S +APTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGR
-  Sbjct  140283245  SSQAPTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGR  140283424
+    Query  382        SFKAPTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGR  441
+                      S +APTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGR
+    Sbjct  140283245  SSQAPTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGR  140283424
 
-  Query  442        IHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL  475
-                    IHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL
-  Sbjct  140283425  IHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL  140283526
+    Query  442        IHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL  475
+                      IHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL
+    Sbjct  140283425  IHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL  140283526
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 157 bits (397),  Expect = 8e-39, Method: Compositional matrix adjust.
-   Identities = 74/77 (96%), Positives = 75/77 (97%), Gaps = 0/77 (0%)
-   Frame = +2
+     Score = 157 bits (397),  Expect = 8e-39, Method: Compositional matrix adjust.
+     Identities = 74/77 (96%), Positives = 75/77 (97%), Gaps = 0/77 (0%)
+     Frame = +2
 
-  Query  107        INMEYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTP  166
-                    +  EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTP
-  Sbjct  140228030  LKQEYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTP  140228209
+    Query  107        INMEYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTP  166
+                      +  EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTP
+    Sbjct  140228030  LKQEYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTP  140228209
 
-  Query  167        NRMLRIWNDGRVLYTLR  183
-                    NRMLRIWNDGRVLYTLR
-  Sbjct  140228210  NRMLRIWNDGRVLYTLR  140228260
+    Query  167        NRMLRIWNDGRVLYTLR  183
+                      NRMLRIWNDGRVLYTLR
+    Sbjct  140228210  NRMLRIWNDGRVLYTLR  140228260
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-6
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-6
 
-   Score = 125 bits (313),  Expect = 5e-28, Method: Compositional matrix adjust.
-   Identities = 61/129 (47%), Positives = 79/129 (61%), Gaps = 28/129 (22%)
-   Frame = +3
+     Score = 125 bits (313),  Expect = 5e-28, Method: Compositional matrix adjust.
+     Identities = 61/129 (47%), Positives = 79/129 (61%), Gaps = 28/129 (22%)
+     Frame = +3
 
-  Query  110        EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPNRM  169
-                    EYT+D+FF QTW D RLKF    ++L LN+ MV KIW PDTFFRN KK+ AH +TTPN++
-  Sbjct  139832781  EYTMDVFFRQTWTDERLKFGGPTEILSLNNLMVSKIWTPDTFFRNGKKSIAHNMTTPNKL  139832960
+    Query  110        EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPNRM  169
+                      EYT+D+FF QTW D RLKF    ++L LN+ MV KIW PDTFFRN KK+ AH +TTPN++
+    Sbjct  139832781  EYTMDVFFRQTWTDERLKFGGPTEILSLNNLMVSKIWTPDTFFRNGKKSIAHNMTTPNKL  139832960
 
-  Query  170        LRIWNDGRVLYTL----------------------------RLTIDAECQLQLHNFPMDE  201
-                     RI  +G +LYT+                            RLTI+A+C ++L NFPMD 
-  Sbjct  139832961  FRIMQNGTILYTMR*GFSNSISPA*MICP*Y*LRTVDFNVSRLTINADCPMRLVNFPMDG  139833140
+    Query  170        LRIWNDGRVLYTL----------------------------RLTIDAECQLQLHNFPMDE  201
+                       RI  +G +LYT+                            RLTI+A+C ++L NFPMD 
+    Sbjct  139832961  FRIMQNGTILYTMR*GFSNSISPA*MICP*Y*LRTVDFNVSRLTINADCPMRLVNFPMDG  139833140
 
-  Query  202        HSCPLEFSS  210
-                    H+CPL+F S
-  Sbjct  139833141  HACPLKFGS  139833167
+    Query  202        HSCPLEFSS  210
+                      H+CPL+F S
+    Sbjct  139833141  HACPLKFGS  139833167
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 105 bits (263),  Expect = 1e-21, Method: Compositional matrix adjust.
-   Identities = 50/50 (100%), Positives = 50/50 (100%), Gaps = 0/50 (0%)
-   Frame = +1
+     Score = 105 bits (263),  Expect = 1e-21, Method: Compositional matrix adjust.
+     Identities = 50/50 (100%), Positives = 50/50 (100%), Gaps = 0/50 (0%)
+     Frame = +1
 
-  Query  37         FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIG  86
-                    FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIG
-  Sbjct  140224228  FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIG  140224377
+    Query  37         FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIG  86
+                      FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIG
+    Sbjct  140224228  FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIG  140224377
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 101 bits (252),  Expect = 3e-20, Method: Compositional matrix adjust.
-   Identities = 48/51 (94%), Positives = 49/51 (96%), Gaps = 0/51 (0%)
-   Frame = +1
+     Score = 101 bits (252),  Expect = 3e-20, Method: Compositional matrix adjust.
+     Identities = 48/51 (94%), Positives = 49/51 (96%), Gaps = 0/51 (0%)
+     Frame = +1
 
-  Query  254        TTSGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
-                    +  GDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR
-  Sbjct  140272600  SVPGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  140272752
+    Query  254        TTSGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
+                      +  GDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR
+    Sbjct  140272600  SVPGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  140272752
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 101 bits (252),  Expect = 3e-20, Method: Compositional matrix adjust.
-   Identities = 53/78 (68%), Positives = 59/78 (76%), Gaps = 1/78 (1%)
-   Frame = +2
+     Score = 101 bits (252),  Expect = 3e-20, Method: Compositional matrix adjust.
+     Identities = 53/78 (68%), Positives = 59/78 (76%), Gaps = 1/78 (1%)
+     Frame = +2
 
-  Query  194        LHNFPMDEHSCPLEF-SSYGYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVV  252
-                    LH    +   C L + ++ GYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVV
-  Sbjct  140234261  LHMLIYNHF*CELSYLTADGYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVV  140234440
+    Query  194        LHNFPMDEHSCPLEF-SSYGYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVV  252
+                      LH    +   C L + ++ GYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVV
+    Sbjct  140234261  LHMLIYNHF*CELSYLTADGYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVV  140234440
 
-  Query  253        KTTSGDYVVMSVYFDLSR  270
-                    KTTSG   +  +  D SR
-  Sbjct  140234441  KTTSGKMHLRRISSDPSR  140234494
+    Query  253        KTTSGDYVVMSVYFDLSR  270
+                      KTTSG   +  +  D SR
+    Sbjct  140234441  KTTSGKMHLRRISSDPSR  140234494
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-1
-     gamma-aminobutyric acid receptor subunit alpha-1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-1
+       gamma-aminobutyric acid receptor subunit alpha-1
 
-   Score = 98.6 bits (244),  Expect = 3e-19, Method: Compositional matrix adjust.
-   Identities = 45/74 (61%), Positives = 55/74 (74%), Gaps = 0/74 (0%)
-   Frame = +2
+     Score = 98.6 bits (244),  Expect = 3e-19, Method: Compositional matrix adjust.
+     Identities = 45/74 (61%), Positives = 55/74 (74%), Gaps = 0/74 (0%)
+     Frame = +2
 
-  Query  110        EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPNRM  169
-                    EYTID+FF Q+W D RLKF   + VLRLN+ M  KIW PDTFF N KK+ AH +T PN++
-  Sbjct  140016776  EYTIDVFFRQSWKDERLKFKGPMTVLRLNNLMASKIWTPDTFFHNGKKSVAHNMTMPNKL  140016955
+    Query  110        EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPNRM  169
+                      EYTID+FF Q+W D RLKF   + VLRLN+ M  KIW PDTFF N KK+ AH +T PN++
+    Sbjct  140016776  EYTIDVFFRQSWKDERLKFKGPMTVLRLNNLMASKIWTPDTFFHNGKKSVAHNMTMPNKL  140016955
 
-  Query  170        LRIWNDGRVLYTLR  183
-                    LRI  DG +LYT+R
-  Sbjct  140016956  LRITEDGTLLYTMR  140016997
+    Query  170        LRIWNDGRVLYTLR  183
+                      LRI  DG +LYT+R
+    Sbjct  140016956  LRITEDGTLLYTMR  140016997
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 80.5 bits (197),  Expect = 2e-13, Method: Compositional matrix adjust.
-   Identities = 39/39 (100%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
-   Frame = +3
+     Score = 80.5 bits (197),  Expect = 2e-13, Method: Compositional matrix adjust.
+     Identities = 39/39 (100%), Positives = 39/39 (100%), Gaps = 0/39 (0%)
+     Frame = +3
 
-  Query  322        ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV  360
-                    ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV
-  Sbjct  140279283  ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV  140279399
+    Query  322        ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV  360
+                      ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV
+    Sbjct  140279283  ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFV  140279399
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-6
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-6
 
-   Score = 77.4 bits (189),  Expect = 1e-12, Method: Compositional matrix adjust.
-   Identities = 32/49 (65%), Positives = 41/49 (84%), Gaps = 0/49 (0%)
-   Frame = +3
+     Score = 77.4 bits (189),  Expect = 1e-12, Method: Compositional matrix adjust.
+     Identities = 32/49 (65%), Positives = 41/49 (84%), Gaps = 0/49 (0%)
+     Frame = +3
 
-  Query  256        SGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
-                    +G+YV+M+VYF L R+MGYF IQ Y PC + V+LS VSFWINK++VPAR
-  Sbjct  139834029  TGEYVIMTVYFHLQRKMGYFMIQIYTPCIMTVILSQVSFWINKESVPAR  139834175
+    Query  256        SGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
+                      +G+YV+M+VYF L R+MGYF IQ Y PC + V+LS VSFWINK++VPAR
+    Sbjct  139834029  TGEYVIMTVYFHLQRKMGYFMIQIYTPCIMTVILSQVSFWINKESVPAR  139834175
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-1
-     gamma-aminobutyric acid receptor subunit alpha-1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-1
+       gamma-aminobutyric acid receptor subunit alpha-1
 
-   Score = 75.1 bits (183),  Expect = 8e-12, Method: Compositional matrix adjust.
-   Identities = 30/49 (61%), Positives = 42/49 (86%), Gaps = 0/49 (0%)
-   Frame = +1
+     Score = 75.1 bits (183),  Expect = 8e-12, Method: Compositional matrix adjust.
+     Identities = 30/49 (61%), Positives = 42/49 (86%), Gaps = 0/49 (0%)
+     Frame = +1
 
-  Query  256        SGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
-                    SG+YVVM+ +F L R++GYF IQTY+PC + V+LS VSFW+N+++VPAR
-  Sbjct  140034583  SGEYVVMTTHFHLKRKIGYFVIQTYLPCIMTVILSQVSFWLNRESVPAR  140034729
+    Query  256        SGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
+                      SG+YVVM+ +F L R++GYF IQTY+PC + V+LS VSFW+N+++VPAR
+    Sbjct  140034583  SGEYVVMTTHFHLKRKIGYFVIQTYLPCIMTVILSQVSFWLNRESVPAR  140034729
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 74.3 bits (181),  Expect = 1e-11, Method: Compositional matrix adjust.
-   Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
-   Frame = +1
+     Score = 74.3 bits (181),  Expect = 1e-11, Method: Compositional matrix adjust.
+     Identities = 36/36 (100%), Positives = 36/36 (100%), Gaps = 0/36 (0%)
+     Frame = +1
 
-  Query  1          MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG  36
-                    MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG
-  Sbjct  140198401  MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG  140198508
+    Query  1          MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG  36
+                      MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG
+    Sbjct  140198401  MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG  140198508
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 67.4 bits (163),  Expect = 2e-09, Method: Compositional matrix adjust.
-   Identities = 29/32 (91%), Positives = 31/32 (97%), Gaps = 0/32 (0%)
-   Frame = +1
+     Score = 67.4 bits (163),  Expect = 2e-09, Method: Compositional matrix adjust.
+     Identities = 29/32 (91%), Positives = 31/32 (97%), Gaps = 0/32 (0%)
+     Frame = +1
 
-  Query  179        LYTLRLTIDAECQLQLHNFPMDEHSCPLEFSS  210
-                    ++ LRLTIDAECQLQLHNFPMDEHSCPLEFSS
-  Sbjct  140231623  IFLLRLTIDAECQLQLHNFPMDEHSCPLEFSS  140231718
+    Query  179        LYTLRLTIDAECQLQLHNFPMDEHSCPLEFSS  210
+                      ++ LRLTIDAECQLQLHNFPMDEHSCPLEFSS
+    Sbjct  140231623  IFLLRLTIDAECQLQLHNFPMDEHSCPLEFSS  140231718
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit pi
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit pi
 
-   Score = 63.9 bits (154),  Expect = 3e-08, Method: Compositional matrix adjust.
-   Identities = 28/51 (55%), Positives = 39/51 (76%), Gaps = 0/51 (0%)
-   Frame = +1
+     Score = 63.9 bits (154),  Expect = 3e-08, Method: Compositional matrix adjust.
+     Identities = 28/51 (55%), Positives = 39/51 (76%), Gaps = 0/51 (0%)
+     Frame = +1
 
-  Query  254        TTSGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
-                    T SG+Y  + + F+L R + YF ++TY+P T +VVLSWVSFWI+ D+VPAR
-  Sbjct  148951279  TLSGNYTRLVLQFELRRNVLYFILETYVPSTFLVVLSWVSFWISLDSVPAR  148951431
+    Query  254        TTSGDYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPAR  304
+                      T SG+Y  + + F+L R + YF ++TY+P T +VVLSWVSFWI+ D+VPAR
+    Sbjct  148951279  TLSGNYTRLVLQFELRRNVLYFILETYVPSTFLVVLSWVSFWISLDSVPAR  148951431
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit pi
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit pi
 
-   Score = 63.5 bits (153),  Expect = 3e-08, Method: Compositional matrix adjust.
-   Identities = 30/76 (39%), Positives = 48/76 (63%), Gaps = 1/76 (1%)
-   Frame = +1
+     Score = 63.5 bits (153),  Expect = 3e-08, Method: Compositional matrix adjust.
+     Identities = 30/76 (39%), Positives = 48/76 (63%), Gaps = 1/76 (1%)
+     Frame = +1
 
-  Query  108        NMEYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPN  167
-                    + +YT  I+  Q W D+RL F    K   L++ +V  +W+PDT+   SKK+  H +T  N
-  Sbjct  148938025  SQDYTATIYLRQRWMDQRLVFEGN-KSFTLDARLVEFLWVPDTYIVESKKSFLHEVTVGN  148938201
+    Query  108        NMEYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPN  167
+                      + +YT  I+  Q W D+RL F    K   L++ +V  +W+PDT+   SKK+  H +T  N
+    Sbjct  148938025  SQDYTATIYLRQRWMDQRLVFEGN-KSFTLDARLVEFLWVPDTYIVESKKSFLHEVTVGN  148938201
 
-  Query  168        RMLRIWNDGRVLYTLR  183
-                    R++R++++G VLY LR
-  Sbjct  148938202  RLIRLFSNGTVLYALR  148938249
+    Query  168        RMLRIWNDGRVLYTLR  183
+                      R++R++++G VLY LR
+    Sbjct  148938202  RLIRLFSNGTVLYALR  148938249
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-6
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-6
 
-   Score = 59.3 bits (142),  Expect = 8e-07, Method: Compositional matrix adjust.
-   Identities = 26/38 (68%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
-   Frame = +1
+     Score = 59.3 bits (142),  Expect = 8e-07, Method: Compositional matrix adjust.
+     Identities = 26/38 (68%), Positives = 32/38 (84%), Gaps = 0/38 (0%)
+     Frame = +1
 
-  Query  322        ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYF  359
-                    AR SLPKVSY TAMD F++VCF FVFSAL+E+  ++YF
-  Sbjct  139835812  ARHSLPKVSYATAMDWFIAVCFAFVFSALIEFAAVNYF  139835925
+    Query  322        ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYF  359
+                      AR SLPKVSY TAMD F++VCF FVFSAL+E+  ++YF
+    Sbjct  139835812  ARHSLPKVSYATAMDWFIAVCFAFVFSALIEFAAVNYF  139835925
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-1
-     gamma-aminobutyric acid receptor subunit alpha-1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-1
+       gamma-aminobutyric acid receptor subunit alpha-1
 
-   Score = 57.8 bits (138),  Expect = 2e-06, Method: Compositional matrix adjust.
-   Identities = 25/38 (66%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
-   Frame = +3
+     Score = 57.8 bits (138),  Expect = 2e-06, Method: Compositional matrix adjust.
+     Identities = 25/38 (66%), Positives = 33/38 (87%), Gaps = 0/38 (0%)
+     Frame = +3
 
-  Query  322        ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYF  359
-                    AR SLPKV+Y TAMD F++VC+ FVFSAL+E+ T++YF
-  Sbjct  140039373  ARNSLPKVAYATAMDWFIAVCYAFVFSALIEFATVNYF  140039486
+    Query  322        ARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYF  359
+                      AR SLPKV+Y TAMD F++VC+ FVFSAL+E+ T++YF
+    Sbjct  140039373  ARNSLPKVAYATAMDWFIAVCYAFVFSALIEFATVNYF  140039486
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
-     gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X2
+       gamma-aminobutyric acid receptor subunit gamma-2 isoform X1
 
-   Score = 52.0 bits (123),  Expect = 1e-04, Method: Compositional matrix adjust.
-   Identities = 23/23 (100%), Positives = 23/23 (100%), Gaps = 0/23 (0%)
-   Frame = +1
+     Score = 52.0 bits (123),  Expect = 1e-04, Method: Compositional matrix adjust.
+     Identities = 23/23 (100%), Positives = 23/23 (100%), Gaps = 0/23 (0%)
+     Frame = +1
 
-  Query  87         VKPTLIHTDMYVNSIGPVNAINM  109
-                    VKPTLIHTDMYVNSIGPVNAINM
-  Sbjct  140225893  VKPTLIHTDMYVNSIGPVNAINM  140225961
+    Query  87         VKPTLIHTDMYVNSIGPVNAINM  109
+                      VKPTLIHTDMYVNSIGPVNAINM
+    Sbjct  140225893  VKPTLIHTDMYVNSIGPVNAINM  140225961
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-1
-     gamma-aminobutyric acid receptor subunit alpha-1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-1
+       gamma-aminobutyric acid receptor subunit alpha-1
 
-   Score = 48.1 bits (113),  Expect = 0.002, Method: Compositional matrix adjust.
-   Identities = 18/32 (56%), Positives = 25/32 (78%), Gaps = 0/32 (0%)
-   Frame = +3
+     Score = 48.1 bits (113),  Expect = 0.002, Method: Compositional matrix adjust.
+     Identities = 18/32 (56%), Positives = 25/32 (78%), Gaps = 0/32 (0%)
+     Frame = +3
 
-  Query  179        LYTLRLTIDAECQLQLHNFPMDEHSCPLEFSS  210
-                    ++ LRLT+ AEC + L +FPMD H+CPL+F S
-  Sbjct  140019207  MFPLRLTVRAECPMHLEDFPMDAHACPLKFGS  140019302
+    Query  179        LYTLRLTIDAECQLQLHNFPMDEHSCPLEFSS  210
+                      ++ LRLT+ AEC + L +FPMD H+CPL+F S
+    Sbjct  140019207  MFPLRLTVRAECPMHLEDFPMDAHACPLKFGS  140019302
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-6
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-6
 
-   Score = 43.9 bits (102),  Expect = 0.043, Method: Compositional matrix adjust.
-   Identities = 18/27 (67%), Positives = 21/27 (78%), Gaps = 0/27 (0%)
-   Frame = +1
+     Score = 43.9 bits (102),  Expect = 0.043, Method: Compositional matrix adjust.
+     Identities = 18/27 (67%), Positives = 21/27 (78%), Gaps = 0/27 (0%)
+     Frame = +1
 
-  Query  447        AKMDSYARIFFPTAFCLFNLVYWVSYL  473
-                    +K+D Y+RI FP AF  FNLVYWV YL
-  Sbjct  139845487  SKIDQYSRILFPVAFAGFNLVYWVVYL  139845567
+    Query  447        AKMDSYARIFFPTAFCLFNLVYWVSYL  473
+                      +K+D Y+RI FP AF  FNLVYWV YL
+    Sbjct  139845487  SKIDQYSRILFPVAFAGFNLVYWVVYL  139845567
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit pi
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit pi
 
-   Score = 40.8 bits (94),  Expect = 0.38, Method: Compositional matrix adjust.
-   Identities = 17/38 (45%), Positives = 27/38 (71%), Gaps = 1/38 (3%)
-   Frame = +3
+     Score = 40.8 bits (94),  Expect = 0.38, Method: Compositional matrix adjust.
+     Identities = 17/38 (45%), Positives = 27/38 (71%), Gaps = 1/38 (3%)
+     Frame = +3
 
-  Query  322        ARKSLPKVS-YVTAMDLFVSVCFIFVFSALVEYGTLHY  358
-                    +R SLP  + ++ A+D+++ +CF FVF AL+EY   HY
-  Sbjct  148952301  SRTSLPNTNCFIKAIDVYLGICFSFVFGALLEYAVAHY  148952414
+    Query  322        ARKSLPKVS-YVTAMDLFVSVCFIFVFSALVEYGTLHY  358
+                      +R SLP  + ++ A+D+++ +CF FVF AL+EY   HY
+    Sbjct  148952301  SRTSLPNTNCFIKAIDVYLGICFSFVFGALLEYAVAHY  148952414
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-1
-     gamma-aminobutyric acid receptor subunit alpha-1
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-1
+       gamma-aminobutyric acid receptor subunit alpha-1
 
-   Score = 38.5 bits (88),  Expect = 1.8, Method: Compositional matrix adjust.
-   Identities = 15/28 (54%), Positives = 21/28 (75%), Gaps = 0/28 (0%)
-   Frame = +3
+     Score = 38.5 bits (88),  Expect = 1.8, Method: Compositional matrix adjust.
+     Identities = 15/28 (54%), Positives = 21/28 (75%), Gaps = 0/28 (0%)
+     Frame = +3
 
-  Query  446        IAKMDSYARIFFPTAFCLFNLVYWVSYL  473
-                    ++K+D  +RI FP  F +FNLVYW +YL
-  Sbjct  140040963  VSKIDRLSRIAFPLLFGIFNLVYWATYL  140041046
+    Query  446        IAKMDSYARIFFPTAFCLFNLVYWVSYL  473
+                      ++K+D  +RI FP  F +FNLVYW +YL
+    Sbjct  140040963  VSKIDRLSRIAFPLLFGIFNLVYWATYL  140041046
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-6
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-6
 
-   Score = 37.0 bits (84),  Expect = 5.6, Method: Compositional matrix adjust.
-   Identities = 16/24 (67%), Positives = 20/24 (83%), Gaps = 0/24 (0%)
-   Frame = +2
+     Score = 37.0 bits (84),  Expect = 5.6, Method: Compositional matrix adjust.
+     Identities = 16/24 (67%), Positives = 20/24 (83%), Gaps = 0/24 (0%)
+     Frame = +2
 
-  Query  65         DVTVILNNLLEGYDNKLRPDIGVK  88
-                    +V+ IL+NLLEGYDN+LRP  G K
-  Sbjct  139830113  NVSRILDNLLEGYDNRLRPGFGGK  139830184
+    Query  65         DVTVILNNLLEGYDNKLRPDIGVK  88
+                      +V+ IL+NLLEGYDN+LRP  G K
+    Sbjct  139830113  NVSRILDNLLEGYDNRLRPGFGGK  139830184
 
 
-   Features in this part of subject sequence:
-     gamma-aminobutyric acid receptor subunit alpha-6
+     Features in this part of subject sequence:
+       gamma-aminobutyric acid receptor subunit alpha-6
 
-   Score = 36.6 bits (83),  Expect = 6.9, Method: Compositional matrix adjust.
-   Identities = 18/49 (37%), Positives = 29/49 (59%), Gaps = 4/49 (8%)
-   Frame = +2
+     Score = 36.6 bits (83),  Expect = 6.9, Method: Compositional matrix adjust.
+     Identities = 18/49 (37%), Positives = 29/49 (59%), Gaps = 4/49 (8%)
+     Frame = +2
 
-  Query  212        GYPREEIVYQWKRS---SVEVGDTRSWRLYQFSFVGLRNTTEVVKTTSG  257
-                     YP+ EI+Y WK+    SVEV +  S  L Q+  +G   ++E +K+ +G
-  Sbjct  139833470  AYPKSEIIYTWKKGPLYSVEVPEESS-SLLQYDLIGQTVSSETIKSNTG  139833613
-  ``` 
+    Query  212        GYPREEIVYQWKRS---SVEVGDTRSWRLYQFSFVGLRNTTEVVKTTSG  257
+                       YP+ EI+Y WK+    SVEV +  S  L Q+  +G   ++E +K+ +G
+    Sbjct  139833470  AYPKSEIIYTWKKGPLYSVEVPEESS-SLLQYDLIGQTVSSETIKSNTG  139833613
+    ``` 
 8. Program *tblastn* odnalazł większość egzonów genu GABRG2 gibona. Lokalizacja tylko pierwzego egzonu została całkowicie poprawnie wyznaczona (`1-36`). W przypadku lokalizacji pozostałych egzonów, różnice w miejscu początku i końca egzonu dotyczyły od kilku do kilkunastu reszt aminokwasowych.
    > Wyznaczenie pozycji ortologicznych egzonów jest skomplikowaną procedurą. Po pierwsze, porównywane sekwencje nie są identyczne, ponieważ ulegają one dywergencji ewolucyjnej od momentu rozdzielenia się linii ewolucyjnych analizowanych gatunków. Ponadto, niektóre kodony mogą być rozdzielone w sekwencji na dwa egzony. Na przykład, glicyna na C-końcu pierwszego egzonu (`1-36  MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG`) określona jest przez kodon `GGC`, przy czym `GG` znajduje się na końcu egzonu pierwszego a trzeci nukleotyd `C` tego kodonu znajduje się na początku drugiego egzonu. 
 
-  ```
-   RefSeq    tblastn
-    1–36      1-36      OK
-   37–87     37-86
-   88–109    87-109
-  110–183   107-183
-  184–211   194-270
-  212–257
-  258–308   254-304
-  309–376   322-360
-  377–384
-  385–475   382-475
-  ```
-<br/><br/>
+    ```
+     RefSeq    tblastn
+      1–36      1-36      OK
+     37–87     37-86
+     88–109    87-109
+    110–183   107-183
+    184–211   194-270
+    212–257
+    258–308   254-304
+    309–376   322-360
+    377–384
+    385–475   382-475
+    ```
+<br/>
+
 ### Zad. 6 - Identyfikacja ortologów (*Reciprocal BLAST*)
 
 #### BLAST w jednym kierunku

@@ -45,7 +45,7 @@ W bazie nukleotydowej NCBI wyszukaj rekord sekwencji *EST* węża koralowego o n
 1. Czy sekwencja zapytania została dopasowana na całej długości do sekwencji białek?
 2. Jakiego typu sekwencje białkowe zostały przyrównane do sekwencji zapytania?
 
-### Najwyżej punktowane przyrównanie
+#### Najwyżej punktowane przyrównanie
 
 Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższą wartość punktacji (`Max score`). Odpowiedz na poniższe pytania dotyczące tej sekwencji:
 
@@ -67,7 +67,7 @@ Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
 1. Podaj nazwę organizmu, z którego pochodzi najwięcej sekwencji trafienia.
 
-### Najwyżej punktowane przyrównanie
+#### Najwyżej punktowane przyrównanie
 
 Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższą wartość punktacji (`Max score`). Odpowiedz na poniższe pytania dotyczące tej sekwencji:
 
