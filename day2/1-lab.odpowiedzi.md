@@ -1,4 +1,4 @@
-## Wyszukiwanie sekwencji podobnych (BLAST)
+## BLAST - blastn i blastp
 
 ### Zad. 1 - Opis wyników programu BLAST
 Celem zadania jest znalezienie sekwencji najbardziej podobnych do sekwencji mRNA insuliny koszatniczki pospolitej.

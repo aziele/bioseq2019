@@ -1,4 +1,4 @@
-## BLAST - zaawansowane zagadnienia
+## BLAST - blastx, tblastn, blast2seqs
 
 ### Zad. 1 - Proste przeszukiwanie blastx
 Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **blastx**. Umieść sekwencję zapytania, użyj domyślnych ustawień programu. Uruchom program BLAST.
