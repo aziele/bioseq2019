@@ -1,4 +1,4 @@
-## Zad. 1
+### Zad. 1
 Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Ponieważ sekwencja koduje białko wybierz program **blastx**. W formularzu programu BLAST umieść sekwencję zapytania i przeprowadź przeszukiwanie.
 
 Sekwencja jest najbardziej podobna do białka otoczki wirusa HIV (*HIV1 envelope glycoprotein*) o numerze dostępu `AAL71628.1` (E-value: `1e-104`).
@@ -40,7 +40,7 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
 ```
 <br/><br/>
 
-## Zad. 2
+### Zad. 2
 
 1. Otwórz [serwis NCBI](https://www.ncbi.nlm.nih.gov), wybierz białkową bazę danych i skonstruuj poniższe zapytanie:
 

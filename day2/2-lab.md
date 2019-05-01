@@ -74,7 +74,7 @@ Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższ
 2. W której ramce odczytu została przetłumaczona sekwencja trafienia?
 3. Podaj długość pełnej sekwencji zapytania oraz jej początek i koniec w przyrównaniu.
 4. Podaj długość pełnej sekwencji trafienia oraz jej początek i koniec w przyrównaniu.
-
+<br/><br/>
 
 ### Zad. 4 - Wyznaczanie lokalizacji egzonów (blastn)
 Transkrypt genu GABRG2 człowieka (`NM_198904`) składa się z 10 egzonów długości od 24 do ponad 2400 nukleotydów. W serwisie NCBI *nucleotide blast*, wybierz programu *blastn* i przeszukaj genomowe sekwencje człowieka (`RefSeq Genomic Sequences`) w celu zlokalizowania pozycji egzonów genu GABRG2 w genomie człowieka.
@@ -173,10 +173,7 @@ Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższ
     ```
 
     Czy program *tblastn* zidentyfikował poprawnie niektóre powyższe fragmenty?
-
-
-
-
+<br/><br/>
 
 ### Zad. 6 - Identyfikacja ortologów (*Reciprocal BLAST*)
 > Celem zadania jest znalezienie sekwencji białkowej rekina, ortologicznej do białka opsyny-5 człowieka (`NP_859528`).
