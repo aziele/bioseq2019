@@ -40,29 +40,57 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
 ```
 <br/><br/>
 
-### Zad. 2
-Otwórz stronę serwisu [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). W polu wyszukiwania zatytułowanym `BLAST Genomes` wpisz `human`. Z listy autouzupełnień wybierz `human (taxId: 9606)`. W formularzu programu BLAST:
-* Umieść sekwencję zapytania w polu `Enter Query Sequence`
-* W polu `Database` wybierz aktualne złożenie sekwencji genomu człowieka (*Genome (GRCh38.p12 reference, Annotation Release 109)*).
-* Uruchom program BLAST.
+## Zad. 2
 
-<img src="./images/blast-genome-human.png" alt="blast-genome-human">
+1. Otwórz [serwis NCBI](https://www.ncbi.nlm.nih.gov), wybierz białkową bazę danych i skonstruuj poniższe zapytanie:
 
-Sekwencja zapytania pochodzi z chromosomu 17 człowieka. Jednak, najwyżej punktowane trafienie dotyczy niekompletnej sekwencji chromosomu 17 (numer dostępu w bazie RefSeq to `NT_187663.1`, gdzie `NT_` oznacza sekwencje *contigu*). Pełne złożenie chromosomu 17 ma numer dostępu `NC_000017.11`. Sekwencja zapytania pochodzi z nici `plus` chromosomu `NC_000017.11` i znajduje się w pozycji `45 961 145 - 45 965 104`.
+   ```
+   major urinary protein 3[Title] AND Mus musculus[Organism] AND refseq[Filter]
+   ```
 
-Aby odpowiedzieć na pytanie, jaki gen zawarty jest lokalizacji `45 961 145 - 45 965 104` chromosomu 17, naciśnij na link `GenBank` znajdujący się nad przyrównaniem sekwencji zapytania i `NC_000017.11` (`Range 1: 45961145 to 45965104`). W rekordzie sekwencji odpowiadającym temu regionowi, w części `FEATURES` znajduje się gen **MAPT**.
+   W wyniku powyższego zapytania otrzymano 1 rekord: [NP_001034633](https://www.ncbi.nlm.nih.gov/protein/NP_001034633). Ze strony rekordu, w prawym panelu `Analyze this record` wybierz `Run BLAST`. W formularzu programu BLAST wybierz bazę danych `nr` i ogranicz wyszukiwania do organizmu *Monodelphis domestica*.
 
-```
-FEATURES             Location/Qualifiers
-     ...
-     gene            <1..>3960
-                     /gene="MAPT"
-                     /gene_synonym="DDPAC; FTDP-17; MAPTL; MSTD; MTBT1; MTBT2;
-                     PPND; PPP1R103; TAU"
-``` 
+2. W wynikach programu BLAST, najwyżej ocenioną sekwencją oposa jest XP_007475409.
 
-Współrzędne sekwencji `<1..>3960` oznaczają, że pełnej długości gen MAPT rozciąga się poniżej (`<1`) i powyżej (`>3960`) wyświetlonej sekwencji. Aby poznać dokładną lokalizację genu MAPT na sekwencji chromosomu 17, naciśnij na identyfikator genu MAPT (*GeneID*: [4137](https://www.ncbi.nlm.nih.gov/gene/4137)).
+   ```
+    >XP_007475409.1 PREDICTED: trichosurin-like [Monodelphis domestica]
+    Length=181
 
-<img src="./images/blast-genome-human-gene-mapt.png" alt="blast-genome-human-gene-mapt">
+     Score = 112 bits (281),  Expect = 2e-31, Method: Compositional matrix adjust.
+     Identities = 59/161 (37%), Positives = 94/161 (58%), Gaps = 0/161 (0%)
 
-<br/>
+    Query  19   CIHAEESSSMERNFNVEQISGYWFSIAEASDEREKIEEHGSMRAFVENITVLENSLVFKF  78
+                 +HA  +   +   NV Q+SG W SI  AS++ ++I + G M   + NITV E+++ F  
+    Sbjct  16   ALHAHRTRPEKHLENVNQLSGPWHSIYLASNDMDRISKGGDMNISIHNITVNESTVTFNV  75
+
+    Query  79   HLIVNEECTEMTAIGEQTEKAGIYYMNYDGFNTFSILKTDYDNYIMIHLINKKDGKTFQL  138
+                +L  NEEC  ++ + ++TEK  ++ +NY G N   + +     Y +    N ++GK   L
+    Sbjct  76   NLWQNEECIPISMVAKKTEKNNVFKLNYGGENYIYLEELKPKEYAIFCTHNHQNGKETLL  135
+
+    Query  139  MELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
+                MELYG  P L   +K+ F  LC+++GI +ENIID+T V+ C
+    Sbjct  136  MELYGWTPILKEKVKKTFKDLCQKYGIDKENIIDMTKVDHC  176
+    ```
+
+3. W wynikach programu BLAST w drugim kierunku otrzymano białko użyte w pierwszym zapytaniu.
+
+    ```
+    >NP_001034633.1 major urinary protein 3 precursor [Mus musculus]
+    Length=184
+
+     Score = 113 bits (282),  Expect = 2e-31, Method: Compositional matrix adjust.
+     Identities = 59/160 (37%), Positives = 94/160 (59%), Gaps = 0/160 (0%)
+
+    Query  17   LHAHRTRPEKHLENVNQLSGPWHSIYLASNDMDRISKGGDMNISIHNITVNESTVTFNVN  76
+                +HA  +   +   NV Q+SG W SI  AS++ ++I + G M   + NITV E+++ F  +
+    Sbjct  20   IHAEESSSMERNFNVEQISGYWFSIAEASDEREKIEEHGSMRAFVENITVLENSLVFKFH  79
+
+    Query  77   LWQNEECIPISMVAKKTEKNNVFKLNYGGENYIYLEELKPKEYAIFCTHNHQNGKETLLM  136
+                L  NEEC  ++ + ++TEK  ++ +NY G N   + +     Y +    N ++GK   LM
+    Sbjct  80   LIVNEECTEMTAIGEQTEKAGIYYMNYDGFNTFSILKTDYDNYIMIHLINKKDGKTFQLM  139
+
+    Query  137  ELYGWTPILKEKVKKTFKDLCQKYGIDKENIIDMTKVDHC  176
+                ELYG  P L   +K+ F  LC+++GI +ENIID+T V+ C
+    Sbjct  140  ELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
+    ```
+4. Sekwencja białka `XP_007475409` oposa jest prawdopodobnym ortologiem białka MUP3 (`NP_001034633`) myszy.

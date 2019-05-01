@@ -392,3 +392,27 @@ Formularz programu BLAST:
 6. Tak, BLAST zwrócił trafienia wśród ptaków (np. *Parus major*), gadów (np. *Crocodylus porosus*) i płazów (np. jaszczurka *Anolis carolinensis*).
 
    <img src="./images/ncbi-blast-foxp2-taxonomy.png" alt="ncbi-blast-foxp2-taxonomy" width="500px">
+<br/>
+
+
+### Zad. 2
+Wynik przeszukiwania programu *megablast* w genomie człowieka.
+
+<img src="./images/blast-genome-human.png" alt="blast-genome-human">
+
+Sekwencja zapytania pochodzi z chromosomu 17 człowieka. Jednak, najwyżej punktowane trafienie dotyczy niekompletnej sekwencji chromosomu 17 (numer dostępu w bazie RefSeq to `NT_187663.1`, gdzie `NT_` oznacza sekwencje *contigu*). Pełne złożenie chromosomu 17 ma numer dostępu `NC_000017.11`. Sekwencja zapytania pochodzi z nici `plus` chromosomu `NC_000017.11` i znajduje się w pozycji `45 961 145 - 45 965 104`.
+
+Aby odpowiedzieć na pytanie, jaki gen zawarty jest lokalizacji `45 961 145 - 45 965 104` chromosomu 17, naciśnij na link `GenBank` znajdujący się nad przyrównaniem sekwencji zapytania i `NC_000017.11` (`Range 1: 45961145 to 45965104`). W rekordzie sekwencji odpowiadającym temu regionowi, w części `FEATURES` znajduje się gen **MAPT**.
+
+```
+FEATURES             Location/Qualifiers
+     ...
+     gene            <1..>3960
+                     /gene="MAPT"
+                     /gene_synonym="DDPAC; FTDP-17; MAPTL; MSTD; MTBT1; MTBT2;
+                     PPND; PPP1R103; TAU"
+``` 
+
+Współrzędne sekwencji `<1..>3960` oznaczają, że pełnej długości gen MAPT rozciąga się poniżej (`<1`) i powyżej (`>3960`) wyświetlonej sekwencji. Aby poznać dokładną lokalizację genu MAPT na sekwencji chromosomu 17, naciśnij na identyfikator genu MAPT (*GeneID*: [4137](https://www.ncbi.nlm.nih.gov/gene/4137)).
+
+<img src="./images/blast-genome-human-gene-mapt.png" alt="blast-genome-human-gene-mapt">
