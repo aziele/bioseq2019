@@ -35,22 +35,7 @@
 
 ## TODO:
 1. Slajdy
-2. BLAST (day2-lab2)
+2. BLAST 
    * Database as Entrez query
-   * BLAST to genome (query E.coli > genome Klebsiella)
 3. Bazy danych UniProt i GeneOntology (rozszerzyć lab i ew. zadania)
    * UniProt Reference Proteomes
-4. Sprawdzenie, czy czasowo (2h) mamy wystarczającą liczbę:
-   * slajdów (20-30min)
-   * lab (1h - 1h10min)
-   * zadania (20min-30min)
-5. Zredagowanie całego tekstu dla:
-   * lab
-   * lab - odpowiedzi
-   * zadania
-   * zadania - odpowiedzi
-
-## Pociągi
-
-* DO KRAKOWA: 06.05.2019 odj. 13:34 - 18:39 (czas. 5:05), TLK
-* DO POZNANIA: 09.05.2019 odj. 17:18 - 22:16 (czas. 4:58), TLK
