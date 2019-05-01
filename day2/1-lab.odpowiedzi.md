@@ -395,7 +395,7 @@ Formularz programu BLAST:
 <br/>
 
 
-### Zad. 2
+### Zad. 7 - Przeszukiwanie pełnych sekwencji genomu
 Wynik przeszukiwania programu *megablast* w genomie człowieka.
 
 <img src="./images/blast-genome-human.png" alt="blast-genome-human">

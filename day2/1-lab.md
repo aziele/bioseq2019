@@ -196,7 +196,7 @@ Skorzystaj z zakładki `Taxonomy reports`.
 6. Czy program BLAST znalazł trafienia wśród ptaków, gadów lub płazów?
 <br/><br/>
 
-### Zad. 7 - Przeszukiwanie genomu
+### Zad. 7 - Przeszukiwanie pełnych sekwencji genomu
 > Celem zadania jest zidentyfikowanie lokalizacji genu (i struktury) na podstawie fragmentu sekwencji genomowej człowieka.
 
 Otwórz stronę serwisu [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). W polu wyszukiwania zatytułowanym `BLAST Genomes` wpisz `human`. Z listy autouzupełnień wybierz `human (taxId: 9606)`. W formularzu programu BLAST:
