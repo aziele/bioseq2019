@@ -138,7 +138,7 @@ Użyj serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign/) w celu 
 9. Czy pozycje egzonów w transkrypcie GABRG2 zostały prawidłowo zidentyfikowane?
 <br/><br/>
 
-### Zad. 5 - Wyznaczanie lokalizacji ortologicznych egzonów kodujących (blastn i tblasn)
+### Zad. 5 - Wyznaczanie lokalizacji ortologicznych egzonów kodujących (blastn i tblastn)
 
 #### blastn
 Użyj programu *blastn* stosując jako zapytanie numer dostępu sekwencji transkryptu GABRG2 (`NM_198904`) oraz bazę danych sekwencji genomowych (`RefSeq Genomic Sequences`) gibona *Nomascus leucogenys*  w celu lokalizacji egzonów GABRG2 w genomie gibona.

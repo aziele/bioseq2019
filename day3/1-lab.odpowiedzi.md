@@ -1,199 +1,273 @@
-## PSI-BLAST
+## Motywy i domeny białkowe
 
-### Zad. 1 - Wyszukiwanie odległych homologów sekwencyjnych
-Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExPSIBLAST) [DTU Cousrse - odpowiedzi](http://teaching.healthtech.dtu.dk/36611/index.php/ExPSIBLAST_answer).
+### Zad. 1 - Serwis Pfam
+Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wybierz `SEARCH` a następnie z panelu po lewej stronie wybierz `Sequence`. Umieść sekwencję FASTA w oknie tekstowym `Sequence` i naciśnij przycisk `Submit`.
 
-#### Standardowe przeszukanie BLAST
+<img src="./images/pfam-sequence.png" alt="pfam-sequence">
 
-1. W wyniku przeszukania bazy PDB nie znaleziono statystycznie istotnych przyrównań.
+1. W sekwencji zapytania zidentyfikowano:
+   * dwie domeny (`Dice_dimer` i `PAZ`)
+   * dwie rodziny domen (`Helicase_C` oraz dwa regiony idenyfikujące rodzinę `Ribonuclease_3`)
+2. Domena Dicer (`Helicase_C`) znajduje się w pozyjach `229`-`318` sekwencji zapytania.
+   > Serwis Pfam przedstawia dwa typy koordynatów `start` i `end`. Pozycje start i end w kolumnie **Alignment** oznaczają region przyrównania sekwencji zapytania z modelem HMM (*Hidden Markov Model*) reprezentującym domenę. Z kolei, koordynaty **Envelope** wyznaczają region w sekwencji, który został dodatkowo probabilistycznie wyznaczony jako region występowania domeny. Region **Envelope** jest zwykle kilka aminokwasów dłuższy niż region **Alignment**.
+3. Wartość *E*-value przyrównania domeny `Dicer_dimer` z modelem HMM wynosi `4.8e-24`. Przyrównanie jest zatem statystycznie istotne.
 
-   <img src="./images/blastp.png" alt="blastp">
+#### Rekord domeny Dicer
 
-#### Przeszukanie PSI-BLAST
-
-2. W wyniku przeszukania bazy `nr` znaleziono 131 statystycznie istotnych przyrównań (`E-value` < 0.005).
-
-   <img src="./images/psi-blast-iter1.png" alt="psi-blast-iter1.png">
-
-3. Przyrównania mają wartość `Query cover` w zakresie `40-50%`.
-4. Nie, wśród wyników nie ma sekwencji pochodzących z bazy PDB.
-
-#### Druga iteracja PSI-BLAST
-
-5. W wyniku drugiej iteracji znaleziono 500 statystycznie istotnych przyrównań.
-
-   <img src="./images/psi-blast-iter2.png" alt="psi-blast-iter2">
-
-6. Pierwsze 20 przyrównań ma wartość `Query cover` w zakresie `50-60%`
-7. Wiersze w tabeli wyróżnione na żółto oznaczają nowe trafienia, tzn. takie, których nie udało się zidentyfikować w trakcie poprzedniego przeszukiwania.
-8. W wynikach drugiego przeszukiwania BLAST znajduje więcej trafień. Program PSI-BLAST z wysoko ocenionych sekwencji trafień buduje przyrównanie wielu sekwencji i tworzy z niego profil. Profil sekwencji zawiera więcej informacji na temat danej rodziny białkowej niż każda sekwencja z osobna. PSI-BLSAT wykorzystuje otrzymany profil w drugiej rundzie (iteracji) przeszukiwania, w celu zidentyfikowania większej liczby dopasowanych do niego członków tej samej rodziny białkowej. Po zidentyfikowaniu nowych sekwencji, dołącza je do poprzedniego przyrównania, tak by utworzyć nowy profil, ktory wykorzystuje w następnych cyklach przeszukiwania bazy danych. Program powtarza ten proces do momentu, w którym przestanie znajdować nowe sekwencje. 
-
-#### Zapisanie i użycie profilu PSSM
-
-9. Przy użyciu profilu PSSM i przeszukaniu bazy PDB znaleziono 16 istotnych wyników:
-
-   <img src="./images/pssm_iteration2-pdb.png" alt="pssm_iteration2-pdb">
-
-   Profil PSSM zbudowany przez *PSI-BLAST* w drugiej iteracji umożliwił identyfikację sekwencji homologicznych w bazie PDB, których nie udało się zidentyfikować przy użyciu klasycznego przeszukiwania programem *protein BLAST*.
-
-10. Dwa najlepsze trafienia w bazie PDB to:
-
-    ```
-    4A8E_A  8e-20
-    5HXY_A  2e-18
-    ```
-
-11. Dwa najlepsze trafienia mają następujące parametry przyrównania z profilem: 
-
-    ```
-    ID      Qcov   ident  sim/pos 
-    4A8E_A  61%    19%    37%
-    5HXY_A  46%    20%    36%
-    ```
-
-    Przyrównania sekwencji zapytania z `4A8E_A`:
-
-    ```
-    >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
-    Length=292
-    
-     Score = 90.4 bits (223),  Expect = 8e-20, Method: Composition-based stats.
-     Identities = 54/281 (19%), Positives = 104/281 (37%), Gaps = 27/281 (10%)
+4. Numer dostępu domeny `Dicer_dimer` w bazie Pfam to [PF03368](https://pfam.xfam.org/family/PF03368.14).
+5. Domena `Dicer_dimer` bierze udział w interferencji RNA (RNAi), procesie wyciszania genów za pomocą cząsteczek dwuniciowego RNA (dsRNA). Domena jest odpowiedzialna za wiązanie dsRNA.
+6. 843 gatunki mają białka z domeną `Dicer_dimer`.
+7. Według bazy Pfam domena `Dicer_dimer` nie występuje u organizmów prokariotycznych.
+   > Proces RNAi jest charakterystyczny dla eukariontów.
+8. 71 gatunków owadów (*Insecta*) posiada domenę `Dicer_dimer`.
    
-    Query  173  SSRYTTISIFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTT  232
-                 SR T       I  +  F      ++ +  +   +     Y +  +N ++         
-    Sbjct  25   KSRNTVRMYTYYISKF--FEEGHSPTARDALRFLAKLKRKGYSTRSLNLVIQ-ALKAYFK  81
-    
-    Query  233  TIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELL  292
-                  G D +  +  KTPK+       +  EE++ +    E +  +   +LL  +GLR  EL 
-    Sbjct  82   FEGLDSE-AEKLKTPKMPKTLPKSLTEEEVRRIINAAETLRDRLILLLLYGAGLRVSELC  140
-    
-    Query  293  NVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKL  352
-                N+ +E+++ +  +I + +  +  +      S      +++ YL +R +        +   
-    Sbjct  141  NLRVEDVNFEYGVIVV-RGGKGGKDRVVPISESLLSEIKR-YLESRNDDSPYLFVEMK--  196
-    
-    Query  353  AAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKV  412
-                            K K KL P     L +K      R  G     + LR  FAT+M  + +
-    Sbjct  197  -----------RKRKDKLSPKTVWRLVKK----YGRKAGVELTPHQLRHSFATHMLERGI  241
-    
-    Query  413  PPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGL  453
-                    I  L G    +  +I    YT  + + L++   +A L
-    Sbjct  242  DIRIIQELLGHSNLSTTQI----YTKVSTKHLKEAVKKAKL  278
+   <img src="./images/pfam-sequence-dicer-species.png" alt="pfam-sequence-dicer-species">
+
+9. Widok drzewa taksonomicznego gatunków (`Tree`) wskazuje 1 białko człowieka z domeną `Dicer_dimer`. 
+10. Cztery sekwencje *Hominidae* posiadają domenę `Dicer_dimer`. Aby wyświetlić numery dostępu tych białek, zaznacz na drzewie grupę *Hominidae* i w prawym panelu wybierz `Download` > `Sequence accessions`. 
+    Numery dostępu tych białek w UniProt: 
     ```
-
-    Przyrównania sekwencji zapytania z `5HXY_A`:
-   
+    Q9UPY3
+    H2NM60
+    H2R458
+    A0A2I3SVT1
     ```
-    >5HXY_A Chain A, Crystal Structure Of Xera Recombinase
-    Length=317
-    
-     Score = 86.6 bits (213),  Expect = 2e-18, Method: Composition-based stats.
-     Identities = 42/214 (20%), Positives = 78/214 (36%), Gaps = 24/214 (11%)
-   
-    Query  243  SFKTPKIQYGAKVPVKLEEIKEVAKNIE-HIPSKAYFVLLAESGLRPGELLNVSIENIDL  301
-                +   PK      V +  +E K + +         A   +LA +G+R GEL N+ I ++DL
-    Sbjct  125  NLTPPKRPSHXPVYLSEDEAKRLIEAASSDTRXYAIVSVLAYTGVRVGELCNLKISDVDL  184
-    
-    Query  302  KARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKLAAANENQEI  361
-                +  II + +  +  +      + +  + L   YL  R             L+   +N  +
-    Sbjct  185  QESIINV-RSGKGDKDRIVIXAEECVKALGS-YLDLR-------------LSXDTDNDYL  229
-    
-    Query  362  DLEKWKAKLFPYKDDVLRRKIYEAMDRALG-KRFELYALRRHFATYMQLKKVPPLAINIL  420
-                 +   + +   +    + R I +   +A   K+   + LR  FAT +         I  +
-    Sbjct  230  FVSNRRVR---FDTSTIERXIRDLGKKAGIQKKVTPHVLRHTFATSVLRNGGDIRFIQQI  286
-    
-    Query  421  QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLV  454
-                 G       +I    YT      LR+ Y +    
-    Sbjct  287  LGHASVATTQI----YTHLNDSALREXYTQHRPR  316
-    ```
+11. Logo domeny `Dicer_dimer` utworzone na podstawie modelu HMM składa się z `92` aminokwasów.
+12. W ósmej pozycji modelu HMM najbardziej zachowanymi aminokwasami są `Y` (tyrozyna) i `F` (fenyloalanina)
+13. Domena `Dicer_dimer` występuje najczęściej w białkach (w 397 sekwencjach) w sąsiedztwie domeny `Helicase_C` i dwóch domen `Ribonuclease_3`.
 
-12. Oba białka należą do rodziny rekombinaz. 
-    > Miejscowo-specyficzna rekombinacja jest procesem, w którym blok DNA zostaje przeniesiony do innej pozycji w czsteczce zintegrowanej z genomem gospodarza. Zachodzi między niespokrewnionymi sekwencjami nukleotydowymi. Znane są dwie rodziny miejscowo-specyficznych rekombinaz (serynowe i tyrozynowe).
+    <img src="./images/pfam-sequence-dicer-architecture.png" alt="pfam-sequence-dicer-architecture">
 
-#### Trzecia iteracja PSI-BLAST
+<br/>
 
-Przeszukanie bazy `PDB` za pomocą profilu PSSM [PSSM-iteration3.asn](./files/PSSM-iteration3.asn) otrzymanego z trzeciej iteracji przeszukania bazy `nr`.
+### Zad. 2 - Serwis PROSITE
+Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umieść sekwencję z zad. 1 w polu `Quick Scan mode of ScanProsite`. Naciśnij przycisk `Scan`.
 
-<img src="./images/pssm_iteration3-pdb.png" alt="pssm_iteration3-pdb">
+<img src="./images/prosite-sequence.png" alt="prosite-sequence">
 
-13. W wyniku przeszukania bazy PDB za pomocą PSSM z 3 iteracji uzyskano 25 statystycznie istotnych trafień. Na liście wynikowej nadal najlepszymi trafieniami są `4A8E_A` i `5HXY_A`:
+1. Serwis PROSITE zindetyfykował 6 domen. Domeną nie zidentyfikowaną wcześniej w serwisie Pfam jest `DS_RBD` (*Double stranded RNA-binding domain (dsRBD)*). Domena ta ma numer dostępu w serwisie PROSITE: [PS50137](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS50137). Przejdź do rekordu domeny.
+   * Domena `DS_RBD` rozpoznaje dwuniciowe RNA. Domena jest głównie zaangażowana w posttranskrypcyjną regulację genów, na przykład poprzez zahamowanie ekspresji białek.
+2. Numer dostępu domeny Dicer w bazie PROSITE to [PS51327](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS51327).
+3. Położenie domeny Dicer według serwisu PROSITE w większości zgadza się z lokalizacją domeny według Pfam. Pozycja początku domeny wyznaczona przez oba serwisy jest taki sama (`229`), natomiast koniec domeny w bazie PROSITE to `321`, a w bazie Pfam `318`.
+   ```
+   Pfam       229-318
+   PROSITE    229-321
+   ```
 
-    ```
-    ID      E      cov   ident  sim/pos 
-    4A8E_A  5e-41  61%   17%    37%
-    5HXY_A  1e-39  63%   18%    32%
-    ```
-
-    Przyrównania sekwencji profilu z `4A8E_A`:
-
-    ```
-    >4A8E_A Chain A, The Structure Of A Dimeric Xer Recombinase From Archaea
-    Length=292
-    
-     Score = 149 bits (375),  Expect = 5e-41, Method: Composition-based stats.
-     Identities = 49/281 (17%), Positives = 106/281 (38%), Gaps = 27/281 (10%)
-   
-    Query  173  SSRYTTISIFTLIVSYMLFIRNKIISSEEEEQIEYEKVATSYISSLINRILNTKFTENTT  232
-                 SR T       I  +  F      ++ +  +   +     Y +  +N ++         
-    Sbjct  25   KSRNTVRMYTYYISKF--FEEGHSPTARDALRFLAKLKRKGYSTRSLNLVI-QALKAYFK  81
-    
-    Query  233  TIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHIPSKAYFVLLAESGLRPGELL  292
-                  G D +  +  KTPK+       +  EE++ +    E +  +   +LL  +GLR  EL 
-    Sbjct  82   FEGLDSE-AEKLKTPKMPKTLPKSLTEEEVRRIINAAETLRDRLILLLLYGAGLRVSELC  140
-    
-    Query  293  NVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEFIRANEKNIAKL  352
-                N+ +E+++ +  +I +    +  +      S      +++ YL +R +            
-    Sbjct  141  NLRVEDVNFEYGVIVVR-GGKGGKDRVVPISESLLSEIKR-YLESRND------------  186
-    
-    Query  353  AAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALGKRFELYALRRHFATYMQLKKV  412
-                    ++  + +E  + +        + R + +   +A G     + LR  FAT+M  + +
-    Sbjct  187  ----DSPYLFVEMKRKRKDKLSPKTVWRLVKKYGRKA-GVELTPHQLRHSFATHMLERGI  241
-    
-    Query  413  PPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGL  453
-                    I  L G    +  +I    YT  + + L++   +A L
-    Sbjct  242  DIRIIQELLGHSNLSTTQI----YTKVSTKHLKEAVKKAKL  278
-    ```
-
-    Przyrównania sekwencji zapytania z `5HXY_A`:
-
-    ```
-    >5HXY_A Chain A, Crystal Structure Of Xera Recombinase
-    Length=317
-   
-     Score = 145 bits (367),  Expect = 1e-39, Method: Composition-based stats.
-     Identities = 53/294 (18%), Positives = 95/294 (32%), Gaps = 30/294 (10%)
-   
-    Query  166  EVYSNLFSSRYTTISIFTLIVSYMLFIRNK---IISSEEEEQIEYEKVATSYISSLINRI  222
-                E  +    SRYT      L+  ++ F   K   I   + E    +  V   Y  +     
-    Sbjct  48   EYXTGERKSRYTIKEYRFLVDQFLSFXNKKPDEITPXDIERYKNFLAVKKRYSKTSQYLA  107
-    
-    Query  223  LNTKFTENTTTIGQDKQLYDSFKTPKIQYGAKVPVKLEEIKEVAKNIEHI-PSKAYFVLL  281
-                +            +      +   PK      V +  +E K + +         A   +L
-    Sbjct  108  IKAVKLFYKALDLRVPI---NLTPPKRPSHXPVYLSEDEAKRLIEAASSDTRXYAIVSVL  164
-    
-    Query  282  AESGLRPGELLNVSIENIDLKARIIWINKETQTKRAYFSFFSRKTAEFLEKVYLPAREEF  341
-                A +G+R GEL N+ I ++DL+  II +    +  +      + +  + L   YL  R   
-    Sbjct  165  AYTGVRVGELCNLKISDVDLQESIINVR-SGKGDKDRIVIXAEECVKALGS-YLDLR---  219
-    
-    Query  342  IRANEKNIAKLAAANENQEIDLEKWKAKLFPYKDDVLRRKIYEAMDRALG-KRFELYALR  400
-                              + + + D      +   +    + R I +   +A   K+   + LR
-    Sbjct  220  -------------LSXDTDNDYLFVSNRRVRFDTSTIERXIRDLGKKAGIQKKVTPHVLR  266
-    
-    Query  401  RHFATYMQLKKVPPLAINILQGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLV  454
-                  FAT +         I  + G       +I    YT      LR+ Y +    
-    Sbjct  267  HTFATSVLRNGGDIRFIQQILGHASVATTQI----YTHLNDSALREXYTQHRPR  316
-    ```
+#### Rekord domeny Dicer
+4. Wyświetl logo profilu domeny Dicer poprzez naciśnięcie na link `Retrieve the sequence logo from the alignment`. Profil domeny Dicer zbudowany jest z `94` aminokwasów.
+5. W logotypie domeny Dicer aminokwasy `Y` i `F` nie są najbardziej zachowanymi aminokwasami, jak w przypadku bazy Pfam. Najbardziej zachowanym aminokwasem jest `P` w pozycji `42` profilu.
+6. W odróżnieniu od bazy Pfam, domena Dicer serwisu PROSITE występuje również u organizmów prokariotycznych. Domena ta występuje w `14` białkach bakteryjnych (np. w jednym białku *Paraprevotella clara YIT 11840*)
 <br/><br/>
 
-### Zad. 2 - PSSM Viewer: identyfikacja kluczowych aminokwasów
+### Zad. 3 - Metaserwis InterPro
+Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową z zad. 1 w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
 
-1. Cztery pozycje odpowiednie do przeprowadzenia mutagenezy to: `R287`, `E290`, `R400`, `Y436`. 
-   > W tych pozycjach aminokwasy są najbardziej zachowane i ulegają podstawieniom rzadziej niż wynikałoby to z przypadku. Zatem ich występowanie jest w pewien sposób faworyzowane.
+<img src="./images/interpro-sequence.png" alt="interpro-sequence">
 
-2. W wyniku posortowania tabeli po kolumnie `Query`, na szczycie tabeli są pozycję o największym zachowaniu (najrzadziej ulegają substytucji). Wśród nich znajdują się pozycję zaproponowane w poprzednim punkcie. Dodatkowo, warto zwrócić uwagę na `G285` i `G140` - w tych pozycjach podstawienia na jakikolwiek inny aminokwas występują rzadziej niż wynikałoby to z przypadku.
+1. Serwis InterPro zidentyfikowanł 6 domen (część rekordu `Domains and repeats`).
+   >InterPro jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowauje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
 
-   <img src="./images/ncbi-pssm-viewer2.png" alt="ncbi-pssm-viewer2">
+2. Numer dostępu domeny Dicer w bazie InterPro to [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
 
-3. Posortuj tabelę według kolumny zawierającej tryptofan `W`. W pozycji `157`, substytucja `L <-> W` zachodzi najczęściej (wartość punktacji: `12` bity).
+3. Lokalizacja domeny Dicer w sekwencji zapytania wegług serwisu InterPro to `229-321`. Lokalizacja ta jest identyczna z przewidywaniami serwisu PROSITE.
 
-   <img src="./images/ncbi-pssm-viewer2.png" alt="ncbi-pssm-viewer2.png">
+4. Domena *Dicer* wyznaczona została w InterPro na podstawie przewidywań otrzymanych z serwisów PROSITE i Pfam.
+
+   <img src="./images/interpro-dicer.png" alt="interpro-dicer">
+
+#### Rekord domeny Dicer
+Przejdź do strony rekordu domeny *Dicer*: [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
+
+5. Naciśnij link `Species`. Domena Dicer występuję w `3660` sekwencjach białkowych.
+   * `16` sekwencji białkowych z domeną Dicer występuje u bakterii
+   * `3644` białek występuje u eukariontów
+   Aby wyświelić numery dostępu UniProt tych sekwencji naciśnij link `Protein IDs`.
+
+6. Domena Dicer występuje w `204` różnych układach z innymi domenami. Najpopularniejszym układem domen (reprezentowanym przez 486 białek) jest występowanie domeny *Dicer* w sąsiedztwie domeny helikazy (`IPR001650`) i rybonukleazy III (`IPR000999`).
+
+7. Przejdź do zakładki `Pathways & interactions`. InterPro wykorzystuje informacje zawarte w bazie Reactome. Według tej bazy, domena *Dicer* zaangażowana jest w dwa szlaki biochemiczne: biogenezę miRNA oraz biogenezę małych interferujących RNA (siRNA).
+<br/><br/>
+
+### Zad. 4 - Informacje o domenach w rekordach UniProt
+Otwórz stronę serwisu [UniProt](https://www.uniprot.org/). Z menu u góry strony wybierz `BLAST`. Umieść sekwencję w formacie FASTA w polu tekstowym. Ogranicz przeszukiwania BLAST do bazy `UniProtKB/Swiss-Prot`. Naciśnij przycisk `Run BLAST`.
+
+<img src="./images/uniprot-blast.png" alt="uniprot-blast">
+
+1. Sekwencją zapytania jest endorybonukleaza Dicer człowieka o numerze dostępu: [Q9UPY3](https://www.uniprot.org/uniprot/Q9UPY3).
+
+Przejdź do rekordu tej sekwencji w bazie UniProt.
+
+2. Tak, w rekordzie UniProt zawarte są informacje o domenach występujących w tym białku. Informacje te zawarte są w części `Family & Domains` rekordu. W podsekcji `Family and domain databases` znajdują się informacje o zidentyfikowanych domenach w serwisach InterPro, Pfam, SMART, PROSITE itd.
+
+   <img src="./images/uniprot-family_domain.png" alt="uniprot-family_domain">
+<br/>
+
+### Zad. 5 - InterProt: hierarchiczne relacje między domenami
+Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową `seq1` w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
+
+<img src="./images/interpro-seq1.png" alt="interpro-seq1">
+
+1. Białko zostało przypisane do rodziny receptorów efryn, które stanowią największą rodzinę receptorowych kinaz tyrozynowych. Ich ligandami są efryny, białka na stałe związane z powierzchnią komórki.
+2. W sekwencji zostało zidentyfikowanych 7 domen:
+   * *Ephrin receptor ligand binding domain*
+   * *Tyrosine-protein kinase ephrin type A/B receptor-like*
+   * *Fibronectin type III* - dwie domeny
+   * *Ephrin receptor, transmembrane domain*
+   * *Protein kinase domain*
+   * *Sterile alpha motif domain*
+3. Lokalizacja domeny kinazowej (`IPR000719`) to `615-899`.
+4. Tak, domena kinazowa zawiera miejsce wiązania ATP i centrum aktywne.
+
+   <img src="./images/interpro-kinase-atp.png" alt="interpro-kinase-atp">
+
+#### Rekord domeny kinazowej
+
+5. Rekord domeny kinazowej [IPR000719](http://www.ebi.ac.uk/interpro/entry/IPR000719) utworzony został w InterPro na podstawie informacji zawartych w trzech bazach danych: PROSITE profiles, SMART i Pfam.
+
+   <img src="./images/interpro-kinase.png" alt="interpro-kinase">
+
+6. InterPro dostarcza informacji temat hierarchii zależności między domenami (`Domain relationships`). W skład ogólnie rozumianej domeny kinazowej (`IPR000719`) mogą wchodzić bardziej wyspecjalizowane domeny kinazowe (np. `Aurora kinase A (IPR030611)`).
+
+7. Domena kinazowa należy do nadrodziny *Protein kinase-like domain superfamily* (`IPR011009`).
+<br/><br/>
+
+### Zad. 6 - InterPro: mutacja w obrębie domeny
+Otwórz stronę serwisu [EMBOSS Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/). Ustaw `Enter a pair of` na `PROTEIN`. Umieść sekwencję `seq1` w pierwszym polu i `seq2` w drugim polu. Naciśnij przycisk `Submit`.
+
+```
+# Length: 987
+# Identity:     986/987 (99.9%)
+# Similarity:   986/987 (99.9%)
+# Gaps:           0/987 ( 0.0%)
+# Score: 5206.0
+# 
+#
+#=======================================
+
+seq1               1 MELRVLLCWASLAAALEETLLNTKLETADLKWVTFPQVDGQWEELSGLDE     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2               1 MELRVLLCWASLAAALEETLLNTKLETADLKWVTFPQVDGQWEELSGLDE     50
+
+seq1              51 EQHSVRTYEVCDVQRAPGQAHWLRTGWVPRRGAVHVYATLRFTMLECLSL    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2              51 EQHSVRTYEVCDVQRAPGQAHWLRTGWVPRRGAVHVYATLRFTMLECLSL    100
+
+seq1             101 PRAGRSCKETFTVFYYESDADTATALTPAWMENPYIKVDTVAAEHLTRKR    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             101 PRAGRSCKETFTVFYYESDADTATALTPAWMENPYIKVDTVAAEHLTRKR    150
+
+seq1             151 PGAEATGKVNVKTLRLGPLSKAGFYLAFQDQGACMALLSLHLFYKKCAQL    200
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             151 PGAEATGKVNVKTLRLGPLSKAGFYLAFQDQGACMALLSLHLFYKKCAQL    200
+
+seq1             201 TVNLTRFPETVPRELVVPVAGSCVVDAVPAPGPSPSLYCREDGQWAEQPV    250
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             201 TVNLTRFPETVPRELVVPVAGSCVVDAVPAPGPSPSLYCREDGQWAEQPV    250
+
+seq1             251 TGCSCAPGFEAAEGNTKCRACAQGTFKPLSGEGSCQPCPANSHSNTIGSA    300
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             251 TGCSCAPGFEAAEGNTKCRACAQGTFKPLSGEGSCQPCPANSHSNTIGSA    300
+
+seq1             301 VCQCRVGYFRARTDPRGAPCTTPPSAPRSVVSRLNGSSLHLEWSAPLESG    350
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             301 VCQCRVGYFRARTDPRGAPCTTPPSAPRSVVSRLNGSSLHLEWSAPLESG    350
+
+seq1             351 GREDLTYALRCRECRPGGSCAPCGGDLTFDPGPRDLVEPWVVVRGLRPDF    400
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             351 GREDLTYALRCRECRPGGSCAPCGGDLTFDPGPRDLVEPWVVVRGLRPDF    400
+
+seq1             401 TYTFEVTALNGVSSLATGPVPFEPVNVTTDREVPPAVSDIRVTRSSPSSL    450
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             401 TYTFEVTALNGVSSLATGPVPFEPVNVTTDREVPPAVSDIRVTRSSPSSL    450
+
+seq1             451 SLAWAVPRAPSGAVLDYEVKYHEKGAEGPSSVRFLKTSENRAELRGLKRG    500
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             451 SLAWAVPRAPSGAVLDYEVKYHEKGAEGPSSVRFLKTSENRAELRGLKRG    500
+
+seq1             501 ASYLVQVRARSEAGYGPFGQEHHSQTQLDESEGWREQLALIAGTAVVGVV    550
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             501 ASYLVQVRARSEAGYGPFGQEHHSQTQLDESEGWREQLALIAGTAVVGVV    550
+
+seq1             551 LVLVVIVVAVLCLRKQSNGREAEYSDKHGQYLIGHGTKVYIDPFTYEDPN    600
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             551 LVLVVIVVAVLCLRKQSNGREAEYSDKHGQYLIGHGTKVYIDPFTYEDPN    600
+
+seq1             601 EAVREFAKEIDVSYVKIEEVIGAGEFGEVCRGRLKAPGKKESCVAIKTLK    650
+                     ||||||||||||||||||||||||||||||||||||||||||||||.|||
+seq2             601 EAVREFAKEIDVSYVKIEEVIGAGEFGEVCRGRLKAPGKKESCVAISTLK    650
+
+seq1             651 GGYTERQRREFLSEASIMGQFEHPNIIRLEGVVTNSMPVMILTEFMENGA    700
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             651 GGYTERQRREFLSEASIMGQFEHPNIIRLEGVVTNSMPVMILTEFMENGA    700
+
+seq1             701 LDSFLRLNDGQFTVIQLVGMLRGIASGMRYLAEMSYVHRDLAARNILVNS    750
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             701 LDSFLRLNDGQFTVIQLVGMLRGIASGMRYLAEMSYVHRDLAARNILVNS    750
+
+seq1             751 NLVCKVSDFGLSRFLEENSSDPTYTSSLGGKIPIRWTAPEAIAFRKFTSA    800
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             751 NLVCKVSDFGLSRFLEENSSDPTYTSSLGGKIPIRWTAPEAIAFRKFTSA    800
+
+seq1             801 SDAWSYGIVMWEVMSFGERPYWDMSNQDVINAIEQDYRLPPPPDCPTSLH    850
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             801 SDAWSYGIVMWEVMSFGERPYWDMSNQDVINAIEQDYRLPPPPDCPTSLH    850
+
+seq1             851 QLMLDCWQKDRNARPRFPQVVSALDKMIRNPASLKIVARENGGASHPLLD    900
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             851 QLMLDCWQKDRNARPRFPQVVSALDKMIRNPASLKIVARENGGASHPLLD    900
+
+seq1             901 QRQPHYSAFGSVGEWLRAIKMGRYEESFAAAGFGSFELVSQISAEDLLRI    950
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+seq2             901 QRQPHYSAFGSVGEWLRAIKMGRYEESFAAAGFGSFELVSQISAEDLLRI    950
+
+seq1             951 GVTLAGHQKKILASVQHMKSQAKPGTPGGTGGPAPQY    987
+                     |||||||||||||||||||||||||||||||||||||
+seq2             951 GVTLAGHQKKILASVQHMKSQAKPGTPGGTGGPAPQY    987
+```
+
+1. Sekwencje są prawie identyczne - u chorego pacjenta występuje `S` (seryna) w pozycji `647`, a w `seq1` występuje w tym miejscu `K` (lizyna).
+
+#### Serwis InterPro
+
+2. Mutacja `K>S` w pozycji `647` dotyczy domeny kinazowej. Porównanie wyników InterPro dla dwóch sekwencji wskazuje, że sekwencja `seq1` w pozycji `621-647` zawiera region wiązania ATP (*Protein kinase, ATP binding site*). Natomiast region ten nie występuje w sekwencji `seq2` chorego pacjenta.
+<br/><br/>
+
+### Zad. 7 - InterPro: wszystkie białka zawierające domenę RRM
+1. Numer dostępu domeny **RRM** w serwisie InterPro to [IPR000504](https://www.ebi.ac.uk/interpro/entry/IPR000504?q=RRM).
+2. Na stronie rekordu domeny RRM wybierz zakładkę `Species`. U bakterii jest `14 582` białek zawierających domenę RRM.
+<br/><br/>
+
+### Zad. 8 - UniProt: wszystkie białka zawierające domenę RRM
+Wejdź na stronę serwisu [UniProt](https://www.uniprot.org/). Skorzystaj z zaawansowanego wyszukiwania.
+
+<img src="./images/uniprot-advanced_search_interpro.png" alt="uniprot-advanced_search_interpro">
+
+1. Zapytanie do bazy danych UniProt:
+
+   ```
+   database:(type:interpro ipr000504) taxonomy:"Bacteria [2]"
+   ```
+
+2. W wyniku powyższego zapytania otrzymano `14 582` białek.
+<br/><br/>
+
+### Zad. 9 - MEME: Motif Discovery
+
+1. Program MEME zidentyfikował 3 różne motywy, które są nadreprezentowane w sekwencjach z pliku [sequences.fasta](./data/sequences.fasta). 
+
+   <img src="./images/meme.png" alt="meme">
+
+   * Motyw 1 - czerwony prostokąt
+   * Motyw 2 - niebieski prostokąt
+   * Motyw 3 - zielony prostokąt
+
+2. Dwa motywy (Motyw 1 i Motyw 3) są obecne we wszystkich sześciu sekwencjach. Motyw drugi występuje tylko w dwóch sekwenjach (`seq2` i `seq6`).
+
+3. Wybierz jedną sekwencję posiadającą wszystkie trzy motywy (np. `seq2`). Umieść sekwencję jako zapytanie w serwisie [InterPro](http://www.ebi.ac.uk/interpro/) i rozpocznij identyfikację domen.
+
+   <img src="./images/interpro-sh2sh3.png" alt="interpro-sh2sh3">
+
+   Tak, motywy zidentyfikowane przez program MEME odpowiadają znanym domenom białkowym występującym w serwisie InterPro. Motyw 2 (niebieski) wchodzi w skład domeny *SH3*. Natomiast motywy 1 i 3 wchodzą w skład domeny *SH2*.
+
+4. Domeny *SH2* i *SH3* uczestniczą w przenoszeniu informacji przez błonę komórkową od receptorów na układy efektorowe. W obrębie domeny *SH2* dochodzi do oddziaływań z rejonami białek zawierającymi ufosforylowaną tyrozynę, zaś w domenie *SH3* z fragmentami bogatymi w prolinę (motyw PXXP)

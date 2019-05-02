@@ -1,17 +1,14 @@
 ### Zad. 1
-Kinazy WAK (*Wall associated kinase*) są łącznikami między ścianą komórkową a cytoplazmą, które wykazują zdolnośc do wiązania składników ścian komórkowych roślin. Kinazy WAK składają się z domen:
-* *GUB_WAK_bind* (`PF13947`) - zewnątrzkomórkowa część białka, która wiążę pektyny ściany komórkowej
-* *EGF_CA* (`PF07645`) - epidermalny czynnik wzrostu wiążący jony wapnia
-* *Pkinase_Tyr* (`PF07714`) - domena kinazowo
+> Celem zadania jest sprawdzenie, czy białko człowieka (o numerze dostępu w bazie UniProt: `GPAA1_HUMAN`) ma sekwencje homologiczne w rodzaju *Trypansomoma*.
 
-W serwisie UniProt wyszukaj wszystkie białka roślin, które posiadają powyższe trzy domeny.
+#### Standardowe przeszukiwanie BLAST
+Przeprowadź standardowe przeszukiwanie programem `protein BLAST`, zawężając wyszukiwania do organizmu *Trypanosoma*.
 
-1. Ile białek zidentyfikowano?
-2. Pobierz sekwencje zidentyfikowanych białek w formacie FASTA. 
-<br/><br/>
+1. Ile znaleziono sekwencji statystycznie istotnych (E-value < `0.005`)?
+   * Ile wynosi E-value najlepszego trafienia?
 
-### Zad. 2
-W serwisie InterPro zidentyfikuj domeny występujące w białku *Bacillus subtilis* o numerze dostępu `O32142` w bazie UniProt.
+#### Wyszukiwanie PSI-BLAST
+Przeprowadź wyszukiwanie programem PSI-BLAST we wszstkich organizmach w celu zbudowania profilu PSSM. Następnie używając profilu PSSM przeszukaj bazę danych `nr` z ograniczeniem do *Trypanosoma*.
 
-1. Do ilu rodzin białkowych zaklasyfikowane jest to białko?
-2. Ile domen/motywów białkowych posiada ta sekwencja?
+2. Ile znaleziono sekwencji statystycznie istotnych (E < 0.005)?
+   * Ile wynosi E-value najlepszego trafienia?

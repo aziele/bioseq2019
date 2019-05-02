@@ -504,7 +504,7 @@ Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign
    <img src="./images/ncbi-splign-gabrg2.png" alt="ncbi-splign-gabrg2">
 <br/>
 
-### Zad. 5 - Wyznaczanie lokalizacji ortologicznych egzonów kodujących (blastn i tblasn)
+### Zad. 5 - Wyznaczanie lokalizacji ortologicznych egzonów kodujących (blastn i tblastn)
 
 #### blastn
 

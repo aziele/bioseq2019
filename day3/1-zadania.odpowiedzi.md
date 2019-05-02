@@ -1,47 +1,24 @@
 ### Zad. 1
-Rekord sekwencji GPAA1 w bazie Uniprot: [GPAA1_HUMAN](https://www.uniprot.org/uniprot/O43292).
+Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Skorzystaj z zaawansowanego wyszukiwania.
+
+<img src="./images/uniprot-advanced_pfam.png" alt="uniprot-advanced_pfam">
+
+Zapytanie do bazy danych:
 
 ```
->sp|O43292|GPAA1_HUMAN Glycosylphosphatidylinositol anchor attachment 1 protein OS=Homo sapiens OX=9606 GN=GPAA1 PE=1 SV=3
-MGLLSDPVRRRALARLVLRLNAPLCVLSYVAGIAWFLALVFPPLTQRTYMSENAMGSTMV
-EEQFAGGDRARAFARDFAAHRKKSGALPVAWLERTMRSVGLEVYTQSFSRKLPFPDETHE
-RYMVSGTNVYGILRAPRAASTESLVLTVPCGSDSTNSQAVGLLLALAAHFRGQIYWAKDI
-VFLVTEHDLLGTEAWLEAYHDVNVTGMQSSPLQGRAGAIQAAVALELSSDVVTSLDVAVE
-GLNGQLPNLDLLNLFQTFCQKGGLLCTLQGKLQPEDWTSLDGPLQGLQTLLLMVLRQASG
-RPHGSHGLFLRYRVEALTLRGINSFRQYKYDLVAVGKALEGMFRKLNHLLERLHQSFFLY
-LLPGLSRFVSIGLYMPAVGFLLLVLGLKALELWMQLHEAGMGLEEPGGAPGPSVPLPPSQ
-GVGLASLVAPLLISQAMGLALYVLPVLGQHVATQHFPVAEAEAVVLTLLAIYAAGLALPH
-NTHRVVSTQAPDRGWMALKLVALIYLALQLGCIALTNFSLGFLLATTMVPTAALAKPHGP
-RTLYAALLVLTSPAATLLGSLFLWRELQEAPLSLAEGWQLFLAALAQGVLEHHTYGALLF
-PLLSLGLYPCWLLFWNVLFWK
+database:(type:pfam pf13947) database:(type:pfam pf07645) database:(type:pfam pf07714) taxonomy:"Viridiplantae [33090]"
 ```
 
-#### Standardowe przeszukiwanie BLAST
-Wyszukiwanie programem blastp sekwencji `GPAA1_HUMAN` w bazie `nr` z zawężeniem bazy danych do organizmu *Trypanosoma*.
+1. 354 białka roślinne posiadają trzy domeny charakterystyczne dla kinaz WAK.
+2. Naciśnij przycisk `Download` > `Format:FASTA` > `Go`.
+<br/><br/>
 
-<img src="./images/trypanosoma-blastp.png" alt="trypanosoma-blastp">
+### Zad. 2
+Otwórz stronę serwisu [InterPro](https://www.ebi.ac.uk/interpro/). W oknie szybkiego wyszukiwania po prawej stronie wpisz numer dostępu białka `O32142`. 
 
-1. Brak statystycznie istotnych trafień. Znaleziono dwie sekwencje, z których najwyżej ocenione ma wartość E-value = `0.12`.
+<img src="./images/interpro-bacillus.png" alt="interpro-bacillus">
 
-#### PSI-BLAST - tworzenie profilu PSSM
-
-Pierwsza iteracja programu PSI-BLAST do bazy `nr` wszystkich organizmów.
-
-<img src="./images/trypanosoma-psi-blast-iter1.png" alt="trypanosoma-psi-blast-iter1">
-
-Druga iteracja PSI-BLAST do bazy `nr` wszystkich organizmów.
-
-<img src="./images/trypanosoma-psi-blast-iter2.png" alt="trypanosoma-psi-blast-iter2">
-
-Zapisanie profilu PSSM do pliku (`Download` > `PSSM to restart search` > `PSSM`)
-
-<img src="./images/trypanosoma-pssm-download.png" alt="trypanosoma-pssm-download">
-
-Plik z otrzymanej profilem PSSM: [trypanosoma-PSSM-iter2.asn](./files/trypanosoma-PSSM-iter2.asn)
-
-#### Wyszukiwanie sekwencji za pomocą profilu PSSM
-Przeszukanie bazy `nr` z ograniczeniem do organizmu *Trypanosoma* za pomocą profilu PSSM.
-
-<img src="./images/trypanosoma-pssm-search.png" alt="trypanosoma-pssm-search">
-
-2. Znaleziono 7 istotnie statystycznych sekwencji (E-value < `0.005`). Białko *Trypanosoma theileri* (*putative GPI transamidase component GAA1*) wykazuje największe podobieństwo do sekwencji GPAA1 człowieka. Wartość E-value tego przyrównania wynosi `4e-06`.
+1. Białko przypisane jest do dwóch rodzin białkowych:
+   * *Hydroxyisourate hydrolase* (`IPR014306`)
+   * *Transthyretin/hydroxyisourate hydrolase* (`IPR000895`)
+2. Białko posiada 1 domenę *Transthyretin/hydroxyisourate hydrolase domain* `IPR036817` w pozycji `3-114` sekwencji.

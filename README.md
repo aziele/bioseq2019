@@ -22,8 +22,8 @@
 
 | <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - rozwiązanie</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
 | :---: | --- | --- | --- | --- | --- | :---: |
-| <sub>9:00 - 11:00</sub> | <sub>Profile sekwencji (PSI-BLAST)</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/1-lab.md)</sub> | <sub>[rozwiązanie](./day3/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/1-zadania.md)</sub> | <sub>[odpowiedzi](./day3/1-zadania.odpowiedzi.md)</sub> |
-| <sub>11:15 - 13:15</sub> | <sub>Motywy i domeny białkowe</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/2-lab.md)</sub> | <sub>[rozwiązanie](./day3/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/2-zadania.md)</sub> | <sub>[odpowiedzi](./day3/2-zadania.odpowiedzi.md)</sub> |
+| <sub>9:00 - 11:00</sub> | <sub>Motywy i domeny białkowe</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/1-lab.md)</sub> | <sub>[rozwiązanie](./day3/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/1-zadania.md)</sub> | <sub>[odpowiedzi](./day3/1-zadania.odpowiedzi.md)</sub> |
+| <sub>11:15 - 13:15</sub> | <sub>Profile sekwencji (PSI-BLAST)</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/2-lab.md)</sub> | <sub>[rozwiązanie](./day3/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/2-zadania.md)</sub> | <sub>[odpowiedzi](./day3/2-zadania.odpowiedzi.md)</sub> |
 | <sub>14:00 - 16:00</sub> | <sub>Analiza filogenetyczna</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/3-lab.md)</sub> | <sub>[rozwiązanie](./day3/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day3/3-zadania.md)</sub> | <sub>[odpowiedzi](./day3/3-zadania.odpowiedzi.md)</sub> |
 
 
