@@ -22,7 +22,7 @@ W serwisie [UniProt](https://www.uniprot.org/) wyszukaj białka pochodzące z di
 Sprawdź, czy w bazie UniProt znajdują się doświadczalnie potwierdzone białka długości poniżej 10 aminokwasów?
 
 1. Ile rekordów białek znaleziono?
-2. Większość otrzymanych rekordów białek może być fragmentami innych, pełnej długości białek. Zawęź wyniki wyszukiwania do sekwencji pełnej długości.
+2. Większość otrzymanych rekordów białek może być fragmentami innych, pełnej długości białek. Zawęź wyniki wyszukiwania do sekwencji nie będących fragmentami.
    * Ile białek znaleziono?
 3. Ile z tych białek pochodzi z człowieka?
 

@@ -68,14 +68,15 @@ Użyj sekwencji z poprzedniego zadania w serwisie [PROSITE](https://prosite.expa
 
 1. Podaj nazwę domeny, której nie zidentyfikowano wcześniej w seriwsie Pfam.
    * Jaką funkcję pełni ta domena?
-2. Podaj numer dostępu domeny typu Dicer w bazie PROSITE.
-3. Czy lokalizacja domeny Dicer w sekwencji jest taka sama, jak w przewidywaniach Pfam?
+2. Czy serwis PROSITE zidentyfikował jakieś wzorce sekwencyjne w sekwencji zapytania?
+3. Podaj numer dostępu domeny typu Dicer w bazie PROSITE.
+4. Czy lokalizacja domeny Dicer w sekwencji jest taka sama, jak w przewidywaniach Pfam?
 
 Wejdź w rekord domeny Dicer w bazie PROSITE.
 
-4. Podaj długość profilu domeny Dicer w bazie PROSITE.
-5. Czy w logo domeny Dicer aminokwasy `Y` i `F` są najbardziej zachowanymi aminokwasami?
-6. Wejdź w `Taxonomic distribution` domeny Dicer.
+5. Podaj długość profilu domeny Dicer w bazie PROSITE.
+6. Czy w logo domeny Dicer aminokwasy `Y` i `F` są najbardziej zachowanymi aminokwasami?
+7. Wejdź w `Taxonomic distribution` domeny Dicer.
    * Czy domena występuje u organizmów prokariotycznych?
 <br/><br/>
 

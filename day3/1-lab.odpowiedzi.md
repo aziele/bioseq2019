@@ -1,6 +1,6 @@
 ## Motywy i domeny białkowe
 
-### Zad. 1 - Serwis Pfam
+### Zad. 1 - Serwis Pfam (modele HMM)
 Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wybierz `SEARCH` a następnie z panelu po lewej stronie wybierz `Sequence`. Umieść sekwencję FASTA w oknie tekstowym `Sequence` i naciśnij przycisk `Submit`.
 
 <img src="./images/pfam-sequence.png" alt="pfam-sequence">
@@ -40,27 +40,30 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
 
 <br/>
 
-### Zad. 2 - Serwis PROSITE
+### Zad. 2 - Serwis PROSITE (wzorce i profile sekwencyjne)
 Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umieść sekwencję z zad. 1 w polu `Quick Scan mode of ScanProsite`. Naciśnij przycisk `Scan`.
 
 <img src="./images/prosite-sequence.png" alt="prosite-sequence">
 
-1. Serwis PROSITE zindetyfykował 6 domen. Domeną nie zidentyfikowaną wcześniej w serwisie Pfam jest `DS_RBD` (*Double stranded RNA-binding domain (dsRBD)*). Domena ta ma numer dostępu w serwisie PROSITE: [PS50137](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS50137). Przejdź do rekordu domeny.
+1. Serwis PROSITE zindetyfykował 6 domen w oparciu o profile. Domeną nie zidentyfikowaną poprzednio w serwisie Pfam jest `DS_RBD` (*Double stranded RNA-binding domain (dsRBD)*). Domena ta w ogóle nie występuje w serwisie Pfam. Domena `DS_RBD` ta ma numer dostępu w serwisie PROSITE: [PS50137](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS50137). Przejdź do rekordu domeny.
    * Domena `DS_RBD` rozpoznaje dwuniciowe RNA. Domena jest głównie zaangażowana w posttranskrypcyjną regulację genów, na przykład poprzez zahamowanie ekspresji białek.
-2. Numer dostępu domeny Dicer w bazie PROSITE to [PS51327](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS51327).
-3. Położenie domeny Dicer według serwisu PROSITE w większości zgadza się z lokalizacją domeny według Pfam. Pozycja początku domeny wyznaczona przez oba serwisy jest taki sama (`229`), natomiast koniec domeny w bazie PROSITE to `321`, a w bazie Pfam `318`.
+2. Tak, serwis PROSITE zidentyfikował wzorzec sekwencji (`QRLEFLGDA` w pozycji `1301-1309`) charakterystyczny dla rodziny rybonukleaz III.
+   * Rekord dostępu tego wzorca to [PS00517](https://prosite.expasy.org/PS00517).
+   * `[DEQ]-[KRQT]-[LMF]-E-[FYW]-[LV]-G-D-[SARHG]`
+3. Numer dostępu domeny Dicer w bazie PROSITE to [PS51327](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS51327).
+4. Położenie domeny Dicer według serwisu PROSITE w większości zgadza się z lokalizacją domeny według Pfam. Pozycja początku domeny wyznaczona przez oba serwisy jest taki sama (`229`), natomiast koniec domeny w bazie PROSITE to `321`, a w bazie Pfam `318`.
    ```
    Pfam       229-318
    PROSITE    229-321
    ```
 
 #### Rekord domeny Dicer
-4. Wyświetl logo profilu domeny Dicer poprzez naciśnięcie na link `Retrieve the sequence logo from the alignment`. Profil domeny Dicer zbudowany jest z `94` aminokwasów.
-5. W logotypie domeny Dicer aminokwasy `Y` i `F` nie są najbardziej zachowanymi aminokwasami, jak w przypadku bazy Pfam. Najbardziej zachowanym aminokwasem jest `P` w pozycji `42` profilu.
-6. W odróżnieniu od bazy Pfam, domena Dicer serwisu PROSITE występuje również u organizmów prokariotycznych. Domena ta występuje w `14` białkach bakteryjnych (np. w jednym białku *Paraprevotella clara YIT 11840*)
+5. Wyświetl logo profilu domeny Dicer poprzez naciśnięcie na link `Retrieve the sequence logo from the alignment`. Profil domeny Dicer zbudowany jest z `94` aminokwasów.
+6. W logotypie domeny Dicer aminokwasy `Y` i `F` nie są najbardziej zachowanymi aminokwasami, jak w przypadku bazy Pfam. Najbardziej zachowanym aminokwasem jest `P` w pozycji `42` profilu.
+7. W odróżnieniu od bazy Pfam, domena Dicer serwisu PROSITE występuje również u organizmów prokariotycznych. Domena ta występuje w `14` białkach bakteryjnych (np. w jednym białku *Paraprevotella clara YIT 11840*)
 <br/><br/>
 
-### Zad. 3 - Metaserwis InterPro
+### Zad. 3 - Metaserwis InterPro (integracja wyników)
 Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową z zad. 1 w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
 
 <img src="./images/interpro-sequence.png" alt="interpro-sequence">

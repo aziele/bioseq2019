@@ -1,24 +1,8 @@
 ### Zad. 1
-W pliku [insulin.cds.fasta](./data/insulin.cds.fasta) znajdują się sekwencje CDS insuliny różnych organizmów.
+W pliku [x-protein.fasta](./data/x-protein.fasta) znajdują się sekwencje aminokwasowe białek należących do jednej rodziny. Wykonaj przyrównanie tych sekwencji korzystając z internetowych programów [ClustalOmega](https://www.ebi.ac.uk/Tools/msa/clustalo/) i [MAFFT](https://www.ebi.ac.uk/Tools/msa/mafft/). W formularzu obu programów zaznacz opcję, aby kolejność sekwencji w przyrównania odpowiadała kolejności sekwencji w pliku z sekwencjami FASTA (`MORE OPTIONS` > `ORDER` > `INPUT`).
 
-#### Przyrównanie na poziomie nukleotydów
-Wykonaj przyrównanie sekwencji CDS korzystając z programu [EMBOSS MAFFT](https://www.ebi.ac.uk/Tools/msa/).
-
-1. Czy w przyrównaniu występują przerwy, których liczba nie jest podzielna przez trzy?
-   > Przerwy takie nie odpowiadają liczbie całych kodonów.
-
-2. Która sekwencja wydaje się najmniej podobna do pozostałych sekwencji? (łatwe do zobaczenia w JalView)
-   * Czy ma wynik ten ma sens z punktu widzenia taksonomii?
-   > Wskazówka: czy wszystkie sekwencje należą do kręgowców?
-
-3. Zwróć uwagę na drzewo wiodące (`Guide Tree`) na stronie przyrównania programem MAFFT. Czy wśród sekwencji występują takie, które są identyczne?
-<br/><br/>
-
-#### Przyrównanie na poziomie aminokwasów
-Przy użyciu programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/) dokonaj translacji sekwencji CDS insuliny na sekwencje białkowe. Wykonaj przyrównanie otrzymanych sekwencji aminokwasowych.
-
-4. Czy przyrównanie sekwencji białkowych odpowiada przyrównaniu sekwencji CDS?
-5. Które sekwencje białkowe są identyczne?
+1. Czy oba programy generują takie same przyrównania?
+2. Podaj najdłuższy fragment sekwencji o nieprzerwanej 100% identyczności.
 <br/><br/>
 
 ## Zad. 2
