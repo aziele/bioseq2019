@@ -1,5 +1,5 @@
 ### Zad. 1
-W [serwisie Uniprot](https://www.uniprot.org/) znajdź wszystkie białka pochodzące z bakterii *Neisseria gonorrhoeae* (taxId: 485). 
+W serwisie [Uniprot](https://www.uniprot.org/) znajdź wszystkie białka pochodzące z bakterii *Neisseria gonorrhoeae* (taxId: 485). 
 
 1. Ile rekordów białek znaleziono?
 
@@ -9,6 +9,16 @@ Nad listą znalezionych białek naciśnij na link `"Expand search "Neisseria gon
 <br><br>
 
 ### Zad. 2
+W serwisie [UniProt](https://www.uniprot.org/) wyszukaj białka pochodzące z dinozaura *Tyrannosaurus rex*.
+
+1. Ile rekordów znaleziono?
+2. Jaką funkcję pełnią te białka w komórce?
+3. Czy istnienie tych białek zostało potwierdzone doświadczalnie?
+4. Co charakterystycznego znajduje się w sekwencjach tych białek?
+<br/><br/>
+
+
+### Zad. 3
 Sprawdź, czy w bazie UniProt znajdują się doświadczalnie potwierdzone białka długości poniżej 10 aminokwasów?
 
 1. Ile rekordów białek znaleziono?

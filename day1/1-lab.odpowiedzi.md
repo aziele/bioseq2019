@@ -366,6 +366,6 @@ W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` 
 3. Pod polem wyszukiwania, w polu `levels using filter` wybierz `has genome sequences` i naciśnij przycisk `Display`.
    * Tak, sekwencja genomowa jest dostępna dla szczura (*Rattus norvegicus*).
 4. W panelu znajdującym się pod polem wyszukiwania zazacz `protein`, `gene`, `nucleotide` i naciśnij przycisk `Display`.
-   * Dla szczura znanych jest `152 510` sekwencji białkowych.
+   * Dla szczura znanych jest `152 583` sekwencji białkowych.
 
 <img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png" width="400px">
