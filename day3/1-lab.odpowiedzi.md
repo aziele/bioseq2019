@@ -47,9 +47,9 @@ Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umie
 
 1. Serwis PROSITE zindetyfykował 6 domen w oparciu o profile. Domeną nie zidentyfikowaną poprzednio w serwisie Pfam jest `DS_RBD` (*Double stranded RNA-binding domain (dsRBD)*). Domena ta w ogóle nie występuje w serwisie Pfam. Domena `DS_RBD` ta ma numer dostępu w serwisie PROSITE: [PS50137](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS50137). Przejdź do rekordu domeny.
    * Domena `DS_RBD` rozpoznaje dwuniciowe RNA. Domena jest głównie zaangażowana w posttranskrypcyjną regulację genów, na przykład poprzez zahamowanie ekspresji białek.
-2. Tak, serwis PROSITE zidentyfikował wzorzec sekwencji (`QRLEFLGDA` w pozycji `1301-1309`) charakterystyczny dla rodziny rybonukleaz III.
+2. Tak, serwis PROSITE zidentyfikował sekwencję `QRLEFLGDA` w pozycji `1301-1309`, która zgodna jest ze wzorcem sekwencyjnym charakterystycznym dla rodziny rybonukleaz III.
    * Rekord dostępu tego wzorca to [PS00517](https://prosite.expasy.org/PS00517).
-   * `[DEQ]-[KRQT]-[LMF]-E-[FYW]-[LV]-G-D-[SARHG]`
+   * Wzorzec: `[DEQ]-[KRQT]-[LMF]-E-[FYW]-[LV]-G-D-[SARHG]`
 3. Numer dostępu domeny Dicer w bazie PROSITE to [PS51327](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS51327).
 4. Położenie domeny Dicer według serwisu PROSITE w większości zgadza się z lokalizacją domeny według Pfam. Pozycja początku domeny wyznaczona przez oba serwisy jest taki sama (`229`), natomiast koniec domeny w bazie PROSITE to `321`, a w bazie Pfam `318`.
    ```
