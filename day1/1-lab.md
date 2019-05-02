@@ -118,5 +118,5 @@ Korzystając z bazy `Taxonomy` wyświel przynależność taksonomiczną rzędu g
 2. Do jakiej podrodziny należy rodzaj `Rattus`.
 3. Ogranicz drzewo tylko do organizmów o znanych sekwencjach genomów.
    * Czy genom szczura (*Rattus norvegicus*) jest dostępny?
-4. Dla każdej jednostki taksonomicznej na drzewie wyświetl liczbę sekwencji białkowych.
+4. Dla każdej jednostki taksonomicznej na drzewie wyświetl liczbę genów, sekwencji białkowych i nukleotydowych.
    * Ile sekwencji białkowych dostępnych jest dla szczura?
