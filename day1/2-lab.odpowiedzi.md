@@ -214,17 +214,19 @@ Powyższa lista obejmuje terminy, które otrzymały wartości *p* < `0.05`. Aby 
 #### gProfiler
 Otwórz stronę [gProfiler](https://biit.cs.ut.ee/gprofiler/gost). W polu tekstowym umieść listę 20 genów człowieka i naciśnij przycisk `Compute`. gProfiler przeprowadza statystyczną analizę wzbogacenia w celu znalezienia nadreprezentowanych informacji terminów GO, szlaków biologicznych, elementów regulatorowych i interakcji białko-białko.
 
-Poniższy wykres Manhattan przedstawia wyniki analizy wzbogacenia. Na osi X znajdują się terminy GO, które pogrupowowane są w kolory na podstawie działu ontologii (np. funkcja moleukularna GO ma kolor czerwony (`GO:MF`)). Oś Y przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Każdy punkt oznacza dany termin GO, a odległość punktów od siebie oznacza stopień relacji między terminami. 
+Poniższy wykres Manhattan przedstawia wyniki analizy wzbogacenia. Podobnie jak w przypadku *AmiGO*, domyślnie na wykresie wyświetlone są terminy GO, które uzysały wartości *p* < `0.05`. Na osi X znajdują się terminy GO, które pogrupowowane są w kolory na podstawie działu ontologii (np. funkcja moleukularna GO ma kolor czerwony (`GO:MF`)). Oś Y przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Im mniejsza wartość *p* (bardziej istotna różnica), tym wyższa wartość `-log10(p)`.
+
+Każdy punkt oznacza dany termin GO, a odległość punktów od siebie oznacza stopień relacji między terminami. 
 
 <img src="./images/grprofiler-manhattan.png" alt="grprofiler-manhattan">
 
-Domyślnie na wykresie wyświetlone są terminy GO, które uzysały wartości *p* mniejsze niż `10^-16`.
-
 
 ##### Lista terminów GO
-Otwórz zakładkę `Detailed Results`.
+Otwórz zakładkę `Detailed Results`. gProfiler wyświetla tabele wzbogacenia terminów GO, osobno dla: funkcji molekularnej (`GO:MF`), procesu biologicznego (`GO:BP`) i składnika komórkowego (`GO:CC`).
 
 <img src="./images/gprofiler-detailed.png" alt="gprofiler-detailed">
+
+Dla ontologii funkcji molekularnej, najbardziej nadreprezentowanym terminem jest aktywność transportowa kanału lub poru `channel activity` (`GO:0015267`). Termin ten występuje w `10` spośród `20` zadanych genów. Prawdopodobieństwo *p* wylosowania 10 genów z tym terminem wynosi `7.035 * 10^-9`.
 
 
 ##### Wizualizacaja terminów GO
