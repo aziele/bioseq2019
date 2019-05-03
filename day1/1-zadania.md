@@ -7,13 +7,18 @@ W nukleotydowej bazie NCBI skonstruuj zapytanie, aby znaleźć sekwencje mRNA in
 W białkowej bazie NCBI znajdź wszystkie zwierzęce sekwencje `alpha-globin` o znanej strukturze przestrzennej (tj. sekwencje pochodzące z bazy `PDB`).
 <br/><br/>
 
-
 ### Zad. 3
+W bazie nukleotydowej NCBI znajdź 10 najdłuższych sekwencji mRNA człowieka.
+> Wskazówka: wyszukanie sekwencji długości 100-1000 nukleotydów: `100:1000[Sequence Length]`.
+
+<br/>
+
+### Zad. 4
 W bazie `Taxonomy` wyszukaj informacje na temat linii ewolucyjnej **myszy** i **człowieka**. Podaj najniższą wspólną rangę taksonomiczną dla tych dwóch organizmów.
 <br/><br/>
 
 
-### Zad. 4
+### Zad. 5
 Ostatni znany wilk workowaty umarł w ZOO w Hobart w 1936r (*Thylacinus cynocephalus* = wilk
 workowaty, wilk tasmański, tygrys tasmański). Z okazów muzealnych tego zwierzęcia uzyskano
 sekwencje DNA, z którymi można się zapoznać korzystając z bazy `Taxonomy`. Przeszukaj
