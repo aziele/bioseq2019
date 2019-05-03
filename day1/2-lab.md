@@ -104,3 +104,30 @@ Przejdź do zakładki `Annotations`.
 Z listy wyników wybierz dowolne białko i przejdź do jego rekordu w bazie UniProt.
 
 9. W opraciu o informajce zawarte w rekordzie UniProt odpowiedz, czy białko bierze udział w procesach biologicznych innych niż PCD?
+
+
+### Zad. 7 - Wzbogacenie terminów Gene Ontology (Gene Ontology Enrichment)
+Poniżej znajduje się lista identyfikatorów genów człowieka wykazująca podwyższą ekspresję w pewnym stanie chorobowym. Celem zadania jest przeprowadzenie analizy wzbogacenia terminów Gene Ontology w tej grupie genów za pomocą serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/) i [gProfiler](https://biit.cs.ut.ee/gprofiler/).
+
+```
+ENSG00000213341
+ENSG00000165637
+ENSG00000073150
+ENSG00000166126
+ENSG00000166266
+ENSG00000103569
+ENSG00000183691
+ENSG00000106571
+ENSG00000147133
+ENSG00000196557
+ENSG00000183153
+ENSG00000017797
+ENSG00000170802
+ENSG00000117450
+ENSG00000137672
+ENSG00000130529
+ENSG00000265107
+ENSG00000083067
+ENSG00000154889
+ENSG00000068305
+```

@@ -182,3 +182,46 @@ Otwórz stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/). W
 9. Wybierz dowolne białko z listy (np. [ACVR1C](http://amigo.geneontology.org/amigo/gene_product/UniProtKB:Q8NER5)). Naciśnij na numer dostępu tego białka w UniProt ([Q8NER5](https://www.uniprot.org/uniprot/Q8NER5)). 
 
    W rekordzie UniProt, w części `Function` znajduje się lista wszystkich funkcji oraz procesów biologicznych, w które zaangażowane jest białko `Q8NER5`. Przykładowymi procesami - innymi niż PCD - w które zaangażowane jest to białko to odpowiedź na insulinę (`response to insulin`) lub glukozę (`response to glucose`).
+<br/><br/>
+
+
+### Zad. 7 - Wzbogacenie terminów Gene Ontology (Gene Ontology Enrichment)
+
+#### Amigo Gene Ontology
+Otwórz stronę [Gene Ontology](http://amigo.geneontology.org/amigo/). W panelu `Term Enrichment Service` umieść listę genów i naciśnij przycisk `Submit`.
+
+<img src="./images/amigo-enrichment-biological_process.png" alt="amigo-enrichment-biological_process" width="500px">
+
+W powyższej tabeli znajduje się lista terminów GO związanych z procesem biologicznym, które są istotnie nadreprezentowane w zadanej grupie 20 genów (*p*-value < 0.05).
+
+1. Pierwsza kolumna zawiera nazwę danego terminu GO. 
+2. Druga kolumna zawiera liczbę wszystkich referencyjnych genów człowieka przypisanych do tego terminu GO.
+3. Trzecia kolumna zawiera liczbę genów w zestawie zapytania przypisanych do tego terminu GO.
+4. Czwarta kolumna zawiera oczekiwaną liczbę genów w zestawie zapytania, które powinny być przypisane do tego terminu GO.
+   > Na przykład, gdyby próba 20 genów została wylosowo, jeden gen (średnio `1.23` genu) powinien być przypisany do terminu `transmembrane transport`. Natomiast w zestawie 20 genów w tym zadaniu, `11` genów jest przypisanych do tego terminu.
+5. Piąta kolumna `Fold Enrichment` to stosunek obserwowanej liczby genów w zestawie zapytania i oczekiwanej liczby genów. Wartość `Fold Enrichment` większa od `1` oznacza, że dany termin GO występuje częściej w zadanej próbie genów niż w zestawie referencyjnym.
+6. Szósta kolumna (`+/-`) wskazuje, czy dany termin GO jest nadreprezentowany (`+`) lub w niedomiarze (`-`) w danym zestawie.
+7. Siódma kolumna zawiera wartości *p*-value oznaczające prawdopodobieństwo, że otrzymania obserwowanej liczby genów przypisanej do danego terminu GO przez przypadek (tj. gdyby wylosować je z zestawu referencyjnego). Niskie wartości *p*-value oznaczają, że obserwowana liczba genów jest znacząco nadreprezentowana i interesująca. 
+
+Powyższa lista obejmuje terminy, które otrzymały wartości *p* < `0.05`. Aby wyświetlić pełną listę terminów w próbie genów zapytania naciśnij link `click here to display all results`.
+
+#### gProfiler
+Otwórz stronę [gProfiler](https://biit.cs.ut.ee/gprofiler/gost). W polu tekstowym umieść listę 20 genów człowieka i naciśnij przycisk `Compute`. gProfiler przeprowadza statystyczną analizę wzbogacenia w celu znalezienia nadreprezentowanych informacji terminów GO, szlaków biologicznych, elementów regulatorowych i interakcji białko-białko.
+
+Poniższy wykres Manhattan przedstawia wyniki analizy wzbogacenia. Na osi X znajdują się terminy GO, które pogrupowowane są w kolory na podstawie działu ontologii (np. funkcja moleukularna GO ma kolor czerwony (`GO:MF`)). Oś Y przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Każdy punkt oznacza dany termin GO, a odległość punktów od siebie oznacza stopień relacji między terminami. 
+
+<img src="./images/grprofiler-manhattan.png" alt="grprofiler-manhattan">
+
+Domyślnie na wykresie wyświetlone są terminy GO, które uzysały wartości *p* mniejsze niż `10^-16`.
+
+
+##### Lista terminów GO
+Otwórz zakładkę `Detailed Results`.
+
+<img src="./images/gprofiler-detailed.png" alt="gprofiler-detailed">
+
+
+##### Wizualizacaja terminów GO
+Powyższą listę terminów GO wraz z wartościami *p* można zapisać w formacie CSV. Pobraną listę można wczytać w serwisie [ReviGO](http://revigo.irb.hr/) w celu graficznej prezentacji.
+
+<img src="./images/revigo.png" alt="revigo">
