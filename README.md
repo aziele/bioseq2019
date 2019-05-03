@@ -14,8 +14,8 @@
 
 | <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - rozwiązanie</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
 | :---: | --- | --- | --- | --- | --- | :---: |
-| <sub>9:00 - 11:00</sub> | <sub>BLAST - blastn i blastp</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/1-lab.md)</sub> | <sub>[rozwiązanie](./day2/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/1-zadania.md)</sub> | <sub>[odpowiedzi](./day2/1-zadania.odpowiedzi.md)</sub> |
-| <sub>11:15-13:15</sub> | <sub>BLAST - blastx, tblastn, blast2seqs</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/2-lab.md)</sub> | <sub>[rozwiązanie](./day2/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/2-zadania.md)</sub> | <sub>[odpowiedzi](./day2/2-zadania.odpowiedzi.md)</sub> |
+| <sub>9:00 - 11:00</sub> | <sub>BLAST - blastn, blastp, blast2seqs</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/1-lab.md)</sub> | <sub>[rozwiązanie](./day2/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/1-zadania.md)</sub> | <sub>[odpowiedzi](./day2/1-zadania.odpowiedzi.md)</sub> |
+| <sub>11:15-13:15</sub> | <sub>BLAST - blastx i tblastn</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/2-lab.md)</sub> | <sub>[rozwiązanie](./day2/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/2-zadania.md)</sub> | <sub>[odpowiedzi](./day2/2-zadania.odpowiedzi.md)</sub> |
 | <sub>14:00-16:00</sub> | <sub>Przyrównanie wielu sekwencji</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/3-lab.md)</sub> | <sub>[rozwiązanie](./day2/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/3-zadania.md)</sub> | <sub>[odpowiedzi](./day2/3-zadania.odpowiedzi.md)</sub> |
 
 ## Dzień 3
@@ -31,11 +31,3 @@
 1. [JalView](http://www.jalview.org) - wizualizacja, edycja i analiza przyrównań wielu sekwencji (MSA) i przygotowanie ich do publikacji
 2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna (tworzenie drzew filogenetycznych, obliczanie dystansów między sekwencjami)
 3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wyświetlanie drzew filogenetycznych i przygotowanie ich do publikacji
-
-
-## TODO:
-1. Slajdy
-2. BLAST 
-   * Database as Entrez query
-3. Bazy danych UniProt i GeneOntology (rozszerzyć lab i ew. zadania)
-   * UniProt Reference Proteomes

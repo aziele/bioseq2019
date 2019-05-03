@@ -188,7 +188,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
    Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGGCACCGG  3554275
    ```
  
-   Długość sekwencji zapytania: 29 nt
+   Długość sekwencji zapytania: 35 nt
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
