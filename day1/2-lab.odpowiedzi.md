@@ -118,6 +118,12 @@ W formularzu:
 
 ## Ontologia genów (Gene Ontology)
 
+Na GO składają się trzy ontologie:
+
+1. Funkcja molekularna (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym
+2. Proces biologiczny (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczesciej co najmniej dwa produkty ekspresji genów.
+3. Składnik komórkowy (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się produkty ekspresji poszczególmych genów.
+
 ### Zad. 5 - Ontologia pojedynczego genu
 Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov). Wybierz bazę `Gene` i korzystając z zaawansowanego wyszukiwania utwórz zapytania:
 
@@ -134,7 +140,7 @@ W wyniku otrzymany zostanie pojedynczy rekord o identyfikatorze genu (`Gene ID`)
    * Proces biologiczny:
       - apoptoza
       - odpowiedź komórkowa na staurosporynę 
-   * Kompartment komórkowy:
+   * Składnik komórkowy:
       - cytoplazma
       - cytozol
       - nukleoplazma
