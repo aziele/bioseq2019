@@ -26,7 +26,7 @@ Odpowiedz na pytania:
    * zgodne (*match*)
    * niezgodne (*mismatch*)?
 3. Ile wynosi procent *identyczności* przyrównanych sekwencji?
-4. Ile wynosi wartość punktacji (*score*) przyrównania sekwencji? Przyjmij poniższy system punktacji:
+4. Ile wynosi wartość punktacji (`score`) przyrównania sekwencji? Przyjmij poniższy system punktacji:
    * elementy zgodne (*match*): `2`
    * elementy niezgodne (*mismatch*): `-1`
    * przerwa (*gap*): `-2`
@@ -45,14 +45,14 @@ s2   MSKQI
 Odpowiedz na pytania:
 
 1. Ile wynosi procent *identyczności* przyrównywanych sekwencji?
-2. Podaj wartość *score* całego przyrównania przy zastosowaniu macierzy <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/matrices/BLOSUM62" target="_blank">BLOSUM62</a> i kary za przerwę: `-5`.
+2. Podaj wartość `score` całego przyrównania przy zastosowaniu macierzy <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/matrices/BLOSUM62" target="_blank">BLOSUM62</a> i kary za przerwę: `-5`.
 3. Ile wynosi procent *podobieństwa* przyrównywanych sekwencji?
 <br/><br/>
 
 
 ## Programy Needle i Water
 
-### Zad. 3 - Przyrównanie lokalne i semi-globalne sekwencji DNA
+### Zad. 3 - Przyrównanie lokalne i globalne sekwencji DNA
 Poniżej znajduje się sekwencja genomowa genu insuliny ponocnicny trójpręgowej oraz sekwencja CDS tego genu. 
 
 ```
@@ -102,11 +102,11 @@ Korzystając z internetowej wersji programów **Needle** i **Water** (<a href="h
 1. Z ilu egzonów składa się badany gen insuliny?
 2. Podaj pozycję początku i końca egzonów na sekwencji genomowej.
 3. Podaj procent identyczności dwóch przyrównań.
-   * Dlaczego procent identyczności przyrównania w programie Needle jest niższy niż w water?
+   * Dlaczego procent identyczności przyrównania w programie *Needle* jest niższy niż w *Water*?
 <br/><br/>
 
 
-### Zad. 4 - Przyrównanie lokalne i semi-globalne sekwencji aminokwasowych
+### Zad. 4 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
 Poniżej znajdują się dwie sekwencje prokariotycznych proteaz serynowych pobrane z bazy UniProt.
 Pierwsza jest termostabilną proteazą pochodzącą z *Bacillus lentus*, którą firma *Novozymes* dodaje do proszków do prania pod nazwą *Savinase*. Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z inne gatunku *Bacillus halodurans*.
 
@@ -128,7 +128,7 @@ VSLSGTSMATPHVAGVAALVKSRYPSYTNNQIRQRINQTATYLGSPSLYGNGLVHAGRAT
 Q
 ```
 
-#### Przyrównanie semi-globalne (Needle)
+#### Przyrównanie globalne (Needle)
 
 Korzystając z programu *Needle* przeprowadź semi-globalne przyrównanie obu sekwencji.
 1. Podaj wartość punktacji przyrównania (`Score`).
@@ -183,7 +183,7 @@ FATKLVEEKPTKENWKNCIQLMKLLGWTHCASFTENWLPIMYPPDYCVF
 
 W trzech kartach przeglądarki internetowej porównaj powyższą sekwencję człowieka z sekwencją *Savinase* (`P29600`) stosując:
 
-* Przyrównanie semi-globalne (*Needle*).
+* Przyrównanie globalne (*Needle*).
 * Przyrównanie globalne (*Needle*)
   - W formularzu programu włącz karę za wprowadzenie przerw na końcu przyrównania: `More options` > `END GAP PENALTY` > `true`.
 * Przyrównanie lokalne (*Water*)

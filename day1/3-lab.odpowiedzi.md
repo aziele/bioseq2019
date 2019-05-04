@@ -29,7 +29,7 @@
 ### Zad. 3 - Przyrównanie lokalne i semi-globalne sekwencji DNA
 Otwórz programy Needle i Water w osobnych kartach przeglądarki internetowej. Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `DNA`. Umieść pierwszą sekwencję w formacie FASTA w pierwszym oknie i drugą sekwencję w drugim oknie. Wykonaj przyrównanie.
 
-#### Przyrównanie semi-globalne (Needle)
+#### Przyrównanie globalne (Needle)
 
 ```
 ########################################
@@ -380,10 +380,9 @@ CDS              278 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG    327
 <br/><br/>
 
 
-### Zad. 4 - Przyrównanie lokalne i semi-globalne sekwencji aminokwasowych
-Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExPairwiseAlignment).
+### Zad. 4 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
 
-#### Przyrównanie semi-globalne (Needle)
+#### Przyrównanie globalne (Needle)
 
 Otwórz stronę programu [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/). Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `PROTEIN`. Umieść dwie sekwencje w formacie FASTA w osobnych polach. Wykonaj przyrównanie.
 
@@ -492,7 +491,7 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
 
 ### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
 
-#### Przyrównanie semi-globalne (*Needle*):
+#### Przyrównanie globalne (*Needle*):
 
 ```
 # Length: 1289
