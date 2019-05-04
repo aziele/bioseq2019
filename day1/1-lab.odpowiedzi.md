@@ -252,11 +252,11 @@ Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `Fi
 7. Gen BRCA2 zbudowany jest z `27` egzonów.
    > Panel `Genomic context`, pole `Exon count`.
 8. Gen BRCA2 zlokalizowany jest na: 
-   - chromosomie: `13` 
-   - sekwencji genomowej `NC_000013.11`
-   - początek genu: `32 315 480`
-   - koniec genu: `32 399 672`
-   - orientacja genu: nić plus
+   * chromosomie: `13` 
+   * sekwencji genomowej `NC_000013.11`
+   * początek genu: `32 315 480`
+   * koniec genu: `32 399 672`
+   * orientacja genu: nić `plus`
 
    <img src="./images/ncbi-gene-genomic_context.png" alt="ncbi-gene-genomic_context">
 
@@ -266,12 +266,10 @@ Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `Fi
 
 10. W panelu `Genomic regions, transcripts, and products`, po prawej stronie `Go to nucleotide` naciśnij `FASTA`. Następnie w panelu `Change region shown` po prawej stronie podaj pozycję początku (`32314480`) i końca (`32310672`) wyświetlanej sekwencji. 
 
-   <img src="./images/ncbi-gene-upstream_downstream.png" alt="ncbi-gene-upstream_downstream">
-<br/><br/>
+    <img src="./images/ncbi-gene-upstream_downstream.png" alt="ncbi-gene-upstream_downstream">
+<br/>
 
 ### Zad. 5 - Od rekordu genu, przez mRNA do rekordu białka
-Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=zs46Ur0m0mc).
-
 Skonstruuj poniższe zapytanie do bazy `Gene` serwisu NCBI:
 
 ```
