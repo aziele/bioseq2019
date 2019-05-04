@@ -219,9 +219,11 @@ Powyższa lista obejmuje terminy, które otrzymały wartości *p* < `0.05`. Aby 
 #### gProfiler
 Otwórz stronę [gProfiler](https://biit.cs.ut.ee/gprofiler/gost). W polu tekstowym umieść listę 20 genów człowieka i naciśnij przycisk `Compute`. gProfiler przeprowadza statystyczną analizę wzbogacenia terminów GO.
 
-Poniższy wykres Manhattan przedstawia wyniki analizy wzbogacenia. Podobnie jak w przypadku *AmiGO*, domyślnie na wykresie wyświetlone są terminy GO, które uzysały wartości *p* < `0.05`. Na osi X znajdują się terminy GO, które pogrupowowane są w kolory na podstawie działu ontologii (np. funkcja moleukularna GO ma kolor czerwony (`GO:MF`)). Oś Y przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Im mniejsza wartość *p* (bardziej istotna różnica), tym wyższa wartość `-log10(p)`.
-
-Każdy punkt oznacza dany termin GO, a odległość punktów od siebie oznacza stopień relacji między terminami. 
+##### Wykres Manhattan
+Poniższy wykres Manhattan stanowi podsumowanie przeprowadzonej analizy wzbogacania terminów GO. Podobnie jak w przypadku *AmiGO*, na wykresie wyświetlone są terminy GO, które uzysały wartości *p* < `0.05`.
+* Na osi `X` znajdują się terminy GO, które pogrupowowane są w kolory odpowiadające danemu działowi ontologii (np. funkcja moleukularna GO ma kolor czerwony `GO:MF`). 
+* Oś `Y` przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Im niższa wartość *p* (nadreprezentacja terminu GO jest bardziej znacząca), tym wyższa wartość `-log10(p)`.
+* Punkt na wykresie oznacza termin GO, a odległość punktów od siebie oznacza stopień relacji między danymi terminami. 
 
 <img src="./images/grprofiler-manhattan.png" alt="grprofiler-manhattan">
 
