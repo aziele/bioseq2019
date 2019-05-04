@@ -761,8 +761,7 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 ```
  
 1. Przyrównanie lokalne i semi-globalne wskazują, że sekwencja prokariotycznej proteazy wykazuje podobieństwo jedynie do fragmentu sekwencji białkowej człowieka. Nie jest to natomiast widoczne opierając się na wynikach przyrównania globalnego, w którym wiele krótkich fragmentów sekwencji prokariotycznej rozciąga się wzdłuż całej sekwencji człowieka. 
-   
-   W przypadku porównywania sekwencji odlegle spokrewnionych zaleca się używanie algorytmu lokalnego. Wskazuje on bowiem regiony między sekwencjami, które są ze sobą porównywalne.
+   > W przypadku porównywania sekwencji odlegle spokrewnionych zaleca się używanie algorytmu lokalnego. Wskazuje on bowiem regiony między sekwencjami, które są ze sobą porównywalne.
 
 
 2. Nie, w oparciu o otrzymane przyrównania nie można odpowiedzieć na pytanie, czy sekwencja prokariotyczna *Salvinase* jest spokrewniona z sekwencją peptydazy człowieka. Kiedy wykonujemy przyrównanie dwóch lub większej liczby sekwencji zakładamy, że mają one wspólne pochodzenie (tj. wywodzą się od sekwencji obecnej u wspólnego przodka). 
@@ -773,20 +772,21 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 
 #### Istotność przyrównania
 
-3. Zakres wyników przyrównania sekwencji `P29600` z losowo wygenerowaną sekwencją `P29144` będzie się różnił, ale najprawdopodobniej będzie on mieścił się w poniższym zakresie:
+3. Zakres wartości otrzymanych parametrów przyrównania sekwencji `P29600` z losowo wygenerowaną sekwencją `P29144` będzie się różnił, ponieważ sekwencje są losowe. Jednak, wartości parametrów będą się najprawdopodobniej mieścić w poniższym zakresie:
 
    ```
    # Length: 100-300 
-   # Identity: 20% -30%  
-   # Similarity: 30% -40%  
+   # Identity: 20%-30%  
+   # Similarity: 30%-40%  
    # Gaps #: 25% -40%  
    # Score: 40-70 
    ```
 
    Zatem takich właśnie wartości można spodziewać się podczas porównywania dwóch niespokrewnionych sekwencji o określonej długości i zawartości aminokwasów. 
-   > Wykonywanie wielu przyrównań *Savinase* (`P29600`) z losową sekwencją człowieka dostarcza "modelu null", który następnie można porównać z prawdziwym przyrównaniem *Savinase*-peptydaza człowieka (`P29600-P29144`). Gdyby wykonać procedurę randomizacji sekwencji człowieka 100 razy, zamiast 3, można by wyznaczyć przedział ufności dla uzyskanej wartości punktacji oraz jej istotność statystyczną (więcej na temat istotności statystycznej podczas omawiania programu BLAST).
+   > Wykonywanie wielu przyrównań dwóch sekwencji - *Savinase* (`P29600`) z losową sekwencją człowieka - dostarcza "modelu zerowego", który następnie można porównać z prawdziwym przyrównaniem *Savinase*-peptydaza człowieka (`P29600-P29144`). Gdyby wykonać procedurę randomizacji sekwencji człowieka 100 razy, zamiast 3, można by wyznaczyć przedział ufności dla uzyskanej wartości punktacji oraz jej istotność statystyczną (więcej na temat istotności statystycznej podczas omawiania programu BLAST).
 
-4. Porównując przyrównanie rzeczywistych sekwencji *Savinase / Human peptidase alignment* (score: `173`) z "celowo kiepskim" przyrównaniem *Savinase / losowa sekwencja*, oryginalne przyrównanie nie wydaje się już tak "kiepskie". Wartośc punktacji jest przynajmniej dwukrotnie wyższa od tych, które uzyskano w przyrównaniu zawierającym losową sekwencję. Warto zwrócić uwagę, że przy interpretacji wyników należy porównywać wartość punktacji aby zaobserwować wyraźną różnicę; inne wartości (identyczność, podobieństwo) mogą być podobne między oryginalnym przyrównaniem a przyrównaniem z losową sekwencją.
+4. Porównując przyrównanie dwóch rzeczywistych sekwencji *Savinase* i ludzkiej peptydazy (score: `173`) z "celowo kiepskim" przyrównaniem *Savinase / losowa sekwencja*, oryginalne przyrównanie nie wydaje się już tak "kiepskie". Wartośc punktacji tego przyrównania jest przynajmniej dwukrotnie wyższa od tych, które uzyskano w przyrównaniach zawierających losową sekwencję.
+   > Warto zwrócić uwagę, że przy interpretacji wyników należy porównywać wartość punktacji `score` aby zaobserwować wyraźną różnicę; wartości innych parametrów (np.: identyczność, podobieństwo) mogą być podobne między oryginalnym przyrównaniem a przyrównaniem z losową sekwencją.
 <br/><br/>
 
 ## Wpływ parametrów na przyrównanie sekwencji
@@ -794,7 +794,7 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 ### Zad. 6 - Wielkość kary za stosowanie przerw
 
 #### 1. Zmniejszenie wielkości kary za przewy
-Ponieważ kara za przerwę jest mała (niewielkie wartości ujemne), algorytm częściej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość punktacji przyrównania. Większy wpływ na obniżenie punktacji przyrównania mają w tym przypadku substytucje aminokwasów. W rezultacie, otrzymane przyrównanie zawiera więcej przerw niż niedopasowań dwóch aminokwasów. Z biologicznego punktu widzenia, takie przyrównanie jest mało wiarygodne.
+Ponieważ kara za przerwę jest mała (niewielkie wartości ujemne), algorytm częściej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość punktacji przyrównania. Większy wpływ na obniżenie punktacji przyrównania mają w tym przypadku substytucje aminokwasów, dlatego algorytm wprowadza przerwy, tak aby dopasować jak najwięcej reszt aminokwasowych. W rezultacie, otrzymane przyrównanie zawiera więcej przerw niż substytucji (niedopasowań) dwóch aminokwasów. Oczwyiście, z biologicznego punktu widzenia, takie przyrównanie jest całkowicie niewiarygodne.
 
 ```
 # Gap_penalty: 1.0
@@ -949,7 +949,7 @@ W wyniku zwiększenie kary za wprowadzenie przerw (otwarcie przerwy = `20`, wyd�
 <br/><br/>
 
 ### Zad. 7 - Macierze substytucji
-Macierz substytucji (np. BLOSUM62) dostarcza informacji na temat wartości punktowania aminokwasów zgodnych i niezgodnych. Algorytmy służące do przyrównywania sekwencji (np. algorytm Smitha-Watermana) wykorzystują wartości w macierzach substytucji podczas wyznaczania przyrównania. Macierz substytucji ma zatem wpływ na wynik przyrównania (na wszystkie wartości przyrównania: punktacja, identyczność, podobieństwo, długość oraz liczba przerw).
+Macierz substytucji (np. [BLOSUM62](https://www.ncbi.nlm.nih.gov/Class/FieldGuide/BLOSUM62.txt)) dostarcza informacji na temat wartości punktowania aminokwasów zgodnych i niezgodnych. Programy służące do przyrównywania sekwencji (np. *Water*, *Needle*, *BLAST*) wykorzystują wartości w macierzach substytucji podczas wyznaczania przyrównania. Macierz substytucji ma zatem wpływ na wynik przyrównania (na wszystkie wartości przyrównania: punktacja, identyczność, podobieństwo, długość oraz liczba przerw).
 
 #### BLOSUM30
 
@@ -1078,7 +1078,7 @@ P29600           241 RNHLKNTATSLGSTNLY--GSGLVNAEAA    267
 P29144           479 RRALENTAVKADNIEVFAQGHGIIQVDKA    507
 ```
 
-Wraz ze wzrastającym indeksem BLOSUM (od 30 do 90), procent identyczności przyrównania wzrasta, natomiast maleje długość przyrównania.
+Wraz ze wzrastającym indeksem BLOSUM (od `30` do `90`), procent identyczności przyrównania wzrasta, natomiast maleje długość przyrównania i wartość jego punktacji (`score`).
 <br/><br/>
 
 ## Porównanie sekwencji: wykres Dot plot
@@ -1104,6 +1104,10 @@ Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości
 Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. W obu sekwencjach występują wielokrotne powtórzenia krótkich fragmentów sekwencji (ok. 20-25 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`). Liczba linii na wykresie dot-plot odpowiada liczbie powtórzonych fragmentów. Długość linii oznacza długość fragmentu podlegającego powtórzeniu. Odległość między liniami na wykresie oznacza odległości między tymi powtórzeniami w sekwencji.
 
 <img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="450px">
+
+<img src="./images/dotplot.s4.png" alt="dotplot.s4">
+
+<img src="./images/dotplot.s5.png" alt="dotplot.s5">
 
 
 #### s7:s8
