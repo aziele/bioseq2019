@@ -229,12 +229,11 @@ Poniższy wykres Manhattan stanowi podsumowanie przeprowadzonej analizy wzbogaca
 
 
 ##### Lista terminów GO
-Otwórz zakładkę `Detailed Results`. gProfiler wyświetla tabele wzbogacenia terminów GO, osobno dla: funkcji molekularnej (`GO:MF`), procesu biologicznego (`GO:BP`) i składnika komórkowego (`GO:CC`).
+Bardziej szczegółowe informacje na temat przeprowadzonej analizy wzbogacenia terminów GO znajdują się w zakładce `Detailed Results`. gProfiler wyświetla nadreprezentowane terminy GO w formie tabeli, osobno dla: funkcji molekularnej (`GO:MF`), procesu biologicznego (`GO:BP`) i składnika komórkowego (`GO:CC`).
 
 <img src="./images/gprofiler-detailed.png" alt="gprofiler-detailed">
 
-Dla ontologii funkcji molekularnej, najbardziej nadreprezentowanym terminem jest aktywność transportowa kanału lub poru `channel activity` (`GO:0015267`). Termin ten występuje w `10` spośród `20` zadanych genów. Prawdopodobieństwo *p* wylosowania 10 genów z tym terminem wynosi `7.035 * 10^-9`.
-
+Na przykład, w ontologii związanej z funkcją molekularną, najbardziej nadreprezentowanym terminem jest aktywność transportowa kanału/poru `channel activity` (`GO:0015267`). Termin ten występuje w `10` spośród `20` zadanych genów. Kolor i odcień kwadratu oznaczają sposób, w jaki dany termin GO został przypisany do danego genu - np. kolory bordowe oznaczają, że dany termin przypisany został danemu genowi na drodze doświadczeń laboratoryjnych. Termin `channel activity` (`GO:0015267`) przypisano doświadczalnie `7` genom. Prawdopodobieństwo *p* wylosowania 10 genów z tym terminem GO wynosi `7.035 * 10^-9`.
 
 #### ReviGO: wizualizacaja terminów GO
 Powyższą listę terminów GO wraz z wartościami *p* można zapisać w formacie CSV. Pobraną listę można następnie wczytać w serwisie [ReviGO](http://revigo.irb.hr/) w celu jej graficznej prezentacji.
