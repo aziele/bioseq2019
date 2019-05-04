@@ -117,17 +117,17 @@ W formularzu:
    Q9HCJ0  NP_061869.2
    Q5D869  NP_181532.2
    ```
-<br/><br/>
 
-Ponownie skorzystaj z narzędzie `Retrieve/ID Mapping` podając identyfikatory UniProt. Tym razem, w formularzu ustaw `from` na `UniProtKB AC/ID` a opcję `to` na `EMBL/GenBank/DDBJ`. W wyniku, otrzymasz identyfikatory tych sekwencji w bazie GenBank dla wszystkich 5 numerów dostępu *UniProt*.
+Ponownie skorzystaj z narzędzie `Retrieve/ID Mapping` podając identyfikatory UniProt. Tym razem, w formularzu ustaw opcję `to` na `EMBL/GenBank/DDBJ`. W wyniku, otrzymano identyfikatory tych sekwencji w bazie *GenBank* dla wszystkich 5 numerów dostępu *UniProt*.
+<br/><br/>
 
 ## Ontologia genów (Gene Ontology)
 
-Na GO składają się trzy ontologie:
+Ontologia genów składa się z trzech działów ontologii:
 
-1. Funkcja molekularna (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym
-2. Proces biologiczny (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczesciej co najmniej dwa produkty ekspresji genów.
-3. Składnik komórkowy (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się produkty ekspresji poszczególmych genów.
+1. **Funkcja molekularna** (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym
+2. **Proces biologiczny** (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczesciej co najmniej dwa produkty ekspresji genów.
+3. **Składnik komórkowy** (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się produkty ekspresji poszczególmych genów.
 
 ### Zad. 5 - Ontologia pojedynczego genu
 Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov). Wybierz bazę `Gene` i korzystając z zaawansowanego wyszukiwania utwórz zapytania:
