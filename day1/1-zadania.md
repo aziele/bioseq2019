@@ -12,7 +12,7 @@ W bazie nukleotydowej [NCBI](https://www.ncbi.nlm.nih.gov) znajdź 10 najdłużs
 > Wskazówka: wyszukanie sekwencji w zakresie długości 100-1000 nukleotydów: 
 
     ```
-    `100:1000[Sequence Length]`
+    100:1000[Sequence Length]
     ```
 
     lub
