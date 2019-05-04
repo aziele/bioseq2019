@@ -32,7 +32,7 @@
 2. [MEGA X](https://www.megasoftware.net) - analiza filogentyczna (tworzenie drzew filogenetycznych, obliczanie dystansów między sekwencjami)
 3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wyświetlanie drzew filogenetycznych i przygotowanie ich do publikacji
 
-
+<br/>
 ## Miejsca, które warto śledzić (po ukończeniu kursu):
 
 #### YouTube
@@ -40,6 +40,7 @@
 1. [Wideo Tutoriale NCBI](https://www.youtube.com/user/NCBINLM/videos)
 2. [Wideo Tutoriale UniProt](https://www.youtube.com/user/uniprotvideos/videos)
 
+<br/>
 
 ## Kontakt
 
@@ -47,6 +48,9 @@
 2. dr Andrzej Zieleziński (andrzejz@amu.edu.pl)
 
 [Zakład Biologii Obliczeniowej](http://www.combio.pl)
+
 Instytut Biologii Molekularnej i Biotechnologii
+
 Wydział Biologii
+
 Uniwersytet im. Adama Mickiewicza w Poznaniu
