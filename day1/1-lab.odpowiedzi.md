@@ -219,7 +219,7 @@ W wyniku zostanie wyświetlony dokładnie jeden rekord białka **BRCA2** o numer
 
 1. Sekwencja białkowa BRCA2 zbudowana jest z `3418` aminokwasów.
 2. Numer dostępu tego rekordu to `NP_000050`.
-   > Rekordy sekwencji bazy RefSeq mają charakterystyczny zapis numerów dostępu. Składają się one z dwóch oznaczeń literowych, podkreślnika i 6 cyfr (np. `NP_000050`).
+   > Rekordy sekwencji bazy RefSeq mają charakterystyczny zapis numerów dostępu. Składają się one z dwóch oznaczeń literowych, podkreślnika i 6 cyfr (np. `NP_000050`). Oznaczenia dwuliterowe (np. `NP`) oznaczają typ sekwencji (np. białko zweryfikowane przez pracowników NCBI). Pełne wyjaśnienie skrótów dwuliterowych dostępne jest [tutaj](https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly).
 3. Aktualny rekord `NP_000050` jest w drugiej wersji (`NP_000050.2`). Oznacza to, że rekord ten był jeden raz uaktualniany. Data ostatniej modyfikacji rekordu podana jest w pierwszej linii rekordu w formacie GenBank (`23-APR-2019`). 
    > Istnieje możliwość obejrzenia poprzednich wersji rekordów NCBI poprzez wyszukanie numeru dostępu wraz z numerem wersji (np. [NP_000050.1](https://www.ncbi.nlm.nih.gov/protein/NP_000050.1)). Jeżeli numer wersji nie zostanie podany przez użytkownika podczas wyszukiwania (`NP_000050`), NCBI otworzy rekord w najnowszej wersji.
 
