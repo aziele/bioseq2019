@@ -37,7 +37,7 @@ Sprawdź, czy w bazie UniProt znajdują się doświadczalnie potwierdzone białk
 Zapisz otrzymane sekwencje w formacie FASTA.
 
 
-### Zad. 5 - Analiza wzbogacenia terminów GO genów E. coli
+### Zad. 5 - Analiza wzbogacenia terminów GO genów *E. coli*
 W pliku [ecoli-genes.txt](./data/ecoli-genes.txt) znajduje się 218 genów, które ulegają różnicowej ekspresji w bakteriach *E.coli* wystawionych na działanie rtęci. Przeprowadź analizę wzbogacenia terminów GO tych genów wykorzystując serwis [AmiGO - Gene Ontology](http://amigo.geneontology.org/amigo).
 
 1. Podaj dwa terminy GO związane z procesem biologicznym, które wykazują istotną nadreprezentację w zadanym zestawie genów.

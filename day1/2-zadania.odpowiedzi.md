@@ -123,7 +123,7 @@ TKPR
 ```
 <br/>
 
-### Zad. 5 - Analiza wzbogacenia terminów GO genów E. coli
+### Zad. 5 - Analiza wzbogacenia terminów GO genów *E. coli*
 Otwórz stronę serwisu [AmiGO - Gene Ontology](http://amigo.geneontology.org/amigo). W panelu `Term Enrichment Service` umieść listę genów, wybierz organizm referencyjny: *Escherichia coli* i przeprowadź analizę (przycisk `Submit`).
 
    <img src="./images/amigo-ecoli-bp.png" alt="amigo-ecoli-bp" width="600px">
