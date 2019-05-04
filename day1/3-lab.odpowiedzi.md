@@ -477,13 +477,13 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
    * Z kolei, używając globalnego przyrównania można łatwo zaobserwować, że obie sekwencje są bardzo podobne do siebie, z wyjątkiem brakującego fragmentu N-końca pierwszej sekwencji *Savinase* (`P29600`) długości ok. 90 reszt aminokwasowych. W tym przypadku wykonanie przyrównania globalne dostarczyło dodatkowej informacji na temat dwóch sekwencji.
    * W przypadku gdy obie sekwencje są bardzo podobne - jak sekwencje `P29600` i  `P41363` - nie ma dużej różnicy pomiędzy lokalnym a globalnym przyrównaniem.
 
-6. Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Odszukaj dwa rekordy w oparciu o ich numery dostępu: [P29600](https://www.uniprot.org/uniprot/P29600) i [P41363](https://www.uniprot.org/uniprot/P41363). Lista publikacji w rekordach UniProt wskazuje, że sekwencję białka *Salvinase* (`P29600`) otrzymano ze struktury przestrzennej, natomiast sekwencję `P41363` otrzymano w wyniku translacji sekwencji DNA.
+6. Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Odszukaj dwa rekordy w oparciu o ich numery dostępu: [P29600](https://www.uniprot.org/uniprot/P29600) i [P41363](https://www.uniprot.org/uniprot/P41363). Lista publikacji (`Publications`) oraz słowa kluczowe (`Keywords - Technical term`) w obu rekordach wskazują, że sekwencję białka *Salvinase* (`P29600`) otrzymano ze struktury przestrzennej, natomiast sekwencję `P41363` otrzymano w wyniku sekwencjonowania DNA.
 
 7. Panel `Subcellular location` w rekordzie UniProt wskazuje, że oba białka są wydzielane poza komórkę (`Secreted protein`).
 
-8. Z informacji zawartych w panelu `PTM/Processing` wynika, że *Salivase* (`P29600`) jest sekwencją dojrzałego białka (pozbawioną sygnałów peptydowych), natomiast sekwencja `P41363` zawiera peptyd sygnałowy (w pozycji 1-24) oraz propeptyd (w pozycji 25-93). Oba peptydy sygnałowe są usuwane z dojrzałego białka. Różnica między dwoma białkami termostabilnej proteazy (`P29600` i `P41363`) polega na tym, że sekwencja `P41363` jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, natomiast `P29600` powstała ze struktury przestrzennej, która dotyczy tylko dojrzałego białka.
+8. Z informacji zawartych w panelu `PTM/Processing` wynika, że *Salivase* (`P29600`) jest sekwencją dojrzałego białka (pozbawioną peptydowów sygnałowych), natomiast sekwencja `P41363` zawiera peptyd sygnałowy (w pozycji `1-24`) oraz propeptyd (w pozycji `25-93`). Oba peptydy są usuwane z dojrzałego białka. Różnica między dwoma białkami termostabilnej proteazy (`P29600` i `P41363`) polega na tym, że sekwencja `P41363` jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, natomiast `P29600` powstała ze struktury przestrzennej, która dotyczy tylko dojrzałego białka.
 
-9. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Białko to, podobnie jak *Salvinase* jest proteazą serynową z rodziny S8. Jest ono również termostabilne. Sekwencje obu białek są również bardzo podobne (w ok. 80%). Potencjalnym problemem mogłoby być optymalne pH, lecz to mogłoby zostać zoptymalizowane w laboratorium.
+9. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Białko to, podobnie jak *Salvinase* jest proteazą serynową z rodziny *S8*. Jest ono również termostabilne. Sekwencje obu białek są również bardzo podobne (w ok. 80%). Potencjalny problem mogłoby stanowić optymalne pH, lecz jest to kwestia do rozwiązania w laboratorium.
 <br><br>
 
 ### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
@@ -496,6 +496,113 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
 # Similarity:   131/1289 (10.2%)
 # Gaps:        1060/1289 (82.2%)
 # Score: 158.5
+# 
+#
+#=======================================
+
+P29600             1 --------------------------------------------------      0
+                                                                       
+P29144             1 MATAATEEPFPFHGLLPKKETGAASFLCRYPEYDGRGVLIAVLDTGVDPG     50
+
+P29600             1 --------------------------------------------------      0
+                                                                       
+P29144            51 APGMQVTTDGKPKIVDIIDTTGSGDVNTATEVEPKDGEIVGLSGRVLKIP    100
+
+P29600             1 --------------------------------------------------      0
+                                                                       
+P29144           101 ASWTNPSGKYHIGIKNGYDFYPKALKERIQKERKEKIWDPVHRVALAEAC    150
+
+P29600             1 --------------------------------------------------      0
+                                                                       
+P29144           151 RKQEEFDVANNGSSQANKLIKEELQSQVELLNSFEKKYSDPGPVYDCLVW    200
+
+P29600             1 -----------------------------AQSVPWGISRVQAPAAHNRGL     21
+                                                  ||..                 
+P29144           201 HDGEVWRACIDSNEDGDLSKSTVLRNYKEAQEY-----------------    233
+
+P29600            22 TGSGVKVAVLDTGISTHPDLNIRGGASFVPGEPSTQDGNGHGTHVAGTIA     71
+                      ||.....:|:..::.:.|.|:   .|.|      ..|..|||||| :||
+P29144           234 -GSFGTAEMLNYSVNIYDDGNL---LSIV------TSGGAHGTHVA-SIA    272
+
+P29600            72 ALNNSIGVL-------GVAPSAELYAVKV------LGASGSGSVSSIAQG    108
+                     |     |..       ||||.|::.::|:      ...:|:|.:.::.:.
+P29144           273 A-----GHFPEEPERNGVAPGAQILSIKIGDTRLSTMETGTGLIRAMIEV    317
+
+P29600           109 LEWAGNNGMHVANLSLGSPS---PSATLEQAVNSAT-SRGVLVVAASGNS    154
+                     :    |:...:.|.|.|..:   .|..:.:.:|.|. ...::.|:::||:
+P29144           318 I----NHKCDLVNYSYGEATHWPNSGRICEVINEAVWKHNIIYVSSAGNN    363
+
+P29600           155 G--AGSISYP-ARYANAMAVGATDQNN--------------NRASFSQYG    187
+                     |  ..::..| ...::.:.|||....:              |:.::|..|
+P29144           364 GPCLSTVGCPGGTTSSVIGVGAYVSPDMMVAEYSLREKLPANQYTWSSRG    413
+
+P29600           188 AGLDIVAPGVNVQSTYPGSTYAS-----------LNGTSMATPHVAGAAA    226
+                     ...| .|.||::.:  ||...||           :|||||::|:..|..|
+P29144           414 PSAD-GALGVSISA--PGGAIASVPNWTLRGTQLMNGTSMSSPNACGGIA    460
+
+P29600           227 LV----KQKNPSWSNVQIRNHLKNTATSLGSTNLY--GSGLVNAEAATR-    269
+                     |:    |..|..::...:|..|:|||....:..::  |.|::..:.|.. 
+P29144           461 LILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKAYDY    510
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           511 LVQNTSFANKLGFTVTVGNNRGIYLRDPVQVAAPSDHGVGIEPVFPENTE    560
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           561 NSEKISLQLHLALTSNSSWVQCPSHLELMNQCRHINIRVDPRGLREGLHY    610
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           611 TEVCGYDIASPNAGPLFRVPITAVIAAKVNESSHYDLAFTDVHFKPGQIR    660
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           661 RHFIEVPEGATWAEVTVCSCSSEVSAKFVLHAVQLVKQRAYRSHEFYKFC    710
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           711 SLPEKGTLTEAFPVLGGKAIEFCIARWWASLSDVNIDYTISFHGIVCTAP    760
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           761 QLNIHASEGINRFDVQSSLKYEDLAPCITLKNWVQTLRPVSAKTKPLGSR    810
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           811 DVLPNNRQLYEMVLTYNFHQPKSGEVTPSCPLLCELLYESEFDSQLWIIF    860
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           861 DQNKRQMGSGDAYPHQYSLKLEKGDYTIRLQIRHEQISDLERLKDLPFIV    910
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           911 SHRLSNTLSLDIHENHSFALLGKKKSSNLTLPPKYNQPFFVTSLPDDKIP    960
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144           961 KGAGPGCYLAGSLTLSKTELGKKADVIPVHYYLIPPPTKTKNGSKDKEKD   1010
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144          1011 SEKEKDLKEEFTEALRDLKIQWMTKLDSSDIYNELKETYPNYLPLYVARL   1060
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144          1061 HQLDAEKERMKRLNEIVDAANAVISHIDQTALAVYIAMKTDPRPDAATIK   1110
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144          1111 NDMDKQKSTLVDALCRKGCALADHLLHTQAQDGAISTDAEGKEEEGESPL   1160
+
+P29600           270 --------------------------------------------------    269
+                                                                       
+P29144          1161 DSLAETFWETTKWTDLFDNKVLTFAYKHALVNKMYGRGLKFATKLVEEKP   1210
+
+P29600           270 ---------------------------------------    269
+                                                            
+P29144          1211 TKENWKNCIQLMKLLGWTHCASFTENWLPIMYPPDYCVF   1249
 ```
 
 #### Przyrównanie globalne (*Needle*, `END GAP PENALTY = true`)
@@ -506,10 +613,117 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
 # Similarity:   154/1255 (12.3%)
 # Gaps:         992/1255 (79.0%)
 # Score: -244.0
+# 
+#
+#=======================================
+
+P29600             1 ----AQSVPWG----ISRVQAPAA----HNRGLTGSGVKVAVLDTGIS--     36
+                         |...|:.    :.:.:..||    ......|.||.:||||||:.  
+P29144             1 MATAATEEPFPFHGLLPKKETGAASFLCRYPEYDGRGVLIAVLDTGVDPG     50
+
+P29600            37 --------------------------------------------------     36
+                                                                       
+P29144            51 APGMQVTTDGKPKIVDIIDTTGSGDVNTATEVEPKDGEIVGLSGRVLKIP    100
+
+P29600            37 ---THPD----LNIRGGASFVP----------------------------     51
+                        |:|.    :.|:.|..|.|                            
+P29144           101 ASWTNPSGKYHIGIKNGYDFYPKALKERIQKERKEKIWDPVHRVALAEAC    150
+
+P29600            52 --------------------------------------------------     51
+                                                                       
+P29144           151 RKQEEFDVANNGSSQANKLIKEELQSQVELLNSFEKKYSDPGPVYDCLVW    200
+
+P29600            52 --GE------PSTQDGN---------------------------------     60
+                       ||      .|.:||:                                 
+P29144           201 HDGEVWRACIDSNEDGDLSKSTVLRNYKEAQEYGSFGTAEMLNYSVNIYD    250
+
+P29600            61 ------------GHGTHVAGTIAALNNSIGVL-------GVAPSAELYAV     91
+                                 .|||||| :|||     |..       ||||.|::.::
+P29144           251 DGNLLSIVTSGGAHGTHVA-SIAA-----GHFPEEPERNGVAPGAQILSI    294
+
+P29600            92 KV------LGASGSGSVS---------------SIAQGLEW---------    111
+                     |:      ...:|:|.:.               |..:...|         
+P29144           295 KIGDTRLSTMETGTGLIRAMIEVINHKCDLVNYSYGEATHWPNSGRICEV    344
+
+P29600           112 ---------------AGNNG--------------------------MHVA    120
+                                    |||||                          |.||
+P29144           345 INEAVWKHNIIYVSSAGNNGPCLSTVGCPGGTTSSVIGVGAYVSPDMMVA    394
+
+P29600           121 NLSLGSPSPSATLEQAVNSATSRGVLVVAASGNSGA--------------    156
+                     ..||....|:.....:....::.|.|.|:.|...||              
+P29144           395 EYSLREKLPANQYTWSSRGPSADGALGVSISAPGGAIASVPNWTLRGTQL    444
+
+P29600           157 ---GSISYP-----------------------------------------    162
+                        .|:|.|                                         
+P29144           445 MNGTSMSSPNACGGIALILSGLKANNIDYTVHSVRRALENTAVKADNIEV    494
+
+P29600           163 --------------------ARYANAMAVGATDQNNNR---------ASF    183
+                                         ..:||.:....|..||..         |:.
+P29144           495 FAQGHGIIQVDKAYDYLVQNTSFANKLGFTVTVGNNRGIYLRDPVQVAAP    544
+
+P29600           184 SQYGAGLD------------------------------------------    191
+                     |.:|.|::                                          
+P29144           545 SDHGVGIEPVFPENTENSEKISLQLHLALTSNSSWVQCPSHLELMNQCRH    594
+
+P29600           192 ---------------------------------------IVAPGVNVQST    202
+                                                            ::|..||..|.
+P29144           595 INIRVDPRGLREGLHYTEVCGYDIASPNAGPLFRVPITAVIAAKVNESSH    644
+
+P29600           203 Y----------------------PGSTYASLN------------------    212
+                     |                      .|:|:|.:.                  
+P29144           645 YDLAFTDVHFKPGQIRRHFIEVPEGATWAEVTVCSCSSEVSAKFVLHAVQ    694
+
+P29600           213 --------------------------------------------------    212
+                                                                       
+P29144           695 LVKQRAYRSHEFYKFCSLPEKGTLTEAFPVLGGKAIEFCIARWWASLSDV    744
+
+P29600           213 --------------------------------------------------    212
+                                                                       
+P29144           745 NIDYTISFHGIVCTAPQLNIHASEGINRFDVQSSLKYEDLAPCITLKNWV    794
+
+P29600           213 --------------------------------------------------    212
+                                                                       
+P29144           795 QTLRPVSAKTKPLGSRDVLPNNRQLYEMVLTYNFHQPKSGEVTPSCPLLC    844
+
+P29600           213 -----------------------GTSMATPH-------------------    220
+                                            |:..|.||                   
+P29144           845 ELLYESEFDSQLWIIFDQNKRQMGSGDAYPHQYSLKLEKGDYTIRLQIRH    894
+
+P29600           221 --------------------------------------------------    220
+                                                                       
+P29144           895 EQISDLERLKDLPFIVSHRLSNTLSLDIHENHSFALLGKKKSSNLTLPPK    944
+
+P29600           221 ------------------------VAGAAAL-------------------    227
+                                             :||:..|                   
+P29144           945 YNQPFFVTSLPDDKIPKGAGPGCYLAGSLTLSKTELGKKADVIPVHYYLI    994
+
+P29600           228 ---VKQKNPS---------------------------W----SNVQIRNH    243
+                        .|.||.|                           |    .:..|.|.
+P29144           995 PPPTKTKNGSKDKEKDSEKEKDLKEEFTEALRDLKIQWMTKLDSSDIYNE   1044
+
+P29600           244 LKNT----------------------------------------------    247
+                     ||.|                                              
+P29144          1045 LKETYPNYLPLYVARLHQLDAEKERMKRLNEIVDAANAVISHIDQTALAV   1094
+
+P29600           248 ------------AT------------------------------------    249
+                                 ||                                    
+P29144          1095 YIAMKTDPRPDAATIKNDMDKQKSTLVDALCRKGCALADHLLHTQAQDGA   1144
+
+P29600           250 -----------------SLGST--------------------------NL    256
+                                      ||..|                          .:
+P29144          1145 ISTDAEGKEEEGESPLDSLAETFWETTKWTDLFDNKVLTFAYKHALVNKM   1194
+
+P29600           257 YGSGLVNA-----EAATR--------------------------------    269
+                     ||.||..|     |..|:                                
+P29144          1195 YGRGLKFATKLVEEKPTKENWKNCIQLMKLLGWTHCASFTENWLPIMYPP   1244
+
+P29600           270 -----    269
+                          
+P29144          1245 DYCVF   1249
 ```
 
-Włączona opcja `END GAP PENALTY` powoduje, że program *Needle* ujemnie punktuje również kary za przerwy na obu końcach przyrównania. Ponieważ sekwencja peptydazy człowieka jest 4 razy dłuższa od sekwencji peptydazy *Savinase*, przyrównanie globalne zawiera więcej przerw (`79%`) niż aminokwasów (`21%`). W wyniku, wartość punktacji przyrównania (`score`) jest ujemna i wynosi `-244.0`. 
-> Domyślnie, w programie *Needle* opcja `END GAP PENALTY` jest wyłączona, a kary za przerwy na końcu przyrównania są ignorowane (jest to algorytm semi-globalny). Algorytm ten stanowi kompromis między globalnym i lokalnym przyrównaniem i często określany jest jako *algorytm "glokalny"*.
+Włączona opcja `END GAP PENALTY` powoduje, że program *Needle* ujemnie punktuje również przerwy znajdujące się na obu końcach przyrównania. Ponieważ sekwencja peptydazy człowieka jest 4 razy dłuższa od sekwencji peptydazy *Savinase*, przyrównanie globalne zawiera więcej przerw (`79%`) niż aminokwasów (`21%`). W rezultacie, wartość punktacji przyrównania (`score`) jest ujemna i wynosi `-244.0`. 
+> Domyślnie, w programie *Needle* opcja `END GAP PENALTY` jest wyłączona, a kary za przerwy na końcu przyrównania są ignorowane (jest to **algorytm semi-globalny**). Algorytm ten stanowi kompromis między globalnym i lokalnym przyrównaniem i często określany jest jako *algorytm "glokalny"*.
 
 #### Przyrównanie lokalne (*Water*)
 
@@ -548,15 +762,14 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
  
 1. Przyrównanie lokalne i semi-globalne wskazują, że sekwencja prokariotycznej proteazy wykazuje podobieństwo jedynie do fragmentu sekwencji białkowej człowieka. Nie jest to natomiast widoczne opierając się na wynikach przyrównania globalnego, w którym wiele krótkich fragmentów sekwencji prokariotycznej rozciąga się wzdłuż całej sekwencji człowieka. 
    
+   W przypadku porównywania sekwencji odlegle spokrewnionych zaleca się używanie algorytmu lokalnego. Wskazuje on bowiem regiony między sekwencjami, które są ze sobą porównywalne.
 
-   W przypadku porównywania sekwencji odlegle spokrewnionych zaleca się używanie algorytmu lokalnego. Wskazuje on regiony między sekwencjami, które są ze sobą porównywalne.
 
-
-2. Nie, w oparciu o otrzymane przyrównania nie można odpowiedzieć na pytanie, czy sekwencja prokariotyczna *Salvinase* jest spokrewnione z sekwencją peptydazy człowieka. Kiedy wykonujemy przyrównanie dwóch lub większej liczby sekwencji zakładamy, że mają one wspólne pochodzenie (tj. wywodzą się od sekwencji obecnej u wspólnego przodka). 
+2. Nie, w oparciu o otrzymane przyrównania nie można odpowiedzieć na pytanie, czy sekwencja prokariotyczna *Salvinase* jest spokrewniona z sekwencją peptydazy człowieka. Kiedy wykonujemy przyrównanie dwóch lub większej liczby sekwencji zakładamy, że mają one wspólne pochodzenie (tj. wywodzą się od sekwencji obecnej u wspólnego przodka). 
    
-   W przypadku analizowanych w tym zadaniu sekwencji peptydaz *B. subtilis* i człowieka NIE mamy pewności, czy te sekwencje są ze sobą w ogóle spokrewnione. Bardzo często zdarza się, że niespokrewnione ze sobą sekwencje uzyskują pewne przyrównania. Wartość punktacji (`score`) takich przyrównań będzie niska. Wartość punktacji lokalnego przyrównania `P29600` i `P29144` wynosi `174`. Aby móc interpretować tę wartość należy poznać zakres wartości punktacji, którzy można oczekiwać przy przyrównywaniu niespokrewnionych sekwencji.
+   W przypadku analizowanych w tym zadaniu sekwencji peptydaz *B. subtilis* i człowieka **nie ma pewności**, że te sekwencje są ze sobą spokrewnione. Bardzo często zdarza się, że niespokrewnione ze sobą sekwencje uzyskują pewne przyrównania. Wartość punktacji (`score`) takich przyrównań będzie niska. Również w tym przypadku, wartość punktacji lokalnego przyrównania `P29600` i `P29144` jest niska i wynosi `174` bitów. Aby móc interpretować tę wartość należy poznać zakres wartości punktacji, którzy można oczekiwać przy przyrównywaniach niespokrewnionych sekwencji.
 
-   Aby odpowiedzieć na to pytanie, można dokonać losowego ułożenia aminokwasów w jednej sekwencji. Wówczas jakakolwiek informacja o ewolucyjnym pokrewieństwie tej sekwencji zostałaby utracona, a taka sekwencja nie będzie spokrewniona z żadną inna sekwencją białkową (ale będzie miała taką samą długość i zawartość aminokwasów).
+   Aby odpowiedzieć na to pytanie, można dokonać losowego ułożenia aminokwasów w jednej sekwencji. Wówczas jakakolwiek informacja o ewolucyjnym pokrewieństwie tej sekwencji zostanie utracona, a taka sekwencja nie będzie spokrewniona z żadną inna sekwencją białkową (ale będzie miała taką samą długość i zawartość aminokwasów).
 
 #### Istotność przyrównania
 
