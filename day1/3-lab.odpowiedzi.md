@@ -1101,11 +1101,17 @@ Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości
 <img src="./images/dotmatcher_s2-s2.png" alt="dotmatcher_s2-s2.png" width="500px">
 
 #### s4:s5
-Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. W obu sekwencjach występują wielokrotne powtórzenia krótkich fragmentów sekwencji (ok. 20-25 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`). Liczba linii na wykresie dot-plot odpowiada liczbie powtórzonych fragmentów. Długość linii oznacza długość fragmentu podlegającego powtórzeniu. Odległość między liniami na wykresie oznacza odległości między tymi powtórzeniami w sekwencji.
+Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. Porównywane sekwencje nie wykazują podobieństwa, poza wielokrotnymi powtórzeniami krótkich fragmentów sekwencji (ok. 15 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** lub **powtórzeniami mikrosatelitarnymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`).
 
 <img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="500px">
 
 <img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png" width="500px">
+
+Na powyższym wykresie dot plot:
+* Liczba linii odpowiada liczbie powtórzonych fragmentów. 
+* Długość linii oznacza długość fragmentu podlegającego powtórzeniu. 
+* Odległość między liniami na wykresie oznacza odległości między tymi powtórzeniami w sekwencji.
+   * Ponieważ powtórzenia `AT` występują bezpośrednie po sobie, odstęp między liniami jest prawie niewidoczny.
 
 
 #### s7:s8
