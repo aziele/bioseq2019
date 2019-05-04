@@ -39,3 +39,14 @@
 
 1. [Wideo Tutoriale NCBI](https://www.youtube.com/user/NCBINLM/videos)
 2. [Wideo Tutoriale UniProt](https://www.youtube.com/user/uniprotvideos/videos)
+
+
+## Kontakt
+
+1. dr Maciej Szymański (mszyman@amu.edu.pl)
+2. dr Andrzej Zieleziński (andrzejz@amu.edu.pl)
+
+[Zakład Biologii Obliczeniowej](http://www.combio.pl)
+Instytut Biologii Molekularnej i Biotechnologii
+Wydział Biologii
+Uniwersytet im. Adama Mickiewicza w Poznaniu
