@@ -1105,9 +1105,7 @@ Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długo
 
 <img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="500px">
 
-<img src="./images/dotplot.s4.png" alt="dotplot.s4">
-
-<img src="./images/dotplot.s5.png" alt="dotplot.s5">
+<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png">
 
 
 #### s7:s8
