@@ -96,7 +96,7 @@ Zapis rekordu w formacie *GenBank* do pliku: `Send to` > `Complete Record` > `Fi
 #### Graficzna prezentacja rekordu
 Aby wyświetlić rekord `AB001981` w formie graficznej naciśnij link `Graphics`. Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów (*alpha-D globin* i *alpha-A globin*) na sekwencji genomowej. Widok graficzny jest interaktywny - można go przybliżać/oddalać, zaznaczać pozycje w sekwencji, itd. Na przykład, skierowania kursora myszy na egzon (czarny prostokąt) wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej, a także sekwencję aminokwasową kodowaną przez wskazany egzon.
 
-<img src="./images/AB001981-graphics.png" alt="AB001981-graphics.png">
+<img src="./images/ncbi-AB001981-graphics.png" alt="AB001981-graphics.png">
 <br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
