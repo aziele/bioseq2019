@@ -67,6 +67,10 @@ GLBE_CHITH       142 DAFFGAVFAKM    152
 Otwórz serwis [dotmatcher](http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher). Umieść sekwencję genomową i sekwencję mRNA w dwóch polach tekstowych znajdujących się w części `Input section`.
 
 #### Ustawienia programu dotmatcher
-W celu zidentyfikowania na wykresie dot plot najkrótszego egzonu (`72` pz) oraz wszystkich dłuższych egzonów ustaw wielkość okna (`window size`) na `72`. Ponieważ zgodność nukleotydów sekwencji genomowej i mRNA jest całkowita ustaw wartość graniczną na `72`. Przy wartościach parametrów (`window size`: `72` i `threshold`: `72`) program *dotmatcher* będzie identyfikował identyczne fragmenty między porównywanymi sekwencjami o długości  
+W celu zidentyfikowania na wykresie dot plot najkrótszego egzonu (`72` pz) oraz wszystkich dłuższych egzonów ustaw wielkość okna (`window size`) na `72`. Ponieważ zgodność nukleotydów sekwencji genomowej i mRNA jest całkowita ustaw wartość graniczną na `72`. Przy wartościach parametrów (`window size`: `72` i `threshold`: `72`) program *dotmatcher* będzie identyfikował w sekwencjach identyczne fragmenty o długości przynajmniej `72` pz.
 
+#### Wykres dot plot
 
+<img src="./files/dotmatcher-arabidopsis.png" alt="dotmatcher-arabidopsis">
+
+Analizowany gen ma **10 egzonów**.
