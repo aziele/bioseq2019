@@ -47,10 +47,7 @@
 1. dr Maciej Szymański (mszyman@amu.edu.pl)
 2. dr Andrzej Zieleziński (andrzejz@amu.edu.pl)
 
-[Zakład Biologii Obliczeniowej](http://www.combio.pl)
-
-Instytut Biologii Molekularnej i Biotechnologii
-
-Wydział Biologii
-
-Uniwersytet im. Adama Mickiewicza w Poznaniu
+> [Zakład Biologii Obliczeniowej](http://www.combio.pl)
+  Instytut Biologii Molekularnej i Biotechnologii
+  Wydział Biologii
+  Uniwersytet im. Adama Mickiewicza w Poznaniu
