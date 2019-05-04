@@ -137,8 +137,8 @@ Korzystając z internetowej wersji programów **Needle** i **Water** (<a href="h
 
 
 ### Zad. 4 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
-Poniżej znajdują się dwie sekwencje prokariotycznych proteaz serynowych pobrane z bazy UniProt.
-Pierwsza jest termostabilną proteazą pochodzącą z *Bacillus lentus*, którą firma *Novozymes* dodaje do proszków do prania pod nazwą *Savinase*. Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z inne gatunku *Bacillus halodurans*.
+Poniżej znajdują się dwie sekwencje prokariotycznych proteaz serynowych pobrane z bazy *UniProt*.
+Pierwsza sekwencja jest termostabilną proteazą pochodzącą z *Bacillus lentus*, którą firma *Novozymes* dodaje do proszków do prania pod nazwą *Savinase*. Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z gatunku *Bacillus halodurans*.
 
 ```
 >P29600 SUBS_BACLE Subtilisin Savinase - Bacillus lentus
@@ -160,7 +160,7 @@ Q
 
 #### Przyrównanie globalne (Needle)
 
-Korzystając z programu *Needle* przeprowadź semi-globalne przyrównanie obu sekwencji.
+Korzystając z programu *Needle* przeprowadź globalne przyrównanie obu sekwencji.
 1. Podaj wartość punktacji przyrównania (`Score`).
 2. Podaj długość przyrównania.
 3. Podaj procent identyczności sekwencji.
@@ -174,7 +174,7 @@ W nowej karcie przeglądarki skorzystaj z programu *Water* w celu przyrównania 
 
 #### Interpretacja wyników
 
-Odszukaj dwa rekordy w bazie UniProt.
+Odszukaj w serwisie UniProt rekordy analizowanych dwóch sekwencji.
 
 6. W jaki sposób otrzymano te dwa rekordy?
 7. Podaj subkomórkową lokalizację obu białek.
