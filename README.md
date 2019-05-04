@@ -33,18 +33,9 @@
 3. [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) - wyświetlanie drzew filogenetycznych i przygotowanie ich do publikacji
 
 
-## Polecana literatura (po ukończeniu kursu):
+## Miejsca, które warto śledzić (po ukończeniu kursu):
 
 #### YouTube
 
 1. [Wideo Tutoriale NCBI](https://www.youtube.com/user/NCBINLM/videos)
 2. [Wideo Tutoriale UniProt](https://www.youtube.com/user/uniprotvideos/videos)
-
-#### Książki [EN]
-
-1. [Michael Agostino. Practical Bioinformatics. 2012](https://www.amazon.com/Practical-Bioinformatics-Michael-Agostino-ebook/dp/B00AFKOI4O) - poziom podstawowy
-
-#### Książki [PL]
-
-1. [Xiong Jin. Podstawy Bioinformatyki. 2011](https://www.empik.com/podstawy-bioinformatyki-xiong-jin,prod59630017,ksiazka-p): poziom podstawowy
-2. [Attword Teresa K., Higgs Paul G. Bioinformatyka i ewolucja molekularna. Wydawnictwo Naukowe PWN. 2011](https://helion.pl/ksiazki/bioinformatyka-i-ewolucja-molekularna-higgs-paul-g-attword-teresa-k,a_004s.htm#format/d) - poziom zaawansowany
