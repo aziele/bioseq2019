@@ -1088,24 +1088,24 @@ Wraz ze wzrastającym indeksem BLOSUM (od `30` do `90`), procent identyczności 
 #### s1:s1
 Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Porównywane sekwencje są zatem identyczne lub bardzo podobne (poziom zgodności to przynajmniej 10 na 15 nukleotydów)
 
-<img src="./images/dotmatcher_s1-s1.png" alt="dotmatcher_s1-s1.png" width="450px">
+<img src="./images/dotmatcher_s1-s1.png" alt="dotmatcher_s1-s1.png" width="600px">
 
 #### s1:s10
 Linia przekątna jest przerwana w trzech miejscach - są to regiony w sekwencjach, w których nie ma zgodności.
 
-<img src="./images/dotmatcher_s1-s10.png" alt="dotmatcher_s1-s10.png" width="500px">
+<img src="./images/dotmatcher_s1-s10.png" alt="dotmatcher_s1-s10.png" width="600px">
 
 #### s2:s2
 Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Dodatkowo, w sekwencjach występuje region (długości ok. 50 nukleotydów) dwukrotnie powtórzony w sekwencji w pozycji ok. 70, i 200 nukleotydu.
 
-<img src="./images/dotmatcher_s2-s2.png" alt="dotmatcher_s2-s2.png" width="500px">
+<img src="./images/dotmatcher_s2-s2.png" alt="dotmatcher_s2-s2.png" width="600px">
 
 #### s4:s5
 Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. Porównywane sekwencje nie wykazują podobieństwa, poza wielokrotnymi powtórzeniami krótkich fragmentów sekwencji (ok. 15 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** lub **powtórzeniami mikrosatelitarnymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`).
 
-<img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="500px">
+<img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="600px">
 
-<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png" width="500px">
+<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png" width="600px">
 
 Na powyższym wykresie dot plot:
 * Liczba linii odpowiada liczbie powtórzonych fragmentów. 
@@ -1117,11 +1117,11 @@ Na powyższym wykresie dot plot:
 #### s7:s8
 Przemieszczenie się linii przekątnej oznacza zajście insercji w jednej sekwencji lub delecji w drugiej sekwencji. W tym przypadku, sekwencja `s7` jest dłuższa i zawiera fragment w pozycji `200-220`, który nie występuje w sekwencji `s8`. Zatem, fragment uległ insercji w sekwencji `s7` lub delecji w sekwencji `s8`.
 
-<img src="./images/dotmatcher_s7-s8.png" alt="dotmatcher_s7-s8.png" width="500px">
+<img src="./images/dotmatcher_s7-s8.png" alt="dotmatcher_s7-s8.png" width="600px">
 
 #### s4:s4
 Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
 
-<img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="500px">
+<img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="600px">
 
-<img src="./images/dotplot.s4.png" alt="dotplot.s4" width="500px">
+<img src="./images/dotplot.s4.png" alt="dotplot.s4" width="600px">
