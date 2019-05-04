@@ -217,7 +217,7 @@ W powyższej tabeli znajduje się lista terminów GO związanych z procesem biol
 Powyższa lista obejmuje terminy, które otrzymały wartości *p* < `0.05`. Aby wyświetlić pełną listę terminów w próbie genów zapytania naciśnij link `click here to display all results`.
 
 #### gProfiler
-Otwórz stronę [gProfiler](https://biit.cs.ut.ee/gprofiler/gost). W polu tekstowym umieść listę 20 genów człowieka i naciśnij przycisk `Compute`. gProfiler przeprowadza statystyczną analizę wzbogacenia w celu znalezienia nadreprezentowanych informacji terminów GO, szlaków biologicznych, elementów regulatorowych i interakcji białko-białko.
+Otwórz stronę [gProfiler](https://biit.cs.ut.ee/gprofiler/gost). W polu tekstowym umieść listę 20 genów człowieka i naciśnij przycisk `Compute`. gProfiler przeprowadza statystyczną analizę wzbogacenia terminów GO.
 
 Poniższy wykres Manhattan przedstawia wyniki analizy wzbogacenia. Podobnie jak w przypadku *AmiGO*, domyślnie na wykresie wyświetlone są terminy GO, które uzysały wartości *p* < `0.05`. Na osi X znajdują się terminy GO, które pogrupowowane są w kolory na podstawie działu ontologii (np. funkcja moleukularna GO ma kolor czerwony (`GO:MF`)). Oś Y przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Im mniejsza wartość *p* (bardziej istotna różnica), tym wyższa wartość `-log10(p)`.
 
@@ -235,6 +235,6 @@ Dla ontologii funkcji molekularnej, najbardziej nadreprezentowanym terminem jest
 
 
 #### ReviGO: wizualizacaja terminów GO
-Powyższą listę terminów GO wraz z wartościami *p* można zapisać w formacie CSV. Pobraną listę można wczytać w serwisie [ReviGO](http://revigo.irb.hr/) w celu graficznej prezentacji.
+Powyższą listę terminów GO wraz z wartościami *p* można zapisać w formacie CSV. Pobraną listę można następnie wczytać w serwisie [ReviGO](http://revigo.irb.hr/) w celu jej graficznej prezentacji.
 
 <img src="./images/revigo.png" alt="revigo">
