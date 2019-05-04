@@ -27,7 +27,7 @@ Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową baz�
 "mrna"[Filter] AND "Homo sapiens"[Organism] AND 100554:10000000[Sequence Length] 
 ```
 
-W wyniku otrzymano **10** sekwencji mRNA ludzkiego genu titin (TTN), który koduje olbrzymie białko zapewniające strukturę i elastyczność komórkom mięsniowym. Najdłuższy transkrypt genu TTN ([NM_001267550](https://www.ncbi.nlm.nih.gov/nuccore/NM_001267550)) ma `109 224` pz, a kodowane przez niego białko składa się z `35 991` reszt aminokwasowych.
+W wyniku otrzymano **10** sekwencji mRNA ludzkiego genu titin (TTN), który koduje białko zapewniające strukturę i elastyczność komórkom mięsniowym. Najdłuższy transkrypt genu TTN ([NM_001267550](https://www.ncbi.nlm.nih.gov/nuccore/NM_001267550)) ma `109 224` pz, a kodowane przez niego białko składa się z `35 991` reszt aminokwasowych.
 <br/><br/>
 
 ### Zad. 4 - Znajdź sekwencje genomowe B. thuringiensis opublikowane w 2019 roku
@@ -62,7 +62,7 @@ Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo
 Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria;
 Euarchontoglires; Glires; Rodentia; Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus
 ```
-<br/><br/>
+<br/>
 
 ### Zad. 6 - Sprawdź zasoby sekwencji dla wymarłego gatunku wilka
 Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz taksonomiczną bazę danych (`Taxonomy`). Odszukaj takson wilka workowatego wpisując w polu wyszukiwania `Thylacinus cynocephalus`. 
