@@ -252,6 +252,7 @@ Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `Fi
 7. Gen BRCA2 zbudowany jest z `27` egzonów.
    > Panel `Genomic context`, pole `Exon count`.
 8. Gen BRCA2 zlokalizowany jest na: 
+
    * chromosomie: `13` 
    * sekwencji genomowej `NC_000013.11`
    * początek genu: `32 315 480`
