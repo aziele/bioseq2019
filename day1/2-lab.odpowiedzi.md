@@ -39,7 +39,7 @@ Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uni
    * *Propeptide* na C-końcu w pozycji 57-97 sekwencji.
 
    <img src="./images/uniptot-insulin-ptm_processing.png" alt="uniptot-insulin-ptm_processing">
-   <br/>
+
    Oba peptydy sygnałowe zostają usunięte z białka insuliny zanim białko zostanie wydzielone poza komórkę. Sekwencja dojrzałego białka insuliny (łańcuchy *A* i *B*) jest więc krótsza niż sekwencja, która wyświetlona sekwencja w panelu `Sequences` (*The displayed sequence is further processed into a mature form.*)
 
 4. Panel rekordu `Sequence`, w części `Natural variant` zawiera tabelę z mutacjami/polimorfizmami w sekwencji insuliny, które zostały opisane w literaturze. 

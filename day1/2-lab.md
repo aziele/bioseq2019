@@ -29,7 +29,7 @@ Przejdź do rekordu sekwencji insuliny człowieka o numerze dostępu (`P01308`).
 1. Ile referencji literaturowych dotyczy insuliny?
 2. Jaka jest lokalizacja komórkowa insuliny?
 3. Czy sekwencja insuliny posiada peptydy sygnałowe? (`PTM / Processing`)
-4. Czy znane są warianty/polimorfizmy sekwencji związane ze stanem chorobowym?
+4. Czy znane są warianty/polimorfizmy sekwencji związane z jednostkami chorobowymi?
 5. Jaki jest numer dostępu tego białka i odpowiadającego mRNA w bazie RefSeq?
 <br/><br/>
 
