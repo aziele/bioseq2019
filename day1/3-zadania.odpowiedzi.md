@@ -71,6 +71,6 @@ W celu zidentyfikowania na wykresie dot plot najkrótszego egzonu (`72` pz) oraz
 
 #### Wykres dot plot
 
-<img src="./files/dotmatcher-arabidopsis.png" alt="dotmatcher-arabidopsis.png">
+<img src="./images/dotmatcher-arabidopsis.png" alt="dotmatcher-arabidopsis.png">
 
 Analizowany gen ma **10 egzonów**.
