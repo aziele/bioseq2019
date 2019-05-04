@@ -126,8 +126,8 @@ Ponownie skorzystaj z narzędzie `Retrieve/ID Mapping` podając identyfikatory U
 Ontologia genów składa się z trzech działów ontologii:
 
 1. **Funkcja molekularna** (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym
-2. **Proces biologiczny** (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczesciej co najmniej dwa produkty ekspresji genów.
-3. **Składnik komórkowy** (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się produkty ekspresji poszczególmych genów.
+2. **Proces biologiczny** (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczęściej co najmniej dwa produkty ekspresji genów.
+3. **Składnik komórkowy** (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się produkty ekspresji poszczególnych genów.
 
 ### Zad. 5 - Ontologia pojedynczego genu
 Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov). Wybierz bazę `Gene` i korzystając z zaawansowanego wyszukiwania utwórz zapytania:
@@ -150,14 +150,14 @@ W wyniku otrzymany zostanie pojedynczy rekord o identyfikatorze genu (`Gene ID`)
       - cytozol
       - nukleoplazma
 
-   <img src="./images/go-casp6.png" alt="go-casp6" width="600px">
+   <img src="./images/go-casp6.png" alt="go-casp6" width="700px">
 
 2. Trzyliterowy kody (np. `IBA`, `TAS`) odnoszą się do opisu danego terminu ontologii. Informują one o  metodzie, według której przypisano dany terminu ontologii do danego genu. Skierowanie kursora myszy na dany kod wyświetli jego pełny opis. Na przykład:
    * skrót `IBA` (*Inferred from Biological aspect of Ancestor*) - dany termin GO został przypisany do tego genu na podstawie organizmu przodka filogenetycznego.
    * skrót `IMP` (*Inferred from Mutant Phenotype*) - termin GO został przypisany do tego genu na podstawie fenotypu mutanta tego genu.
 3. W rekordzie genu, w panelu `Related sequences` znajduje się numer dostępu kodowanego przez ten gen białka w bazie UniProt: [UniProtKB/Swiss-Prot:P55212](https://www.uniprot.org/uniprot/P55212). 
 
-   Tak, w rekordzie UniProt również znajdują się informacje dotyczące ontologii genów. Iinformacja na temat funkcji i procesu biologicznego znajduje się w panelu `Function`, a informacja o przedziale komórkowym znajduje się w panelu `Subcellular location` w zakładce `GO - Cellular component`.
+   Tak, w rekordzie UniProt również znajdują się informacje dotyczące ontologii genów. Informacja na temat funkcji i procesu biologicznego znajduje się w panelu `Function`, a informacja o przedziale komórkowym znajduje się w panelu `Subcellular location` w zakładce `GO - Cellular component`.
 <br/><br/>
 
 
@@ -201,18 +201,18 @@ Otwórz stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/). W
 #### Amigo Gene Ontology
 Otwórz stronę [Gene Ontology](http://amigo.geneontology.org/amigo/). W panelu `Term Enrichment Service` umieść listę genów i naciśnij przycisk `Submit`.
 
-<img src="./images/amigo-enrichment-biological_process.png" alt="amigo-enrichment-biological_process" width="500px">
+<img src="./images/amigo-enrichment-biological_process.png" alt="amigo-enrichment-biological_process" width="700px">
 
-W powyższej tabeli znajduje się lista terminów GO związanych z procesem biologicznym, które są istotnie nadreprezentowane w zadanej grupie 20 genów (*p*-value < 0.05).
+W powyższej tabeli znajduje się lista terminów GO związanych z procesem biologicznym, które są istotnie nadreprezentowane w zadanej grupie 20 genów (*p*-value < 0.05). W wierszach tabeli znajdują się terminy ontologii. 
 
 1. Pierwsza kolumna zawiera nazwę danego terminu GO. 
 2. Druga kolumna zawiera liczbę wszystkich referencyjnych genów człowieka przypisanych do tego terminu GO.
 3. Trzecia kolumna zawiera liczbę genów w zestawie zapytania przypisanych do tego terminu GO.
-4. Czwarta kolumna zawiera oczekiwaną liczbę genów w zestawie zapytania, które powinny być przypisane do tego terminu GO.
-   > Na przykład, gdyby próba 20 genów została wylosowo, jeden gen (średnio `1.23` genu) powinien być przypisany do terminu `transmembrane transport`. Natomiast w zestawie 20 genów w tym zadaniu, `11` genów jest przypisanych do tego terminu.
-5. Piąta kolumna `Fold Enrichment` to stosunek obserwowanej liczby genów w zestawie zapytania i oczekiwanej liczby genów. Wartość `Fold Enrichment` większa od `1` oznacza, że dany termin GO występuje częściej w zadanej próbie genów niż w zestawie referencyjnym.
-6. Szósta kolumna (`+/-`) wskazuje, czy dany termin GO jest nadreprezentowany (`+`) lub w niedomiarze (`-`) w danym zestawie.
-7. Siódma kolumna zawiera wartości *p*-value oznaczające prawdopodobieństwo, że otrzymania obserwowanej liczby genów przypisanej do danego terminu GO przez przypadek (tj. gdyby wylosować je z zestawu referencyjnego). Niskie wartości *p*-value oznaczają, że obserwowana liczba genów jest znacząco nadreprezentowana i interesująca. 
+4. Czwarta kolumna zawiera oczekiwaną liczbę genów w zestawie zapytania (przy założeniu częstości występowania danego terminu, jak w zestawie referencyjnym).
+   > Na przykład, gdyby próba 20 genów została wybrana w sposób losowy, jeden gen (średnio `1.23` genu) powinien być przypisany do terminu `transmembrane transport`. Natomiast w zestawie 20 genów w tym zadaniu, `11` genów jest przypisanych do tego terminu.
+5. Piąta kolumna `Fold Enrichment` to stosunek obserwowanej liczby genów w zestawie zapytania do oczekiwanej liczby genów. Wartość `Fold Enrichment` większa od `1` oznacza, że dany termin GO występuje częściej w zadanej próbie genów niż w zestawie referencyjnym.
+6. Szósta kolumna (`+/-`) wskazuje, czy dany termin GO w zestawie zapytania jest nadreprezentowany (`+`) lub występuje w niedomiarze (`-`).
+7. Siódma kolumna zawiera wartości *p*-value oznaczające prawdopodobieństwo otrzymania obserwowanej liczby genów przypisanej do danego terminu GO przez przypadek (tj. gdyby wylosować je z zestawu referencyjnego). Niskie wartości *p*-value oznaczają, że obserwowana liczba genów jest znacząco nadreprezentowana i interesująca. 
 
 Powyższa lista obejmuje terminy, które otrzymały wartości *p* < `0.05`. Aby wyświetlić pełną listę terminów w próbie genów zapytania naciśnij link `click here to display all results`.
 
@@ -234,7 +234,7 @@ Otwórz zakładkę `Detailed Results`. gProfiler wyświetla tabele wzbogacenia t
 Dla ontologii funkcji molekularnej, najbardziej nadreprezentowanym terminem jest aktywność transportowa kanału lub poru `channel activity` (`GO:0015267`). Termin ten występuje w `10` spośród `20` zadanych genów. Prawdopodobieństwo *p* wylosowania 10 genów z tym terminem wynosi `7.035 * 10^-9`.
 
 
-##### Wizualizacaja terminów GO
+#### ReviGO: wizualizacaja terminów GO
 Powyższą listę terminów GO wraz z wartościami *p* można zapisać w formacie CSV. Pobraną listę można wczytać w serwisie [ReviGO](http://revigo.irb.hr/) w celu graficznej prezentacji.
 
 <img src="./images/revigo.png" alt="revigo">

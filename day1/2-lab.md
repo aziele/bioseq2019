@@ -97,7 +97,7 @@ Przejdź do zakładki `Annotations`.
    - Ile rekordów znaleziono?
 7. Ogranicz listę wyników otrzymaną w poprzednim punkcie do genów, których funkcja PCD została przypisana na podstawie doświadczeń laboratoryjnych.
    - Ile rekordów znaleziono?
-8. Ogranicz listę wyników do genów kodujących białka i pochodzących z bazy UniProt.
+8. Ogranicz listę wyników do genów kodujących białka pochodzące z bazy UniProt.
    - Ile rekordów znaleziono?
 
 #### UniProt
