@@ -24,8 +24,10 @@
 Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uniprot/P01308).
 
 1. W lewym panelu `Display` wybierz `Publications`. W sumie `1 050` publikacji dotyczy białka insuliny człowieka. 
-   * `1 014` publikacji typu **Computationally mapped** (publikacje automatycznie pobrane z innych baz danych i nie są zweryfikowane przez pracowników UniProt)
-   * `36` publikacji typu **UniProtKB/Swiss-Prot** (zweryfikowane publikacje dotyczące szczegółowych informacji na temat funkcji, sekwencji, struktury i interakcji tego białka)
+   * `1 014` publikacji typu **Computationally mapped** 
+     - publikacje automatycznie pobrane z innych baz danych i niezweryfikowane przez pracowników UniProt
+   * `36` publikacji typu **UniProtKB/Swiss-Prot**
+     - zweryfikowane publikacje dotyczące szczegółowych informacji m.in. na temat funkcji, mutagenezy, struktury i interakcji tego białka z innymi białkami
 2. Panel `Subcellular location` w rekordzie dostarcza informacji na temat występowania insuliny w organizmie człowieka. 
    * Białko jest wydzialane poza komórkę (*Extracellular region or secreted*). 
    * Zakładka `GO - Cellular compoenent` podaje wszystkie miejsca występowania białka (np. retikulum endocytoplazmatyczne, które stanowi tymczasową lokalizację białka zanim zostanie ono wydzielone z komórki)
