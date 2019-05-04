@@ -1105,7 +1105,7 @@ Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długo
 
 <img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="500px">
 
-<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png">
+<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png" width="500px">
 
 
 #### s7:s8
@@ -1117,3 +1117,5 @@ Przemieszczenie się linii przekątnej oznacza zajście insercji w jednej sekwen
 Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
 
 <img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="500px">
+
+<img src="./images/dotplot.s4.png" alt="dotplot.s4" width="500px">
