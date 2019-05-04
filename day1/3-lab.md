@@ -45,10 +45,9 @@ s2   MSKQI
 Odpowiedz na pytania:
 
 1. Ile wynosi procent *identyczności* przyrównywanych sekwencji?
-2. Podaj wartość `score` całego przyrównania przy zastosowaniu macierzy [BLOSUM62](https://www.ncbi.nlm.nih.gov/Class/FieldGuide/BLOSUM62.txt) i kary za przerwę: `-5`.
+2. Podaj wartość `score` całego przyrównania przy zastosowaniu macierzy [BLOSUM62](https://www.ncbi.nlm.nih.gov/Class/FieldGuide/BLOSUM62.txt) (poniżej) i kary za przerwę: `-5`.
    
    ```
-   #  Matrix made by matblas from blosum62.iij
       A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V  B  Z  X  *
    A  4 -1 -2 -2  0 -1 -1  0 -2 -1 -1 -1 -1 -2 -1  1  0 -3 -2  0 -2 -1  0 -4 
    R -1  5  0 -2 -3  1  0 -2  0 -3 -2  2 -1 -3 -2 -1 -1 -3 -2 -3 -1  0 -1 -4 
