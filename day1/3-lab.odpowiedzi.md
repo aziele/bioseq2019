@@ -2,7 +2,7 @@
 
 1. Długość przyrównania wynosi **10** pozycji.
    > Długość przyrównania uwzględnia również przerwy (`-`).
-2. Nukleotydy są zgodne na **6** pozycjach, a niezgodne na **1** pozycji.
+2. Na **6** pozycjach nukleotydy są zgodne, na **1** pozycji nukleotydy są niezgodne, a na **3** pozycjach występują przerwy.
 3. Identycznośc sekwencji wynosi: `60%`. 
    > 6/10 * 100 = 60
 4. Wartość punktacji przyrównania (`score`) wynosi `5`.
@@ -26,7 +26,7 @@
 
 ## Programy Needle i Water
 
-### Zad. 3 - Przyrównanie lokalne i semi-globalne sekwencji DNA
+### Zad. 3 - Przyrównanie lokalne i globalne sekwencji DNA
 Otwórz programy Needle i Water w osobnych kartach przeglądarki internetowej. Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `DNA`. Umieść pierwszą sekwencję w formacie FASTA w pierwszym oknie i drugą sekwencję w drugim oknie. Wykonaj przyrównanie.
 
 #### Przyrównanie globalne (Needle)
@@ -240,10 +240,6 @@ CDS              328 --------------------------------------------------    327
 DNA             2101 GCCCGGCCTGCAG   2113
                                   
 CDS              328 -------------    327
-
-
-#---------------------------------------
-#---------------------------------------
 ```
 
 #### Przyrównanie lokalne (Water)
@@ -373,7 +369,8 @@ DNA             1798 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG   1847
 CDS              278 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG    327
 ```
 
-1. Badany gen składa się z dwóch egzonów. Na obu przyrównaniach widoczne są dopasowania dwóch osobnych fragmentów.
+1. Badany gen składa się z dwóch egzonów. Na obu przyrównaniach widoczne są przyrównania dwóch osobnych fragmentów sekwencji CDS.
+   > Pełnej długości sekwencja CDS została rozłożona na na dwa fragmenty znajdujące się w dwóch różnych miejscach w sekwencji genomowej. 
 2. Pierwszy egzon jest w pozycji od `748` do `933` na sekwencji genomowej, a drugi egzon jest pozycji `1707-1847`.
 3. Procent identyczności sekwencji otrzymany w programie *Needle* to `15.5%`, a w programie *Water* `29.7%`.
    * Ponieważ *Needle* porównuje sekwencje na całej długości, otrzymane przyrównanie zawiera dużą liczbę przerw, które zmniejszają procent identyczności.
@@ -474,11 +471,11 @@ P29600           251 LGSTNLYGSGLVNAEAATR    269
 P41363           343 LGSPSLYGNGLVHAGRATQ    361
 ```
 
-5. Najlepsze przyrównania rozumiane jest jako przyrównanie, które najbardziej wiarygodnie tłumaczy zmiany jakie zaszły w obu sekwencjach w toku ich ewolucji. Zatem przy wykonywaniu przyrównania zakłada się, że obie sekwencje wywodzą się od sekwencji wspólnego przodka. Trudno jest więc odpowiedzieć na pytanie, które z przyrównań jest lepsze, ponieważ ścieżka ewolucyjna obu sekwencji nie jest znana.
+5. Najlepsze przyrównania rozumiane jest jako przyrównanie, które **najbardziej wiarygodnie tłumaczy zmiany jakie zaszły w obu sekwencjach w toku ich ewolucji**. Zatem przy wykonywaniu przyrównania zakłada się, że obie sekwencje wywodzą się od sekwencji wspólnego przodka. Trudno jest więc odpowiedzieć na pytanie, które z przyrównań jest lepsze, ponieważ ścieżka ewolucyjna obu sekwencji nie jest znana. Można jednak dokonać pewnych obserwacji:
 
-   Obie sekwencje są jednak różnej długości. Pod tym względem, bardziej sensowne jest użycie algorytmu lokalnego przyrównania (algorytm *Smitha-Watermana*). Przyrównanie lokalne umożliwia analizę podobieństw i różnic we fragmentach dwóch sekwencji, które są w ogóle porównywalne ze sobą. Z kolei, używając globalnego przyrównania można łatwo zaobserwować, że obie sekwencje są bardzo podobne do siebie, z wyjątkiem brakującego fragmentu z N-końca pierwszej sekwencji *Savinase* (`P29600`) długości ok. 90 reszt aminokwasowych. W tym przypadku wykonanie przyrównania globalne dostarczyło dodatkowej informacji na temat dwóch sekwencji.
-
-   W przypadku gdy obie sekwencje są bardzo podobne - tak jak sekwencje `P29600` i  `P41363` - nie ma dużej różnicy pomiędzy lokalnym a globalnym przyrównaniem.
+   * Obie sekwencje są różnej długości (`269` i `361` reszt aminokwasowych). Pod tym względem, bardziej sensowne jest użycie algorytmu lokalnego przyrównania (*Water*, algorytm *Smitha-Watermana*). Przyrównanie lokalne umożliwia analizę podobieństw i różnic we fragmentach dwóch sekwencji, które są w ogóle porównywalne ze sobą.
+   * Z kolei, używając globalnego przyrównania można łatwo zaobserwować, że obie sekwencje są bardzo podobne do siebie, z wyjątkiem brakującego fragmentu N-końca pierwszej sekwencji *Savinase* (`P29600`) długości ok. 90 reszt aminokwasowych. W tym przypadku wykonanie przyrównania globalne dostarczyło dodatkowej informacji na temat dwóch sekwencji.
+   * W przypadku gdy obie sekwencje są bardzo podobne - jak sekwencje `P29600` i  `P41363` - nie ma dużej różnicy pomiędzy lokalnym a globalnym przyrównaniem.
 
 6. Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Odszukaj dwa rekordy w oparciu o ich numery dostępu: [P29600](https://www.uniprot.org/uniprot/P29600) i [P41363](https://www.uniprot.org/uniprot/P41363). Lista publikacji w rekordach UniProt wskazuje, że sekwencję białka *Salvinase* (`P29600`) otrzymano ze struktury przestrzennej, natomiast sekwencję `P41363` otrzymano w wyniku translacji sekwencji DNA.
 
