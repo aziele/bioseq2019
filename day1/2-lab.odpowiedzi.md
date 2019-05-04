@@ -221,9 +221,9 @@ Otwórz stronę [gProfiler](https://biit.cs.ut.ee/gprofiler/gost). W polu teksto
 
 ##### Wykres Manhattan
 Poniższy wykres Manhattan stanowi podsumowanie przeprowadzonej analizy wzbogacania terminów GO. Podobnie jak w przypadku *AmiGO*, na wykresie wyświetlone są terminy GO, które uzysały wartości *p* < `0.05`.
-* Na osi `X` znajdują się terminy GO, które pogrupowowane są w kolory odpowiadające danemu działowi ontologii (np. funkcja moleukularna GO ma kolor czerwony `GO:MF`). 
+* Na osi `X` znajdują się terminy GO, które pogrupowowane są w kolory odpowiadające danemu działowi ontologii (np. funkcja moleukularna GO ma kolor czerwony `GO:MF`). Liczba w nawiasie `GO:MF (16)` to liczba terminów GO - w zestawie 20 genów zapytania - związanych z funkcją molekularną.
 * Oś `Y` przedstawia dopasowane wartości *p* w ujemnej skali logarytimcznej. Im niższa wartość *p* (nadreprezentacja terminu GO jest bardziej znacząca), tym wyższa wartość `-log10(p)`.
-* Punkt na wykresie oznacza termin GO, a odległość punktów od siebie oznacza stopień relacji między danymi terminami. 
+* Punkt na wykresie oznacza termin GO, a odległość punktów od siebie oznacza stopień relacji między danymi terminami. Na przykład, zaznaczony na poniższym wykresie termin GO oznacza transport transbłonowy (`transemembrane transport`). Termin ten występuje w `1511` genów referencyjnych człowieka, a jego wartość *p* w zestawie zapytania wynosi `1.657 * 10^-5`. Termin ten jest zatem istotnie nadreprezentowany w zadanym zestawie genów.
 
 <img src="./images/grprofiler-manhattan.png" alt="grprofiler-manhattan">
 
