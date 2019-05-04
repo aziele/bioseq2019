@@ -9,7 +9,17 @@ W białkowej bazie [NCBI](https://www.ncbi.nlm.nih.gov) znajdź wszystkie zwierz
 
 ### Zad. 3 - Znajdź 10 najdłuższych sekwencji mRNA człowieka
 W bazie nukleotydowej [NCBI](https://www.ncbi.nlm.nih.gov) znajdź 10 najdłuższych sekwencji mRNA człowieka.
-> Wskazówka: wyszukanie sekwencji długości 100-1000 nukleotydów: `100:1000[Sequence Length]` lub `("100"[SLEN] : "1000"[SLEN])`.
+> Wskazówka: wyszukanie sekwencji w zakresie długości 100-1000 nukleotydów: 
+
+    ```
+    `100:1000[Sequence Length]`
+    ```
+
+    lub
+
+    ```
+    ("100"[SLEN] : "1000"[SLEN])
+    ```
 
 <br/>
 

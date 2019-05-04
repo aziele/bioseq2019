@@ -252,7 +252,6 @@ Aby zapisać sekwencję do pliku w formacie FASTA naciśnij link `Send to` > `Fi
 7. Gen BRCA2 zbudowany jest z `27` egzonów.
    > Panel `Genomic context`, pole `Exon count`.
 8. Gen BRCA2 zlokalizowany jest na: 
-
    * chromosomie: `13` 
    * sekwencji genomowej `NC_000013.11`
    * początek genu: `32 315 480`
@@ -297,8 +296,6 @@ W wynikach otrzymano jeden gen HFE człowieka.
 <br/><br/>
 
 ### Zad. 6 - Wyświetlanie SNP danego genu
-Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=rnWZ9MFBwUM).
-
 Skonstruuj poniższe zapytanie do bazy `Gene` serwisu NCBI:
 
 ```
@@ -313,7 +310,7 @@ W wynikach otrzymano gen BRCA1 (Gene ID: [672](https://www.ncbi.nlm.nih.gov/gene
 2. Widok mapy przedstawiający graficznie wyszukany region genomu oraz związane z nim znane warianty genetyczne.
 3. Tabela zawierająca listę wariantów znajdujących się w obrębie mapy wyświetlonanego regionu.
 
-W celu znalezienia na egzonie 10 SNP związanego z chorobotwórczością:
+W celu znalezienia na egzonie 10 polimorfizmu SNP związanego z chorobotwórczością:
 
 * Usuń z widoku mapy *track* związany z obszernymi zmiennościami genetycznymi (`dbVar ClinVar Large Variation`).
 * W lewym panelu, w części `Filter by` wybierz `Source data` > `dbSNP`. Zmiana ta spowoduje odświeżenie widoku mapy oraz tabeli i ograniczenie wariantów genetycznych do SNP.
@@ -333,7 +330,7 @@ Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](htt
 
 
 ### Zad. 7 - Zasoby sekwencji pojedynczego gatunku
-Zadanie na podstawie [NCBI YouTube Tutorials](https://www.youtube.com/watch?v=sK3ykyInU8o).
+Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov).
 
 * Wybierz bazę `Taxonomy` i w oknie wyszukiwania wpisz `mouse`.
 * Z listy wyników wybierz *Mus musculus*.
