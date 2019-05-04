@@ -2,21 +2,21 @@
 
 ### Zad. 1 - Proste wyszukiwanie insuliny człowieka
 1. W wyniku wpisania frazy `human insulin` znaleziono:
-   * `1525` rekordów sekwencji z bazy **SwissProt**
-     - *Reviewed*, sekwencje wysokiej jakości o potwierdzonym występowaniu i funkcji 
-   * `3048` rekordów sekwencji z bazy **trEMBL**
-     - *Unreviewed*, sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji.
+   * **1525** rekordów sekwencji z bazy `SwissProt`
+     - *Reviewed*: sekwencje wysokiej jakości o potwierdzonym występowaniu i funkcji 
+   * **3048** rekordów sekwencji z bazy `trEMBL`
+     - *Unreviewed*: sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji.
 2. Szukane białko (`INS_HUMAN Insulin INS Homo sapiens (Human)`) jest na czwartym miejscu na liście białek.
    * Na liście rekordów znajdują się również białka pochodzące z innych organizmów nie będące insuliną.
-3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do `199` rekordów człowieka, których nazwa zawiera wyraz `insulin`. 
+3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do **199** rekordów człowieka, których nazwa zawiera wyraz `insulin`. 
    * Zapytanie użyte do przeszukania bazy znajduje się w oknie wyszukiwania:
       ```
       organism:human name:insulin
       ```
    * Insulina człowieka znajduje się teraz na 7 miejscu listy białek.
-4. Dodanie do zapytania frazy `NOT name:protein-like` ograniczyło wyniki do `197` białek.
-   * Insulina człowieka znajduje się na 7 miejscu na liście znalezionych białek.
-5. Zapytanie `organism:human name:insulin NOT name:insulin-like NOT name:receptor` ograniczyło liczbę wyników do 47 białek. 
+4. Dodanie do zapytania frazy `NOT name:protein-like` ograniczyło wyniki do **197** białek.
+   * Insulina człowieka znajduje się nadal na 7 miejscu na liście znalezionych białek.
+5. Zapytanie `organism:human name:insulin NOT name:insulin-like NOT name:receptor` ograniczyło liczbę wyników do **47** białek. 
    * Insulina człowieka znajduje się teraz na pierwszym miejscu listy wyników.
 <br/><br/>
 
