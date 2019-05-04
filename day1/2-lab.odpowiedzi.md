@@ -1,10 +1,11 @@
 ## UniProt
-Zadania na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Exercise:_The_protein_database_UniProt).
 
 ### Zad. 1 - Proste wyszukiwanie insuliny człowieka
 1. W wyniku wpisania frazy `human insulin` znaleziono:
-   * `1525` rekordów sekwencji z bazy **SwissProt** (*Reviewed*, sekwencje wysokiej jakości o potwierdzonej funkcji) 
-   * `3048` rekordów sekwencji z bazy **trEMBL** (*Unreviewed*, sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji).
+   * `1525` rekordów sekwencji z bazy **SwissProt**
+     - *Reviewed*, sekwencje wysokiej jakości o potwierdzonym występowaniu i funkcji 
+   * `3048` rekordów sekwencji z bazy **trEMBL**
+     - *Unreviewed*, sekwencje niskiej jakości o niepotwierdzonym występowaniu i funkcji.
 2. Szukane białko (`INS_HUMAN Insulin INS Homo sapiens (Human)`) jest na czwartym miejscu na liście białek.
    * Na liście rekordów znajdują się również białka pochodzące z innych organizmów nie będące insuliną.
 3. Wybranie z panelu filtrów organizmu i nazwy białka spowodowało ograniczenie wyników do `199` rekordów człowieka, których nazwa zawiera wyraz `insulin`. 
