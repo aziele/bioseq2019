@@ -1,7 +1,6 @@
 ### Zad. 1 - Wyszukiwanie rekordu sekwencji po numerze dostępu
-Zadanie na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExGenbank-new#Searching_for_a_specific_ID).
 
-Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostepu genu znaleziono w publikacji). W tym celu, otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową bazę danych (`Nucleotide`) i w oknie wyszukiwania wpisz numer dostępu `AB001981`.
+Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostepu genu znaleziono w publikacji). W tym celu, otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov), z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide` i w oknie wyszukiwania wpisz numer dostępu `AB001981`.
 > Rekord sekwencji w formacie *GenBank*: [AB001981](https://www.ncbi.nlm.nih.gov/nuccore/AB001981.1/).
 
 1. Rekord `AB001981` dotyczy fragmentu sekwencji genomowego DNA o długość `5891` nukleotydów.
@@ -40,9 +39,9 @@ Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostep
         ...     
    ```
 
-   Oba geny składają się z 3 egzonów. Naciśnięcie przycisku myszy na dowolny element w części `FEATURES` (np.: `gene`, `exon`, `CDS`) spowoduje podświetlenie w sekwencji genomowej fragmentu, który odpowiada danemu elementowi. Na przykład, naciśnięcie na `gene` podświetli sekwencje trzech egzonów tego genu na sekwencji genomowej.
+   Oba geny składają się z 3 egzonów. Naciśnięcie przycisku myszy na dowolny element w części `FEATURES` (np.: `gene`, `exon`, `CDS`) spowoduje podświetlenie sekwencji tego elementu w sekwencji rekordu (w genomowej sekwencji `AB001981`). Na przykład, naciśnięcie na `gene` podświetli sekwencje odpowiadającą wszystkim elementom tego genu (w tym przypadku, trzy egzony).
 
-   <img src="./images/ncbi-genbank-features.png" alt="ncbi-genbank-features" width="400px"> 
+   <img src="./images/ncbi-genbank-features.png" alt="ncbi-genbank-features" width="500px"> 
 
 4. Linie części `FEATURES` rozpoczynające się od słowa `CDS` oznaczają lokalizację trzech sekwencji kodujących białko (*CDS, Coding sequence*) na sekwencji genomowej. 
 
@@ -92,16 +91,16 @@ Bardzo często szukamy sekwencji o konkretnym numerze dostępu (np. numer dostep
 
 #### Zapis rekordu do pliku tekstowego
 Zapis rekordu w formacie *GenBank* do pliku: `Send to` > `Complete Record` > `File` > `Create File`. 
-> Pobrany plik domyślnie ma nadaną nazwę `sequences.db`. Dobrą praktyką jest zmiana nazwy pobranego pliku na nazwę zawierającą numer dostępu pobranej sekwencji (np. `AB001981.gb`). Przydaje się to w sytuacjach, gdy mamy wiele innych plików z sekwencjami. Wyświetlenie pobranego rekordu umożliwia dowolny edytor tekstowy - najlepiej inny niż Notatnik (np. [Notepad++](https://notepad-plus-plus.org) lub Word).
+> Domyślna nazwa pobranego pliku to `sequences.db`. Dobrą praktyką jest zmiana nazwy pobranego pliku na nazwę zawierającą numer dostępu pobranej sekwencji (np. `AB001981.gb`). Przydaje się to w sytuacjach, gdy mamy wiele innych plików z sekwencjami. Wyświetlenie pobranego rekordu umożliwia dowolny edytor tekstowy - najlepiej inny niż Notatnik (np. [Notepad++](https://notepad-plus-plus.org) lub Word).
 
 #### Graficzna prezentacja rekordu
 Aby wyświetlić rekord `AB001981` w formie graficznej naciśnij link `Graphics`. Graficzna prezentacja rekordu przedstawia ułożenie dwóch genów (*alpha-D globin* i *alpha-A globin*) na sekwencji genomowej. Widok graficzny jest interaktywny - można go przybliżać/oddalać, zaznaczać pozycje w sekwencji, itd. Na przykład, skierowania kursora myszy na egzon (czarny prostokąt) wskaże jego pozycję w sekwencji genomowej oraz odpowiadającą mu pozycję w sekwencji białkowej, a także sekwencję aminokwasową kodowaną przez wskazany egzon.
 
 <img src="./images/AB001981-graphics.png" alt="AB001981-graphics.png">
-<br/><br/>
+<br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
-Bardzo często potrzeba pobrać wiele rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępu podane w tabeli w publikacji. W tym celu, NCBI udostępnia funkcję `Batch entrez`.
+Bardzo często istnieje potrzeba pobrania wielu rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępu podane w tabeli w publikacji. W tym celu, NCBI udostępnia funkcję `Batch entrez`.
 
 * Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov).
 * Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
@@ -125,15 +124,15 @@ Arabidopsis thaliana (1)
 
 Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > `Complete Record` > `File` > `Format`: `FASTA` i naciśnij `Create File`.
 
-<img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png" width="500px">
-<br/><br/>
+<img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png" width="600px">
+<br/>
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
-Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
+Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
 
 #### Proste wyszukiwanie
 
-1. W polu wyszukiwania wpisz wyraz `insulin` i naciśnij przycisk `Search`. Wyświetlonych zostanie `202 073` rekordów sekwencji. Na liście wyników są różne typy sekwencji (np.: pełnej długości sekwencje genomowe, sekwencje EST, sekwencje mRNA). Niektóre z tych rekordów sekwencji nie zawierają nawet słowa `insulin` w swoich opisach (liniach definicji). Domyślnie, NCBI przeszukuje wszystkie pola rekordów (np. pola w częśći `FEATURES`, `REFERENCES` itd.). Dlatego, jeżeli wyraz `insulin` występuje w którymkolwiek polu w rekordzie, NCBI przedstawi taki rekord na liście wyników.
+1. W polu wyszukiwania wpisz wyraz `insulin` i naciśnij przycisk `Search`. Wyświetlonych zostanie **202 073** rekordów sekwencji. Na liście wyników są różne typy sekwencji (np.: pełnej długości sekwencje genomowe, sekwencje EST, sekwencje mRNA). Niektóre z tych rekordów sekwencji nie zawierają nawet słowa `insulin` w swoich opisach (liniach definicji). Domyślnie, NCBI przeszukuje wszystkie pola rekordów (np. pola w częśći `FEATURES`, `REFERENCES` itd.). Dlatego, jeżeli wyraz `insulin` występuje w którymkolwiek polu w rekordzie, NCBI przedstawi taki rekord na liście wyników.
 
    *Search details:*
 
@@ -141,7 +140,7 @@ Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej
    insulin[All Fields]
    ```
 
-2. Panele po lewej i prawej stronie umożliwiają zawężanie (*filtrowanie*) listy wyników według różnych kryteriów. Na przykład, naciśnięcie `Results by taxon` > `Homo sapiens` powoduje zawężenie listy wyników do rekordów sekwencji pochodzących z organizmu człowieka. W wyniku tego zawężenia otrzymano `11 106` rekordów sekwencji.
+2. Panele po lewej i prawej stronie umożliwiają zawężanie (*filtrowanie*) listy wyników według różnych kryteriów. Na przykład, naciśnięcie `Results by taxon` > `Homo sapiens` powoduje zawężenie listy wyników do rekordów sekwencji pochodzących z organizmu człowieka. W wyniku tego zawężenia otrzymano **11 106** rekordów sekwencji.
 
    *Search details:*
 
@@ -149,7 +148,7 @@ Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov). Z panelu po prawej
    insulin[All Fields] AND "Homo sapiens"[porgn]
    ```
 
-3. Naciśnięcie linku `Molecule type` > `mRNA` w panelu po prawej stronie spowoduje dalsze zawężenie listy wyników do `6 383` rekordów.
+3. Naciśnięcie linku `Molecule type` > `mRNA` w panelu po prawej stronie spowoduje dalsze zawężenie listy wyników do **6 383** rekordów.
 
    *Search details:*
 
@@ -197,10 +196,11 @@ W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających 
 
 6. Ponownie otwórz tryb zaawansowanego wyszukiwania. Skorzystaj z `History`, aby przywrócić poprzednie zapytanie do bazy danych. Następnie dodaj kolejne trzy pola `Title` połączone operatorem logicznym `NOT` i wpisz w nich `insulin-like`, `partial` i `part`.
 
-   *Search details*
+   *Search details:*
 
    ```
-   insulin[Title] AND "Homo sapiens"[Organism] AND "mrna"[Filter] NOT insulin-like[Title] NOT partial[Title] NOT part[Title]
+   insulin[Title] AND "Homo sapiens"[Organism] AND "mrna"[Filter]
+   NOT insulin-like[Title] NOT partial[Title] NOT part[Title]
    ```
 
    W wyniku otrzymano **3 888** serkwencji mRNA insuliny człowieka, które nie są fragmentami sekwencji oraz nie są "insulinopodobne".
