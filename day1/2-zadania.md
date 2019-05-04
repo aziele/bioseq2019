@@ -35,7 +35,7 @@ Sprawdź, czy w bazie UniProt znajdują się doświadczalnie potwierdzone białk
 3. Ile z tych białek pochodzi z człowieka?
 
 Zapisz otrzymane sekwencje w formacie FASTA.
-
+<br/><br/>
 
 ### Zad. 5 - Analiza wzbogacenia terminów GO genów *E. coli*
 W pliku [ecoli-genes.txt](./data/ecoli-genes.txt) znajduje się 218 genów, które ulegają różnicowej ekspresji w bakteriach *E.coli* wystawionych na działanie rtęci. Przeprowadź analizę wzbogacenia terminów GO tych genów wykorzystując serwis [AmiGO - Gene Ontology](http://amigo.geneontology.org/amigo).
