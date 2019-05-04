@@ -1,4 +1,27 @@
-### Zad. 1
+### Zad. 1 - Znajdź białko BRCA2 człowieka
+Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania i skonstruuj poniższe zapytanie:
+
+```
+gene:brca2 AND organism:"Homo sapiens (Human) [9606]"
+```
+
+<img src="./images/uniprot-brca2-search.png" alt="uniprot-brca2-search">
+
+W wyniku otrzymano **118** rekordów białek. Szukane białko ([BRCA2_HUMAN](https://www.uniprot.org/uniprot/P51587)) znajduje się na pierwszym miejscu listy wyników.
+
+1. Ponad `1600` artykułów odnosi się do białka BRCA2.
+   * `77` artykułów typu *UniProtKB/Swiss-Prot*
+   * `1 562` artykułów typu *Computationally mapped*
+
+   Artykuły dotyczą wielu aspektów białka BRCA2, takich jak: funkcja, ekspresja, mutageneza, modyfikacje posttrasnlacyjne, interakcje z innymi białkami. 
+2. Informacja na temat wpływu mutacji sekwencji białkowej BRCA2 zawarta jest w panelu `Pathology & Biotechi`. Mutacja `C` > `W` w pozycji `505` sekwencji aminokwasowej związana jest z rakiem trzustkim.
+
+   <img src="./images/uniprot-brca2-pancreas_cancer.png" alt="uniprot-brca2-pancreas_cancer">
+
+3. Informacja o powiązaniach białka BRCA2 z innymi bazami znajduje się w panelu `Cross-references`. W części `Sequence databases` znajduje się informacja o numerach dostępu odpowiadających temu białku w bazie RefSeq: [NP_000050.2﻿](https://www.ncbi.nlm.nih.gov/protein/NP_000050.2), [NM_000059.3](https://www.ncbi.nlm.nih.gov/nuccore/NM_000059.3).
+<br/><br/>
+
+### Zad. 2 - Znajdź wszystkie białka bakterii dwoinki rzeżączki
 Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania i skonstruuj poniższe zapytanie:
 
 ```
@@ -14,7 +37,7 @@ organism:"Neisseria gonorrhoeae [485]"
    * `23 441` rekordów należy do bazy *trEMBL* 
 <br/><br/>
 
-### Zad. 2
+### Zad. 3 - Czy w bazie UniProt znajdują się białka dinozaura?
 Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania i skonstruuj poniższe zapytanie:
 
 ```
@@ -54,7 +77,7 @@ organism:"Tyrannosaurus rex (Tyrant lizard king) [436495]"
    ```
 <br/>
 
-### Zad. 3
+### Zad. 4 - Znajdź najkrótsze sekwencje białkowe człowieka
 Otwórz stronę serwisu [UniProt](https://www.uniprot.org). Użyj zaawansowanego wyszukiwania i skonstruuj poniższe zapytanie: 
 
 ```

@@ -116,6 +116,8 @@ W formularzu:
    ```
 <br/><br/>
 
+Ponownie skorzystaj z narzędzie `Retrieve/ID Mapping` podając identyfikatory UniProt. Tym razem, w formularzu ustaw `from` na `UniProtKB AC/ID` a opcję `to` na `EMBL/GenBank/DDBJ`. W wyniku, otrzymasz identyfikatory tych sekwencji w bazie GenBank dla wszystkich 5 numerów dostępu *UniProt*.
+
 ## Ontologia genów (Gene Ontology)
 
 Na GO składają się trzy ontologie:
