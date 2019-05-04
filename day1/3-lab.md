@@ -174,10 +174,10 @@ W nowej karcie przeglądarki skorzystaj z programu *Water* w celu przyrównania 
 
 #### Interpretacja wyników
 
-Odszukaj w serwisie UniProt rekordy analizowanych dwóch sekwencji.
+Odszukaj w serwisie [UniProt](https://www.uniprot.org) rekordy analizowanych sekwencji proteaz.
 
-6. W jaki sposób otrzymano te dwa rekordy?
-7. Podaj subkomórkową lokalizację obu białek.
+6. W jaki sposób otrzymano te dwie sekwencje?
+7. Podaj komórkową lokalizację obu białek.
 8. Czy oba białka różnią się pod względem post-translacyjnych modyfikacji (`PTM / Processing`)?
 9. Czy białko (`P41363`) może posłużyć jako enzym stosowany w proszkach do prania?
 <br/><br/>
@@ -226,11 +226,11 @@ W trzech kartach przeglądarki internetowej porównaj powyższą sekwencję czł
 * Otwórz program [ShuffleProtein](http://www.bioinformatics.org/sms2/shuffle_protein.html).
 * Umieść w oknie tekstowym sekwencję tripeptydylo-peptydazę człowieka. 
 * Wygeneruj losową sekwencję. 
-* Przyrównaj wygenerowaną sekwencję z sekwencją *Savinase* korzystając z programu *Water*.
+* Przyrównaj otrzymaną losową sekwencję z sekwencją *Savinase* korzystając z programu *Water*.
 * Powtórz powyższą procedurę dwukrotnie.
 
 3. Jaki zakres wartości punktacji, identyczności i podobieństwa przyjmują te trzy przyrównania?
-4. Porównując te przyrównania z oryginalnym przyrównaniem - czy oba białka są spokrewnione?
+4. Porównując te przyrównania z oryginalnym przyrównaniem czy można odpowiedzieć na pytanie, czy oba białka są spokrewnione?
 <br/><br/>
 
 ## Wpływ parametrów na przyrównanie sekwencji
@@ -245,14 +245,14 @@ Używając programu *Water* przyrównaj sekwencję *Savinase* z sekwencją tripe
 <br/><br/>
 
 ### Zad. 7 - Macierze substytucji
-Używając programu Water wykonaj dwa przyrównania sekwencji *Savinase* z sekwencją tripeptydylo-peptydazę człowieka, stosując macierz substytucji `BLOSUM30` i `BLOSUM90`.
+Używając programu *Water* wykonaj trzy przyrównania sekwencji *Savinase* z sekwencją tripeptydylo-peptydazę człowieka, stosując macierz substytucji `BLOSUM30`, `BLOSUM62` i `BLOSUM90`.
 
 Jak zmienia się długość przyrównania i procent identyczności w zależności od macierzy BLOSUM?
 <br/><br/>
 
 ## Porównane sekwencji: wykres Dot Plot
 
-### Zad. 8
+### Zad. 8 - Interpretacja wykresów dot plot
 W pliku [dotplot.fasta](./day1/data/dotplot.fasta) znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
 > W polu `Matrix file` wpisz nazwę macierzy `EDNASIMPLE` (`+1` dla par nukleotdów zgodnych, `0` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`.
 
