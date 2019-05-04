@@ -35,6 +35,15 @@ organism:"Neisseria gonorrhoeae [485]"
 2. W wyniku uwzględnienia wszystkich niższych jednostek taksonomicznych (podgatunków) *N. gonorrhoeae* otrzymano **24 248** białek:
    * `807` rekordów należy do bazy *SwissProt*
    * `23 441` rekordów należy do bazy *trEMBL* 
+
+W celu wyszukania rekordów białek z wszystkich niższych jednostek taksonomicznych należy używać pola `taxonomy`:
+
+```
+taxonomy:"Neisseria gonorrhoeae [485]".
+```
+
+W wyniku otrzymano **24 248** rekordów białek.
+
 <br/><br/>
 
 ### Zad. 3 - Czy w bazie UniProt znajdują się białka dinozaura?
