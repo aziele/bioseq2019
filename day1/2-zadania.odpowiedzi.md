@@ -126,7 +126,7 @@ TKPR
 ### Zad. 5 - Analiza wzbogacenia terminów GO genów E. coli
 Otwórz stronę serwisu [AmiGO - Gene Ontology](http://amigo.geneontology.org/amigo). W panelu `Term Enrichment Service` umieść listę genów, wybierz organizm referencyjny: *Escherichia coli* i przeprowadź analizę (przycisk `Submit`).
 
-   <img src="./images/amigo-ecoli-bp.png" alt="amigo-ecoli-bp" width="700px">
+   <img src="./images/amigo-ecoli-bp.png" alt="amigo-ecoli-bp" width="600px">
 
 1. Terminy GO istotnie nadreprezentowane w zadanym zestawie związane są z tworzeniem centr matalo-siarkowych enzymów (`metallo-sulfur cluster assembly`). Nadrepreztowany termin GO dotyczący tworzenia centrum żelazo-siarkowego (`iron-sulfur cluster assembly`) jest składowym tego procesu i występuje w `9` spośród `218` genów w zestawie zapytania (termin ten występuje w `18` genach spośród `4313` w zestawie referencyjnym). Wartość *p* otrzymania tego terminu wynosi `2.11E-03`.
 
@@ -134,4 +134,4 @@ Otwórz stronę serwisu [AmiGO - Gene Ontology](http://amigo.geneontology.org/am
 
 2. Tylko jeden termin GO (`binding`) jest istotnie nadreprezentowany w ontologii związanej z funkcją molekularną. Termin ten odnosi się do specyficznego, niekonwalencyjnego wiązania między cząsteczkami i jest na tyle ogólne, że nie dostarcza interesujących informacji.
 
-   <img src="./images/amigo-ecoli-mf.png" alt="amigo-ecoli-mf" width="700px"> 
+   <img src="./images/amigo-ecoli-mf.png" alt="amigo-ecoli-mf" width="600px"> 
