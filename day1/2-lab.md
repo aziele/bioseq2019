@@ -34,7 +34,7 @@ Przejdź do rekordu sekwencji insuliny człowieka o numerze dostępu (`P01308`).
 <br/><br/>
 
 ### Zad. 3 - Zaawansowane wyszukiwanie: peptydy sygnałowe
-Korzystając z zaawansowanego wyszukiwania znajdź wszystkie białka w bazie UniProt posiadające peptydy sygnałowe.
+Korzystając z zaawansowanego wyszukiwania znajdź wszystkie białka w [serwisie UniProt](https://www.uniprot.org) posiadające peptydy sygnałowe.
 
 1. Ile białek znaleziono?
    * Podaj zapytanie do bazy danych.

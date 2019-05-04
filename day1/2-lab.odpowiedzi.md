@@ -42,16 +42,16 @@ Numer dostępu rekordu insuliny człowieka: [P01308](https://www.uniprot.org/uni
 
    Oba peptydy sygnałowe zostają usunięte z białka insuliny zanim białko zostanie wydzielone poza komórkę. Sekwencja dojrzałego białka insuliny (łańcuchy *A* i *B*) jest więc krótsza niż sekwencja wyświetlona w panelu `Sequences` (*The displayed sequence is further processed into a mature form.*)
 
-4. Panel rekordu `Sequence`, w części `Natural variant` zawiera tabelę z mutacjami/polimorfizmami w sekwencji insuliny, które zostały opisane w literaturze. 
+4. Panel rekordu `Sequence`, w części `Natural variant` zawiera opisane w literaturze mutacje/polimorfizmy w sekwencji insuliny.
 
    <img src="./images/uniprot-insulin-natural_variant.png" alt="uniprot-insulin-natural_variant">
 
-   W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu w sekwenci. Jeżeli mutacja związana jest z chorobą, jednostka chorobowa oznaczona jest skrótem (np. `R → C in IDDM2`). Panel `Under Pathol./Biotech` dostarcza z kolei informacji na temat choroby rozwijając jej skrócony opis (np. `IDDM2` to skrót od Cukrzycy typu 2).
+   W kolumnie `Description` zawarta jest informacja na temat zmiany aminokwasu w sekwencji. Jeżeli mutacja związana jest z chorobą, jednostka chorobowa oznaczona jest skrótem (np. `R → C in IDDM2`). Panel `Under Pathol./Biotech` dostarcza z kolei informacji na temat jednostki chorobowej rozwijając jej skrócony opis (np. `IDDM2` to skrót od cukrzycy typu 2).
 
-5. Na dole rekordu insuliny, w panelu `Cross-references` znajdują się odnośniki do stron innych baz danych. W części `Sequence databases` w tym panelu znajduje się numer dostępu sekwencji białkowej i mRNA insuliny w bazie RefSeq (`NP_000198.1﻿` i `NM_000207.2`).
+5. Na dole rekordu insuliny, w panelu `Cross-references` znajdują się odnośniki dotyczące insuliny w innych bazach danych. W części `Sequence databases` tego panelu znajduje się numer dostępu sekwencji białkowej i mRNA insuliny w bazie RefSeq (`NP_000198.1﻿` i `NM_000207.2`).
 
-   <img src="./images/uniprot-insulin-cross_references.png" alt="uniprot-insulin-cross_references" width="500px">
-<br/><br/>
+   <img src="./images/uniprot-insulin-cross_references.png" alt="uniprot-insulin-cross_references" width="600px">
+<br/>
 
 
 ### Zad. 3 - Zaawansowane wyszukiwanie: peptydy sygnałowe
@@ -72,7 +72,7 @@ Otwórz stronę [serwisu UniProt](https://www.uniprot.org/). Otwórz tryb zaawan
    annotation:(type:signal evidence:experimental)
    ```
 
-   W wyniku otrzymano `3 650` białek z bazy *SwissProt* (takich białek nie ma w bazie `trEMBL`).
+   W wyniku otrzymano **3 650** białek z bazy *SwissProt* (takich białek nie ma w bazie `trEMBL`).
 
 3. Aby wyszukać białka człowieka zawierające peptydy sygnałowe o doświadczalnie potwierdzonej funkcji, skonstruuj poniższe zapytanie:
 
@@ -80,9 +80,9 @@ Otwórz stronę [serwisu UniProt](https://www.uniprot.org/). Otwórz tryb zaawan
    annotation:(type:signal evidence:experimental) AND organism:"Homo sapiens (Human) [9606]"
    ```
 
-   W wyniku otrzymano `723` białek człowieka.
+   W wyniku otrzymano **723** białek człowieka.
 
-   W powyższym zapytaniu warto zwrócić uwagę na identyfikator taksonomiczny (*taxId*) z bazy NCBI. Jeżeli zapytanie posiadałoby jedynie frazę `human` bez identifkatora *taxId*, w wyniku mogłyby również znaleźć się białka pochodzące na przykład z *Human immunodeficiency virus*.
+   W powyższym zapytaniu warto zwrócić uwagę na identyfikator taksonomiczny (`taxId`) z taksonomicznej bazy NCBI. Jeżeli zapytanie posiadałoby jedynie frazę `human` bez identifkatora `taxId`, w wyniku mogłyby również znaleźć się białka pochodzące na przykład z wirusa HIV (*Human immunodeficiency virus*).
 <br/><br/>
 
 
