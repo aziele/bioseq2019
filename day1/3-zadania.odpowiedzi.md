@@ -1,7 +1,7 @@
-### Zad. 1
-Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Znajdź dwa białka o numerach dostępu: [GLBE_CHITH](https://www.uniprot.org/uniprot/P11582) i [GLB7A_CHITH](https://www.uniprot.org/uniprot/P02226). Wyświetl obie sekwencje w formacie FASTA (`Format` > `FASTA`). Użyj obu sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) i przeprowadź pryrównanie korzystając z domyślnych ustawień programu.
+### Zad. 1 - Przyrównanie semi-globalne dwóch sekwencji aminokwasowych
+Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Znajdź dwa białka o numerach dostępu: [GLBE_CHITH](https://www.uniprot.org/uniprot/P11582) i [GLB7A_CHITH](https://www.uniprot.org/uniprot/P02226). Wyświetl obie sekwencje w formacie FASTA (`Format` > `FASTA`). Użyj obu sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) i przeprowadź ich przyrównanie korzystając z domyślnych ustawień programu.
 
-1. Wartość punktacji (`score`): 361
+1. Wartość punktacji (`score`): `361` bitów
 2. Procent identyczności: `48.4%`
 3. Procent podobieństwa: `63.4%`
 4. Nadłuższ sekwencja typu indel: `ALIGNE`.
@@ -60,3 +60,13 @@ GLB7A_CHITH      151 DNIFGLLFAAL    161
                      |..||.:||.:
 GLBE_CHITH       142 DAFFGAVFAKM    152
 ```
+
+<br/>
+
+### Zad. 2 - Dot plot: identyfikacja egzonów
+Otwórz serwis [dotmatcher](http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher). Umieść sekwencję genomową i sekwencję mRNA w dwóch polach tekstowych znajdujących się w części `Input section`.
+
+#### Ustawienia programu dotmatcher
+W celu zidentyfikowania na wykresie dot plot najkrótszego egzonu (`72` pz) oraz wszystkich dłuższych egzonów ustaw wielkość okna (`window size`) na `72`. Ponieważ zgodność nukleotydów sekwencji genomowej i mRNA jest całkowita ustaw wartość graniczną na `72`. Przy wartościach parametrów (`window size`: `72` i `threshold`: `72`) program *dotmatcher* będzie identyfikował identyczne fragmenty między porównywanymi sekwencjami o długości  
+
+
