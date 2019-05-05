@@ -241,6 +241,7 @@ seq2             951 GVTLAGHQKKILASVQHMKSQAKPGTPGGTGGPAPQY    987
 2. Na stronie rekordu domeny RRM wybierz zakładkę `Species`. U bakterii jest `14 582` białek zawierających domenę RRM.
 <br/><br/>
 
+
 ### Zad. 8 - UniProt: wszystkie białka zawierające domenę RRM
 Wejdź na stronę serwisu [UniProt](https://www.uniprot.org/). Skorzystaj z zaawansowanego wyszukiwania.
 
@@ -254,6 +255,7 @@ Wejdź na stronę serwisu [UniProt](https://www.uniprot.org/). Skorzystaj z zaaw
 
 2. W wyniku powyższego zapytania otrzymano `14 582` białek.
 <br/><br/>
+
 
 ### Zad. 9 - MEME: Motif Discovery
 

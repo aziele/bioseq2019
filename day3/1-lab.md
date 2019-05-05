@@ -1,6 +1,6 @@
 ## Motywy i domeny białkowe
 
-### Zad. 1 - Serwis Pfam
+### Zad. 1 - Serwis Pfam (modele HMM)
 Wykorzystaj serwis [Pfam](https://pfam.xfam.org) i zidentyfikuj domeny białkowe obecne w poniższej sekwencji: 
 
 ```
@@ -65,7 +65,8 @@ Przejdź do zakładki `Domain organization`.
 13. Podaj najczęściej występujący układ domen w białkach, w którym występuje domena `Dicer_domain`.
 <br/><br/>
 
-### Zad. 2 - Serwis PROSITE
+
+### Zad. 2 - Serwis PROSITE (wzorce i profile sekwencyjne)
 Użyj sekwencji z poprzedniego zadania w serwisie [PROSITE](https://prosite.expasy.org/prosite.html).
 
 1. Podaj nazwę domeny, której nie zidentyfikowano wcześniej w seriwsie Pfam.
@@ -84,7 +85,8 @@ Wejdź w rekord domeny Dicer w bazie PROSITE.
    * Czy domena występuje u organizmów prokariotycznych?
 <br/><br/>
 
-### Zad. 3 - Metaserwis InterPro
+
+### Zad. 3 - Metaserwis InterPro (integracja wyników)
 Użyj sekwencji z zad. 1 i serwisu [InterPro](http://www.ebi.ac.uk/interpro/) w celu identyfikacji domen białkowych.
 
 1. Ile domen białkowych zidentyfikowano?
@@ -148,6 +150,7 @@ Wejdź do rekordu domeny kinazowej `IPR000719`.
 7. Podaj nazwę nadrodziny, w skład której wchodzi domena kinazowa.
 <br/><br/>
 
+
 ### Zad. 6 - InterPro: mutacja w obrębie domeny
 Poniżej znajduje się sekwencja białkowa `seq2` odpowiadająca sekwencji `seq1` z poprzedniego zadania, lecz pochodzi od pacjenta chorującego na pewne schorzenie.
 
@@ -181,6 +184,7 @@ Przeanalizuj białko pacjenta przy użyciu serwisu InterPro i porównaj z wynika
 2. W obrębie, której domeny doszło do mutacji u pacjenta?
 <br/><br/>
 
+
 ### Zad. 7 - InterPro: wszystkie białka zawierające domenę RRM
 Otwórz stronę serwisu [InterProt](https://www.ebi.ac.uk/interpro/). W polu szybkiego wyszukiwania po prawej stronie wyszukaj domenę RRM (*RNA recognition motif domain*).
 
@@ -188,12 +192,14 @@ Otwórz stronę serwisu [InterProt](https://www.ebi.ac.uk/interpro/). W polu szy
 2. Podaj liczbę białek zawierających domenę RRM u bakterii.
 <br/><br/>
 
+
 ### Zad. 8 - UniProt: wszystkie białka zawierające domenę RRM
 W bazie UniProt wyszukaj wszystkie białka zawierające domenę RRM u bakterii. 
 
 1. Podaj użyte zapytanie do bazy UniProt.
 2. Ile białek otrzymano?
 <br/><br/>
+
 
 ## MEME - Identyfikacja nowych motywów/domen białkowych
 
