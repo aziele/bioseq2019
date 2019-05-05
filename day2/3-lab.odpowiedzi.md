@@ -95,7 +95,7 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
 4. Identyczność pary sekwencji `sp|P33296|UBC6_YEAST` i `sp|Q29503|UB2R2_RABIT` wynosi `23.83%`.
    > Wybierz `Result Summary` –> `Percent Identity Matrix`.
 
-<img src="./images/clustal_ube_identity.png" alt="clustal_ube_identity">
+   <img src="./images/clustal_ube_identity.png" alt="clustal_ube_identity">
 
 #### Funkcjonalne regiony sekwencji
 
@@ -205,8 +205,6 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
 <br/><br/>
 
 ### Zad. 2 - Przyrównanie sekwencji CDS alfa-globin (MAFFT)
-Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Bioinformatics_in_practice,_Faroe_Islands_2018#Morning:_Multiple_alignments)
-
 Przyrównanie sekwencji kodujących (*CDS*) alfa-globiny przy użyciu programu MAFFT.
 
 ```
@@ -310,10 +308,10 @@ Horse_alpha-2_g TACCGTTAA
                 *** * *..
 ```
 
-1. W powyższym przyrównaniu jest jeden fragment >10 nukleotydów (23 nt) całkowicie zachowany we wszystkich sekwencjach. Sekwencja fragmentu to `ACCAAGACCTACTTCCCCCACTT`.
+1. W powyższym przyrównaniu jest jeden fragment długości powyżej 10 nukleotydów (`23` nt) całkowicie zachowany we wszystkich sekwencjach. Sekwencja tego fragmentu to `ACCAAGACCTACTTCCCCCACTT`.
 
    Zakładka `Guide Tree` dostaracza graficznej informacji na temat dystansów między parami sekwencji.
-   > `Guide Tree` (drzewo przewodnie) *nie jest* prawdziwym drzewem filogenetycznym. Drzewo przewodnie jest wyznaczone na podstawie przyrównań par sekwencji, na podstawie których wyznacza się następnie odległość ewolucyjną między sekwencjami. Najprostszym sposobem wyznaczenia takiej odległości jest pominięcie pozycji dopasowania, na których występują przerwy i obliczenia odsetka pozycji, na których występują różne reszty. Natomiast drzewo filenetyczne jest budowane w oparciu o przyrównanie wielu sekwencji.
+   > `Guide Tree` (drzewo przewodnie) **nie jest** prawdziwym drzewem filogenetycznym. Drzewo przewodnie jest wyznaczone na podstawie przyrównań par sekwencji, na podstawie których wyznacza się następnie odległość ewolucyjną między sekwencjami. Najprostszym sposobem wyznaczenia takiej odległości jest pominięcie pozycji dopasowania, na których występują przerwy i obliczenia odsetka pozycji, na których występują różne reszty. Natomiast drzewo filenetyczne jest budowane w oparciu o przyrównanie wielu sekwencji.
 
    <img src="./images/mafft-guide-tree.png" alt="mafft-guide-tree">
 
@@ -434,7 +432,7 @@ Horse_alpha-2_g AVHASLDKFLSSVSTVLTSKYR*
                   **::***:. * :**: *** 
 ```
 
-1. W przyrównaniu są dwa fragmenty sekwencji o nieprzerwanej identyczności dłuższe niż 5 reszt aminokwaswych.
+1. W przyrównaniu są dwa fragmenty sekwencji o nieprzerwanej identyczności dłuższe niż `5` reszt aminokwaswych.
    * 11-aminokwasowa sekwencja `TKTYFPHFDL` bliżej N-końca białka. 
      - Fragment ten odpowiada sekwencji *CDS* w pozycji `118-140`. 
    * 9-aminokwasowa sekwencja `LRVDPVNFK` bliżej C-końca białka
@@ -447,18 +445,16 @@ Horse_alpha-2_g AVHASLDKFLSSVSTVLTSKYR*
    * delecja pojedynczego aminokwasu `V` w 2-giej pozycji przyrównania.
    * delecja pojedynczego aminokwasu `E`/`G` w 23-ciej pozycji przyrównania.
 
-3. Nie, przyrównanie sekwencji *CDS* nie odpowiada w pełni przyrównaniu sekwencji białkowych. W drugiej pozycji przyrównania białek występuje delecja aminokwasu. Zatem w przyrównaniu na poziomie DNA powinna być delecja odpowiadająca trzem nukleotydom, tuż za kodonem START. Natomiast w otrzymanym przyrównaniu sekwencji nukleotydowych wprowadzono przerwy za pierwszym nukleotydem. Przerwy powinny zostać wprowadzone za trzema pierwszymi nukleotydmi ATG.
+3. Nie, przyrównanie sekwencji *CDS* nie odpowiada w pełni przyrównaniu sekwencji białkowych. W drugiej pozycji przyrównania białek występuje delecja aminokwasu. Zatem w przyrównaniu na poziomie DNA powinna być delecja odpowiadająca trzem nukleotydom, tuż za kodonem *start*. Natomiast w otrzymanym przyrównaniu sekwencji nukleotydowych wprowadzono przerwy za pierwszym nukleotydem. Przerwy powinny zostać wprowadzone za trzema pierwszymi nukleotydmi ATG.
 
-```
-pigeon_alpha-D  A---TGCTGACCGACTCTG
-duck_alpha-D-gl A---TGCTGACCGCCGAGG
-Chicken_alpha-D A---TGCTGACTGCCGAGG
-pigeon_alpha-A  ATGGTGCTGTCTGCCAACG
-```
+   ```
+   pigeon_alpha-D  A---TGCTGACCGACTCTG
+   duck_alpha-D-gl A---TGCTGACCGCCGAGG
+   Chicken_alpha-D A---TGCTGACTGCCGAGG
+   pigeon_alpha-A  ATGGTGCTGTCTGCCAACG
+   ```
 
 ### Zad. 4 - Alternatywny splicing i izoformy białek
-Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Bioinformatics_in_practice,_Faroe_Islands_2018#Morning:_Multiple_alignments). 
-
 Przyrównanie izoform białkowych insuliny człowieka przy użyciu 3 programów: **MAFFT**, **Muscle** i **Kalign**.
 
 #### MAFFT
@@ -1058,7 +1054,11 @@ Mouse          ---------
 <br/><br/>
 
 ## Logo sekwencyjne
-Logo sekwencyjne stanowi wizualizację dopasowanych sekwencji zawierających określony motyw. Jeśli na określonej pozycji motywu występuje kilka reszt, to ich jednoliterowe symbole umieszczone są jeden nad drugim, a wysokość symbolu rośnie wraz ze wzrostem częstości jego występowania. Najwyższą pozycję na takim stosie zajmuje symbol reszty najczęściej występujący na określonej pozycji motywu. Całkowita wysokość symboli wyraża zawartość informacyjną na tej pozycji, wyrażoną w bitach.
+Logo sekwencyjne stanowi wizualizację dopasowanych sekwencji zawierających określony motyw. Jeśli na określonej pozycji motywu występuje kilka reszt, to ich jednoliterowe symbole umieszczone są jeden nad drugim, a wysokość symbolu rośnie wraz ze wzrostem częstości jego występowania. Najwyższą pozycję na takim stosie zajmuje symbol reszty najczęściej występujący na określonej pozycji motywu. Całkowita wysokość symboli wyraża zawartość informacyjną na tej pozycji, wyrażoną w bitach. 
+
+Maksmalna zawartość informacyjna wynosi:
+* dla sekwencji nukleotydowych `log2(4) = 2` bitów
+* dla sekwencji aminokwasowych `log2(20) = 4.32` bitów
 
 ### Zad. 6 - Miejsca donorowe egzonów
 Sekwencje donorowe egzonów genu człowieka.
@@ -1087,4 +1087,4 @@ Sekwencje donorowe egzonów genu człowieka.
 
 <img src="./images/logo-ecoli2.png" alt="logo-ecoli2">
 
-[Kaseta Pribnowa](https://pl.wikipedia.org/wiki/Kaseta_Pribnowa) jest sekwencją sześciu nukleotydów tyminy i adeniny w kolejności: 5'-TATAAT-3'. Sekwencja ta jest niezbędna część sekwencji promotorowej DNA transkrypcji u prokariontów.
+[Kaseta Pribnowa](https://pl.wikipedia.org/wiki/Kaseta_Pribnowa) jest sekwencją sześciu nukleotydów tyminy i adeniny w kolejności: 5'-TATAAT-3'. Sekwencja ta jest częścią sekwencji promotorowej DNA i jest niezbędna podczas transkrypcji u prokariontów.

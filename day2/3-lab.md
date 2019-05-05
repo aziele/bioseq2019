@@ -11,7 +11,7 @@ W pliku [ube.fasta](./data/ube.fasta) znajdują się sekwencje białkowe aktywne
 
 #### Funkcjonalnie istotne regiony sekwencji
 
-W bazie RefSeq istnieją dwa białka drożdży o numerach dostępu: `NP_588162` i `NP_011428`, które należą do tej samej rodziny białkowej, ale **nie posiadają** aktywności katalitycznej. Otwórz program ClustalOmega w nowej karcie przeglądarki i wykonaj przyrównanie sekwencji z pliku `ube.fasta` dodając do niego dwie sekwencje z drożdży.
+W bazie *RefSeq* istnieją dwa białka drożdży o numerach dostępu: `NP_588162` i `NP_011428`, które należą do tej samej rodziny białkowej, ale **nie posiadają** aktywności katalitycznej. Otwórz program *ClustalOmega* w nowej karcie przeglądarki i wykonaj przyrównanie sekwencji z pliku `ube.fasta` dodając do niego dwie sekwencje z drożdży.
 
 5. Jakie aminokwasy zostały zachowane w tym przyrównaniu?
 6. Porównaj wyniki obu przyrównań i podaj aminokwas kluczowy dla aktywności enzymu.
@@ -43,7 +43,7 @@ Wróć do zakładki `Alignments`. Naciśnij przycisk `View result with JalView`.
 <br/>
 
 ### Zad. 3 - Przyrównanie sekwencji białkowych alfa-globin (MAFFT)
-Skorzystaj z programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/) i dokonaj translacji sekwencji CDS alfa-globin na sekwencje aminokwasowe. Następnie dokonaj przyrównania otrzymanych sekwencji aminokwasowych za pomocą programu MAFFT.
+Skorzystaj z programu [EMBOSS Transeq](https://www.ebi.ac.uk/Tools/st/emboss_transeq/) i dokonaj translacji sekwencji CDS alfa-globin na sekwencje aminokwasowe. Następnie w nowej karcie przeglądarki internetowej dokonaj przyrównania otrzymanych sekwencji aminokwasowych za pomocą programu MAFFT.
 
 1. Ile fragmentów sekwencji o nieprzerwanej 100% identyczności (dłuższych niż 5 aminokwasów) znajduje się w przyrównaniu?
 
@@ -61,7 +61,7 @@ Wyświetl uzyskane przyrównanie w programie JalView.
 W pliku [EPB4.1_human.fasta](./data/EPB4.1_human.fasta) znajduje się 11 izoform białka człowieka 
 błony komórkowej erytrocytów (EPB, *human erythrocyte membrane protein band 4.1*).
 
-Przyrównaj sekwencje `EPB4.1_human.fasta` używając programów **MAFFT**, **MUSCLE** i **Kalign** dostępnych na stronie [EBI Multiple Sequence Alignment](https://www.ebi.ac.uk/Tools/msa/). Wykonaj przyrównania w osobnych kartach przeglądarki. Porównaj uzyskane przyrównania (możesz skorzystać z JalView).
+Przyrównaj sekwencje `EPB4.1_human.fasta` używając programów **MAFFT**, **MUSCLE** i **Kalign** dostępnych na stronie [EBI Multiple Sequence Alignment](https://www.ebi.ac.uk/Tools/msa/). Wykonaj przyrównania w osobnych kartach przeglądarki. Porównaj uzyskane przyrównania w programie JalView.
 
 1. Czy uzyskane przyrównania są różne?
 2. Czy któryś z programów poprawnie rozwiązał problem przyrównania izoform białkowych?
