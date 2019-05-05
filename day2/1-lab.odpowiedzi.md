@@ -7,24 +7,25 @@
 <img src="./images/insulin_blast1-table1.png" alt="insulin_blast1-table1.png">
 
 1. Numer dostępu sekwencji wykazującej największej podobieństwo do sekwencji zapytania to `M57671.1`.
-   > Jest to ta sama sekwencja, która została użyta w zapytaniu.
-2. Wartość punktacji `Max score` tego przyrównania wynosi `780`. 
-   > Parametr `Max score` określa wartość punktacji najwyżej ocenionego lokalnego przyrównania między sekwencją zapytania a sekwencją z bazy danych. Jeżeli w obrębie przyrównania dwóch sekwencji, BLAST zidentyfikowałby kilka lokalnych przyrównań, wtedy `Max score` przyjmuje najwyższą wartość punktacji wśród lokalnych przyrównań.
+   > Sekwencja użyta w zapytaniu znajduje się w przeszukiwanej bazie danych sekwencji. Dlatego najlepsze trafienie obejmuje przyrównanie sekwencji `M57671.1` samej do siebie.
+2. Wartość punktacji `Max score` tego przyrównania wynosi `780` bitów. 
+   > Parametr `Max score` określa wartość punktacji najwyżej ocenionego lokalnego przyrównania między sekwencją zapytania (`Query`) a sekwencją z bazy danych (`Subject`). Jeżeli w obrębie przyrównania tych dwóch sekwencji, BLAST zidentyfikowałby kilka lokalnych przyrównań, wtedy `Max score` przyjmuje najwyższą wartość punktacji wśród zidentyfikowanych lokalnych przyrównań.
 
-3. Wartośc punktacji `Total score` tego przyrównania wynosi `780`. Parametr `Total score` jest sumą wartości punktacji wszystkich znalezionych lokalnych przeyrównań między sekwencją zapytania a sekwencją z bazy danych. Ponieważ w obrębie sekwencji `M57671.1` porównanej do samej siebie, BLAST zidentyfikował jedno lokalne przyrównanie, parametr `Total score` ma taką samą wartość jak parametr `Max score`.
+3. Wartośc punktacji `Total score` tego przyrównania wynosi `780` bitów. 
+   > Parametr `Total score` jest sumą wartości punktacji wszystkich znalezionych lokalnych przyrównań między sekwencją zapytania a sekwencją z bazy danych. Ponieważ w obrębie sekwencji `M57671.1` porównanej do samej siebie, BLAST zidentyfikował jedno lokalne przyrównanie, parametr `Total score` ma taką samą wartość jak parametr `Max score`.
 4. Procent identyczności sekwencji zapytania i sekwencji bazy danych wynosi `100`.
 5. Wartość `Query cover` wynosi `100%`.
    > Parametr ten określa procentowy udział długości sekwencji zapytania w przyrównaniu. W tym przypadku, przyrównaniem objęta jest pełnej długości sekwencja zapytania.
 6. Wartość `E-value` wynosi `0` (precyzyjniej, bardzo niska liczba zaokrąglona do zera). 
    > Parametr **E-value** określa oczekiwaną liczbą sekwencji w bazie danych, których przyrównanie z zadaną sekwencją zapytania zostałoby ocenione co najmniej równie dobrze, jak obserwowana wartość punktacji (`score`) przyrównania.
-7. W przyrównaniu nie ma żadnych przerw.
+7. W przyrównaniu nie występują przerwy.
 8. Długość przyrównania wynosi `432` nukleotydy.
 
 #### Sekwencje mRNA *Homo sapiens*
 
 <img src="./images/insulin-blast1-table2.png" alt="insulin-blast1-table2">
 
-1. Numery dostępu sekwencji człowieka o równie wysokiej wartości punktacji (`Max score`): 
+1. Numery dostępu 6 sekwencji człowieka otrzymały ównie wysokiej wartości punktacji (`Max score`): 
 
    ```
    NM_001291897.1, JQ951950.1, NM_001185098.1, NM_001185097.1, NM_000207.2, BC005255.1
@@ -35,9 +36,9 @@
 4. Procent identyczności wynosi `74.49`.
 5. Wartość `Query cover` wynosi `76%`.
 6. Wartość `E-value` wynosi `1e-48`.
-7. Przyrównanie zawiera `15` przerw stanowiąc 4% całego przyrównania.
+7. Przyrównanie zawiera `15` przerw, które stanowią `4%` całego przyrównania.
 8. Długość przyrównania wynosi `341` nukleotydów.
-9. Wielkość przeszukiwanej bazy `NR` to `204,700,810,597` nukleotydów.
+9. Wielkość przeszukiwanej bazy `nr` to `204,700,810,597` nukleotydów.
    > U góry strony wynikowej programu BLAST naciśnij `Search summary` > `Number of letters`
 
 <br/>
@@ -48,17 +49,17 @@ Wynik programu BLAST przy użyciu sekwencji zapytania mRNA insuliny koszatniczki
 <img src="./images/insulin-blast2-table1.png" alt="insulin-blast2-table1.png">
 
 1. Tak, w wynikach znajdują się sekwencje człowieka z poprzedniego zadania (np. `NM_001291897.1`).
-2. Nie, w stosunku do poprzedniego zadania, zmianie uległa wartość parametru E-value. W poprzednim przeszukaniu wartość E-value dla tych samych sekwencji wynosiła `1e-48`, w tym przeszukaniu wynosi `5e-50`. Wartości punktacji i identyczności nie uległy zmianie.
-3. Wielkość przeszukiwanej bazy `NR` z ograniczeniem do organizmy człowieka to `7,199,154,007` nukleotydów.
+2. Nie, w stosunku do poprzedniego zadania, zmianie uległa wartość parametru *E*-value. W poprzednim przeszukaniu wartość E-value dla tych samych sekwencji wynosiła `1e-48`, w tym przeszukaniu wynosi `5e-50`. Wartości punktacji (`Max Score` i `Total Score`) oraz wartości identyczności nie uległy zmianie w stosunku do poprzedniego przeszukiwania.
+3. Wielkość przeszukiwanej bazy `nr` z ograniczeniem do organizmy człowieka to `7,199,154,007` nukleotydów.
 4. Stosunek wielkości dwóch baz danych to `204,700,810,597` / `7,199,154,007` = `28`.
-5. Stosunek E-value w dwóch przeszukiwaniach wynosi `5e-50` / `1e-48` = `20`.
-6. Wartość E-value jest wprost proporcjonalna do wielkości bazy. Wartość E-value wzrasta wraz ze wzrostem bazy danych.
+5. Stosunek *E*-value w dwóch przeszukiwaniach wynosi `5e-50` / `1e-48` = `20`.
+6. Wartość *E*-value jest wprost proporcjonalna do wielkości bazy. Wartość *E*-value wzrasta wraz ze wzrostem bazy danych.
    > Intuicyjnie, przyrównanie o punktacji na przykład 205 bitów jest badziej znaczące podczas przesukiwania mniejszej bazy danych. W większej bazie danych istnieje większa szansa znalezienia przypadkowych przyrównań o wartości punktacji co najmniej 205 bitów.
 
 <br/>
 
 ### Zad. 3 - Istotność statystyczna wyników BLAST
-BLAST niemal zawsze umożliwia odnalezienie sekwencji, które będą w jakiś sposób podobne do sekwencji w zapytaniu, mimo, że nie są one z nią spokrewnione (wyniki *fałszywie pozytywne*). W tym zadaniu użyte zostaną - jako sekwencję zapytania w programie BLAST - losowo wygenerowane sekwencje nukleotydowe i aminokwasowe.
+BLAST prawie zawsze umożliwia odnalezienie sekwencji, które będą w jakiś sposób podobne do sekwencji w zapytaniu, mimo, że nie są one z nią spokrewnione (wyniki *fałszywie pozytywne*). W tym zadaniu użyte zostaną - jako sekwencje zapytania w programie BLAST - losowo wygenerowane sekwencje nukleotydowe i aminokwasowe.
 
 #### Sekwencje nukleotydowe
 
@@ -78,7 +79,7 @@ Wyniki programu **nucleotide BLAST** dla trzech różnych przeszukiwań można p
 <img src="./images/ncbi-browsing-results.png" alt="ncbi-browsing-results" width="400px">
 
 
-1. Tak, wiele sekwencji trafień zidentyfikowanych przez program BLAST wykazuje 90-100% identyczność do losowo wygenerowanych sekwencji zapytania. Na przykład:
+1. Tak, wiele sekwencji trafień zidentyfikowanych przez program BLAST wykazuje `90-100%` identyczność do losowo wygenerowanych sekwencji zapytania. Na przykład:
 
    ```
    >XM_004482443.3 PREDICTED: Dasypus novemcinctus Fanconi anemia complementation 
@@ -100,10 +101,10 @@ Wyniki programu **nucleotide BLAST** dla trzech różnych przeszukiwań można p
    > W tych przeszukiwaniach najwyższa dopuszczalna wartość `E-value` została ustawiona w formularzu programu BLAST na `50`. Domyślnie w programie BLAST, `E-value` ma wartość `10`.
 5. Otrzymane wyniki **nie mają żadnego sensu biologicznego(!)**. Sekwencje znalezione w bazie danych są rzeczywistymi sekwencjami DNA występującymi w organizmach. Natomiast, sekwencje zapytania są całkowicie losowe i pozbawione jakiejkolwiek pokrewieństwa z sekwencjami znajdującymi się w bazie danych. Zatem skojarzenie sekwencji zapytania z sekwencjami z bazy danych jest wynikiem czystego przypadku.
 
-   Sekwencje zapytania są na tyle krótkie (25 nt), że bardzo często występują w prawdziwych sekwencjach. Parametr `E-value` określa ich istotność statyczną - im niższa wartość E-value, tym mniejsze prawdopodobieństwo, że skojarzenie jest wynikiem zdarzenia losowego, a zatem tym bardziej jest ono istotne. W wynikach BLAST, trafienia uzyskały wartości tego parametru w zakresie `12-42`, co oznacza, że w bazie danych znajduje się od 12 do 42 przypadkowych sekwencji, które uzyskałyby równie dobre przyrównanie.
+   Sekwencje zapytania są na tyle krótkie (25 nt), że bardzo często występują w rzeczywistych sekwencjach. Parametr `E-value` określa ich istotność statyczną - im niższa wartość *E*-value, tym mniejsze prawdopodobieństwo, że skojarzenie jest wynikiem zdarzenia losowego, a zatem tym bardziej jest ono istotne. W wynikach BLAST, trafienia uzyskały wartości tego parametru w zakresie `12-42`, co oznacza, że w bazie danych znajduje się od 12 do 42 przypadkowych sekwencji, które uzyskałyby równie dobre przyrównanie.
 
 #### Sekwencje aminokwasowe
-Trzy losowe sekwencje aminowasowe długości 25 reszt wygenerowane w programie [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/).
+Trzy losowe sekwencje białkowe długości 25 reszt aminokwasowych wygenerowane w programie [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/).
 
 ```
 >seq1
@@ -128,13 +129,13 @@ GSDHFLKQGSWKANKEKLWDIDLPP
    Sbjct  229  VHTVYWWEHNCKLGQYSSAK  248
    ```
 
-   Uzyskano przyrównania następujących parametrach:
+   W wynikach programy BLAST uzyskano następujący zakres parametrów przyrównania:
    * Długość przyrównań wynosi na ogół 15-22 pozycji. 
      - W przyrównaniach jest niewiele przerw, najczęściej kilkanaście substytucji.
    * Trafienia przyjmują wartości `Max Score` w zakresie `33-36` bitów.
    * Trafienia przyjmują wartości `E-value` w zakresie `40-1000`.
 
-7. Sekwencje nukleotydowe obarczone są większym ryzykiem uzyskania trafień fałszywie pozytywnych w programie BLAST. Przyrównania sekwencji nukleotydowych o długości 25 pz uzyskują wartości E-value rzędu `12-50`, natomiast przyrównania sekwencji aminokwasowych długości 25 aa otrzymują wartości E-value w zakresie `40-1000`.
+7. Sekwencje nukleotydowe obarczone są większym ryzykiem uzyskania przyrównań fałszywie pozytywnych. Przyrównania sekwencji nukleotydowych o długości 25 pz uzyskują wartości *E*-value w zakresie `12-50`, natomiast przyrównania sekwencji aminokwasowych tej samej długości otrzymują wartości *E*-value rzędu `40-1000`.
 <br/><br/>
 
 
@@ -144,9 +145,9 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 
    <img src="./images/blast-trna_ecoli.png" alt="blast-trna-ecoli.png">
 
-2. Wraz ze wzrostem wartości punktacji przyrównania (`score`), wartość E-value maleje (przyrównanie jest bardziej istotne). Z kolei, wartość punktacji przyrównania zależy od długości sekwencji zapytania.
+2. Wraz ze wzrostem wartości punktacji przyrównania (`score`), wartość *E*-value maleje (przyrównanie jest bardziej istotne). Z kolei, wartość punktacji przyrównania zależy od długości sekwencji zapytania.
 
-   Długość sekwencji zapytania: 23 nt
+   Długość sekwencji zapytania: **23 pz**
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
@@ -166,7 +167,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 
    ```
 
-   Długość sekwencji zapytania: 29 nt
+   Długość sekwencji zapytania: **29 pz**
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
@@ -185,7 +186,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
    Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGGCACCGG  3554275
    ```
  
-   Długość sekwencji zapytania: 35 nt
+   Długość sekwencji zapytania: **35 pz**
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
@@ -204,7 +205,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
    Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGGCACCGGTTTTTG  3554281
    ```
 
-3. Na stronie wyników BLAST dla najdłuższej sekwencji zapytania, w panelu `Alignments`, zwróć uwagę na pierwsze trafienie. Naciśnij na link `GenBank`.
+3. Na stronie wyników BLAST dla najdłuższej sekwencji zapytania, zwróć uwagę na pierwsze trafienie. Naciśnij na link `GenBank`.
 
    <img src="./images/blast-trna-query_length.png" alt="blast-trna-query_length" width="400px">
 
@@ -359,25 +360,25 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 
 <img src="./images/blast-dino-vector-dotmatrix.png" alt="blast-dino-vector-dotmatrix">
 
-5. Michael Crichron wyciął z sekwencji wektora cztery fragmenty. Z każdego fragmentu usunął w równych odstępach kilka krótszych fragmentów długości ok. 10 nukleotdyów. Połączył cztery fragmenty ze sobą w jedną sekwencję. Następnie utworzył sekwencję do niej komplementarną. Otrzymaną sekwencję umieścił w książce *Jurassic Park*.
+5. Michael Crichron złożył sekwnecję "dinozaura" z czterech fragmentów sekwnecji wektora. Dwa fragmenty pochodzą z tego samego regionu sekwencji wektora (w pozycji ok. `4000-4500`). Z każdego z czterech fragmentów Michael usunął w równych odstępach kilka krótszych fragmentów długości ok. 10 nukleotdyów. Połączył cztery fragmenty ze sobą w jedną sekwencję. Następnie utworzył sekwencję do niej komplementarną. Otrzymaną sekwencję umieścił w książce *Jurassic Park*.
 <br/><br/>
 
 
 ### Zad. 6 - Wybór bazy danych dla programu BLAST
-W bazie białkowej NCBI skorzystaj z zaawansowanego wyszukiwania i utwórz zapytanie do bazy danych:
+W [białkowej bazie NCBI](https://www.ncbi.nlm.nih.gov/protein) skorzystaj z zaawansowanego wyszukiwania i utwórz zapytanie do bazy danych:
 
 ```
 FOXP2[Gene Name] AND Homo sapiens[Organism] 
 ```
 
-Wybierz rekord *forkhead box protein P2 isoform I [Homo sapiens]* o numerze dostępu [NP_055306](https://www.ncbi.nlm.nih.gov/protein/NP_055306.1). W panelu `Analyze this sequence` po prawej stronie w rekordzie sekwencji, naciśnij link `Run BLAST`.
+Wybierz rekord `forkhead box protein P2 isoform I [Homo sapiens]` o numerze dostępu [NP_055306](https://www.ncbi.nlm.nih.gov/protein/NP_055306.1). W panelu `Analyze this sequence` po prawej stronie w rekordzie sekwencji, naciśnij link `Run BLAST`.
 
 Formularz programu BLAST:
 
 <img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form" width="500px">
 
-1. Sekwencją najbardziej odpowiadającą sekwenji FOXP2 człowieka jest przewidziana sekwencja białka *forkhead box protein P2* u gwiazdonosa amerykańskiego (*Condylura cristata*).
-2. E-value najlepiej punktowanego przyrównania wynosi `0`.
+1. Sekwencją najbardziej odpowiadającą sekwenji FOXP2 człowieka jest sekwencja przewidzianego białka `forkhead box protein P2` u gwiazdonosa amerykańskiego (*Condylura cristata*).
+2. `E-value` najlepiej punktowanego przyrównania wynosi `0`.
 3. Procent identyczności i podobieństwa tych dwóch sekwencji wynosi `99%`.
 4. W przyrównaniu jest jedna przerwa w sekwencji trafienia.
 
@@ -413,3 +414,5 @@ FEATURES             Location/Qualifiers
 Współrzędne sekwencji `<1..>3960` oznaczają, że pełnej długości gen MAPT rozciąga się poniżej (`<1`) i powyżej (`>3960`) wyświetlonej sekwencji. Aby poznać dokładną lokalizację genu MAPT na sekwencji chromosomu 17, naciśnij na identyfikator genu MAPT (*GeneID*: [4137](https://www.ncbi.nlm.nih.gov/gene/4137)).
 
 <img src="./images/blast-genome-human-gene-mapt.png" alt="blast-genome-human-gene-mapt">
+
+Gen **MAPT** znajduje się na chromosomie 17 w pozycji `45 894 382` - `46 028 334` na nici `plus`.
