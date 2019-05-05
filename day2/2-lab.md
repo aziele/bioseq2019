@@ -1,4 +1,4 @@
-## BLAST - blastx, tblastn, blast2seqs
+## BLAST - blastx, tblastn
 
 ### Zad. 1 - Proste przeszukiwanie blastx
 <img align="right" src="./images/jp-lostworld.png" alt="Jurassic Park - Lost World"> Mark Boguski, pracownik NCBI, zauważył, że sekwencja przedstawiona w książce *Jurassic Park* nie była zbyt dobrze dobrana. Dlatego zaproponował, aby w filmie *Jurassic Park – The Lost World* umieścić inną, bardziej odpowiednią sekwencję.

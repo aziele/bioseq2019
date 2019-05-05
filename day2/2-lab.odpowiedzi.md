@@ -1,4 +1,4 @@
-## BLAST - blastx, tblastn, blast2seqs
+## BLAST - blastx, tblastn
 
 ### Zad. 1 - Proste przeszukiwanie blastx
 Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **blastx**. Umieść sekwencję zapytania, użyj domyślnych ustawień programu. Uruchom program BLAST.
@@ -514,9 +514,23 @@ Sbjct  59042  TAGCAACTAGCTTAGTGCCTGGCACATAGTAGGTGCT  59078
     1487   1510      1487   1511         x
     1511   3957      1509   3957         x
     ```
-7. Niezgodności w przyrównaniach sekwencji identycznych występują najczęściej na 5P i/lub 3P końcach przyrównania, ponieważ algorytm *blast* rozszerza przyrównanie w obu kierunkach. Algorytm *blast* nie zna miejsca początku i końca egzonu; algorytm może więc zwrócić przyrównanie nieco "wydłużone" od rzeczywistego egzonu, pod warunkiem, że "wydłużone" fragmenty nie zawierają zbyt dużo niezgodnych nukleotydów. Program *blastn* wyznaczył lokalizację piągego egzonu w pozycji `902..989`, podczas gdy prawidłowa pozycja to `907..989`. Algorytm rozszerzył zatem przyrównanie na 5P końcu o 5 nukleotydów kosztem jednej niezgodnej reszty nukleotydowej w pozycji `904`.
+7. Niezgodności w przyrównaniach sekwencji identycznych występują najczęściej na 5p i/lub 3p końcach przyrównania, ponieważ algorytm *blast* rozszerza przyrównanie w obu kierunkach. Algorytm *blast* nie zna miejsca początku i końca egzonu; algorytm może więc zwrócić przyrównanie nieco "wydłużone" od rzeczywistego egzonu, pod warunkiem, że "wydłużone" fragmenty nie zawierają zbyt dużo niezgodnych nukleotydów. Program *blastn* wyznaczył lokalizację piągego egzonu w pozycji `902..989`, podczas gdy prawidłowa pozycja to `907..989`. Algorytm rozszerzył zatem przyrównanie na 5P końcu o 5 nukleotydów kosztem jednej niezgodnej reszty nukleotydowej w pozycji `904`.
 
-8. Dodatkowe przyrównanie (`2786..2822`) obejmuje fragment 10 egzonu genu GABRG2 (`1511..3957`), który wykazuje przypadkowe podobieństwo do innego regionu w tym geniu. Wartość *E*-value tego przyrównania wynosi `1`.
+   ```
+    Score = 155 bits (171),  Expect = 8e-34
+    Identities = 87/88 (99%), Gaps = 0/88 (0%)
+    Strand=Plus/Plus
+ 
+   Query  902    CTAAGGTTGACAATTGATGCTGAGTGCCAATTACAATTGCACAACTTTCCAATGGATGAA  961
+                 || |||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+   Sbjct  38589  CTTAGGTTGACAATTGATGCTGAGTGCCAATTACAATTGCACAACTTTCCAATGGATGAA  38648
+ 
+   Query  962    CACTCCTGCCCCTTGGAGTTCTCCAGTT  989
+                 ||||||||||||||||||||||||||||
+   Sbjct  38649  CACTCCTGCCCCTTGGAGTTCTCCAGTT  38676
+   ```
+
+8. Dodatkowe przyrównanie (`2786..2822`) obejmuje fragment 10 egzonu genu GABRG2 (`1511..3957`), który wykazuje przypadkowe podobieństwo do innego regionu w tym genie. Wartość *E*-value tego przyrównania równa `1` informuje o niewielkim znaczeniu tego przyrównania.
 
 #### NCBI Splign
 Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign/). W polu `cDNA` umieść numer dostępu `NM_198904`, a w polu `Genomic` umieść `NG_009290` i naciśnij przycisk `Align`. Na stronie wynikowej, wyświetl widok w formacie tekstowym (`Text`).
