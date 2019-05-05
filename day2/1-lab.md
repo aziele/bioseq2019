@@ -1,7 +1,7 @@
 ## BLAST - blastn i blastp
 
 ### Zad. 1 - Opis wyników programu BLAST
-Poniżej znajduje się sekwencja mRNA insuliny gryzonia koszatniczki pospolitej (*Octodon degus*).
+Poniżej znajduje się sekwencja mRNA insuliny gryzonia koszatniczki pospolitej (*Octodon degus*). Celem zadania jest znalezienie najbardziej podobnych sekwencji mRNA człowieka.
 
 ```
 >M57671.1 Octodon degus insulin mRNA, complete cds

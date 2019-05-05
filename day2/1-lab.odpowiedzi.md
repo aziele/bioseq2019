@@ -1,11 +1,8 @@
 ## BLAST - blastn i blastp
 
 ### Zad. 1 - Opis wyników programu BLAST
-Celem zadania jest znalezienie sekwencji najbardziej podobnych do sekwencji mRNA insuliny koszatniczki pospolitej.
 
-#### Odczytywanie wyników
-
-##### Sekwencja mRNA *Octodon degus*
+#### Sekwencja mRNA *Octodon degus*
 
 <img src="./images/insulin_blast1-table1.png" alt="insulin_blast1-table1.png">
 
@@ -23,7 +20,7 @@ Celem zadania jest znalezienie sekwencji najbardziej podobnych do sekwencji mRNA
 7. W przyrównaniu nie ma żadnych przerw.
 8. Długość przyrównania wynosi `432` nukleotydy.
 
-##### Sekwencje mRNA *Homo sapiens*
+#### Sekwencje mRNA *Homo sapiens*
 
 <img src="./images/insulin-blast1-table2.png" alt="insulin-blast1-table2">
 
