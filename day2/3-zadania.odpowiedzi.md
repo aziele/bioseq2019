@@ -113,10 +113,7 @@ XPROT_H.lucidul NS
 <br/><br/>
 
 ### Zad. 2 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
-Program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/) jako sekwencje wejściowe przyjmuje sekwencje CDS, następnie dokonuje translacji tych sekwencji na sekwencje białkowe i korzystając z programu MAFFT przeprowadza przyrównanie sekwencji białkowych. W oparciu o otrzymane przyrównanie sekwencji białkowych, RevTrans odwzorowuje je dla sekwencji CDS.
-> Opcjonalnie, w programie RevTrans można użyć innej metody przyrównywania sekwencji białkowych niż MAFFT (np. ClustalW, T-Coffe) lub umieścić własne przyrównanie sekwencji białkowych. 
-
-Przyrównanie sekwencji CDS otrzymane w programie RevTrans:
+Przyrównanie sekwencji CDS insuliny otrzymane w programie RevTrans:
 
 ```
 CLUSTAL -  multiple sequence alignment - created by revtrans

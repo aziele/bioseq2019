@@ -6,7 +6,7 @@ W pliku [x-protein.fasta](./data/x-protein.fasta) znajdują się sekwencje amino
 <br/><br/>
 
 ### Zad. 2 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
-> Celem zadania jest wykorzystanie informacji zawartej w sekwencjach białkowych do utworzenia prawidłowego przyrównania sekwencji CDS.
+> Celem zadania jest wykorzystanie informacji zawartej w sekwencjach białkowych insuliny do utworzenia prawidłowego przyrównania odpowiadających sekwencji CDS.
 
 W pliku [insulin.cds.clean.fasta](./data/insulin.cds.clean.fasta) znajdują się sekwencje CDS insuliny. Otwórz program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/). Umieść sekwencje CDS w polu `Paste in DNA sequences` i wykonaj przyrównanie.
 
