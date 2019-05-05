@@ -203,7 +203,7 @@ Otwórz stronę [Gene Ontology](http://amigo.geneontology.org/amigo/). W panelu 
 
 <img src="./images/amigo-enrichment-biological_process.png" alt="amigo-enrichment-biological_process" width="700px">
 
-W powyższej tabeli znajduje się lista terminów GO związanych z procesem biologicznym, które są istotnie nadreprezentowane w zadanej grupie 20 genów (*p*-value < 0.05). W wierszach tabeli znajdują się terminy ontologii. 
+W powyższej tabeli znajduje się lista terminów GO związanych z procesem biologicznym, które są istotnie nadreprezentowane w zadanej grupie 20 genów (*p*-value < `0.05`). W wierszach tabeli znajdują się terminy ontologii. 
 
 1. Pierwsza kolumna zawiera nazwę danego terminu GO. 
 2. Druga kolumna zawiera liczbę wszystkich referencyjnych genów człowieka przypisanych do tego terminu GO.
