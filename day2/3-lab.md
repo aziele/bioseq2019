@@ -120,7 +120,7 @@ ACTTCAATCGGTATGTTTTC
   - `First position number` na `-10`. 
   - tytuł wykresu (`Title`) na `Human donor sites -10/+10`
 * Wygeneruj kolejne logo, aby pokazana była na nim częstość występowania nukleotydu w każdej pozycji (`Frequency plot`)
+<br/><br/>
 
-
-### Zad. 7 - kaseta Pribnowa
+### Zad. 7 - Kaseta Pribnowa
 W pliku [ecoli_promotor.fasta](./data/ecoli_promotor.fasta) znajduje się 350 sekwencji regionów promotorów *E. coli*, które obejmują fragment 10 pz *upstream*, nazywany kasetą Pribnowa. Wykonaj logo tych sekwencji. Zidentyfikuj kasetę Pribnowa.

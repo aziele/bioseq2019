@@ -1076,6 +1076,7 @@ Sekwencje donorowe egzonów genu człowieka.
 
 <img src="./images/logo3.png" alt="logo3">
 
+<br/>
 
 ### Zad. 7 - kaseta Pribnowa
 

@@ -1,4 +1,4 @@
-### Zad. 1
+### Zad. 1 - Przyrównanie rodziny białkowej
 
 #### ClustalOmega
 
@@ -108,11 +108,11 @@ XPROT_A.thalian --
 XPROT_H.lucidul NS
 ```
 
-1. Nie, oba programy generują inne przyrównania, szczególnie we fragmencie N-końca białka. *MAFFT* wprowadził mniejszą liczbę przerw w przyrównaniu (`192`) niż *ClustalOmega* (`216`), jednocześnie identyfikując większą liczbę pozycji, na których aminokwas zachowany jest we wszystkich sekwencjach (MAFFT: `60`, ClustalOmega: `53`).
+1. Nie, oba programy generują inne przyrównania, szczególnie we fragmencie N-końca białka. *MAFFT* wprowadził mniejszą liczbę przerw w przyrównaniu (`192`) niż *ClustalOmega* (`216`), jednocześnie identyfikując większą liczbę pozycji, na których aminokwas zachowany jest we wszystkich sekwencjach (liczba zachowanych pozycji w MAFFT: `60` i ClustalOmega: `53`).
 2. Najdłuższy fragment sekwencji o 100% identyczności to `HPHGGG`.
 
 
-### Zad. 2
-Miejsca akceptorowe intron-egzon:
+## Zad. 2 - Miejsca akceptorowe egzonu
+Logo wykonane w programie [WebLogo](http://weblogo.berkeley.edu/logo.cgi).
 
 <img src="./images/logo-acceptor.png" alt="logo-acceptor">
