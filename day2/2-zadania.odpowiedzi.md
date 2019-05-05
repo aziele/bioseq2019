@@ -50,7 +50,7 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
 
    W wyniku powyższego zapytania otrzymano 1 rekord: [NP_001034633](https://www.ncbi.nlm.nih.gov/protein/NP_001034633). Ze strony rekordu, w prawym panelu `Analyze this record` wybierz `Run BLAST`. W formularzu programu BLAST wybierz bazę danych `nr` i ogranicz wyszukiwania do organizmu *Monodelphis domestica*.
 
-2. W wynikach programu BLAST, najwyżej ocenioną sekwencją oposa jest XP_007475409.
+2. W wynikach programu BLAST, najwyżej ocenioną sekwencją oposa jest `XP_007475409`.
 
    ```
     >XP_007475409.1 PREDICTED: trichosurin-like [Monodelphis domestica]
