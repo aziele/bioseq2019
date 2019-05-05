@@ -37,6 +37,8 @@ SAAARRALRSLKANQPQVPNS
 2. W jakiej pozycji w sekwnecji znajduje się domena `Dicer_dimer`?
 3. Podaj wartość `E-value` przyrównania domeny `Dicer_dimer` z modelem HMM.
 
+#### Rekord domeny Dicer
+
 Wejdź do rekordu domeny `Dicer_dimer`.
 
 4. Podaj numer dostępu tej domeny w bazie Pfam.
@@ -72,6 +74,8 @@ Użyj sekwencji z poprzedniego zadania w serwisie [PROSITE](https://prosite.expa
 3. Podaj numer dostępu domeny typu Dicer w bazie PROSITE.
 4. Czy lokalizacja domeny Dicer w sekwencji jest taka sama, jak w przewidywaniach Pfam?
 
+#### Rekord domeny Dicer
+
 Wejdź w rekord domeny Dicer w bazie PROSITE.
 
 5. Podaj długość profilu domeny Dicer w bazie PROSITE.
@@ -87,6 +91,8 @@ Użyj sekwencji z zad. 1 i serwisu [InterPro](http://www.ebi.ac.uk/interpro/) w 
 2. Podaj numer dostępu domeny typu *Dicer*.
 3. Podaj lokalizacaję domeny *Dicer* w sekwencji zapytania.
 4. W oparciu o jakie bazy danych domen białkowych, domena *Dicer* została zidentyfikowana?
+
+#### Rekord domemy Dicer
 
 Otwórz stronę rekordu domeny *Dicer* w bazie InterPro.
 
