@@ -44,7 +44,7 @@ W zaproponowanej przez siebie sekwencji Mark ukrył pewną wiadomość, którą
 
 
 ### Zad. 2 - Złożone przeszukiwanie blastx
-W bazie nukleotydowej NCBI wyszukaj rekord sekwencji *EST* węża koralowego o numerze dostępu `FL590802`. W panelu `Analyze this sequence` po prawej stronie rekordu naciśnij `Run BLAST`. Wybierz program `blastx`, bazę sekwencji `UniProtKB/Swiss-Prot(swissprot)` i rozpocznij przeszukiwanie.
+W bazie nukleotydowej [NCBI](https://www.ncbi.nlm.nih.gov) wyszukaj rekord sekwencji *EST* węża koralowego o numerze dostępu `FL590802`. W panelu `Analyze this sequence` po prawej stronie rekordu naciśnij `Run BLAST`. Wybierz program `blastx`, bazę sekwencji `UniProtKB/Swiss-Prot(swissprot)` i rozpocznij przeszukiwanie.
 
 1. Czy sekwencja zapytania została dopasowana na całej długości do sekwencji białek?
 2. Jakiego typu sekwencje białkowe zostały przyrównane do sekwencji zapytania?
@@ -81,16 +81,16 @@ Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższ
 <br/><br/>
 
 ### Zad. 4 - Wyznaczanie lokalizacji egzonów (blastn)
-Transkrypt genu GABRG2 człowieka (`NM_198904`) składa się z 10 egzonów długości od 24 do ponad 2400 nukleotydów. W serwisie NCBI *nucleotide blast*, wybierz programu *blastn* i przeszukaj genomowe sekwencje człowieka (`RefSeq Genomic Sequences`) w celu zlokalizowania pozycji egzonów genu GABRG2 w genomie człowieka.
+Transkrypt genu GABRG2 człowieka (`NM_198904`) składa się z 10 egzonów długości od 24 do ponad 2400 nukleotydów. W serwisie [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi), wybierz programu **blastn** i przeszukaj genomowe sekwencje człowieka (`RefSeq Genomic Sequences`) w celu zlokalizowania pozycji egzonów genu *GABRG2* w genomie człowieka.
 
 Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższą wartość punktacji (`Max score`). Odpowiedz na poniższe pytania:
 
-1. Na którym chromosomie człowieka znajduje się gen GABRG2?
-2. Czy sekwencja transkryptu GABRG2 została przyrównana przez program *blastn* na całej swojej długości do sekwencji tego genomowej genu GABRG2?
-3. Ile przyrównań wyznaczył program *blastn* między sekwencją mRNA a sekwencją genomową genu GABRG2?
+1. Na którym chromosomie człowieka znajduje się gen *GABRG2*?
+2. Czy sekwencja transkryptu *GABRG2* została przyrównana przez program *blastn* na całej swojej długości do sekwencji tego genomowej genu *GABRG2*?
+3. Ile przyrównań wyznaczył program *blastn* między sekwencją mRNA a sekwencją genomową genu *GABRG2*?
 4. Czy wszystkie przyrównania są w tej samej orientacji nici DNA (np. `plus/plus`)?
-5. Czy kolejność zidentyfikowanych przyrównań odpowiada kolejności ułożenia egzonów w genie GABRG2?
-6. Poniżej znajdują się prawidłowe pozycje 10 egzonów genu GABRG2 na podstawie rekordu mRNA [NM_198904](https://www.ncbi.nlm.nih.gov/nuccore/NM_198904).
+5. Czy kolejność zidentyfikowanych przyrównań odpowiada kolejności ułożenia egzonów w genie *GABRG2*?
+6. Poniżej znajdują się prawidłowe pozycje 10 egzonów genu GABRG2 na podstawie rekordu mRNA ([NM_198904](https://www.ncbi.nlm.nih.gov/nuccore/NM_198904)).
 
     ```
        1   465

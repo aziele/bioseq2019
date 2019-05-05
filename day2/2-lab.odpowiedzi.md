@@ -49,8 +49,8 @@ Rekord sekwencji EST węża koralowego (*Micrurus corallinus*): [FL590802](https
 <img src="./images/blastx-est-graphics.png" alt="blastx-est-graphics" width="500px">
 
 1. Nie, sekwencja zapytania nie jest dopasowana na całej długości do sekwencji trafień.
-   > Sekwencja zapytania jest sekwencją cDNA, które może posiadać na 5p i 3p końcach sekwencje nie ulegające translacji (*UTRs*, *Untranslated Regions*). Ponieważ blastx wyszukuje podobieństwo do sekwencji białkowych (przeszukiwaną bazą danych są sekwencje białkowej), nie należy oczewkiać, że regiony *UTR* będą wykazywały istotne podobieństwo do białek. 
-2. Znalezione trafienia sekwencji białkowych są w większości jednorodne. Sekwencje te dotyczą neurotoksyn, których przyrównania otrzymują podobne wartości punktacji (w zakresie `50-80` bitów), *E*-value (`7e-11 - 6e-08`), i procent identyczności (`44-55%`). Sekwencja zapytania EST jest najprawdopodobniej neurotoksyną biorać pod uwagę, że pochodzi ona z gruczołów jadowych węża.
+   > Sekwencja zapytania jest sekwencją cDNA, która może posiadać na 5p i 3p końcach sekwencje nie ulegające translacji (*UTRs*, *Untranslated Regions*). Ponieważ blastx wyszukuje podobieństwo do sekwencji białkowych (przeszukiwaną bazą danych są sekwencje białkowej), nie należy oczewkiać, że regiony *UTR* będą wykazywały istotne podobieństwo do białek. 
+2. Znalezione trafienia sekwencji białkowych są w większości jednorodne. Sekwencje te dotyczą neurotoksyn, których przyrównania otrzymują podobne wartości punktacji (w zakresie `50-58` bitów), *E*-value (`7e-11 - 6e-08`), i procent identyczności (`44-55%`). Sekwencja zapytania EST jest najprawdopodobniej neurotoksyną biorać pod uwagę, że pochodzi ona z gruczołów jadowych węża.
 
    <img src="./images/blastx-est-alignments.png" alt="blastx-est-alignments">
 
@@ -78,7 +78,7 @@ Sbjct  77   CCSADKCNTY  86
 
 3. Sekwencja zapytania została poddana translacji w pierwszej ramce odczytu (`Frame = +1`).
 4. Sekwencja zapytania ma długość `435` nukleotydów. W przyrównaniu rozpoczyna się ona od `70` nukleotydu i kończy nukleotydem w pozycji `273`.
-5. Białkowa sekwencja trafienia ma długość `87` aminokwasów. W przyrównaniu rozpoczyna się ona od `19` reszty aminokwasowej i kończy w `86` pozycji.
+5. Białkowa sekwencja trafienia ma długość `87` aminokwasów (`Length=87`). W przyrównaniu rozpoczyna się ona od `19` reszty aminokwasowej i kończy w `86` pozycji.
 
     ```
                         1        70               273                    435
@@ -493,26 +493,26 @@ Sbjct  59042  TAGCAACTAGCTTAGTGCCTGGCACATAGTAGGTGCT  59078
 ```
 
 
-1. Gen GABRG2 znajduje się na chromosomie 5 człowieka.
-2. Tak, sekwencja mRNA została przyrównana na całej swojej długości do sekwencji genomowej GABRG2 (`Query Cover`: `100%`).
-3. Program *blastn* wyznaczył 11 przyrównań między sekwencją mRNA a sekwencją genomową genu GABRG2.
-4. Tak, wszystkie przyrównania są w jednej orientacji nici DNA (`plus/plus`).
-   > Egzony należące do jednego genu zawsze mają jeden kierunek (wszystkie na nici `plus` lub na nici `minus`)
-5. Nie, przyrównania między sekwencją mRNA a odpowiadającą sekwencją genomową genu GABRG2 ułożone są według malejących wartości punktacji (`score`). Na przykład, pierwsze przyrównania (`4417` bitów) odpowiada dziesiątemu egzonowi, drugie przyrównanie (`839` bitów) dotyczy pierwszego egzonu.
-6. Program *blastn* odnalazł wszystkie 10 egzonów genu GABRG2. Jednak, dokładna lokalizacja początku i końca egzonu została wyznaczona poprawnie tylko dla pierwszego egzonu (`1..465`). Dla pozostałych 9 egzonów, wyznaczone miejsca ich początku i końca różnią się o najczęściej o 1-2 nukleotydy.
+1. Gen *GABRG2* znajduje się na chromosomie `5` człowieka.
+2. Tak, sekwencja mRNA została przyrównana na całej swojej długości do sekwencji genomowej *GABRG2* (`Query Cover`: `100%`).
+3. Program *blastn* wyznaczył `11` przyrównań między sekwencją mRNA a sekwencją genomową genu *GABRG2*.
+4. Tak, wszystkie przyrównania są w jednej orientacji na nici DNA (`plus/plus`).
+   > Egzony należące do jednego genu zawsze mają jeden kierunek (wszystkie na nici `plus` lub wszystkie na nici `minus`)
+5. Nie, przyrównania między sekwencją mRNA a odpowiadającą sekwencją genomową genu *GABRG2* ułożone są według malejących wartości punktacji (`score`). Na przykład, pierwsze przyrównania (`4417` bitów) odpowiada dziesiątemu egzonowi, drugie przyrównanie (`839` bitów) dotyczy pierwszego egzonu.
+6. Program *blastn* odnalazł wszystkie `10` egzonów genu *GABRG2*. Jednak, dokładna lokalizacja początku i końca egzonu została wyznaczona poprawnie tylko dla pierwszego egzonu (`1..465`). Dla pozostałych 9 egzonów, wyznaczone miejsca ich początku i końca różnią się najczęściej o 1-2 nukleotydy.
 
     ```
        RefSeq           blastn
-       1   465          1   465          OK
-     466   617        466   617
-     618   685        616   686
-     686   906        685   908
-     907   989        902   989
-     990   1127       990   1128
-    1128   1280      1123   1282
-    1281   1486      1274   1486
-    1487   1510      1487   1511
-    1511   3957      1509   3957
+       1   465          1   465          ✓
+     466   617        466   617          x
+     618   685        616   686          x
+     686   906        685   908          x
+     907   989        902   989          x
+     990   1127       990   1128         x
+    1128   1280      1123   1282         x
+    1281   1486      1274   1486         x
+    1487   1510      1487   1511         x
+    1511   3957      1509   3957         x
     ```
 7. Niezgodności w przyrównaniach sekwencji identycznych występują najczęściej na 5P i/lub 3P końcach przyrównania, ponieważ algorytm *blast* rozszerza przyrównanie w obu kierunkach. Algorytm *blast* nie zna miejsca początku i końca egzonu; algorytm może więc zwrócić przyrównanie nieco "wydłużone" od rzeczywistego egzonu, pod warunkiem, że "wydłużone" fragmenty nie zawierają zbyt dużo niezgodnych nukleotydów. Program *blastn* wyznaczył lokalizację piągego egzonu w pozycji `902..989`, podczas gdy prawidłowa pozycja to `907..989`. Algorytm rozszerzył zatem przyrównanie na 5P końcu o 5 nukleotydów kosztem jednej niezgodnej reszty nukleotydowej w pozycji `904`.
 
