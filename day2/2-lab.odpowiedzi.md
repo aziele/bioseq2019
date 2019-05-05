@@ -49,7 +49,7 @@ Rekord sekwencji EST węża koralowego (*Micrurus corallinus*): [FL590802](https
 <img src="./images/blastx-est-graphics.png" alt="blastx-est-graphics" width="500px">
 
 1. Nie, sekwencja zapytania nie jest dopasowana na całej długości do sekwencji trafień.
-   > Sekwencja zapytania jest sekwencją cDNA, która może posiadać na 5p i 3p końcach sekwencje nie ulegające translacji (*UTRs*, *Untranslated Regions*). Ponieważ blastx wyszukuje podobieństwo do sekwencji białkowych (przeszukiwaną bazą danych są sekwencje białkowej), nie należy oczewkiać, że regiony *UTR* będą wykazywały istotne podobieństwo do białek. 
+   > Sekwencja zapytania jest sekwencją cDNA, która może posiadać na `5p` i `3p` końcach sekwencje nie ulegające translacji (*UTRs*, *Untranslated Regions*). Ponieważ blastx wyszukuje podobieństwo do sekwencji białkowych (przeszukiwaną bazą danych są sekwencje białkowej), nie należy oczewkiać, że regiony *UTR* będą wykazywały istotne podobieństwo do białek. 
 2. Znalezione trafienia sekwencji białkowych są w większości jednorodne. Sekwencje te dotyczą neurotoksyn, których przyrównania otrzymują podobne wartości punktacji (w zakresie `50-58` bitów), *E*-value (`7e-11 - 6e-08`), i procent identyczności (`44-55%`). Sekwencja zapytania EST jest najprawdopodobniej neurotoksyną biorać pod uwagę, że pochodzi ona z gruczołów jadowych węża.
 
    <img src="./images/blastx-est-alignments.png" alt="blastx-est-alignments">
@@ -514,7 +514,7 @@ Sbjct  59042  TAGCAACTAGCTTAGTGCCTGGCACATAGTAGGTGCT  59078
     1487   1510      1487   1511         x
     1511   3957      1509   3957         x
     ```
-7. Niezgodności w przyrównaniach sekwencji identycznych występują najczęściej na 5p i/lub 3p końcach przyrównania, ponieważ algorytm *blast* rozszerza przyrównanie w obu kierunkach. Algorytm *blast* nie zna miejsca początku i końca egzonu; algorytm może więc zwrócić przyrównanie nieco "wydłużone" od rzeczywistego egzonu, pod warunkiem, że "wydłużone" fragmenty nie zawierają zbyt dużo niezgodnych nukleotydów. Program *blastn* wyznaczył lokalizację piągego egzonu w pozycji `902..989`, podczas gdy prawidłowa pozycja to `907..989`. Algorytm rozszerzył zatem przyrównanie na 5P końcu o 5 nukleotydów kosztem jednej niezgodnej reszty nukleotydowej w pozycji `904`.
+7. Niezgodności w przyrównaniach sekwencji identycznych występują najczęściej na `5p` i/lub `3p` końcach przyrównania, ponieważ algorytm *blast* rozszerza przyrównanie w obu kierunkach. Algorytm *blast* nie zna miejsca początku i końca egzonu; algorytm może więc zwrócić przyrównanie nieco "wydłużone" od rzeczywistego egzonu, pod warunkiem, że "wydłużone" fragmenty nie zawierają zbyt dużo niezgodnych nukleotydów. Program *blastn* wyznaczył lokalizację piągego egzonu w pozycji `902..989`, podczas gdy prawidłowa pozycja to `907..989`. Algorytm rozszerzył zatem przyrównanie na `5p` końcu o 5 nukleotydów kosztem jednej niezgodnej reszty nukleotydowej w pozycji `904`.
 
    ```
     Score = 155 bits (171),  Expect = 8e-34
