@@ -3,14 +3,21 @@
 ### Zad. 1 - Proste przeszukiwanie blastx
 Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **blastx**. Umieść sekwencję zapytania, użyj domyślnych ustawień programu. Uruchom program BLAST.
 
-> Program blastx dokonuje translacji nukleotydowej sekwencji w zapytaniu i dla tak uzyskanej sekwencji aminokwasowej przeszukuje bazę danych sekwencji aminokwasowych. Translacja dokonywana przez program blastx prowadzona jest w sześciu ramkach odczytu (trzy ramki odczytu na nici `plus` i trzy ramki odczytu na nici `minus`).
+> Program **blastx** dokonuje translacji nukleotydowej sekwencji w zapytaniu i dla tak uzyskanej sekwencji aminokwasowej przeszukuje bazę danych sekwencji aminokwasowych. Translacja dokonywana przez program blastx prowadzona jest w sześciu ramkach odczytu (trzy ramki odczytu na nici `plus` i trzy ramki odczytu na nici `minus`). Zatem z nukleotydowej sekwencji zapytania powstaje 6 różnych sekwencji białkowych, które następnie użyte zostają do przeszukania bazy danych sekwencji białkowych.
 
 1. Sekwencja z bazy danych, która wykazuje największe podobieństwo do sekwencji zapytania jest czynnikiem transkrypcyjnym kurczaka (*Gallus gallus*) o numerze dostępu [NP_990795.1](https://www.ncbi.nlm.nih.gov/protein/NP_990795.1).
 2. Przyrównanie sekwencji Marka i sekwencji `NP_990795.1`.
 
-   <img src="./images/ncbi-blast-mark.png" alt="ncbi-blast-mark" width="600px">
+   <img src="./images/ncbi-blast-mark.png" alt="ncbi-blast-mark" width="700px">
 
    Ukryta wiadomość to `MARK WAS HERE`. Mark użył sekwencji DNA kodującej czynnik transkrypcyjny. Umieścił w niej odpowiednie kodony tak, aby po przetłumaczeniu sekwencji DNA na białko powstała wiadomość.
+
+   W uzyskanym przyrównaniu sekwencja zapytania przedstawiona jest jako sekwencja białkowa, natomiast jej współrzędne podane są w nukleotydach. Zatem jeden aminokwas odpowiada trzem nukleotydom. Wyraz `MARK` znajduje się w pozycji `453-465`.
+
+   ```
+      M         A         R         K
+   453-456   456-459   459-462   462-465
+   ```
 
 3. Fragmenty przyrównania oznaczone małymi szarymi literami oznaczają regiony sekwencji o niskiej złożoności aminokwasowej (*low complexity*). Są to regiony zawierające wielokrotnie powtórzone reszty - krótkie segmenty powtórzeń albo segmenty, w których kila reszt występje częściej od innych (np. region `pppppppaaapp`). 
 

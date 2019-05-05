@@ -35,6 +35,7 @@ W zaproponowanej przez siebie sekwencji Mark ukrył pewną wiadomość, którą
 
 1. Z jakiego organizmu pochodzi sekwencja Marka?
 2. Spójrz na przyrównanie tych sekwencji. Jak brzmi ukryta wiadomość?
+   * Podaj pozycję w sekwencji zapytania pierwszego wyrazu wiadomości. 
 3. Co oznaczają fragmenty dopasowania oznaczone małymi szarymi literami?
 <br/><br/>
 

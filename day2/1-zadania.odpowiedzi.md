@@ -3,15 +3,15 @@ Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/) i wybierz 
 
 <img src="./images/blastp-swissprot-exon5.png" alt="blastp-swissprot-exon5">
 
-Najwyżej punktowane trafienia należą do mitochondrialną aminotransferazą asparaginianową.
+Najwyżej punktowane trafienia należą do mitochondrialnej aminotransferazy asparaginianowej.
 <br/><br/>
 
 ### Zad. 2 - blastp: powtórzony fragment sekwencji
-Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/) i wybierz program *protein blast*. Ogranicz wyszukiwania do organizmu *Arabidopsis thaliana*.
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/) i wybierz program `Protein BLAST`. W formularzu programu ogranicz wyszukiwania do organizmu *Arabidopsis thaliana*.
 
 <img src="./images/blastp-rrm.png" alt="blastp-rrm" width="500px">
 
-Między sekwencją zapytania a sekwencją `NP_199836.1` *A. thaliana* program *blastp* zidentyfikował dwa przyrównania. Fragment sekwencji zapytania (w pozycji `3-83`) wykazuje podobieństwo do dwóch miejsc w sekwencji trafienia (w pozycji `209-289` i pozycji `115-195`). Fragment ten (w pozycji `3-83`) odpowiada domenie wiążącej RNA (RRM) i występuje jako pojedyczna domena w sekwencji zapytania, a w sekwencji trafienia występuje dwukrotnie. Sekwencja domeny RRM białka zapytania wykazuje większe podobieństwo do  domeny RRM z C-końca białka trafienia (`score = 77.4`), niż do N-końcowej domeny RRM (`score = 62.4`).
+Między białkową sekwencją zapytania cyjanobakterii a sekwencją trafienia `NP_199836.1` *A. thaliana* program *blastp* zidentyfikował dwa przyrównania. Fragment sekwencji zapytania (w pozycji `3-83`) wykazuje podobieństwo do dwóch odrębnych miejsc w sekwencji trafienia (w pozycji `209-289` i pozycji `115-195`).
 
 ```
 >NP_199836.1 chloroplast RNA-binding protein 31B [Arabidopsis thaliana]
@@ -41,10 +41,11 @@ Query  63   DGAEWMGRDLKVNKAKPRENR  83
 Sbjct  175  NSFEVNGRRLTVNRAAPRGSR  195
 ```
 
-<br/>
+Przyrównany fragment sekwencji zapytania (w pozycji `3-83`) odpowiada domenie wiążącej RNA (domena RRM). Występuje ona jako pojedyczna domena w sekwencji zapytania, natomiast w sekwencji trafienia *A. thaliana* występuje dwukrotnie. Sekwencja domeny RRM białka zapytania wykazuje większe podobieństwo do domeny RRM z C-końca białka trafienia (`score = 77.4`), niż do N-końcowej domeny RRM (`score = 62.4`).
+<br/><br/>
 
 ### Zad. 3 - Identyfikacja polimorfizmów w genomach wirusów HIV
-Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program `nucleotide BLAST` i algorytm `blastn`. W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program `Nucleotide BLAST` i algorytm `blastn`. W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
 
 <img src="./images/blastn-snp.png" alt="blastn-snp">
 
