@@ -273,4 +273,4 @@ CAGTTGGTGCTGCTGGGGGAAACTGGGATTGGGGGCCAGATTTTGCCTCTTTTCCTGACA
 AAGAGAGATGAAGAGTTCTCTCACCAGGTGCCTGGGACTGGGGTGTGGGTGTCCCAGCCT
 ```
 
-Podaj nazwę genu oraz jego lokalizację w sekwencji genomowej człowieka.
+Podaj nazwę znalezionego genu oraz jego lokalizację w sekwencji genomowej człowieka.
