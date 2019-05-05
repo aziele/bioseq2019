@@ -24,7 +24,7 @@ Główne białko moczu (*MUP*, *major urinary protein*) zwierząt bierze udział
 
 Celem zadania jest znalezienie sekwencji u oposa ortologicznej do białka MUP3 myszy.
 
-1. Znajdź w bazie RefSeq sekwencję białka MUP3 myszy i uruchom program **blastp** w celu przeszukania bazy `nr` sekwencji *Monodelphis domestica*. 
-2. W wynikach programu BLAST, zidentyfikuj jedną lub więcej sekwencji oposa, które mogą być ortologami do MUP26 myszy.
+1. Znajdź w bazie RefSeq sekwencję białka MUP3 myszy i uruchom program **blastp** w celu przeszukania bazy `nr` sekwencji oposa (*Monodelphis domestica*). 
+2. W wynikach programu BLAST, zidentyfikuj jedną lub więcej sekwencji oposa, które mogą być ortologami MUP3 myszy.
 3. Uruchom program BLAST w odwrotnym kierunku: organizm `Mus musculus` i baza `RefSeq`.
 4. Na postawie wyników programu BLAST, zidentyfikuj sekwencję ortologiczną.
