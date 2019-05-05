@@ -88,7 +88,7 @@ Sbjct  77   CCSADKCNTY  86
                            1     19                86
     ```
 
-    Lokalizacja przyrównania wskazuje, że pierwsze 18 aminokwasów sekwencji trafienia nie zostało przyrównanych z przetłumaczoną sekwencją EST. Natomiast przyrównanie kończy się na przedostatnim aminokwasie.
+    Lokalizacja przyrównania wskazuje, że pierwsze 18 aminokwasów sekwencji trafienia nie zostało przyrównanych z przetłumaczoną sekwencją EST. Natomiast przyrównanie kończy się na przedostatnim aminokwasie w sekwencji trafienia. Zatem ostatni substytucja w pozycji ostatniego aminokwasu musiała być ujemnie punktowana i dlatego *BLAST* skończył budować przyrównanie przed tą pozycją.
     > Numerowanie pozycji na sekwencji zapytania i trafienia jest inne. Zapytanie jest sekwencją DNA poddaną translacji do aminokwasów, ale numerowanie odnosi się do sekwencji DNA. Każda przerwa w sekwencji zapytania oznacza trzy nukleotydy, a przerwa w sekwencji trafienia oznacza jeden aminokwas. 
 
     Sekwencja EST najprawdopodobniej zawiera również region 3P UTR transkryptu neurotoksyny. W tym przypadku, neurotoksyna kodowana przez sekwencję zapytania ma - podobnie jak sekwencja trafienia - długość ok. 87 aminokwasów. Można zaobserwować, że przyrównania sekwencji zapytania z pozostałymi trafieniami nie rozciągają się poza pozcyję `273`.
@@ -556,7 +556,7 @@ Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign
 
 <img src="./images/blastn-gabrg2-gibon.png" alt="blastn-gabrg2-gibon" width="500px">
 
-1. Gen GABRG2 znajduje się na chromosomie 2 gibona *N. leucogenys* ([NC_019817.1](https://www.ncbi.nlm.nih.gov/nucleotide/NC_019817.1).
+1. Gen GABRG2 znajduje się na chromosomie `2` gibona *N. leucogenys* ([NC_019817.1](https://www.ncbi.nlm.nih.gov/nucleotide/NC_019817.1).
 2. Tak, sekwencja ludzkiego transkryptu GABRG2 została przyrównana na całej swojej długości (`Query Cover: 100%`).
 3. Program *blastn* wyznaczył `161` przyrównań między sekwencją ludzkiego transkryptu GABRG2 a sekwencją chromosomu 2 gibona.
 4. Nie, zidentyfikowane przyrównania znajdują się w różnej orientacji.
@@ -897,16 +897,16 @@ Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign
 
     ```
      RefSeq    tblastn
-      1–36      1-36      OK
-     37–87     37-86
-     88–109    87-109
-    110–183   107-183
-    184–211   194-270
-    212–257
-    258–308   254-304
-    309–376   322-360
-    377–384
-    385–475   382-475
+      1–36      1-36      ✓
+     37–87     37-86      x
+     88–109    87-109     x
+    110–183   107-183     x
+    184–211   194-270     x
+    212–257               x
+    258–308   254-304     x
+    309–376   322-360     x
+    377–384               x
+    385–475   382-475     x
     ```
 <br/>
 
@@ -952,7 +952,7 @@ Sekwencja rodopsyny rekina (UniProtKB: `O93459`) i powiązanie z sekwencją DNA 
 
 1. Na tym etapie analizy nie można odpowiedzieć na pytanie, czy rodopsyna rekina (`O93459`) może być ortologiem opsyny-5 człowieka. Są trzy możliwości odpowiedzi na to pytanie:
    * Tak, sekwencja rekina `O93459` jest najlepszym trafieniem, ale została błędnie nazwana jako rodopsyna.
-   * Nie, mimo, że sekwencja rekina `O93459` jest najlepszym trafieniem, geny rekina nie zostały w pełni poznane. Gdy wszystkie geny rekina zostaną poznane, najprawdopodobniej wyżej ocenione trafienie zostanie zidentyfikowane.
+   * Nie, mimo, że sekwencja rekina `O93459` jest najlepszym trafieniem, geny rekina nie zostały w pełni poznane. Gdy wszystkie geny rekina zostaną poznane, wtedy zostanie zidentyfikowane inne białko, które będzie lepiej ocenione.
    * Nie, u rekina nie ma ortologicznego białka opsyny-5.
 
 #### BLAST w przeciwnym kierunku

@@ -1,5 +1,6 @@
-### Zad. 1
-Użyj programu **BLASTx** do znalezienia białka najbardziej podobnego do poniższej sekwencji nukleotydowej. 
+### Zad. 1 - Identyfikacja przesunięcia ramki odczytu
+
+Użyj programu **blastx** do znalezienia białka najbardziej podobnego do poniższej sekwencji nukleotydowej. 
 
 ```
 AGAAGAAGACATAGTAATTAGATCTGAAAATTTTACGAACAATGCTAAAACCATAATAGT
@@ -18,7 +19,7 @@ A
 Sekwencja koduje białko, ale występuje w niej przesunięcie ramki odczytu (*frameshift*). W oparciu o wyniki programu BLAST zidentyfikuj miejsce przesunięcia ramki odczytu.
 <br/><br/>
 
-### Zad. 2
+### Zad. 2 - Identyfikacja ortologów
 Główne białko moczu (*MUP*, *major urinary protein*) zwierząt bierze udział w wywoływanie strachu między różnymi gatunkami zwierząt. Na przykład, myszy wyczuwają i boją się zapachu białek MUP szczurów i kotów.
 
 Celem zadania jest znalezienie sekwencji u oposa ortologicznej do białka MUP3 myszy.
