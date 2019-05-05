@@ -14,7 +14,7 @@ Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz progra
    Sbjct     1    304
    ```
 
-   Długości nie odpowiadają sobie, ponieważ współrzędne sekwencji zapytania wyrażone są w liczbie nukleotydów, a współrzędne sekwencji trafienia są podane w pozycjach aminokwasów. Liczba aminokwasów przyrównanej sekwencji `Query` i `Subject` wynoszą:
+   Długości nie odpowiadają sobie, ponieważ współrzędne sekwencji zapytania wyrażone są w liczbie nukleotydów, a współrzędne sekwencji trafienia są podane w pozycjach aminokwasów. Długości przyrównanej sekwencji `Query` i `Subject` w liczbie aminokwasów wynoszą:
 
    ```
    Query   (1074 - 121 + 1) * 3 = 318
@@ -25,19 +25,19 @@ Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz progra
 
    <img src="./images/ncbi-blast-mark.png" alt="ncbi-blast-mark" width="700px">
 
-   Ukryta wiadomość to `MARK WAS HERE`. Mark użył sekwencji DNA kodującej czynnik transkrypcyjny. Umieścił w niej odpowiednie kodony tak, aby po przetłumaczeniu sekwencji DNA na białko powstała wiadomość.
+   Ukryta wiadomość to `MARK WAS HERE`. Mark użył sekwencji DNA kodującej czynnik transkrypcyjny kurczaka. Umieścił w niej odpowiednie kodony tak, aby po przetłumaczeniu sekwencji DNA na białko powstała wiadomość.
 
-   W uzyskanym przyrównaniu sekwencja zapytania przedstawiona jest jako sekwencja białkowa, natomiast jej współrzędne podane są w nukleotydach. Zatem jeden aminokwas odpowiada trzem nukleotydom. Wyraz `MARK` znajduje się w pozycji `453-465`.
+   W uzyskanym przyrównaniu sekwencja zapytania przedstawiona jest jako sekwencja białkowa, natomiast jej współrzędne podane są w nukleotydach. Zatem jeden aminokwas odpowiada trzem nukleotydom. Wyraz `MARK` znajduje się w pozycji `456-467`.
 
    ```
       M         A         R         K
-   453-456   456-459   459-462   462-465
+   456-458   459-461   462-464   465-467
    ```
 
 5. Fragmenty przyrównania oznaczone małymi szarymi literami oznaczają regiony sekwencji o niskiej złożoności aminokwasowej (*low complexity*). Są to regiony zawierające wielokrotnie powtórzone reszty - krótkie segmenty powtórzeń albo segmenty, w których kila reszt występje częściej od innych (np. region `pppppppaaapp`). 
 
    Obecność tych segmentów w badanych sekwencjach powoduje tworzenie nieprawdziwych dopasowań i prowadzi do sztucznego zawyżania oceny przyrównania niespokrewnionych sekwencji. Dlatego regiony te nie są brane pod uwagę podczas wyznaczania przyrównania przez program BLAST (są "maskowane"), ponieważ mogłyby one fałszywie zawyżyć wartość punktacji `score`.
-   > Program BLAST domyślnie maskuje te regiony, ale możliwe jest wyłączenie opcji maskowania w formularzu prorgamu BLAST (w panelu `Algorithm parameters`, w części `Filters and Masking`, zaznaczyć/odznaczyć `Filter low complexity regions`).
+   > Program BLAST domyślnie maskuje te regiony w sekwencji zapytania, ale możliwe jest wyłączenie opcji maskowania w formularzu prorgamu BLAST (w panelu `Algorithm parameters`, w części `Filters and Masking`, zaznaczyć/odznaczyć `Filter low complexity regions`).
 
 <br/>
 
