@@ -532,6 +532,16 @@ Sbjct  59042  TAGCAACTAGCTTAGTGCCTGGCACATAGTAGGTGCT  59078
 
 8. Dodatkowe przyrównanie (`2786..2822`) obejmuje fragment 10 egzonu genu GABRG2 (`1511..3957`), który wykazuje przypadkowe podobieństwo do innego regionu w tym genie. Wartość *E*-value tego przyrównania równa `1` informuje o niewielkim znaczeniu tego przyrównania.
 
+   ```
+   Score = 45.5 bits (49),  Expect = 1.0
+    Identities = 32/37 (86%), Gaps = 0/37 (0%)
+    Strand=Plus/Plus
+   
+   Query  2786   TAGCACCTTGCATAGTGCCTGGCATATAGTTGGTGCT  2822
+                 ||||| || || |||||||||||| ||||| ||||||
+   Sbjct  59042  TAGCAACTAGCTTAGTGCCTGGCACATAGTAGGTGCT  59078
+   ```
+
 #### NCBI Splign
 Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign/). W polu `cDNA` umieść numer dostępu `NM_198904`, a w polu `Genomic` umieść `NG_009290` i naciśnij przycisk `Align`. Na stronie wynikowej, wyświetl widok w formacie tekstowym (`Text`).
 
