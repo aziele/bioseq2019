@@ -25,7 +25,7 @@ Ile lokalnych przyrównań występuje między sekwencję zapytania a sekwencją 
 <br/><br/>
 
 ### Zad. 3 - blastn: identyfikacja polimorfizmów w genomach wirusów HIV
-Ostatnio badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
+Ostatnio badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj poniższą sekwencję zapytania wirusa HIV oraz program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
 
 ```
 ATGACCTCAAATCACTCTTTGGCAACGACCCCTCGTCACAATAAAGATAGGGGGGCAACTAAAGGAAGCT
