@@ -95,7 +95,7 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
 4. Identyczność pary sekwencji `sp|P33296|UBC6_YEAST` i `sp|Q29503|UB2R2_RABIT` wynosi `23.83%`.
    > Wybierz `Result Summary` –> `Percent Identity Matrix`.
 
-<img src="./images/clustal_ube_identity_matrix.png" alt="clustal_ube_identity_matrix">
+<img src="./images/clustal_ube_identity.png" alt="clustal_ube_identity">
 
 #### Funkcjonalne regiony sekwencji
 
