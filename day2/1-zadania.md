@@ -1,5 +1,5 @@
 ### Zad. 1 - blastp: identyfikacja sekwencji białka
-Zidentyfikuj funkcję poniższego białka w bazie *SwissProt*. Sekwencja została wygenerowana w oparciu o translację 5 egzonu pewnego genu z pewnego gatunku *Drosophila*.
+Zidentyfikuj funkcję poniższego białka w bazie *SwissProt*. Sekwencja została wygenerowana w oparciu o translację 5 egzonu pewnego genu z jednego gatunku *Drosophila*.
 
 ```
 MSQICKRGLLISNRLAPAALRCKSTWFSEVQMGPPDAILGVTEAFKKDTNPKKINLGAGAYRDDNTQPFV
@@ -17,15 +17,15 @@ Znajdź białko u *Arabidopsis thaliana* homologiczne do poniższej sekwencji bi
 
 ```
 >sp|Q57014|RBPA_SYNY3 Putative RNA-binding protein RbpA OS=Synechocystis sp.
-MSIYVGNLSYDVSEADLTAVFAEYGSVKRVQLPTDRETGRMRGFGFVELEADAEETAAIE
-ALDGAEWMGRDLKVNKAKPRENRSGGGSFGGGRKSYGGSRY
+MSIYVGNLSYDVSEADLTAVFAEYGSVKRVQLPTDRETGRMRGFGFVELEADAEETAAIEALDGAEWMGR
+DLKVNKAKPRENRSGGGSFGGGRKSYGGSRY
 ```
 
 Ile lokalnych przyrównań występuje między sekwencję zapytania a sekwencją najlepszego trafienia?
 <br/><br/>
 
 ### Zad. 3 - blastn: identyfikacja polimorfizmów w genomach wirusów HIV
-W ostatnich badanich badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`). Jakie SNP występują w pozycji 6 znalezionych trafień?
+Ostatnio badano oporność lekową wirusa HIV u dzieci i dorosłych poddanych różnym terapiom leczenia. Wykorzystaj program BLAST do identyfikacji polimorfizmu pojedynczego nukleotydu (SNP) w izolatach HIV od pacjentów (sekwencje w bazie danych). W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
 
 ```
 ATGACCTCAAATCACTCTTTGGCAACGACCCCTCGTCACAATAAAGATAGGGGGGCAACTAAAGGAAGCT
@@ -44,4 +44,6 @@ CTATCAATACATGGATGATTTGTATGTAGGATCTGACTTAGAACTAGGGCAGCATAGAGCAAAAATAGAG
 GAACTGAGACGACATCTGTTGAGGTGGGGATTTACCACACCAGACAAAAAACATCAGAAAGAGCCTCCAT
 TCCTTTGGA
 ```
+
+Jakie SNP występują w pozycji 6 znalezionych trafień?
 <br/><br/>
