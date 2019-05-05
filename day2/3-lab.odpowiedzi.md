@@ -92,11 +92,12 @@ sp|P51965|UB2E1_HUMAN      INS-QGVICLDILKD-------------NWSPALTISKVLLSI-CSLLTDCNP
    * `.` - aminokwasy o podobnych właściwościach fizykochemiczych.
 2. Trzy aminokwasy są całkowicie zachowane u wszystkich organizmów: `P` dwukrotnie, `C` i `W`. 
 3. Zachowane aminokwasy najprawdopodobniej pełnią istotne funkcje w działaniu enzymu koniugującego ubikwitynę.
-4. Aby zobaczyć procent identyczności między dowolną parą sekwencji w przyrównaniu wybierz `Result Summary` –> `Percent Identity Matrix`. Identyczność pary sekwencji `sp|P33296|UBC6_YEAST` i `sp|Q29503|UB2R2_RABIT` wynosi `23.83%`.
+4. Identyczność pary sekwencji `sp|P33296|UBC6_YEAST` i `sp|Q29503|UB2R2_RABIT` wynosi `23.83%`.
+   > Wybierz `Result Summary` –> `Percent Identity Matrix`.
 
 <img src="./images/clustal_ube_identity_matrix.png" alt="clustal_ube_identity_matrix">
 
-#### Funkcjonalnie istotne regiony sekwencji
+#### Funkcjonalne regiony sekwencji
 
 Białka drożdży nie posiadające aktywności katalitycznej: [NP_588162](https://www.ncbi.nlm.nih.gov/protein/NP_588162) i [NP_011428](https://www.ncbi.nlm.nih.gov/protein/NP_011428):
 
