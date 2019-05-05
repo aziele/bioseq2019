@@ -135,6 +135,7 @@ Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść
 7. Domena kinazowa należy do nadrodziny *Protein kinase-like domain superfamily* (`IPR011009`).
 <br/><br/>
 
+
 ### Zad. 6 - InterPro: mutacja w obrębie domeny
 Otwórz stronę serwisu [EMBOSS Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/). Ustaw `Enter a pair of` na `PROTEIN`. Umieść sekwencję `seq1` w pierwszym polu i `seq2` w drugim polu. Naciśnij przycisk `Submit`.
 
