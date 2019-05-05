@@ -112,7 +112,182 @@ XPROT_H.lucidul NS
 2. Najdłuższy fragment sekwencji o 100% identyczności to `HPHGGG`.
 <br/><br/>
 
-### Zad. 2 - Miejsca akceptorowe egzonu
+### Zad. 2 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
+Program [RevTrans](http://www.cbs.dtu.dk/services/RevTrans-2.0/web/) jako sekwencje wejściowe przyjmuje sekwencje CDS, następnie dokonuje translacji tych sekwencji na sekwencje białkowe i korzystając z programu MAFFT przeprowadza przyrównanie sekwencji białkowych. W oparciu o otrzymane przyrównanie sekwencji białkowych, RevTrans odwzorowuje je dla sekwencji CDS.
+> Opcjonalnie, w programie RevTrans można użyć innej metody przyrównywania sekwencji białkowych niż MAFFT (np. ClustalW, T-Coffe) lub umieścić własne przyrównanie sekwencji białkowych. 
+
+Przyrównanie sekwencji CDS otrzymane w programie RevTrans:
+
+```
+CLUSTAL -  multiple sequence alignment - created by revtrans
+
+Sheep          ---------ATGGCCCTGTGGACACGCCTGGTGCCC------CTGCTGGCCCTGCTGGCA
+OwlMonkey      ---------ATGGCCCTGTGGATGCACCTCCTGCCC------CTGCTGGCGCTGCTGGCC
+Chimp          ---------ATGGCCCTGTGGATGCGCCTCCTGCCC------CTGCTGGTGCTGCTGGCC
+Dog            ---------ATGGCCCTCTGGATGCGCCTCCTGCCC------CTGCTGGCCCTGCTGGCC
+Pig            ---------ATGGCCCTGTGGACGCGCCTCCTGCCC------CTGCTGGCCCTGCTGGCC
+GuineaPig      ---------ATGGCTCTGTGGATGCATCTCCTCACC------GTGCTGGCCCTGCTGGCC
+GreenMonkey    ---------ATGGCCCTGTGGATGCGCCTCCTGCCC------CTGCTGGCGCTGCTGGCC
+Human          ---------ATGGCCCTGTGGATGCGCCTCCTGCCC------CTGCTGGCGCTGCTGGCC
+SeaHare        ATGAGCAAGTTCCTCCTCCAGAGCCACTCCGCCAACGCCTGCCTGCTCACCCTTCTGCTC
+Chicken        ---------ATGGCTCTCTGGATCCGATCACTGCCT------CTTCTGGCTCTCCTTGTC
+Mouse          ---------ATGGCCCTGTTGGTGCACTTCCTACCC------CTGCTGGCCCTGCTTGCC
+
+
+Sheep          CTCTGGGCCCCCGCCCCGGCCCACGCCTTCGTCAAC------------------------
+OwlMonkey      CTCTGGGGACCCGAGCCAGCCCCGGCCTTTGTGAAC------------------------
+Chimp          CTCTGGGGACCTGACCCAGCCTCGGCCTTTGTGAAC------------------------
+Dog            CTCTGGGCGCCCGCGCCCACCCGAGCCTTCGTTAAC------------------------
+Pig            CTCTGGGCGCCCGCCCCGGCCCAGGCCTTCGTGAAC------------------------
+GuineaPig      CTCTGGGGGCCCAACACTAATCAGGCCTTTGTCAGC------------------------
+GreenMonkey    CTCTGGGGACCTGACCCGGTCCCGGCCTTTGTGAAC------------------------
+Human          CTCTGGGGACCTGACCCAGCCGCAGCCTTTGTGAAC------------------------
+SeaHare        ACGCTGGCCTCCAACCTCGACATATCCCTGGCCAACTTCGAGCACTCGTGCAACGGCTAC
+Chicken        TTTTCTGGCCCTGGAACCAGCTATGCAGCTGCCAAC------------------------
+Mouse          CTCTGGGAGCCCAAACCCACCCAGGCTTTTGTCAAA------------------------
+
+
+Sheep          ---------------CAGCACCTGTGCGGCTCCCACCTGGTGGAGGCGCTGTACCTGGTG
+OwlMonkey      ---------------CAGCACCTGTGCGGCCCCCACCTGGTGGAAGCCCTCTACCTGGTG
+Chimp          ---------------CAACACCTGTGCGGCTCCCACCTGGTGGAAGCTCTCTACCTAGTG
+Dog            ---------------CAGCACCTGTGTGGCTCCCACCTGGTAGAGGCTCTGTACCTGGTG
+Pig            ---------------CAGCACCTGTGCGGCTCCCACCTGGTGGAGGCGCTGTACCTGGTG
+GuineaPig      ---------------CGGCATCTGTGCGGCTCCAACTTAGTGGAGACATTGTATTCAGTG
+GreenMonkey    ---------------CAGCACCTGTGCGGCTCCCACCTGGTGGAAGCCCTCTACCTGGTG
+Human          ---------------CAACACCTGTGCGGCTCACACCTGGTGGAAGCTCTCTACCTAGTG
+SeaHare        ATGCGGCCCCACCCGCGGGGTCTGTGCGGCGAAGACCTGCACGTCATCATTTCCAACCTG
+Chicken        ---------------CAGCACCTCTGTGGCTCCCACTTGGTGGAGGCTCTCTACCTGGTG
+Mouse          ---------------CAGCATCTTTGTGGTCCCCACCTGGTAGAGGCTCTCTACCTGGTG
+
+
+Sheep          TGC------------GGAGAGCGCGGCTTCTTCTACACGCCCAAGGCCCGCCGGGAGGTG
+OwlMonkey      TGC------------GGGGAGCGAGGTTTCTTCTACGCACCCAAGACCCGCCGGGAGGCG
+Chimp          TGC------------GGGGAACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCA
+Dog            TGC------------GGGGAGCGCGGCTTCTTCTACACGCCTAAGGCCCGCAGGGAGGTG
+Pig            TGC------------GGGGAGCGCGGCTTCTTCTACACGCCCAAGGCCCGTCGGGAGGCG
+GuineaPig      TGT------------CAGGATGATGGCTTCTTCTATATACCCAAGGACCGTCGGGAGCTA
+GreenMonkey    TGC------------GGGGAGCGAGGCTTCTTCTACACGCCCAAGACCCGCCGGGAGGCA
+Human          TGC------------GGGGAACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCA
+SeaHare        TGCAGCTCTCTGGGGGGCAACAGGAGGTTCCTGGCCAAGTACATGGTCAAAAGAGACACG
+Chicken        TGT------------GGAGAGCGTGGCTTCTTCTACTCCCCCAAAGCCCGACGGGATGTC
+Mouse          TGT------------GGGGAGCGTGGCTTCTTCTACACACCCAAGTCCCGCCGTGAAGTG
+
+
+Sheep          GAGGGCCCCCAGGTGGGGGCGCTGGAGCTGGCCGGAGGCCCC------GGC---------
+OwlMonkey      GAGGACCTGCAGGTGGGGCAGGTGGAGCTGGGTGGGGGCTCTATCACGGGCAGCCTGCCA
+Chimp          GAGGACCTGCAGGTGGGGCAGGTGGAGCTGGGCGGGGGCCCTGGTGCAGGCAGCCTGCAG
+Dog            GAGGACCTGCAGGTGAGGGACGTGGAGCTGGCCGGGGCGCCTGGCGAGGGCGGCCTGCAG
+Pig            GAGAACCCTCAGGCAGGTGCCGTGGAGCTGGGCGGAGGCCTG------GGCGGCCTGCAG
+GuineaPig      GAGGACCCACAGGTGGAGCAGACAGAACTGGGCATGGGCCTGGGGGCAGGTGGACTACAG
+GreenMonkey    GAGGACCCGCAGGTGGGGCAGGTAGAGCTGGGCGGGGGCCCTGGCGCAGGCAGCCTGCAG
+Human          GAGGACCTGCAGGTGGGGCAGGTGGAGCTGGGCGGGGGCCCTGGTGCAGGCAGCCTGCAG
+SeaHare        GAAAAT------GTGAACGACAAGTTACGAGGG---------------ATCCTGCTCAAT
+Chicken        GAGCAGCCCCTAGTGAGCAGTCCCTTGCGTGGCGAGGCA---------GGAGTGCTGCCT
+Mouse          GAGGACCCACAAGTGGAACAACTGGAGCTGGGAGGAAGCCCC------GGGGACCTTCAG
+
+
+Sheep          GCGGGTGGCCTGGAGGGGCCCCCGCAGAAGCGT------------GGCATCGTGGAGCAG
+OwlMonkey      CCC------TTGGAGGGTCCCATGCAGAAGCGT------------GGCGTCGTGGATCAG
+Chimp          CCCTTGGCCCTGGAGGGGTCCCTGCAGAAGCGT------------GGTATCGTGGAACAA
+Dog            CCCCTGGCCCTGGAGGGGGCCCTGCAGAAGCGA------------GGCATCGTGGAGCAG
+Pig            GCCCTGGCGCTGGAGGGGCCCCCGCAGAAGCGT------------GGCATCGTGGAGCAG
+GuineaPig      CCCTTGGCACTGGAGATGGCACTACAGAAGCGT------------GGCATTGTGGATCAG
+GreenMonkey    CCCTTGGCGCTGGAGGGGTCCCTGCAGAAGCGC------------GGCATCGTGGAGCAG
+Human          CCCTTGGCCCTGGAGGGGTCCCTGCAGAAGCGT------------GGCATTGTGGAACAA
+SeaHare        AAGAAAGAAGCTTTCTCCTACTTGACCAAGAGAGAGGCCTCAGGCTCCATCACATGCGAA
+Chicken        TTCCAGCAGGAGGAATACGAGAAAGTCAAGCGA------------GGGATTGTTGAGCAA
+Mouse          ACCTTGGCGTTGGAGGTGGCCCGGCAGAAGCGT------------GGCATTGTGGATCAG
+
+
+Sheep          TGCTGCGCCGGCGTCTGCTCTCTCTACCAGCTGGAGAACTACTGTAAC------------
+OwlMonkey      TGCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAAC------------
+Chimp          TGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAAC------------
+Dog            TGCTGCACCAGCATCTGCTCCCTCTACCAGCTGGAGAATTACTGCAAC------------
+Pig            TGCTGCACCAGCATCTGTTCCCTCTACCAGCTGGAGAACTACTGCAAC------------
+GuineaPig      TGCTGTACTGGCACCTGCACACGCCACCAGCTGCAGAGCTACTGCAAC------------
+GreenMonkey    TGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAAC------------
+Human          TGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAAC------------
+SeaHare        TGTTGCTTCAACCAGTGTCGGATATTTGAGCTGGCTCAGTACTGCCGTCTGCCAGACCAT
+Chicken        TGCTGCCATAACACGTGTTCCCTCTACCAACTGGAGAACTACTGCAAC------------
+Mouse          TGCTGCACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAAC------------
+
+
+Sheep          ------------------------------------------------------------
+OwlMonkey      ------------------------------------------------------------
+Chimp          ------------------------------------------------------------
+Dog            ------------------------------------------------------------
+Pig            ------------------------------------------------------------
+GuineaPig      ------------------------------------------------------------
+GreenMonkey    ------------------------------------------------------------
+Human          ------------------------------------------------------------
+SeaHare        TTCTTCTCCAGAATATCCAGAACCGGAAGGAGCAACAGTGGACATGCGCAGTTGGAGGAC
+Chicken        ------------------------------------------------------------
+Mouse          ------------------------------------------------------------
+
+
+Sheep          ---------
+OwlMonkey      ---------
+Chimp          ---------
+Dog            ---------
+Pig            ---------
+GuineaPig      ---------
+GreenMonkey    ---------
+Human          ---------
+SeaHare        AACTTTAGT
+Chicken        ---------
+Mouse          ---------
+```
+
+Odpowiadające mu przyrównanie sekwencji białkowych:
+
+```
+CLUSTAL -  multiple sequence alignment - created by revtrans
+
+Sheep          ---MALWTRLVP--LLALLALWAPAPAHAFVN-------------QHLCGSHLVEALYLV
+OwlMonkey      ---MALWMHLLP--LLALLALWGPEPAPAFVN-------------QHLCGPHLVEALYLV
+Chimp          ---MALWMRLLP--LLVLLALWGPDPASAFVN-------------QHLCGSHLVEALYLV
+Dog            ---MALWMRLLP--LLALLALWAPAPTRAFVN-------------QHLCGSHLVEALYLV
+Pig            ---MALWTRLLP--LLALLALWAPAPAQAFVN-------------QHLCGSHLVEALYLV
+GuineaPig      ---MALWMHLLT--VLALLALWGPNTNQAFVS-------------RHLCGSNLVETLYSV
+GreenMonkey    ---MALWMRLLP--LLALLALWGPDPVPAFVN-------------QHLCGSHLVEALYLV
+Human          ---MALWMRLLP--LLALLALWGPDPAAAFVN-------------QHLCGSHLVEALYLV
+SeaHare        MSKFLLQSHSANACLLTLLLTLASNLDISLANFEHSCNGYMRPHPRGLCGEDLHVIISNL
+Chicken        ---MALWIRSLP--LLALLVFSGPGTSYAAAN-------------QHLCGSHLVEALYLV
+Mouse          ---MALLVHFLP--LLALLALWEPKPTQAFVK-------------QHLCGPHLVEALYLV
+
+
+Sheep          C----GERGFFYTPKARREVEGPQVGALELAGGP--G---AGGLEGPPQKR----GIVEQ
+OwlMonkey      C----GERGFFYAPKTRREAEDLQVGQVELGGGSITGSLPP--LEGPMQKR----GVVDQ
+Chimp          C----GERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
+Dog            C----GERGFFYTPKARREVEDLQVRDVELAGAPGEGGLQPLALEGALQKR----GIVEQ
+Pig            C----GERGFFYTPKARREAENPQAGAVELGGGL--GGLQALALEGPPQKR----GIVEQ
+GuineaPig      C----QDDGFFYIPKDRRELEDPQVEQTELGMGLGAGGLQPLALEMALQKR----GIVDQ
+GreenMonkey    C----GERGFFYTPKTRREAEDPQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
+Human          C----GERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
+SeaHare        CSSLGGNRRFLAKYMVKRDTEN--VNDKLRG-----ILLNKKEAFSYLTKREASGSITCE
+Chicken        C----GERGFFYSPKARRDVEQPLVSSPLRGEA---GVLPFQQEEYEKVKR----GIVEQ
+Mouse          C----GERGFFYTPKSRREVEDPQVEQLELGGSP--GDLQTLALEVARQKR----GIVDQ
+
+
+Sheep          CCAGVCSLYQLENYCN---------------------------
+OwlMonkey      CCTSICSLYQLQNYCN---------------------------
+Chimp          CCTSICSLYQLENYCN---------------------------
+Dog            CCTSICSLYQLENYCN---------------------------
+Pig            CCTSICSLYQLENYCN---------------------------
+GuineaPig      CCTGTCTRHQLQSYCN---------------------------
+GreenMonkey    CCTSICSLYQLENYCN---------------------------
+Human          CCTSICSLYQLENYCN---------------------------
+SeaHare        CCFNQCRIFELAQYCRLPDHFFSRISRTGRSNSGHAQLEDNFS
+Chicken        CCHNTCSLYQLENYCN---------------------------
+Mouse          CCTSICSLYQLENYCN---------------------------
+```
+
+1. Tak, liczba przerw jest podzielna przez 3.
+2. Tak, pozycje w kodonach odpowiadają sobie, ponieważ przyrównanie sekwencji CDS zostało zbudowane na podstawie przyrównania sekwencji białek.
+<br/><br/>
+
+
+### Zad. 3 - Miejsca akceptorowe egzonu
 Logo wykonane w programie [WebLogo](http://weblogo.berkeley.edu/logo.cgi).
 
 <img src="./images/logo-acceptor.png" alt="logo-acceptor">
