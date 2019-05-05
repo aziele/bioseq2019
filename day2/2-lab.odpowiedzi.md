@@ -6,7 +6,22 @@ Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz progra
 > Program **blastx** dokonuje translacji nukleotydowej sekwencji w zapytaniu i dla tak uzyskanej sekwencji aminokwasowej przeszukuje bazę danych sekwencji aminokwasowych. Translacja dokonywana przez program blastx prowadzona jest w sześciu ramkach odczytu (trzy ramki odczytu na nici `plus` i trzy ramki odczytu na nici `minus`). Zatem z nukleotydowej sekwencji zapytania powstaje 6 różnych sekwencji białkowych, które następnie użyte zostają do przeszukania bazy danych sekwencji białkowych.
 
 1. Sekwencja z bazy danych, która wykazuje największe podobieństwo do sekwencji zapytania jest czynnikiem transkrypcyjnym kurczaka (*Gallus gallus*) o numerze dostępu [NP_990795.1](https://www.ncbi.nlm.nih.gov/protein/NP_990795.1).
-2. Przyrównanie sekwencji Marka i sekwencji `NP_990795.1`.
+2. Sekwencja zapytania została przetłumaczona w pierwszej ramce odczytu (`Frame: +1`).
+3. Pozycje startu i końca przyrównania:
+
+   ```
+   Query   121   1074
+   Sbjct     1    304
+   ```
+
+   Długości nie odpowiadają sobie, ponieważ współrzędne sekwencji zapytania wyrażone są w liczbie nukleotydów, a współrzędne sekwencji trafienia są podane w pozycjach aminokwasów. Liczba aminokwasów przyrównanej sekwencji `Query` i `Subject` wynoszą:
+
+   ```
+   Query   (1074 - 121 + 1) * 3 = 318
+   Sbjct            304 - 1 + 1 = 304
+   ``` 
+
+4. Przyrównanie sekwencji Marka i sekwencji `NP_990795.1`.
 
    <img src="./images/ncbi-blast-mark.png" alt="ncbi-blast-mark" width="700px">
 
@@ -19,7 +34,7 @@ Otwórz serwis [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz progra
    453-456   456-459   459-462   462-465
    ```
 
-3. Fragmenty przyrównania oznaczone małymi szarymi literami oznaczają regiony sekwencji o niskiej złożoności aminokwasowej (*low complexity*). Są to regiony zawierające wielokrotnie powtórzone reszty - krótkie segmenty powtórzeń albo segmenty, w których kila reszt występje częściej od innych (np. region `pppppppaaapp`). 
+5. Fragmenty przyrównania oznaczone małymi szarymi literami oznaczają regiony sekwencji o niskiej złożoności aminokwasowej (*low complexity*). Są to regiony zawierające wielokrotnie powtórzone reszty - krótkie segmenty powtórzeń albo segmenty, w których kila reszt występje częściej od innych (np. region `pppppppaaapp`). 
 
    Obecność tych segmentów w badanych sekwencjach powoduje tworzenie nieprawdziwych dopasowań i prowadzi do sztucznego zawyżania oceny przyrównania niespokrewnionych sekwencji. Dlatego regiony te nie są brane pod uwagę podczas wyznaczania przyrównania przez program BLAST (są "maskowane"), ponieważ mogłyby one fałszywie zawyżyć wartość punktacji `score`.
    > Program BLAST domyślnie maskuje te regiony, ale możliwe jest wyłączenie opcji maskowania w formularzu prorgamu BLAST (w panelu `Algorithm parameters`, w części `Filters and Masking`, zaznaczyć/odznaczyć `Filter low complexity regions`).

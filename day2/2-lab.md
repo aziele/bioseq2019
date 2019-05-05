@@ -34,9 +34,12 @@ TCGGAGGCGGCATGGACCCAGCGTAGATCATGCTGGATTTGTACTGCCGGAATTC
 W zaproponowanej przez siebie sekwencji Mark ukrył pewną wiadomość, którą można odczytać na poziomie aminokwasów. W tym celu należy porównać sekwencję Marka z białkową bazą `nr` przy pomocy programu **blastx**.
 
 1. Z jakiego organizmu pochodzi sekwencja Marka?
-2. Spójrz na przyrównanie tych sekwencji. Jak brzmi ukryta wiadomość?
+2. W której ramce odczytu została przetłumaczona sekwencja zapytania?
+3. Podaj pozycję startu i końca przyrównania w sekwencji zapytania i sekwencji trafienia.
+   * Dlaczego te długości nie odpowiadają sobie?
+3. Spójrz na przyrównanie tych sekwencji. Jak brzmi ukryta wiadomość?
    * Podaj pozycję w sekwencji zapytania pierwszego wyrazu wiadomości. 
-3. Co oznaczają fragmenty dopasowania oznaczone małymi szarymi literami?
+4. Co oznaczają fragmenty dopasowania oznaczone małymi szarymi literami?
 <br/><br/>
 
 
