@@ -5,7 +5,7 @@ W pliku [x-protein.fasta](./data/x-protein.fasta) znajdują się sekwencje amino
 2. Podaj najdłuższy fragment sekwencji o nieprzerwanej 100% identyczności.
 <br/><br/>
 
-## Zad. 2 - Miejsca akceptorowe egzonu
+### Zad. 2 - Miejsca akceptorowe egzonu
 W pliku [acceptor.fasta](./data/acceptor.fasta) znajduje się 100 sekwencji wyodrębnionych z genów człowieka w miejscu intron/egzon. Wykonaj logo tych sekwencji.
 
 
