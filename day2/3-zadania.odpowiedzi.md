@@ -113,7 +113,52 @@ XPROT_H.lucidul NS
 <br/><br/>
 
 ### Zad. 2 - Przyrównanie sekwencji CDS w oparciu o sekwencje białkowe
-Przyrównanie sekwencji CDS insuliny otrzymane w programie RevTrans:
+Przyrównanie sekwencji białkowych insuliny otrzymane w programie RevTrans:
+
+```
+CLUSTAL -  multiple sequence alignment - created by revtrans
+
+Sheep          ---MALWTRLVP--LLALLALWAPAPAHAFVN-------------QHLCGSHLVEALYLV
+OwlMonkey      ---MALWMHLLP--LLALLALWGPEPAPAFVN-------------QHLCGPHLVEALYLV
+Chimp          ---MALWMRLLP--LLVLLALWGPDPASAFVN-------------QHLCGSHLVEALYLV
+Dog            ---MALWMRLLP--LLALLALWAPAPTRAFVN-------------QHLCGSHLVEALYLV
+Pig            ---MALWTRLLP--LLALLALWAPAPAQAFVN-------------QHLCGSHLVEALYLV
+GuineaPig      ---MALWMHLLT--VLALLALWGPNTNQAFVS-------------RHLCGSNLVETLYSV
+GreenMonkey    ---MALWMRLLP--LLALLALWGPDPVPAFVN-------------QHLCGSHLVEALYLV
+Human          ---MALWMRLLP--LLALLALWGPDPAAAFVN-------------QHLCGSHLVEALYLV
+SeaHare        MSKFLLQSHSANACLLTLLLTLASNLDISLANFEHSCNGYMRPHPRGLCGEDLHVIISNL
+Chicken        ---MALWIRSLP--LLALLVFSGPGTSYAAAN-------------QHLCGSHLVEALYLV
+Mouse          ---MALLVHFLP--LLALLALWEPKPTQAFVK-------------QHLCGPHLVEALYLV
+
+
+Sheep          C----GERGFFYTPKARREVEGPQVGALELAGGP--G---AGGLEGPPQKR----GIVEQ
+OwlMonkey      C----GERGFFYAPKTRREAEDLQVGQVELGGGSITGSLPP--LEGPMQKR----GVVDQ
+Chimp          C----GERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
+Dog            C----GERGFFYTPKARREVEDLQVRDVELAGAPGEGGLQPLALEGALQKR----GIVEQ
+Pig            C----GERGFFYTPKARREAENPQAGAVELGGGL--GGLQALALEGPPQKR----GIVEQ
+GuineaPig      C----QDDGFFYIPKDRRELEDPQVEQTELGMGLGAGGLQPLALEMALQKR----GIVDQ
+GreenMonkey    C----GERGFFYTPKTRREAEDPQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
+Human          C----GERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
+SeaHare        CSSLGGNRRFLAKYMVKRDTEN--VNDKLRG-----ILLNKKEAFSYLTKREASGSITCE
+Chicken        C----GERGFFYSPKARRDVEQPLVSSPLRGEA---GVLPFQQEEYEKVKR----GIVEQ
+Mouse          C----GERGFFYTPKSRREVEDPQVEQLELGGSP--GDLQTLALEVARQKR----GIVDQ
+
+
+Sheep          CCAGVCSLYQLENYCN---------------------------
+OwlMonkey      CCTSICSLYQLQNYCN---------------------------
+Chimp          CCTSICSLYQLENYCN---------------------------
+Dog            CCTSICSLYQLENYCN---------------------------
+Pig            CCTSICSLYQLENYCN---------------------------
+GuineaPig      CCTGTCTRHQLQSYCN---------------------------
+GreenMonkey    CCTSICSLYQLENYCN---------------------------
+Human          CCTSICSLYQLENYCN---------------------------
+SeaHare        CCFNQCRIFELAQYCRLPDHFFSRISRTGRSNSGHAQLEDNFS
+Chicken        CCHNTCSLYQLENYCN---------------------------
+Mouse          CCTSICSLYQLENYCN---------------------------
+```
+
+Odpowiadające przyrównanie sekwencji CDS:
+
 
 ```
 CLUSTAL -  multiple sequence alignment - created by revtrans
@@ -233,50 +278,6 @@ Human          ---------
 SeaHare        AACTTTAGT
 Chicken        ---------
 Mouse          ---------
-```
-
-Odpowiadające mu przyrównanie sekwencji białkowych:
-
-```
-CLUSTAL -  multiple sequence alignment - created by revtrans
-
-Sheep          ---MALWTRLVP--LLALLALWAPAPAHAFVN-------------QHLCGSHLVEALYLV
-OwlMonkey      ---MALWMHLLP--LLALLALWGPEPAPAFVN-------------QHLCGPHLVEALYLV
-Chimp          ---MALWMRLLP--LLVLLALWGPDPASAFVN-------------QHLCGSHLVEALYLV
-Dog            ---MALWMRLLP--LLALLALWAPAPTRAFVN-------------QHLCGSHLVEALYLV
-Pig            ---MALWTRLLP--LLALLALWAPAPAQAFVN-------------QHLCGSHLVEALYLV
-GuineaPig      ---MALWMHLLT--VLALLALWGPNTNQAFVS-------------RHLCGSNLVETLYSV
-GreenMonkey    ---MALWMRLLP--LLALLALWGPDPVPAFVN-------------QHLCGSHLVEALYLV
-Human          ---MALWMRLLP--LLALLALWGPDPAAAFVN-------------QHLCGSHLVEALYLV
-SeaHare        MSKFLLQSHSANACLLTLLLTLASNLDISLANFEHSCNGYMRPHPRGLCGEDLHVIISNL
-Chicken        ---MALWIRSLP--LLALLVFSGPGTSYAAAN-------------QHLCGSHLVEALYLV
-Mouse          ---MALLVHFLP--LLALLALWEPKPTQAFVK-------------QHLCGPHLVEALYLV
-
-
-Sheep          C----GERGFFYTPKARREVEGPQVGALELAGGP--G---AGGLEGPPQKR----GIVEQ
-OwlMonkey      C----GERGFFYAPKTRREAEDLQVGQVELGGGSITGSLPP--LEGPMQKR----GVVDQ
-Chimp          C----GERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
-Dog            C----GERGFFYTPKARREVEDLQVRDVELAGAPGEGGLQPLALEGALQKR----GIVEQ
-Pig            C----GERGFFYTPKARREAENPQAGAVELGGGL--GGLQALALEGPPQKR----GIVEQ
-GuineaPig      C----QDDGFFYIPKDRRELEDPQVEQTELGMGLGAGGLQPLALEMALQKR----GIVDQ
-GreenMonkey    C----GERGFFYTPKTRREAEDPQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
-Human          C----GERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKR----GIVEQ
-SeaHare        CSSLGGNRRFLAKYMVKRDTEN--VNDKLRG-----ILLNKKEAFSYLTKREASGSITCE
-Chicken        C----GERGFFYSPKARRDVEQPLVSSPLRGEA---GVLPFQQEEYEKVKR----GIVEQ
-Mouse          C----GERGFFYTPKSRREVEDPQVEQLELGGSP--GDLQTLALEVARQKR----GIVDQ
-
-
-Sheep          CCAGVCSLYQLENYCN---------------------------
-OwlMonkey      CCTSICSLYQLQNYCN---------------------------
-Chimp          CCTSICSLYQLENYCN---------------------------
-Dog            CCTSICSLYQLENYCN---------------------------
-Pig            CCTSICSLYQLENYCN---------------------------
-GuineaPig      CCTGTCTRHQLQSYCN---------------------------
-GreenMonkey    CCTSICSLYQLENYCN---------------------------
-Human          CCTSICSLYQLENYCN---------------------------
-SeaHare        CCFNQCRIFELAQYCRLPDHFFSRISRTGRSNSGHAQLEDNFS
-Chicken        CCHNTCSLYQLENYCN---------------------------
-Mouse          CCTSICSLYQLENYCN---------------------------
 ```
 
 1. Tak, liczba przerw jest podzielna przez 3.
