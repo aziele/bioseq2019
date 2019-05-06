@@ -123,11 +123,13 @@ Ponownie skorzystaj z narzędzie `Retrieve/ID Mapping` podając identyfikatory U
 
 ## Ontologia genów (Gene Ontology)
 
-**Ontologia genów** stanowi inicjatywę zmierzającą do ustalenia i kontrolowania terminologii związanej z różnymi aspektami funkcjonowania genów. Ontologia genów składa się z trzech działów:
+**Ontologia genów** stanowi inicjatywę zmierzającą do ustalenia i kontrolowania terminologii związanej z różnymi aspektami funkcjonowania genów. Ontologia genów składa się z trzech domen:
 
-1. **Funkcja molekularna** (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym
-2. **Proces biologiczny** (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczęściej co najmniej dwa produkty ekspresji genów.
-3. **Składnik komórkowy** (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się produkty ekspresji poszczególnych genów.
+1. **Funkcja molekularna** (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym. (np. aktywność katalityczna, aktywność transportowa, aktywność cyklazy adenylowej)
+2. **Proces biologiczny** (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczęściej co najmniej dwa produkty ekspresji genów (np. naprawa DNA, przekazywanie sygnału, transport glukozy przez błonę komórkową).
+3. **Składnik komórkowy** (*cellular component*) - opisuje miejsce w komórce, w którym znajdują się i funkcjonują produkty ekspresji poszczególnych genów. Miejscem mogą być zarówno kompartmenty komórkowej (np. mitochondrium), jak i makrocząsteczkowe kompleksy (np. rybosom)
+
+> Przykładowo, produkt genu *cytochromu c* może być opisany przez **funkcję molekularną** jako *aktywność oksydoreduktazy*, przez **proces biologiczny** jako *fosforylacja oksydacyjna*, przez **składnik komórkowy** jako *macierz mitochondrialna*.
 
 ### Zad. 5 - Ontologia pojedynczego genu
 Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov). Wybierz bazę `Gene` i korzystając z zaawansowanego wyszukiwania utwórz zapytania:
@@ -153,8 +155,9 @@ W wyniku otrzymany zostanie pojedynczy rekord o identyfikatorze genu (`Gene ID`)
    <img src="./images/go-casp6.png" alt="go-casp6" width="700px">
 
 2. Trzyliterowy kody (np. `IBA`, `TAS`) odnoszą się do opisu danego terminu ontologii. Informują one o  metodzie, według której przypisano dany terminu ontologii do danego genu. Skierowanie kursora myszy na dany kod wyświetli jego pełny opis. Na przykład:
-   * skrót `IBA` (*Inferred from Biological aspect of Ancestor*) - dany termin GO został przypisany do tego genu na podstawie organizmu przodka filogenetycznego.
+   * skrót `IBA` (*Inferred from Biological aspect of Ancestor*) - dany termin GO został przypisany do tego genu na podstawie homologicznego genu u organizmu przodka filogenetycznego, u którego dany termin GO został przypisany doświadczalnie.
    * skrót `IMP` (*Inferred from Mutant Phenotype*) - termin GO został przypisany do tego genu na podstawie fenotypu mutanta tego genu.
+   Więcej informacji na temat kodów `Evidence Code` znajduje się na oficjalnej stronie [geneontology.org](http://geneontology.org/docs/guide-go-evidence-codes/).
 3. W rekordzie genu, w panelu `Related sequences` znajduje się numer dostępu kodowanego przez ten gen białka w bazie UniProt: [UniProtKB/Swiss-Prot:P55212](https://www.uniprot.org/uniprot/P55212). 
 
    Tak, w rekordzie UniProt również znajdują się informacje dotyczące ontologii genów. Informacja na temat funkcji i procesu biologicznego znajduje się w panelu `Function`, a informacja o przedziale komórkowym znajduje się w panelu `Subcellular location` w zakładce `GO - Cellular component`.
@@ -167,16 +170,17 @@ Otwórz stronę serwisu [Gene Ontology](http://amigo.geneontology.org/amigo/). W
 <img src="./images/amigo-quicksearch.png" alt="amigo-quicksearch" width="600px">
 
 1. Numer dostępu procesu PCD w bazie *Gene Ontology* to [GO:0012501](http://amigo.geneontology.org/amigo/term/GO:0012501).
-2. Proces PCD nie jest tożsamy z apoptozą. Według klasyfikacji GO, proces PCD ma szerszy zakres, a apoptoza jest składową procesu PCD.
+2. Proces PCD nie jest tożsamy z apoptozą. Według klasyfikacji GO, proces PCD ma szerszy zakres, a apoptoza jest podtypem procesu PCD. Apoptoza jest procesem bardziej specyficznym i jest w relacji *is a* z PCD.
 
    <img src="./images/go-pcd-inferred_tree.png" alt="go-pcd-inferred_tree" width="600px">
 
-3. Trzy przykładowe procesy wchodzące w skład PCD to:
+3. Trzy przykładowe podtypy procesu PCD (będące w relacji `is a`):
    * autofagowa degradacja
    * autoliza
    * apoptoza
 
 4. Procesem nadrzędnym dla PCD jest śmierć komórkowa `GO:0008219 cell death`.
+5. Dwie klasy ontologii - `GO:0005035 death receptor activity` oraz `GO:1902686` - są składowymi procesu PCD (są one w relacji `part of`). Relacja ta oznacza, że jeżeli istnieje aktywność receptorów śmierci to na pewno istnieje PCD. Relacja `part of` niekoniecznie gwarantuje, że zależność będzie zachodziła w drugim kierunku - jeżeli istnieje PCD to niekoniecznie zachodzi aktywność receptorów śmierci.
 
 #### Zakładka Annotations
 

@@ -78,7 +78,7 @@ Przejdź do rekordu genu `BRCA2`.
 
 * Zapisz sekwencję genomową genu BRCA2 w formacie FASTA.
 
-10. Wyświetl sekwencję genomową genu dodając 1000 nukleotydów *upstream* i *downstream*.
+10. Wyświetl sekwencję genomową genu dodając `1000` nukleotydów *upstream* i *downstream*.
 <br/><br/>
 
 ## Baza genów (NCBI Gene)
@@ -112,9 +112,9 @@ Korzystając z bazy `Taxonomy` serwisu [NCBI](https://www.ncbi.nlm.nih.gov) wysz
 
 
 ### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
-Korzystając z bazy `Taxonomy` serwisu [NCBI](https://www.ncbi.nlm.nih.gov) wyświel przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
+Korzystając z bazy `Taxonomy` serwisu [NCBI](https://www.ncbi.nlm.nih.gov) wyświetl przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
 
-1. Wyświetl drzewo taksonomiczne ograniczając je do sześciu poziomów rozgałęzienia.
+1. Wyświetl drzewo taksonomiczne rozszerzając je do sześciu poziomów rozgałęzienia.
 2. Do jakiej podrodziny należy rodzaj `Rattus`?
 3. Ogranicz widok drzewa tylko do organizmów o znanych sekwencjach genomów.
    * Czy genom szczura (*Rattus norvegicus*) jest dostępny?

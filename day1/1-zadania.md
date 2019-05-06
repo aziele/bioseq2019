@@ -23,7 +23,7 @@ W bazie nukleotydowej [NCBI](https://www.ncbi.nlm.nih.gov) znajdź 10 najdłużs
 
 <br/>
 
-### Zad. 4 - Znajdź sekwencje genomowe B. thuringiensis opublikowane w 2019 roku
+### Zad. 4 - Znajdź sekwencje genomowe *B. thuringiensis* opublikowane w 2019 roku
 W bazie nukleotydowej [NCBI](https://www.ncbi.nlm.nih.gov) znajdź wszystkie sekwence genomowe *Bacillus thuringiensis* opublikowane od początku 2019 roku.
 <br/><br>
 

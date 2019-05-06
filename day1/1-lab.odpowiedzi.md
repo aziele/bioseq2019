@@ -364,4 +364,4 @@ W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` 
 4. W panelu znajdującym się pod polem wyszukiwania zazacz `protein`, `gene`, `nucleotide` i naciśnij przycisk `Display`.
    * Dla szczura znanych jest `152 583` sekwencji białkowych.
 
-<img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png" width="400px">
+   <img src="./images/ncbi-taxonomy_rat.png" alt="ncbi-taxonomy_rat.png" width="400px">

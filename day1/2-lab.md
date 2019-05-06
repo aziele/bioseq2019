@@ -86,14 +86,15 @@ W serwisie [Gene Ontology](http://amigo.geneontology.org/amigo/), w polu wyszuki
 1. Podaj numer dostępu procesu PCD w bazie Gene Ontology.
 2. Przejdź do zakładki `Inferred Tree View`.
    * Czy PCD jest tożsamy z apoptozą?
-3. Wymień 3 procesy wchodzące w skład PCD.
+3. Wymień 3 przykładowe podtypy procesu PCD (tj. ontologie w relacji `is a`).
 4. Podaj nazwę i numer dostępu procesu, który jest nadrzędny dla PCD.
+5. Które ontologie są w relacji `part of` do PCD?
 
 #### Zakładka Annotations
 Przejdź do zakładki `Annotations`. 
 
 5. Ile genów bierze udział w PCD?
-6. Skorzystaj z filtrów (`Filter results`) i ogranicz liczbę wyników do ludzkich białek pochodzących z bazy UniProt. 
+6. Skorzystaj z filtrów (`Filter results`) i ogranicz liczbę wyników do organizmu człowieka.
    - Ile rekordów znaleziono?
 7. Ogranicz listę wyników otrzymaną w poprzednim punkcie do genów, których funkcja PCD została przypisana na podstawie doświadczeń laboratoryjnych.
    - Ile rekordów znaleziono?

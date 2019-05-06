@@ -30,7 +30,7 @@ Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową baz�
 W wyniku otrzymano **10** sekwencji mRNA ludzkiego genu titin (TTN), który koduje białko zapewniające strukturę i elastyczność komórkom mięsniowym. Najdłuższy transkrypt genu TTN ([NM_001267550](https://www.ncbi.nlm.nih.gov/nuccore/NM_001267550)) ma `109 224` pz, a kodowane przez niego białko składa się z `35 991` reszt aminokwasowych.
 <br/><br/>
 
-### Zad. 4 - Znajdź sekwencje genomowe B. thuringiensis opublikowane w 2019 roku
+### Zad. 4 - Znajdź sekwencje genomowe *B. thuringiensis* opublikowane w 2019 roku
 Otwórz stronę [NCBI](https://www.ncbi.nlm.nih.gov). Wybierz nukleotydową bazę danych (`Nucleotide`). Użyj zaawansowanego wyszukiwania (`Advanced`) i skonstruuj poniższe zapytanie:
 
 ```
