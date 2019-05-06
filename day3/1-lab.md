@@ -180,14 +180,14 @@ Przeprowadź globalne przyrównanie obu sekwencji.
 
 1. Jakie zmiany w sekwencji tego białka występują u chorego pacjenta?
 
-Przeanalizuj białko pacjenta przy użyciu serwisu InterPro i porównaj z wynikami InterPro osoby zdrowej. 
+Przeanalizuj białko pacjenta przy użyciu serwisu InterPro i porównaj z wynikami dla sekwencji osoby zdrowej. 
 
 2. W obrębie, której domeny doszło do mutacji u pacjenta?
 <br/><br/>
 
 
 ### Zad. 7 - InterPro: wszystkie białka zawierające domenę RRM
-Otwórz stronę serwisu [InterProt](https://www.ebi.ac.uk/interpro/). W polu szybkiego wyszukiwania po prawej stronie wyszukaj domenę RRM (*RNA recognition motif domain*).
+Otwórz stronę serwisu [InterPro](https://www.ebi.ac.uk/interpro/). W polu szybkiego wyszukiwania po prawej stronie wyszukaj domenę RRM (*RNA recognition motif domain*).
 
 1. Podaj numer dostępu tej domeny.
 2. Podaj liczbę białek zawierających domenę RRM u bakterii.

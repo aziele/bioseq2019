@@ -1,7 +1,7 @@
 ## Motywy i domeny białkowe
 
 ### Zad. 1 - Serwis Pfam (modele HMM)
-> **Pfam** jest bazą przyrównań domen białkowych otrzymanych z sekwencji bazy UniProt. Każdy motyw lub domena są przedsawione za pomocą ukrytego modelu Markowa (HMM) utworzonego z przyrównania (*seed alignment*) konserwatywnych oraz reprezentatywnych sekwencji danej rodziny białkowej. W związku z tym, że sposób oceniania prawdopodobieństw w przypadku HMM jest bardziej złożony niż w przypdaku metod opartych na profilach, ich wykorzystanie zwiększa czułowść dopasowywania sekwencji do bazy danych. Baza Pfam składa się z dwóch części, **Pfam-A** oraz **Pfam-B**. Pierwsza zawiera przyrównania utworzone ręcznie, natomiast druga przechowuje przyrównania wygenerowane automatycznie (obejmuje ona więcej modeli, lecz potencjalnie zawiera też więcej błędów, ponieważ niektóre modele HMM generowane są z niespokrewnionych sekwencji).
+> **Pfam** jest bazą przyrównań domen białkowych otrzymanych z sekwencji bazy UniProt. Każdy motyw lub domena są przedstawione za pomocą ukrytego modelu Markowa (HMM) utworzonego z przyrównania (*seed alignment*) konserwatywnych oraz reprezentatywnych sekwencji danej rodziny białkowej. W związku z tym, że sposób oceniania prawdopodobieństw w przypadku HMM jest bardziej złożony niż w przypdaku metod opartych na profilach, ich wykorzystanie zwiększa czułowść dopasowywania sekwencji do bazy danych. Baza Pfam składa się z dwóch części, **Pfam-A** oraz **Pfam-B**. Pierwsza zawiera przyrównania utworzone ręcznie, natomiast druga przechowuje przyrównania wygenerowane automatycznie (obejmuje ona więcej modeli, lecz potencjalnie zawiera też więcej błędów, ponieważ niektóre modele HMM generowane są z niespokrewnionych sekwencji).
 
 Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wybierz `SEARCH` a następnie z panelu po lewej stronie wybierz `Sequence`. Umieść sekwencję FASTA w oknie tekstowym `Sequence` i naciśnij przycisk `Submit`.
 
@@ -11,13 +11,13 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
    * dwie domeny (`Dice_dimer` i `PAZ`)
    * dwie rodziny domen (`Helicase_C` oraz dwa regiony idenyfikujące rodzinę `Ribonuclease_3`)
 2. Domena Dicer (`Dice_dimer`) znajduje się w pozyjach `229`-`318` sekwencji zapytania.
-   > Serwis Pfam przedstawia dwa typy koordynatów `start` i `end`. Pozycje start i end w kolumnie **Alignment** oznaczają region przyrównania sekwencji zapytania z modelem HMM (*Hidden Markov Model*) reprezentującym domenę. Z kolei, koordynaty **Envelope** wyznaczają region w sekwencji, który został dodatkowo probabilistycznie wyznaczony jako region występowania domeny. Region **Envelope** jest zwykle kilka aminokwasów dłuższy niż region **Alignment**.
+   > Serwis Pfam przedstawia dwa typy koordynatów `start` i `end`. Pozycje start i end w kolumnie **Alignment** oznaczają region przyrównania sekwencji zapytania z modelem HMM (*Hidden Markov Model*) reprezentującym domenę. Z kolei, koordynaty **Envelope** wyznaczają region w sekwencji, który został dodatkowo probabilistycznie wyznaczony jako miejsce występowania domeny. Region **Envelope** jest zwykle kilka aminokwasów dłuższy niż region **Alignment**.
 3. Wartość *E*-value przyrównania domeny `Dicer_dimer` z modelem HMM wynosi `4.8e-24`. Przyrównanie jest zatem statystycznie istotne.
 
 #### Rekord domeny Dicer
 
 4. Numer dostępu domeny `Dicer_dimer` w bazie Pfam to [PF03368](https://pfam.xfam.org/family/PF03368.14).
-5. Domena `Dicer_dimer` bierze udział w interferencji RNA (RNAi), procesie wyciszania genów za pomocą cząsteczek dwuniciowego RNA (dsRNA). Domena jest odpowiedzialna za wiązanie dsRNA.
+5. Domena `Dicer_dimer` bierze udział w procesie interferencji RNA (RNAi) polegającym na wyciszaniu genów za pomocą cząsteczek dwuniciowego RNA (dsRNA). Domena *Dicer* jest odpowiedzialna za wiązanie dsRNA.
 6. `843` gatunki mają białka z domeną `Dicer_dimer`.
 7. Według bazy Pfam domena `Dicer_dimer` nie występuje u organizmów prokariotycznych.
    > Proces RNAi jest charakterystyczny dla eukariontów.
@@ -37,21 +37,21 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
     ```
 11. Logo domeny `Dicer_dimer` utworzone na podstawie modelu HMM składa się z `92` aminokwasów.
 12. W ósmej pozycji modelu HMM najbardziej zachowanymi aminokwasami są `Y` (tyrozyna) i `F` (fenyloalanina)
-13. Domena `Dicer_dimer` występuje najczęściej w białkach (w `397` sekwencjach) w sąsiedztwie domeny `Helicase_C` i dwóch domen `Ribonuclease_3`.
+13. Domena `Dicer_dimer` występuje najczęściej (w `397` sekwencjach) w sąsiedztwie domeny `Helicase_C` i dwóch domen `Ribonuclease_3`.
 
     <img src="./images/pfam-sequence-dicer-architecture.png" alt="pfam-sequence-dicer-architecture">
 
 <br/>
 
 ### Zad. 2 - Serwis PROSITE (wzorce i profile sekwencyjne)
-> **PROSITE** jest najwcześniej założoną bazą wzorców sekwencji i nadal jest powszechnie używana. W celu scharakteryzowania funkcji białka oraz jego rodziny sekwencyjnej PROSITE stosuje jeden wzorzec konsensusowy. Wzorce sekwencji konsensusowe otrzymywane z konserwatywnych regionów przyrównań sekwencji białkowych przedstawia za pomocą wyrażeń regularnych. Informacje na temat funkcji tych wzorców pochodzą przede wszystkim z danych literaturowych. W celu przeszukania bazy badaną sekwencją PROSITE stosuje dokładne skojarzenie z wzorcem. Poza wyrażeniami regularnymi, w celu ich dopełnienia, tworzy także profile.
+> **PROSITE** charakteryzuje funkcję białka oraz jego rodziny stosując jeden wzorzec konsensusowy. Wzorce sekwencji konsensusowe pochodzą z konserwatywnych regionów przyrównań sekwencji białkowych i  przedstawiane są w bazie PROSITE za pomocą wyrażeń regularnych. Informacje na temat funkcji tych wzorców pochodzą przede wszystkim z danych literaturowych. W celu przeszukania bazy badaną sekwencją PROSITE stosuje dokładne skojarzenie z wzorcem. Poza wyrażeniami regularnymi, w celu ich dopełnienia, serwis PROSITE tworzy także profile.
 
 Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umieść sekwencję z zad. 1 w polu `Quick Scan mode of ScanProsite`. Naciśnij przycisk `Scan`.
 
 <img src="./images/prosite-sequence.png" alt="prosite-sequence">
 
-1. Serwis PROSITE zindetyfykował 6 domen w oparciu o profile. Domeną nie zidentyfikowaną poprzednio w serwisie Pfam jest `DS_RBD` (*Double stranded RNA-binding domain (dsRBD)*). Domena ta w ogóle nie występuje w serwisie Pfam. Domena `DS_RBD` ta ma numer dostępu w serwisie PROSITE: [PS50137](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS50137). Przejdź do rekordu domeny.
-   * Domena `DS_RBD` rozpoznaje dwuniciowe RNA. Domena jest głównie zaangażowana w posttranskrypcyjną regulację genów, na przykład poprzez zahamowanie ekspresji białek.
+1. Serwis PROSITE zindetyfykował `6` domen w oparciu o profile. Domeną nie zidentyfikowaną poprzednio w serwisie Pfam jest `DS_RBD` (*Double stranded RNA-binding domain (dsRBD)*). Domena ta w ogóle nie występuje w serwisie Pfam. W bazie PROSITE domena `DS_RBD` ma numer dostępu: [PS50137](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS50137). Przejdź do rekordu domeny.
+   * Domena `DS_RBD` rozpoznaje dwuniciowe RNA. Domena jest głównie zaangażowana w posttranskrypcyjną regulację genów, na przykład poprzez zahamowanie produkcji białek.
 2. Tak, serwis PROSITE zidentyfikował sekwencję `QRLEFLGDA` w pozycji `1301-1309`, która zgodna jest ze wzorcem sekwencyjnym charakterystycznym dla rodziny rybonukleaz III.
    * Rekord dostępu tego wzorca to [PS00517](https://prosite.expasy.org/PS00517).
    * Wzorzec: `[DEQ]-[KRQT]-[LMF]-E-[FYW]-[LV]-G-D-[SARHG]`
@@ -65,21 +65,21 @@ Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umie
 #### Rekord domeny Dicer
 5. Wyświetl logo profilu domeny Dicer poprzez naciśnięcie na link `Retrieve the sequence logo from the alignment`. Profil domeny Dicer zbudowany jest z `94` aminokwasów.
 6. W logotypie domeny Dicer aminokwasy `Y` i `F` nie są najbardziej zachowanymi aminokwasami, jak w przypadku bazy Pfam. Najbardziej zachowanym aminokwasem jest `P` w pozycji `42` profilu.
-7. W odróżnieniu od bazy Pfam, domena Dicer serwisu PROSITE występuje również u organizmów prokariotycznych. Domena ta występuje w `14` białkach bakteryjnych (np. w jednym białku *Paraprevotella clara YIT 11840*)
+7. W odróżnieniu od bazy Pfam, domena *Dicer* serwisu PROSITE występuje również u organizmów prokariotycznych. Domena ta występuje w `14` białkach bakteryjnych (np. w jednym białku *Paraprevotella clara YIT 11840*)
 <br/><br/>
 
 ### Zad. 3 - Metaserwis InterPro (integracja wyników)
-> **InterPro** jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowauje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
+> **InterPro** jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowuje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
 
 Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową z zad. 1 w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
 
 <img src="./images/interpro-sequence.png" alt="interpro-sequence">
 
-1. Serwis InterPro zidentyfikowanł 6 domen (część rekordu `Domains and repeats`).
+1. Serwis InterPro zidentyfikowanł `6` domen (część rekordu `Domains and repeats`).
 
-2. Numer dostępu domeny Dicer w bazie InterPro to [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
+2. Numer dostępu domeny *Dicer* w bazie InterPro to [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
 
-3. Lokalizacja domeny Dicer w sekwencji zapytania wegług serwisu InterPro to `229-321`. Lokalizacja ta jest identyczna z przewidywaniami serwisu PROSITE.
+3. Lokalizacja domeny *Dicer* w sekwencji zapytania wegług serwisu InterPro to `229-321`. Lokalizacja ta jest identyczna z przewidywaniami serwisu PROSITE.
 
 4. Domena *Dicer* wyznaczona została w InterPro na podstawie przewidywań otrzymanych z serwisów PROSITE i Pfam.
 
@@ -88,8 +88,8 @@ Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść
 #### Rekord domeny Dicer
 Przejdź do strony rekordu domeny *Dicer*: [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
 
-5. Naciśnij link `Species`. Domena Dicer występuję w `3660` sekwencjach białkowych.
-   * `16` sekwencji białkowych z domeną Dicer występuje u bakterii
+5. Naciśnij link `Species`. Domena *Dicer* występuję w `3660` sekwencjach białkowych.
+   * `16` sekwencji białkowych z domeną *Dicer* występuje u bakterii
    * `3644` białek występuje u eukariontów
    Aby wyświelić numery dostępu UniProt tych sekwencji naciśnij link `Protein IDs`.
 
@@ -125,7 +125,7 @@ Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść
    * *Ephrin receptor, transmembrane domain*
    * *Protein kinase domain*
    * *Sterile alpha motif domain*
-3. Lokalizacja domeny kinazowej (`IPR000719`) to `615-899`.
+3. Lokalizacja domeny kinazowej (`IPR000719`) w sekwencji to: `615-899`.
 4. Tak, domena kinazowa zawiera miejsce wiązania ATP i centrum aktywne.
 
    <img src="./images/interpro-kinase-atp.png" alt="interpro-kinase-atp">
@@ -236,7 +236,7 @@ seq1             951 GVTLAGHQKKILASVQHMKSQAKPGTPGGTGGPAPQY    987
 seq2             951 GVTLAGHQKKILASVQHMKSQAKPGTPGGTGGPAPQY    987
 ```
 
-1. Sekwencje są prawie identyczne - u chorego pacjenta występuje `S` (seryna) w pozycji `647`, a w `seq1` występuje w tym miejscu `K` (lizyna).
+1. Sekwencje są prawie identyczne, z wyjątkiem jednej substytucji - u chorego pacjenta występuje `S` (seryna) w pozycji `647`, a w `seq1` występuje w tym miejscu `K` (lizyna).
 
 #### Serwis InterPro
 
@@ -260,26 +260,26 @@ Wejdź na stronę serwisu [UniProt](https://www.uniprot.org/). Skorzystaj z zaaw
    database:(type:interpro ipr000504) taxonomy:"Bacteria [2]"
    ```
 
-2. W wyniku powyższego zapytania otrzymano `14 582` białek.
+2. W wyniku powyższego zapytania otrzymano `14 582` białka.
 <br/><br/>
 
 
 ### Zad. 9 - MEME: Motif Discovery
 
-1. Program MEME zidentyfikował 3 różne motywy, które są nadreprezentowane w sekwencjach z pliku [sequences.fasta](./data/sequences.fasta). 
+1. Program MEME zidentyfikował 3 różne motywy, które są nadreprezentowane w sekwencjach znajdujących się w pliku [sequences.fasta](./data/sequences.fasta). 
 
    <img src="./images/meme.png" alt="meme">
 
-   * Motyw 1 - czerwony prostokąt
-   * Motyw 2 - niebieski prostokąt
-   * Motyw 3 - zielony prostokąt
+   * `Motyw 1` - czerwony prostokąt
+   * `Motyw 2` - niebieski prostokąt
+   * `Motyw 3` - zielony prostokąt
 
-2. Dwa motywy (Motyw 1 i Motyw 3) są obecne we wszystkich sześciu sekwencjach. Motyw drugi występuje tylko w dwóch sekwenjach (`seq2` i `seq6`).
+2. Dwa motywy (`Motyw 1` i `Motyw 3`) są obecne we wszystkich sześciu sekwencjach. `Motyw 2` występuje tylko w dwóch sekwencjach (`seq2` i `seq6`).
 
 3. Wybierz jedną sekwencję posiadającą wszystkie trzy motywy (np. `seq2`). Umieść sekwencję jako zapytanie w serwisie [InterPro](http://www.ebi.ac.uk/interpro/) i rozpocznij identyfikację domen.
 
    <img src="./images/interpro-sh2sh3.png" alt="interpro-sh2sh3">
 
-   Tak, motywy zidentyfikowane przez program MEME odpowiadają znanym domenom białkowym występującym w serwisie InterPro. Motyw 2 (niebieski) wchodzi w skład domeny *SH3*. Natomiast motywy 1 i 3 wchodzą w skład domeny *SH2*.
+   Tak, motywy zidentyfikowane przez program MEME odpowiadają znanym domenom białkowym występującym w serwisie InterPro. `Motyw 2` (niebieski) wchodzi w skład domeny *SH3*. Natomiast motywy `1` i `3` wchodzą w skład domeny *SH2*.
 
-4. Domeny *SH2* i *SH3* uczestniczą w przenoszeniu informacji przez błonę komórkową od receptorów na układy efektorowe. W obrębie domeny *SH2* dochodzi do oddziaływań z rejonami białek zawierającymi ufosforylowaną tyrozynę, zaś w domenie *SH3* z fragmentami bogatymi w prolinę (motyw PXXP)
+4. Domeny *SH2* i *SH3* uczestniczą w przenoszeniu informacji przez błonę komórkową od receptorów na układy efektorowe. W obrębie domeny *SH2* dochodzi do oddziaływań z rejonami białek zawierającymi ufosforylowaną tyrozynę, zaś w domenie *SH3* z fragmentami bogatymi w prolinę (motyw `PXXP`)
