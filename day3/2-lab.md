@@ -21,7 +21,7 @@ QGRVGPNEFRILKENYTVFTIEDLRKLYDEAGLVVLE
 
 Zidentyfikuj sekwencję wykorzystując program BLAST. Ogranicz przeszukiwanie do bazy `PDB (Protein Data Bank proteins)`.
 
-1. Ile istotnych statystycznie wyników zostało znalezionych (`E-value` < 0.005)?
+1. Ile istotnych statystycznie wyników zostało znalezionych (`E-value < 0.005`)?
 
 #### Przeszukanie PSI-BLAST
 Wróć do strony programu BLAST. Ogranicz wyszukiwanie do bazy danych `nr` (*non-redundant protein sequences*) oraz wybierz algorytm `PSI–BLAST` (*Position-Specific Iterated BLAST*).
@@ -42,12 +42,13 @@ Wykonaj drugie przeszukiwanie BLAST w celu przygotowania profilu PSSM (*Position
 8. Dlaczego w wynikach drugiego przeszukiwania PSI-BLAST znajduje się więcej istotnie statystycznych wyników?
 
 #### Zapisanie i użycie profilu PSSM
-* Zapisz matrycę PSSM stworzoną przez PSI-BLAST (`Download` > `PSSM to restart search` > `PSSM`). 
+* Zapisz matrycę PSSM stworzoną przez PSI-BLAST (`Download` > `PSSM to restart search` > `PSSM`).
+  - Pobrany plik nazwij `PSSM-iteration2.asn`. 
 * Wykorzystaj pobraną matrycę PSSM do przeszukania bazy PDB. W tym celu:
   - W nowej karcie przeglądarki otwórz stronę `protein BLAST`.
   - Ogranicz wyszukiwanie do bazy danych `PDB`
-  - Wybierz algorytm `PSI–BLAST` (Position-Specific Iterated BLAST).
-  - Rozwiń menu `Algorithm parameters` i w części `Upload PSSM` załaduj zapisany wcześniej plik z matrycą PSSM.
+  - Wybierz algorytm `PSI–BLAST`.
+  - Rozwiń menu `Algorithm parameters` i w części `Upload PSSM` załaduj zapisany plik z profilem PSSM (`PSSM-iteration2.asn`).
   - Uruchom program BLAST.
 
 9. Ile statystycznie istotnych wyników pochodzi z bazy PDB?
@@ -70,7 +71,7 @@ Przeprowadź jeszcze jedną iterację PSI-BLAST. W tym celu:
 
 * Otwórz stronę programu [NCBI PSSM Viewer](https://www.ncbi.nlm.nih.gov/Class/Structure/pssm/pssm_viewer.cgi).
 * Zaznacz opcję `Scoremat file` i załaduj plik z profilem PSSM z poprzedniego zadania (`PSSM-iteration3.asn`)
-* Zaznacz opcję `FASTA file` i załaduj plik z sekwencją QUERY.
+* Zaznacz opcję `FASTA file` i załaduj plik z sekwencją zapytania (`QUERY`).
 * Naciśnij przycisk `Matrix View`
 
 <img src="./images/ncbi-pssm-viewer1.png" alt="ncbi-pssm-viewer1.png">

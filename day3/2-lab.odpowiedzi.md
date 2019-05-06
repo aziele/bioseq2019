@@ -1,7 +1,6 @@
 ## PSI-BLAST
 
 ### Zad. 1 - Wyszukiwanie odległych homologów sekwencyjnych
-Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/ExPSIBLAST) [DTU Cousrse - odpowiedzi](http://teaching.healthtech.dtu.dk/36611/index.php/ExPSIBLAST_answer).
 
 #### Standardowe przeszukanie BLAST
 
@@ -11,7 +10,7 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
 
 #### Przeszukanie PSI-BLAST
 
-2. W wyniku przeszukania bazy `nr` znaleziono 131 statystycznie istotnych przyrównań (`E-value` < 0.005).
+2. W wyniku przeszukania bazy `nr` znaleziono **131** statystycznie istotnych przyrównań (`E-value < 0.005`).
 
    <img src="./images/psi-blast-iter1.png" alt="psi-blast-iter1.png">
 
@@ -20,21 +19,21 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
 
 #### Druga iteracja PSI-BLAST
 
-5. W wyniku drugiej iteracji znaleziono 500 statystycznie istotnych przyrównań.
+5. W wyniku drugiej iteracji znaleziono **500** statystycznie istotnych przyrównań.
 
    <img src="./images/psi-blast-iter2.png" alt="psi-blast-iter2">
 
 6. Pierwsze 20 przyrównań ma wartość `Query cover` w zakresie `50-60%`
 7. Wiersze w tabeli wyróżnione na żółto oznaczają nowe trafienia, tzn. takie, których nie udało się zidentyfikować w trakcie poprzedniego przeszukiwania.
-8. W wynikach drugiego przeszukiwania BLAST znajduje więcej trafień. Program PSI-BLAST z wysoko ocenionych sekwencji trafień buduje przyrównanie wielu sekwencji i tworzy z niego profil. Profil sekwencji zawiera więcej informacji na temat danej rodziny białkowej niż każda sekwencja z osobna. PSI-BLSAT wykorzystuje otrzymany profil w drugiej rundzie (iteracji) przeszukiwania, w celu zidentyfikowania większej liczby dopasowanych do niego członków tej samej rodziny białkowej. Po zidentyfikowaniu nowych sekwencji, dołącza je do poprzedniego przyrównania, tak by utworzyć nowy profil, ktory wykorzystuje w następnych cyklach przeszukiwania bazy danych. Program powtarza ten proces do momentu, w którym przestanie znajdować nowe sekwencje. 
+8. W wynikach drugiego przeszukiwania, BLAST znajduje więcej trafień. Program PSI-BLAST z wysoko ocenionych sekwencji trafień buduje przyrównanie wielu sekwencji i tworzy z niego profil. Profil sekwencji zawiera więcej informacji na temat danej rodziny białkowej niż każda sekwencja z osobna. Następnie PSI-BLAST wykorzystuje otrzymany profil w drugiej rundzie (*iteracji*) przeszukiwania, w celu zidentyfikowania większej liczby dopasowanych do niego członków tej samej rodziny białkowej. Po zidentyfikowaniu nowych sekwencji, PSI-BLAST dołącza je do poprzedniego przyrównania, tak by utworzyć nowy profil, który wykorzystuje w następnych cyklach przeszukiwania bazy danych. Program powtarza ten proces do momentu, w którym przestanie znajdować nowe sekwencje. 
 
 #### Zapisanie i użycie profilu PSSM
 
-9. Przy użyciu profilu PSSM i przeszukaniu bazy PDB znaleziono 16 istotnych wyników:
+9. Przy użyciu profilu PSSM i przeszukaniu bazy PDB znaleziono **16** istotnych wyników:
 
    <img src="./images/pssm_iteration2-pdb.png" alt="pssm_iteration2-pdb">
 
-   Profil PSSM zbudowany przez *PSI-BLAST* w drugiej iteracji umożliwił identyfikację sekwencji homologicznych w bazie PDB, których nie udało się zidentyfikować przy użyciu klasycznego przeszukiwania programem *protein BLAST*.
+   Profil PSSM zbudowany przez PSI-BLAST w drugiej iteracji umożliwił identyfikację sekwencji homologicznych w bazie PDB, których nie udało się zidentyfikować przy użyciu klasycznego przeszukiwania programem *Protein BLAST*.
 
 10. Dwa najlepsze trafienia w bazie PDB to:
 
@@ -108,15 +107,15 @@ Zadanie na podstawie [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.
     ```
 
 12. Oba białka należą do rodziny rekombinaz. 
-    > Miejscowo-specyficzna rekombinacja jest procesem, w którym blok DNA zostaje przeniesiony do innej pozycji w czsteczce zintegrowanej z genomem gospodarza. Zachodzi między niespokrewnionymi sekwencjami nukleotydowymi. Znane są dwie rodziny miejscowo-specyficznych rekombinaz (serynowe i tyrozynowe).
+    > Miejscowo-specyficzna rekombinacja jest procesem, w którym blok DNA zostaje przeniesiony do innej pozycji w cząsteczce zintegrowanej z genomem gospodarza. Proces ten zachodzi między niespokrewnionymi sekwencjami nukleotydowymi. Znane są dwie rodziny miejscowo-specyficznych rekombinaz (serynowe i tyrozynowe).
 
 #### Trzecia iteracja PSI-BLAST
 
-Przeszukanie bazy `PDB` za pomocą profilu PSSM [PSSM-iteration3.asn](./files/PSSM-iteration3.asn) otrzymanego z trzeciej iteracji przeszukania bazy `nr`.
+Przeszukanie bazy `PDB` za pomocą profilu[PSSM-iteration3.asn](./files/PSSM-iteration3.asn) otrzymanego z trzeciej iteracji przeszukania bazy `nr`.
 
 <img src="./images/pssm_iteration3-pdb.png" alt="pssm_iteration3-pdb">
 
-13. W wyniku przeszukania bazy PDB za pomocą PSSM z 3 iteracji uzyskano 25 statystycznie istotnych trafień. Na liście wynikowej nadal najlepszymi trafieniami są `4A8E_A` i `5HXY_A`:
+13. W wyniku przeszukania bazy PDB za pomocą PSSM z 3 iteracji uzyskano **25** statystycznie istotnych trafień. Na liście wynikowej nadal najlepszymi trafieniami są `4A8E_A` i `5HXY_A`:
 
     ```
     ID      E      cov   ident  sim/pos 
@@ -194,6 +193,6 @@ Przeszukanie bazy `PDB` za pomocą profilu PSSM [PSSM-iteration3.asn](./files/PS
 
    <img src="./images/ncbi-pssm-viewer2.png" alt="ncbi-pssm-viewer2">
 
-3. Posortuj tabelę według kolumny zawierającej tryptofan `W`. W pozycji `157`, substytucja `L <-> W` zachodzi najczęściej (wartość punktacji: `12` bity).
+3. Posortuj tabelę według kolumny zawierającej tryptofan `W`. W pozycji `157`, substytucja `L <-> W` zachodzi najczęściej (wartość punktacji: `12` bitów).
 
    <img src="./images/ncbi-pssm-viewer2.png" alt="ncbi-pssm-viewer2.png">
