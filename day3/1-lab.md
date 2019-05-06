@@ -54,7 +54,7 @@ Będąc w zakladce `Species`, otwórz kartę `Tree`.
 
 9. Ile sekwencji białek człowieka posiada tę domenę?
 10. Ile sekwencji białek człowiekowatych (*Hominidae*) posiada tę domenę. 
-   * Podaj numery dostępu tych białek.
+    * Podaj numery dostępu tych białek.
 
 Przejdź do zakładki `HMM logo`.
 
