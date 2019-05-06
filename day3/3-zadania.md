@@ -28,7 +28,7 @@ Przeprowadź analizę filogenetyczną powyższych sekwencji.
 <br/><br/>
 
 ### Zad. 2 - Wymarły niedźwiedź jaskiniowy
-Sekwencje z poprzedniego zadania należą do żyjących gatunków niedźwiedzi. Niedźwiedź jaskiniowy (*Ursus spelaeus*) wymarł ok. 20 tys. lat temu. Użyj programu BLAST i spróbuj znaleźć sekwencję 12s rRNA niedźwiedzia jaskiniowego, dołącz ją do sekwencji pozostałych gatunków w pliku [bears.fasta](./data/bears.fasta) i zbuduj drzewo filogenetyczne.
+Sekwencje z poprzedniego zadania należą do żyjących gatunków niedźwiedzi. Niedźwiedź jaskiniowy (*Ursus spelaeus*) wymarł ok. 20 tys. lat temu. Użyj serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) i znajdź sekwencję 12s rRNA niedźwiedzia jaskiniowego, dołącz ją do sekwencji pozostałych niedźwiedzi w pliku [bears.fasta](./data/bears.fasta) i zbuduj drzewo filogenetyczne.
 
 1. Który niedźwiedź jest najbliższym krewnym wymarłego niedźwiedzia jaskiniowego?
 2. Czy uwzględnienie niedźwiedzia jaskiniowego na drzewie zmieniło układ pozostałych taksonów?
