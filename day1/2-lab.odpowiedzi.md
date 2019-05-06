@@ -123,7 +123,7 @@ Ponownie skorzystaj z narzędzie `Retrieve/ID Mapping` podając identyfikatory U
 
 ## Ontologia genów (Gene Ontology)
 
-Ontologia genów składa się z trzech działów ontologii:
+**Ontologia genów** stanowi inicjatywę zmierzającą do ustalenia i kontrolowania terminologii związanej z różnymi aspektami funkcjonowania genów. Ontologia genów składa się z trzech działów:
 
 1. **Funkcja molekularna** (*molecular function*) - opisuje rolę produktu ekspresji genu na poziomie biochemicznym
 2. **Proces biologiczny** (*biological process*) - opisuje cele biologiczne, do realizacji których przyczyniają się najczęściej co najmniej dwa produkty ekspresji genów.

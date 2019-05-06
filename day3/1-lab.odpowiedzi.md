@@ -44,6 +44,8 @@ Otwórz stronę serwisu [Pfam](https://pfam.xfam.org). Z menu u góry strony wyb
 <br/>
 
 ### Zad. 2 - Serwis PROSITE (wzorce i profile sekwencyjne)
+> **PROSITE** jest najwcześniej założoną bazą wzorców sekwencji i nadal jest powszechnie używana. W celu scharakteryzowania funkcji białka oraz jego rodziny sekwencyjnej PROSITE stosuje jeden wzorzec konsensusowy. Wzorce sekwencji konsensusowe otrzymywane z konserwatywnych regionów przyrównań sekwencji białkowych przedstawia za pomocą wyrażeń regularnych. Informacje na temat funkcji tych wzorców pochodzą przede wszystkim z danych literaturowych. W celu przeszukania bazy badaną sekwencją PROSITE stosuje dokładne skojarzenie z wzorcem. Poza wyrażeniami regularnymi, w celu ich dopełnienia, tworzy także profile.
+
 Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umieść sekwencję z zad. 1 w polu `Quick Scan mode of ScanProsite`. Naciśnij przycisk `Scan`.
 
 <img src="./images/prosite-sequence.png" alt="prosite-sequence">
@@ -67,12 +69,13 @@ Otwórz stronę serwisu [PROSITE](https://prosite.expasy.org/prosite.html). Umie
 <br/><br/>
 
 ### Zad. 3 - Metaserwis InterPro (integracja wyników)
+> **InterPro** jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowauje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
+
 Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową z zad. 1 w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
 
 <img src="./images/interpro-sequence.png" alt="interpro-sequence">
 
 1. Serwis InterPro zidentyfikowanł 6 domen (część rekordu `Domains and repeats`).
-   >InterPro jest zintegrowaną bazą domen zaprojektowaną w celu ujednolicenia wielu baz domen i miejsc funkcjonalnych białek. InterPro łączy informacje z ponad 10 baz danych takich jak: PROSITE, Pfam. Program przetwarza wzorce sekwencji z tych baz danych. Uwzględnia jedynie te motywy oraz domeny sekwencji białkowych, które pokrywają się w kilku bazach. InterPro dopasowuje rekordy, wykorzystując kombinację wyrażeń regularnych, profili oraz ukrytych modeli Markowa. InterPro prezentuje wyniki w postaci graficznej, która podsumowauje dopasowania motywów oraz zawiera linki przekierowujące użytkownika do bardziej szczegółowych informacji na temat zidentyfikowanych domen.
 
 2. Numer dostępu domeny Dicer w bazie InterPro to [IPR005034](http://www.ebi.ac.uk/interpro/entry/IPR005034).
 
