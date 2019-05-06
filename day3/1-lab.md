@@ -33,19 +33,19 @@ IEKFSANVPRSPVRELLEMEPETAKFSPAERTYDGKVRVTVEVVGKGKFKGVGRSYRIAK
 SAAARRALRSLKANQPQVPNS
 ```
 
-1. Ile łącznie domen i rodzin domen zostało zidentyfikowanych w analizowanej sekwencji?
-2. W jakiej pozycji w sekwnecji znajduje się domena `Dicer_dimer`?
-3. Podaj wartość `E-value` przyrównania domeny `Dicer_dimer` z modelem HMM.
+1. Ile w sumie domen i rodzin domen zostało zidentyfikowanych w analizowanej sekwencji?
+2. W jakiej pozycji w sekwencji znajduje się domena `Dicer_dimer`?
+3. Podaj wartość `E-value` przyrównania domeny `Dicer_dimer` z modelem *HMM*.
 
 #### Rekord domeny Dicer
 
-Wejdź do rekordu domeny `Dicer_dimer`.
+Otwórz stronę rekordu domeny `Dicer_dimer`.
 
 4. Podaj numer dostępu tej domeny w bazie Pfam.
 5. Jaką funkcję pełni ta domena (krótko)?
 6. Ile gatunków posiada tę domenę białkową?
 
-Wejdź w zakładkę `Species`.
+Otwórz zakładkę `Species`.
 
 7. Czy domena występuje u organizmów prokariotycznych?
 8. W ilu gatunkach owadów występuje ta domena?
@@ -53,7 +53,8 @@ Wejdź w zakładkę `Species`.
 Będąc w zakladce `Species`, otwórz kartę `Tree`.
 
 9. Ile sekwencji białek człowieka posiada tę domenę?
-10. Ile sekwencji białek człowiekowatych (*Hominidae*) posiada tę domenę. Podaj numery dostępu tych białek.
+10. Ile sekwencji białek człowiekowatych (*Hominidae*) posiada tę domenę. 
+   * Podaj numery dostępu tych białek.
 
 Przejdź do zakładki `HMM logo`.
 
