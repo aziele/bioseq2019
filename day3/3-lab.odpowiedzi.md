@@ -60,15 +60,15 @@ PATIENT_D            ---    115
 ```
 
 #### ClustalOmega - drzewo filogenetyczne
-W zakładce `Phylogenetic tree` znajduje się drzewo filogenetyczne uzyskane metodą *Neighbor-Joining (NJ)*.
+W zakładce `Phylogenetic tree` znajduje się drzewo filogenetyczne uzyskane metodą `Neighbor-Joining (NJ)`.
 
 <img src="./images/clustalomega-dentist-tree.png" alt="clustalomega-dentist-tree" width="600px">
 
 Algorytm NJ tworzy **drzewo nieukorzenione**. Nieukorzenione drzewo filogenetyczne nie zakłada znajomości wspólnego przodka, a jedynie porządkuje taksony, by pokazać ich wzajemne powiązania. Ponieważ nie jest określone, który węzeł odpowiada przodkowi, drodze ewolucji w drzewie nieukorzenionym nie jest przypisany kierunek. Nie można zatem wnioskować na temat kolejności zakażeń wirusem HIV.
 
-Drzewo przedstawione jest w formie **kladogramu**, w którym wszystkie krańcowe taksony są uszeregowane w jednym rzędzie lub kolumnie. Długość ich gałęzi nie są proporcjonalne do ilości zmian ewolucyjnych, a zatem nie niosą żadnej informacji filogenetycznej. W kladogramie istotna jest więc jedynie topologia ilustrująca wzajemne uszeregowanie taksonów. Dystans ewolucyjny gałęzi podany jest obok nazw taksonów. 
+Drzewo przedstawione jest w formie **kladogramu**, w którym wszystkie krańcowe taksony są uszeregowane w jednej kolumnie. Długości ich gałęzi nie są proporcjonalne do ilości zmian ewolucyjnych, a zatem nie niosą żadnej informacji filogenetycznej. W kladogramie istotna jest więc jedynie topologia ilustrująca wzajemne uszeregowanie taksonów. Dystans ewolucyjny gałęzi podany jest obok nazw taksonów. 
 
-Drzewo można również wyświetlić drzewo w formie *filogramu* naciskając na opcję `Real`. W **filogramie** długości gałęzi odpowiadają pdległościom ewolucyjnym dzielącym poszczególne sekwencje; o takich drzewach mówi się, że są wyskalowane. Drzewa wyskalowane pokazują zarówno zależności ewolucyjne, jak też informują o względnym czasie dywergencji poszczególnych gałęzi.
+Drzewo można również wyświetlić w formie *filogramu* naciskając na opcję `Real`. W **filogramie** długości gałęzi odpowiadają odległościom ewolucyjnym dzielącym poszczególne sekwencje; o takich drzewach mówi się, że są wyskalowane. Drzewa wyskalowane pokazują zarówno zależności ewolucyjne, jak też informują o względnym czasie dywergencji poszczególnych gałęzi.
 
 
 1. Otrzymane drzewo wskazuje, że dentysta mógł być odpowiedzialny za zakażenie niektórych swoich pacjentów. Na przykład, dystans ewolucyjny na drzewie między sekwencją gp120 dentysty a *Pacjenta A* jest najmniejszy z wszystkich innych par sekwencji. Ponadto, sekwencja gp120 dentysty jest bliżej spokrewniona również z sekwencjami innych pacjentów (B, E, G i C) niż z sekwencją wirusową pobraną od żony dentysty.
@@ -138,7 +138,7 @@ Otwórz program FigTree zainstalowany na komputerze. Następnie otwórz w progra
   - Naciśnięcie przycisku `Colour`
   - Ustawienie koloru czerwonego
 * Ustawienie szarego koloru tła dla wybranej grupy monofiletycznej (kladu)
-  - Naciśnięcie gałęzi drzewa danej grupy filetycznej
+  - Naciśnięcie gałęzi drzewa danej grupy monofiletycznej
   - Naciśnięcie przycisku `Clade`
   - Naciśnięcie przycisku `Colour`
   - Ustawienie koloru szarego.
@@ -151,7 +151,6 @@ Z menu wybierz `File` > `Export PDF`
 
 
 ### Zad. 2 - MEGA: zaawansowana analiza filogenetyczna
-Zadanie na podstawie ćwiczeń BSB.
 
 1. Długość przyrównania białkowych sekwencji gp120 wynosi `123` pozycji. 
    > Naciśnięcie na daną kolumnę w przyrównaniu powoduje wyświetlenie odpowiadającej pozycji w przyrównaniu.
@@ -165,11 +164,10 @@ W celu obliczenia macierzy dystansów (każda sekwencja z każdą) w głównym o
 
 <img src="./images/MEGA-dentist-distance_matrix.png" alt="MEGA-dentist-distance_matrix">
 
-2. Najmniejszy dystans ewolucyjny jest między `Local control 2` i `Local control 5` i wynosi `0.016`. Największy dystans jest między `Local control 4` i `Denstist wife` i wynosi `0.567`.
+2. Najmniejszy dystans ewolucyjny jest między `Local control 2` i `Local control 5` i wynosi `0.016`. Największy dystans jest między `Local control 4` i `DENTIST WIFE` i wynosi `0.567`.
 <br/><br/>
 
 ### Zad. 3 - Badanie powstania wirusa HIV
-Zadanie na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Exercise:_Phylogeny). [Oryginane odpowiedzi DTU Course](http://teaching.healthtech.dtu.dk/36611/index.php/Exercise:_Phylogeny-Answers).
 
 #### Przyrównanie białkowych sekwencji POL
 
@@ -179,18 +177,18 @@ Zadanie na podstawie: [DTU Course](http://teaching.healthtech.dtu.dk/36611/index
 
 <img src="./images/MEGA-pol21-tree_nj.png" alt="MEGA-pol21-tree_nj">
 
-1. Powyższe drzewo jest nieukorzenione, choć widać, że HTLV-1 wyraźnie odstaje od pozostałych sekwencji wirusów HIV-1, HIV-2, SIV. Jest to widoczne na różnych stylach drzewa (np. prostokątny, kolisty).
-2. Przesłanki z innych źródeł wskazują, że linia ewolucyjna prowadząca do HTLV oddzieliła się zanim doszło do powstania wirusów HIV1, HIV2 i SIV. Można zatem ukorzenić drzewo w gałęzi prowadzącej do HTLV-1. Korzeń drzewa znajduje się zatem między HTLV-1 a pozostałymi taksonami (grupą wewnątrzną)
+1. Powyższe drzewo jest nieukorzenione, choć widać, że HTLV-1 wyraźnie odstaje od pozostałych sekwencji wirusów HIV-1, HIV-2, SIV. Jest to widoczne we wszystkich reprezentacjach drzewa (np. prostokątny, kolisty).
+2. Przesłanki z innych źródeł wskazują, że linia ewolucyjna prowadząca do HTLV-1 oddzieliła się zanim doszło do powstania wirusów HIV1, HIV2 i SIV. Można zatem ukorzenić drzewo w gałęzi prowadzącej do HTLV-1. Korzeń drzewa znajduje się zatem między HTLV-1 a pozostałymi taksonami (grupą wewnątrzną)
 
    <img src="./images/MEGA-pol21-tree_nj-rooted.png" alt="MEGA-pol21-tree_nj-rooted">
 
-   > Przekształcenie drzewa nieukorzenionego w ukorzenione sprowadza się do ustalenia położenia korzenia drzewa (tzw. ukorzenienie drzewa). Zadanie to można zrealizować, wykorzystując dodatkowe informacje dostępne z analizy skamielin, wcześniejszych badań filogenetycznych prowadzonych na podstawie danych morfologicznych lub też odwołując się do "biologicznego" zdrowego rozsądku. Ukorzenienie drzewa obejmuje ustalenie tzw. **grupy zewnętrznej** (*outgroup*) - zwykle jest to gatunek, który jako pierwszy oddzielił się od pozostałych. Przykładowo, w przypadku filogenezy ssaków łożyskowych jako grupę zewnętrzną wykorzystuje się często torbacze. Zgodnie z posiadaną wiedzą biologiczną spodziewać się można, że ssaki łożyskowe są ze sobą bliżej spokrewnione niż jakimkolwiek przedstawicielem torbaczy.
+   > Przekształcenie drzewa nieukorzenionego w ukorzenione sprowadza się do ustalenia położenia korzenia drzewa (tzw. ukorzenienie drzewa). Zadanie to można zrealizować, wykorzystując dodatkowe informacje dostępne z analizy skamielin, wcześniejszych badań filogenetycznych prowadzonych na podstawie danych morfologicznych lub też odwołując się do "biologicznego" zdrowego rozsądku. Ukorzenienie drzewa obejmuje ustalenie tzw. **grupy zewnętrznej** (*outgroup*) - zwykle jest to gatunek, który jako pierwszy oddzielił się od pozostałych. Przykładowo, w przypadku filogenezy ssaków łożyskowych jako grupę zewnętrzną wykorzystuje się często torbacze. Zgodnie z posiadaną wiedzą biologiczną spodziewać się można, że ssaki łożyskowe są ze sobą bliżej spokrewnione niż z jakimkolwiek przedstawicielem torbaczy.
 
-   > Jeżeli chcemy przekształcić nieukorzenione drzewo w drzewo ukorzenione, a nie znamy grupy zewnętrznej, można wykorzystać tzw. **metodę punktu środkowego** (*midpoint method*). Obejmuje ona ustalenie w drzewie najdłuższej gałęzi łączącej dwa liście i umiejscowieniu korzenia dokładnie na jej środku. Zakłada się przy tym, że średnie tempo ewolucji w obu częściach podzielonego drzewa jest takie samo.
+   > Chcąc przekształcić nieukorzenione drzewo w drzewo ukorzenione bez znajomości grupy zewnętrznej, można wykorzystać tzw. **metodę punktu środkowego** (*midpoint method*). Obejmuje ona ustalenie w drzewie najdłuższej gałęzi łączącej dwa liście i umiejscowieniu korzenia dokładnie na jej środku. Zakłada się przy tym, że średnie tempo ewolucji w obu częściach podzielonego drzewa jest takie samo.
 
 3. Wszystkie sekwencje HIV-1 tworzą klad, którego grupą siostrzaną są wirusy SIV szympansa. Podobnie, wszystkie sekwencje HIV-2 tworzą osobny klad będący grupą siostrzaną do wirusów SIV małpy mangaby. Według aktualnych informacji, HIV-1 powstał poprzez transmisję wirusa SIV (najprawdopodobniej) z szympansów do człowieka. Natomiast HIV-2 powstał niezależnie od HIV-1 poprzez transmisję wirusa z małp mangab do człowieka.
 
-4. Liczby znajdujące się na węzłach drzewa oznaczają wartości uzyskane w teście bootstrap. Wartości te wyrażone są w procentach i informuje o wiarygodności poszczególnych rozgałęzień w drzewie. 
+4. Liczby znajdujące się na węzłach drzewa oznaczają wartości uzyskane w teście bootstrap. Wartości te wyrażone są w procentach i informują o wiarygodności poszczególnych rozgałęzień w drzewie. 
    > Bootstrap jest metodą statystyczną, która opiera się na tworzeniu dużej liczby replik z niewielkimi zmianami w danych początkowych. Drzewa skonstruowane ze zbiorów danych z wprowadzonymi losowymi zmianami dają rozkład topologii drzew, który umożliwia statystyczną ocenę każdego pojedynczego kladu z danego drzewa.
 
    >Wykorzystanie metody bootstrap do oceny wiarygności skonstruowanego wcześniej drzewa filogenetycznego obejmuje wygenerowanie wielu dopasowań sekwencji (zazwyczaj między 100 a 1000). Dla każdego z wygenerowanych dopasowań jest wyznaczane drzewo filogenetyczne. W zbiorze takich drzew niektóre drzewa będą miały taką samą topologię, jak drzewo oryginalne. Inne będą się od niego różnić. Każdemu z węzłów w oryginalnym drzewie jest następnie przypisywana tzw. *wartość bootstrap* równe odsetkowi wygenerowanych drzew, w których obserwowano dokładnie takie samo rozgałęzienie linii ewolucyjnych.
@@ -219,11 +217,11 @@ Przeprowadź przyrównanie sekwencji biorąc pod uwagę kodony. Z menu wybierz `
 <img src="./images/MEGA-L18-CDS-alignment.png" alt="MEGA-L18-CDS-alignment">
 
 #### Analiza filogentyczna
-W menu okna zawierającego przyrównaniem wybierz `Data` > `Phylogenetic Analysis`. Następnie odpowiedz tak, na pytanie czy sekwencje kodują białka. W głównym oknie programu MEGA wybierz `Phylogeny` > `Construct Neighbor-Joining tree`. Wybierz test boostrap z 1000 pseudoreplikacji.
+W menu okna zawierającego przyrównaniem wybierz `Data` > `Phylogenetic Analysis`. Na pytanie czy sekwencje kodują białka odpowiedz `Yes`. W głównym oknie programu MEGA wybierz `Phylogeny` > `Construct Neighbor-Joining tree`. Wybierz test boostrap z `1000` pseudoreplikacji.
 
 <img src="./images/MEGA-L18-CDS-NJ-tree.png" alt="MEGA-L18-CDS-NJ-tree">
 
-Wszystkie sekwencje, poza dwoma, należą do Eukariontów. *Pyrococcus* i *Methanocaldococcus jannaschii* są archeonami. Mogą być one zatem grupą zewnątrzną dla otrzymanego drzewa. Umieść korzeń drzewa na gałęzi prowadzącej do tych dwóch gatunków (naciśnij kursorem na gałąź i wybierz `Subtree` > `Root`.
+Wszystkie sekwencje, poza dwiema, należą do Eukariontów. *Pyrococcus* i *Methanocaldococcus jannaschii* są archeonami. Mogą być one zatem grupą zewnątrzną dla otrzymanego drzewa. Umieść korzeń drzewa na gałęzi prowadzącej do tych dwóch gatunków (naciśnij kursorem na gałąź i wybierz `Subtree` > `Root`.
 
 <img src="./images/MEGA-L18-CDS-NJ-tree-rooted.png" alt="MEGA-L18-CDS-NJ-tree-rooted">
 
@@ -235,12 +233,12 @@ Wszystkie sekwencje, poza dwoma, należą do Eukariontów. *Pyrococcus* i *Metha
 
    >Aktualną taksonomię analizowanych gatunków można wyświetlenić używając taksonomii NCBI. Wejdź na stronę [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy). Wybierz funkcję `Common tree` i kolejno wprowadź gatunki.
 
-Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo często odbiega od prawdziwej filogenii gatunków. Jest to głównie spowodowane przez stochastyczny charakter mutacji: czasami gen będzie bardziej podobny do genu niesiostrzanego gatunku, z czysto losowych powodów. Wpływ stochastycznego charakteru mutacji na topologię drzewa maleje, gdy do budowy drzewa zostanie wykorzystanych więcej sekwencji genów.
+Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo często odbiega od prawdziwej filogenii gatunków. Jest to głównie spowodowane stochastycznym charakterem mutacji - czasami gen będzie bardziej podobny do genu niesiostrzanego gatunku, z czysto losowych powodów. Wpływ stochastycznego charakteru mutacji na topologię drzewa maleje, gdy do budowy drzewa zostanie wykorzystanych więcej sekwencji genów.
 <br/><br/>
 
 ### Zad. 5 - Mitochondrialne i jądrowe białka
 
-1. Skorzystaj z zaawansowanego wyszukiwania w bazie UniProt.
+1. W celu znalezienia eukariotycznych białek rybosomalnych L3 skorzystaj z zaawansowanego wyszukiwania w bazie [UniProt](https://www.uniprot.org).
 
    <img src="./images/uniprot-advance-l3.png" alt="uniprot-advance-l3" width="400px">
 
@@ -248,10 +246,11 @@ Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo cz�
    name:"ribosomal protein l3" taxonomy:eukaryota fragment:no AND reviewed:yes
    ```
   
-  Otrzymano 50 rekordów.
+   Otrzymano **50** rekordów.
 
-2. Skorzystaj z zaawansowanego wyszukiwania. 
-   * Cytoplazma (24 rekordy):
+2. W celu ograniczenia liczby rekordów do białek mitochondrialnych i cytoplazmatycznych, ponownie skorzystaj z zaawansowanego wyszukiwania.
+
+   * Cytoplazma (**24** rekordy):
 
       <img src="./images/uniprot-advance-l3-location.png" alt="uniprot-advance-l3-location" width="500px">
  
@@ -259,16 +258,16 @@ Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo cz�
       name:"ribosomal protein l3" taxonomy:eukaryota fragment:no 
       locations:(location:cytoplasm) AND reviewed:yes
       ```
-   * Mitochondria (8 rekordów)
+   * Mitochondria (**8** rekordów)
 
      ```
      name:"ribosomal protein l3" taxonomy:eukaryota fragment:no 
      locations:(location:mitochondrion) AND reviewed:yes
      ```
 
-3. Sekwencje białka L3 w formacie FASTA znajdują się w pliku [ribosmal-l3.fasta](./files/ribosmal-l3.fasta).
+3. Sekwencje cytoplazmatycznego i mitochondrialnego białka L3 znajdują się w formacie FASTA w pliku [ribosmal-l3.fasta](./files/ribosmal-l3.fasta).
 
-4. Drzewo nieukorzone utworzone w programie MEGA (Clustal + NJ):
+4. Drzewo nieukorzenione wygenerowamne w programie MEGA w oparciu o przyrównanie sekwencji algorytmem `ClustalW` i utworzenie drzewa algorytmem `Neighbor-Joining`:
 
    <img src="./images/MEGA-L3-tree.png" alt="MEGA-L3-tree" width="500px">
 
@@ -280,7 +279,7 @@ Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo cz�
 
 7. Nie ma różnic między dwoma poddrzewami - filogenia eukariontów jest przedstawiona w ten sam sposób.
 
-8. Więcej mutacji na jednostkę czasu zachodzi w grupie sekwencji mitochondrialnych. Jest to widoczne na drzewie, gdzie gałęzie w grupie mitochondrialnych sekwencji są dłuższe i znajdują się daleko od korzenia drzewa.
+8. Więcej mutacji na jednostkę czasu zachodzi w grupie sekwencji mitochondrialnych. Jest to widoczne na drzewie, w którym gałęzie w grupie mitochondrialnych sekwencji są dłuższe i znajdują się daleko od korzenia drzewa.
 <br/><br/>
 
 ### Zad. 6 - Drzewo rodziny genowej (duplikacje, delecje)
@@ -293,23 +292,23 @@ Filogenia gatunków prowadzona w oparciu o tylko jeden pojedynczy gen bardzo cz�
 
 <img src="./images/tnrc6-tree.png" alt="tnrc6-tree">
 
-1. Gen TNRC6 uległ duplikacjom najprawdopodobniej u kręgowców. Lancetnik należący do bezczaszkowców ma jedną kopię genu TNRC6, natomiast kręgowce (ryby, płazy, ptaki, ssaki) mają trzy kopię tego genu (`TNRC6A`, `TNRC6B` i `TNRC6C`). Zatem duplikacje genu TNRC6 musiały nastąpić po rozdzieleniu się lini ewolucyjnych bezczaszkowców i kręgowców.
+1. Gen *TNRC6* uległ duplikacjom najprawdopodobniej u kręgowców. Lancetnik należący do bezczaszkowców ma jedną kopię genu *TNRC6*, natomiast kręgowce (ryby, płazy, ptaki, ssaki) mają trzy kopię tego genu (`TNRC6A`, `TNRC6B` i `TNRC6C`). Zatem duplikacje genu *TNRC6* musiały nastąpić po rozdzieleniu się linii ewolucyjnych bezczaszkowców i kręgowców.
 
-2. Otrzymane drzewo wskazuje, że TNRC6B zduplikował jako pierwszy, następnie TRNC6A uległ duplikacji tworząc gen TNRC6C.
+2. Otrzymane drzewo wskazuje, że *TNRC6B* zduplikował jako pierwszy, następnie *TRNC6A* uległ duplikacji tworząc gen *TNRC6C*.
 
 3. Na drzewie występują duplikacje i delecje specyficzne dla danego gatunku:
    * U szympansa nie ma genu `TNRC6B`. Ponieważ gen ten występuje u wszystkich innych kręgowców (tj. ryby, płazy, ssaki) najprawdopodobniej doszło do delecji tego genu w genomie szympansa. 
-   * U kurczaka gen TNRC6C występuje w dwóch kopiach (`TNRC6C1` i `TNRC6C2`). Białka kodowane przez te dwa geny są ze sobą bardzo blisko spokrewnione (dystans jest bardzo mały). Dlatego, u kurczaka najprawdopodobniej doszło do specyficznej duplikacji tego genu.
+   * U kurczaka gen *TNRC6C* występuje w dwóch kopiach (`TNRC6C1` i `TNRC6C2`). Białka kodowane przez te dwa geny są ze sobą bardzo blisko spokrewnione (dystans jest bardzo mały). Dlatego, u kurczaka najprawdopodobniej doszło do specyficznej duplikacji tego genu.
 
-4. Ortologi genu TNRC6C człowieka i szympansa wykazują mniejszy dystans (`0.00`) niż in-paralogi TNCR6C1 i TNRC6C2 kurczaka `0.00111`.
+4. Ortologi genu *TNRC6C* człowieka i szympansa wykazują mniejszy dystans (`0.00`) niż in-paralogi *TNCR6C1* i *TNRC6C2* kurczaka `0.00111`.
 
    <img src="./images/MEGA-trnc6-distances.png" alt="MEGA-trnc6-distances">
 
 #### Metoda największej wiarygodności
 Metoda największej wiarygodności (ML, *Maximum Likelihood*) wybiera drzewo o najwyższym prawdopodobieństwie odtworzenia obserwowanych danych, opierając się na modelach probabilistycznych. ML odnajduje drzewo, które w najbardziej prawdopodobny sposób odzwierciedla rzeczywisty proces ewolucyjny. Jest to metoda wyczerpująca, która wyszukuje każdą możliwą topologię drzewa i uwzględnia każdą pozycję w przyrównaniu, nie tylko pozycje informatywne. Metoda ML oblicza całkowite prawdopodobieństwa ewolucji sekwencji pierwotnych do węzłów wewnętrznych, a ostatecznie do istniejących sekwencji, stosując konkretny model z określonymi wartościami prawdopodobieństwa dla substytucji reszt.
 
-5. Topologia drzewa otrzymanego metodą maksymalnej wiarygodności (`Maximum Likelihood`) jest podobna do drzewa uzyskanego metodą NJ. Różnica między tymi drzewami polega na kolejności duplikacji genu `TNRC6` u kręgowców. Według drzewa ML pierwszy zduplikował gen `TNRC6C` następnie `TNRC6A` i `TNRC6B`.
+5. Topologia drzewa otrzymanego metodą maksymalnej wiarygodności (`Maximum Likelihood`) jest podobna do drzewa uzyskanego metodą `Neighbor-Joining`. Różnica między tymi drzewami polega na kolejności duplikacji genu `TNRC6` u kręgowców. Według drzewa ML pierwszy zduplikował gen `TNRC6C` następnie `TNRC6A` i `TNRC6B`.
 
    <img src="./images/MEGA-trnc6-ml-tree.png" alt="MEGA-trnc6-ml-tree" width="500px">
 
-   > Metoda największej wiarygodności jest matematycznie najbardziej rygorystyczną matematycznie metodą ze wszystkich aktualnych podejść konstruowania drzew filogenetycznych. ML wykorzystuje informację zawartą w całej sekwencji, nie tylko w pozycjach informatywnych, zatem jest wiarygodna. Ze względu na jej czasochłonność, nie można wykorzystać metody ML do większej liczby taksonów. 
+   > Metoda największej wiarygodności jest matematycznie najbardziej rygorystyczną metodą ze wszystkich aktualnych podejść konstruowania drzew filogenetycznych. ML wykorzystuje informację zawartą w całej sekwencji, nie tylko w pozycjach informatywnych, zatem jest wiarygodna. Ze względu na jej czasochłonność, zastosowanie metody ML jest ograniczone do niewielkiej liczby taksonów. 

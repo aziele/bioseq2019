@@ -1,4 +1,4 @@
-### Zad. 1
+### Zad. 1 - Badanie pokrewieństwa niedźwiedzi
 
 W pliku [bears.fasta](./data/bears.fasta) znajdują się sekwencje 12s rRNA (niekodujące białka) pochodzące z 7 gatunków niedźwiedzi i 4 gatunków innych kręgowców:
 
@@ -27,8 +27,8 @@ Przeprowadź analizę filogenetyczną powyższych sekwencji.
 4. Który z niedźwiedzi jest najstarszy?
 <br/><br/>
 
-### Zad. 2
-Sekwencje z poprzedniego zadania należą do żyjących gatunków niedźwiedzi. Niedźwiedź jaskiniowy (*Ursus spelaeus*) wymarł ok. 20 tys. lat temu. Użyj programu BLAST i spróbuj znaleźć sekwencję 12s rRNA niedźwiedzia jaskiniowego, dołącz ją do sekwencji pozostałych gatunków do pliku [bears.fasta](./data/bears.fasta) i zbuduj drzewo filogenetyczne.
+### Zad. 2 - Wymarły niedźwiedź jaskiniowy
+Sekwencje z poprzedniego zadania należą do żyjących gatunków niedźwiedzi. Niedźwiedź jaskiniowy (*Ursus spelaeus*) wymarł ok. 20 tys. lat temu. Użyj programu BLAST i spróbuj znaleźć sekwencję 12s rRNA niedźwiedzia jaskiniowego, dołącz ją do sekwencji pozostałych gatunków w pliku [bears.fasta](./data/bears.fasta) i zbuduj drzewo filogenetyczne.
 
 1. Który niedźwiedź jest najbliższym krewnym wymarłego niedźwiedzia jaskiniowego?
 2. Czy uwzględnienie niedźwiedzia jaskiniowego na drzewie zmieniło układ pozostałych taksonów?

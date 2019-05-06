@@ -13,16 +13,16 @@ Sekwencje wirusowego białka gp120 znajdują się w pliku [HIV_data_set.fasta](.
 
 Wejdź na stronę [narzędzi EMBOSS do przyrównywania wielu sekwencji](https://www.ebi.ac.uk/Tools/msa/). Wybierz program **ClustalOmega** i przeprowadź przyrównanie sekwencji. W zakładce `Phylogeny Tree` znajduje się drzewo filogenetyczne utworzone na podstawie algorytmu *Neighbor-Joining (NJ)*.
 
-1. Czy uważasz, że dentysta z Florydy mógł zakazić któregokolwiek z ośmiu pacjentów?
+1. Czy dentysta z Florydy mógł zakazić któregokolwiek z ośmiu pacjentów?
 
-Umieść tesktową wersję drzewa (część `Tree Data`) w nowym pliku tekstowym i zapisz ją jako `clustal_dentist.newick`. Otwórz zapisane drzewo w programie FigTree. Dostosuj wygląd drzewa i wyeksportuj rysunek jako pdf.
+Umieść tesktową wersję drzewa (część `Tree Data`) w nowym pliku tekstowym i zapisz ją jako `clustal_dentist.newick`. Otwórz zapisane drzewo w programie **FigTree** zainstalowym na lokalnym komputerze. Dostosuj wygląd drzewa i wyeksportuj rysunek jako plik *pdf*.
 
 <img src="./images/figtree2.png" alt="figtree2">
 
 
 ### Zad. 2 - MEGA: zaawansowana analiza filogenetyczna
 
-Otwórz program MEGAX zainstalowany na lokalnym komputerze.
+Otwórz program MEGA7 zainstalowany na lokalnym komputerze.
 
 #### Przyrównanie sekwencji
 
@@ -37,7 +37,7 @@ Otwórz program MEGAX zainstalowany na lokalnym komputerze.
 #### Analiza filogenetyczna
 
 * W oknie przyrównania sekwencji wybierz z menu wybierz `Data` > `Phylogenetic Analysis`.
-* W głównym oknie programu MEGA wygeneruj drzewo używając algorytmu *Neighbor-Joining (NJ)* 
+* W głównym oknie programu MEGA wygeneruj drzewo używając algorytmu `Neighbor-Joining (NJ)`. 
    * `Analysis` > `Phylogeny` > `Construct Neighbor-Joining tree`.
 * W opcjach `Test of Phylogeny` ustaw `None`.
 * Naciśnij przycisk `Compute`.
@@ -54,7 +54,8 @@ Otwórz program MEGAX zainstalowany na lokalnym komputerze.
 
 #### Macierz dystansów
 
-Oblicz dystanse ewolucyjne w przyrównaniu par sekwencji analizowanych białek gp120 [główne okno programu > `Analysis` > `Distance` > `Compute Pairwise`].
+Oblicz dystanse ewolucyjne w przyrównaniu par sekwencji analizowanych białek gp120.
+> Główne okno programu > `Analysis` > `Distance` > `Compute Pairwise`.
 
 2. Która para białek gp120 jest najbliżej, a która najdalej spokrewniona?
 <br/><br/>
@@ -62,17 +63,17 @@ Oblicz dystanse ewolucyjne w przyrównaniu par sekwencji analizowanych białek g
 ### Zad. 3 - Badanie powstania wirusa HIV
 > Celem zadania jest zbadanie relacji ewolucyjnych między wirusami typu HIV człowieka i typu SIV małp.
 
-AIDS (*Acquired Immune Deficiency Syndrome*) może być wywołany dwoma różnymi wirusami: **HIV-1** i **HIV-2**. HIV-1 jest odpowiedzialny za globalne pandemie, a HIV-2 jest mniej wirulentny i do niedawny występował jedynie w zachodniej Arfyce. Wirusy podobne do HIV występujące w gatunkach naczelnych innych niż człowiek (małp, małp człekokształtnych) nazywają się **SIV** (*Simian Immunodeficiency Virus*). Wirus **HTLV-1** człowieka jest z kolei odległym członkiem rodziny tych retrowirusów, do których należą HIV i SIV.
+AIDS (*Acquired Immune Deficiency Syndrome*) może być wywołany dwoma różnymi wirusami: **HIV-1** i **HIV-2**. **HIV-1** jest odpowiedzialny za globalne pandemie, a **HIV-2** jest mniej wirulentny i do niedawny występował jedynie w zachodniej Arfyce. Wirusy podobne do HIV występujące w gatunkach naczelnych innych niż człowiek (małp, małp człekokształtnych) nazywają się **SIV** (*Simian Immunodeficiency Virus*). Wirus **HTLV-1** człowieka jest z kolei odległym członkiem rodziny tych retrowirusów, do których należą HIV i SIV.
 
-Gen **Pol**, obecny w genomach tych wirusów, koduje trzy różne polipeptydy niezbędne podczas wirusowego cyklu: integraza, odwrotna transkryptaza i proteaza. Gen ten ulega ekspresji jako pojedyncze polibiałko, które następnie jest cięte na trzy części. W pliku [Pol21.fasta](./data/Pol21.fasta) znajduje się 21 sekwencji polibiałka należących do wirusów HIV-1, HIV-2, SIV szympansa i małpy mangaby oraz HTLV-1 
+Gen **Pol**, obecny w genomach tych wirusów, koduje trzy różne polipeptydy niezbędne podczas wirusowego cyklu: integraza, odwrotna transkryptaza i proteaza. Gen ten ulega ekspresji jako pojedyncze polibiałko, które następnie podlega rozłożeniu na trzy części. W pliku [Pol21.fasta](./data/Pol21.fasta) znajduje się 21 sekwencji polibiałka należących do wirusów HIV-1, HIV-2, SIV szympansa i małpy mangaby oraz HTLV-1 
 
-Przeprowadź analizę filogenetyczną tych sekwencji w programie MEGA. Podczas wykonywania algorytmu Neighbor-Joining, jako test filogenetyczny (`Test of Phylogeny`) wybierz metodę bootstrap (`Bootstrap method`) z `1000` pseudoreplikacji (`No. of bootstrap replications`).
+Przeprowadź analizę filogenetyczną tych sekwencji w programie MEGA. Podczas wykonywania algorytmu `Neighbor-Joining`, jako test filogenetyczny (`Test of Phylogeny`) wybierz metodę bootstrap (`Bootstrap method`) z `1000` pseudoreplikacji (`No. of bootstrap replications`).
 
 1. Obejrzyj różne style prezentacji drzewa (`View` > `Tree/Branch style`).
    * Która sekwencja wyraźnie odstaje pod względem podobieństwa od pozostałych sekwencji?
 2. Umieść korzeń drzewa na gałęzi prowadzącej do `HTLV-1`.
-   * Jakie są relacje między wirusami HIV-1, HIV-2, i SIV?
-3. Jak powstał HIV-1 i HIV-2?
+   * Jakie są relacje między wirusami **HIV-1**, **HIV-2**, i **SIV**?
+3. Jak powstał **HIV-1** i **HIV-2**?
 4. Co oznaczają liczby znajdujące się na węzłach uzyskanego drzewa?
 5. Czy podział drzewa na dwie grupy monofiletyczne jest wiarygodny?
 6. Czy na drzewie znajdują się klady o niskim poziomie wiarygodności?
@@ -84,22 +85,24 @@ Zapisz rysunek drzewa do pliku PDF (`Image` > `Save as PDF`).
 ### Zad. 4 - Drzewo gatunków
 > Celem zadania jest wygenerowanie ukorzenionego drzewa sekwencji DNA kodujących rybosomalne białko L18. 
 
-Sekwencje kodujące L18 znajdują się w pliku [L18_CDS.fasta](./data/L18_CDS.fasta) i pochodzą z 15 różnych organizmów. Sekwencje w pliku nie są pełnej długości, pozbawione są ok. 30 kodonów. Przeprowadź analizę filogenetyczną tych sekwencji.
+Sekwencje kodujące rybosomalne białko L18 znajdują się w pliku [L18_CDS.fasta](./data/L18_CDS.fasta) i pochodzą z 15 różnych organizmów. Sekwencje w pliku nie są pełnej długości, pozbawione są ok. 30 kodonów. Przeprowadź analizę filogenetyczną tych sekwencji.
 
 1. Czy ułożenie na drzewie sekwencji gatunków jest zgodne z rozumianą taksonomią?
 <br/><br/>
 
 ### Zad. 5 - Mitochondrialne i jądrowe białka
-U eukariontów wiele białek występuje w mitochondriach, w których pełnią one funkncje związane z metabolizmem energetycznym lub własnym mitochondrialnym układem genetycznym. W tym układzie występują rybosomy, które różnią się od rybosomów znajdujących się w cytoplazmie. W zadaniu, wykorzystana zostanie baza UniProt do zidentyfikowania specyficznych białek rybosomalnych L3, które wchodzą w skład dużej podjednostki zarówno w cytoplazmatycznych, jak i mitochondrialnych rybosomach. Następnie przeprowadzona zostania analiza filogenetyczna tych białek. 
+> Celem zadania jest zbadanie pokrewieństwa między rybosomalnymi białkami L3 występującymi zarówno w  mitochondriach, jak i cytoplazmie.
 
-1. W serwisie UniProt znajdź wszystkie sekwencje białek o nazwie `ribosomal protein L3` u Eukaryota pochodzące z bazy Siwss-Prot. Wyszukaj tylko pełnej długości sekwencje (nie fragmenty). 
+U eukariontów wiele białek występuje w mitochondriach, w których pełnią one funkncje związane z metabolizmem energetycznym lub własnym mitochondrialnym układem genetycznym. W tym układzie występują rybosomy, które różnią się od rybosomów znajdujących się w cytoplazmie. W tym zadaniu, wykorzystana zostanie baza [UniProt](https://www.uniprot.org) do zidentyfikowania specyficznych białek rybosomalnych L3, które wchodzą w skład dużej podjednostki zarówno w cytoplazmatycznych, jak i mitochondrialnych rybosomach. Następnie przeprowadzona zostania analiza filogenetyczna tych białek. 
+
+1. W serwisie UniProt znajdź wszystkie sekwencje białek o nazwie `ribosomal protein L3` u *Eukaryota* pochodzące z bazy Siwss-Prot. Wyszukaj tylko pełnej długości sekwencje (nie fragmenty). 
    * Ile sekwencji znaleziono?
 
 2. Ile wśród tych białek zlokalizowanych jest w mitochondriach i cytoplazmie (`Subcellular location`)?
    * Pobierz sekwencje FASTA tych dwóch wyszukiwań.
 
 3. Połącz zawartość dwóch pobranych plików w jeden plik FASTA o nazwie `ribosomal-l3.fasta`.
-   > Nazwy białek zaczynają się od `RL3` (cytoplazma) lub `RM03` i `RK3` (mitochondria)
+   > Nazwy białek cytoplazmatycznych zaczynają się od przedrostka `RL3`, a mitochondrialne białka nazywają się `RM03` i `RK3`.
 
 4. W programie MEGA utwórz drzewo filogenetyczne tych białek.
 
@@ -110,19 +113,21 @@ U eukariontów wiele białek występuje w mitochondriach, w których pełnią on
 
 7. Zwróć uwagę na gatunki, które występują zarówno w grupie sekwencji mitochondrialnych, jak i cytoplazmatycznych. Czy obie grupy w podobny sposób przedstawiają filogenię eukariontów?
 
-8. W której grupie sekwencji ewolucja przebiega szybciej (większa liczba mutacji na jednostkę czasu) - wśród cytoplazmatycznych czy mitochondrialnych rybosomalnych białek?
+8. W której grupie sekwencji rybosomalnych - cytoplazmatycznych czy mitochondrialnych - ewolucja przebiega szybciej (większa liczba mutacji na jednostkę czasu)?
 <br/><br/>
 
 ### Zad. 6 - Drzewo rodziny genowej (duplikacje, delecje)
-W pliku [tnrc6.fasta](./data/tnrc6.fasta) znajduje się 17 sekwencji białkowych genu TNRC6 (rodzina genów GW182) pochodzących z bezkręgowców i kręgowców. Białka GW182 wiążą białka Argonaute podczas wyciszania ekspresji genów w oparciu o RNA. Utwórz drzewo filogenetyczne tych sekwencji korzystając z algorytmu Neighbor-Joining i metody boostrap (1000 replikacji).
+> Celem zadania jest utworzenie drzewa rodziny genowej i ustalenie kolejności duplikacji i delecji w tej rodzinie.
 
-1. Kiedy w toku ewolucji gen TNRC6 uległ duplikacjom?
-2. Która z podrodzin genu (TNRC6A, TNRC6B, TNRC6C) zduplikowała pierwsza?
+W pliku [tnrc6.fasta](./data/tnrc6.fasta) znajduje się 17 sekwencji białkowych genu *TNRC6* (rodzina genów GW182) pochodzących z bezkręgowców i kręgowców. Białka GW182 wiążą białka Argonaute podczas wyciszania ekspresji genów w oparciu o RNA. Utwórz drzewo filogenetyczne tych sekwencji korzystając z algorytmu `Neighbor-Joining` i metody boostrap (`1000` replikacji).
+
+1. Kiedy w toku ewolucji gen *TNRC6* uległ duplikacjom?
+2. Która z podrodzin genu (*TNRC6A*, *TNRC6B*, *TNRC6C*) zduplikowała pierwsza?
 3. Czy na drzewie są duplikacje/delecje genu, które są specyficzne dla danego organizmu.
-4. Które pary sekwencji są bliżej spokrewnione: ortologi TNRC6C człowieka i szympansa czy paralogi TNRC6C kurczaka?
+4. Które pary sekwencji są bliżej spokrewnione: ortologi *TNRC6C* człowieka i szympansa czy paralogi *TNRC6C* kurczaka?
 
 #### Metoda największej wiarygodności
 
 Utwórz drzewo filogenetyczne tych sekwencji, tym razem stosując metodę największej wiarygodności (`Phylogeny` > `Construct Maximum Likelihood Tree`).
 
-5. Czy topologia drzewa jest taka sama, jak w przypadku metody NJ?
+5. Czy topologia drzewa jest taka sama, jak w przypadku metody `NJ`?
