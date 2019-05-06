@@ -35,7 +35,7 @@ SAAARRALRSLKANQPQVPNS
 
 1. Ile w sumie domen i rodzin domen zostało zidentyfikowanych w analizowanej sekwencji?
 2. W jakiej pozycji w sekwencji znajduje się domena `Dicer_dimer`?
-3. Podaj wartość `E-value` przyrównania domeny `Dicer_dimer` z modelem *HMM*.
+3. Podaj wartość `E-value` przyrównania domeny `Dicer_dimer` z modelem HMM.
 
 #### Rekord domeny Dicer
 
@@ -207,7 +207,7 @@ W bazie UniProt wyszukaj wszystkie białka zawierające domenę RRM u bakterii.
 ### Zad. 9 - MEME: Motif Discovery
 > Celem zadania jest znalezienie motywów sekwencyjnych nadreprezentowanych w zadanym przez użytkownika zestawie sekwencji.
 
-W pliku [sequences.fasta](./data/sequences.fasta) znajduje się 6 sekwencji białkowych, które pełnią podobne funkcje komórkowe. Otwórz stronę serwisu [MEME](http://meme-suite.org) i wybierz: `Motif Discovery` > `MEME`. W formularzu:
+W pliku [sequences.fasta](./data/sequences.fasta) znajduje się 6 sekwencji białkowych, które pełnią podobne funkcje komórkowe. Otwórz stronę serwisu [MEME](http://meme-suite.org) i wybierz: `Motif Discovery` > `MEME`. W formularzu programu:
 * W sekcji `Select the site distribution` wybierz opcję `Any number of repetitions`.
 * Załaduj plik `sequences.fasta`
 * Rozpocznij analizę.
