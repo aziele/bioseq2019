@@ -50,16 +50,16 @@ Otwórz zakładkę `Species`.
 7. Czy domena występuje u organizmów prokariotycznych?
 8. W ilu gatunkach owadów występuje ta domena?
 
-Będąc w zakladce `Species`, otwórz kartę `Tree`.
+Będąc w zakładce `Species`, otwórz kartę `Tree`.
 
 9. Ile sekwencji białek człowieka posiada tę domenę?
 10. Ile sekwencji białek człowiekowatych (*Hominidae*) posiada tę domenę. 
     * Podaj numery dostępu tych białek.
 
-Przejdź do zakładki `HMM logo`.
+Otwórz zakładkę `HMM logo`.
 
 11. Ile wynosi długość sekwencji domeny `Dicer_dimer`?
-12. Jakie dwa aminokwasy są najbardziej zachowane w pozycji 8 sekwencji domeny?
+12. Jakie dwa aminokwasy są najbardziej zachowane w pozycji `8` sekwencji domeny?
 
 Przejdź do zakładki `Domain organization`.
 
@@ -70,11 +70,11 @@ Przejdź do zakładki `Domain organization`.
 ### Zad. 2 - Serwis PROSITE (wzorce i profile sekwencyjne)
 Użyj sekwencji z poprzedniego zadania w serwisie [PROSITE](https://prosite.expasy.org/prosite.html).
 
-1. Podaj nazwę domeny, której nie zidentyfikowano wcześniej w seriwsie Pfam.
+1. Podaj nazwę domeny, której nie zidentyfikowano wcześniej w serwisie Pfam.
    * Jaką funkcję pełni ta domena?
 2. Czy serwis PROSITE zidentyfikował jakieś wzorce sekwencyjne w sekwencji zapytania?
-3. Podaj numer dostępu domeny typu Dicer w bazie PROSITE.
-4. Czy lokalizacja domeny Dicer w sekwencji jest taka sama, jak w przewidywaniach Pfam?
+3. Podaj numer dostępu domeny typu *Dicer* w bazie PROSITE.
+4. Czy lokalizacja domeny *Dicer* w sekwencji jest taka sama, jak w przewidywaniach Pfam?
 
 #### Rekord domeny Dicer
 
@@ -82,7 +82,7 @@ Wejdź w rekord domeny Dicer w bazie PROSITE.
 
 5. Podaj długość profilu domeny Dicer w bazie PROSITE.
 6. Czy w logo domeny Dicer aminokwasy `Y` i `F` są najbardziej zachowanymi aminokwasami?
-7. Wejdź w `Taxonomic distribution` domeny Dicer.
+7. Wejdź w `Taxonomic distribution` domeny *Dicer*.
    * Czy domena występuje u organizmów prokariotycznych?
 <br/><br/>
 
@@ -99,18 +99,18 @@ Użyj sekwencji z zad. 1 i serwisu [InterPro](http://www.ebi.ac.uk/interpro/) w 
 
 Otwórz stronę rekordu domeny *Dicer* w bazie InterPro.
 
-5. Ile sekwencji białkowych zawieraj domenę Dicer?
+5. Ile sekwencji białkowych zawiera tę domenę?
    * Ile z tych białek należy do *Eukaryota* i *Prokaryota*?
-6. Ile jest różnych układów domen (`Domain architectures`), w których występuje domena Dicer?
-7. Wymień szlaki biochemiczne, w które zaangażowana jest domena Dicer.
+6. Ile jest różnych układów domen (`Domain architectures`), w których występuje domena *Dicer*?
+7. Wymień szlaki biochemiczne, w które zaangażowana jest domena *Dicer*.
 <br/><br/>
 
 ### Zad. 4 - Informacje o domenach w rekordach UniProt
-Użyj programu BLAST na stronie serwisu [UniProt](*https://www.uniprot.org/) w celu zidentyfikowania sekwencji białkowej z zadania 1.
+Użyj programu BLAST na stronie serwisu [UniProt](https://www.uniprot.org/) w celu zidentyfikowania sekwencji białkowej z zadania 1.
 
 1. Podaj numer dostępu oraz nazwę znalezionej sekwencji.
 
-Przejdź do rekordu zidentyfikowanej sekwencji białkowej.
+Otwórz rekord znalezionej sekwencji białkowej.
 
 2. Czy w rekordzie UniProt zawarte są informacje o domenach występujących w tym białku?
 <br/><br/>
@@ -207,7 +207,10 @@ W bazie UniProt wyszukaj wszystkie białka zawierające domenę RRM u bakterii.
 ### Zad. 9 - MEME: Motif Discovery
 > Celem zadania jest znalezienie motywów sekwencyjnych nadreprezentowanych w zadanym przez użytkownika zestawie sekwencji.
 
-W pliku [sequences.fasta](./data/sequences.fasta) znajduje się 6 sekwencji białkowych, które pełnią podobną funkcje komórkowe. Otwórz stronę serwisu [MEME](http://meme-suite.org) i wybierz `Motif Discovery` > `MEME`. W formularzu, w sekcji `Select the site distribution` wybierz opcję `Any number of repetitions`. Załaduj plik `sequences.fasta` i rozpocznij analizę.
+W pliku [sequences.fasta](./data/sequences.fasta) znajduje się 6 sekwencji białkowych, które pełnią podobne funkcje komórkowe. Otwórz stronę serwisu [MEME](http://meme-suite.org) i wybierz: `Motif Discovery` > `MEME`. W formularzu:
+* W sekcji `Select the site distribution` wybierz opcję `Any number of repetitions`.
+* Załaduj plik `sequences.fasta`
+* Rozpocznij analizę.
 
 1. Ile motywów znaleziono?
 2. Które motywy są obecne we wszystkich 6 sekwencjach?
