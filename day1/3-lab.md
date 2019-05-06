@@ -1,88 +1,6 @@
-## Przyrównanie sekwencji - podstawowe informacje
-
-
-### Zad. 1 - Format zapisu przyrównania sekwencji nukleotydowych
-Wejściowe sekwencje DNA:
-
-```
->dna1
-GATACTAT
->dna2
-GATTTCAAT
-```
-
-Przyrównanie pary sekwencji (dwie formy zapisu):
-
-```
-dna1   GA-TACTA-T                       dna1   GA-TACTA-T
-       || |.| | |                       dna2   GATTTC-AAT
-dna2   GATTTC-AAT
-```
-
-Odpowiedz na pytania:
-
-1. Ile wynosi długość powyższego przyrówania?
-2. Na ilu pozycjach przyrównania nukleotydy są:
-   * zgodne (*match*)
-   * niezgodne (*mismatch*)?
-3. Ile wynosi procent *identyczności* przyrównanych sekwencji?
-4. Ile wynosi wartość punktacji (`score`) przyrównania sekwencji? Przyjmij poniższy system punktacji:
-   * elementy zgodne (*match*): `2`
-   * elementy niezgodne (*mismatch*): `-1`
-   * przerwa (*gap*): `-2`
-<br/><br/>
-
-
-### Zad. 2 - Format zapisu przyrównania sekwencji aminokwasowych
-Poniżej znajduje się przyrównanie dwóch sekwencji białkowych.
-
-```
-s1   MSSE-                       s1   MSSE-
-     ||.:                        s2   MSKQI
-s2   MSKQI
-```
-
-Odpowiedz na pytania:
-
-1. Ile wynosi procent *identyczności* przyrównywanych sekwencji?
-2. Podaj wartość `score` całego przyrównania przy użyciu macierzy [BLOSUM62](https://www.ncbi.nlm.nih.gov/Class/FieldGuide/BLOSUM62.txt) (poniżej) i kary za przerwę: `-5`.
-   
-   ```
-      A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V  B  Z  X  *
-   A  4 -1 -2 -2  0 -1 -1  0 -2 -1 -1 -1 -1 -2 -1  1  0 -3 -2  0 -2 -1  0 -4 
-   R -1  5  0 -2 -3  1  0 -2  0 -3 -2  2 -1 -3 -2 -1 -1 -3 -2 -3 -1  0 -1 -4 
-   N -2  0  6  1 -3  0  0  0  1 -3 -3  0 -2 -3 -2  1  0 -4 -2 -3  3  0 -1 -4 
-   D -2 -2  1  6 -3  0  2 -1 -1 -3 -4 -1 -3 -3 -1  0 -1 -4 -3 -3  4  1 -1 -4 
-   C  0 -3 -3 -3  9 -3 -4 -3 -3 -1 -1 -3 -1 -2 -3 -1 -1 -2 -2 -1 -3 -3 -2 -4 
-   Q -1  1  0  0 -3  5  2 -2  0 -3 -2  1  0 -3 -1  0 -1 -2 -1 -2  0  3 -1 -4 
-   E -1  0  0  2 -4  2  5 -2  0 -3 -3  1 -2 -3 -1  0 -1 -3 -2 -2  1  4 -1 -4 
-   G  0 -2  0 -1 -3 -2 -2  6 -2 -4 -4 -2 -3 -3 -2  0 -2 -2 -3 -3 -1 -2 -1 -4 
-   H -2  0  1 -1 -3  0  0 -2  8 -3 -3 -1 -2 -1 -2 -1 -2 -2  2 -3  0  0 -1 -4 
-   I -1 -3 -3 -3 -1 -3 -3 -4 -3  4  2 -3  1  0 -3 -2 -1 -3 -1  3 -3 -3 -1 -4 
-   L -1 -2 -3 -4 -1 -2 -3 -4 -3  2  4 -2  2  0 -3 -2 -1 -2 -1  1 -4 -3 -1 -4 
-   K -1  2  0 -1 -3  1  1 -2 -1 -3 -2  5 -1 -3 -1  0 -1 -3 -2 -2  0  1 -1 -4 
-   M -1 -1 -2 -3 -1  0 -2 -3 -2  1  2 -1  5  0 -2 -1 -1 -1 -1  1 -3 -1 -1 -4 
-   F -2 -3 -3 -3 -2 -3 -3 -3 -1  0  0 -3  0  6 -4 -2 -2  1  3 -1 -3 -3 -1 -4 
-   P -1 -2 -2 -1 -3 -1 -1 -2 -2 -3 -3 -1 -2 -4  7 -1 -1 -4 -3 -2 -2 -1 -2 -4 
-   S  1 -1  1  0 -1  0  0  0 -1 -2 -2  0 -1 -2 -1  4  1 -3 -2 -2  0  0  0 -4 
-   T  0 -1  0 -1 -1 -1 -1 -2 -2 -1 -1 -1 -1 -2 -1  1  5 -2 -2  0 -1 -1  0 -4 
-   W -3 -3 -4 -4 -2 -2 -3 -2 -2 -3 -2 -3 -1  1 -4 -3 -2 11  2 -3 -4 -3 -2 -4 
-   Y -2 -2 -2 -3 -2 -1 -2 -3  2 -1 -1 -2 -1  3 -3 -2 -2  2  7 -1 -3 -2 -1 -4 
-   V  0 -3 -3 -3 -1 -2 -2 -3 -3  3  1 -2  1 -1 -2 -2  0 -3 -1  4 -3 -2 -1 -4 
-   B -2 -1  3  4 -3  0  1 -1  0 -3 -4  0 -3 -3 -2  0 -1 -4 -3 -3  4  1 -1 -4 
-   Z -1  0  0  1 -3  3  4 -2  0 -3 -3  1 -1 -3 -1  0 -1 -3 -2 -2  1  4 -1 -4 
-   X  0 -1 -1 -1 -2 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2  0  0 -2 -1 -1 -1 -1 -1 -4 
-   * -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4 -4  1
-   ```
-
-
-3. Ile wynosi procent *podobieństwa* przyrównywanych sekwencji?
-<br/><br/>
-
-
 ## Programy Needle i Water
 
-### Zad. 3 - Przyrównanie lokalne i globalne sekwencji DNA
+### Zad. 1 - Przyrównanie lokalne i globalne sekwencji DNA
 Poniżej znajduje się sekwencja genomowa genu insuliny ponocnicny trójpręgowej oraz sekwencja CDS tego genu. 
 
 ```
@@ -136,7 +54,7 @@ Korzystając z internetowej wersji programów **Needle** i **Water** (<a href="h
 <br/><br/>
 
 
-### Zad. 4 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
+### Zad. 2 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
 Poniżej znajdują się dwie sekwencje prokariotycznych proteaz serynowych pobrane z bazy *UniProt*.
 Pierwsza sekwencja jest termostabilną proteazą pochodzącą z *Bacillus lentus*, którą firma *Novozymes* dodaje do proszków do prania pod nazwą *Savinase*. Druga sekwencja jest również termostabilną proteazą serynową pochodzącą z gatunku *Bacillus halodurans*.
 
@@ -177,13 +95,12 @@ W nowej karcie przeglądarki skorzystaj z programu *Water* w celu przyrównania 
 Odszukaj w serwisie [UniProt](https://www.uniprot.org) rekordy analizowanych sekwencji proteaz.
 
 6. W jaki sposób otrzymano te dwie sekwencje?
-7. Podaj komórkową lokalizację obu białek.
-8. Czy oba białka różnią się pod względem post-translacyjnych modyfikacji (`PTM / Processing`)?
-9. Czy białko (`P41363`) może posłużyć jako enzym stosowany w proszkach do prania?
+7. Czy oba białka różnią się pod względem post-translacyjnych modyfikacji (`PTM / Processing`)?
+8. Czy białko (`P41363`) może posłużyć jako enzym stosowany w proszkach do prania?
 <br/><br/>
 
 
-### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
+### Zad. 3 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
 Poniżej znajduje się sekwencja peptydazy człowieka (tripeptydylo-peptydaza).
 
 ```
@@ -235,7 +152,7 @@ W trzech kartach przeglądarki internetowej porównaj powyższą sekwencję czł
 
 ## Wpływ parametrów na przyrównanie sekwencji
 
-### Zad. 6 - Kara za stosowanie przerw
+### Zad. 4 - Kara za stosowanie przerw
 Używając programu *Water* przyrównaj sekwencję *Savinase* z sekwencją tripeptydylo-peptydazę człowieka: 
 
 1. Zmniejszając karę za otwarcie przerwy = `1` i wydłużenie przerwy = `0.2`. 
@@ -244,7 +161,7 @@ Używając programu *Water* przyrównaj sekwencję *Savinase* z sekwencją tripe
    * W jaki sposób zwiększenie kar za stosowanie przerw wpłynęło na to dopasowanie?
 <br/><br/>
 
-### Zad. 7 - Macierze substytucji
+### Zad. 5 - Macierze substytucji
 Używając programu *Water* wykonaj trzy przyrównania sekwencji *Savinase* z sekwencją tripeptydylo-peptydazę człowieka, stosując macierz substytucji `BLOSUM30`, `BLOSUM62` i `BLOSUM90`.
 
 Jak zmienia się długość przyrównania i procent identyczności w zależności od macierzy BLOSUM?
@@ -252,7 +169,7 @@ Jak zmienia się długość przyrównania i procent identyczności w zależnośc
 
 ## Wykres Dot Plot
 
-### Zad. 8 - Interpretacja wykresów dot plot
+### Zad. 6 - Interpretacja wykresów dot plot
 W pliku [dotplot.fasta](./day1/data/dotplot.fasta) znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
 > W polu `Matrix file` wpisz nazwę macierzy `EDNASIMPLE` (`+1` dla par nukleotdów zgodnych, `0` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`.
 

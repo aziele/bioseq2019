@@ -26,8 +26,21 @@ W bazie nukleotdyowej [serwisu NCBI](https://www.ncbi.nlm.nih.gov) znajdź rekor
 <br/><br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
-W pliku [accession_numbers.txt](./data/accession_numbers.txt) znajduje się 10 numerów dostępu mRNA kodujących kinazy. W [serwisie NCBI](https://www.ncbi.nlm.nih.gov) otwórz bazę `Nucleotide` i skorzystaj z funkcji `Batch Entrez` pozwalającej wyszukać wiele rekordów sekwencji jednocześnie. Zapisz otrzymane sekwencje w formacie FASTA.
-<br/><br/>
+W [serwisie NCBI](https://www.ncbi.nlm.nih.gov), w bazie `Nucleotide` wyszukaj rekordy sekwencji dla poniższych 10 numerów dostępu.
+
+```
+XM_009313067
+NM_001275793
+NM_116919
+XM_007825334
+NM_023057
+NM_070001
+NM_020791
+NM_001180785
+XM_004367964
+NM_001326476
+```
+<br/>
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
 Celem zadania jest wyszukanie wszystkich sekwencji mRNA insuliny człowieka.
@@ -35,7 +48,7 @@ Celem zadania jest wyszukanie wszystkich sekwencji mRNA insuliny człowieka.
 #### Proste wyszukiwanie
 
 1. W nukleotydowej bazie NCBI (`Nucleotide`), w polu wyszukiwania wpisz `insulin`.
-2. Korzystając z filtrów zawęź kryteria wyszukiwania do ogranizmu człowieka.
+2. Korzystając z filtrów zawęź kryteria wyszukiwania do sekwencji pochodzących z człowieka.
 3. Korzystając z filtrów zawęź kryteria wyszukiwania do sekwencji mRNA.
 
 #### Zaawansowane wyszukiwanie
@@ -87,31 +100,25 @@ Przejdź do rekordu genu `BRCA2`.
 Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o nazwie `HFE`.
 
 1. Podaj identyfikator genu HFE w bazie `Gene`.
-2. Ile wariantów transkrypcyjnych ma ten gen?
+2. Ile wariantów transkryptów ma ten gen?
    * Ile wśród nich koduje białko?
 3. Podaj pozycję w wariantach transkrypcyjnych, sekwencjach kodujących (CDS) oraz w białkach odpowiadającą pozycji `8671` genu?
 <br/><br/>
 
-### Zad. 6 - Wyświetlanie SNP danego genu
-Korzystając z zaawansowanego wyszukiwania znajdź w bazie `Gene` ludzki gen o nazwie `BRCA1`. Następnie:
-* Z panelu `Related information` po prawej stronie wybierz `Variation Viewer`. 
-* Ustaw widok mapy na egzon 10 i wyświetl listę SNP związanych z chorobotwórczością.
-* Wybierz dowolny SNP i scharakteryzuj zmianę nukleotydu oraz wpływ tej zmiany na sekwencję białkową.
-<br/><br/>
 
 ## Baza taksonomiczna (NCBI Taxonomy)
 
 
-### Zad. 7 - Zasoby sekwencji pojedynczego gatunku
+### Zad. 6 - Zasoby sekwencji pojedynczego gatunku
 Korzystając z bazy `Taxonomy` serwisu [NCBI](https://www.ncbi.nlm.nih.gov) wyszukaj wszystkie typy sekwencji dostępne dla myszy.
 
-1. Podaj identyfikator taksonomiczny myszy.
+1. Podaj identyfikator taksonomiczny myszy (*Mus musculus* lub *mouse*).
 2. Ile sekwencji nukleotydowych dostępnych jest dla myszy oraz wszystkich jej podgatunków?
    * Jakiego typu sekwencje nukleotydowe są dostępne?
 <br/><br/>
 
 
-### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
+### Zad. 7 - Zasoby sekwencji dowolnej jednostki taksonomicznej
 Korzystając z bazy `Taxonomy` serwisu [NCBI](https://www.ncbi.nlm.nih.gov) wyświetl przynależność taksonomiczną rzędu gryzoni (*Rodentia*).
 
 1. Wyświetl drzewo taksonomiczne rozszerzając je do sześciu poziomów rozgałęzienia.

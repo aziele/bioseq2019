@@ -1,32 +1,6 @@
-### Zad. 1 - Format zapisu przyrównania sekwencji nukleotydowych
-
-1. Długość przyrównania wynosi **10** pozycji.
-   > Długość przyrównania uwzględnia również przerwy (`-`).
-2. Na **6** pozycjach nukleotydy są zgodne, na **1** pozycji nukleotydy są niezgodne, a na **3** pozycjach występują przerwy.
-3. Identycznośc sekwencji wynosi: `60%`. 
-   > 6/10 * 100 = 60
-4. Wartość punktacji przyrównania (`score`) wynosi `5`.
-   > 2 + 2 - 2 + 2 - 1 + 2 - 2 + 2 - 2 + 2 = 5
-
-<br/>
-
-
-### Zad. 2 - Format zapisu przyrównania sekwencji aminokwasowych
-1. Identyczności wynosi `40%`.
-   > 2/5 * 100 = 40
-2. Wartośc punktacji przyrównania (`score`) wynosi `4`.
-   > Wartości punktacji dla zgodnych i niezgodnych aminokwasów należy odczytać z macierzy substytucji <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/matrices/BLOSUM62" target="_blank">BLOSUM62</a>. Na przykład, wartość punktacji dopasowanie aminokwasów `M-M` wynosi `5`.
-   
-   Obliczenia wartości punktacji całego przyrównania: `5 + 4 + 0 - 5 = 4`.
-3. Procent podobieństwa sekwencji wynosi `60%`
-   > 3/5 * 100 = 60
-
-<br/>
-
-
 ## Programy Needle i Water
 
-### Zad. 3 - Przyrównanie lokalne i globalne sekwencji DNA
+### Zad. 1 - Przyrównanie lokalne i globalne sekwencji DNA
 Otwórz programy Needle i Water w osobnych kartach przeglądarki internetowej. Ustaw typ porównywanych sekwencji (`Enter a pair of`) jako `DNA`. Umieść pierwszą sekwencję w formacie FASTA w pierwszym oknie i drugą sekwencję w drugim oknie. Wykonaj przyrównanie.
 
 #### Przyrównanie globalne (Needle)
@@ -377,7 +351,7 @@ CDS              278 GCTGCACCAGCATCTGCTCCCTCTACCAGCTGCAGAACTACTGCAACTAG    327
 <br/><br/>
 
 
-### Zad. 4 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
+### Zad. 2 - Przyrównanie lokalne i globalne sekwencji aminokwasowych
 
 #### Przyrównanie globalne (Needle)
 
@@ -479,16 +453,14 @@ P41363           343 LGSPSLYGNGLVHAGRATQ    361
 
 6. Otwórz stronę [serwisu UniProt](https://www.uniprot.org). Odszukaj dwa rekordy w oparciu o ich numery dostępu: [P29600](https://www.uniprot.org/uniprot/P29600) i [P41363](https://www.uniprot.org/uniprot/P41363). Lista publikacji (`Publications`) oraz słowa kluczowe (`Keywords - Technical term`) w obu rekordach wskazują, że sekwencję białka *Salvinase* (`P29600`) otrzymano ze struktury przestrzennej, natomiast sekwencję `P41363` otrzymano w wyniku sekwencjonowania DNA.
 
-7. Panel `Subcellular location` w rekordzie UniProt wskazuje, że oba białka są wydzielane poza komórkę (`Secreted protein`).
+7. Z informacji zawartych w panelu `PTM/Processing` wynika, że *Salivase* (`P29600`) jest sekwencją dojrzałego białka (pozbawioną peptydowów sygnałowych), natomiast sekwencja `P41363` zawiera peptyd sygnałowy (w pozycji `1-24`) oraz propeptyd (w pozycji `25-93`). Oba peptydy są usuwane z dojrzałego białka. Różnica między dwoma białkami termostabilnej proteazy (`P29600` i `P41363`) polega na tym, że sekwencja `P41363` jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, natomiast `P29600` powstała ze struktury przestrzennej, która dotyczy tylko dojrzałego białka.
 
-8. Z informacji zawartych w panelu `PTM/Processing` wynika, że *Salivase* (`P29600`) jest sekwencją dojrzałego białka (pozbawioną peptydowów sygnałowych), natomiast sekwencja `P41363` zawiera peptyd sygnałowy (w pozycji `1-24`) oraz propeptyd (w pozycji `25-93`). Oba peptydy są usuwane z dojrzałego białka. Różnica między dwoma białkami termostabilnej proteazy (`P29600` i `P41363`) polega na tym, że sekwencja `P41363` jest wynikiem tłumaczenie DNA i zawiera pełną informację o sekwencji kodującej, natomiast `P29600` powstała ze struktury przestrzennej, która dotyczy tylko dojrzałego białka.
-
-9. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Białko to, podobnie jak *Salvinase* jest proteazą serynową z rodziny *S8*. Jest ono również termostabilne. Sekwencje obu białek są również bardzo podobne (w ok. 80%). Potencjalny problem mogłoby stanowić optymalne pH, lecz jest to kwestia do rozwiązania w laboratorium.
+8. Białko `P41363` prawdopodobnie mogłoby posłużyć jako składnik proszku do prania. Białko to, podobnie jak *Salvinase* jest proteazą serynową z rodziny *S8*. Jest ono również termostabilne. Sekwencje obu białek są również bardzo podobne (w ok. 80%). Potencjalny problem mogłoby stanowić optymalne pH, lecz jest to kwestia do rozwiązania w laboratorium.
 <br><br>
 
-### Zad. 5 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
+### Zad. 3 - Przyrównanie daleko spokrewnionych sekwencji (wątpliwe przyrównania)
 
-#### Przyrównanie globalne (*Needle*):
+#### Przyrównanie semi-globalne (*Needle*):
 
 ```
 # Length: 1289
@@ -791,7 +763,7 @@ P29144           462 ILSGLKANNIDYTVHSVRRALENTAVKADNIEVFAQGHGIIQVDKA    507
 
 ## Wpływ parametrów na przyrównanie sekwencji
 
-### Zad. 6 - Wielkość kary za stosowanie przerw
+### Zad. 4 - Wielkość kary za stosowanie przerw
 
 #### 1. Zmniejszenie wielkości kary za przewy
 Ponieważ kara za przerwę jest mała (niewielkie wartości ujemne), algorytm częściej wprowadza przerwy do przyrównania, ponieważ nie mają one tak dużego wpływu na końcową wartość punktacji przyrównania. Większy wpływ na obniżenie punktacji przyrównania mają w tym przypadku substytucje aminokwasów, dlatego algorytm wprowadza przerwy, tak aby dopasować jak najwięcej reszt aminokwasowych. W rezultacie, otrzymane przyrównanie zawiera więcej przerw niż substytucji (niedopasowań) dwóch aminokwasów. Oczwyiście, z biologicznego punktu widzenia, takie przyrównanie jest całkowicie niewiarygodne.
@@ -948,7 +920,7 @@ TPP2_HUMAN       495 FAQG    498
 W wyniku zwiększenie kary za wprowadzenie przerw (otwarcie przerwy = `20`, wydłużenie przerwy = `1`) otrzymane przyrównanie jest krótkie (54 pozycji) i składa się w 7% z przerw.
 <br/><br/>
 
-### Zad. 7 - Macierze substytucji
+### Zad. 5 - Macierze substytucji
 Macierz substytucji (np. [BLOSUM62](https://www.ncbi.nlm.nih.gov/Class/FieldGuide/BLOSUM62.txt)) dostarcza informacji na temat wartości punktowania aminokwasów zgodnych i niezgodnych. Programy służące do przyrównywania sekwencji (np. *Water*, *Needle*, *BLAST*) wykorzystują wartości w macierzach substytucji podczas wyznaczania przyrównania. Macierz substytucji ma zatem wpływ na wynik przyrównania (na wszystkie wartości przyrównania: punktacja, identyczność, podobieństwo, długość oraz liczba przerw).
 
 #### BLOSUM30
@@ -1083,7 +1055,7 @@ Wraz ze wzrastającym indeksem BLOSUM (od `30` do `90`), procent identyczności 
 
 ## Porównanie sekwencji: wykres Dot plot
 
-### Zad. 8
+### Zad. 6
 
 #### s1:s1
 Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Porównywane sekwencje są zatem identyczne lub bardzo podobne (poziom zgodności to przynajmniej 10 na 15 nukleotydów)

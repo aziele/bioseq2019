@@ -11,7 +11,7 @@ Otwórz stronę [serwisu Uniprot](https://www.uniprot.org/). W polu wyszukiwania
 3. Ile rekordów zostało?
    * Na którym miejscu na liście białek znajduje się szukana insulina człowieka?
 
-* W polu wyszukiwania dodaj do zapytania frazę `NOT name:protein-like`.
+* W polu wyszukiwania dodaj do zapytania frazę `NOT name:insulin-like`.
 
 5. Ile rekordów zostało?
    * Na którym miejscu na liście białek znajduje się szukana insulina człowieka?
@@ -65,7 +65,7 @@ Q5D869
 ## Ontologia genów (Gene Ontology)
 
 ### Zad. 5 - Ontologia pojedynczego genu
-W bazie `Gene` serwisu NCBI wyszukaj gen człowieka o nazwie *CASP6*.
+W bazie `Gene` serwisu [NCBI](https://www.ncbi.nlm.nih.gov) wyszukaj gen człowieka o nazwie *CASP6*.
 
 1. Wymień dwa przykładowe opisy ontologii genu dla każdego z trzech działów ontologicznych:
    * funkcji komórkowej

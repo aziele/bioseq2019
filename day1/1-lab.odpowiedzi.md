@@ -100,14 +100,14 @@ Aby wyświetlić rekord `AB001981` w formie graficznej naciśnij link `Graphics`
 <br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji dla wielu numerów dostępu
-Bardzo często istnieje potrzeba pobrania wielu rekordów sekwencji jednocześnie. Na przykład w oparciu o numery dostępu podane w tabeli w publikacji. W tym celu, NCBI udostępnia funkcję `Batch entrez`.
+Bardzo często istnieje potrzeba pobrania wielu rekordów sekwencji jednocześnie. 
 
 * Otwórz stronę serwisu [NCBI](https://www.ncbi.nlm.nih.gov).
 * Z panelu po prawej stronie `Popular Resources` wybierz `Nucleotide`.
-* Naciśnij na link `Batch Entrez`. 
-* W polu `File` załaduj plik [accession_numbers.txt](./data/accession_numbers.txt) i naciśnij przycisk `Retrieve`.
+* W polu wyszukiwania umieść listę numerów dostępu.
+* Naciśnij przycisk `Search`.
 
-Sekwencje transkryptów (mRNA) dla numerów dostępu z pliku [accession_numbers.txt](./data/accession_numbers.txt) pochodzą z następujących organizmów:
+Sekwencje transkryptów (mRNA) dotyczą kinaz i pochodzą z następujących organizmów:
 
 ```
 Metarhizium robertsii ARSEF 23 (1)
@@ -125,6 +125,9 @@ Arabidopsis thaliana (1)
 Aby zapisać znalezione sekwencje do pliku w formacie FASTA wybierz `Send to` > `Complete Record` > `File` > `Format`: `FASTA` i naciśnij `Create File`.
 
 <img src="./images/batch_entrez-download_fasta.png" alt="batch_entrez-download_fasta.png" width="600px">
+
+> W przypadku bardzo dużej liczby numerów dostępu, serwis NCBI udostępnia funkcję `Batch Entrez`.
+
 <br/>
 
 ### Zad. 3 - Wyszukiwanie mRNA insuliny człowieka
@@ -295,41 +298,11 @@ W wynikach otrzymano jeden gen HFE człowieka.
    Wynikiem powyższych instrukcji jest pionowa linia wyznaczająca wybrany marker (`Marker 1`) w pozycji `8671` sekwencji genomowej. Naciśnij prawy przycisk myszy w miejscu markera i wybierz `Marker details`. W oknie dialogowym podana jest dokładna lokalizacja markera względem genu, transkryptów, CDS i białek.
 <br/><br/>
 
-### Zad. 6 - Wyświetlanie SNP danego genu
-Skonstruuj poniższe zapytanie do bazy `Gene` serwisu NCBI:
-
-```
-BRCA1[Gene Name] AND Homo sapiens[Organism]
-```
-
-W wynikach otrzymano gen BRCA1 (Gene ID: [672](https://www.ncbi.nlm.nih.gov/gene/672)).
-
-#### Variation Viewer
-*Variation Viewer* składa się z trzech paneli:
-1. Lewy panelu umożliwiający wyszukiwanie konkretnych regionów sekwencji genomowej. Przykładowe frazy wyszukiwania znajdują się pod linkiem `Search examples` - mogą to zatem być: geny, polimorfizmy SNP, konkretne regiony chromosomów. 
-2. Widok mapy przedstawiający graficznie wyszukany region genomu oraz związane z nim znane warianty genetyczne.
-3. Tabela zawierająca listę wariantów znajdujących się w obrębie mapy wyświetlonanego regionu.
-
-W celu znalezienia na egzonie 10 polimorfizmu SNP związanego z chorobotwórczością:
-
-* Usuń z widoku mapy *track* związany z obszernymi zmiennościami genetycznymi (`dbVar ClinVar Large Variation`).
-* W lewym panelu, w części `Filter by` wybierz `Source data` > `dbSNP`. Zmiana ta spowoduje odświeżenie widoku mapy oraz tabeli i ograniczenie wariantów genetycznych do SNP.
-* W panelu mapy zmień ustawienie `Region` na `Go to gene only (no pad)`. 
-* W panelu mapy ustaw widok skupiając powiększenie na egzon 10.
-  - W opcji `Exon range` wybierz egzon 10.
-  - Ustaw największe powiększenie mapy z dokładnością do pojedynczych nukleotydów.
-  - W panelu po lewej stronie `Filter by` zaznacz `pathogenic` i `single nucleotide variant`.
-* Przeciągnij wykres wzdłuż egzonu i obserwuj, jak zmieniają się SNP w tabeli.
-
-<img src="./images/BRCA1-variation_viewer.png" alt="BRCA1-variation_viewer.png">
-
-Przykładowym SNP związanym z chorobotwórczością może być [rs80357010](https://www.ncbi.nlm.nih.gov/snp/rs80357010) w pozycji `43,094,051` sekwencji genomowej, który w sekwencji transkryptu `NM_007294.3` w pozycji `c.1480C>T` powoduje zmianę glutaminy (`Gln`) na kodon *stop*, w efekcie doprowadzając do przedwczesnej terminacja translacji i produkcji skróconej formy tego białka.
-<br/><br/>
 
 ## Baza taksonomiczna (NCBI Taxonomy)
 
 
-### Zad. 7 - Zasoby sekwencji pojedynczego gatunku
+### Zad. 6 - Zasoby sekwencji pojedynczego gatunku
 Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov).
 
 * Wybierz bazę `Taxonomy` i w oknie wyszukiwania wpisz `mouse`.
@@ -354,7 +327,7 @@ Otwórz stronę [serwisu NCBI](https://www.ncbi.nlm.nih.gov).
    * Naciśnij na link z liczbą sekwencji nukleotydowych. Dostępne typy sekwencji nukleotydowych to: genomowe DNA (`5 191 394`), mRNA (`5 191 394`), rRNA (`53`). 
 <br/><br/>
 
-### Zad. 8 - Zasoby sekwencji dowolnej jednostki taksonomicznej
+### Zad. 7 - Zasoby sekwencji dowolnej jednostki taksonomicznej
 W serwisie NCBI wybierz bazę `Taxonomy`. W oknie wyszukiwania wpisz `rodentia` lub `rodents`.
  
 1. Pod polem wyszukiwania, w polu `levels` wpisz `6` i naciśnij przycisk `Display`.

@@ -14,7 +14,7 @@
       organism:human name:insulin
       ```
    * Insulina człowieka znajduje się teraz na 7 miejscu listy białek.
-4. Dodanie do zapytania frazy `NOT name:protein-like` ograniczyło wyniki do **197** białek.
+4. Dodanie do zapytania frazy `NOT name:insulin-like` ograniczyło wyniki do **197** białek.
    * Insulina człowieka znajduje się nadal na 7 miejscu na liście znalezionych białek.
 5. Zapytanie `organism:human name:insulin NOT name:insulin-like NOT name:receptor` ograniczyło liczbę wyników do **47** białek. 
    * Insulina człowieka znajduje się teraz na pierwszym miejscu listy wyników.
