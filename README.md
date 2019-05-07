@@ -14,7 +14,7 @@
 
 | <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - rozwiązanie</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
 | :---: | --- | --- | --- | --- | --- | :---: |
-| <sub>9:00 - 11:00</sub> | <sub>BLAST - blastn, blastp, blast2seqs</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
+| <sub>9:00 - 11:00</sub> | <sub>BLAST - blastn, blastp, blast2seqs</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/1-lab1.md)</sub> | <sub>[rozwiązanie](./day2/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/1-zadania.md)</sub> | <sub>[odpowiedzi](./day2/1-zadania.odpowiedzi.md)</sub> |
 | <sub>11:15-13:15</sub> | <sub>BLAST - blastx i tblastn</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 | <sub>14:00-16:00</sub> | <sub>Przyrównanie wielu sekwencji</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 
