@@ -6,7 +6,7 @@
 | <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - rozwiązanie</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
 | :---: | --- | --- | --- | --- | --- | :---: |
 | <sub>9:00 - 11:00</sub> | <sub>Przeszukiwanie baz danych NCBI</sub> | <sub>slajdy</sub> | <sub>[lab](./day1/1-lab.md)</sub> | <sub>[rozwiązanie](./day1/1-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day1/1-zadania.md)</sub> | <sub>[odpowiedzi](./day1/1-zadania.odpowiedzi.md)</sub> |
-| <sub>11:15 - 13:15</sub> | <sub>Bazy danych UniProt, Gene Ontology</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
+| <sub>11:15 - 13:15</sub> | <sub>Bazy danych UniProt, Gene Ontology</sub> | <sub>slajdy</sub> | <sub>[lab](./day1/2-lab.md)</sub> | <sub>[rozwiązanie](./day1/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day1/2-zadania.md)</sub> | <sub>[odpowiedzi](./day1/2-zadania.odpowiedzi.md)</sub> |
 | <sub>14:00 - 16:00</sub> | <sub>Przyrównanie sekwencji parami</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 
 
