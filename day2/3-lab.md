@@ -83,7 +83,7 @@ Przyrównaj sekwencje `EPB4.1_human.fasta` używając programów **MAFFT**, **MU
 ### Zad. 6 - Miejsca donorowe egzonów
 <img src="./images/donor-acceptor-sequence-logos.png" alt="donor-acceptor-sequence-logos" width="600px">
 
-Poniżej znajduje się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu bezprośrednio **przed** i **po** miejscu egzon/intron.
+Poniżej znajduje się 20 sekwencji (każda w osobnej linii) wyodrębnionych z sekwencji genów człowieka w miejscu na granicy egzon/intron.
 
 ```
 CAAAACCATTGTGAGTAATC
