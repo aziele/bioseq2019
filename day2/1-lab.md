@@ -342,3 +342,17 @@ AAGAGAGATGAAGAGTTCTCTCACCAGGTGCCTGGGACTGGGGTGTGGGTGTCCCAGCCT
 ```
 
 Podaj nazwę znalezionego genu oraz jego lokalizację w sekwencji genomowej człowieka.
+
+
+### Zad. 9 - Ograniczenie bazy sekwencji BLAST przez zapytanie Entrez
+Poniżej znajduje się sekwencja fragmentu CDS pewnej kinazy. Skorzystaj z programu `blastn` i przeszukaj bazę sekwencji nukleotydowych `nr` ograniczając wyniki do rekordów mRNA zawierających wyrażenie `protein kinase` i o długości przynajmniej `1000` nukleotydów.
+
+```
+CGGGACCTTAAGCTTGACAACATAATGATGGATGCAAATATGAACGTGAAGATTAGGGAC
+TTCGGTTTGGCTGCTGAGTTGCAGTACGACGGGGAGCGGAAACGCACTATTTGTGGCACG
+CCCAATTATATCGCACCGGAGATCATTGAAGGTTCGCGCGAGGGACATAGTTACGAAGTG
+GACGTATGGGCCTTCGGTGT
+```
+
+1. Podaj numer dostępu sekwencji, która najbardziej odpowiada sekwencji zapytania?
+2. Podaj liczbę sekwencji wchodzących w skład przeszukiwanej bazy danych.

@@ -47,3 +47,11 @@ TCCTTTGGA
 
 Jakie SNP występują w pozycji 6 znalezionych trafień?
 <br/><br/>
+
+### Zad. 4 - blastn: ograniczanie bazy sekwencji BLAST przez zapytanie Entrez
+Poniżej znajduje się sekwencja nukleotydowa tRNA. Przy pomocy programu `blastn` znajdź w bazie `nr` rekordy zawierające sekwencje do niej podobne, ale nie dłuższe niż `100` nukleotydów.  
+
+```
+GCATCCGTAGCTCAGCTGGAtAGAGTACTCGGCTACGAACCGAGCGGtCGGAGGTTCGAATCCTCCCGGA
+TGCACCA
+```

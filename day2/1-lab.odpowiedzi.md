@@ -504,3 +504,45 @@ Współrzędne sekwencji `<1..>3960` oznaczają, że pełnej długości gen MAPT
 <img src="./images/blast-genome-human-gene-mapt.png" alt="blast-genome-human-gene-mapt">
 
 Gen **MAPT** znajduje się na chromosomie 17 w pozycji `45 894 382` - `46 028 334` na nici `plus`.
+<br/><br>
+
+### Zad. 9 - Ograniczenie bazy sekwencji BLAST przez zapytanie Entrez
+
+```
+protein kinase[All fields] AND mrna[Filter] AND 1000:10000000[SLEN]
+```
+
+<img src="./images/blast-entrez.png" alt="blast-entrez" width="500px">
+
+1. Sekwencja 
+
+```
+>XM_011776823.1 Trypanosoma brucei gambiense DAL972 polo-like protein kinase 
+partial mRNA
+Length=1830
+
+ Score = 312 bits (345),  Expect = 4e-83
+ Identities = 189/200 (95%), Gaps = 0/200 (0%)
+ Strand=Plus/Plus
+
+Query  1    CGGGACCTTAAGCTTGACAACATAATGATGGATGCAAATATGAACGTGAAGATTAGGGAC  60
+            || ||||| || ||||  |||||||||||||||||||||||||||||||||||| |||||
+Sbjct  25   CGTGACCTGAAACTTGGTAACATAATGATGGATGCAAATATGAACGTGAAGATTGGGGAC  84
+
+Query  61   TTCGGTTTGGCTGCTGAGTTGCAGTACGACGGGGAGCGGAAACGCACTATTTGTGGCACG  120
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  85   TTCGGTTTGGCTGCTGAGTTGCAGTACGACGGGGAGCGGAAACGCACTATTTGTGGCACG  144
+
+Query  121  CCCAATTATATCGCACCGGAGATCATTGAAGGTTCGCGCGAGGGACATAGTTACGAAGTG  180
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  145  CCCAATTATATCGCACCGGAGATCATTGAAGGTTCGCGCGAGGGACATAGTTACGAAGTG  204
+
+Query  181  GACGTATGGGCCTTCGGTGT  200
+            || || ||| |  |||||||
+Sbjct  205  GATGTGTGGTCGCTCGGTGT  224
+```
+
+
+
+Wielkość przeszukiwanej bazy BLAST wynosi `430 000` sekwencji.
+
