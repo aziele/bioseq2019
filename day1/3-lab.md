@@ -167,15 +167,3 @@ Używając programu *Water* wykonaj trzy przyrównania sekwencji *Savinase* z se
 Jak zmienia się długość przyrównania i procent identyczności w zależności od macierzy BLOSUM?
 <br/><br/>
 
-## Wykres Dot Plot
-
-### Zad. 6 - Interpretacja wykresów dot plot
-W pliku [dotplot.fasta](./day1/data/dotplot.fasta) znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
-> W polu `Matrix file` wpisz nazwę macierzy `EDNASIMPLE` (`+1` dla par nukleotdów zgodnych, `0` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`.
-
-1. s1:s1
-2. s1:s10
-3. s2:s2
-4. s4:s5
-5. s7:s8
-6. s4:s4
