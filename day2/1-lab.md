@@ -60,9 +60,10 @@ Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/">
 1. s1:s1
 2. s1:s10 (zobacz przyrównanie sekwencji w serwisie Needle)
 3. s2:s2
-4. s4:s5
-5. s7:s8
-6. s4:s4
+4. s4:s4
+5. s4:s5
+6. s7:s8 (zobacz przyrównanie sekwencji w serwisie Needle)
+
 
 ## BLAST - blastn i blastp
 
@@ -113,7 +114,7 @@ Na liście otrzymanych trafień znajdź najwyżej punktowaną sekwencję insulin
 ### Zad. 3 - Wpływ wielkości bazy danych na wartość E-value
 Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRNA insuliny koszatniczki pospolitej `M57671.1`. W formularzu programu BLAST:
 
-* Ogranicz przeszukiwanie do organizmu człowieka
+* Ogranicz przeszukiwanie do sekwencji pochodzących z człowieka
 * W panelu `Program Selection` wybierz `Somewhat similar sequences (blastn)`
 * Uruchom program BLAST.
 
@@ -131,7 +132,7 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 ### Zad. 4 - Istotność statystyczna wyników BLAST
 
 #### Sekwencje nukleotydowe
-* Skorzystaj z serwisu internetowego [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/) i wygeneruj trzy losowe sekwencje DNA o długości 25 pz.
+* Skorzystaj z serwisu internetowego [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/) i wygeneruj trzy losowe sekwencje DNA o długości 25 nt.
 * Otwórz serwis [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) i wybierz program `Nucleotide BLAST`. 
    * Umieść wygenerowane sekwencje w polu `Enter Query Sequence`.
    * W panelu `Program Selection` wybierz program `Somewhat similar sequences (blastn)`
@@ -146,6 +147,7 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 3. Jaki zakres punktacji `Max Score` mają znalezione trafienia?
 4. Jaki zakres wartości `E-value` mają znalezione trafienia?
 5. Czy uzyskane wyniki są istotne biologiczne - czy dostarczają informacji biologicznej?
+6. Sprawdź, czy znajdziemy dobrze dopasowane sekwencje dłuższe niż ok. 20 nt dla losowych sekwencji DNA o długości 50 nt.
 
 #### Sekwencje aminokwasowe
 * Skorzystaj z serwisu internetowego [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/) i wygeneruj trzy losowe sekwencje białkowe o długości 25 aminokwasów.
@@ -163,7 +165,7 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 
 
 ### Zad. 5 - Wpływ długości sekwencji zapytania na wartość E-value
-Poniżej znajdują się trzy różnej długości fragmenty tej samej sekwencji tRNA. Użyj programu BLAST w celu przeszukania nukleotydowej bazy sekwencji `Nucleotide collection (nr/nt)` w oparciu o poniższe sekwencje.
+Poniżej znajdują się trzy różnej długości fragmentu tej samej sekwencji tRNA. Użyj programu BLAST w celu przeszukania nukleotydowej bazy sekwencji `Nucleotide collection (nr/nt)` w oparciu o poniższe sekwencje.
 
 ```
 >tRNA

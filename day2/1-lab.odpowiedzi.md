@@ -17,6 +17,13 @@ Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości
 
 <img src="./images/dotmatcher_s2-s2.png" alt="dotmatcher_s2-s2.png" width="600px">
 
+#### s4:s4
+Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
+
+<img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="600px">
+
+<img src="./images/dotplot.s4.png" alt="dotplot.s4" width="600px">
+
 #### s4:s5
 Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. Porównywane sekwencje nie wykazują podobieństwa, poza wielokrotnymi powtórzeniami krótkich fragmentów sekwencji (ok. 15 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** lub **powtórzeniami mikrosatelitarnymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`).
 
@@ -77,13 +84,7 @@ s7               221 gaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac    270
                      ||||||||||||||||||||                              
 s8               251 gaatcatcataacaaccaaa------------------------------    270
 ```
-
-#### s4:s4
-Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
-
-<img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="600px">
-
-<img src="./images/dotplot.s4.png" alt="dotplot.s4" width="600px">
+<br/>
 
 ## BLAST - blastn i blastp
 
@@ -234,7 +235,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 
 2. Wraz ze wzrostem wartości punktacji przyrównania (`score`), wartość *E*-value maleje (przyrównanie jest bardziej istotne). Z kolei, wartość punktacji przyrównania zależy od długości sekwencji zapytania.
 
-   Długość sekwencji zapytania: **23 pz**
+   Długość sekwencji zapytania: **23 nt**
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
@@ -254,7 +255,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
 
    ```
 
-   Długość sekwencji zapytania: **29 pz**
+   Długość sekwencji zapytania: **29 nt**
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
@@ -273,7 +274,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
    Sbjct  3554247  TGGGGTATCGCCAAGCGGTAAGGCACCGG  3554275
    ```
  
-   Długość sekwencji zapytania: **35 pz**
+   Długość sekwencji zapytania: **35 nt**
 
    ```
    >CP020495.1 Escherichia coli strain 103 chromosome, complete genome
@@ -464,12 +465,12 @@ Formularz programu BLAST:
 
 <img src="./images/ncbi-blast-foxp2-form.png" alt="ncbi-blast-foxp2-form" width="500px">
 
-1. Sekwencją najbardziej odpowiadającą sekwenji FOXP2 człowieka jest sekwencja przewidzianego białka `forkhead box protein P2` u gwiazdonosa amerykańskiego (*Condylura cristata*).
+1. Sekwencją najbardziej odpowiadającą sekwenji FOXP2 człowieka jest sekwencja przewidzianego białka `forkhead box protein P2` u kreta gwiazdonosa amerykańskiego (*Condylura cristata*).
 2. `E-value` najlepiej punktowanego przyrównania wynosi `0`.
 3. Procent identyczności i podobieństwa tych dwóch sekwencji wynosi `99%`.
 4. W przyrównaniu jest jedna przerwa w sekwencji trafienia.
 
-    <img src="./images/ncbi-blast-foxp2-hit.png" alt="ncbi-blast-foxp2-hit" width="500px">
+    <img src="./images/ncbi-blast-foxp2-hit.png" alt="ncbi-blast-foxp2-hit" width="600px">
 
 #### Taxonomy reports
 

@@ -142,46 +142,8 @@ Użyj serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign/) w celu 
 9. Czy pozycje egzonów w transkrypcie GABRG2 zostały prawidłowo zidentyfikowane?
 <br/><br/>
 
-### Zad. 5 - Wyznaczanie lokalizacji ortologicznych egzonów kodujących (blastn i tblastn)
 
-> Celem zadania jest wyznaczenie lokalizacji egzonów genu *GABRG2* w genomie gibona.
-
-#### blastn
-Użyj programu `blastn` stosując jako zapytanie numer dostępu sekwencji transkryptu GABRG2 (`NM_198904`) oraz bazę danych sekwencji genomowych (`RefSeq Genomic Sequences`) gibona *Nomascus leucogenys*.
-
-1. Na którym chromosomie gibona znajduje się gen *GABRG2*?
-2. Czy sekwencja transkryptu *GABRG2* została przyrównana przez program *blastn* na całej swojej długości do sekwencji genomowej gibona?
-3. Ile przyrównań wyznaczył program *blastn* między sekwencją mRNA a sekwencją genomową genu *GABRG2*?
-4. Czy wszystkie przyrównania są w tej samej orientacji nici DNA (np. `plus/plus`)?
-
-#### tblastn
-Użyj programu `tblastn` stosując jako zapytanie numer dostępu sekwencji białkowej GABRG2 człowieka (`NP_944494`) oraz bazę danych sekwencji genomowych (`RefSeq Genomic Sequences`) gibona *Nomascus leucogenys*.
-
-Z listy otrzymanych trafień zidentyfikuj sekwencję, która uzyskała najwyższą wartość punktacji (`Max score`) w poprzednim przeszukiwaniu *blastn*.
-
-5. Czy sekwencja białka GABRG2 człowieka została przyrównana przez program *tblastn* na całej swojej długości do sekwencji genomowej gibona?
-6. Ile przyrównań wyznaczył program *tblastn* między sekwencją białka a sekwencją genomową genu GABRG2?
-7. Zidentyfikowane przyrównania obejmują translację sekwencji genomowej w sześciu ramkach odczytu. Które ramki odczytu powinno brać się pod uwagę podczas wyznaczania pozycji egzonów.
-
-8. Poniżej znajduja się sekwencja białkowa GABRG2 gibona rozmieszczona na 10 egzonach.
-
-    ```
-      1–36   MSSPNIWSTGSSVYSTPVFSQKMTVWILLLLSLYPG
-     37–87   FTSQKSDDDYEDYASNKTWVLTPKVPEGDVTVILNNLLEGYDNKLRPDIGV
-     88–109  KPTLIHTDMYVNSIGPVNAINM
-    110–183  EYTIDIFFAQTWYDRRLKFNSTIKVLRLNSNMVGKIWIPDTFFRNSKKADAHWITTPNRMLRIWNDGRVLYTLR
-    184–211  LTIDAECQLQLHNFPMDEHSCPLEFSSY
-    212–257  GYPREEIVYQWKRSSVEVGDTRSWRLYQFSFVGLRNTTEVVKTTSG
-    258–308  DYVVMSVYFDLSRRMGYFTIQTYIPCTLIVVLSWVSFWINKDAVPARTSLG
-    309–376  ITTVLTMTTLSTIARKSLPKVSYVTAMDLFVSVCFIFVFSALVEYGTLHYFVSNRKPSKDKDKKKKNP
-    377–384  LLRMFSFK
-    385–475  APTIDIRPRSATIQMNNATHLQERDEEYGYECLDGKDCASFFCCFEDCRTGAWRHGRIHIRIAKMDSYARIFFPTAFCLFNLVYWVSYLYL
-    ```
-
-    Czy program *tblastn* zidentyfikował poprawnie niektóre powyższe fragmenty?
-<br/><br/>
-
-### Zad. 6 - Identyfikacja ortologów (*Reciprocal BLAST*)
+### Zad. 5 - Identyfikacja ortologów (*Reciprocal BLAST*)
 > Celem zadania jest znalezienie sekwencji białkowej rekina, ortologicznej do białka opsyny-5 człowieka (`NP_859528`).
 
 Opsyny są światłoczułymi białkami występującymi u zwierząt i pełnią kluczowe funkcje w procesie widzenia. Białka te absorbują światła o różnej długości fali (np. czerwone, niebieskie, zielone); mutacje w genach kodujących opsyny wywołują ślepotę różnych kolorów. Rodzina białek opsynowych składa się z wielu białek o podobnych nazwach: u człowieka występuje pięć grup opsyn (1-5), rodopsyna i peropsyna. Nazwy tych białek niekoniecznie odpowiadają nazwom opsyn u innych gatunków. Dlatego identyfikacja ortologów tych genów odgrywa kluczową rolę w ich klasyfikacji.
