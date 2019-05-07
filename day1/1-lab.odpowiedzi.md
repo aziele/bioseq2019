@@ -195,6 +195,12 @@ W wyniku otrzymano **21 047** rekordów sekwencji nukleotydowych zawierających 
    insulin[Title] AND "Homo sapiens"[Organism] AND "mrna"[Filter]
    ```
 
+   lub 
+
+   ```
+   insulin[Title] AND "Homo sapiens"[Organism] AND "biomol mrna"[Properties] 
+   ```
+
    W wyniku otrzymano **3 982** sekwencje mRNA insuliny człowieka.
 
 6. Ponownie otwórz tryb zaawansowanego wyszukiwania. Skorzystaj z `History`, aby przywrócić poprzednie zapytanie do bazy danych. Następnie dodaj kolejne trzy pola `Title` połączone operatorem logicznym `NOT` i wpisz w nich `insulin-like`, `partial` i `part`.
