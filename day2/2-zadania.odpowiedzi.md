@@ -99,6 +99,9 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
 
 ### Zad. 6 - Identyfikacja ortologów
 
+> **Ortologi** to sekwencje homologiczne w różnych organizmach, które powstały ze wspólnego genu-przodka w procesie różnicowania; mogą ale nie muszą pełnić podobnych funkcji. Ortologi są odpowiadającymi sobie genami w różnych organizmach, na przykład: hemoglobina myszy i hemoglobina człowieka.
+
+
 1. Otwórz [serwis NCBI](https://www.ncbi.nlm.nih.gov), wybierz białkową bazę danych i skonstruuj poniższe zapytanie:
 
    ```

@@ -58,11 +58,11 @@ Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/cg
 > W polu `Matrix file` wpisz nazwę macierzy `EDNAFULL` (`+5` dla par nukleotdów zgodnych, `-4` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i  `50`.
 
 1. s1:s1
-2. s1:s10 (zobacz przyrównanie sekwencji w serwisie Needle)
+2. s1:s10 (zobacz przyrównanie sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/))
 3. s2:s2
 4. s4:s4
 5. s4:s5
-6. s7:s8 (zobacz przyrównanie sekwencji w serwisie Needle)
+6. s7:s8 (zobacz przyrównanie sekwencji w serwisie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/))
 
 
 ## BLAST - blastn i blastp
@@ -342,7 +342,7 @@ AAGAGAGATGAAGAGTTCTCTCACCAGGTGCCTGGGACTGGGGTGTGGGTGTCCCAGCCT
 ```
 
 Podaj nazwę znalezionego genu oraz jego lokalizację w sekwencji genomowej człowieka.
-
+<br/><br/>
 
 ### Zad. 9 - Ograniczenie bazy sekwencji BLAST przez zapytanie Entrez
 Poniżej znajduje się sekwencja fragmentu CDS pewnej kinazy. Skorzystaj z programu [NCBI blastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) i przeszukaj bazę sekwencji nukleotydowych `nr` ograniczając przeszukiwania tylko do rekordów `mRNA` zawierających wyrażenie `protein kinase` i o długości przynajmniej `1000` nukleotydów.
