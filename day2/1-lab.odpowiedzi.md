@@ -10,12 +10,60 @@ Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości
 #### s1:s10
 Linia przekątna jest przerwana w trzech miejscach - są to regiony w sekwencjach, w których nie ma zgodności.
 
-<img src="./images/dotmatcher_s1-s10.png" alt="dotmatcher_s1-s10.png" width="600px">
+<img src="./images/dotmatcher_s1-s10a.png" alt="dotmatcher_s1-s10.png" width="600px">
+
+```
+# Aligned_sequences: 2
+# 1: s1
+# 2: s10
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 319
+# Identity:     267/319 (83.7%)
+# Similarity:   267/319 (83.7%)
+# Gaps:          38/319 (11.9%)
+# Score: 1155.5
+# 
+#
+#=======================================
+
+s1                 1 caaggtgcatgttttcttcacgaagtcaga-gaccgttcag---caaagc     46
+                     |||||||||||||||||||||||||||||| |||    |||   ||||||
+s10                1 caaggtgcatgttttcttcacgaagtcagaggac----cagcgacaaagc     46
+
+s1                47 agggactagagcgcttgcaagagatacttctttctgagatcctcgttgta     96
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+s10               47 agggactagagcgcttgcaagagatacttctttctgagatcctcgttgta     96
+
+s1                97 aaaaaaactaaggatcaatgattcatttgaaggaactaatatgca-----    141
+                     ||||||||||||||||||||||||      .||  |.|.||.|||     
+s10               97 aaaaaaactaaggatcaatgattc------cgg--ccagtacgcagagga    138
+
+s1               142 ---aaacaaacactacagtacaaaaaggttct----tcttgttctggatg    184
+                        .|.||||||||||||||||||||||||||    .|..||    ||||
+s10              139 cgttatcaaacactacagtacaaaaaggttctaggagcgagt----gatg    184
+
+s1               185 atgttgatcacatagatcagttaaatgcattagccgg---ggagcgtgaa    231
+                     ||||||||||||||||||||||||||..||.|.|  |   ||||| .|||
+s10              185 atgttgatcacatagatcagttaaatcgatgaac--gtccggagc-agaa    231
+
+s1               232 tggtttggtgatggaagtagaatcatcataacaaccaaaagataaacact    281
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+s10              232 tggtttggtgatggaagtagaatcatcataacaaccaaaagataaacact    281
+
+s1               282 tgcttgttaagtaaggaac    300
+                     |||||||||||||||||||
+s10              282 tgcttgttaagtaaggaac    300
+```
 
 #### s2:s2
 Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości. Dodatkowo, w sekwencjach występuje region (długości ok. 50 nukleotydów) dwukrotnie powtórzony w sekwencji w pozycji ok. 70, i 200 nukleotydu.
 
 <img src="./images/dotmatcher_s2-s2.png" alt="dotmatcher_s2-s2.png" width="600px">
+
+<img src="./images/dotplot-s2.png" alt="dotplot-s2" width="600px">
 
 #### s4:s4
 Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
@@ -190,6 +238,9 @@ Wyniki programu **nucleotide BLAST** dla trzech różnych przeszukiwań można p
 5. Otrzymane wyniki **nie mają żadnego sensu biologicznego(!)**. Sekwencje znalezione w bazie danych są rzeczywistymi sekwencjami DNA występującymi w organizmach. Natomiast, sekwencje zapytania są całkowicie losowe i pozbawione jakiejkolwiek pokrewieństwa z sekwencjami znajdującymi się w bazie danych. Zatem skojarzenie sekwencji zapytania z sekwencjami z bazy danych jest wynikiem czystego przypadku.
 
    Sekwencje zapytania są na tyle krótkie (25 nt), że bardzo często występują w rzeczywistych sekwencjach. Parametr `E-value` określa ich istotność statyczną - im niższa wartość *E*-value, tym mniejsze prawdopodobieństwo, że skojarzenie jest wynikiem zdarzenia losowego, a zatem tym bardziej jest ono istotne. W wynikach BLAST, trafienia uzyskały wartości tego parametru w zakresie `12-42`, co oznacza, że w bazie danych znajduje się od 12 do 42 przypadkowych sekwencji, które uzyskałyby równie dobre przyrównanie.
+
+6. Dla losowych sekwencji DNA o długości `50` nukleotydów, program BLAST nie znajduje przyrównań na pełnej długości. Najdłuższe przyrównania są długości około `20-25` nukleotydów.
+
 
 #### Sekwencje aminokwasowe
 Trzy losowe sekwencje białkowe długości 25 reszt aminokwasowych wygenerowane w programie [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/).
@@ -507,6 +558,7 @@ Gen **MAPT** znajduje się na chromosomie 17 w pozycji `45 894 382` - `46 028 33
 <br/><br>
 
 ### Zad. 9 - Ograniczenie bazy sekwencji BLAST przez zapytanie Entrez
+Otwórz stronę serwisu [nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). W polu tekstowym umieść sekwencję zapytania, a w polu `Entrez` umieść poniższe zapytanie.
 
 ```
 protein kinase[All fields] AND mrna[Filter] AND 1000:10000000[SLEN]
@@ -514,7 +566,7 @@ protein kinase[All fields] AND mrna[Filter] AND 1000:10000000[SLEN]
 
 <img src="./images/blast-entrez.png" alt="blast-entrez" width="500px">
 
-1. Sekwencja 
+1. Sekwencja trafienia wykazująca największą wartość punktacji:
 
 ```
 >XM_011776823.1 Trypanosoma brucei gambiense DAL972 polo-like protein kinase 
@@ -542,7 +594,6 @@ Query  181  GACGTATGGGCCTTCGGTGT  200
 Sbjct  205  GATGTGTGGTCGCTCGGTGT  224
 ```
 
-
-
-Wielkość przeszukiwanej bazy BLAST wynosi `430 000` sekwencji.
+2. Przeszukiwana bazy sekwencji BLAST złożona jest z `430 000` sekwencji odpowiadających zapytaniu Entrez.
+   > `Search Summary` > `Database size`.
 

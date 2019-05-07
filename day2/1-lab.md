@@ -54,7 +54,7 @@ gatgatgttgatcacatagatcagttaaatcgatgaacgtccggagcagaatggtttggt
 gatggaagtagaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac
 ```
 
-Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
+Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/cgi-bin/emboss/dotmatcher">http://bioinfo.nhri.org.tw/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
 > W polu `Matrix file` wpisz nazwę macierzy `EDNAFULL` (`+5` dla par nukleotdów zgodnych, `-4` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i  `50`.
 
 1. s1:s1
@@ -147,7 +147,7 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 3. Jaki zakres punktacji `Max Score` mają znalezione trafienia?
 4. Jaki zakres wartości `E-value` mają znalezione trafienia?
 5. Czy uzyskane wyniki są istotne biologiczne - czy dostarczają informacji biologicznej?
-6. Sprawdź, czy znajdziemy dobrze dopasowane sekwencje dłuższe niż ok. 20 nt dla losowych sekwencji DNA o długości 50 nt.
+6. Sprawdź, czy program BLAST znajdzie dobrze dopasowane sekwencje dłuższe niż ok. 20 nt dla losowych sekwencji DNA o długości 50 nt.
 
 #### Sekwencje aminokwasowe
 * Skorzystaj z serwisu internetowego [SeqGen](http://www.cbs.dtu.dk/biotools/SeqGen-1.0/) i wygeneruj trzy losowe sekwencje białkowe o długości 25 aminokwasów.
@@ -345,7 +345,7 @@ Podaj nazwę znalezionego genu oraz jego lokalizację w sekwencji genomowej czł
 
 
 ### Zad. 9 - Ograniczenie bazy sekwencji BLAST przez zapytanie Entrez
-Poniżej znajduje się sekwencja fragmentu CDS pewnej kinazy. Skorzystaj z programu `blastn` i przeszukaj bazę sekwencji nukleotydowych `nr` ograniczając wyniki do rekordów mRNA zawierających wyrażenie `protein kinase` i o długości przynajmniej `1000` nukleotydów.
+Poniżej znajduje się sekwencja fragmentu CDS pewnej kinazy. Skorzystaj z programu [NCBI blastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome) i przeszukaj bazę sekwencji nukleotydowych `nr` ograniczając przeszukiwania tylko do rekordów `mRNA` zawierających wyrażenie `protein kinase` i o długości przynajmniej `1000` nukleotydów.
 
 ```
 CGGGACCTTAAGCTTGACAACATAATGATGGATGCAAATATGAACGTGAAGATTAGGGAC
@@ -354,5 +354,5 @@ CCCAATTATATCGCACCGGAGATCATTGAAGGTTCGCGCGAGGGACATAGTTACGAAGTG
 GACGTATGGGCCTTCGGTGT
 ```
 
-1. Podaj numer dostępu sekwencji, która najbardziej odpowiada sekwencji zapytania?
+1. Podaj numer dostępu sekwencji, która najbardziej odpowiada sekwencji zapytania.
 2. Podaj liczbę sekwencji wchodzących w skład przeszukiwanej bazy danych.
