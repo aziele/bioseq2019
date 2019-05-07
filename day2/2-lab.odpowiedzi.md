@@ -554,6 +554,8 @@ Otwórz stronę serwisu [NCBI Splign](https://www.ncbi.nlm.nih.gov/sutils/splign
 
 ### Zad. 5 - Identyfikacja ortologów (*Reciprocal BLAST*)
 
+> **Ortologi** to sekwencje homologiczne w różnych organizmach, które powstały ze wspólnego genu-przodka w procesie różnicowania; mogą ale nie muszą pełnić podobnych funkcji. Ortologi są odpowiadającymi sobie genami w różnych organizmach, na przykład: hemoglobina myszy i hemoglobina człowieka.
+
 #### BLAST w jednym kierunku
 Sekwencja białkowa opsyny-5 człowieka ([NP_859528](https://www.ncbi.nlm.nih.gov/protein/NP_859528)), użyta w programie BLAST do przeszukania sekwencji białkowych rekina (*Scyliorhinus canicula*), wykazuje największe podobieństwo do sekwencji rodopsyny rekina o numerze dostępu [O93459](https://www.uniprot.org/uniprot/O93459). 
 

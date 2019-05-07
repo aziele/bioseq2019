@@ -51,11 +51,105 @@ Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 
 W pozycji 6 przyrównań występują warianty `A/G`.
 <br/><br/>
+
 ### Zad. 4 - blastn: ograniczanie bazy sekwencji BLAST przez zapytanie Entrez
-<br/><br/>
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **nucleotide BLAST**, algorytm `blastn`. Umieść sekwencję i w polu `Entrez Query` umieść poniższe zapytanie:
+
+```
+1:100[SLEN]
+```
+
+Wynik programu BLAST:
+
+```
+>LK006556.1 TPA: Enterobacter sp. 638 tRNA-Arg-ACG-1-1 gene
+ LK006557.1 TPA: Enterobacter sp. 638 tRNA-Arg-ACG-1-2 gene
+ LK006558.1 TPA: Enterobacter sp. 638 tRNA-Arg-ACG-1-3 gene
+ LK006559.1 TPA: Enterobacter sp. 638 tRNA-Arg-ACG-1-4 gene
+ LK006749.1 TPA: Escherichia coli 536 tRNA-Arg-ACG-1-1 gene
+ LK006750.1 TPA: Escherichia coli 536 tRNA-Arg-ACG-1-2 gene
+ LK006751.1 TPA: Escherichia coli 536 tRNA-Arg-ACG-1-3 gene
+ LK006752.1 TPA: Escherichia coli 536 tRNA-Arg-ACG-1-4 gene
+ LK006833.1 TPA: Escherichia coli APEC O1 tRNA-Arg-ACG-1-1 gene
+ LK006834.1 TPA: Escherichia coli APEC O1 tRNA-Arg-ACG-1-2 gene
+ LK006835.1 TPA: Escherichia coli APEC O1 tRNA-Arg-ACG-1-3 gene
+ LK006836.1 TPA: Escherichia coli APEC O1 tRNA-Arg-ACG-1-4 gene
+ LK006927.1 TPA: Escherichia coli CFT073 tRNA-Arg-ACG-1-1 gene
+ LK006928.1 TPA: Escherichia coli CFT073 tRNA-Arg-ACG-1-2 gene
+ LK006929.1 TPA: Escherichia coli CFT073 tRNA-Arg-ACG-1-3 gene
+ LK006930.1 TPA: Escherichia coli CFT073 tRNA-Arg-ACG-1-4 gene
+ LK006931.1 TPA: Escherichia coli CFT073 tRNA-Arg-ACG-1-5 gene
+ LK007017.1 TPA: Escherichia coli str. K-12 substr. DH10B tRNA-Arg-ACG-1-1 
+gene
+ LK007018.1 TPA: Escherichia coli str. K-12 substr. DH10B tRNA-Arg-ACG-1-2 
+gene
+ LK007019.1 TPA: Escherichia coli str. K-12 substr. DH10B tRNA-Arg-ACG-1-3 
+gene
+ LK007104.1 TPA: Escherichia coli E24377A tRNA-Arg-ACG-1-1 gene
+ LK007105.1 TPA: Escherichia coli E24377A tRNA-Arg-ACG-1-2 gene
+ LK007106.1 TPA: Escherichia coli E24377A tRNA-Arg-ACG-1-3 gene
+ LK015261.1 TPA: Salmonella enterica subsp. enterica serovar Paratyphi B 
+str. SPB7 tRNA-Arg-ACG-1-1 gene
+ LK015262.1 TPA: Salmonella enterica subsp. enterica serovar Paratyphi B 
+str. SPB7 tRNA-Arg-ACG-1-2 gene
+ LK015263.1 TPA: Salmonella enterica subsp. enterica serovar Paratyphi B 
+str. SPB7 tRNA-Arg-ACG-1-3 gene
+ LK015264.1 TPA: Salmonella enterica subsp. enterica serovar Paratyphi B 
+str. SPB7 tRNA-Arg-ACG-1-4 gene
+ LK016441.1 TPA: Shigella boydii CDC 3083-94 tRNA-Arg-ACG-1-1 gene
+ LK016442.1 TPA: Shigella boydii CDC 3083-94 tRNA-Arg-ACG-1-2 gene
+ LK016443.1 TPA: Shigella boydii CDC 3083-94 tRNA-Arg-ACG-1-3 gene
+ LK016542.1 TPA: Shigella boydii Sb227 tRNA-Arg-ACG-1-1 gene
+ LK016543.1 TPA: Shigella boydii Sb227 tRNA-Arg-ACG-1-2 gene
+ LK016544.1 TPA: Shigella boydii Sb227 tRNA-Arg-ACG-1-3 gene
+ LK016631.1 TPA: Shigella flexneri 2a str. 2457T tRNA-Arg-ACG-1-1 gene
+ LK016632.1 TPA: Shigella flexneri 2a str. 2457T tRNA-Arg-ACG-1-2 gene
+ LK016633.1 TPA: Shigella flexneri 2a str. 2457T tRNA-Arg-ACG-1-3 gene
+ LK016727.1 TPA: Shigella flexneri 5 str. 8401 tRNA-Arg-ACG-1-1 gene
+ LK016728.1 TPA: Shigella flexneri 5 str. 8401 tRNA-Arg-ACG-1-2 gene
+ LK016729.1 TPA: Shigella flexneri 5 str. 8401 tRNA-Arg-ACG-1-3 gene
+ LK016827.1 TPA: Shigella sonnei Ss046 tRNA-Arg-ACG-1-1 gene
+ LK016828.1 TPA: Shigella sonnei Ss046 tRNA-Arg-ACG-1-2 gene
+ LK016829.1 TPA: Shigella sonnei Ss046 tRNA-Arg-ACG-1-3 gene
+ LK016830.1 TPA: Shigella sonnei Ss046 tRNA-Arg-ACG-1-4 gene
+ LK016979.1 TPA: Sodalis glossinidius str. 'morsitans' tRNA-Arg-ACG-1-1 gene
+ LK007195.1 TPA: Escherichia coli HS tRNA-Arg-ACG-1-1 gene
+ LK007196.1 TPA: Escherichia coli HS tRNA-Arg-ACG-1-2 gene
+ LK007197.1 TPA: Escherichia coli HS tRNA-Arg-ACG-1-3 gene
+ LK007198.1 TPA: Escherichia coli HS tRNA-Arg-ACG-1-4 gene
+ LK007283.1 TPA: Escherichia coli UTI89 tRNA-Arg-ACG-1-1 gene
+ LK007284.1 TPA: Escherichia coli UTI89 tRNA-Arg-ACG-1-2 gene
+ LK007285.1 TPA: Escherichia coli UTI89 tRNA-Arg-ACG-1-3 gene
+ LK009359.1 TPA: Klebsiella pneumoniae subsp. pneumoniae MGH 78578 tRNA-Arg-ACG-1-1 
+gene
+ LK009360.1 TPA: Klebsiella pneumoniae subsp. pneumoniae MGH 78578 tRNA-Arg-ACG-1-2 
+gene
+ LK009361.1 TPA: Klebsiella pneumoniae subsp. pneumoniae MGH 78578 tRNA-Arg-ACG-1-3 
+gene
+ LK009362.1 TPA: Klebsiella pneumoniae subsp. pneumoniae MGH 78578 tRNA-Arg-ACG-1-4 
+gene
+Length=77
+
+ Score = 140 bits (154),  Expect = 5e-34
+ Identities = 77/77 (100%), Gaps = 0/77 (0%)
+ Strand=Plus/Plus
+
+Query  1   GCATCCGTAGCTCAGCTGGATAGAGTACTCGGCTACGAACCGAGCGGTCGGAGGTTCGAA  60
+           ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1   GCATCCGTAGCTCAGCTGGATAGAGTACTCGGCTACGAACCGAGCGGTCGGAGGTTCGAA  60
+
+Query  61  TCCTCCCGGATGCACCA  77
+           |||||||||||||||||
+Sbjct  61  TCCTCCCGGATGCACCA  77
+```
+
+Przeszukiwana baza danych BLAST obejmuje `585 748` sekwencji.
+> `Search Summary` > `Database` > `Number of sequences`
+
+<br/>
 
 
-### Zad. 5 - Identyfikacja przesunięcia ramki odczytu
+### Zad. 5 - blastx: identyfikacja przesunięcia ramki odczytu
 Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Ponieważ sekwencja koduje białko wybierz program **blastx**. W formularzu programu BLAST umieść sekwencję zapytania i przeprowadź przeszukiwanie.
 
 Sekwencja jest najbardziej podobna do białka otoczki wirusa HIV (*HIV1 envelope glycoprotein*) o numerze dostępu `AAL71628.1` (E-value: `1e-104`).
@@ -97,10 +191,7 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
 ```
 <br/>
 
-### Zad. 6 - Identyfikacja ortologów
-
-> **Ortologi** to sekwencje homologiczne w różnych organizmach, które powstały ze wspólnego genu-przodka w procesie różnicowania; mogą ale nie muszą pełnić podobnych funkcji. Ortologi są odpowiadającymi sobie genami w różnych organizmach, na przykład: hemoglobina myszy i hemoglobina człowieka.
-
+### Zad. 6 - blastp: identyfikacja ortologów
 
 1. Otwórz [serwis NCBI](https://www.ncbi.nlm.nih.gov), wybierz białkową bazę danych i skonstruuj poniższe zapytanie:
 
@@ -154,3 +245,66 @@ Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
     Sbjct  140  ELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
     ```
 4. Sekwencja białka `XP_007475409` oposa jest prawdopodobnym ortologiem białka MUP3 (`NP_001034633`) myszy.
+<br/><br/>
+
+### Zad. 7 - blastp: wyszukiwanie krótkich peptydów
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov) i wybierz **Protein BLAST**. Umieść sekwencje w formacie FASTA w polu `Enter Query Sequence` formularza programu.
+
+```
+>s1
+GANDALF
+>s2
+GARFIELDTHECAT
+>s3
+ELVISLIVES
+>s4
+CAPTAINCRICK
+```
+
+#### GANDALF
+
+```
+>WP_008191551.1 DUF642 domain-containing protein [Labrenzia alexandrii]
+ EEE44441.1 VCBS repeat protein [Labrenzia alexandrii DFL-11]
+Length=3363
+
+ Score = 24.4 bits (50),  Expect = 1421
+ Identities = 7/7 (100%), Positives = 7/7 (100%), Gaps = 0/7 (0%)
+
+Query  1     GANDALF  7
+             GANDALF
+Sbjct  3224  GANDALF  3230
+```
+
+#### GARFIELDTHECAT
+
+```
+Score   Expect  Identities  Positives   Gaps
+32.9 bits(70)   5.7 10/12(83%)  10/12(83%)  1/12(8%)
+
+Query  4    FIELDTHE-CAT  14
+            FIELD HE CAT
+Sbjct  164  FIELDSHEICAT  175
+```
+
+#### ELVISLIVES
+
+```
+Alignment statistics for match #1
+Score   Expect  Identities  Positives   Gaps
+29.1 bits(61)   59  8/9(89%)    9/9(100%)   0/9(0%)
+Query  1     ELVISLIVE  9
+             ELVISLI+E
+Sbjct  1264  ELVISLIIE  1272
+```
+
+#### CAPTAINCRICK
+
+```
+Alignment statistics for match #1
+Score   Expect  Identities  Positives   Gaps
+30.3 bits(64)   32  8/10(80%)   9/10(90%)   0/10(0%)
+Query  1   CAPTAINCRI  10
+           C PTAI+CRI
+Sbjct  26  CDPTAIDCRI  35
+```
