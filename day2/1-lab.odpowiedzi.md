@@ -36,6 +36,48 @@ Przemieszczenie się linii przekątnej oznacza zajście insercji w jednej sekwen
 
 <img src="./images/dotmatcher_s7-s8.png" alt="dotmatcher_s7-s8.png" width="600px">
 
+```
+# Aligned_sequences: 2
+# 1: s7
+# 2: s8
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 300
+# Identity:     240/300 (80.0%)
+# Similarity:   240/300 (80.0%)
+# Gaps:          60/300 (20.0%)
+# Score: 1304.5
+# 
+#
+#=======================================
+
+s7                 1 caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcaggg     50
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+s8                 1 caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcaggg     50
+
+s7                51 actagagcgcttgcaagagatacttctttctgagatcctcgttgtaaaaa    100
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+s8                51 actagagcgcttgcaagagatacttctttctgagatcctcgttgtaaaaa    100
+
+s7               101 aaactaaggatcaatgattcatttgaaggaactaatatgcaaaacaaaca    150
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+s8               101 aaactaaggatcaatgattcatttgaaggaactaatatgcaaaacaaaca    150
+
+s7               151 ctacagtacaaaaaggttcttcttgttctggatgatgttgatcacata--    198
+                     ||||||||||||||||||||||||||||||||||||||||||||||||  
+s8               151 ctacagtacaaaaaggttcttcttgttctggatgatgttgatcacataga    200
+
+s7               199 ----------------------------gaatggtttggtgatggaagta    220
+                                                 ||||||||||||||||||||||
+s8               201 tcagttaaatgcattagccggggagcgtgaatggtttggtgatggaagta    250
+
+s7               221 gaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac    270
+                     ||||||||||||||||||||                              
+s8               251 gaatcatcataacaaccaaa------------------------------    270
+```
+
 #### s4:s4
 Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
 
