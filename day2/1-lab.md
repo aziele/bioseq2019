@@ -1,11 +1,64 @@
 ## Wykres Dot Plot
 
 ### Zad. 1 - Interpretacja wykresów dot plot
-W pliku [dotplot.fasta](./day1/data/dotplot.fasta) znajduje się 10 sekwencji nukleotydowych. Przy wykorzystaniu programu *dotmatcher* (<a href="http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
-> W polu `Matrix file` wpisz nazwę macierzy `EDNASIMPLE` (`+1` dla par nukleotdów zgodnych, `0` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i `10`.
+Poniżej znajdują się sekwencje nukleotydowe.
+
+```
+>s1
+caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcagggactagagcgc
+ttgcaagagatacttctttctgagatcctcgttgtaaaaaaaactaaggatcaatgattc
+atttgaaggaactaatatgcaaaacaaacactacagtacaaaaaggttcttcttgttctg
+gatgatgttgatcacatagatcagttaaatgcattagccggggagcgtgaatggtttggt
+gatggaagtagaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac
+
+>s2     
+caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcagggactagagcgc
+ttgcaagagatacttctttctgagatcctcgttgtaaaaaaaactaaggatcaatgattc
+atttgaaggaactaatatgcaaaacaaacactacagtacaaaaaggttcttcttgttctg
+gatgatgttgatcacatagatacttctttctgagatcctcgttgtaaaaaaaactaagga
+gatggaagtagaatcatcatgaatcatcaaaagataaacacttgcttgttaagtaaggaa
+
+>s4
+caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcagggactagagcgc
+ttgcaagagaatatatatatatatatatatatatatataaaaactaaggatcaatgattc
+atttgaaggaactaatatgcaaaacaaacactacagtacaaaaaggttcttcttgttctg
+gatgatgttgtcacgctccccggctaatgcatttaactgatctatgtgatatggtttggt
+gatggaagtagaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac
+
+>s5
+gttctaaccactactcgtcttgaaaaggttggatcaattatgggaacattgcaaccatat
+gaattgtcaaatttgtctcaagaagattgttggttgttgttcatgcaacgtgcatttggg
+caccaagaagaaataaatcttaatcttgtggctatcggaaaggagattgtgaaaaaatgt
+ggtggtgtgcctctagcagcatatatatatatatatatatatatatataagagagaagaa
+agacagtgggaacatgtgagagatagtgagatttggaaattgcctcaagaagaaagttct
+
+>s7
+caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcagggactagagcgc
+ttgcaagagatacttctttctgagatcctcgttgtaaaaaaaactaaggatcaatgattc
+atttgaaggaactaatatgcaaaacaaacactacagtacaaaaaggttcttcttgttctg
+gatgatgttgatcacatagaatggtttggtgatggaagtagaatcatcataacaaccaaa
+agataaacacttgcttgttaagtaaggaac
+
+>s8
+caaggtgcatgttttcttcacgaagtcagagaccgttcagcaaagcagggactagagcgc
+ttgcaagagatacttctttctgagatcctcgttgtaaaaaaaactaaggatcaatgattc
+atttgaaggaactaatatgcaaaacaaacactacagtacaaaaaggttcttcttgttctg
+gatgatgttgatcacatagatcagttaaatgcattagccggggagcgtgaatggtttggt
+gatggaagtagaatcatcataacaaccaaa
+
+>s10
+caaggtgcatgttttcttcacgaagtcagaggaccagcgacaaagcagggactagagcgc
+ttgcaagagatacttctttctgagatcctcgttgtaaaaaaaactaaggatcaatgattc
+cggccagtacgcagaggacgttatcaaacactacagtacaaaaaggttctaggagcgagt
+gatgatgttgatcacatagatcagttaaatcgatgaacgtccggagcagaatggtttggt
+gatggaagtagaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac
+```
+
+Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/">http://www.bioinformatics.nl/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
+> W polu `Matrix file` wpisz nazwę macierzy `EDNAFULL` (`+5` dla par nukleotdów zgodnych, `-4` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i  `50`.
 
 1. s1:s1
-2. s1:s10
+2. s1:s10 (zobacz przyrównanie sekwencji w serwisie Needle)
 3. s2:s2
 4. s4:s5
 5. s7:s8
