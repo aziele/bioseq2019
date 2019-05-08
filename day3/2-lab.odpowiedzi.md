@@ -180,7 +180,7 @@ Przeszukanie bazy `PDB` za pomocą profilu[PSSM-iteration3.asn](./files/PSSM-ite
                   FAT +         I  + G       +I    YT      LR+ Y +    
     Sbjct  267  HTFATSVLRNGGDIRFIQQILGHASVATTQI----YTHLNDSALREXYTQHRPR  316
     ```
-<br/><br/>
+<br/>
 
 ### Zad. 2 - PSSM Viewer: identyfikacja kluczowych aminokwasów
 
