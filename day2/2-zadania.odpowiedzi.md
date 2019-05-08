@@ -105,6 +105,7 @@ Query  1   CAPTAINCRI  10
            C PTAI+CRI
 Sbjct  26  CDPTAIDCRI  35
 ```
+<br/>
 
 ### Zad. 4 - blastp: identyfikacja ortologów
 
