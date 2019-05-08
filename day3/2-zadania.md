@@ -51,12 +51,12 @@ Sekwencją jednego z białek sprawdź czy występuje w nim motyw zawarty w ba
 ### Zad. 4 - Białka z domeną rycyny
 > Celem zadania jest wyszukanie wszystkich białek zawierających określony zestaw domen.
 
-Białko rycyna (ricin) pochodzące z rącznika pospolitego (*Ricinus communis*) posiada silne
+Białko rycyna (*ricin*) pochodzące z rącznika pospolitego (*Ricinus communis*) posiada silne
 właściwości toksyczne. Dlatego niejednokrotnie wykorzystywane było one przez przestępców,
 służby specjalne, a także terrorystów jako broń biologiczna. 
 
 Odszukaj rekord tego białka w bazie [UniProt](https://www.uniprot.org) i wyświetl jego sekwencję w formacie FASTA. Znalezioną sekwencją przeszukaj serwis [Pfam](https://pfam.xfam.org) i zidentyfikuj zawarte w niej domeny. Następnie, skorzystaj z zaawansowanego wyszukiwania serwisu UniProt i wyszukaj w nim wszystkie białka zawierające wszystkie te domeny.
-
+<br/><br/>
 
 ### Zad. 5 - PSI-BLAST: szukanie odległych sekwencji homologicznych
 > Celem zadania jest sprawdzenie, czy białko człowieka (o numerze dostępu w bazie UniProt: `GPAA1_HUMAN`) ma sekwencje homologiczne w rodzaju *Trypansomoma*.

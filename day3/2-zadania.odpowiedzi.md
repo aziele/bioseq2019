@@ -209,8 +209,7 @@ database:(type:pfam pf07714) taxonomy:"Viridiplantae [33090]"
   ***********************
 
   ```
-
-4. (dla chętnych) 
+<br/>
 
 ### Zad. 3 - Przyrównanie sekwencji rodziny białkowej
 
@@ -279,7 +278,7 @@ XPROT_H.lucidula        ------  278
 4. Na stronie wzorca [PS00467](https://prosite.expasy.org/cgi-bin/prosite/nicedoc.pl?PS00467) naciśnięcie na link `Taxonomic distribution of all UniProtKB (Swiss-Prot + TrEMBL) entries matching PS00467` otworzy stronę serwisu UniProt, na której wyświetlona będzie liczba wsyztskich białek zawierających ten wzorzec (`33 395` rekordów). 
 
    <img src="./images/uniprot-prosite-taxonomic.png" alt='uniprot-prosite-taxonomic' width="300px">
-<br/><br/>
+<br/>
 
 
 ### Zad. 4 - Białka z domeną rycyny
