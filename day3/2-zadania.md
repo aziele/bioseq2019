@@ -36,7 +36,7 @@ Zapisz znalezione sekwencje wysokiej jakości w formacie FASTA. Wykonaj przyrów
 3. Podaj najdłuższy fragment w tych sekwencji o nieprzerwanej 100% identyczności.
 <br/><br/>
 
-### Zad. 3 - Przyrównanie rodziny białkowej
+### Zad. 3 - Przyrównanie sekwencji rodziny białkowej
 W pliku [x-protein.fasta](./data/x-protein.fasta) znajdują się sekwencje aminokwasowe białek należących do jednej rodziny. Wykonaj przyrównanie tych sekwencji korzystając z programu [MAFFT](https://www.ebi.ac.uk/Tools/msa/mafft/).
 
 Sekwencją jednego z białek sprawdź czy występuje w nim motyw zawarty w bazie [PROSITE](http://prosite.expasy.org).

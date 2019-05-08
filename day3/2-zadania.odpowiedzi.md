@@ -212,7 +212,7 @@ database:(type:pfam pf07714) taxonomy:"Viridiplantae [33090]"
 
 4. (dla chętnych) 
 
-### Zad. 3 - Przyrównanie rodziny białkowej
+### Zad. 3 - Przyrównanie sekwencji rodziny białkowej
 
 #### ClustalOmega
 
