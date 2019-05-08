@@ -32,3 +32,21 @@ Sekwencje z poprzedniego zadania należą do żyjących gatunków niedźwiedzi. 
 
 1. Który niedźwiedź jest najbliższym krewnym wymarłego niedźwiedzia jaskiniowego?
 2. Czy uwzględnienie niedźwiedzia jaskiniowego na drzewie zmieniło układ pozostałych taksonów?
+<br/><br/>
+
+### Zad. 3 - Drzewo gatunków: analiza mitochondrialnego DNA
+Plik [mito.fasta](http://www.combio.pl/files/mito.fasta) zawiera dopasowanie sekwencji mitochondrialnego DNA (niekodującego białko) pochodzące z człowiekokształtnych i innych naczelnych. Korzystając z programu MEGA utwórz drzewa filogenetyczne opisujące relacje między tymi sekwencjami używając 4 metod filogenetycznych z analizą bootstrap (`50` pseudoreplikacji):
+
+1. Neighbor-Joining, 
+2. Maximum Likelihood (potrwa ok. 3 min)
+3. Minimum Evolution
+4. Maximum Parsimony
+
+---
+
+1. Czy topologie drzew uzyskane czterema metodami znacznie się różnią?
+2. Które węzły są najbardziej wiarygodne (100% bootstrap) we wszystkich drzewach?
+3. Która para współczesnych ludzi jest ze sobą najbliżej spokrewniona?
+4. Jaki gatunek naczelnych (inny niż neandertalczyk) jest najbliżej spokrewniony z współczesnym człowiekiem?
+5. Jaki typ współczesnego człowieka jest najbliżej spokrewniony z korzeniem drzewa?
+6. Czy topologia drzewa potwierdza teorię "Wyjścia z Afryki" (*Out of Africa Theory*)?

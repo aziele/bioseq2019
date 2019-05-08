@@ -43,3 +43,15 @@ Dołącz sekwencję do pliku `bears.fasta` i wykonaj analizę filogenetyczną, j
 
 1. Amerykański niedźwiedź czarny jest najbliższym krewnym wymarłego niedźwiedzia jaskiniowego.
 2. Uwzględnienie niedźwiedzia jaskiniowego na drzewie nie zmieniło układu pozostałych taksonów.
+<br/><br/>
+
+### Zad. 3 - Drzewo gatunków: analiza mitochondrialnego DNA
+
+<img src="./images/mito.png" alt="mito">
+
+1. Topologie czterech drzew uzyskanych różnymi metodami są bardzo podobne. Różnią się jedynie w końcowych rozgałęzieniach drzewa.
+2. Najbardziej wiarygodne są początkowe rozgałęzienia drzew, w których wartości bootstrap wynoszą `100`.
+3. Najbliżej spokrewnione są sekwencje pochodzące z par `Human China - Human Germany` i `Human North America - Human England`. 
+4. Gatunkiem najbliżej spokrewnionym z współczesnym człowiekiem jest bonobo. 
+5. Współczesnym człowiekiem najbliżej spokrewnionym z korzeniem drzewa jest człowiek z Afryki.
+6. Topologie czterech drzew potwierdzają teorię "Wyjścia z Afryki".

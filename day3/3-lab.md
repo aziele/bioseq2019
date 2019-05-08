@@ -11,7 +11,7 @@ W celu ustalenia źródła zakażenia wirusem HIV, wyizolowano wirusowe RNA z pr
 
 Sekwencje wirusowego białka gp120 znajdują się w pliku [HIV_data_set.fasta](http://www.combio.pl/files/HIV_data_set.fasta).
 
-Wejdź na stronę [narzędzi EMBOSS do przyrównywania wielu sekwencji](https://www.ebi.ac.uk/Tools/msa/). Wybierz program **ClustalOmega** i przeprowadź przyrównanie sekwencji. W zakładce `Phylogeny Tree` znajduje się drzewo filogenetyczne utworzone na podstawie algorytmu *Neighbor-Joining (NJ)*.
+Otwórz stronę [narzędzi EMBOSS do przyrównywania wielu sekwencji](https://www.ebi.ac.uk/Tools/msa/). Wybierz program **ClustalOmega** i przeprowadź przyrównanie sekwencji. W zakładce `Phylogeny Tree` znajduje się drzewo filogenetyczne utworzone na podstawie algorytmu *Neighbor-Joining (NJ)*.
 
 1. Czy dentysta z Florydy mógł zakazić któregokolwiek z ośmiu pacjentów?
 
