@@ -1,5 +1,5 @@
 ### Zad. 1 - blastp: identyfikacja sekwencji białka
-Zidentyfikuj funkcję poniższego białka w bazie *SwissProt*. Sekwencja została wygenerowana w oparciu o translację 5 egzonu pewnego genu z jednego gatunku *Drosophila*.
+Zidentyfikuj poniższą sekwencję białka w bazie *SwissProt*. Sekwencja została wygenerowana w oparciu o translację 5 egzonu pewnego genu z jednego gatunku *Drosophila*.
 
 ```
 MSQICKRGLLISNRLAPAALRCKSTWFSEVQMGPPDAILGVTEAFKKDTNPKKINLGAGAYRDDNTQPFV
@@ -10,10 +10,12 @@ RAGAFTVLCSDEEEAARVMSQVKILIRGLYSNPPVHGARIAAEILNNEDLRAQWLKDVKLMADRIIDVRT
 KLKDNLIKLGSSQNWDHIVNQIGMFCFTGLKPEQVQKLIKDHSVYLTNDGRVSMAGVTSKNVEYLAESIH
 KVTK
 ```
+
+Jaką funkcję może pełnić to białko?
 <br/>
 
 ### Zad. 2 - blastp: powtórzony fragment sekwencji
-Znajdź białko u *Arabidopsis thaliana* homologiczne do poniższej sekwencji białkowej wiążącej RNA u cyjanobakterii *Synechocystis sp.*.
+Znajdź białko *Arabidopsis thaliana* wykazujące podobieństwo do poniższej sekwencji białkowej wiążącej RNA u cyjanobakterii *Synechocystis sp.*.
 
 ```
 >sp|Q57014|RBPA_SYNY3 Putative RNA-binding protein RbpA OS=Synechocystis sp.
