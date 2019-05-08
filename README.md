@@ -16,7 +16,7 @@
 | :---: | --- | --- | --- | --- | --- | :---: |
 | <sub>9:00 - 11:00</sub> | <sub>Dot Plot, blastn, blastp, blast2seqs</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/1-lab.md)</sub> | <sub>[rozwiązanie](./day2/1-lab.odpowiedzi.md)</sub> | <sub>-</sub> | <sub>-</sub> |
 | <sub>11:15-13:15</sub> | <sub>BLAST - blastx i tblastn</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/2-lab.md)</sub> | <sub>[rozwiązanie](./day2/2-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/2-zadania.md)</sub> | <sub>[odpowiedzi](./day2/2-zadania.odpowiedzi.md)</sub> |
-| <sub>14:00-16:00</sub> | <sub>Przyrównanie wielu sekwencji</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/3-lab.md)</sub> | <sub>[rozwiązanie](./day2/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/3-zadania.md)</sub> | <sub>[odpowiedzi](./day2/3-zadania.odpowiedzi)</sub> |
+| <sub>14:00-16:00</sub> | <sub>Przyrównanie wielu sekwencji</sub> | <sub>slajdy</sub> | <sub>[lab](./day2/3-lab.md)</sub> | <sub>[rozwiązanie](./day2/3-lab.odpowiedzi.md)</sub> | <sub>[zadania](./day2/3-zadania.md)</sub> | <sub>[odpowiedzi](./day2/3-zadania.odpowiedzi.md)</sub> |
 
 ## Dzień 3
 
