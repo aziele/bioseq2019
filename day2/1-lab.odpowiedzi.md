@@ -66,18 +66,11 @@ Ciągła linia przekątna wskazuje na dopasowanie sekwencji na całej długości
 <img src="./images/dotplot-s2.png" alt="dotplot-s2" width="600px">
 
 #### s4:s4
-Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzenia tandemowe.
+Sekwencja `s4` na N-końcu (w pozycji 75-100) zawiera liczne powtórzeniami krótkich fragmentów ok. 15 nukleotydów. Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** lub **powtórzeniami mikrosatelitarnymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`).
 
 <img src="./images/dotmatcher_s4-s4.png" alt="dotmatcher_s4-s4.png" width="600px">
 
 <img src="./images/dotplot.s4.png" alt="dotplot.s4" width="600px">
-
-#### s4:s5
-Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości. Porównywane sekwencje nie wykazują podobieństwa, poza wielokrotnymi powtórzeniami krótkich fragmentów sekwencji (ok. 15 nukleotydów). Tego typu wielokrotne powtórzenia występujące blisko siebie w sekwencji nazywają się **powtórzeniami tandemowymi** lub **powtórzeniami mikrosatelitarnymi** (np. czterokrotne powtórzenie podsekwencji `AT` w sekwencji `ATATATAT`).
-
-<img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="600px">
-
-<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png" width="600px">
 
 Na powyższym wykresie dot plot:
 * Liczba linii odpowiada liczbie powtórzonych fragmentów. 
@@ -85,9 +78,15 @@ Na powyższym wykresie dot plot:
 * Odległość między liniami na wykresie oznacza odległości między tymi powtórzeniami w sekwencji.
    * Ponieważ powtórzenia `AT` występują bezpośrednie po sobie, odstęp między liniami jest prawie niewidoczny.
 
+#### s4:s5
+Brak linii przekątnej wskazuje na brak podobieństwa sekwencji na całej długości, poza powtórzeniami tandemowymi, które w sekwencji `s4` występują na N-końcu ok. w pozycji `60-80`, a w sekwencji `s5` na C-końcu w pozycji ok. `190-210` nt.
+
+<img src="./images/dotmatcher_s4-s5.png" alt="dotmatcher_s4-s5.png" width="600px">
+
+<img src="./images/dotplot.s4s5.png" alt="dotplot.s4s5.png" width="600px">
 
 #### s7:s8
-Przemieszczenie się linii przekątnej oznacza zajście insercji w jednej sekwencji lub delecji w drugiej sekwencji. W tym przypadku, sekwencja `s7` jest dłuższa i zawiera fragment w pozycji `200-220`, który nie występuje w sekwencji `s8`. Zatem, fragment uległ insercji w sekwencji `s7` lub delecji w sekwencji `s8`.
+Przemieszczenie się linii przekątnej oznacza zajście insercji w jednej sekwencji lub delecji w drugiej sekwencji. W tym przypadku, sekwencja `s8` zawiera fragment w pozycji `200-220`, który nie występuje w sekwencji `s7`. Zatem, fragment uległ insercji w sekwencji `s8` lub delecji w sekwencji `s7`.
 
 <img src="./images/dotmatcher_s7-s8.png" alt="dotmatcher_s7-s8.png" width="600px">
 
@@ -274,7 +273,7 @@ GSDHFLKQGSWKANKEKLWDIDLPP
    * Trafienia przyjmują wartości `Max Score` w zakresie `33-36` bitów.
    * Trafienia przyjmują wartości `E-value` w zakresie `40-1000`.
 
-7. Sekwencje nukleotydowe obarczone są większym ryzykiem uzyskania przyrównań fałszywie pozytywnych. Przyrównania sekwencji nukleotydowych o długości 25 pz uzyskują wartości *E*-value w zakresie `12-50`, natomiast przyrównania sekwencji aminokwasowych tej samej długości otrzymują wartości *E*-value rzędu `40-1000`.
+7. Sekwencje nukleotydowe obarczone są większym ryzykiem uzyskania przyrównań fałszywie pozytywnych. Przyrównania sekwencji nukleotydowych o długości 25 nukleotydów uzyskują wartości *E*-value w zakresie `12-50`, natomiast przyrównania sekwencji aminokwasowych tej samej długości otrzymują wartości *E*-value rzędu `40-1000`.
 <br/><br/>
 
 

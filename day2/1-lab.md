@@ -110,7 +110,7 @@ Na liście otrzymanych trafień znajdź najwyżej punktowaną sekwencję insulin
 
 
 ### Zad. 3 - Wpływ wielkości bazy danych na wartość E-value
-Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRNA insuliny koszatniczki pospolitej `M57671.1`. W formularzu programu BLAST:
+W nowej karcie przeglądarki przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRNA insuliny koszatniczki pospolitej `M57671.1`. W formularzu programu BLAST:
 
 * Ogranicz przeszukiwanie do sekwencji pochodzących z człowieka
 * W panelu `Program Selection` wybierz `Somewhat similar sequences (blastn)`
@@ -163,7 +163,7 @@ Przeprowadź ponowne przeszukiwanie programem BLAST stosując jako zapytanie mRN
 
 
 ### Zad. 5 - Wpływ długości sekwencji zapytania na wartość E-value
-Poniżej znajdują się trzy różnej długości fragmentu tej samej sekwencji tRNA. Użyj programu BLAST w celu przeszukania nukleotydowej bazy sekwencji `Nucleotide collection (nr/nt)` w oparciu o poniższe sekwencje.
+Poniżej znajdują się trzy różnej długości fragmentu tej samej sekwencji tRNA. Użyj [serwisu BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) w celu przeszukania nukleotydowej bazy sekwencji `Nucleotide collection (nr/nt)` w oparciu o poniższe sekwencje.
 
 ```
 >tRNA

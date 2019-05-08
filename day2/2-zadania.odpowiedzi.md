@@ -44,7 +44,169 @@ Sbjct  175  NSFEVNGRRLTVNRAAPRGSR  195
 Przyrównany fragment sekwencji zapytania (w pozycji `3-83`) odpowiada domenie wiążącej RNA (domena RRM). Występuje ona jako pojedyczna domena w sekwencji zapytania, natomiast w sekwencji trafienia *A. thaliana* występuje dwukrotnie. Sekwencja domeny RRM białka zapytania wykazuje większe podobieństwo do domeny RRM z C-końca białka trafienia (`score = 77.4`), niż do N-końcowej domeny RRM (`score = 62.4`).
 <br/><br/>
 
-### Zad. 3 - Identyfikacja polimorfizmów w genomach wirusów HIV
+### Zad. 3 - blastp: wyszukiwanie krótkich peptydów
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov) i wybierz **Protein BLAST**. Umieść sekwencje w formacie FASTA w polu `Enter Query Sequence` formularza programu.
+
+```
+>s1
+GANDALF
+>s2
+GARFIELDTHECAT
+>s3
+ELVISLIVES
+>s4
+CAPTAINCRICK
+```
+
+#### GANDALF
+
+```
+>WP_008191551.1 DUF642 domain-containing protein [Labrenzia alexandrii]
+ EEE44441.1 VCBS repeat protein [Labrenzia alexandrii DFL-11]
+Length=3363
+
+ Score = 24.4 bits (50),  Expect = 1421
+ Identities = 7/7 (100%), Positives = 7/7 (100%), Gaps = 0/7 (0%)
+
+Query  1     GANDALF  7
+             GANDALF
+Sbjct  3224  GANDALF  3230
+```
+
+#### GARFIELDTHECAT
+
+```
+Score   Expect  Identities  Positives   Gaps
+32.9 bits(70)   5.7 10/12(83%)  10/12(83%)  1/12(8%)
+
+Query  4    FIELDTHE-CAT  14
+            FIELD HE CAT
+Sbjct  164  FIELDSHEICAT  175
+```
+
+#### ELVISLIVES
+
+```
+Alignment statistics for match #1
+Score   Expect  Identities  Positives   Gaps
+29.1 bits(61)   59  8/9(89%)    9/9(100%)   0/9(0%)
+Query  1     ELVISLIVE  9
+             ELVISLI+E
+Sbjct  1264  ELVISLIIE  1272
+```
+
+#### CAPTAINCRICK
+
+```
+Alignment statistics for match #1
+Score   Expect  Identities  Positives   Gaps
+30.3 bits(64)   32  8/10(80%)   9/10(90%)   0/10(0%)
+Query  1   CAPTAINCRI  10
+           C PTAI+CRI
+Sbjct  26  CDPTAIDCRI  35
+```
+
+### Zad. 4 - blastp: identyfikacja ortologów
+
+1. Otwórz [serwis NCBI](https://www.ncbi.nlm.nih.gov), wybierz białkową bazę danych i skonstruuj poniższe zapytanie:
+
+   ```
+   major urinary protein 3[Title] AND Mus musculus[Organism] AND refseq[Filter]
+   ```
+
+   W wyniku powyższego zapytania otrzymano 1 rekord: [NP_001034633](https://www.ncbi.nlm.nih.gov/protein/NP_001034633). Ze strony rekordu, w prawym panelu `Analyze this record` wybierz `Run BLAST`. W formularzu programu BLAST wybierz bazę danych `nr` i ogranicz wyszukiwania do organizmu *Monodelphis domestica*.
+
+2. W wynikach programu BLAST, najwyżej ocenioną sekwencją oposa jest `XP_007475409`.
+
+   ```
+    >XP_007475409.1 PREDICTED: trichosurin-like [Monodelphis domestica]
+    Length=181
+
+     Score = 112 bits (281),  Expect = 2e-31, Method: Compositional matrix adjust.
+     Identities = 59/161 (37%), Positives = 94/161 (58%), Gaps = 0/161 (0%)
+
+    Query  19   CIHAEESSSMERNFNVEQISGYWFSIAEASDEREKIEEHGSMRAFVENITVLENSLVFKF  78
+                 +HA  +   +   NV Q+SG W SI  AS++ ++I + G M   + NITV E+++ F  
+    Sbjct  16   ALHAHRTRPEKHLENVNQLSGPWHSIYLASNDMDRISKGGDMNISIHNITVNESTVTFNV  75
+
+    Query  79   HLIVNEECTEMTAIGEQTEKAGIYYMNYDGFNTFSILKTDYDNYIMIHLINKKDGKTFQL  138
+                +L  NEEC  ++ + ++TEK  ++ +NY G N   + +     Y +    N ++GK   L
+    Sbjct  76   NLWQNEECIPISMVAKKTEKNNVFKLNYGGENYIYLEELKPKEYAIFCTHNHQNGKETLL  135
+
+    Query  139  MELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
+                MELYG  P L   +K+ F  LC+++GI +ENIID+T V+ C
+    Sbjct  136  MELYGWTPILKEKVKKTFKDLCQKYGIDKENIIDMTKVDHC  176
+    ```
+
+3. W wynikach programu BLAST w drugim kierunku otrzymano białko użyte w pierwszym zapytaniu.
+
+    ```
+    >NP_001034633.1 major urinary protein 3 precursor [Mus musculus]
+    Length=184
+
+     Score = 113 bits (282),  Expect = 2e-31, Method: Compositional matrix adjust.
+     Identities = 59/160 (37%), Positives = 94/160 (59%), Gaps = 0/160 (0%)
+
+    Query  17   LHAHRTRPEKHLENVNQLSGPWHSIYLASNDMDRISKGGDMNISIHNITVNESTVTFNVN  76
+                +HA  +   +   NV Q+SG W SI  AS++ ++I + G M   + NITV E+++ F  +
+    Sbjct  20   IHAEESSSMERNFNVEQISGYWFSIAEASDEREKIEEHGSMRAFVENITVLENSLVFKFH  79
+
+    Query  77   LWQNEECIPISMVAKKTEKNNVFKLNYGGENYIYLEELKPKEYAIFCTHNHQNGKETLLM  136
+                L  NEEC  ++ + ++TEK  ++ +NY G N   + +     Y +    N ++GK   LM
+    Sbjct  80   LIVNEECTEMTAIGEQTEKAGIYYMNYDGFNTFSILKTDYDNYIMIHLINKKDGKTFQLM  139
+
+    Query  137  ELYGWTPILKEKVKKTFKDLCQKYGIDKENIIDMTKVDHC  176
+                ELYG  P L   +K+ F  LC+++GI +ENIID+T V+ C
+    Sbjct  140  ELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
+    ```
+4. Sekwencja białka `XP_007475409` oposa jest prawdopodobnym ortologiem białka MUP3 (`NP_001034633`) myszy.
+<br/><br/>
+
+### Zad. 5 - blastx: identyfikacja przesunięcia ramki odczytu
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Ponieważ sekwencja koduje białko wybierz program **blastx**. W formularzu programu BLAST umieść sekwencję zapytania i przeprowadź przeszukiwanie.
+
+Sekwencja jest najbardziej podobna do białka otoczki wirusa HIV (*HIV1 envelope glycoprotein*) o numerze dostępu `AAL71628.1` (E-value: `1e-104`).
+
+Przesunięcie ramki odczytu widoczne jest na graficznej prezentacji trafień jako mała czarna pionowa linia znajdująca się na trafieniu.
+
+<img src="./images/blastx-hiv.png" alt="blastx-hiv">
+
+Sekwencja trafienia `AAL71628.1` składa się z dwóch przyrównań z sekwencją zapytania. Każde przyrównanie pochodzi z translacji w dwóch różnych ramkach odczytu. Drugie przyrównanie dotyczy początku sekwencji zapytania (`2-268`, ramka oczytu: `+2`) i sekwencji trafienia w pozycji `1-89` (pozycje wyrażone w aminokwasach). Z kolei pierwsze przyrównanie dotyczy drugiej części sekwencij zapytania (`268-600`) i sekwencji trafienia `90-201` (ramka odczytu: `+1`). Przesunięcie ramki odczytu jest więc spowodowane delecją jednego nukleotydu w sekwencji zapytania w pobliżu pozycji `268`.
+
+```
+>AAL71628.1 envelope glycoprotein, partial [Human immunodeficiency virus 1]
+Length=201
+
+ Score = 226 bits (576),  Expect(2) = 1e-104, Method: Compositional matrix adjust.
+ Identities = 110/112 (98%), Positives = 110/112 (98%), Gaps = 1/112 (1%)
+ Frame = +1
+
+Query  268  TIAFNQSSGGDPEIVMHSFNCGGEFFYCNTTQLFNSTWPTNK-KSTNKTGTITLPCRIKQ  444
+            TIAFNQSSGGDPEIVMHSFNCGGEFFYCNTTQLFNSTWPTN  KSTNKTGTITLPCRIKQ
+Sbjct  90   TIAFNQSSGGDPEIVMHSFNCGGEFFYCNTTQLFNSTWPTNNTKSTNKTGTITLPCRIKQ  149
+
+Query  445  IINRWQEVGKAMYAPPIKGQIRCSSNITGIFLTRDGGNASDETETFRPGGGN  600
+            IINRWQEVGKAMYAPPIKGQIRCSSNITGIFLTRDGGNASDETETFRPGGGN
+Sbjct  150  IINRWQEVGKAMYAPPIKGQIRCSSNITGIFLTRDGGNASDETETFRPGGGN  201
+
+
+ Score = 182 bits (461),  Expect(2) = 1e-104, Method: Compositional matrix adjust.
+ Identities = 89/89 (100%), Positives = 89/89 (100%), Gaps = 0/89 (0%)
+ Frame = +2
+
+Query  2    EEDIVIRSENFTNNAKTIIVQLKESIKINCTRPNNNTRKSIPIATGGAIYATGDIIGDIR  181
+            EEDIVIRSENFTNNAKTIIVQLKESIKINCTRPNNNTRKSIPIATGGAIYATGDIIGDIR
+Sbjct  1    EEDIVIRSENFTNNAKTIIVQLKESIKINCTRPNNNTRKSIPIATGGAIYATGDIIGDIR  60
+
+Query  182  QAHCNLSRDQWDNTLSQLVTKLREQFGNK  268
+            QAHCNLSRDQWDNTLSQLVTKLREQFGNK
+Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
+```
+<br/>
+
+
+
+### Zad. 6 - Identyfikacja polimorfizmów w genomach wirusów HIV
 Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program `Nucleotide BLAST` i algorytm `blastn`. W wynikach programu BLAST ustaw `Formatting Options` > `Alignment view` > `Flat query-anchored with dots for identities`).
 
 <img src="./images/blastn-snp.png" alt="blastn-snp">
@@ -52,7 +214,7 @@ Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). 
 W pozycji 6 przyrównań występują warianty `A/G`.
 <br/><br/>
 
-### Zad. 4 - blastn: ograniczanie bazy sekwencji BLAST przez zapytanie Entrez
+### Zad. 7 - blastn: ograniczanie bazy sekwencji BLAST przez zapytanie Entrez
 Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Wybierz program **nucleotide BLAST**, algorytm `blastn`. Umieść sekwencję i w polu `Entrez Query` umieść poniższe zapytanie:
 
 ```
@@ -149,162 +311,3 @@ Przeszukiwana baza danych BLAST obejmuje `585 748` sekwencji.
 <br/>
 
 
-### Zad. 5 - blastx: identyfikacja przesunięcia ramki odczytu
-Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi). Ponieważ sekwencja koduje białko wybierz program **blastx**. W formularzu programu BLAST umieść sekwencję zapytania i przeprowadź przeszukiwanie.
-
-Sekwencja jest najbardziej podobna do białka otoczki wirusa HIV (*HIV1 envelope glycoprotein*) o numerze dostępu `AAL71628.1` (E-value: `1e-104`).
-
-Przesunięcie ramki odczytu widoczne jest na graficznej prezentacji trafień jako mała czarna pionowa linia znajdująca się na trafieniu.
-
-<img src="./images/blastx-hiv.png" alt="blastx-hiv">
-
-Sekwencja trafienia `AAL71628.1` składa się z dwóch przyrównań z sekwencją zapytania. Każde przyrównanie pochodzi z translacji w dwóch różnych ramkach odczytu. Drugie przyrównanie dotyczy początku sekwencji zapytania (`2-268`, ramka oczytu: `+2`) i sekwencji trafienia w pozycji `1-89` (pozycje wyrażone w aminokwasach). Z kolei pierwsze przyrównanie dotyczy drugiej części sekwencij zapytania (`268-600`) i sekwencji trafienia `90-201` (ramka odczytu: `+1`). Przesunięcie ramki odczytu jest więc spowodowane delecją jednego nukleotydu w sekwencji zapytania w pobliżu pozycji `268`.
-
-```
->AAL71628.1 envelope glycoprotein, partial [Human immunodeficiency virus 1]
-Length=201
-
- Score = 226 bits (576),  Expect(2) = 1e-104, Method: Compositional matrix adjust.
- Identities = 110/112 (98%), Positives = 110/112 (98%), Gaps = 1/112 (1%)
- Frame = +1
-
-Query  268  TIAFNQSSGGDPEIVMHSFNCGGEFFYCNTTQLFNSTWPTNK-KSTNKTGTITLPCRIKQ  444
-            TIAFNQSSGGDPEIVMHSFNCGGEFFYCNTTQLFNSTWPTN  KSTNKTGTITLPCRIKQ
-Sbjct  90   TIAFNQSSGGDPEIVMHSFNCGGEFFYCNTTQLFNSTWPTNNTKSTNKTGTITLPCRIKQ  149
-
-Query  445  IINRWQEVGKAMYAPPIKGQIRCSSNITGIFLTRDGGNASDETETFRPGGGN  600
-            IINRWQEVGKAMYAPPIKGQIRCSSNITGIFLTRDGGNASDETETFRPGGGN
-Sbjct  150  IINRWQEVGKAMYAPPIKGQIRCSSNITGIFLTRDGGNASDETETFRPGGGN  201
-
-
- Score = 182 bits (461),  Expect(2) = 1e-104, Method: Compositional matrix adjust.
- Identities = 89/89 (100%), Positives = 89/89 (100%), Gaps = 0/89 (0%)
- Frame = +2
-
-Query  2    EEDIVIRSENFTNNAKTIIVQLKESIKINCTRPNNNTRKSIPIATGGAIYATGDIIGDIR  181
-            EEDIVIRSENFTNNAKTIIVQLKESIKINCTRPNNNTRKSIPIATGGAIYATGDIIGDIR
-Sbjct  1    EEDIVIRSENFTNNAKTIIVQLKESIKINCTRPNNNTRKSIPIATGGAIYATGDIIGDIR  60
-
-Query  182  QAHCNLSRDQWDNTLSQLVTKLREQFGNK  268
-            QAHCNLSRDQWDNTLSQLVTKLREQFGNK
-Sbjct  61   QAHCNLSRDQWDNTLSQLVTKLREQFGNK  89
-```
-<br/>
-
-### Zad. 6 - blastp: identyfikacja ortologów
-
-1. Otwórz [serwis NCBI](https://www.ncbi.nlm.nih.gov), wybierz białkową bazę danych i skonstruuj poniższe zapytanie:
-
-   ```
-   major urinary protein 3[Title] AND Mus musculus[Organism] AND refseq[Filter]
-   ```
-
-   W wyniku powyższego zapytania otrzymano 1 rekord: [NP_001034633](https://www.ncbi.nlm.nih.gov/protein/NP_001034633). Ze strony rekordu, w prawym panelu `Analyze this record` wybierz `Run BLAST`. W formularzu programu BLAST wybierz bazę danych `nr` i ogranicz wyszukiwania do organizmu *Monodelphis domestica*.
-
-2. W wynikach programu BLAST, najwyżej ocenioną sekwencją oposa jest `XP_007475409`.
-
-   ```
-    >XP_007475409.1 PREDICTED: trichosurin-like [Monodelphis domestica]
-    Length=181
-
-     Score = 112 bits (281),  Expect = 2e-31, Method: Compositional matrix adjust.
-     Identities = 59/161 (37%), Positives = 94/161 (58%), Gaps = 0/161 (0%)
-
-    Query  19   CIHAEESSSMERNFNVEQISGYWFSIAEASDEREKIEEHGSMRAFVENITVLENSLVFKF  78
-                 +HA  +   +   NV Q+SG W SI  AS++ ++I + G M   + NITV E+++ F  
-    Sbjct  16   ALHAHRTRPEKHLENVNQLSGPWHSIYLASNDMDRISKGGDMNISIHNITVNESTVTFNV  75
-
-    Query  79   HLIVNEECTEMTAIGEQTEKAGIYYMNYDGFNTFSILKTDYDNYIMIHLINKKDGKTFQL  138
-                +L  NEEC  ++ + ++TEK  ++ +NY G N   + +     Y +    N ++GK   L
-    Sbjct  76   NLWQNEECIPISMVAKKTEKNNVFKLNYGGENYIYLEELKPKEYAIFCTHNHQNGKETLL  135
-
-    Query  139  MELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
-                MELYG  P L   +K+ F  LC+++GI +ENIID+T V+ C
-    Sbjct  136  MELYGWTPILKEKVKKTFKDLCQKYGIDKENIIDMTKVDHC  176
-    ```
-
-3. W wynikach programu BLAST w drugim kierunku otrzymano białko użyte w pierwszym zapytaniu.
-
-    ```
-    >NP_001034633.1 major urinary protein 3 precursor [Mus musculus]
-    Length=184
-
-     Score = 113 bits (282),  Expect = 2e-31, Method: Compositional matrix adjust.
-     Identities = 59/160 (37%), Positives = 94/160 (59%), Gaps = 0/160 (0%)
-
-    Query  17   LHAHRTRPEKHLENVNQLSGPWHSIYLASNDMDRISKGGDMNISIHNITVNESTVTFNVN  76
-                +HA  +   +   NV Q+SG W SI  AS++ ++I + G M   + NITV E+++ F  +
-    Sbjct  20   IHAEESSSMERNFNVEQISGYWFSIAEASDEREKIEEHGSMRAFVENITVLENSLVFKFH  79
-
-    Query  77   LWQNEECIPISMVAKKTEKNNVFKLNYGGENYIYLEELKPKEYAIFCTHNHQNGKETLLM  136
-                L  NEEC  ++ + ++TEK  ++ +NY G N   + +     Y +    N ++GK   LM
-    Sbjct  80   LIVNEECTEMTAIGEQTEKAGIYYMNYDGFNTFSILKTDYDNYIMIHLINKKDGKTFQLM  139
-
-    Query  137  ELYGWTPILKEKVKKTFKDLCQKYGIDKENIIDMTKVDHC  176
-                ELYG  P L   +K+ F  LC+++GI +ENIID+T V+ C
-    Sbjct  140  ELYGREPDLSLDIKEKFAKLCEEHGIIRENIIDLTNVNRC  179
-    ```
-4. Sekwencja białka `XP_007475409` oposa jest prawdopodobnym ortologiem białka MUP3 (`NP_001034633`) myszy.
-<br/><br/>
-
-### Zad. 7 - blastp: wyszukiwanie krótkich peptydów
-Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov) i wybierz **Protein BLAST**. Umieść sekwencje w formacie FASTA w polu `Enter Query Sequence` formularza programu.
-
-```
->s1
-GANDALF
->s2
-GARFIELDTHECAT
->s3
-ELVISLIVES
->s4
-CAPTAINCRICK
-```
-
-#### GANDALF
-
-```
->WP_008191551.1 DUF642 domain-containing protein [Labrenzia alexandrii]
- EEE44441.1 VCBS repeat protein [Labrenzia alexandrii DFL-11]
-Length=3363
-
- Score = 24.4 bits (50),  Expect = 1421
- Identities = 7/7 (100%), Positives = 7/7 (100%), Gaps = 0/7 (0%)
-
-Query  1     GANDALF  7
-             GANDALF
-Sbjct  3224  GANDALF  3230
-```
-
-#### GARFIELDTHECAT
-
-```
-Score   Expect  Identities  Positives   Gaps
-32.9 bits(70)   5.7 10/12(83%)  10/12(83%)  1/12(8%)
-
-Query  4    FIELDTHE-CAT  14
-            FIELD HE CAT
-Sbjct  164  FIELDSHEICAT  175
-```
-
-#### ELVISLIVES
-
-```
-Alignment statistics for match #1
-Score   Expect  Identities  Positives   Gaps
-29.1 bits(61)   59  8/9(89%)    9/9(100%)   0/9(0%)
-Query  1     ELVISLIVE  9
-             ELVISLI+E
-Sbjct  1264  ELVISLIIE  1272
-```
-
-#### CAPTAINCRICK
-
-```
-Alignment statistics for match #1
-Score   Expect  Identities  Positives   Gaps
-30.3 bits(64)   32  8/10(80%)   9/10(90%)   0/10(0%)
-Query  1   CAPTAINCRI  10
-           C PTAI+CRI
-Sbjct  26  CDPTAIDCRI  35
-```
