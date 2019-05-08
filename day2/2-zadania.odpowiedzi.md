@@ -1,5 +1,5 @@
 ### Zad. 1 - blastp: identyfikacja sekwencji białka
-Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/) i wybierz program *protein blast*. Ogranicz wyszukiwania do bazy danych `UniProtKB/Swiss-Prot` i organizmu *Drosophila melanogaster*.
+Otwórz stronę serwisu [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/) i wybierz program *protein blast*. Ogranicz wyszukiwania do bazy danych `UniProtKB/Swiss-Prot`.
 
 <img src="./images/blastp-swissprot-exon5.png" alt="blastp-swissprot-exon5">
 
