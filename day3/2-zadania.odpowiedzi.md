@@ -4,8 +4,10 @@ Otwórz stronę serwisu [InterPro](https://www.ebi.ac.uk/interpro/). W oknie szy
 <img src="./images/interpro-eftu.png" alt="interpro-eftu">
 
 1. Białko posiada 2 domeny:
-   * `Elongation factor Tu (EF-Tu), GTP-binding domain` [IPR041709](http://www.ebi.ac.uk/interpro/entry/IPR000795) będącą podtypem domeny `Transcription factor, GTP-binding domain` ([IPR000795](http://www.ebi.ac.uk/interpro/entry/IPR000795))
-   * `Elongation factor Tu, domain 2` [IPR033720](http://www.ebi.ac.uk/interpro/entry/IPR000795)) będącą podtypem domeny `Translation elongation factor EFTu-like, domain 2` ([IPR004161](http://www.ebi.ac.uk/interpro/entry/IPR004161))
+   * `Elongation factor Tu (EF-Tu), GTP-binding domain` [IPR041709](http://www.ebi.ac.uk/interpro/entry/IPR000795) będącą podtypem domeny:
+      - `Transcription factor, GTP-binding domain` ([IPR000795](http://www.ebi.ac.uk/interpro/entry/IPR000795))
+   * `Elongation factor Tu, domain 2` [IPR033720](http://www.ebi.ac.uk/interpro/entry/IPR000795)) będącą podtypem domeny:
+      - `Translation elongation factor EFTu-like, domain 2` ([IPR004161](http://www.ebi.ac.uk/interpro/entry/IPR004161))
 2. Domena `Elongation factor Tu, domain 2` występuje w `86` różnych układach z innymi domenami.
 3. Domena występuje w dwóch białkach człowieka o numerach dostępu UniProt: `P49411` I `A0A384ME17`.
 <br/><br/>
