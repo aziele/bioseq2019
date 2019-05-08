@@ -88,10 +88,10 @@ Przeprowadź jeszcze jedną iterację PSI-BLAST. W tym celu:
 3. W której pozycji sekwencji tryptofan (`W`) ma największą wartość punktacji?
 <br/><br/>
 
-### Zad. 3 - hmmer: wyszukiwanie odległych homologów
+### Zad. 3 - HMMER: wyszukiwanie odległych homologów
 > Celem tego zadania jest wykorzystanie programu **hmmer** do wyszukania sekwencji podobnych w bazie PDB do sekwencji zapytania z zadania 1.
 
-Otwórz serwis [hmmer](https://www.ebi.ac.uk/Tools/hmmer/). Wybierz zakładkę `Search` i w formularzu programu:
+Otwórz stronę serwisu [HMMER](https://www.ebi.ac.uk/Tools/hmmer/). Wybierz zakładkę `Search` i w formularzu programu:
 * Umieść sekwencję z zadania 1 w polu `Paste a Sequence`.
 * Ustaw bazę danych (`Current database selection`) jako `PDB`.
 * Naciśnij przycisk `Submit`.

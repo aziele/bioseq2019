@@ -115,7 +115,7 @@ Otwórz rekord znalezionej sekwencji białkowej.
 2. Czy w rekordzie UniProt zawarte są informacje o domenach występujących w tym białku?
 <br/><br/>
 
-### Zad. 5 - InterProt: hierarchiczne relacje między domenami
+### Zad. 5 - InterPro: hierarchiczne relacje między domenami
 Korzystając z serwisu InterPro zidentyfikuj domeny białkowe w poniższej sekwencji:
 
 ```

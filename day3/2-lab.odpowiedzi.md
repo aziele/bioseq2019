@@ -196,11 +196,11 @@ Przeszukanie bazy `PDB` za pomocą profilu[PSSM-iteration3.asn](./files/PSSM-ite
    <img src="./images/ncbi-pssm-viewer2.png" alt="ncbi-pssm-viewer2.png">
 <br/>
 
-### Zad. 3 - hmmer: Wyszukiwanie odległych homologów
+### Zad. 3 - HMMER: Wyszukiwanie odległych homologów
 
-Wynik wyszukiwania programu hmmer:
+Wynik wyszukiwania programu HMMER:
 
 <img src="./images/phmmer.png" alt="phmmer">
 
-1. Nie, program hmmer nie zidentyfikował statystycznie istotnych przyrównań z sekwencją zapytania (`E-value < 0.05`). Sekwencją najlepiej przyrównaną do profilu sekwencji zapytania jest - podobnie jak w wynikach programu PSI-BLAST - białko archeona *Pyrococcus abyssi* rekombinazy tyrozynowej (`TYROSINE RECOMBINASE XERC-LIKE`) z bazy PDB o numerze dostępu [4a8e_A](https://www.rcsb.org/structure/4a8e).
+1. Nie, program HMMER nie zidentyfikował statystycznie istotnych przyrównań z sekwencją zapytania (`E-value < 0.05`). Sekwencją najlepiej przyrównaną do profilu sekwencji zapytania jest - podobnie jak w wynikach programu PSI-BLAST - białko archeona *Pyrococcus abyssi* rekombinazy tyrozynowej (`TYROSINE RECOMBINASE XERC-LIKE`) z bazy PDB o numerze dostępu [4a8e_A](https://www.rcsb.org/structure/4a8e).
 2. Identyczność i podobieństwo najlepszego trafienia wynoszą, odpowiednio, `25.4%` i `58.2%`.

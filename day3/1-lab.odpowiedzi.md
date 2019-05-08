@@ -112,7 +112,7 @@ Przejdź do rekordu tej sekwencji w bazie UniProt.
    <img src="./images/uniprot-family_domain.png" alt="uniprot-family_domain">
 <br/>
 
-### Zad. 5 - InterProt: hierarchiczne relacje między domenami
+### Zad. 5 - InterPro: hierarchiczne relacje między domenami
 Otwórz stronę metaserwisu [InterPro](http://www.ebi.ac.uk/interpro/). Umieść sekwencję białkową `seq1` w polu `Analyse your protein sequence`. Naciśnij przycisk `Submit`.
 
 <img src="./images/interpro-seq1.png" alt="interpro-seq1">
