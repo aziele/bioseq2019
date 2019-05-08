@@ -88,3 +88,6 @@ Przeprowadź jeszcze jedną iterację PSI-BLAST. W tym celu:
 2. W tabeli naciśnij na kolumnę `Query` w celu posortowania pozycji sekwencji według malejących wartości punktacji.
    * Czy możesz zaproponować pozycje bardziej odpowiednie niż te wybrane w poprzednim punkcie.
 3. W której pozycji sekwencji tryptofan (`W`) ma największą wartość punktacji?
+<br/><br/>
+
+### Zad. 3 - phmmer

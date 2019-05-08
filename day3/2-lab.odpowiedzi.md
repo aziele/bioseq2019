@@ -196,3 +196,6 @@ Przeszukanie bazy `PDB` za pomocą profilu[PSSM-iteration3.asn](./files/PSSM-ite
 3. Posortuj tabelę według kolumny zawierającej tryptofan `W`. W pozycji `157`, substytucja `L <-> W` zachodzi najczęściej (wartość punktacji: `12` bitów).
 
    <img src="./images/ncbi-pssm-viewer2.png" alt="ncbi-pssm-viewer2.png">
+<br/>
+
+### Zad. 3 - phmmer
