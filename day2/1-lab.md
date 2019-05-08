@@ -1,7 +1,15 @@
 ## Wykres Dot Plot
 
 ### Zad. 1 - Interpretacja wykresów dot plot
-Poniżej znajdują się sekwencje nukleotydowe.
+Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/cgi-bin/emboss/dotmatcher">http://bioinfo.nhri.org.tw/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
+> W polu `Matrix file` wpisz nazwę macierzy `EDNAFULL` (`+5` dla par nukleotdów zgodnych, `-4` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i  `50`.
+
+1. s1:s1
+2. s1:s10 (zobacz przyrównanie sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/))
+3. s2:s2
+4. s4:s4
+5. s4:s5
+6. s7:s8 (zobacz przyrównanie sekwencji w serwisie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/))
 
 ```
 >s1
@@ -53,17 +61,7 @@ cggccagtacgcagaggacgttatcaaacactacagtacaaaaaggttctaggagcgagt
 gatgatgttgatcacatagatcagttaaatcgatgaacgtccggagcagaatggtttggt
 gatggaagtagaatcatcataacaaccaaaagataaacacttgcttgttaagtaaggaac
 ```
-
-Przy wykorzystaniu programu *dotmatcher* (<a href="http://bioinfo.nhri.org.tw/cgi-bin/emboss/dotmatcher">http://bioinfo.nhri.org.tw/cgi-bin/emboss/dotmatcher</a>) wykonaj analizy dot-plot dla podanych poniżej par sekwencji. 
-> W polu `Matrix file` wpisz nazwę macierzy `EDNAFULL` (`+5` dla par nukleotdów zgodnych, `-4` dla niezgodnych). W panelu `Additional section` wpisz długość słowa i wartość graniczną odpowiednio `15` i  `50`.
-
-1. s1:s1
-2. s1:s10 (zobacz przyrównanie sekwencji w programie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/))
-3. s2:s2
-4. s4:s4
-5. s4:s5
-6. s7:s8 (zobacz przyrównanie sekwencji w serwisie [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/))
-
+<br/>
 
 ## BLAST - blastn i blastp
 
