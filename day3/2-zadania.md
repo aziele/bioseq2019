@@ -23,16 +23,15 @@ Kinazy WAK (*Wall associated kinase*) są łącznikami między ścianą komórko
 * *EGF_CA* (`PF07645`) - epidermalny czynnik wzrostu wiążący jony wapnia
 * *Pkinase_Tyr* (`PF07714`) - domena kinazowo
 
-* W serwisie [UniProt](https://www.uniprot.org) wyszukaj wszystkie białka roślin, które posiadają powyższe trzy domeny.
+W serwisie [UniProt](https://www.uniprot.org) wyszukaj wszystkie białka roślin, które posiadają powyższe trzy domeny.
 
 1. Ile białek zidentyfikowano?
 
-* Ogranicz listę zidentyfikowanych białek do rekordów wysokiej jakości (*Reviewed*).
+Ogranicz listę zidentyfikowanych białek do rekordów wysokiej jakości (*Reviewed*).
 
 2. Z jakiego organizmu pochodzą te białka?
 
-* Zapisz sekwencje wysokiej jakości w formacie FASTA.
-* Wykonaj przyrównanie pobranych sekwencji w programie [MAFFT](https://www.ebi.ac.uk/Tools/msa/mafft/).
+Zapisz znalezione sekwencje wysokiej jakości w formacie FASTA. Wykonaj przyrównanie pobranych sekwencji w programie [MAFFT](https://www.ebi.ac.uk/Tools/msa/mafft/).
 
 3. Podaj najdłuższy fragment w tych sekwencji o nieprzerwanej 100% identyczności.
 <br/><br/>
