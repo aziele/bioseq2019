@@ -9,7 +9,7 @@ W celu ustalenia źródła zakażenia wirusem HIV, wyizolowano wirusowe RNA z pr
 * pacjentów dentysty chorych na AIDS oraz 
 * innych osób z okolicy Florydy zakażonych wirusem HIV, którzy nie mieli kontaktu z dentystą (*local group*). 
 
-Sekwencje wirusowego białka gp120 znajdują się w pliku [HIV_data_set.fasta](./data/HIV_data_set.fasta).
+Sekwencje wirusowego białka gp120 znajdują się w pliku [HIV_data_set.fasta](http://www.combio.pl/files/HIV_data_set.fasta).
 
 Wejdź na stronę [narzędzi EMBOSS do przyrównywania wielu sekwencji](https://www.ebi.ac.uk/Tools/msa/). Wybierz program **ClustalOmega** i przeprowadź przyrównanie sekwencji. W zakładce `Phylogeny Tree` znajduje się drzewo filogenetyczne utworzone na podstawie algorytmu *Neighbor-Joining (NJ)*.
 
@@ -65,7 +65,7 @@ Oblicz dystanse ewolucyjne w przyrównaniu par sekwencji analizowanych białek g
 
 AIDS (*Acquired Immune Deficiency Syndrome*) może być wywołany dwoma różnymi wirusami: **HIV-1** i **HIV-2**. **HIV-1** jest odpowiedzialny za globalne pandemie, a **HIV-2** jest mniej wirulentny i do niedawny występował jedynie w zachodniej Arfyce. Wirusy podobne do HIV występujące w gatunkach naczelnych innych niż człowiek (małp, małp człekokształtnych) nazywają się **SIV** (*Simian Immunodeficiency Virus*). Wirus **HTLV-1** człowieka jest z kolei odległym członkiem rodziny tych retrowirusów, do których należą HIV i SIV.
 
-Gen **Pol**, obecny w genomach tych wirusów, koduje trzy różne polipeptydy niezbędne podczas wirusowego cyklu: integraza, odwrotna transkryptaza i proteaza. Gen ten ulega ekspresji jako pojedyncze polibiałko, które następnie podlega rozłożeniu na trzy części. W pliku [Pol21.fasta](./data/Pol21.fasta) znajduje się 21 sekwencji polibiałka należących do wirusów HIV-1, HIV-2, SIV szympansa i małpy mangaby oraz HTLV-1 
+Gen **Pol**, obecny w genomach tych wirusów, koduje trzy różne polipeptydy niezbędne podczas wirusowego cyklu: integraza, odwrotna transkryptaza i proteaza. Gen ten ulega ekspresji jako pojedyncze polibiałko, które następnie podlega rozłożeniu na trzy części. W pliku [Pol21.fasta](http://www.combio.pl/files/Pol21.fasta) znajduje się 21 sekwencji polibiałka należących do wirusów HIV-1, HIV-2, SIV szympansa i małpy mangaby oraz HTLV-1 
 
 Przeprowadź analizę filogenetyczną tych sekwencji w programie MEGA. Podczas wykonywania algorytmu `Neighbor-Joining`, jako test filogenetyczny (`Test of Phylogeny`) wybierz metodę bootstrap (`Bootstrap method`) z `1000` pseudoreplikacji (`No. of bootstrap replications`).
 
@@ -85,7 +85,7 @@ Zapisz rysunek drzewa do pliku PDF (`Image` > `Save as PDF`).
 ### Zad. 4 - Drzewo gatunków
 > Celem zadania jest wygenerowanie ukorzenionego drzewa sekwencji DNA kodujących rybosomalne białko L18. 
 
-Sekwencje kodujące rybosomalne białko L18 znajdują się w pliku [L18_CDS.fasta](./data/L18_CDS.fasta) i pochodzą z 15 różnych organizmów. Sekwencje w pliku nie są pełnej długości, pozbawione są ok. 30 kodonów. Przeprowadź analizę filogenetyczną tych sekwencji.
+Sekwencje kodujące rybosomalne białko L18 znajdują się w pliku [L18_CDS.fasta](http://www.combio.pl/files/L18_CDS.fasta) i pochodzą z 15 różnych organizmów. Sekwencje w pliku nie są pełnej długości, pozbawione są ok. 30 kodonów. Przeprowadź analizę filogenetyczną tych sekwencji.
 
 1. Czy ułożenie na drzewie sekwencji gatunków jest zgodne z rozumianą taksonomią?
 <br/><br/>
@@ -119,7 +119,7 @@ U eukariontów wiele białek występuje w mitochondriach, w których pełnią on
 ### Zad. 6 - Drzewo rodziny genowej (duplikacje, delecje)
 > Celem zadania jest utworzenie drzewa rodziny genowej i ustalenie kolejności duplikacji i delecji w tej rodzinie.
 
-W pliku [tnrc6.fasta](./data/tnrc6.fasta) znajduje się 17 sekwencji białkowych genu *TNRC6* (rodzina genów GW182) pochodzących z bezkręgowców i kręgowców. Białka GW182 wiążą białka Argonaute podczas wyciszania ekspresji genów w oparciu o RNA. Utwórz drzewo filogenetyczne tych sekwencji korzystając z algorytmu `Neighbor-Joining` i metody boostrap (`1000` replikacji).
+W pliku [tnrc6.fasta](http://www.combio.pl/files/tnrc6.fasta) znajduje się 17 sekwencji białkowych genu *TNRC6* (rodzina genów GW182) pochodzących z bezkręgowców i kręgowców. Białka GW182 wiążą białka Argonaute podczas wyciszania ekspresji genów w oparciu o RNA. Utwórz drzewo filogenetyczne tych sekwencji korzystając z algorytmu `Neighbor-Joining` i metody boostrap (`1000` replikacji).
 
 1. Kiedy w toku ewolucji gen *TNRC6* uległ duplikacjom?
 2. Która z podrodzin genu (*TNRC6A*, *TNRC6B*, *TNRC6C*) zduplikowała pierwsza?

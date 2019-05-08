@@ -1,6 +1,4 @@
-## PSI-BLAST
-
-### Zad. 1 - Wyszukiwanie odległych homologów sekwencyjnych
+### Zad. 1 - PSI-BLAST: wyszukiwanie odległych homologów sekwencyjnych
 > Celem zadania jest znalezienie najbardziej podobnej sekwencji białkowej (do sekwencji zapytania) o rozwiązanej strukturze przestrzennej.
 
 Poniżej znajduje się nieznana sekwencja białkowa (`QUERY1`)
@@ -90,4 +88,13 @@ Przeprowadź jeszcze jedną iterację PSI-BLAST. W tym celu:
 3. W której pozycji sekwencji tryptofan (`W`) ma największą wartość punktacji?
 <br/><br/>
 
-### Zad. 3 - phmmer
+### Zad. 3 - hmmer: wyszukiwanie odległych homologów
+> Celem tego zadania jest wykorzystanie programu **hmmer** do wyszukania sekwencji podobnych w bazie PDB do sekwencji zapytania z zadania 1.
+
+Otwórz serwis [hmmer](https://www.ebi.ac.uk/Tools/hmmer/). Wybierz zakładkę `Search` i w formularzu programu:
+* Umieść sekwencję z zadania 1 w polu `Paste a Sequence`.
+* Ustaw bazę danych (`Current database selection`) jako `PDB`.
+* Naciśnij przycisk `Submit`.
+
+1. Czy program hmmer zidentyfikował statystycznie istotne przyrównania (`E-value < 0.05`)?
+2. Ile wynosi procent identyczności i podobieństwa najlepszego przyrównania?
