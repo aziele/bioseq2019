@@ -207,7 +207,7 @@ W bazie UniProt wyszukaj wszystkie białka zawierające domenę RRM u bakterii.
 ### Zad. 9 - MEME: Motif Discovery
 > Celem zadania jest znalezienie motywów sekwencyjnych nadreprezentowanych w zadanym przez użytkownika zestawie sekwencji.
 
-W pliku [sequences.fasta](./data/sequences.fasta) znajduje się 6 sekwencji białkowych, które pełnią podobne funkcje komórkowe. Otwórz stronę serwisu [MEME](http://tools.genouest.org/tools/meme/cgi-bin/meme.cgi) i wybierz: `Motif Discovery` > `MEME`. W formularzu programu:
+W pliku [sequences.fasta](./data/sequences.fasta) znajduje się 6 sekwencji białkowych, które pełnią podobne funkcje komórkowe. Otwórz stronę serwisu [MEME](http://meme-suite.org) i wybierz: `Motif Discovery` > `MEME`. W formularzu programu:
 * W sekcji `Select the site distribution` wybierz opcję `Any number of repetitions`.
 * Załaduj plik `sequences.fasta`
 * Rozpocznij analizę.
