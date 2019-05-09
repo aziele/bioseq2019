@@ -22,7 +22,7 @@
 
 | <sub>Godzina</sub> | <sub>Temat</sub> | <sub>Slajdy</sub> | <sub>Lab</sub> | <sub>Lab - rozwiązanie</sub> | <sub>Zadania</sub> | <sub>Zadania - odpowiedzi</sub> |
 | :---: | --- | --- | --- | --- | --- | :---: |
-| <sub>9:00 - 11:00</sub> | <sub>Motywy i domeny białkowe</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>-</sub> | <sub>-</sub> |
+| <sub>9:00 - 11:00</sub> | <sub>Motywy i domeny białkowe</sub> | <sub>slajdy</sub> | <sub>[lab](./day3/1-lab.md)</sub> | <sub>[rozwiązanie](./day3/1-lab.odpowiedzi.md)</sub> | <sub>-</sub> | <sub>-</sub> |
 | <sub>11:15 - 13:15</sub> | <sub>Profile sekwencji (PSI-BLAST)</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 | <sub>14:00 - 16:00</sub> | <sub>Analiza filogenetyczna</sub> | <sub>slajdy</sub> | <sub>lab</sub> | <sub>rozwiązanie</sub> | <sub>zadania</sub> | <sub>odpowiedzi</sub> |
 

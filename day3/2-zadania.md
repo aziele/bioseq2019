@@ -18,7 +18,7 @@ ASREGTCHAWRGLEA
 <br/><br/>
 
 ### Zad. 2 - Wyszukiwanie sekwencji wielodomenowych (kinazy WAK)
-Kinazy WAK (*Wall associated kinase*) są łącznikami między ścianą komórkową a cytoplazmą i wykazują zdolnośc do wiązania składników ścian komórkowych roślin. Kinazy WAK składają się z domen:
+Kinazy WAK (*Wall associated kinase*) są łącznikami między ścianą komórkową a cytoplazmą i wykazują zdolność do wiązania składników ścian komórkowych roślin. Kinazy WAK składają się z domen:
 * *GUB_WAK_bind* (`PF13947`) - zewnątrzkomórkowa część białka, która wiążę pektyny ściany komórkowej
 * *EGF_CA* (`PF07645`) - epidermalny czynnik wzrostu wiążący jony wapnia
 * *Pkinase_Tyr* (`PF07714`) - domena kinazowo
